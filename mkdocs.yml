@@ -587,7 +587,7 @@ pages:
   - Test-AdminDBConnection: DelegatedAdmin/Test-AdminDBConnection.md
 - EnvTest:
   - about_EnvTest_Filtering: EnvTest/about_EnvTest_Filtering.md
-  - about_EnvTestEnvTestSnapIn: EnvTest/about_EnvTestEnvTestSnapIn.md
+  - about_EnvTestEnvTestSnapIn: EnvTest/about_EnvTestEnvTestSnapin.md
   - Get-EnvTestConfiguration: EnvTest/Get-EnvTestConfiguration.md
   - Get-EnvTestDBConnection: EnvTest/Get-EnvTestDBConnection.md
   - Get-EnvTestDBSchema: EnvTest/Get-EnvTestDBSchema.md
@@ -783,7 +783,7 @@ pages:
   - Test-OrchDBConnection: Orchestration/Test-OrchDBConnection.md
 - StorefrontService:
   - about_SfStorefrontSnapIn: StorefrontService/about_SfStorefrontSnapIn.md
-  - about_Sf_Filtering.: StorefrontService/about_Sf_Filtering.md 
+  - about_Sf_Filtering.: StorefrontService/about_Sf_Filtering.md
   - Add-SfServerToCluster: StorefrontService/Add-SfServerToCluster.md
   - Add-SfStorefrontAddress: StorefrontService/Add-SfStorefrontAddress.md
   - Get-SfCluster: StorefrontService/Get-SfCluster.md
