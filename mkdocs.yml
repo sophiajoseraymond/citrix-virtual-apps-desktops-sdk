@@ -673,7 +673,7 @@ pages:
   - Update-HypHypervisorConnection: HostService/Update-HypHypervisorConnection.md
 - MachineCreation:
   - about_Prov_Filtering: MachineCreation/about_Prov_Filtering.md
-  - about_ProvMachineCreationSnapIn: MachineCreation/about_ProvMachineCreationSnapIn.md
+  - about_ProvMachineCreationSnapIn: MachineCreation/about_ProvMachineCreationSnapin.md
   - Add-ProvSchemeControllerAddress: MachineCreation/Add-ProvSchemeControllerAddress.md
   - Add-ProvSchemeMetadata: MachineCreation/Add-ProvSchemeMetadata.md
   - Add-ProvSchemeScope: MachineCreation/Add-ProvSchemeScope.md
