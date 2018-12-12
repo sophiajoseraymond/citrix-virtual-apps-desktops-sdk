@@ -58,7 +58,7 @@ pages:
   - Update-AcctADAccount: ADIdentity/Update-AcctADAccount.md
 - Analytics:
   - about_Analytics_Filtering: Analytics/about_Analytics_Filtering.md
-  - about_AnalyticsAnalyticsSnapIn: Analytics/about_AnalyticsAnalyticsSnapIn.md
+  - about_AnalyticsAnalyticsSnapIn: Analytics/about_AnalyticsAnalyticsSnapin.md
   - Get-AnalyticsDBConnection: Analytics/Get-AnalyticsDBConnection.md
   - Get-AnalyticsDBSchema: Analytics/Get-AnalyticsDBSchema.md
   - Get-AnalyticsDBVersionChangeScript: Analytics/Get-AnalyticsDBVersionChangeScript.md
