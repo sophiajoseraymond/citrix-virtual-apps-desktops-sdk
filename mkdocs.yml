@@ -19,7 +19,7 @@ pages:
   - Getting load balancing information: getting-load-balancing-information.md
 - ADIdentity:
   - about_Acct_Filtering: ADIdentity/about_Acct_Filtering.md
-  - about_AcctADIdentitySnapIn: ADIdentity/about_AcctADIdentitySnapIn.md
+  - about_AcctADIdentitySnapIn: ADIdentity/about_AcctADIdentitySnapin.md
   - Add-AcctADAccount: ADIdentity/Add-AcctADAccount.md
   - Add-AcctIdentityPoolScope: ADIdentity/Add-AcctIdentityPoolScope.md
   - Copy-AcctIdentityPool: ADIdentity/Copy-AcctIdentityPool.md
