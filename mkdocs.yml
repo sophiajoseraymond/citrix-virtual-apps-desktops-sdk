@@ -173,7 +173,7 @@ pages:
   - about_Broker_PostInstallPreConfiguration: Broker/about_Broker_PostInstallPreConfiguration.md
   - about_Broker_PowerManagement: Broker/about_Broker_PowerManagement.md
   - about_Broker_RemotePC: Broker/about_Broker_RemotePC.md
-  - about_broker_Filtering: Broker/about_broker_Filtering.md
+  - about_broker_Filtering: Broker/about_Broker_Filtering.md
   - Add-BrokerApplication: Broker/Add-BrokerApplication.md
   - Add-BrokerApplicationGroup: Broker/Add-BrokerApplicationGroup.md
   - Add-BrokerDesktopGroup: Broker/Add-BrokerDesktopGroup.md
