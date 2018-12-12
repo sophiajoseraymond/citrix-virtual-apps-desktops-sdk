@@ -763,7 +763,7 @@ pages:
   - Test-MonitorDBConnection: Monitor/Test-MonitorDBConnection.md
   - Test-MonitorNotificationEmailServerConfiguration: Monitor/Test-MonitorNotificationEmailServerConfiguration.md
 - Orchestration:
-  - about_OrchOrchestrationSnapIn: Orchestration/about_OrchOrchestrationSnapIn.md
+  - about_OrchOrchestrationSnapIn: Orchestration/about_OrchOrchestrationSnapin.md
   - about_Orch_Filtering: Orchestration/about_Orch_Filtering.md
   - Get-OrchDBConnection: Orchestration/Get-OrchDBConnection.md
   - Get-OrchDBSchema: Orchestration/Get-OrchDBSchema.md
