@@ -538,7 +538,7 @@ pages:
   - Test-LogDBConnection: ConfigLogging/Test-LogDBConnection.md
 - DelegatedAdmin:
   - about_Admin_Filtering: DelegatedAdmin/about_Admin_Filtering.md
-  - about_AdminDelegatedAdminSnapIn: DelegatedAdmin/about_AdminDelegatedAdminSnapIn.md
+  - about_AdminDelegatedAdminSnapIn: DelegatedAdmin/about_AdminDelegatedAdminSnapin.md
   - Add-AdminPermission: DelegatedAdmin/Add-AdminPermission.md
   - Add-AdminRight: DelegatedAdmin/Add-AdminRight.md
   - Get-AdminAdministrator: DelegatedAdmin/Get-AdminAdministrator.md
