@@ -1,4 +1,4 @@
-# Citrix Virtual Apps and Desktops 7 1808 SDK
+# Citrix Virtual Apps and Desktops 1811 SDK
 
 > **Note:**
 > 
@@ -37,7 +37,7 @@ To access and run the cmdlets:
 > You must run the shell or script using an identity that has Citrix
 > administration rights. Although members of the local administrators
 > group on the Controller automatically have full administrative
-> privileges to allow XenDesktop to be installed, Citrix recommends that
+> privileges to allow Citrix Virtual Apps and Desktops to be installed, Citrix recommends that
 > for normal operation, you create Citrix administrators with the
 > appropriate rights, rather than use the local administrators account.
 
@@ -62,8 +62,7 @@ To access and run the cmdlets:
 For an example of a typical use case, see [Get started with the
 SDK](./getting-started.md).
 
-!!! tip "Note"
-    For a complete listing of all help text for the cmdlets, see [PowerShell cmdlet help](http://docs.citrix.com/en-us/xenapp-and-xendesktop/7-6/cds-sdk-wrapper-rho/xad-commands/).
+Note: For a complete listing of all help text for the cmdlets, see [PowerShell cmdlet help](http://docs.citrix.com/en-us/xenapp-and-xendesktop/7-6/cds-sdk-wrapper-rho/xad-commands/).
 
 ## Group Policy SDK usage
 
@@ -76,17 +75,8 @@ installed.
 
 **Adding the Group Policy SDK**
 
-1.To add the Group Policy SDK, type:
-
-```
-Add-PSSnapin citrix.common.grouppolicy
-```
-<br>          
-2.To access help, type:
-
-```
-help New-PSDrive -path localgpo:/
-```
+1. To add the Group Policy SDK, type: `Add-PSSnapin citrix.common.grouppolicy`  
+2. To access help, type: `help New-PSDrive -path localgpo:/`
 
 **Using the Group Policy SDK**
 

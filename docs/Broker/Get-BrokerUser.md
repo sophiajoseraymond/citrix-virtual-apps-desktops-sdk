@@ -5,7 +5,7 @@ Gets broker users configured for this site.
 ```
 Get-BrokerUser -SID <String> [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [<CommonParameters>]
 
-Get-BrokerUser [[-Name] <String>] [-FullName <String>] [-HomeZoneName <String>] [-HomeZoneUid <Guid>] [-UPN <String>] [-ApplicationGroupUid <Int32>] [-ApplicationUid <Int32>] [-SessionLingerDesktopGroupUid <Int32>] [-SessionPreLaunchDesktopGroupUid <Int32>] [-MachineUid <Int32>] [-PrivateDesktopUid <Int32>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [<CommonParameters>]
+Get-BrokerUser [[-Name] <String>] [-DirectoryContext <String>] [-FullName <String>] [-HomeZoneName <String>] [-HomeZoneUid <Guid>] [-IdentityClaims <String>] [-PrimaryClaim <String>] [-UPN <String>] [-ApplicationGroupUid <Int32>] [-ApplicationUid <Int32>] [-SessionLingerDesktopGroupUid <Int32>] [-SessionPreLaunchDesktopGroupUid <Int32>] [-MachineUid <Int32>] [-PrivateDesktopUid <Int32>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [<CommonParameters>]
 ```
 ## Detailed Description
 Retrieve broker users matching the specified criteria. If no parameters are specified this cmdlet enumerates all broker users.
@@ -17,17 +17,23 @@ For information about advanced filtering options, see about\_Broker\_Filtering.
 The BrokerUser object represents a single instance of an user. It contains the following properties:
 
 
-  * FullName (System.String) The full name of an user
+  * DirectoryContext (System.String) The directory context of a user
+
+  * FullName (System.String) The full name of a user
 
   * HomeZoneName (System.String) Name of home zone associated with user
 
   * HomeZoneUid (System.Guid?) Home zone associated with this user
 
-  * Name (System.String) The name of an user
+  * IdentityClaims (System.String) The identity claims of a user
 
-  * SID (System.String) The SID of an user
+  * Name (System.String) The name of a user
 
-  * UPN (System.String) The UPN of an user
+  * PrimaryClaim (System.String) The primary identity claim of a user
+
+  * SID (System.String) The SID of a user
+
+  * UPN (System.String) The UPN of a user
 
 
 ## Related Commands
@@ -39,9 +45,12 @@ The BrokerUser object represents a single instance of an user. It contains the f
 | --- | --- | --- | --- | --- |
 | SID | Gets the broker user with the specified SID property value. | true | false |  |
 | Name | Gets the broker user with the specified Name property. | false | false |  |
+| DirectoryContext | Gets the broker user with the specified directory context property value. | false | false |  |
 | FullName | Gets the broker user with the specified FullName property. | false | false |  |
 | HomeZoneName | Gets user/group accounts having a home zone preference matching the specified name. | false | false |  |
 | HomeZoneUid | Gets user/group accounts having a home zone preference matching the specified UID. | false | false |  |
+| IdentityClaims | Gets the broker user with the specified identity claims property value. | false | false |  |
+| PrimaryClaim | Gets the broker user with the specified primary claim property value. | false | false |  |
 | UPN | Gets the broker user with the specified UPN property value. | false | false |  |
 | ApplicationGroupUid | Gets broker users associated with the application group with the specified Uid. | false | false |  |
 | ApplicationUid | Gets broker users associated with the application with the specified Uid. | false | false |  |

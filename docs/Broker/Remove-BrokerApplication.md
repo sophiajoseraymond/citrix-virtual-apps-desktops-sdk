@@ -66,9 +66,9 @@ This command deletes the application that has a BrowserName of "Notepad".
 ```
 C:\PS> $app = Get-BrokerApplication -BrowserName "Notepad"
 
-C:\PS> $group = Get-BrokerDesktopGroup -Name "Private DesktopGroup"
+          C:\PS> $group = Get-BrokerDesktopGroup -Name "Private DesktopGroup"
 
-C:\PS> Remove-BrokerApplication -InputObject $app -DesktopGroup $group
+          C:\PS> Remove-BrokerApplication -InputObject $app -DesktopGroup $group
 ```
 #### Description
 This command removes the association of the desktop group that has a name of "Private DesktopGroup" from the application that has a BrowserName of "Notepad". It does not otherwise modify the application.

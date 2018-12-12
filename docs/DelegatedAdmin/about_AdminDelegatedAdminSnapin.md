@@ -1,5 +1,5 @@
 ﻿
-# about\_AdminDelegatedAdminSnapin
+# about\_AdminDelegatedAdminSnapIn
 
 ## Topic
 about\_AdminDelegatedAdminSnapin

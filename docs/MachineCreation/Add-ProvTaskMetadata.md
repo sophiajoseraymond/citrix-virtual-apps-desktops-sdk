@@ -41,8 +41,8 @@ Use this cmdlet to store additional custom data against given Task objects. This
 
 ## Return Values
 
-### Citrix.Machinecreation.Sdk.Metadata
-Add-ProvTaskMetadata returns an array of objects containing the new definition of the metadata.<br>    Property &lt;string&gt;<br>        Specifies the name of the property.<br>    Value &lt;string&gt;<br>        Specifies the value for the property.
+### Citrix.Machinecreation.Sdk.Metadata<br>   Add-Provtaskmetadata Returns An Array Of Objects Containing The New Definition Of The Metadata.<br>    Property &lt;String&gt;<br>        Specifies The Name Of The Property.<br>    Value &lt;String&gt;<br>        Specifies The Value For The Property.
+
 ## Notes
 If the command fails, the following errors can result.<br>    Error Codes<br>    -----------<br>    InvalidParameterCombination<br>        The cmdlet parameters are inconsistent.<br>    UnknownObject<br>        One of the specified objects was not found.<br>    DuplicateObject<br>        One of the specified metadata already exists.<br>    DatabaseError<br>        An error occurred in the service while attempting a database operation.<br>    DatabaseNotConfigured<br>        The operation could not be completed because the database for the service is not configured.<br>    DataStoreException<br>        An error occurred in the service while attempting a database operation - communication with the database failed for various reasons.<br>    PermissionDenied<br>        You do not have permission to execute this command.<br>    AuthorizationError<br>        There was a problem communicating with the Citrix Delegated Administration Service.<br>    ConfigurationLoggingError<br>        The operation could not be performed because of a configuration logging error.<br>    CommunicationError<br>        There was a problem communicating with the remote service.<br>    ExceptionThrown<br>        An unexpected error occurred.  For more details, see the Windows event logs on the controller or the XenDesktop logs.
 ## Examples

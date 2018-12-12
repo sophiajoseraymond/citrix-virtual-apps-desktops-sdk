@@ -28,8 +28,8 @@ Gets the AppDNA Connection details used to integrate Citrix Studio with AppDNA.
 
 ## Return Values
 
-### Citrix.Applibrary.Sdk.Appdnaconnection
-This object provides details of the AppDNA Connection and contains the following information:<br>                    Address &lt;string&gt;<br>                    The URL of the AppDNA web server.<br>                    Database &lt;string&gt;<br>                    The database identifier from the AppDNA site<br>                    Enabled &lt;bool&gt;<br>                    Whether or not the connection is enabled<br>                    Username &lt;string&gt;<br>                    The user account name used to make the connection.
+### Citrix.Applibrary.Sdk.Appdnaconnection<br>                    This Object Provides Details Of The Appdna Connection And Contains The Following Information:<br>                    Address &lt;String&gt;<br>                    The Url Of The Appdna Web Server.<br>                    Database &lt;String&gt;<br>                    The Database Identifier From The Appdna Site<br>                    Enabled &lt;Bool&gt;<br>                    Whether Or Not The Connection Is Enabled<br>                    Username &lt;String&gt;<br>                    The User Account Name Used To Make The Connection.
+
 ## Notes
 The AppDNA user's password is never returned with the connection details.
 ## Examples

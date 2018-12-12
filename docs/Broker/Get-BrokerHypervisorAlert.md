@@ -40,7 +40,7 @@ The BrokerHypervisorAlert represents a hypervisor alert object. It contains the 
 
   * MetadataMap (System.Collections.Generic.Dictionary&lt;string, string&gt;) Metadata for this hypervisor alert.
 
-  * Metric (Citrix.Broker.Admin.SDK.AlertMetric) The metric this alert relates to: Cpu, Memory, Network or Disk.
+  * Metric (Citrix.Broker.Admin.SDK.AlertMetric) The metric this alert relates to: Cpu, Memory, Network, Disk, HostConnection or HostReboot.
 
   * Severity (Citrix.Broker.Admin.SDK.AlertSeverity) Severity of the alert (Red or Yellow). Red is more serious than Yellow.
 

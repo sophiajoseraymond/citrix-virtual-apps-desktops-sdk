@@ -1,5 +1,5 @@
-site_name: Citrix Virtual Apps and Desktops 7 1808 SDK Documentation
-site_description: Documentation and Reference Guide for the Citrix Virtual Apps and Desktops 7 1808 SDK
+site_name: Citrix Virtual Apps and Desktops 1811 SDK Documentation
+site_description: Documentation and Reference Guide for the Citrix Virtual Apps and Desktops 1811 SDK
 theme_dir: citrix-sdk
 use_directory_urls: True
 markdown_extensions:
@@ -19,7 +19,7 @@ pages:
   - Getting load balancing information: getting-load-balancing-information.md
 - ADIdentity:
   - about_Acct_Filtering: ADIdentity/about_Acct_Filtering.md
-  - about_AcctADIdentitySnapin: ADIdentity/about_AcctADIdentitySnapin.md
+  - about_AcctADIdentitySnapIn: ADIdentity/about_AcctADIdentitySnapIn.md
   - Add-AcctADAccount: ADIdentity/Add-AcctADAccount.md
   - Add-AcctIdentityPoolScope: ADIdentity/Add-AcctIdentityPoolScope.md
   - Copy-AcctIdentityPool: ADIdentity/Copy-AcctIdentityPool.md
@@ -58,7 +58,7 @@ pages:
   - Update-AcctADAccount: ADIdentity/Update-AcctADAccount.md
 - Analytics:
   - about_Analytics_Filtering: Analytics/about_Analytics_Filtering.md
-  - about_AnalyticsAnalyticsSnapin: Analytics/about_AnalyticsAnalyticsSnapin.md
+  - about_AnalyticsAnalyticsSnapIn: Analytics/about_AnalyticsAnalyticsSnapIn.md
   - Get-AnalyticsDBConnection: Analytics/Get-AnalyticsDBConnection.md
   - Get-AnalyticsDBSchema: Analytics/Get-AnalyticsDBSchema.md
   - Get-AnalyticsDBVersionChangeScript: Analytics/Get-AnalyticsDBVersionChangeScript.md
@@ -157,17 +157,6 @@ pages:
   - Test-AppLibAppDiskNameAvailable: AppLibrary/Test-AppLibAppDiskNameAvailable.md
   - Test-AppLibDBConnection: AppLibrary/Test-AppLibDBConnection.md
   - Unlock-AppLibAppDisk: AppLibrary/Unlock-AppLibAppDisk.md
-- AppV:
-  - Close-CtxAppVServerSession: AppV/Close-CtxAppVServerSession.md
-  - ConvertTo-CtxAppVLauncherArg: AppV/ConvertTo-CtxAppVLauncherArg.md
-  - Get-CtxAppVApplication: AppV/Get-CtxAppVApplication.md
-  - Get-CtxAppVApplicationInfo: AppV/Get-CtxAppVApplicationInfo.md
-  - Get-CtxAppVPackagesEnabledCount: AppV/Get-CtxAppVPackagesEnabledCount.md
-  - Get-CtxAppVServer: AppV/Get-CtxAppVServer.md
-  - Get-CtxAppVServerSetting: AppV/Get-CtxAppVServerSetting.md
-  - New-CtxAppVServer: AppV/New-CtxAppVServer.md
-  - Set-CtxAppVServerSetting: AppV/Set-CtxAppVServerSetting.md
-  - Test-CtxAppVServer: AppV/Test-CtxAppVServer.md
 - Broker:
   - about_Broker_AccessPolicy: Broker/about_Broker_AccessPolicy.md
   - about_Broker_Applications: Broker/about_Broker_Applications.md
@@ -178,13 +167,13 @@ pages:
   - about_Broker_Desktops: Broker/about_Broker_Desktops.md
   - about_Broker_EntitlementPolicy: Broker/about_Broker_EntitlementPolicy.md
   - about_Broker_ErrorHandling: Broker/about_Broker_ErrorHandling.md
-  - about_Broker_Filtering: Broker/about_Broker_Filtering.md
   - about_Broker_Licensing: Broker/about_Broker_Licensing.md
   - about_Broker_Machines: Broker/about_Broker_Machines.md
   - about_Broker_Policies: Broker/about_Broker_Policies.md
   - about_Broker_PostInstallPreConfiguration: Broker/about_Broker_PostInstallPreConfiguration.md
   - about_Broker_PowerManagement: Broker/about_Broker_PowerManagement.md
   - about_Broker_RemotePC: Broker/about_Broker_RemotePC.md
+  - about_broker_Filtering: Broker/about_broker_Filtering.md
   - Add-BrokerApplication: Broker/Add-BrokerApplication.md
   - Add-BrokerApplicationGroup: Broker/Add-BrokerApplicationGroup.md
   - Add-BrokerDesktopGroup: Broker/Add-BrokerDesktopGroup.md
@@ -197,6 +186,7 @@ pages:
   - Disconnect-BrokerSession: Broker/Disconnect-BrokerSession.md
   - Export-BrokerConfiguration: Broker/Export-BrokerConfiguration.md
   - Export-BrokerDesktopPolicy: Broker/Export-BrokerDesktopPolicy.md
+  - Export-BrokerPolicyTemplates: Broker/Export-BrokerPolicyTemplates.md
   - Get-BrokerAccessPolicyRule: Broker/Get-BrokerAccessPolicyRule.md
   - Get-BrokerAdminFolder: Broker/Get-BrokerAdminFolder.md
   - Get-BrokerAppAssignmentPolicyRule: Broker/Get-BrokerAppAssignmentPolicyRule.md
@@ -259,6 +249,7 @@ pages:
   - Group-BrokerMachine: Broker/Group-BrokerMachine.md
   - Group-BrokerSession: Broker/Group-BrokerSession.md
   - Import-BrokerDesktopPolicy: Broker/Import-BrokerDesktopPolicy.md
+  - Import-BrokerPolicyTemplates: Broker/Import-BrokerPolicyTemplates.md
   - Move-BrokerAdminFolder: Broker/Move-BrokerAdminFolder.md
   - Move-BrokerApplication: Broker/Move-BrokerApplication.md
   - New-BrokerAccessPolicyRule: Broker/New-BrokerAccessPolicyRule.md
@@ -367,6 +358,7 @@ pages:
   - Rename-BrokerRebootScheduleV2: Broker/Rename-BrokerRebootScheduleV2.md
   - Rename-BrokerTag: Broker/Rename-BrokerTag.md
   - Reset-BrokerEnabledFeatureList: Broker/Reset-BrokerEnabledFeatureList.md
+  - Reset-BrokerHypervisorConnection: Broker/Reset-BrokerHypervisorConnection.md
   - Reset-BrokerLicensingConnection: Broker/Reset-BrokerLicensingConnection.md
   - Reset-BrokerServiceGroupMembership: Broker/Reset-BrokerServiceGroupMembership.md
   - Send-BrokerSessionMessage: Broker/Send-BrokerSessionMessage.md
@@ -453,100 +445,100 @@ pages:
   - Update-BrokerImportedFTA: Broker/Update-BrokerImportedFTA.md
   - Update-BrokerLocalLeaseCache: Broker/Update-BrokerLocalLeaseCache.md
   - Update-BrokerNameCache: Broker/Update-BrokerNameCache.md
-- Configuration:
-  - about_Config_Filtering: Configuration/about_Config_Filtering.md
-  - about_ConfigConfigurationSnapin: Configuration/about_ConfigConfigurationSnapin.md
-  - Add-ConfigRegisteredServiceInstanceMetadata: Configuration/Add-ConfigRegisteredServiceInstanceMetadata.md
-  - Add-ConfigServiceGroupMetadata: Configuration/Add-ConfigServiceGroupMetadata.md
-  - Export-ConfigConfiguration: Configuration/Export-ConfigConfiguration.md
-  - Export-ConfigFeatureTable: Configuration/Export-ConfigFeatureTable.md
-  - Get-ConfigDBConnection: Configuration/Get-ConfigDBConnection.md
-  - Get-ConfigDBSchema: Configuration/Get-ConfigDBSchema.md
-  - Get-ConfigDBVersionChangeScript: Configuration/Get-ConfigDBVersionChangeScript.md
-  - Get-ConfigEdgeServer: Configuration/Get-ConfigEdgeServer.md
-  - Get-ConfigEnabledFeature: Configuration/Get-ConfigEnabledFeature.md
-  - Get-ConfigInstalledDBVersion: Configuration/Get-ConfigInstalledDBVersion.md
-  - Get-ConfigLicensingModel: Configuration/Get-ConfigLicensingModel.md
-  - Get-ConfigLocalData: Configuration/Get-ConfigLocalData.md
-  - Get-ConfigProduct: Configuration/Get-ConfigProduct.md
-  - Get-ConfigProductEdition: Configuration/Get-ConfigProductEdition.md
-  - Get-ConfigProductFeature: Configuration/Get-ConfigProductFeature.md
-  - Get-ConfigProductVersion: Configuration/Get-ConfigProductVersion.md
-  - Get-ConfigRegisteredServiceInstance: Configuration/Get-ConfigRegisteredServiceInstance.md
-  - Get-ConfigService: Configuration/Get-ConfigService.md
-  - Get-ConfigServiceAddedCapability: Configuration/Get-ConfigServiceAddedCapability.md
-  - Get-ConfigServiceGroup: Configuration/Get-ConfigServiceGroup.md
-  - Get-ConfigServiceInstance: Configuration/Get-ConfigServiceInstance.md
-  - Get-ConfigServiceStatus: Configuration/Get-ConfigServiceStatus.md
-  - Get-ConfigSite: Configuration/Get-ConfigSite.md
-  - Get-ConfigZone: Configuration/Get-ConfigZone.md
-  - Import-ConfigFeatureTable: Configuration/Import-ConfigFeatureTable.md
-  - New-ConfigEdgeServer: Configuration/New-ConfigEdgeServer.md
-  - New-ConfigZone: Configuration/New-ConfigZone.md
-  - Register-ConfigServiceInstance: Configuration/Register-ConfigServiceInstance.md
-  - Remove-ConfigEdgeServer: Configuration/Remove-ConfigEdgeServer.md
-  - Remove-ConfigEdgeServerMetadata: Configuration/Remove-ConfigEdgeServerMetadata.md
-  - Remove-ConfigRegisteredServiceInstanceMetadata: Configuration/Remove-ConfigRegisteredServiceInstanceMetadata.md
-  - Remove-ConfigServiceGroup: Configuration/Remove-ConfigServiceGroup.md
-  - Remove-ConfigServiceGroupMetadata: Configuration/Remove-ConfigServiceGroupMetadata.md
-  - Remove-ConfigServiceMetadata: Configuration/Remove-ConfigServiceMetadata.md
-  - Remove-ConfigSiteMetadata: Configuration/Remove-ConfigSiteMetadata.md
-  - Remove-ConfigZone: Configuration/Remove-ConfigZone.md
-  - Remove-ConfigZoneMetadata: Configuration/Remove-ConfigZoneMetadata.md
-  - Rename-ConfigEdgeServer: Configuration/Rename-ConfigEdgeServer.md
-  - Rename-ConfigZone: Configuration/Rename-ConfigZone.md
-  - Reset-ConfigEdgeServerList: Configuration/Reset-ConfigEdgeServerList.md
-  - Reset-ConfigEnabledFeatureList: Configuration/Reset-ConfigEnabledFeatureList.md
-  - Reset-ConfigServiceGroupMembership: Configuration/Reset-ConfigServiceGroupMembership.md
-  - Set-ConfigDBConnection: Configuration/Set-ConfigDBConnection.md
-  - Set-ConfigEdgeServer: Configuration/Set-ConfigEdgeServer.md
-  - Set-ConfigEdgeServerMetadata: Configuration/Set-ConfigEdgeServerMetadata.md
-  - Set-ConfigRegisteredServiceInstance: Configuration/Set-ConfigRegisteredServiceInstance.md
-  - Set-ConfigRegisteredServiceInstanceMetadata: Configuration/Set-ConfigRegisteredServiceInstanceMetadata.md
-  - Set-ConfigService: Configuration/Set-ConfigService.md
-  - Set-ConfigServiceGroupMetadata: Configuration/Set-ConfigServiceGroupMetadata.md
-  - Set-ConfigServiceMetadata: Configuration/Set-ConfigServiceMetadata.md
-  - Set-ConfigSite: Configuration/Set-ConfigSite.md
-  - Set-ConfigSiteMetadata: Configuration/Set-ConfigSiteMetadata.md
-  - Set-ConfigZone: Configuration/Set-ConfigZone.md
-  - Set-ConfigZoneMetadata: Configuration/Set-ConfigZoneMetadata.md
-  - Test-ConfigDBConnection: Configuration/Test-ConfigDBConnection.md
-  - Test-ConfigServiceInstanceAvailability: Configuration/Test-ConfigServiceInstanceAvailability.md
-  - Unregister-ConfigRegisteredServiceInstance: Configuration/Unregister-ConfigRegisteredServiceInstance.md
-- ConfigurationLogging:
-  - about_Log_Filtering: ConfigurationLogging/about_Log_Filtering.md
-  - about_LogConfigurationLoggingSnapin: ConfigurationLogging/about_LogConfigurationLoggingSnapin.md
-  - Export-LogReportCsv: ConfigurationLogging/Export-LogReportCsv.md
-  - Export-LogReportHtml: ConfigurationLogging/Export-LogReportHtml.md
-  - Get-LogDBConnection: ConfigurationLogging/Get-LogDBConnection.md
-  - Get-LogDBSchema: ConfigurationLogging/Get-LogDBSchema.md
-  - Get-LogDBVersionChangeScript: ConfigurationLogging/Get-LogDBVersionChangeScript.md
-  - Get-LogDataStore: ConfigurationLogging/Get-LogDataStore.md
-  - Get-LogHighLevelOperation: ConfigurationLogging/Get-LogHighLevelOperation.md
-  - Get-LogInstalledDBVersion: ConfigurationLogging/Get-LogInstalledDBVersion.md
-  - Get-LogLowLevelOperation: ConfigurationLogging/Get-LogLowLevelOperation.md
-  - Get-LogService: ConfigurationLogging/Get-LogService.md
-  - Get-LogServiceAddedCapability: ConfigurationLogging/Get-LogServiceAddedCapability.md
-  - Get-LogServiceInstance: ConfigurationLogging/Get-LogServiceInstance.md
-  - Get-LogServiceStatus: ConfigurationLogging/Get-LogServiceStatus.md
-  - Get-LogSite: ConfigurationLogging/Get-LogSite.md
-  - Get-LogSummary: ConfigurationLogging/Get-LogSummary.md
-  - Remove-LogOperation: ConfigurationLogging/Remove-LogOperation.md
-  - Remove-LogServiceMetadata: ConfigurationLogging/Remove-LogServiceMetadata.md
-  - Remove-LogSiteMetadata: ConfigurationLogging/Remove-LogSiteMetadata.md
-  - Reset-LogDataStore: ConfigurationLogging/Reset-LogDataStore.md
-  - Reset-LogEnabledFeatureList: ConfigurationLogging/Reset-LogEnabledFeatureList.md
-  - Reset-LogServiceGroupMembership: ConfigurationLogging/Reset-LogServiceGroupMembership.md
-  - Set-LogDBConnection: ConfigurationLogging/Set-LogDBConnection.md
-  - Set-LogServiceMetadata: ConfigurationLogging/Set-LogServiceMetadata.md
-  - Set-LogSite: ConfigurationLogging/Set-LogSite.md
-  - Set-LogSiteMetadata: ConfigurationLogging/Set-LogSiteMetadata.md
-  - Start-LogHighLevelOperation: ConfigurationLogging/Start-LogHighLevelOperation.md
-  - Stop-LogHighLevelOperation: ConfigurationLogging/Stop-LogHighLevelOperation.md
-  - Test-LogDBConnection: ConfigurationLogging/Test-LogDBConnection.md
+- CentralConfig:
+  - about_Config_Filtering: CentralConfig/about_Config_Filtering.md
+  - about_ConfigConfigurationSnapIn: CentralConfig/about_ConfigConfigurationSnapIn.md
+  - Add-ConfigRegisteredServiceInstanceMetadata: CentralConfig/Add-ConfigRegisteredServiceInstanceMetadata.md
+  - Add-ConfigServiceGroupMetadata: CentralConfig/Add-ConfigServiceGroupMetadata.md
+  - Export-ConfigConfiguration: CentralConfig/Export-ConfigConfiguration.md
+  - Export-ConfigFeatureTable: CentralConfig/Export-ConfigFeatureTable.md
+  - Get-ConfigDBConnection: CentralConfig/Get-ConfigDBConnection.md
+  - Get-ConfigDBSchema: CentralConfig/Get-ConfigDBSchema.md
+  - Get-ConfigDBVersionChangeScript: CentralConfig/Get-ConfigDBVersionChangeScript.md
+  - Get-ConfigEdgeServer: CentralConfig/Get-ConfigEdgeServer.md
+  - Get-ConfigEnabledFeature: CentralConfig/Get-ConfigEnabledFeature.md
+  - Get-ConfigInstalledDBVersion: CentralConfig/Get-ConfigInstalledDBVersion.md
+  - Get-ConfigLicensingModel: CentralConfig/Get-ConfigLicensingModel.md
+  - Get-ConfigLocalData: CentralConfig/Get-ConfigLocalData.md
+  - Get-ConfigProduct: CentralConfig/Get-ConfigProduct.md
+  - Get-ConfigProductEdition: CentralConfig/Get-ConfigProductEdition.md
+  - Get-ConfigProductFeature: CentralConfig/Get-ConfigProductFeature.md
+  - Get-ConfigProductVersion: CentralConfig/Get-ConfigProductVersion.md
+  - Get-ConfigRegisteredServiceInstance: CentralConfig/Get-ConfigRegisteredServiceInstance.md
+  - Get-ConfigService: CentralConfig/Get-ConfigService.md
+  - Get-ConfigServiceAddedCapability: CentralConfig/Get-ConfigServiceAddedCapability.md
+  - Get-ConfigServiceGroup: CentralConfig/Get-ConfigServiceGroup.md
+  - Get-ConfigServiceInstance: CentralConfig/Get-ConfigServiceInstance.md
+  - Get-ConfigServiceStatus: CentralConfig/Get-ConfigServiceStatus.md
+  - Get-ConfigSite: CentralConfig/Get-ConfigSite.md
+  - Get-ConfigZone: CentralConfig/Get-ConfigZone.md
+  - Import-ConfigFeatureTable: CentralConfig/Import-ConfigFeatureTable.md
+  - New-ConfigEdgeServer: CentralConfig/New-ConfigEdgeServer.md
+  - New-ConfigZone: CentralConfig/New-ConfigZone.md
+  - Register-ConfigServiceInstance: CentralConfig/Register-ConfigServiceInstance.md
+  - Remove-ConfigEdgeServer: CentralConfig/Remove-ConfigEdgeServer.md
+  - Remove-ConfigEdgeServerMetadata: CentralConfig/Remove-ConfigEdgeServerMetadata.md
+  - Remove-ConfigRegisteredServiceInstanceMetadata: CentralConfig/Remove-ConfigRegisteredServiceInstanceMetadata.md
+  - Remove-ConfigServiceGroup: CentralConfig/Remove-ConfigServiceGroup.md
+  - Remove-ConfigServiceGroupMetadata: CentralConfig/Remove-ConfigServiceGroupMetadata.md
+  - Remove-ConfigServiceMetadata: CentralConfig/Remove-ConfigServiceMetadata.md
+  - Remove-ConfigSiteMetadata: CentralConfig/Remove-ConfigSiteMetadata.md
+  - Remove-ConfigZone: CentralConfig/Remove-ConfigZone.md
+  - Remove-ConfigZoneMetadata: CentralConfig/Remove-ConfigZoneMetadata.md
+  - Rename-ConfigEdgeServer: CentralConfig/Rename-ConfigEdgeServer.md
+  - Rename-ConfigZone: CentralConfig/Rename-ConfigZone.md
+  - Reset-ConfigEdgeServerList: CentralConfig/Reset-ConfigEdgeServerList.md
+  - Reset-ConfigEnabledFeatureList: CentralConfig/Reset-ConfigEnabledFeatureList.md
+  - Reset-ConfigServiceGroupMembership: CentralConfig/Reset-ConfigServiceGroupMembership.md
+  - Set-ConfigDBConnection: CentralConfig/Set-ConfigDBConnection.md
+  - Set-ConfigEdgeServer: CentralConfig/Set-ConfigEdgeServer.md
+  - Set-ConfigEdgeServerMetadata: CentralConfig/Set-ConfigEdgeServerMetadata.md
+  - Set-ConfigRegisteredServiceInstance: CentralConfig/Set-ConfigRegisteredServiceInstance.md
+  - Set-ConfigRegisteredServiceInstanceMetadata: CentralConfig/Set-ConfigRegisteredServiceInstanceMetadata.md
+  - Set-ConfigService: CentralConfig/Set-ConfigService.md
+  - Set-ConfigServiceGroupMetadata: CentralConfig/Set-ConfigServiceGroupMetadata.md
+  - Set-ConfigServiceMetadata: CentralConfig/Set-ConfigServiceMetadata.md
+  - Set-ConfigSite: CentralConfig/Set-ConfigSite.md
+  - Set-ConfigSiteMetadata: CentralConfig/Set-ConfigSiteMetadata.md
+  - Set-ConfigZone: CentralConfig/Set-ConfigZone.md
+  - Set-ConfigZoneMetadata: CentralConfig/Set-ConfigZoneMetadata.md
+  - Test-ConfigDBConnection: CentralConfig/Test-ConfigDBConnection.md
+  - Test-ConfigServiceInstanceAvailability: CentralConfig/Test-ConfigServiceInstanceAvailability.md
+  - Unregister-ConfigRegisteredServiceInstance: CentralConfig/Unregister-ConfigRegisteredServiceInstance.md
+- ConfigLogging:
+  - about_Log_Filtering: ConfigLogging/about_Log_Filtering.md
+  - about_LogConfigurationLoggingSnapIn: ConfigLogging/about_LogConfigurationLoggingSnapIn.md
+  - Export-LogReportCsv: ConfigLogging/Export-LogReportCsv.md
+  - Export-LogReportHtml: ConfigLogging/Export-LogReportHtml.md
+  - Get-LogDBConnection: ConfigLogging/Get-LogDBConnection.md
+  - Get-LogDBSchema: ConfigLogging/Get-LogDBSchema.md
+  - Get-LogDBVersionChangeScript: ConfigLogging/Get-LogDBVersionChangeScript.md
+  - Get-LogDataStore: ConfigLogging/Get-LogDataStore.md
+  - Get-LogHighLevelOperation: ConfigLogging/Get-LogHighLevelOperation.md
+  - Get-LogInstalledDBVersion: ConfigLogging/Get-LogInstalledDBVersion.md
+  - Get-LogLowLevelOperation: ConfigLogging/Get-LogLowLevelOperation.md
+  - Get-LogService: ConfigLogging/Get-LogService.md
+  - Get-LogServiceAddedCapability: ConfigLogging/Get-LogServiceAddedCapability.md
+  - Get-LogServiceInstance: ConfigLogging/Get-LogServiceInstance.md
+  - Get-LogServiceStatus: ConfigLogging/Get-LogServiceStatus.md
+  - Get-LogSite: ConfigLogging/Get-LogSite.md
+  - Get-LogSummary: ConfigLogging/Get-LogSummary.md
+  - Remove-LogOperation: ConfigLogging/Remove-LogOperation.md
+  - Remove-LogServiceMetadata: ConfigLogging/Remove-LogServiceMetadata.md
+  - Remove-LogSiteMetadata: ConfigLogging/Remove-LogSiteMetadata.md
+  - Reset-LogDataStore: ConfigLogging/Reset-LogDataStore.md
+  - Reset-LogEnabledFeatureList: ConfigLogging/Reset-LogEnabledFeatureList.md
+  - Reset-LogServiceGroupMembership: ConfigLogging/Reset-LogServiceGroupMembership.md
+  - Set-LogDBConnection: ConfigLogging/Set-LogDBConnection.md
+  - Set-LogServiceMetadata: ConfigLogging/Set-LogServiceMetadata.md
+  - Set-LogSite: ConfigLogging/Set-LogSite.md
+  - Set-LogSiteMetadata: ConfigLogging/Set-LogSiteMetadata.md
+  - Start-LogHighLevelOperation: ConfigLogging/Start-LogHighLevelOperation.md
+  - Stop-LogHighLevelOperation: ConfigLogging/Stop-LogHighLevelOperation.md
+  - Test-LogDBConnection: ConfigLogging/Test-LogDBConnection.md
 - DelegatedAdmin:
   - about_Admin_Filtering: DelegatedAdmin/about_Admin_Filtering.md
-  - about_AdminDelegatedAdminSnapin: DelegatedAdmin/about_AdminDelegatedAdminSnapin.md
+  - about_AdminDelegatedAdminSnapIn: DelegatedAdmin/about_AdminDelegatedAdminSnapIn.md
   - Add-AdminPermission: DelegatedAdmin/Add-AdminPermission.md
   - Add-AdminRight: DelegatedAdmin/Add-AdminRight.md
   - Get-AdminAdministrator: DelegatedAdmin/Get-AdminAdministrator.md
@@ -595,7 +587,7 @@ pages:
   - Test-AdminDBConnection: DelegatedAdmin/Test-AdminDBConnection.md
 - EnvTest:
   - about_EnvTest_Filtering: EnvTest/about_EnvTest_Filtering.md
-  - about_EnvTestEnvTestSnapin: EnvTest/about_EnvTestEnvTestSnapin.md
+  - about_EnvTestEnvTestSnapIn: EnvTest/about_EnvTestEnvTestSnapIn.md
   - Get-EnvTestConfiguration: EnvTest/Get-EnvTestConfiguration.md
   - Get-EnvTestDBConnection: EnvTest/Get-EnvTestDBConnection.md
   - Get-EnvTestDBSchema: EnvTest/Get-EnvTestDBSchema.md
@@ -622,99 +614,66 @@ pages:
   - Stop-EnvTestTask: EnvTest/Stop-EnvTestTask.md
   - Switch-EnvTestTask: EnvTest/Switch-EnvTestTask.md
   - Test-EnvTestDBConnection: EnvTest/Test-EnvTestDBConnection.md
-- Host:
-  - about_HypHostSnapin: Host/about_HypHostSnapin.md
-  - about_HypStorage: Host/about_HypStorage.md
-  - about_Hyp_Filtering: Host/about_Hyp_Filtering.md
-  - Add-HypHostingUnitMetadata: Host/Add-HypHostingUnitMetadata.md
-  - Add-HypHostingUnitNetwork: Host/Add-HypHostingUnitNetwork.md
-  - Add-HypHostingUnitStorage: Host/Add-HypHostingUnitStorage.md
-  - Add-HypHypervisorConnectionAddress: Host/Add-HypHypervisorConnectionAddress.md
-  - Add-HypHypervisorConnectionMetadata: Host/Add-HypHypervisorConnectionMetadata.md
-  - Add-HypHypervisorConnectionScope: Host/Add-HypHypervisorConnectionScope.md
-  - Add-HypMetadata: Host/Add-HypMetadata.md
-  - Get-HypConfigurationDataForItem: Host/Get-HypConfigurationDataForItem.md
-  - Get-HypConfigurationObjectForItem: Host/Get-HypConfigurationObjectForItem.md
-  - Get-HypConnectionRegion: Host/Get-HypConnectionRegion.md
-  - Get-HypDBConnection: Host/Get-HypDBConnection.md
-  - Get-HypDBSchema: Host/Get-HypDBSchema.md
-  - Get-HypDBVersionChangeScript: Host/Get-HypDBVersionChangeScript.md
-  - Get-HypHypervisorPlugin: Host/Get-HypHypervisorPlugin.md
-  - Get-HypInstalledDBVersion: Host/Get-HypInstalledDBVersion.md
-  - Get-HypLocalizedString: Host/Get-HypLocalizedString.md
-  - Get-HypScopedObject: Host/Get-HypScopedObject.md
-  - Get-HypService: Host/Get-HypService.md
-  - Get-HypServiceAddedCapability: Host/Get-HypServiceAddedCapability.md
-  - Get-HypServiceInstance: Host/Get-HypServiceInstance.md
-  - Get-HypServiceStatus: Host/Get-HypServiceStatus.md
-  - Get-HypVMMacAddress: Host/Get-HypVMMacAddress.md
-  - Get-HypVolumeServiceConfiguration: Host/Get-HypVolumeServiceConfiguration.md
-  - Get-HypXenServerAddress: Host/Get-HypXenServerAddress.md
-  - Grant-HypSecurityGroupEgress: Host/Grant-HypSecurityGroupEgress.md
-  - Grant-HypSecurityGroupIngress: Host/Grant-HypSecurityGroupIngress.md
-  - New-HypStorage: Host/New-HypStorage.md
-  - New-HypVMSnapshot: Host/New-HypVMSnapshot.md
-  - Remove-HypHostingUnitMetadata: Host/Remove-HypHostingUnitMetadata.md
-  - Remove-HypHostingUnitNetwork: Host/Remove-HypHostingUnitNetwork.md
-  - Remove-HypHostingUnitStorage: Host/Remove-HypHostingUnitStorage.md
-  - Remove-HypHypervisorConnectionAddress: Host/Remove-HypHypervisorConnectionAddress.md
-  - Remove-HypHypervisorConnectionMetadata: Host/Remove-HypHypervisorConnectionMetadata.md
-  - Remove-HypHypervisorConnectionScope: Host/Remove-HypHypervisorConnectionScope.md
-  - Remove-HypMetadata: Host/Remove-HypMetadata.md
-  - Remove-HypServiceMetadata: Host/Remove-HypServiceMetadata.md
-  - Reset-HypEnabledFeatureList: Host/Reset-HypEnabledFeatureList.md
-  - Reset-HypServiceGroupMembership: Host/Reset-HypServiceGroupMembership.md
-  - Revoke-HypSecurityGroupEgress: Host/Revoke-HypSecurityGroupEgress.md
-  - Revoke-HypSecurityGroupIngress: Host/Revoke-HypSecurityGroupIngress.md
-  - Set-HypAdminConnection: Host/Set-HypAdminConnection.md
-  - Set-HypDBConnection: Host/Set-HypDBConnection.md
-  - Set-HypHostingUnitMetadata: Host/Set-HypHostingUnitMetadata.md
-  - Set-HypHostingUnitStorage: Host/Set-HypHostingUnitStorage.md
-  - Set-HypHypervisorConnectionMetadata: Host/Set-HypHypervisorConnectionMetadata.md
-  - Set-HypServiceMetadata: Host/Set-HypServiceMetadata.md
-  - Set-HypVolumeServiceConfiguration: Host/Set-HypVolumeServiceConfiguration.md
-  - Start-HypVM: Host/Start-HypVM.md
-  - Stop-HypVM: Host/Stop-HypVM.md
-  - Test-HypDBConnection: Host/Test-HypDBConnection.md
-  - Test-HypHostingUnitNameAvailable: Host/Test-HypHostingUnitNameAvailable.md
-  - Test-HypHypervisorConnectionNameAvailable: Host/Test-HypHypervisorConnectionNameAvailable.md
-  - Update-HypHypervisorConnection: Host/Update-HypHypervisorConnection.md
-- Licensing:
-  - about_LicLicensingAdminSnapin: Licensing/about_LicLicensingAdminSnapin.md
-  - Add-LicGlobalMetadata: Licensing/Add-LicGlobalMetadata.md
-  - Get-LicAdministrator: Licensing/Get-LicAdministrator.md
-  - Get-LicAlerts: Licensing/Get-LicAlerts.md
-  - Get-LicCEIPOption: Licensing/Get-LicCEIPOption.md
-  - Get-LicCertificate: Licensing/Get-LicCertificate.md
-  - Get-LicConfigUsageSamples: Licensing/Get-LicConfigUsageSamples.md
-  - Get-LicEffectivePermission: Licensing/Get-LicEffectivePermission.md
-  - Get-LicEntitlements: Licensing/Get-LicEntitlements.md
-  - Get-LicGlobalMetadata: Licensing/Get-LicGlobalMetadata.md
-  - Get-LicHistoricalUsage: Licensing/Get-LicHistoricalUsage.md
-  - Get-LicInventory: Licensing/Get-LicInventory.md
-  - Get-LicLACEnabledState: Licensing/Get-LicLACEnabledState.md
-  - Get-LicLACLocation: Licensing/Get-LicLACLocation.md
-  - Get-LicLocalizedNames: Licensing/Get-LicLocalizedNames.md
-  - Get-LicLocation: Licensing/Get-LicLocation.md
-  - Get-LicRenewals: Licensing/Get-LicRenewals.md
-  - Get-LicSARenewalOptions: Licensing/Get-LicSARenewalOptions.md
-  - Get-LicServerInfo: Licensing/Get-LicServerInfo.md
-  - Get-LicServiceAddedCapability: Licensing/Get-LicServiceAddedCapability.md
-  - Get-LicUsageDetails: Licensing/Get-LicUsageDetails.md
-  - Import-LicLicenseFile: Licensing/Import-LicLicenseFile.md
-  - Install-LicRenewals: Licensing/Install-LicRenewals.md
-  - New-LicAdministrator: Licensing/New-LicAdministrator.md
-  - New-LicAllocation: Licensing/New-LicAllocation.md
-  - Remove-LicAdministrator: Licensing/Remove-LicAdministrator.md
-  - Remove-LicGlobalMetadata: Licensing/Remove-LicGlobalMetadata.md
-  - Set-LicAdministrator: Licensing/Set-LicAdministrator.md
-  - Set-LicCEIPOption: Licensing/Set-LicCEIPOption.md
-  - Set-LicConfigUsageSamples: Licensing/Set-LicConfigUsageSamples.md
-  - Set-LicLACEnabledState: Licensing/Set-LicLACEnabledState.md
-  - Set-LicSARenewalOptions: Licensing/Set-LicSARenewalOptions.md
+- HostService:
+  - about_HypHostSnapIn: HostService/about_HypHostSnapIn.md
+  - about_HypStorage: HostService/about_HypStorage.md
+  - about_Hyp_Filtering: HostService/about_Hyp_Filtering.md
+  - Add-HypHostingUnitMetadata: HostService/Add-HypHostingUnitMetadata.md
+  - Add-HypHostingUnitNetwork: HostService/Add-HypHostingUnitNetwork.md
+  - Add-HypHostingUnitStorage: HostService/Add-HypHostingUnitStorage.md
+  - Add-HypHypervisorConnectionAddress: HostService/Add-HypHypervisorConnectionAddress.md
+  - Add-HypHypervisorConnectionMetadata: HostService/Add-HypHypervisorConnectionMetadata.md
+  - Add-HypHypervisorConnectionScope: HostService/Add-HypHypervisorConnectionScope.md
+  - Add-HypMetadata: HostService/Add-HypMetadata.md
+  - Get-HypConfigurationDataForItem: HostService/Get-HypConfigurationDataForItem.md
+  - Get-HypConfigurationObjectForItem: HostService/Get-HypConfigurationObjectForItem.md
+  - Get-HypConnectionRegion: HostService/Get-HypConnectionRegion.md
+  - Get-HypDBConnection: HostService/Get-HypDBConnection.md
+  - Get-HypDBSchema: HostService/Get-HypDBSchema.md
+  - Get-HypDBVersionChangeScript: HostService/Get-HypDBVersionChangeScript.md
+  - Get-HypHypervisorPlugin: HostService/Get-HypHypervisorPlugin.md
+  - Get-HypInstalledDBVersion: HostService/Get-HypInstalledDBVersion.md
+  - Get-HypLocalizedString: HostService/Get-HypLocalizedString.md
+  - Get-HypScopedObject: HostService/Get-HypScopedObject.md
+  - Get-HypService: HostService/Get-HypService.md
+  - Get-HypServiceAddedCapability: HostService/Get-HypServiceAddedCapability.md
+  - Get-HypServiceInstance: HostService/Get-HypServiceInstance.md
+  - Get-HypServiceStatus: HostService/Get-HypServiceStatus.md
+  - Get-HypVMMacAddress: HostService/Get-HypVMMacAddress.md
+  - Get-HypVolumeServiceConfiguration: HostService/Get-HypVolumeServiceConfiguration.md
+  - Get-HypXenServerAddress: HostService/Get-HypXenServerAddress.md
+  - Grant-HypSecurityGroupEgress: HostService/Grant-HypSecurityGroupEgress.md
+  - Grant-HypSecurityGroupIngress: HostService/Grant-HypSecurityGroupIngress.md
+  - New-HypStorage: HostService/New-HypStorage.md
+  - New-HypVMSnapshot: HostService/New-HypVMSnapshot.md
+  - Remove-HypHostingUnitMetadata: HostService/Remove-HypHostingUnitMetadata.md
+  - Remove-HypHostingUnitNetwork: HostService/Remove-HypHostingUnitNetwork.md
+  - Remove-HypHostingUnitStorage: HostService/Remove-HypHostingUnitStorage.md
+  - Remove-HypHypervisorConnectionAddress: HostService/Remove-HypHypervisorConnectionAddress.md
+  - Remove-HypHypervisorConnectionMetadata: HostService/Remove-HypHypervisorConnectionMetadata.md
+  - Remove-HypHypervisorConnectionScope: HostService/Remove-HypHypervisorConnectionScope.md
+  - Remove-HypMetadata: HostService/Remove-HypMetadata.md
+  - Remove-HypServiceMetadata: HostService/Remove-HypServiceMetadata.md
+  - Reset-HypEnabledFeatureList: HostService/Reset-HypEnabledFeatureList.md
+  - Reset-HypServiceGroupMembership: HostService/Reset-HypServiceGroupMembership.md
+  - Revoke-HypSecurityGroupEgress: HostService/Revoke-HypSecurityGroupEgress.md
+  - Revoke-HypSecurityGroupIngress: HostService/Revoke-HypSecurityGroupIngress.md
+  - Set-HypAdminConnection: HostService/Set-HypAdminConnection.md
+  - Set-HypDBConnection: HostService/Set-HypDBConnection.md
+  - Set-HypHostingUnitMetadata: HostService/Set-HypHostingUnitMetadata.md
+  - Set-HypHostingUnitStorage: HostService/Set-HypHostingUnitStorage.md
+  - Set-HypHypervisorConnectionMetadata: HostService/Set-HypHypervisorConnectionMetadata.md
+  - Set-HypServiceMetadata: HostService/Set-HypServiceMetadata.md
+  - Set-HypVolumeServiceConfiguration: HostService/Set-HypVolumeServiceConfiguration.md
+  - Start-HypVM: HostService/Start-HypVM.md
+  - Stop-HypVM: HostService/Stop-HypVM.md
+  - Test-HypDBConnection: HostService/Test-HypDBConnection.md
+  - Test-HypHostingUnitNameAvailable: HostService/Test-HypHostingUnitNameAvailable.md
+  - Test-HypHypervisorConnectionNameAvailable: HostService/Test-HypHypervisorConnectionNameAvailable.md
+  - Update-HypHypervisorConnection: HostService/Update-HypHypervisorConnection.md
 - MachineCreation:
   - about_Prov_Filtering: MachineCreation/about_Prov_Filtering.md
-  - about_ProvMachineCreationSnapin: MachineCreation/about_ProvMachineCreationSnapin.md
+  - about_ProvMachineCreationSnapIn: MachineCreation/about_ProvMachineCreationSnapIn.md
   - Add-ProvSchemeControllerAddress: MachineCreation/Add-ProvSchemeControllerAddress.md
   - Add-ProvSchemeMetadata: MachineCreation/Add-ProvSchemeMetadata.md
   - Add-ProvSchemeScope: MachineCreation/Add-ProvSchemeScope.md
@@ -769,7 +728,7 @@ pages:
   - Unlock-ProvVM: MachineCreation/Unlock-ProvVM.md
 - Monitor:
   - about_Monitor_Filtering: Monitor/about_Monitor_Filtering.md
-  - about_MonitorMonitorSnapin: Monitor/about_MonitorMonitorSnapin.md
+  - about_MonitorMonitorSnapIn: Monitor/about_MonitorMonitorSnapIn.md
   - Add-MonitorNotificationPolicyCondition: Monitor/Add-MonitorNotificationPolicyCondition.md
   - Add-MonitorNotificationPolicyEmailAddresses: Monitor/Add-MonitorNotificationPolicyEmailAddresses.md
   - Add-MonitorNotificationPolicyTargets: Monitor/Add-MonitorNotificationPolicyTargets.md
@@ -804,8 +763,8 @@ pages:
   - Test-MonitorDBConnection: Monitor/Test-MonitorDBConnection.md
   - Test-MonitorNotificationEmailServerConfiguration: Monitor/Test-MonitorNotificationEmailServerConfiguration.md
 - Orchestration:
+  - about_OrchOrchestrationSnapIn: Orchestration/about_OrchOrchestrationSnapIn.md
   - about_Orch_Filtering: Orchestration/about_Orch_Filtering.md
-  - about_OrchOrchestrationSnapin: Orchestration/about_OrchOrchestrationSnapin.md
   - Get-OrchDBConnection: Orchestration/Get-OrchDBConnection.md
   - Get-OrchDBSchema: Orchestration/Get-OrchDBSchema.md
   - Get-OrchDBVersionChangeScript: Orchestration/Get-OrchDBVersionChangeScript.md
@@ -822,70 +781,42 @@ pages:
   - Start-OrchRestApi: Orchestration/Start-OrchRestApi.md
   - Stop-OrchRestApi: Orchestration/Stop-OrchRestApi.md
   - Test-OrchDBConnection: Orchestration/Test-OrchDBConnection.md
-- PVS_PowerShell_SDK:
-  - Clear-PvsConnection: PVS_PowerShell_SDK/Clear-PvsConnection.md
-  - Get-PvsVersion: PVS_PowerShell_SDK/Get-PvsVersion.md
-  - Get-SimplePvsADAccount: PVS_PowerShell_SDK/Get-SimplePvsADAccount.md
-  - Get-SimplePvsCollection: PVS_PowerShell_SDK/Get-SimplePvsCollection.md
-  - Get-SimplePvsDevice: PVS_PowerShell_SDK/Get-SimplePvsDevice.md
-  - Get-SimplePvsDiskLocator: PVS_PowerShell_SDK/Get-SimplePvsDiskLocator.md
-  - Get-SimplePvsDiskUpdateDevice: PVS_PowerShell_SDK/Get-SimplePvsDiskUpdateDevice.md
-  - Get-SimplePvsSite: PVS_PowerShell_SDK/Get-SimplePvsSite.md
-  - Get-SimplePvsUpdateTask: PVS_PowerShell_SDK/Get-SimplePvsUpdateTask.md
-  - Set-PvsConnection: PVS_PowerShell_SDK/Set-PvsConnection.md
-- Storefront:
-  - about_Sf_Filtering: Storefront/about_Sf_Filtering.md
-  - about_SfStorefrontSnapin: Storefront/about_SfStorefrontSnapin.md
-  - Add-SfServerToCluster: Storefront/Add-SfServerToCluster.md
-  - Add-SfStorefrontAddress: Storefront/Add-SfStorefrontAddress.md
-  - Get-SfCluster: Storefront/Get-SfCluster.md
-  - Get-SfDBConnection: Storefront/Get-SfDBConnection.md
-  - Get-SfDBSchema: Storefront/Get-SfDBSchema.md
-  - Get-SfDBVersionChangeScript: Storefront/Get-SfDBVersionChangeScript.md
-  - Get-SfInstalledDBVersion: Storefront/Get-SfInstalledDBVersion.md
-  - Get-SfIsStorefrontInstalled: Storefront/Get-SfIsStorefrontInstalled.md
-  - Get-SfOptimalGateway: Storefront/Get-SfOptimalGateway.md
-  - Get-SfService: Storefront/Get-SfService.md
-  - Get-SfServiceAddedCapability: Storefront/Get-SfServiceAddedCapability.md
-  - Get-SfServiceInstance: Storefront/Get-SfServiceInstance.md
-  - Get-SfServiceStatus: Storefront/Get-SfServiceStatus.md
-  - Get-SfStorefrontAddress: Storefront/Get-SfStorefrontAddress.md
-  - Get-SfTask: Storefront/Get-SfTask.md
-  - New-SfCluster: Storefront/New-SfCluster.md
-  - New-SfStorefrontAddress: Storefront/New-SfStorefrontAddress.md
-  - Remove-SfOptimalGateway: Storefront/Remove-SfOptimalGateway.md
-  - Remove-SfServerFromCluster: Storefront/Remove-SfServerFromCluster.md
-  - Remove-SfServiceMetadata: Storefront/Remove-SfServiceMetadata.md
-  - Remove-SfTask: Storefront/Remove-SfTask.md
-  - Remove-SfTaskMetadata: Storefront/Remove-SfTaskMetadata.md
-  - Reset-SfEnabledFeatureList: Storefront/Reset-SfEnabledFeatureList.md
-  - Reset-SfServiceGroupMembership: Storefront/Reset-SfServiceGroupMembership.md
-  - Set-SfCluster: Storefront/Set-SfCluster.md
-  - Set-SfDBConnection: Storefront/Set-SfDBConnection.md
-  - Set-SfOptimalGateway: Storefront/Set-SfOptimalGateway.md
-  - Set-SfServiceMetadata: Storefront/Set-SfServiceMetadata.md
-  - Set-SfTaskMetadata: Storefront/Set-SfTaskMetadata.md
-  - Test-SfDBConnection: Storefront/Test-SfDBConnection.md
-- TelemetryModule:
-  - Disable-CitrixCallHome: TelemetryModule/Disable-CitrixCallHome.md
-  - Enable-CitrixCallHome: TelemetryModule/Enable-CitrixCallHome.md
-  - Enable-CitrixTrace: TelemetryModule/Enable-CitrixTrace.md
-  - Get-CitrixCallHome: TelemetryModule/Get-CitrixCallHome.md
-  - Get-CitrixCallHomeSchedule: TelemetryModule/Get-CitrixCallHomeSchedule.md
-  - Get-SystemInfoCsv: TelemetryModule/Get-SystemInfoCsv.md
-  - New-CitrixCallHomeUploadGrantToken: TelemetryModule/New-CitrixCallHomeUploadGrantToken.md
-  - New-CitrixCallHomeUploadToken: TelemetryModule/New-CitrixCallHomeUploadToken.md
-  - Revoke-CitrixCallHomeToken: TelemetryModule/Revoke-CitrixCallHomeToken.md
-  - Send-CitrixCallHomeBundle: TelemetryModule/Send-CitrixCallHomeBundle.md
-  - Send-CitrixCeipBundle: TelemetryModule/Send-CitrixCeipBundle.md
-  - Set-CitrixCallHomeSchedule: TelemetryModule/Set-CitrixCallHomeSchedule.md
-  - Start-CitrixCallHomeUpload: TelemetryModule/Start-CitrixCallHomeUpload.md
-  - Start-CitrixCeipUpload: TelemetryModule/Start-CitrixCeipUpload.md
-  - Start-TelemetryUpload: TelemetryModule/Start-TelemetryUpload.md
-  - Test-CitrixCallHomeUploadCredentials: TelemetryModule/Test-CitrixCallHomeUploadCredentials.md
+- StorefrontService:
+  - about_SfStorefrontSnapIn: StorefrontService/about_SfStorefrontSnapIn.md
+  - about_Sf_Filtering.: StorefrontService/about_Sf_Filtering.md 
+  - Add-SfServerToCluster: StorefrontService/Add-SfServerToCluster.md
+  - Add-SfStorefrontAddress: StorefrontService/Add-SfStorefrontAddress.md
+  - Get-SfCluster: StorefrontService/Get-SfCluster.md
+  - Get-SfDBConnection: StorefrontService/Get-SfDBConnection.md
+  - Get-SfDBSchema: StorefrontService/Get-SfDBSchema.md
+  - Get-SfDBVersionChangeScript: StorefrontService/Get-SfDBVersionChangeScript.md
+  - Get-SfInstalledDBVersion: StorefrontService/Get-SfInstalledDBVersion.md
+  - Get-SfIsStorefrontInstalled: StorefrontService/Get-SfIsStorefrontInstalled.md
+  - Get-SfOptimalGateway: StorefrontService/Get-SfOptimalGateway.md
+  - Get-SfService: StorefrontService/Get-SfService.md
+  - Get-SfServiceAddedCapability: StorefrontService/Get-SfServiceAddedCapability.md
+  - Get-SfServiceInstance: StorefrontService/Get-SfServiceInstance.md
+  - Get-SfServiceStatus: StorefrontService/Get-SfServiceStatus.md
+  - Get-SfStorefrontAddress: StorefrontService/Get-SfStorefrontAddress.md
+  - Get-SfTask: StorefrontService/Get-SfTask.md
+  - New-SfCluster: StorefrontService/New-SfCluster.md
+  - New-SfStorefrontAddress: StorefrontService/New-SfStorefrontAddress.md
+  - Remove-SfOptimalGateway: StorefrontService/Remove-SfOptimalGateway.md
+  - Remove-SfServerFromCluster: StorefrontService/Remove-SfServerFromCluster.md
+  - Remove-SfServiceMetadata: StorefrontService/Remove-SfServiceMetadata.md
+  - Remove-SfTask: StorefrontService/Remove-SfTask.md
+  - Remove-SfTaskMetadata: StorefrontService/Remove-SfTaskMetadata.md
+  - Reset-SfEnabledFeatureList: StorefrontService/Reset-SfEnabledFeatureList.md
+  - Reset-SfServiceGroupMembership: StorefrontService/Reset-SfServiceGroupMembership.md
+  - Set-SfCluster: StorefrontService/Set-SfCluster.md
+  - Set-SfDBConnection: StorefrontService/Set-SfDBConnection.md
+  - Set-SfOptimalGateway: StorefrontService/Set-SfOptimalGateway.md
+  - Set-SfServiceMetadata: StorefrontService/Set-SfServiceMetadata.md
+  - Set-SfTaskMetadata: StorefrontService/Set-SfTaskMetadata.md
+  - Test-SfDBConnection: StorefrontService/Test-SfDBConnection.md
 - Trust:
+  - about_TrustTrustSnapIn: Trust/about_TrustTrustSnapIn.md
   - about_Trust_Filtering: Trust/about_Trust_Filtering.md
-  - about_TrustTrustSnapin: Trust/about_TrustTrustSnapin.md
   - Get-TrustDBConnection: Trust/Get-TrustDBConnection.md
   - Get-TrustDBSchema: Trust/Get-TrustDBSchema.md
   - Get-TrustDBVersionChangeScript: Trust/Get-TrustDBVersionChangeScript.md
@@ -910,30 +841,3 @@ pages:
   - Test-TrustDBConnection: Trust/Test-TrustDBConnection.md
   - Unregister-TrustServiceKey: Trust/Unregister-TrustServiceKey.md
   - Update-TrustBearerToken: Trust/Update-TrustBearerToken.md
-- UserProfileManager:
-  - about_UpmSnapInUserProfileManagerSnapin: UserProfileManager/about_UpmSnapInUserProfileManagerSnapin.md
-  - Get-UserProfileDefinition: UserProfileManager/Get-UserProfileDefinition.md
-  - Get-UserProfileManagerServiceAddedCapability: UserProfileManager/Get-UserProfileManagerServiceAddedCapability.md
-  - Get-UserProfilePath: UserProfileManager/Get-UserProfilePath.md
-  - New-UserProfileConfiguration: UserProfileManager/New-UserProfileConfiguration.md
-  - New-UserProfileShare: UserProfileManager/New-UserProfileShare.md
-  - Remove-UserProfileShare: UserProfileManager/Remove-UserProfileShare.md
-  - Repair-UserProfileShare: UserProfileManager/Repair-UserProfileShare.md
-  - Set-UserProfileDefinition: UserProfileManager/Set-UserProfileDefinition.md
-  - Test-UserProfileShare: UserProfileManager/Test-UserProfileShare.md
-- XenDesktop:
-  - about_XenDesktopModule: XenDesktop/about_XenDesktopModule.md
-  - about_XenDesktopModule_SiteConfiguration: XenDesktop/about_XenDesktopModule_SiteConfiguration.md
-  - Add-XDController: XenDesktop/Add-XDController.md
-  - Get-XDDatabaseSchema: XenDesktop/Get-XDDatabaseSchema.md
-  - Get-XDLogging: XenDesktop/Get-XDLogging.md
-  - Get-XDMonitor: XenDesktop/Get-XDMonitor.md
-  - Get-XDSite: XenDesktop/Get-XDSite.md
-  - New-XDDatabase: XenDesktop/New-XDDatabase.md
-  - New-XDSite: XenDesktop/New-XDSite.md
-  - Remove-XDController: XenDesktop/Remove-XDController.md
-  - Remove-XDSite: XenDesktop/Remove-XDSite.md
-  - Set-XDLicensing: XenDesktop/Set-XDLicensing.md
-  - Set-XDLogging: XenDesktop/Set-XDLogging.md
-  - Set-XDMonitor: XenDesktop/Set-XDMonitor.md
-  - Set-XDSiteMetadata: XenDesktop/Set-XDSiteMetadata.md

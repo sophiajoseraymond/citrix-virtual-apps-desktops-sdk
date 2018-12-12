@@ -97,15 +97,15 @@ Creates and returns an object for a published application called "Citrix.com" th
 ```
 C:\PS> $dg = Get-BrokerDesktopGroup "SharedDG1"
 
-C:\PS> $app = New-BrokerApplication -ApplicationType HostedOnDesktop -Name "Notepad" -CommandLineExecutable "notepad.exe" -DesktopGroup $dg
+          C:\PS> $app = New-BrokerApplication -ApplicationType HostedOnDesktop -Name "Notepad" -CommandLineExecutable "notepad.exe" -DesktopGroup $dg
 
-C:\PS> $group = Get-BrokerDesktopGroup -Name "Shared desktop group"
+          C:\PS> $group = Get-BrokerDesktopGroup -Name "Shared desktop group"
 
-C:\PS> Add-BrokerApplication $app -DesktopGroup $group
+          C:\PS> Add-BrokerApplication $app -DesktopGroup $group
 
-C:\PS> $fta = Get-BrokerImportedFTA -ExtensionName ".txt"
+          C:\PS> $fta = Get-BrokerImportedFTA -ExtensionName ".txt"
 
-C:\PS> New-BrokerConfiguredFTA -ImportedFTA $fta -ApplicationUid $app.Uid
+          C:\PS> New-BrokerConfiguredFTA -ImportedFTA $fta -ApplicationUid $app.Uid
 ```
 #### Description
 This is a much more complete example. It creates an application object to publish Notepad and associates it first with the "SharedDG1" desktop group.&lt;br&gt;Next it adds an additional desktop group (one that can host applications), and publishes the application to that desktop group. It then gets the ImportedFTA object for the .txt file-type extension (this assumes file-type associations have already been imported), and then configures it so that ".txt" is associated with the published application.&lt;br&gt;Note: The appropriate access policy and app assignment/entitlement rules must also be configured to allow access to the application.

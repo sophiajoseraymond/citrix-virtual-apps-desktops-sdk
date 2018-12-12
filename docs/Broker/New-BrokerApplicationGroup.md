@@ -71,7 +71,7 @@ Creates a new application group called 'Helpdesk Apps'.
 ```
 C:\PS> New-BrokerApplicationGroup "Accounts Apps" -UserFilterEnabled $true
 
-C:\PS> Add-BrokerUser "MYDOMAIN\Accounts" -ApplicationGroup "Accounts Apps"
+          C:\PS> Add-BrokerUser "MYDOMAIN\Accounts" -ApplicationGroup "Accounts Apps"
 ```
 #### Description
 Creates a new application group called 'Accounts Apps', and then restrict access so that only members of the MYDOMAIN\\Accounts user group can launch applications in 'Accounts Apps'.

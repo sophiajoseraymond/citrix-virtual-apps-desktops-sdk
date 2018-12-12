@@ -1,5 +1,5 @@
 ﻿
-# about\_AcctADIdentitySnapin
+# about\_AcctADIdentitySnapIn
 
 ## Topic
 about\_AcctADIdentitySnapin
