@@ -815,7 +815,7 @@ pages:
   - Set-SfTaskMetadata: StorefrontService/Set-SfTaskMetadata.md
   - Test-SfDBConnection: StorefrontService/Test-SfDBConnection.md
 - Trust:
-  - about_TrustTrustSnapIn: Trust/about_TrustTrustSnapIn.md
+  - about_TrustTrustSnapIn: Trust/about_TrustTrustSnapin.md
   - about_Trust_Filtering: Trust/about_Trust_Filtering.md
   - Get-TrustDBConnection: Trust/Get-TrustDBConnection.md
   - Get-TrustDBSchema: Trust/Get-TrustDBSchema.md
