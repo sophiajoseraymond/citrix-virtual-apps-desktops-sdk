@@ -728,7 +728,7 @@ pages:
   - Unlock-ProvVM: MachineCreation/Unlock-ProvVM.md
 - Monitor:
   - about_Monitor_Filtering: Monitor/about_Monitor_Filtering.md
-  - about_MonitorMonitorSnapIn: Monitor/about_MonitorMonitorSnapIn.md
+  - about_MonitorMonitorSnapIn: Monitor/about_MonitorMonitorSnapin.md
   - Add-MonitorNotificationPolicyCondition: Monitor/Add-MonitorNotificationPolicyCondition.md
   - Add-MonitorNotificationPolicyEmailAddresses: Monitor/Add-MonitorNotificationPolicyEmailAddresses.md
   - Add-MonitorNotificationPolicyTargets: Monitor/Add-MonitorNotificationPolicyTargets.md
