@@ -78,7 +78,7 @@ Modifies the application that has a Name of "Notepad" so that its description re
 ```
 C:\PS> $app = Get-BrokerApplication -BrowserName "Calculator"
 
-          C:\PS> Set-BrokerApplication -InputObject $app -Enabled $false
+C:\PS> Set-BrokerApplication -InputObject $app -Enabled $false
 ```
 #### Description
 First gets the application with a BrowserName of "Calculator", then modifies that application (by supplying the application object in the first position) so that it is disabled for users.

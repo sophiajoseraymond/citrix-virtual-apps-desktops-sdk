@@ -1,5 +1,5 @@
 ﻿
-# about\_AnalyticsAnalyticsSnapIn
+# about\_AnalyticsAnalyticsSnapin
 
 ## Topic
 about\_AnalyticsAnalyticsSnapin

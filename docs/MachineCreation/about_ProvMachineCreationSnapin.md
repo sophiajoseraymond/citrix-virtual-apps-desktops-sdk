@@ -1,5 +1,5 @@
 ﻿
-# about\_ProvMachineCreationSnapIn
+# about\_ProvMachineCreationSnapin
 
 ## Topic
 about\_ProvMachineCreationSnapin

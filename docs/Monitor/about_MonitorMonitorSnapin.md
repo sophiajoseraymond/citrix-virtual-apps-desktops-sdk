@@ -1,5 +1,5 @@
 ﻿
-# about\_MonitorMonitorSnapIn
+# about\_MonitorMonitorSnapin
 
 ## Topic
 about\_MonitorMonitorSnapin

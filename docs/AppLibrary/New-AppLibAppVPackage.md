@@ -36,7 +36,7 @@ If supplied, the value of the LibraryUid parameter must be 1. No other values ar
 
 ### Example 1
 ```
-New-AppLibAppVPackage -LibraryUid 1 -Path "\\NetworkStorage.enterprise.com\Managed App-V Packages\Package.appv"
+Add-AppLibAppVPackage -LibraryUid 1 -Path "\\NetworkStorage.enterprise.com\Managed App-V Packages\Package.appv"
 ```
 #### Description
 Adds the package at the specified network location to the library.

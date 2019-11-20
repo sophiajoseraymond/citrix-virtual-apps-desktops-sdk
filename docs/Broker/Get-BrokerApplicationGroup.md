@@ -5,7 +5,7 @@ Gets details of configured application groups.
 ```
 Get-BrokerApplicationGroup [-Uid] <Int32> [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [<CommonParameters>]
 
-Get-BrokerApplicationGroup [[-Name] <String>] [-AssociatedDesktopGroupPriority <Int32>] [-AssociatedDesktopGroupUid <Int32>] [-AssociatedDesktopGroupUUID <Guid>] [-AssociatedUserFullName <String>] [-AssociatedUserName <String>] [-AssociatedUserSID <String>] [-AssociatedUserUPN <String>] [-Description <String>] [-Enabled <Boolean>] [-Metadata <String>] [-RestrictToTag <String>] [-ScopeId <Guid>] [-ScopeName <String>] [-SessionSharingEnabled <Boolean>] [-SingleAppPerSession <Boolean>] [-Tag <String>] [-TenantId <Guid>] [-TotalApplications <Int32>] [-TotalMachines <Int32>] [-TotalMachinesWithTagRestriction <Int32>] [-UserFilterEnabled <Boolean>] [-UUID <Guid>] [-ApplicationUid <Int32>] [-DesktopGroupUid <Int32>] [-TagUid <Int32>] [-UserSID <String>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [<CommonParameters>]
+Get-BrokerApplicationGroup [[-Name] <String>] [-AssociatedDesktopGroupPriority <Int32>] [-AssociatedDesktopGroupUid <Int32>] [-AssociatedDesktopGroupUUID <Guid>] [-AssociatedUserFullName <String>] [-AssociatedUserName <String>] [-AssociatedUserUPN <String>] [-Description <String>] [-Enabled <Boolean>] [-Metadata <String>] [-RestrictToTag <String>] [-ScopeId <Guid>] [-ScopeName <String>] [-SessionSharingEnabled <Boolean>] [-SingleAppPerSession <Boolean>] [-Tag <String>] [-TenantId <Guid>] [-TotalApplications <Int32>] [-TotalMachines <Int32>] [-TotalMachinesWithTagRestriction <Int32>] [-UserFilterEnabled <Boolean>] [-UUID <Guid>] [-ApplicationUid <Int32>] [-DesktopGroupUid <Int32>] [-TagUid <Int32>] [-UserSID <String>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [<CommonParameters>]
 ```
 ## Detailed Description
 The Get-BrokerApplicationGroup cmdlet returns application groups that have been configured as part of the site.
@@ -29,8 +29,6 @@ A BrokerApplicationGroup object represents a single application group that has b
   * AssociatedUserFullNames (System.String\[\]) List of associated users (full names). Associated users is the list of users who are given access using the application group/user mapping filter.
 
   * AssociatedUserNames (System.String\[\]) List of associated users (SAM names). Associated users is the list of users who are given access using the application group/user mapping filter.
-
-  * AssociatedUserSIDs (System.String\[\]) List of associated users (SIDs). Associated users is the list of users who are given access using the application group/user mapping filter.
 
   * AssociatedUserUPNs (System.String\[\]) List of associated users (user principle names). Associated users is the list of users who are given access using the application group/user mapping filter.
 
@@ -86,7 +84,6 @@ A BrokerApplicationGroup object represents a single application group that has b
 | AssociatedDesktopGroupUUID | Gets application groups which have been associated with the specified desktop group. The desktop group is identified by its UUID. | false | false |  |
 | AssociatedUserFullName | Gets application groups with an associated user identified by their user name (usually 'first-name last-name').<br>If the 'UserFilterEnabled' property is true then access to applications in the application group is restricted to those users only. Otherwise, access is unrestricted (but always subject to other policy rules). | false | false |  |
 | AssociatedUserName | Gets application groups with an associated user identified by their user name (in the form 'domain\\user').<br>If the 'UserFilterEnabled' property is true then access to applications in the application group is restricted to those users only. Otherwise, access is unrestricted (but always subject to other policy rules). | false | false |  |
-| AssociatedUserSID | Gets application groups with an associated user identified by their Windows SID.<br>If the 'UserFilterEnabled' property is true then access to applications in the application group is restricted to those users only. Otherwise, access is unrestricted (but always subject to other policy rules). | false | false |  |
 | AssociatedUserUPN | Gets application groups with an associated user identified by their user principle name (in the form 'user@domain').<br>If the 'UserFilterEnabled' property is true then access to applications in the application group is restricted to those users only. Otherwise, access is unrestricted (but always subject to other policy rules). | false | false |  |
 | Description | Gets application groups whose description matches the supplied pattern. | false | false |  |
 | Enabled | Gets application groups which are currently enabled. | false | false |  |

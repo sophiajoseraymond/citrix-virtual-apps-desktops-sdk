@@ -5,7 +5,7 @@ Gets user/group accounts with zone preferences configured for this site
 ```
 Get-BrokerUserZonePreference -SID <String> [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [<CommonParameters>]
 
-Get-BrokerUserZonePreference [[-Name] <String>] [-DirectoryContext <String>] [-FullName <String>] [-HomeZoneName <String>] [-HomeZoneUid <Guid>] [-IdentityClaims <String>] [-PrimaryClaim <String>] [-UPN <String>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [<CommonParameters>]
+Get-BrokerUserZonePreference [[-Name] <String>] [-FullName <String>] [-HomeZoneName <String>] [-HomeZoneUid <Guid>] [-UPN <String>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [<CommonParameters>]
 ```
 ## Detailed Description
 Retrieve user/group account details with a home zone preference specified and matching the specified criteria. If no parameters are specified this cmdlet enumerates all account details with associated home zones preferences.
@@ -17,19 +17,13 @@ For information about advanced filtering options, see about\_Broker\_Filtering.
 The BrokerUserZonePreference object represents a user/group account having an associated home zone preference to be used when launching desktop or application sessions. It contains the following properties:
 
 
-  * DirectoryContext (System.String) The directory context of a user
-
   * FullName (System.String) Full name of user/group account.
 
   * HomeZoneName (System.String) Name of home zone preference associated with user/group account for this site.
 
   * HomeZoneUid (System.Guid) Home zone preference associated with user/group account for this site.
 
-  * IdentityClaims (System.String) The identity claims of a user
-
   * Name (System.String) SAM name of user group/account (domain\\user).
-
-  * PrimaryClaim (System.String) The primary identity claim of a user
 
   * SID (System.String) SID of user/group account.
 
@@ -47,12 +41,9 @@ The BrokerUserZonePreference object represents a user/group account having an as
 | --- | --- | --- | --- | --- |
 | SID | Gets user/group accounts with a home zone preference and the specified SID. | true | false |  |
 | Name | Gets user/group accounts with a home zone preference and the specified SAM name (domain\\user). | false | false |  |
-| DirectoryContext | Gets the broker user with the specified directory context property value. | false | false |  |
 | FullName | Gets user/group accounts with a home zone preference and the specified full name. | false | false |  |
 | HomeZoneName | Gets user/group accounts having a home zone preference with the specified name. | false | false |  |
 | HomeZoneUid | Gets user/group accounts having a home zone preference with the specified UID. | false | false |  |
-| IdentityClaims | Gets the broker user with the specified identity claims property value. | false | false |  |
-| PrimaryClaim | Gets the broker user with the specified primary claim property value. | false | false |  |
 | UPN | Gets user/group accounts with a home zone preference and the specified UPN (user@domain). | false | false |  |
 | ReturnTotalRecordCount | When specified, this causes the cmdlet to output an error record containing the number of records available. This error record is additional information and does not affect the objects written to the output pipeline. See about\_Broker\_Filtering for details. | false | false | False |
 | MaxRecordCount | Specifies the maximum number of records to return. | false | false | 250 |
