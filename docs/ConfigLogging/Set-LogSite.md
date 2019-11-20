@@ -1,18 +1,19 @@
-﻿
-# Set-Logsite
-Sets global configuration logging settings.
+﻿# Set-LogSite
+
+   Sets global configuration logging settings.
+
 ## Syntax
 ```
 Set-LogSite [-State <LoggingState>] [-Locale <String>] [-PassThru] [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
-## Detailed Description
-This cmdlet sets the global configuration logging settings.
 
+## Detailed Description
+   This cmdlet sets the global configuration logging settings.
 
 ## Related Commands
-
-* [Get-LogSite](./Get-LogSite/)
+  * [Get-LogSite](Get-LogSite.html)
 ## Parameters
+
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
 | State | Sets the state of configuration logging. Values can be:<br>o Enabled - state changes will be logged. If logging is unavailable, the state change will still be permitted. o Disabled - state changes will not be logged.<br>o Mandatory - state change will be logged. If logging is unavailable, the state change will not be permitted.<br>When the state is set to Enabled or Mandatory, XenDesktop services will attempt to log operations (which perform configuration changes) before performing them. | false | false |  |
@@ -23,32 +24,26 @@ This cmdlet sets the global configuration logging settings.
 | AdminAddress | Specifies the address of a XenDesktop controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
 ## Input Type
-
 ### 
-
+   
 ## Return Values
-
-### Citrix.Configurationlogging.Sdk.Site
-Current logging settings
-## Notes
-Configuration logging will automatically transition to a 'NotSupported' state if the logging feature is not licensed. Set-LogSite will reject request to set logging to 'Enabled' or 'Mandatory' while the logging feature is not licensed.
+### Citrix.ConfigurationLogging.Sdk.Site
+   Current logging settings## Notes
+   Configuration logging will automatically transition to a 'NotSupported' state if the logging feature is not licensed. Set-LogSite will reject request to set logging to 'Enabled' or 'Mandatory' while the logging feature is not licensed.
 ## Examples
 
-### Example 1
+### EXAMPLE 1
 ```
 C:\PS> Set-LogSite -Locale "zh-CN"
 ```
-#### Description
-Set the logging language to Chinese. The logging state will be unchanged.
-### Example 2
+   Description<br>-----------<br>Set the logging language to Chinese. The logging state will be unchanged.
+### EXAMPLE 2
 ```
 C:\PS> Set-LogSite -State "Mandatory"
 ```
-#### Description
-Set the logging state to mandatory. The logging locale will be unaffected. In this state, no configuration change will be allowed unless it is successfully logged.
-### Example 3
+   Description<br>-----------<br>Set the logging state to mandatory. The logging locale will be unaffected. In this state, no configuration change will be allowed unless it is successfully logged.
+### EXAMPLE 3
 ```
 C:\PS> Set-LogSite -Locale "de" -State "Enabled"
 ```
-#### Description
-Set the logging language to German and the state to Enabled.
+   Description<br>-----------<br>Set the logging language to German and the state to Enabled.

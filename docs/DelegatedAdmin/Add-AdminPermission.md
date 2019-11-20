@@ -16,8 +16,6 @@ Duplicate permissions do not produce an error, and permissions are skipped if th
 
 You cannot modify the permissions of built-in roles.
 
-You are not permitted to add permissions that you yourself don't have rights to.
-
 
 ## Related Commands
 

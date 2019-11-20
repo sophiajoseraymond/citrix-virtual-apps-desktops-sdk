@@ -42,8 +42,8 @@ Provides the ability for additional custom data to be stored against given Provi
 
 ## Return Values
 
-### System.Collections.Generic.Dictionary\[String,String\]<br>   Set-Provschememetadata Returns A Dictionary Containing The New (Name, Value)-Pairs.<br>    Key &lt;String&gt;<br>        Specifies The Name Of The Property.<br>    Value &lt;String&gt;<br>        Specifies The Value For The Property.
-
+### System.Collections.Generic.Dictionary\[String,String\]
+Set-ProvSchemeMetadata returns a dictionary containing the new (name, value)-pairs.<br>    Key &lt;string&gt;<br>        Specifies the name of the property.<br>    Value &lt;string&gt;<br>        Specifies the value for the property.
 ## Notes
 If the command fails, the following errors can be returned.<br>    Error Codes<br>    -----------<br>    InvalidParameterCombination<br>        The cmdlet parameters are inconsistent.<br>    UnknownObject<br>        One of the specified objects was not found.<br>    DatabaseError<br>        An error occurred in the service while attempting a database operation.<br>    DatabaseNotConfigured<br>        The operation could not be completed because the database for the service is not configured.<br>    DataStoreException<br>        An error occurred in the service while attempting a database operation - communication with the database failed for various reasons.<br>    PermissionDenied<br>        You do not have permission to execute this command.<br>    AuthorizationError<br>        There was a problem communicating with the Citrix Delegated Administration Service.<br>    ConfigurationLoggingError<br>        The operation could not be performed because of a configuration logging error.<br>    CommunicationError<br>        There was a problem communicating with the remote service.<br>    ExceptionThrown<br>        An unexpected error occurred.  For more details, see the Windows event logs on the controller or the XenDesktop logs.
 ## Examples

@@ -31,7 +31,7 @@ The isolation group will be removed from the library that is holding it
 
 ### Example 1
 ```
-Remove-AppLibIsolationGroup -IsolationGroupUid 5
+Remove-AppLibIsolationGroup -Uid 5 -LibraryUid 1
 ```
 #### Description
 Removes the specified isolation group from the application library that holds it.

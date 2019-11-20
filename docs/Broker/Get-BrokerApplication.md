@@ -5,7 +5,7 @@ Get the applications published on this site.
 ```
 Get-BrokerApplication [-Uid] <Int32> [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [<CommonParameters>]
 
-Get-BrokerApplication [[-Name] <String>] [-AdminFolderName <String>] [-AdminFolderUid <Int32>] [-AllAssociatedDesktopGroupUid <Int32>] [-AllAssociatedDesktopGroupUUID <Guid>] [-ApplicationName <String>] [-ApplicationType <ApplicationType>] [-AssociatedApplicationGroupUid <Int32>] [-AssociatedApplicationGroupUUID <Guid>] [-AssociatedDesktopGroupPriority <Int32>] [-AssociatedDesktopGroupUid <Int32>] [-AssociatedDesktopGroupUUID <Guid>] [-AssociatedUserFullName <String>] [-AssociatedUserName <String>] [-AssociatedUserSID <String>] [-AssociatedUserUPN <String>] [-BrowserName <String>] [-ClientFolder <String>] [-CommandLineArguments <String>] [-CommandLineExecutable <String>] [-CpuPriorityLevel <CpuPriorityLevel>] [-Description <String>] [-Enabled <Boolean>] [-HomeZoneName <String>] [-HomeZoneOnly <Boolean>] [-HomeZoneUid <Guid>] [-IconFromClient <Boolean>] [-IconUid <Int32>] [-IgnoreUserHomeZone <Boolean>] [-LocalLaunchDisabled <Boolean>] [-MaxPerMachineInstances <Int32>] [-MaxPerUserInstances <Int32>] [-MaxTotalInstances <Int32>] [-MetadataKey <String>] [-Metadata <String>] [-PublishedName <String>] [-SecureCmdLineArgumentsEnabled <Boolean>] [-ShortcutAddedToDesktop <Boolean>] [-ShortcutAddedToStartMenu <Boolean>] [-StartMenuFolder <String>] [-Tag <String>] [-UserFilterEnabled <Boolean>] [-UUID <Guid>] [-Visible <Boolean>] [-WaitForPrinterCreation <Boolean>] [-WorkingDirectory <String>] [-DesktopUid <Int32>] [-ApplicationGroupUid <Int32>] [-SessionUid <Int64>] [-UserSID <String>] [-DesktopGroupUid <Int32>] [-MachineConfigurationUid <Int32>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [<CommonParameters>]
+Get-BrokerApplication [[-Name] <String>] [-AdminFolderName <String>] [-AdminFolderUid <Int32>] [-AllAssociatedDesktopGroupUid <Int32>] [-AllAssociatedDesktopGroupUUID <Guid>] [-ApplicationName <String>] [-ApplicationType <ApplicationType>] [-AssociatedApplicationGroupUid <Int32>] [-AssociatedApplicationGroupUUID <Guid>] [-AssociatedDesktopGroupPriority <Int32>] [-AssociatedDesktopGroupUid <Int32>] [-AssociatedDesktopGroupUUID <Guid>] [-AssociatedUserFullName <String>] [-AssociatedUserName <String>] [-AssociatedUserUPN <String>] [-BrowserName <String>] [-ClientFolder <String>] [-CommandLineArguments <String>] [-CommandLineExecutable <String>] [-CpuPriorityLevel <CpuPriorityLevel>] [-Description <String>] [-Enabled <Boolean>] [-HomeZoneName <String>] [-HomeZoneOnly <Boolean>] [-HomeZoneUid <Guid>] [-IconFromClient <Boolean>] [-IconUid <Int32>] [-IgnoreUserHomeZone <Boolean>] [-MaxPerUserInstances <Int32>] [-MaxTotalInstances <Int32>] [-MetadataKey <String>] [-Metadata <String>] [-PublishedName <String>] [-SecureCmdLineArgumentsEnabled <Boolean>] [-ShortcutAddedToDesktop <Boolean>] [-ShortcutAddedToStartMenu <Boolean>] [-StartMenuFolder <String>] [-Tag <String>] [-UserFilterEnabled <Boolean>] [-UUID <Guid>] [-Visible <Boolean>] [-WaitForPrinterCreation <Boolean>] [-WorkingDirectory <String>] [-DesktopUid <Int32>] [-ApplicationGroupUid <Int32>] [-SessionUid <Int64>] [-UserSID <String>] [-DesktopGroupUid <Int32>] [-MachineConfigurationUid <Int32>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [<CommonParameters>]
 ```
 ## Detailed Description
 The Get-BrokerApplication cmdlet gets the published applications that are hosted on this site.
@@ -45,8 +45,6 @@ The BrokerApplication object represents a published application in the site. It 
 
   * AssociatedUserNames (System.String\[\]) List of associated users (SAM names). Associated users is the list of users who are given access using the application/user mapping filter.
 
-  * AssociatedUserSIDs (System.String\[\]) List of associated users (SIDs). Associated users is the list of users who are given access using the application/user mapping filter.
-
   * AssociatedUserUPNs (System.String\[\]) List of associated users (user principle names). Associated users is the list of users who are given access using the application/user mapping filter.
 
   * BrowserName (System.String) Unique browser name used to identify this application to other components in the site. This value is not visible to the end users.
@@ -77,13 +75,9 @@ The BrokerApplication object represents a published application in the site. It 
 
   * IgnoreUserHomeZone (System.Boolean) Indicates that when launching the application and the user has a home zone specified then the user's home zone preference should be ignored.
 
-  * LocalLaunchDisabled (System.Boolean) When launching a published application from within a published desktop, do not launch the application in that desktop session.
-
   * MachineConfigurationNames (System.String\[\]) The MachineConfiguration names associated with the application.
 
   * MachineConfigurationUids (System.Int32\[\]) The MachineConfiguration uids associated with the application.
-
-  * MaxPerMachineInstances (System.Int32) Maximum allowed concurrently running instances of the application that an individual machine can have. A value of zero allows unlimited usage subject to any site-wide limit.
 
   * MaxPerUserInstances (System.Int32) Maximum allowed concurrently running instances of the application that an individual user can have. A value of zero allows unlimited usage subject to any site-wide limit.
 
@@ -146,7 +140,6 @@ The BrokerApplication object represents a published application in the site. It 
 | AssociatedDesktopGroupUUID | Gets applications directly associated with the desktop group identified by the UUID.<br>The application must be published directly on the desktop group. To search for applications that may be published indirectly on the desktop group as part of an application group, use the AllAssociatedDesktopGroupUid filter instead. | false | false |  |
 | AssociatedUserFullName | Gets applications with an associated user identified by their full name (usually 'first-name last-name').<br>If the ‘UserFilterEnabled’ property is true then access to the application is restricted to those users only, otherwise access is unrestricted (but always subject to other policy rules). | false | false |  |
 | AssociatedUserName | Gets applications with an associated user identified by their user name (in the form 'domain\\user'). If the ‘UserFilterEnabled’ property is true then access to the application is restricted to those users only, otherwise access is unrestricted (but always subject to other policy rules). | false | false |  |
-| AssociatedUserSID | Gets applications with an associated user identified by their Windows SID. If the ‘UserFilterEnabled’ property is true then access to the application is restricted to those users only, otherwise access is unrestricted (but always subject to other policy rules). | false | false |  |
 | AssociatedUserUPN | Gets applications with an associated user identified by their user principle name (in the form 'user@domain'). If the ‘UserFilterEnabled’ property is true then access to the application is restricted to those users only, otherwise access is unrestricted (but always subject to other policy rules). | false | false |  |
 | BrowserName | Gets only the applications that match the supplied name. The BrowserName is usually an internal name for the application and is unique in the site. | false | false |  |
 | ClientFolder | Gets only the applications that match the specified value for the folder the application belongs to as seen by the end-user. This folder can be seen in the Citrix Online Plug-in, in Web Services, and also potentially in the user's start menu. | false | false |  |
@@ -161,8 +154,6 @@ The BrokerApplication object represents a published application in the site. It 
 | IconFromClient | Gets only the applications that have the specified value for whether the application icon should be retrieved from the user device. | false | false |  |
 | IconUid | Gets only the applications that use the specified icon (identified by its Uid). | false | false |  |
 | IgnoreUserHomeZone | Gets only applications that have the specified behaviour with respect to ignoring user home zones during launch. | false | false |  |
-| LocalLaunchDisabled | Gets only applications that have the specified local launch behaviour | false | false |  |
-| MaxPerMachineInstances | Gets only applications with the specified maximum allowed concurrently running instances that an individual machine can have. | false | false |  |
 | MaxPerUserInstances | Gets only applications with the specified maximum allowed concurrently running instances that an individual user can have. | false | false |  |
 | MaxTotalInstances | Gets only applications with the specified maximum allowed total of concurrently running instances in the site. | false | false |  |
 | MetadataKey | Gets only applications whose associated metadata contains key names matching the specified value. | false | false |  |

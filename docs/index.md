@@ -1,14 +1,10 @@
-# Citrix Virtual Apps and Desktops 1811 SDK
+# XenApp and XenDesktop SDK
 
 > **Note:**
 > 
-> Citrix Virtual Apps and Desktops was formerly XenApp and XenDesktop.
->
->The new product and component names stem from the expanding Citrix portfolio and cloud strategy.
-Implementing this transition in our products and their documentation is an ongoing process.
-Your patience during this transition is appreciated. For more detail about our new names, see <https://www.citrix.com/about/citrix-product-guide/>.
+> This SDK does not contain any changes since XenApp and XenDesktop version 7.15 LTSR
 
-Citrix Virtual Apps and Desktops provide an SDK based on a number of Microsoft
+XenApp and XenDesktop provide an SDK based on a number of Microsoft
 Windows PowerShell version 3.0 snap-ins that allows you to perform the
 same tasks as you would with the Citrix Studio console, together with
 tasks you cannot do with Studio alone.
@@ -37,7 +33,7 @@ To access and run the cmdlets:
 > You must run the shell or script using an identity that has Citrix
 > administration rights. Although members of the local administrators
 > group on the Controller automatically have full administrative
-> privileges to allow Citrix Virtual Apps and Desktops to be installed, Citrix recommends that
+> privileges to allow XenDesktop to be installed, Citrix recommends that
 > for normal operation, you create Citrix administrators with the
 > appropriate rights, rather than use the local administrators account.
 
@@ -62,7 +58,8 @@ To access and run the cmdlets:
 For an example of a typical use case, see [Get started with the
 SDK](./getting-started.md).
 
-Note: For a complete listing of all help text for the cmdlets, see [PowerShell cmdlet help](http://docs.citrix.com/en-us/xenapp-and-xendesktop/7-6/cds-sdk-wrapper-rho/xad-commands/).
+!!! tip "Note"
+    For a complete listing of all help text for the cmdlets, see [PowerShell cmdlet help](http://docs.citrix.com/en-us/xenapp-and-xendesktop/7-6/cds-sdk-wrapper-rho/xad-commands/).
 
 ## Group Policy SDK usage
 
@@ -75,8 +72,17 @@ installed.
 
 **Adding the Group Policy SDK**
 
-1. To add the Group Policy SDK, type: `Add-PSSnapin citrix.common.grouppolicy`  
-2. To access help, type: `help New-PSDrive -path localgpo:/`
+1.To add the Group Policy SDK, type:
+
+```
+Add-PSSnapin citrix.common.grouppolicy
+```
+<br>          
+2.To access help, type:
+
+```
+help New-PSDrive -path localgpo:/
+```
 
 **Using the Group Policy SDK**
 

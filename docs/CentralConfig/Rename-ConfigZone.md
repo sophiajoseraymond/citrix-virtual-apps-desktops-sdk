@@ -1,6 +1,7 @@
-﻿
-# Rename-Configzone
-Rename a zone.
+﻿# Rename-ConfigZone
+
+   Rename a zone.
+
 ## Syntax
 ```
 Rename-ConfigZone [-InputObject] <Zone> [-NewName] <String> [-PassThru] [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
@@ -9,21 +10,21 @@ Rename-ConfigZone [-Uid] <Guid> [-NewName] <String> [-PassThru] [-LoggingId <Gui
 
 Rename-ConfigZone [-Name] <String> [-NewName] <String> [-PassThru] [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
+
 ## Detailed Description
-This cmdlet renames a zone.
+   This cmdlet renames a zone.
 
 All zone names must be unique.
 
-
 ## Related Commands
-
-* [New-ConfigZone](./New-ConfigZone/)
-* [Set-ConfigZone](./Set-ConfigZone/)
-* [Get-ConfigZone](./Get-ConfigZone/)
-* [Remove-ConfigZone](./Remove-ConfigZone/)
-* [Set-ConfigSite](./Set-ConfigSite/)
-* [Set-ConfigService](./Set-ConfigService/)
+  * [New-ConfigZone](New-ConfigZone.html)
+  * [Set-ConfigZone](Set-ConfigZone.html)
+  * [Get-ConfigZone](Get-ConfigZone.html)
+  * [Remove-ConfigZone](Remove-ConfigZone.html)
+  * [Set-ConfigSite](Set-ConfigSite.html)
+  * [Set-ConfigService](Set-ConfigService.html)
 ## Parameters
+
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
 | InputObject | Specifies the zone to rename (by zone object). | true | true (ByValue) |  |
@@ -36,18 +37,15 @@ All zone names must be unique.
 | AdminAddress | Specifies the address of a XenDesktop controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
 ## Input Type
-
 ### Citrix.Configuration.Sdk.Zone
-You can pipe the zone to be renamed into this command.
+   You can pipe the zone to be renamed into this command.
 ## Return Values
-
-### None Or Citrix.Configuration.Sdk.Zone
-This cmdlet does not generate any output, unless you use the PassThru parameter, in which case it returns the zone with new name.
+### None or Citrix.Configuration.Sdk.Zone
+   This cmdlet does not generate any output, unless you use the PassThru parameter, in which case it returns the zone with new name.
 ## Examples
 
-### Example 1
+### EXAMPLE 1
 ```
 C:\PS> Rename-ConfigZone -Name 'New York' -NewName 'Manhattan'
 ```
-#### Description
-Renames the 'New York' zone to 'Manhattan'.
+   Description<br>-----------<br>Renames the 'New York' zone to 'Manhattan'.

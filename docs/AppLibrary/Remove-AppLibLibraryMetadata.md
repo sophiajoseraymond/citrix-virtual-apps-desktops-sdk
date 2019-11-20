@@ -14,8 +14,6 @@ Remove-AppLibLibraryMetadata [-LibraryName] <String> -Map <PSObject> [-LoggingId
 Remove-AppLibLibraryMetadata [-InputObject] <Library[]> -Name <String> [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
 
 Remove-AppLibLibraryMetadata [-InputObject] <Library[]> -Map <PSObject> [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
-
-Remove-AppLibLibraryMetadata -Map <PSObject> [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
 ## Detailed Description
 Provides the ability to remove metadata from the given Library.
@@ -49,12 +47,6 @@ If the command fails, the following errors can be returned.<br>    Error Codes<b
 ## Examples
 
 ### Example 1
-```
-c:\PS>Remove-AppLibLibraryMetadata -LibraryUid 1 -Name "Custom Data"
-```
-#### Description
-Removes the metadata item named 'Custom Data' from the specified Library object.
-### Example 2
 ```
 c:\PS>Get-AppLibLibrary | % { Remove-AppLibLibraryMetadata -Map $_.MetadataMap }
 ```

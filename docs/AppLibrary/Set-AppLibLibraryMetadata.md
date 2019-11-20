@@ -41,15 +41,15 @@ Provides the ability for additional custom data to be stored against given Libra
 
 ## Return Values
 
-### System.Collections.Generic.Dictionary\[String,String\]<br>                    Set-Appliblibrarymetadata Returns A Dictionary Containing The New (Name, Value)-Pairs.<br>                    Key &lt;String&gt;<br>                    Specifies The Name Of The Property.<br>                    Value &lt;String&gt;<br>        Specifies The Value For The Property.
-
+### System.Collections.Generic.Dictionary\[String,String\]
+Set-AppLibLibraryMetadata returns a dictionary containing the new (name, value)-pairs.<br>                    Key &lt;string&gt;<br>                    Specifies the name of the property.<br>                    Value &lt;string&gt;<br>        Specifies the value for the property.
 ## Notes
 If the command fails, the following errors can be returned.<br>    Error Codes<br>    -----------<br>    InvalidParameterCombination<br>        The cmdlet parameters are inconsistent.<br>    UnknownObject<br>        One of the specified objects was not found.<br>    DatabaseError<br>        An error occurred in the service while attempting a database operation.<br>    DatabaseNotConfigured<br>        The operation could not be completed because the database for the service is not configured.<br>    DataStoreException<br>        An error occurred in the service while attempting a database operation - communication with the database failed for various reasons.<br>    PermissionDenied<br>        You do not have permission to execute this command.<br>    AuthorizationError<br>        There was a problem communicating with the Citrix Delegated Administration Service.<br>    ConfigurationLoggingError<br>        The operation could not be performed because of a configuration logging error.<br>    CommunicationError<br>        There was a problem communicating with the remote service.<br>    ExceptionThrown<br>        An unexpected error occurred.  For more details, see the Windows event logs on the controller or the XenDesktop logs.
 ## Examples
 
 ### Example 1
 ```
-c:\PS>Set-AppLibLibraryMetadata -LibraryUid 1 -Name property -Value value
+c:\PS>Set-AppLibLibraryMetadata -LibraryUid 4CECC26E-48E1-423F-A1F0-2A06DDD0805C -Name property -Value value
 
                     Key                                       Value
 
@@ -58,4 +58,4 @@ c:\PS>Set-AppLibLibraryMetadata -LibraryUid 1 -Name property -Value value
                     property                                  value
 ```
 #### Description
-Add metadata with a name of 'property' and a value of 'value' to the Library with the Uid 1.
+Add metadata with a name of 'property' and a value of 'value' to the Library with the identifier '4CECC26E-48E1-423F-A1F0-2A06DDD0805C'.

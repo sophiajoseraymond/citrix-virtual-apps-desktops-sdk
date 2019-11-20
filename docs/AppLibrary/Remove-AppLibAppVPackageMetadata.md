@@ -14,8 +14,6 @@ Remove-AppLibAppVPackageMetadata [-AppVPackageName] <String> -Map <PSObject> [-L
 Remove-AppLibAppVPackageMetadata [-InputObject] <AppVPackage[]> -Name <String> [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
 
 Remove-AppLibAppVPackageMetadata [-InputObject] <AppVPackage[]> -Map <PSObject> [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
-
-Remove-AppLibAppVPackageMetadata -Map <PSObject> [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
 ## Detailed Description
 Provides the ability to remove metadata from the given AppVPackage.
@@ -49,12 +47,6 @@ If the command fails, the following errors can be returned.<br>    Error Codes<b
 ## Examples
 
 ### Example 1
-```
-c:\PS>Remove-AppLibAppVPackageMetadata -AppVPAckageUid 1 -Name "Custom Data"
-```
-#### Description
-Removes the metadata item named 'Custom Data' from the specified AppVPackage object.
-### Example 2
 ```
 c:\PS>Get-AppLibAppVPackage | % { Remove-AppLibAppVPackageMetadata -Map $_.MetadataMap }
 ```

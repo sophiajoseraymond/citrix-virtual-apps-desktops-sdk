@@ -1,21 +1,22 @@
-﻿
-# Add-Sfservertocluster
-Adds a new server to an existing cluster.
+﻿# Add-SfServerToCluster
+
+   Adds a new server to an existing cluster.
+
 ## Syntax
 ```
 Add-SfServerToCluster -ClusterId <Guid> -ServerName <String> [-StorefrontUrl <Uri>] [-FarmName <String>] [-XmlServices <Uri[]>] [-RunAsynchronously <Boolean>] [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
-## Detailed Description
-Adds a new server to an existing cluster. Optionally updates Farm and Storefront Url. After operation succeeds, all servers are configured identically.
 
+## Detailed Description
+   Adds a new server to an existing cluster. Optionally updates Farm and Storefront Url. After operation succeeds, all servers are configured identically.
 
 ## Related Commands
-
-* [Get-SfCluster](./Get-SfCluster/)
-* [New-SfCluster](./New-SfCluster/)
-* [Remove-SfServerFromCluster](./Remove-SfServerFromCluster/)
-* [Set-SfCluster](./Set-SfCluster/)
+  * [Get-SfCluster](Get-SfCluster.html)
+  * [New-SfCluster](New-SfCluster.html)
+  * [Remove-SfServerFromCluster](Remove-SfServerFromCluster.html)
+  * [Set-SfCluster](Set-SfCluster.html)
 ## Parameters
+
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
 | ClusterId | The id of the cluster to perform operation on. | true | false |  |
@@ -29,18 +30,15 @@ Adds a new server to an existing cluster. Optionally updates Farm and Storefront
 | AdminAddress | Specifies the address of a XenDesktop controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
 ## Input Type
-
 ### 
-
+   
 ## Return Values
-
-### Citrix.Storefront.Sdk.Task Or Citrix.Storefront.Datamodel.Cluster
-Returns cluster description or a task, if ran asynchronously.
+### Citrix.Storefront.Sdk.Task or Citrix.Storefront.DataModel.Cluster
+   Returns cluster description or a task, if ran asynchronously.
 ## Examples
 
-### Example 1
+### EXAMPLE 1
 ```
 Add-SfServerToCluster -ClusterId (Guid) -ServerName NewSfServer -RunAsynchronously $true
 ```
-#### Description
-Adds "NewSfServer" to cluster with id (Guid).
+   Description<br>-----------<br>Adds "NewSfServer" to cluster with id (Guid).

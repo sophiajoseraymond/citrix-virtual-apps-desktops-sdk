@@ -49,13 +49,7 @@ Get-AppLibIsolationGroup -Name "MyIsolationGroup"
 Gets the details of the isolation group named MyIsolationGroup.
 ### Example 3
 ```
-Get-AppLibIsolationGroup -IsolationGroupUid 5
+Get-AppLibIsolationGroup -libraryUid 1
 ```
 #### Description
-Gets the details for the isolation with a Uid of 5.
-### Example 4
-```
-Get-AppLibIsolationGroup -IsolationGroupUid 5 -IncludePolicy $true
-```
-#### Description
-Gets the details for the isolation with a Uid of 5 and also returns the Citrix Group Policy data that defines the object.
+Gets the details for all of the isolation groups in the specified library.

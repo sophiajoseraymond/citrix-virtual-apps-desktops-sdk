@@ -21,7 +21,7 @@ The reboot schedule object returned represents a regularly scheduled reboot of m
 
   * Active (System.Boolean) True if there is an active reboot cycle for this schedule, false otherwise.
 
-  * Day (Citrix.Broker.Admin.SDK.RebootScheduleDays?) When the frequency is weekly, day of the week on which the schedule reboot starts.
+  * Day (Citrix.Broker.Admin.SDK.RebootScheduleDays) When the frequency is weekly, day of the week on which the schedule reboot starts.
 
   * Description (System.String) An optional description for the reboot schedule.
 

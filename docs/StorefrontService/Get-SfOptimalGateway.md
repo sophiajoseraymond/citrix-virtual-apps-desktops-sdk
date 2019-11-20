@@ -1,19 +1,20 @@
-﻿
-# Get-Sfoptimalgateway
-Gets the configured optimal gateways for farms.
+﻿# Get-SfOptimalGateway
+
+   Gets the configured optimal gateways for farms.
+
 ## Syntax
 ```
 Get-SfOptimalGateway -SiteId <Int64> -ResourcesVirtualPath <String> [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
-## Detailed Description
-Gets the configured optimal gateways for farms.
 
+## Detailed Description
+   Gets the configured optimal gateways for farms.
 
 ## Related Commands
-
-* [Set-SfOptimalGatewayCommand](./Set-SfOptimalGatewayCommand/)
-* [Remove-SfOptimalGatewayCommand](./Remove-SfOptimalGatewayCommand/)
+  * [Set-SfOptimalGatewayCommand](Set-SfOptimalGatewayCommand.html)
+  * [Remove-SfOptimalGatewayCommand](Remove-SfOptimalGatewayCommand.html)
 ## Parameters
+
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
 | SiteId | Site ID within IIS. This is typically 1 for the site in IIS where StoreFront is installed by default. | true | true (ByPropertyName) |  |
@@ -22,18 +23,15 @@ Gets the configured optimal gateways for farms.
 | AdminAddress | Specifies the address of a XenDesktop controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
 ## Input Type
-
 ### None
-
+   
 ## Return Values
-
-### Citrix.Storefront.Sdk.Optimalgateway
-
+### Citrix.Storefront.Sdk.OptimalGateway
+   
 ## Examples
 
-### Example 1
+### EXAMPLE 1
 ```
 C:\PS>Get-DSOptimalGatewayForFarms -siteId 1 -ResourcesVirtualPath "/Citrix/MyStore"
 ```
-#### Description
-
+   Description<br>-----------

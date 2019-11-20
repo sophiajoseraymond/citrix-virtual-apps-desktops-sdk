@@ -1,6 +1,7 @@
-﻿
-# Remove-Configzone
-Removes a zone from the site.
+﻿# Remove-ConfigZone
+
+   Removes a zone from the site.
+
 ## Syntax
 ```
 Remove-ConfigZone [-InputObject] <Zone[]> [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
@@ -9,21 +10,21 @@ Remove-ConfigZone [-Uid] <Guid[]> [-LoggingId <Guid>] [-BearerToken <String>] [-
 
 Remove-ConfigZone [-Name] <String[]> [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
+
 ## Detailed Description
-This cmdlet removes zones from a site.
+   This cmdlet removes zones from a site.
 
 You cannot remove a zone that is marked as primary or has associated controllers.
 
-
 ## Related Commands
-
-* [Get-ConfigZone](./Get-ConfigZone/)
-* [New-ConfigZone](./New-ConfigZone/)
-* [Set-ConfigZone](./Set-ConfigZone/)
-* [Rename-ConfigZone](./Rename-ConfigZone/)
-* [Set-ConfigSite](./Set-ConfigSite/)
-* [Set-ConfigService](./Set-ConfigService/)
+  * [Get-ConfigZone](Get-ConfigZone.html)
+  * [New-ConfigZone](New-ConfigZone.html)
+  * [Set-ConfigZone](Set-ConfigZone.html)
+  * [Rename-ConfigZone](Rename-ConfigZone.html)
+  * [Set-ConfigSite](Set-ConfigSite.html)
+  * [Set-ConfigService](Set-ConfigService.html)
 ## Parameters
+
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
 | InputObject | Specifies the zone to remove (by zone object). | true | true (ByValue) |  |
@@ -34,26 +35,21 @@ You cannot remove a zone that is marked as primary or has associated controllers
 | AdminAddress | Specifies the address of a XenDesktop controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
 ## Input Type
-
 ### Citrix.Configuration.Sdk.Zone
-You can pipe the zones to be deleted into this command.
+   You can pipe the zones to be deleted into this command.
 ## Return Values
-
 ### None
-
+   
 ## Examples
 
-### Example 1
+### EXAMPLE 1
 ```
 C:\PS> Remove-ConfigZone -Name 'Sydney'
 ```
-#### Description
-Remove the zone specified by name. This fails if one of the zones has controllers associated.
-### Example 2
+   Description<br>-----------<br>Remove the zone specified by name. This fails if one of the zones has controllers associated.
+### EXAMPLE 2
 ```
 C:\PS> Get-ConfigService | Set-ConfigService -Zone (Get-ConfigZone -IsPrimary $true)
-
 C:\PS> Get-ConfigZone -IsPrimary $false | Remove-ConfigZone
 ```
-#### Description
-Move all controllers to the primary zone. Remove all non-primary zones.
+   Description<br>-----------<br>Move all controllers to the primary zone. Remove all non-primary zones.

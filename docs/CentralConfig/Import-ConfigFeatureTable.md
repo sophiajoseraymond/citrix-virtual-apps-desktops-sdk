@@ -1,27 +1,28 @@
-﻿
-# Import-Configfeaturetable
-Sets the feature table of the site.
+﻿# Import-ConfigFeatureTable
+
+   Sets the feature table of the site.
+
 ## Syntax
 ```
 Import-ConfigFeatureTable [-Path] <String> [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
 
 Import-ConfigFeatureTable -Content <String> [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
+
 ## Detailed Description
-
-
+   
 
 ## Related Commands
-
-* [Export-ConfigFeatureTable](./Export-ConfigFeatureTable/)
-* [Get-ConfigSite](./Get-ConfigSite/)
-* [Set-ConfigSite](./Set-ConfigSite/)
-* [Get-ConfigProduct](./Get-ConfigProduct/)
-* [Get-ConfigProductEdition](./Get-ConfigProductEdition/)
-* [Get-ConfigProductFeature](./Get-ConfigProductFeature/)
-* [Get-ConfigProductVersion](./Get-ConfigProductVersion/)
-* [Get-ConfigLicensingModel](./Get-ConfigLicensingModel/)
+  * [Export-ConfigFeatureTable](Export-ConfigFeatureTable.html)
+  * [Get-ConfigSite](Get-ConfigSite.html)
+  * [Set-ConfigSite](Set-ConfigSite.html)
+  * [Get-ConfigProduct](Get-ConfigProduct.html)
+  * [Get-ConfigProductEdition](Get-ConfigProductEdition.html)
+  * [Get-ConfigProductFeature](Get-ConfigProductFeature.html)
+  * [Get-ConfigProductVersion](Get-ConfigProductVersion.html)
+  * [Get-ConfigLicensingModel](Get-ConfigLicensingModel.html)
 ## Parameters
+
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
 | Path | The path to the file containing the feature table | true | false |  |
@@ -31,18 +32,15 @@ Import-ConfigFeatureTable -Content <String> [-LoggingId <Guid>] [-BearerToken <S
 | AdminAddress | Specifies the address of a XenDesktop controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
 ## Input Type
-
 ### 
-
+   
 ## Return Values
-
 ### 
-
+   
 ## Examples
 
-### Example 1
+### EXAMPLE 1
 ```
 C:\PS> Import-ConfigFeatureTable $xml
 ```
-#### Description
-Specifies the use of a Platinum edition license. A suitable license must be available on the site's license server.
+   Description<br>-----------<br>Specifies the use of a Platinum edition license. A suitable license must be available on the site's license server.

@@ -1,6 +1,7 @@
-﻿
-# Remove-Logoperation
-Deletes configuration logs
+﻿# Remove-LogOperation
+
+   Deletes configuration logs
+
 ## Syntax
 ```
 Remove-LogOperation -DatabaseCredentials <PSCredential> [-StartDateRange <DateTime>] [-EndDateRange <DateTime>] [-IncludeIncomplete] [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
@@ -9,14 +10,14 @@ Remove-LogOperation -UserName <String> [-Password <String>] [-StartDateRange <Da
 
 Remove-LogOperation -UserName <String> -SecurePassword <SecureString> [-StartDateRange <DateTime>] [-EndDateRange <DateTime>] [-IncludeIncomplete] [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
-## Detailed Description
-Remove-LogOperation deletes logs from the Configuration  Logging database. This cmdlet targets high level operation logs for deletion. The associated low level operations logs are deleted as part of this operation via cascade deletion functionality present in the configuration logging database schema.
 
+## Detailed Description
+   Remove-LogOperation deletes logs from the Configuration  Logging database. This cmdlet targets high level operation logs for deletion. The associated low level operations logs are deleted as part of this operation via cascade deletion functionality present in the configuration logging database schema.
 
 ## Related Commands
-
-* [](.//)
+  * [](.html)
 ## Parameters
+
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
 | DatabaseCredentials | Specifies the credentials of a database user with permission to delete records from the Configuration Logging database. | true | false |  |
@@ -31,40 +32,32 @@ Remove-LogOperation deletes logs from the Configuration  Logging database. This 
 | AdminAddress | Specifies the address of a XenDesktop controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
 ## Input Type
-
 ### 
-
+   
 ## Return Values
-
 ### 
-
+   
 ## Examples
 
-### Example 1
+### EXAMPLE 1
 ```
 C:\PS> Remove-LogOperation  -UserName "DOMAIN\User"  -Password "UserPassword"
 ```
-#### Description
-Remove all completed operation logs
-### Example 2
+   Description<br>-----------<br>Remove all completed operation logs
+### EXAMPLE 2
 ```
 C:\PS> Remove-LogOperation  -UserName "DOMAIN\User"  -Password "UserPassword" -IncludeIncomplete
 ```
-#### Description
-Remove all operations
-### Example 3
+   Description<br>-----------<br>Remove all operations
+### EXAMPLE 3
 ```
 C:\PS> Remove-LogOperation -username "domain\userName" -password "password" -StartDateRange "2013-01-01 12:00:00"  -EndDateRange "2013-01-31 12:00:00"
 ```
-#### Description
-Delete logs started on or after "2013-01-01 12:00:00" and completed on or before "2013-01-31 12:00:00"
-### Example 4
+   Description<br>-----------<br>Delete logs started on or after "2013-01-01 12:00:00" and completed on or before "2013-01-31 12:00:00"
+### EXAMPLE 4
 ```
 C:\PS> $securePassword = ConvertTo-SecureString -String "UserPassword" -AsPlainText -Force
-
 C:\PS> $credentials    = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList "DOMAIN\UserName", $securePassword
-
 C:\PS> Remove-LogOperation -StartDateRange -DatabaseCredentials $credentials
 ```
-#### Description
-Delete logs by supplying database user credentials via a credentials object.
+   Description<br>-----------<br>Delete logs by supplying database user credentials via a credentials object.

@@ -28,7 +28,7 @@ Use the Get-AdminAdministrator cmdlet to determine what rights an administrator 
 | InputObject | Specifies the rights to remove. | true | true (ByValue) |  |
 | Scope | Specifies the scope name or scope identifier. | true | false |  |
 | Role | Specifies the role name or role identifier. | true | false |  |
-| Administrator | Specifies the name or ID of the administrator. | true | false |  |
+| Administrator | Specifies the name or SID of the administrator. | true | false |  |
 | All | Specifies the 'All' scope. This parameter avoids localization issues or having to type the identifier of the 'All' scope. | false | false |  |
 | LoggingId | Specifies the identifier of the high-level operation this cmdlet call forms a part of. Citrix Studio and Director typically create high-level operations. PowerShell scripts can also wrap a series of cmdlet calls in a high-level operation by way of the Start-LogHighLevelOperation and Stop-LogHighLevelOperation cmdlets. | false | false |  |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |

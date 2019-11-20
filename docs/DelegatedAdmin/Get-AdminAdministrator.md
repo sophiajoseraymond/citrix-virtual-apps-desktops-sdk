@@ -3,7 +3,7 @@
 Gets administrators configured for this site.
 ## Syntax
 ```
-Get-AdminAdministrator [[-Name] <String>] [-Sid <String>] [-Enabled <Boolean>] [-Metadata <String>] [-UserIdentity <String>] [-UserIdentityType <UserIdentityType>] [-Property <String[]>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
+Get-AdminAdministrator [[-Name] <String>] [-Sid <String>] [-Enabled <Boolean>] [-Metadata <String>] [-Property <String[]>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
 ## Detailed Description
 Retrieves administrators matching the specified criteria. If no parameters are specified this cmdlet enumerates all administrators.
@@ -25,8 +25,6 @@ See about\_Admin\_Filtering for information about advanced filtering options.
 | Sid | Gets administrators with the specified SID (security identifier). | false | true (ByPropertyName) |  |
 | Enabled | Gets administrators with the specified value of Enabled. | false | false |  |
 | Metadata | Gets records with matching metadata entries.<br>The value being compared with is a concatenation of the key name, a colon, and the value. For example: -Metadata "abc:x\*" matches records with a metadata entry having a key name of "abc" and a value starting with the letter "x". | false | false |  |
-| UserIdentity | Gets administrators with the specified UserIdentity (Windows security identifier or Citrix Cloud Identity). If the UserIdentityType is a Sid this will be the same as the Sid property. For Cloud administrators this will show cloud identity and the the Sid property will be null. | false | false |  |
-| UserIdentityType | Gets administrators with the specified UserIdentityType (Windows security identifier or Citrix Cloud Identity). | false | false |  |
 | Property | Specifies the properties to be returned. This is similar to piping the output of the command through Select-Object, but the properties are filtered more efficiently at the server. | false | false |  |
 | ReturnTotalRecordCount | When specified, the cmdlet outputs an error record containing the number of records available. This error record is additional information and does not affect the objects written to the output pipeline. See about\_Admin\_Filtering for details. | false | false | False |
 | MaxRecordCount | Specifies the maximum number of records to return. | false | false | 250 |

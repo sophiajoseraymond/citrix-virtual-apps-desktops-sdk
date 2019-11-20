@@ -1,20 +1,12 @@
-﻿
-# about\_SfStorefrontSnapIn
+﻿# about_SfStorefrontSnapIn
+## TOPIC
+    about_SfStorefrontSnapin 
 
-## Topic
-about\_SfStorefrontSnapin
+## SHORT DESCRIPTION
+   This service short description 
 
+## COMMAND PREFIX
+    All commands in this snap-in have the noun prefixed with 'Sf'. 
 
-## Short Description
-
-This service short description
-
-
-## Command Prefix
-All commands in this snap-in have the noun prefixed with 'Sf'.
-
-
-## Long Description
-This service long description
-
-
+## LONG DESCRIPTION
+    This service long description 

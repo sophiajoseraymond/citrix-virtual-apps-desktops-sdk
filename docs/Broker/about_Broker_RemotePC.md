@@ -77,17 +77,17 @@ A Windows eventlog message is generated when an automated catalog assignment is 
 ### Notes
 The AD distinguished name for the container is checked when the RemotePCAccount is created, but if the container is subsequently moved or deleted, the site does not automatically accommodate this, and the RemotePCAccount must be changed or removed manually.
 
+Related Cmdlets ---------------
 
-### Related Cmdlets
-
-* [New-BrokerRemotePCAccount](./New-BrokerRemotePCAccount/)
-* [Get-BrokerRemotePCAccount](./Get-BrokerRemotePCAccount/)
-* [Set-BrokerRemotePCAccount](./Set-BrokerRemotePCAccount/)
-* [Remove-BrokerRemotePCAccount](./Remove-BrokerRemotePCAccount/)
-* [New-BrokerCatalog \[-IsRemotePC &lt;Boolean&gt;\]](./New-BrokerCatalog/)
-* [Set-BrokerCatalog \[-IsRemotePC &lt;Boolean&gt;\]](./Set-BrokerCatalog/)
+  * New-BrokerRemotePCAccount
+  * Get-BrokerRemotePCAccount
+  * Set-BrokerRemotePCAccount
+  * Remove-BrokerRemotePCAccount
+  * New-BrokerCatalog \[-IsRemotePC &lt;Boolean&gt;\]
+  * Set-BrokerCatalog \[-IsRemotePC &lt;Boolean&gt;\]
 
 ## Catalogs And Desktop Groups
+
 A Remote PC catalog may be associated with one or more Remote PC desktop groups. The catalog to desktop group associations support automated publishing of machines to users.
 
 
@@ -204,14 +204,6 @@ The following example creates a simple configuration that allows any user and ma
     Add-BrokerDesktopGroup $dg -RemotePCCatalog $catalog 
 
 ```
+#Create an access policy rule, allowing access to the users to the #Remote PC desktop group. New-BrokerAccessPolicyRule -IncludedUsers 'domain users' -DesktopGroupUid \$dg.Uid -IncludedUserFilterEnabled \$true -Name RemotePCAccessPolicyRule
 
-```
-    # Create an access policy rule, allowing access to the users to the 
-    # Remote PC desktop group. 
-    New-BrokerAccessPolicyRule -IncludedUsers 'domain users' 
-                               -DesktopGroupUid $dg.Uid 
-                               -IncludedUserFilterEnabled $true 
-                               -Name RemotePCAccessPolicyRule 
-
-```
 

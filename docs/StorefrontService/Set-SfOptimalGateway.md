@@ -1,19 +1,20 @@
-﻿
-# Set-Sfoptimalgateway
-Set the farms and the optimal gateway to use for launch.
+﻿# Set-SfOptimalGateway
+
+   Set the farms and the optimal gateway to use for launch.
+
 ## Syntax
 ```
 Set-SfOptimalGateway -SiteId <Int64> -ResourcesVirtualPath <String> -HostNames <String[]> -StaUrls <String[]> -Farm <String> [-StasBypassDuration <TimeSpan>] [-StasUseLoadBalancing] [-EnableSessionReliability] [-UseTwoTickets] [-EnabledOnDirectAccess] [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
-## Detailed Description
-Set the farms and the optimal gateway to use for launch.
 
+## Detailed Description
+   Set the farms and the optimal gateway to use for launch.
 
 ## Related Commands
-
-* [Get-SfOptimalGatewayCommand](./Get-SfOptimalGatewayCommand/)
-* [Remove-SfOptimalGatewayCommand](./Remove-SfOptimalGatewayCommand/)
+  * [Get-SfOptimalGatewayCommand](Get-SfOptimalGatewayCommand.html)
+  * [Remove-SfOptimalGatewayCommand](Remove-SfOptimalGatewayCommand.html)
 ## Parameters
+
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
 | SiteId | Site ID within IIS. This is typically 1 for the site in IIS where StoreFront is installed by default. | true | true (ByPropertyName) |  |
@@ -31,18 +32,15 @@ Set the farms and the optimal gateway to use for launch.
 | AdminAddress | Specifies the address of a XenDesktop controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
 ## Input Type
-
 ### None
-
+   
 ## Return Values
-
 ### None
-
+   
 ## Examples
 
-### Example 1
+### EXAMPLE 1
 ```
 C:\PS>Set-DSOptimalGatewayForFarms -SiteId 1 -ResourcesVirtualPath /Citrix/Store -Hostnames @("gateway1.citrix.com:2222") -StaUrls @("https://server1.citrix.com/staurl") -StasBypassDuration "00.02:00:00" -EnabledOnDirectAccess
 ```
-#### Description
-
+   Description<br>-----------

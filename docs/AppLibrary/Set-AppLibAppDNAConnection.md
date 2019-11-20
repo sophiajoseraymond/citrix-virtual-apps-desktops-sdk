@@ -34,8 +34,8 @@ Sets the connection details for integration of AppDNA into AppLibrary to allow A
 The secure string representing the user's password.
 ## Return Values
 
-### Citrix.Applibrary.Sdk.Appdnaconnection<br>                    This Object Provides Details Of The Appdna Connection And Contains The Following Information:<br>                    Address &lt;String&gt;<br>                    The Url Of The Appdna Web Server.<br>                    Database &lt;String&gt;<br>                    The Database Identifier From The Appdna Site<br>                    Enabled &lt;Bool&gt;<br>                    Whether Or Not The Connection Is Enabled<br>                    Username &lt;String&gt;<br>                    The User Account Name Used To Make The Connection.
-
+### Citrix.Applibrary.Sdk.Appdnaconnection
+This object provides details of the AppDNA Connection and contains the following information:<br>                    Address &lt;string&gt;<br>                    The URL of the AppDNA web server.<br>                    Database &lt;string&gt;<br>                    The database identifier from the AppDNA site<br>                    Enabled &lt;bool&gt;<br>                    Whether or not the connection is enabled<br>                    Username &lt;string&gt;<br>                    The user account name used to make the connection.
 ## Notes
 The AppDNA user's password is stored securely and is never returned in the AppDNAConnection object.<br>    Only one AppDNA configuration can be stored. If a connection is already set up, the connection details will be replaced.<br>    The connection will be enabled by default in the AppLibrary when the details are set.
 ## Examples

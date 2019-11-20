@@ -1,5 +1,5 @@
 ﻿
-# about\_OrchOrchestrationSnapIn
+# about\_OrchOrchestrationSnapin
 
 ## Topic
 about\_OrchOrchestrationSnapin

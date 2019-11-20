@@ -14,8 +14,6 @@ Remove-AppLibIsolationGroupMetadata [-IsolationGroupName] <String> -Map <PSObjec
 Remove-AppLibIsolationGroupMetadata [-InputObject] <IsolationGroup[]> -Name <String> [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
 
 Remove-AppLibIsolationGroupMetadata [-InputObject] <IsolationGroup[]> -Map <PSObject> [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
-
-Remove-AppLibIsolationGroupMetadata -Map <PSObject> [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
 ## Detailed Description
 Provides the ability to remove metadata from the given IsolationGroup.
@@ -49,12 +47,6 @@ If the command fails, the following errors can be returned.<br>    Error Codes<b
 ## Examples
 
 ### Example 1
-```
-c:\PS>Remove-AppLibIsolationGroupMetadata -IsolationGroupUid 1 -Name "Custom Data"
-```
-#### Description
-Removes the metadata item named 'Custom Data' from the specified IsolationGroup object.
-### Example 2
 ```
 c:\PS>Get-AppLibIsolationGroup | % { Remove-AppLibIsolationGroupMetadata -Map $_.MetadataMap }
 ```

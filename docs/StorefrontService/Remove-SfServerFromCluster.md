@@ -1,21 +1,22 @@
-﻿
-# Remove-Sfserverfromcluster
-Removes server from the cluster.
+﻿# Remove-SfServerFromCluster
+
+   Removes server from the cluster.
+
 ## Syntax
 ```
 Remove-SfServerFromCluster -ClusterId <Guid> -ServerName <String> [-StorefrontUrl <Uri>] [-FarmName <String>] [-XmlServices <Uri[]>] [-RunAsynchronously <Boolean>] [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
-## Detailed Description
-Removes server from the cluster and propagates information to other servers. The configuration of the server is wiped out, so the server can be reused.
 
+## Detailed Description
+   Removes server from the cluster and propagates information to other servers. The configuration of the server is wiped out, so the server can be reused.
 
 ## Related Commands
-
-* [Get-SfCluster](./Get-SfCluster/)
-* [New-SfCluster](./New-SfCluster/)
-* [Add-SfServerToCluster](./Add-SfServerToCluster/)
-* [Set-SfCluster](./Set-SfCluster/)
+  * [Get-SfCluster](Get-SfCluster.html)
+  * [New-SfCluster](New-SfCluster.html)
+  * [Add-SfServerToCluster](Add-SfServerToCluster.html)
+  * [Set-SfCluster](Set-SfCluster.html)
 ## Parameters
+
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
 | ClusterId | The if of the cluster to perform operation on. | true | false |  |
@@ -29,18 +30,15 @@ Removes server from the cluster and propagates information to other servers. The
 | AdminAddress | Specifies the address of a XenDesktop controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
 ## Input Type
-
 ### 
-
+   
 ## Return Values
-
-### Citrix.Storefront.Sdk.Task Or Citrix.Storefront.Datamodel.Cluster
-Returns cluster description or a task, if ran asynchronously.
+### Citrix.Storefront.Sdk.Task or Citrix.Storefront.DataModel.Cluster
+   Returns cluster description or a task, if ran asynchronously.
 ## Examples
 
-### Example 1
+### EXAMPLE 1
 ```
 Remove-SfServerFromCluster -ClusterId (Guid) -ServerName BrokenSfServer -RunAsynchronously $true
 ```
-#### Description
-Removes Server "BrokenSfServer" from a Cluster with id (Guid).
+   Description<br>-----------<br>Removes Server "BrokenSfServer" from a Cluster with id (Guid).

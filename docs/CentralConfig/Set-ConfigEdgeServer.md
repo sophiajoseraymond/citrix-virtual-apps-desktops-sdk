@@ -1,6 +1,7 @@
-﻿
-# Set-Configedgeserver
-Changes the properties of an edge server
+﻿# Set-ConfigEdgeServer
+
+   Changes the properties of an edge server
+
 ## Syntax
 ```
 Set-ConfigEdgeServer [-InputObject] <EdgeServer[]> [-Description <String>] [-MachineAddress <String>] [-Sid <String>] [-Uuid <Guid>] [-ZoneUid <Guid>] [-PassThru] [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
@@ -9,17 +10,17 @@ Set-ConfigEdgeServer [-Uid] <Guid[]> [-Description <String>] [-MachineAddress <S
 
 Set-ConfigEdgeServer [-Name] <String[]> [-Description <String>] [-MachineAddress <String>] [-Sid <String>] [-Uuid <Guid>] [-ZoneUid <Guid>] [-PassThru] [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
-## Detailed Description
-The Set-ConfigEdgeServer cmdlet sets properties of an edge server or a set of edge servers. The edge server can be specified by name or by one or more edge server instances can be passed to the command either by piping or by using the -InputObject parameter
 
+## Detailed Description
+   The Set-ConfigEdgeServer cmdlet sets properties of an edge server or a set of edge servers. The edge server can be specified by name or by one or more edge server instances can be passed to the command either by piping or by using the -InputObject parameter
 
 ## Related Commands
-
-* [New-ConfigEdgeServer](./New-ConfigEdgeServer/)
-* [Get-ConfigEdgeServer](./Get-ConfigEdgeServer/)
-* [Rename-ConfigEdgeServer](./Rename-ConfigEdgeServer/)
-* [Remove-ConfigEdgeServer](./Remove-ConfigEdgeServer/)
+  * [New-ConfigEdgeServer](New-ConfigEdgeServer.html)
+  * [Get-ConfigEdgeServer](Get-ConfigEdgeServer.html)
+  * [Rename-ConfigEdgeServer](Rename-ConfigEdgeServer.html)
+  * [Remove-ConfigEdgeServer](Remove-ConfigEdgeServer.html)
 ## Parameters
+
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
 | InputObject | Specifies the edge server objects to modify. | true | true (ByValue) |  |
@@ -36,18 +37,15 @@ The Set-ConfigEdgeServer cmdlet sets properties of an edge server or a set of ed
 | AdminAddress | Specifies the address of a XenDesktop controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
 ## Input Type
-
-### Citrix.Configuration.Sdk.Edgeserver
-You can pipe the edge servers to be updated into this command.
+### Citrix.Configuration.Sdk.EdgeServer
+   You can pipe the edge servers to be updated into this command.
 ## Return Values
-
-### None Or Citrix.Configuration.Sdk.Edgeserver
-This cmdlet does not generate any output, unless you use the PassThru parameter, in which case it generates a Citrix.Configuration.Sdk.EdgeServer object.
+### None or Citrix.Configuration.Sdk.EdgeServer
+   This cmdlet does not generate any output, unless you use the PassThru parameter, in which case it generates a Citrix.Configuration.Sdk.EdgeServer object.
 ## Examples
 
-### Example 1
+### EXAMPLE 1
 ```
 C:\PS> Set-ConfigEdgeServer EdgeSrv1 -ZoneUid d8fe27fa-f33c-47ee-b6b5-80241f536164
 ```
-#### Description
-Associates the edge server 'EdgeSrv1' to a zone specified by its UID
+   Description<br>-----------<br>Associates the edge server 'EdgeSrv1' to a zone specified by its UID

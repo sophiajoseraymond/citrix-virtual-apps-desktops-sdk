@@ -33,13 +33,11 @@ The isolation group will be added to the library
 
 ### Citrix.Applibrary.Sdk.Isolationgroup
 An object representing the details of the new isolation group.
-## Notes
-If supplied, the value of the LibraryUid parameter must be 1. No other values are supported.
 ## Examples
 
 ### Example 1
 ```
-New-AppLibIsolationGroup -LibraryUid 1 -Name "MyIsolationGroup" -Description "Some description here" -Version "1.0.0.1"
+Add-AppLibIsolationGroup -LibraryUid 1 -Name "MyIsolationGroup" -Description "Some description here" -Version "1.0.0.1"
 ```
 #### Description
 Adds the isolation group to the specified library

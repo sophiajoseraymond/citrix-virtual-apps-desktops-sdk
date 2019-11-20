@@ -33,31 +33,11 @@ The isolation group will be updated with the new properties
 
 ### 
 
-## Notes
-At least one of the name, description and version parameters must be supplied.
 ## Examples
 
 ### Example 1
 ```
-Set-AppLibIsolationGroup -IsolationGroupUid 58 -Name "MyIsolationGroup"
+Set-AppLibIsolationGroup -IsolationGroupUid 58  -Name "MyIsolationGroup" -Description "Some description here" -Version "1.0.0.1"
 ```
 #### Description
-Updates only the name for the specified isolation group.
-### Example 2
-```
-Set-AppLibIsolationGroup -IsolationGroupUid 58 -Description "Some description here"
-```
-#### Description
-Updates only the description for the specified isolation group.
-### Example 3
-```
-Set-AppLibIsolationGroup -IsolationGroupUid 58 -Version "1.0.0.1"
-```
-#### Description
-Updates only the version for the specified isolation group.
-### Example 4
-```
-Set-AppLibIsolationGroup -IsolationGroupUid 58 -Name "MyIsolationGroup" -Description "Some description here" -Version "1.0.0.1"
-```
-#### Description
-Updates the name, description and version for the specified isolation group.
+Updates the specified isolation group with the new properties.

@@ -28,25 +28,19 @@ Typically, machines configured from a provisioning standpoint are not associated
 
 It is also possible for a catalog to be configured to be populated automatically with end users’ existing physical machines using the RemotePC feature. The about\_Broker\_RemotePC topic gives more detail.
 
-Provisioning configuration involves the following SDK objects:
+Provisioning configuration involves the following SDK objects: BrokerHypervisorConnection BrokerCatalog BrokerMachine BrokerRemotePCAccount BrokerUser
 
-  * BrokerHypervisorConnection
-  * BrokerCatalog
-  * BrokerMachine
-  * BrokerRemotePCAccount
-  * BrokerUser
 
     For more information, see: 
 
-* [about\_Broker\_Machines](./about_Broker_Machines/)
-* [about\_Broker\_RemotePC](./about_Broker_RemotePC/)
-* [Get-BrokerHypervisorConnection](./Get-BrokerHypervisorConnection/)
-* [Get-BrokerCatalog](./Get-BrokerCatalog/)
-* [Get-BrokerMachine](./Get-BrokerMachine/)
-* [Get-BrokerUser](./Get-BrokerUser/)
+* [Get-Help about\_Broker\_Machines](./Get-Help/)
+* [Get-Help about\_Broker\_RemotePC](./Get-Help/)
+* [Get-Help Get-BrokerHypervisorConnection](./Get-Help/)
+* [Get-Help Get-BrokerCatalog](./Get-Help/)
+* [Get-Help Get-BrokerMachine](./Get-Help/)
+* [Get-Help Get-BrokerUser](./Get-Help/)
 
 ### Brokering Configuration
-
 In order that resources (that is, desktops and applications) can be used in user sessions, the Broker must be configured to connect incoming user launch requests through StoreFront with the correct machine. This is achieved by adding machines to desktop groups. The grouping of machines in desktop groups need not necessarily match the grouping of the machines within the catalogs that were used for the configuration of provisioning. It is through the desktop group that the configuration of which users can use which machine resources is achieved.
 
 Configuration of the mapping between resources and end users is achieved through a combination of machine assignment and entitlement rules. In addition, access to those resources must also be configured (for example, some resources could be configured only to be accessible to users when they are not connecting remotely through Access Gateway.) The about\_Broker\_Policies topic gives more detail of the rich configuration options available.
@@ -57,97 +51,62 @@ When machines are virtual, the broker can be configured to minimize power usage 
 
 It is also possible to issue explicit power commands to machines. The about\_Broker\_PowerManagement topic gives more detail.
 
-Configuration of Brokering involves the following SDK objects:
+Configuration of Brokering involves the following SDK objects: BrokerDesktopGroup BrokerPrivateDesktop BrokerSharedDesktop BrokerRemotePCAccount BrokerPowerTimeScheme BrokerUser BrokerTag BrokerAccessPolicyRule BrokerAssignmentPolicyRule BrokerEntitlementPolicyRule BrokerApplication BrokerApplicationGroup BrokerApplicationInstance BrokerAppAssignmentPolicyRule BrokerAppEntitlementPolicyRule BrokerConfiguredFTA BrokerImportedFTA
 
-  * BrokerDesktopGroup
-  * BrokerPrivateDesktop
-  * BrokerSharedDesktop
-  * BrokerRemotePCAccount
-  * BrokerPowerTimeScheme
-  * BrokerUser
-  * BrokerTag
-  * BrokerAccessPolicyRule
-  * BrokerAssignmentPolicyRule
-  * BrokerEntitlementPolicyRule
-  * BrokerApplication
-  * BrokerApplicationGroup
-  * BrokerApplicationInstance
-  * BrokerAppAssignmentPolicyRule
-  * BrokerAppEntitlementPolicyRule
-  * BrokerConfiguredFTA
-  * BrokerImportedFTA
 
     For more information, see: 
 
-* [about\_Broker\_Desktops](./about_Broker_Desktops/)
-* [about\_Broker\_Policies](./about_Broker_Policies/)
-* [about\_Broker\_Applications](./about_Broker_Applications/)
-* [about\_Broker\_RemotePC](./about_Broker_RemotePC/)
-* [Get-BrokerPrivateDesktop](./Get-BrokerPrivateDesktop/)
-* [Get-BrokerSharedDesktop](./Get-BrokerSharedDesktop/)
-* [Get-BrokerPowerTimeScheme](./Get-BrokerPowerTimeScheme/)
-* [Get-BrokerUser](./Get-BrokerUser/)
-* [Get-BrokerTag](./Get-BrokerTag/)
-* [Get-BrokerAccessPolicyRule](./Get-BrokerAccessPolicyRule/)
-* [Get-BrokerAssignmentPolicyRule](./Get-BrokerAssignmentPolicyRule/)
-* [Get-BrokerEntitlementPolicyRule](./Get-BrokerEntitlementPolicyRule/)
+* [Get-Help about\_Broker\_Desktops](./Get-Help/)
+* [Get-Help about\_Broker\_Policies](./Get-Help/)
+* [Get-Help about\_Broker\_Applications](./Get-Help/)
+* [Get-Help about\_Broker\_RemotePC](./Get-Help/)
+* [Get-Help Get-BrokerPrivateDesktop](./Get-Help/)
+* [Get-Help Get-BrokerSharedDesktop](./Get-Help/)
+* [Get-Help Get-BrokerPowerTimeScheme](./Get-Help/)
+* [Get-Help Get-BrokerUser](./Get-Help/)
+* [Get-Help Get-BrokerTag](./Get-Help/)
+* [Get-Help Get-BrokerAccessPolicyRule](./Get-Help/)
+* [Get-Help Get-BrokerAssignmentPolicyRule](./Get-Help/)
+* [Get-Help Get-BrokerEntitlementPolicyRule](./Get-Help/)
 
 ### Monitoring And Administration
-
 After you have provisioned and configured machines for brokering, use the broker SDK to monitor and administer user sessions and other aspects of the delivery site.
 
-Monitoring and administration involve the following SDK objects:
+Monitoring and administration involve the following SDK objects: BrokerServiceStatus BrokerHypervisorAlert BrokerDesktop BrokerDesktopUsage BrokerHostingPowerAction BrokerSession BrokerSessionMessage
 
-  * BrokerServiceStatus
-  * BrokerHypervisorAlert
-  * BrokerDesktop
-  * BrokerDesktopUsage
-  * BrokerHostingPowerAction
-  * BrokerSession
-  * BrokerSessionMessage
 
     For more information, see: 
 
-* [about\_Broker\_Desktops](./about_Broker_Desktops/)
-* [Get-BrokerServiceStatus](./Get-BrokerServiceStatus/)
-* [Get-BrokerHypervisorAlert](./Get-BrokerHypervisorAlert/)
-* [Get-BrokerDesktop](./Get-BrokerDesktop/)
-* [Get-BrokerDesktopUsage](./Get-BrokerDesktopUsage/)
-* [Get-BrokerHostingPowerAction](./Get-BrokerHostingPowerAction/)
-* [Get-BrokerSession](./Get-BrokerSession/)
-* [Send-BrokerSessionMessage](./Send-BrokerSessionMessage/)
+* [Get-Help about\_Broker\_Desktops](./Get-Help/)
+* [Get-Help Get-BrokerServiceStatus](./Get-Help/)
+* [Get-Help Get-BrokerHypervisorAlert](./Get-Help/)
+* [Get-Help Get-BrokerDesktop](./Get-Help/)
+* [Get-Help Get-BrokerDesktopUsage](./Get-Help/)
+* [Get-Help Get-BrokerHostingPowerAction](./Get-Help/)
+* [Get-Help Get-BrokerSession](./Get-Help/)
+* [Get-Help Send-BrokerSessionMessage](./Get-Help/)
 
 ### Site Management
-
 The broker must be configured after installation; this is normally performed automatically by the Citrix Studio console. Configuration tasks include selecting the database (and obtaining the SQL scripting to initialize it), selecting the Citrix Configuration Service that holds the site configuration.
 
 Note that some aspects of broker configuration (such as the port number on which the broker listens for SDK connections) cannot be configured with PowerShell cmdlets. These are configured through the use of the Broker Service executable. For more information, see about\_Broker\_PostInstallPreConfiguration.
 
 A further important aspect of site management concerns the way in which machines providing resources identify the delivery controllers to which they belong. For more information, see about\_Broker\_ControllerDiscovery.
 
-Managing XenDesktop sites involves the following SDK objects:
+Managing XenDesktop sites involves the following SDK objects: BrokerSite BrokerController BrokerDBConnection BrokerDBSchema BrokerDBVersionChangeScript BrokerInstalledDbVersion BrokerServiceInstance BrokerServiceGroupMembership BrokerNameCache
 
-  * BrokerSite
-  * BrokerController
-  * BrokerDBConnection
-  * BrokerDBSchema
-  * BrokerDBVersionChangeScript
-  * BrokerInstalledDbVersion
-  * BrokerServiceInstance
-  * BrokerServiceGroupMembership
-  * BrokerNameCache
 
     For more information, see: 
 
-* [about\_Broker\_PostInstallPreConfiguration](./about_Broker_PostInstallPreConfiguration/)
-* [about\_Broker\_ControllerDiscovery](./about_Broker_ControllerDiscovery/)
-* [Get-BrokerSite](./Get-BrokerSite/)
-* [Get-BrokerController](./Get-BrokerController/)
-* [Get-BrokerDBConnection](./Get-BrokerDBConnection/)
-* [Get-BrokerDBSchema](./Get-BrokerDBSchema/)
-* [Get-BrokerDBVersionChangeScript](./Get-BrokerDBVersionChangeScript/)
-* [Get-BrokerInstalledDbVersion](./Get-BrokerInstalledDbVersion/)
-* [Get-BrokerServiceInstance](./Get-BrokerServiceInstance/)
-* [Reset-BrokerServiceGroupMembership](./Reset-BrokerServiceGroupMembership/)
-* [Update-BrokerNameCache](./Update-BrokerNameCache/)
+* [Get-Help about\_Broker\_PostInstallPreConfiguration](./Get-Help/)
+* [Get-Help about\_Broker\_ControllerDiscovery](./Get-Help/)
+* [Get-Help Get-BrokerSite](./Get-Help/)
+* [Get-Help Get-BrokerController](./Get-Help/)
+* [Get-Help Get-BrokerDBConnection](./Get-Help/)
+* [Get-Help Get-BrokerDBSchema](./Get-Help/)
+* [Get-Help Get-BrokerDBVersionChangeScript](./Get-Help/)
+* [Get-Help Get-BrokerInstalledDbVersion](./Get-Help/)
+* [Get-Help Get-BrokerServiceInstance](./Get-Help/)
+* [Get-Help Reset-BrokerServiceGroupMembership](./Get-Help/)
+* [Get-Help Update-BrokerNameCache](./Get-Help/)
 

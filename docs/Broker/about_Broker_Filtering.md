@@ -1,5 +1,5 @@
 ﻿
-# about\_broker\_Filtering
+# about\_Broker\_Filtering
 
 ## Topic
 XenDesktop - Advanced Dataset Filtering
@@ -154,25 +154,18 @@ The above approach is often acceptable, but as each call performs an independent
 ```
       # Get the first page 
       Get-<Noun> -MaxRecordCount 10 -SortBy SerialNumber 
-      SerialNumber  ... 
-      ------------  --- 
-      A120004 
-      A120007 
-      ... 7 other records ... 
-      A120900 
 
 ```
+SerialNumber  ... ------------  --- A120004 A120007 ... 7 other records ... A120900
+
 
 ```
       # Get the next page 
       Get-<Noun> -MaxRecordCount 10 -Filter { FirstName -gt 'A120900' } 
-      SerialNumber  ... 
-      ------------  --- 
-      A120901 
-      B220000 
-      ... 
 
 ```
+SerialNumber  ... ------------  --- A120901 B220000 ...
+
 
 ## Filter Syntax Definition
 

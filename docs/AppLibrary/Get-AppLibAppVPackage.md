@@ -5,7 +5,7 @@ Gets the details of an App-V package held in the application library.
 ```
 Get-AppLibAppVPackage [[-Uid] <Int32>] [-Name <String>] [-LibraryUid <Int32>] [-Description <String>] [-RetrieveIcon <Boolean>] [-Property <String[]>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
 
-Get-AppLibAppVPackage -RetrieveApplicationPolicy <Boolean> -RetrieveApplicationData <Boolean> [-Uid <Int32>] [-Name <String>] [-LibraryUid <Int32>] [-Description <String>] [-RetrieveIcon <Boolean>] [-Property <String[]>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
+Get-AppLibAppVPackage -RetrieveApplicationPolicy <Boolean> -RetrieveApplicationData <Boolean> [-Property <String[]>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
 ## Detailed Description
 The application library holds the information about App-V packages, their location on the network, and the applications they contain.
@@ -64,13 +64,13 @@ Get-AppLibAppVPackage -libraryUid 1
 Gets the details of all of the App-V packages in the specified library.
 ### Example 4
 ```
-Get-AppLibAppVPackage -Name "MyPackage" -RetrieveIcon $true
+Get-AppLibAppVPackage -Name "MyPackage" -RetrieveIcon
 ```
 #### Description
 Gets the details of the App-V package named MyPackage, including it and its containing application's icon data.
 ### Example 5
 ```
-Get-AppLibAppVPackage -Name "MyPackage" -RetrieveApplicationData $true -RetrieveApplicationPolicy $true
+Get-AppLibAppVPackage -Name "MyPackage" -RetrieveApplicationData -RetrieveApplicationPolicy
 ```
 #### Description
 Gets the details of the App-V package named MyPackage, including it and its containing application and their policy data.

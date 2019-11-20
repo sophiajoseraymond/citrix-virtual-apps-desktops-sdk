@@ -1,12 +1,14 @@
-﻿
-# Set-Configsite
-Changes the overall settings of the site.
+﻿# Set-ConfigSite
+
+   Changes the overall settings of the site.
+
 ## Syntax
 ```
 Set-ConfigSite [-SiteName <String>] [-ProductCode <String>] [-ProductEdition <String>] [-ProductVersion <String>] [-LicensingModel <String>] [-LicenseServerName <String>] [-LicenseServerPort <Int32>] [-LicenseServerUri <Uri>] [-PrimaryZone <Zone>] [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
+
 ## Detailed Description
-The Set-ConfigSite cmdlet modifies properties of the site.
+   The Set-ConfigSite cmdlet modifies properties of the site.
 
 The site is a top-level, logical representation of the XenDesktop site, from the perspective of the configuration services running within the site.
 
@@ -16,17 +18,16 @@ Modifications to the product code, product edition, product version and licensin
 
 To configure the site, first import the feature table using the Import-ConfigFeatureTable cmdlet.
 
-
 ## Related Commands
-
-* [Export-ConfigFeatureTable](./Export-ConfigFeatureTable/)
-* [Get-ConfigSite](./Get-ConfigSite/)
-* [Get-ConfigProduct](./Get-ConfigProduct/)
-* [Get-ConfigProductEdition](./Get-ConfigProductEdition/)
-* [Get-ConfigProductFeature](./Get-ConfigProductFeature/)
-* [Get-ConfigProductVersion](./Get-ConfigProductVersion/)
-* [Get-ConfigLicensingModel](./Get-ConfigLicensingModel/)
+  * [Export-ConfigFeatureTable](Export-ConfigFeatureTable.html)
+  * [Get-ConfigSite](Get-ConfigSite.html)
+  * [Get-ConfigProduct](Get-ConfigProduct.html)
+  * [Get-ConfigProductEdition](Get-ConfigProductEdition.html)
+  * [Get-ConfigProductFeature](Get-ConfigProductFeature.html)
+  * [Get-ConfigProductVersion](Get-ConfigProductVersion.html)
+  * [Get-ConfigLicensingModel](Get-ConfigLicensingModel.html)
 ## Parameters
+
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
 | SiteName | Changes the name of the site. | false | false |  |
@@ -43,18 +44,15 @@ To configure the site, first import the feature table using the Import-ConfigFea
 | AdminAddress | Specifies the address of a XenDesktop controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
 ## Input Type
-
 ### 
-
+   
 ## Return Values
-
 ### Site
-
+   
 ## Examples
 
-### Example 1
+### EXAMPLE 1
 ```
 C:\PS> Set-ConfigSite -ProductEdition PLT
 ```
-#### Description
-Specifies the use of a Platinum edition license. A suitable license must be available on the site's license server.
+   Description<br>-----------<br>Specifies the use of a Platinum edition license. A suitable license must be available on the site's license server.

@@ -1,21 +1,22 @@
-﻿
-# New-Sfcluster
-Creates new Storefront cluster with default set of services.
+﻿# New-SfCluster
+
+   Creates new Storefront cluster with default set of services.
+
 ## Syntax
 ```
 New-SfCluster -ServerName <String> -FarmName <String> -XmlServices <Uri[]> [-StorefrontUrl <Uri>] [-RunAsynchronously <Boolean>] [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
-## Detailed Description
-The server will have a default set of services containing fully-functionaly Storefront server with Authentication, Store, Receiver for Web and Desktop Appliance.
 
+## Detailed Description
+   The server will have a default set of services containing fully-functionaly Storefront server with Authentication, Store, Receiver for Web and Desktop Appliance.
 
 ## Related Commands
-
-* [Get-SfCluster](./Get-SfCluster/)
-* [Add-SfServerToCluster](./Add-SfServerToCluster/)
-* [Remove-SfServerFromCluster](./Remove-SfServerFromCluster/)
-* [Set-SfCluster](./Set-SfCluster/)
+  * [Get-SfCluster](Get-SfCluster.html)
+  * [Add-SfServerToCluster](Add-SfServerToCluster.html)
+  * [Remove-SfServerFromCluster](Remove-SfServerFromCluster.html)
+  * [Set-SfCluster](Set-SfCluster.html)
 ## Parameters
+
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
 | ServerName | The name of the server to build a cluster on. The name must be one of the values returned by Get-SfCluster | true | false |  |
@@ -28,18 +29,15 @@ The server will have a default set of services containing fully-functionaly Stor
 | AdminAddress | Specifies the address of a XenDesktop controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
 ## Input Type
-
 ### 
-
+   
 ## Return Values
-
-### Citrix.Storefront.Sdk.Task Or Citrix.Storefront.Datamodel.Cluster
-Returns cluster description or a task, if ran asynchronously.
+### Citrix.Storefront.Sdk.Task or Citrix.Storefront.DataModel.Cluster
+   Returns cluster description or a task, if ran asynchronously.
 ## Examples
 
-### Example 1
+### EXAMPLE 1
 ```
 New-SfCluster -FarmName "XdSiteName" -XmlServices http://farm1,http://farm2 -ServerName SfServer -RunAsynchronously $true
 ```
-#### Description
-Creates a new cluster on server "SfServer". The server will have a default set of services containing fully-functionaly Storefront server with Authentication, Store, Receiver for Web, Desktop Appliance site and the required infrastructure. The Store service will have a farm named "XdSiteName" that will contain servers farm1 and farm2, whose will be contacted using http on default port 80.
+   Description<br>-----------<br>Creates a new cluster on server "SfServer". The server will have a default set of services containing fully-functionaly Storefront server with Authentication, Store, Receiver for Web, Desktop Appliance site and the required infrastructure. The Store service will have a farm named "XdSiteName" that will contain servers farm1 and farm2, whose will be contacted using http on default port 80.

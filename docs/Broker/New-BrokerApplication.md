@@ -3,9 +3,9 @@
 Creates a new published application.
 ## Syntax
 ```
-New-BrokerApplication [-Name] <String> -ApplicationGroup <ApplicationGroup> -CommandLineExecutable <String> [-AdminFolder <AdminFolder>] [-ApplicationType <ApplicationType>] [-BrowserName <String>] [-ClientFolder <String>] [-CommandLineArguments <String>] [-CpuPriorityLevel <CpuPriorityLevel>] [-Description <String>] [-Enabled <Boolean>] [-HomeZoneOnly <Boolean>] [-HomeZoneUid <Guid>] [-IconFromClient <Boolean>] [-IconUid <Int32>] [-IgnoreUserHomeZone <Boolean>] [-LocalLaunchDisabled <Boolean>] [-MaxPerMachineInstances <Int32>] [-MaxPerUserInstances <Int32>] [-MaxTotalInstances <Int32>] [-PublishedName <String>] [-SecureCmdLineArgumentsEnabled <Boolean>] [-ShortcutAddedToDesktop <Boolean>] [-ShortcutAddedToStartMenu <Boolean>] [-StartMenuFolder <String>] [-UserFilterEnabled <Boolean>] [-UUID <Guid>] [-Visible <Boolean>] [-WaitForPrinterCreation <Boolean>] [-WorkingDirectory <String>] [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [<CommonParameters>]
+New-BrokerApplication [-Name] <String> -ApplicationGroup <ApplicationGroup> -CommandLineExecutable <String> [-AdminFolder <AdminFolder>] [-ApplicationType <ApplicationType>] [-BrowserName <String>] [-ClientFolder <String>] [-CommandLineArguments <String>] [-CpuPriorityLevel <CpuPriorityLevel>] [-Description <String>] [-Enabled <Boolean>] [-HomeZoneOnly <Boolean>] [-HomeZoneUid <Guid>] [-IconFromClient <Boolean>] [-IconUid <Int32>] [-IgnoreUserHomeZone <Boolean>] [-MaxPerUserInstances <Int32>] [-MaxTotalInstances <Int32>] [-PublishedName <String>] [-SecureCmdLineArgumentsEnabled <Boolean>] [-ShortcutAddedToDesktop <Boolean>] [-ShortcutAddedToStartMenu <Boolean>] [-StartMenuFolder <String>] [-UserFilterEnabled <Boolean>] [-UUID <Guid>] [-Visible <Boolean>] [-WaitForPrinterCreation <Boolean>] [-WorkingDirectory <String>] [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [<CommonParameters>]
 
-New-BrokerApplication [-Name] <String> -DesktopGroup <DesktopGroup> -CommandLineExecutable <String> [-Priority <Int32>] [-AdminFolder <AdminFolder>] [-ApplicationType <ApplicationType>] [-BrowserName <String>] [-ClientFolder <String>] [-CommandLineArguments <String>] [-CpuPriorityLevel <CpuPriorityLevel>] [-Description <String>] [-Enabled <Boolean>] [-HomeZoneOnly <Boolean>] [-HomeZoneUid <Guid>] [-IconFromClient <Boolean>] [-IconUid <Int32>] [-IgnoreUserHomeZone <Boolean>] [-LocalLaunchDisabled <Boolean>] [-MaxPerMachineInstances <Int32>] [-MaxPerUserInstances <Int32>] [-MaxTotalInstances <Int32>] [-PublishedName <String>] [-SecureCmdLineArgumentsEnabled <Boolean>] [-ShortcutAddedToDesktop <Boolean>] [-ShortcutAddedToStartMenu <Boolean>] [-StartMenuFolder <String>] [-UserFilterEnabled <Boolean>] [-UUID <Guid>] [-Visible <Boolean>] [-WaitForPrinterCreation <Boolean>] [-WorkingDirectory <String>] [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [<CommonParameters>]
+New-BrokerApplication [-Name] <String> -DesktopGroup <DesktopGroup> -CommandLineExecutable <String> [-Priority <Int32>] [-AdminFolder <AdminFolder>] [-ApplicationType <ApplicationType>] [-BrowserName <String>] [-ClientFolder <String>] [-CommandLineArguments <String>] [-CpuPriorityLevel <CpuPriorityLevel>] [-Description <String>] [-Enabled <Boolean>] [-HomeZoneOnly <Boolean>] [-HomeZoneUid <Guid>] [-IconFromClient <Boolean>] [-IconUid <Int32>] [-IgnoreUserHomeZone <Boolean>] [-MaxPerUserInstances <Int32>] [-MaxTotalInstances <Int32>] [-PublishedName <String>] [-SecureCmdLineArgumentsEnabled <Boolean>] [-ShortcutAddedToDesktop <Boolean>] [-ShortcutAddedToStartMenu <Boolean>] [-StartMenuFolder <String>] [-UserFilterEnabled <Boolean>] [-UUID <Guid>] [-Visible <Boolean>] [-WaitForPrinterCreation <Boolean>] [-WorkingDirectory <String>] [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [<CommonParameters>]
 ```
 ## Detailed Description
 The New-BrokerApplication cmdlet creates a new published application in the site.
@@ -49,9 +49,7 @@ See about\_Broker\_Applications for more information.
 | HomeZoneUid | Specifies any home zone preference used when launching this application. | false | true (ByPropertyName) | null |
 | IconFromClient | Specifies if the app icon should be retrieved from the application on the client. This is reserved for possible future use, and all applications of type HostedOnDesktop cannot set or change this value. | false | true (ByPropertyName) | false |
 | IconUid | Specifies which icon to use for this application. This icon is visible both to the administrator (in the consoles) and to the user. If no icon is specified, then a generic built-in application icon is used. | false | true (ByPropertyName) | 2 |
-| IgnoreUserHomeZone | Specifies that when launching the application and the user has a home zone specified then the user's home zone preference should be ignored.<br>This can only be set if the application does not itself have a home zone preference specified. | false | true (ByPropertyName) | false |
-| LocalLaunchDisabled | When launching a published application from within a published desktop, do not launch the application in that desktop session. | false | true (ByPropertyName) | true |
-| MaxPerMachineInstances | Specifies the maximum allowed concurrently running instances of the application that an individual machine can have. A value of zero allows unlimited usage subject to any site-wide limit. | false | true (ByPropertyName) | 0 |
+| IgnoreUserHomeZone | Specifies that when launching the application and the user has a home zone specified then the user's home zone preference should be ignored.<br>This can only be set if the application does not itself have a home zone preference specified. | false | true (ByPropertyName) | fakse |
 | MaxPerUserInstances | Specifies the maximum allowed concurrently running instances of the application that an individual user can have. A value of zero allows unlimited usage subject to any site-wide limit. | false | true (ByPropertyName) | 0 |
 | MaxTotalInstances | Specifies the maximum allowed total of concurrently running instances of the application in the site. A value of zero allows unlimited usage. | false | true (ByPropertyName) | 0 |
 | PublishedName | The name seen by end users who have access to this application. | false | true (ByPropertyName) | The same value as that supplied for the name of the application. |
@@ -97,15 +95,15 @@ Creates and returns an object for a published application called "Citrix.com" th
 ```
 C:\PS> $dg = Get-BrokerDesktopGroup "SharedDG1"
 
-          C:\PS> $app = New-BrokerApplication -ApplicationType HostedOnDesktop -Name "Notepad" -CommandLineExecutable "notepad.exe" -DesktopGroup $dg
+C:\PS> $app = New-BrokerApplication -ApplicationType HostedOnDesktop -Name "Notepad" -CommandLineExecutable "notepad.exe" -DesktopGroup $dg
 
-          C:\PS> $group = Get-BrokerDesktopGroup -Name "Shared desktop group"
+C:\PS> $group = Get-BrokerDesktopGroup -Name "Shared desktop group"
 
-          C:\PS> Add-BrokerApplication $app -DesktopGroup $group
+C:\PS> Add-BrokerApplication $app -DesktopGroup $group
 
-          C:\PS> $fta = Get-BrokerImportedFTA -ExtensionName ".txt"
+C:\PS> $fta = Get-BrokerImportedFTA -ExtensionName ".txt"
 
-          C:\PS> New-BrokerConfiguredFTA -ImportedFTA $fta -ApplicationUid $app.Uid
+C:\PS> New-BrokerConfiguredFTA -ImportedFTA $fta -ApplicationUid $app.Uid
 ```
 #### Description
 This is a much more complete example. It creates an application object to publish Notepad and associates it first with the "SharedDG1" desktop group.&lt;br&gt;Next it adds an additional desktop group (one that can host applications), and publishes the application to that desktop group. It then gets the ImportedFTA object for the .txt file-type extension (this assumes file-type associations have already been imported), and then configures it so that ".txt" is associated with the published application.&lt;br&gt;Note: The appropriate access policy and app assignment/entitlement rules must also be configured to allow access to the application.

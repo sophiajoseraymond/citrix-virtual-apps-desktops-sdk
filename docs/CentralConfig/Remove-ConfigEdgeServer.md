@@ -1,6 +1,7 @@
-﻿
-# Remove-Configedgeserver
-Removes edge servers from the site
+﻿# Remove-ConfigEdgeServer
+
+   Removes edge servers from the site
+
 ## Syntax
 ```
 Remove-ConfigEdgeServer [-InputObject] <EdgeServer[]> [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
@@ -9,17 +10,17 @@ Remove-ConfigEdgeServer [-Uid] <Guid[]> [-LoggingId <Guid>] [-BearerToken <Strin
 
 Remove-ConfigEdgeServer [-Name] <String[]> [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
-## Detailed Description
-Remove edge servers from the site
 
+## Detailed Description
+   Remove edge servers from the site
 
 ## Related Commands
-
-* [Get-ConfigEdgeServer](./Get-ConfigEdgeServer/)
-* [New-ConfigEdgeServer](./New-ConfigEdgeServer/)
-* [Set-ConfigEdgeServer](./Set-ConfigEdgeServer/)
-* [Rename-ConfigEdgeServer](./Rename-ConfigEdgeServer/)
+  * [Get-ConfigEdgeServer](Get-ConfigEdgeServer.html)
+  * [New-ConfigEdgeServer](New-ConfigEdgeServer.html)
+  * [Set-ConfigEdgeServer](Set-ConfigEdgeServer.html)
+  * [Rename-ConfigEdgeServer](Rename-ConfigEdgeServer.html)
 ## Parameters
+
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
 | InputObject | Specifies the edge server objects to delete | true | true (ByValue) |  |
@@ -30,24 +31,20 @@ Remove edge servers from the site
 | AdminAddress | Specifies the address of a XenDesktop controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
 ## Input Type
-
-### Citrix.Configuration.Sdk.Edgeserver
-You can pipe the edge servers to be deleted to Remove-ConfigEdgeServer.
+### Citrix.Configuration.Sdk.EdgeServer
+   You can pipe the edge servers to be deleted to Remove-ConfigEdgeServer.
 ## Return Values
-
 ### None
-
+   
 ## Examples
 
-### Example 1
+### EXAMPLE 1
 ```
 C:\PS> Remove-ConfigEdgeServer -Name W2K12R1
 ```
-#### Description
-Removes an edge server with the specified name
-### Example 2
+   Description<br>-----------<br>Removes an edge server with the specified name
+### EXAMPLE 2
 ```
 C:\PS> Get-ConfigEdgeServer -ZoneName Secondary | Remove-ConfigEdgeServer
 ```
-#### Description
-Removes all edge servers from the zone named Secondary
+   Description<br>-----------<br>Removes all edge servers from the zone named Secondary

@@ -80,27 +80,32 @@ The Powershell code sample below demonstrates how to access error information pr
     trap  [Exception] { 
         write "" 
         write "TRAP BLOCK : BEGIN” 
-        if($_.Exception.GetType().Name -eq "SdkOperationException") 
-        { 
-            $sdkOpEx = $_.Exception 
+
+```
+if(\$\_.Exception.GetType().Name -eq "SdkOperationException") { \$sdkOpEx = \$\_.Exception
+
+
+```
             # show error status 
             write $("SdkOperationException.Status = " + $sdkOpEx.Status) 
-            # show error data dictionary 
+
+```
+
+```
+      # show error data dictionary 
             write $("SdkOperationException.ErrorData=") 
-            write $("SdkOperationException.InnerException = " + $sdkOpEx.InnerException) 
-            $_.Exception.ErrorData 
-        } 
-        continue #could also call break here to halt script execution 
-        write "TRAP BLOCK : END" 
-    } 
 
 ```
+write \$("SdkOperationException.InnerException = " + \$sdkOpEx.InnerException) \$\_.Exception.ErrorData }
+
+continue #could also call break here to halt script execution write "TRAP BLOCK : END" }
+
 
 ```
-    ###########################################################################  
     ## Run tests 1 to 4, below, in turn to examine terminating and 
     ## non-terminating error behavior. 
     ########################################################################### 
+###########################################################################
 
 ```
 
@@ -136,34 +141,17 @@ The Powershell code sample below demonstrates how to access error information pr
     # Test 4 – Force script execution to halt after a non-terminating error. 
     # 
     #Get-BrokerCatalog -Name "IDontExist" -ErrorVariable ev -ErrorAction "stop" 
-    write "" 
-    write "GET ERROR INFORAMTION: BEGIN" 
-    $sdkErrRecord = $null 
-    if($ev[0].GetType().Name -eq "SdkErrorRecord") 
-    { 
-        $sdkErrRecord = $ev[0] 
-    } 
-    elseif($ev[0].GetType().BaseType.FullName -eq "System.Management.Automation.RuntimeException") 
-    { 
-        $sdkErrRecord = $ev[0].ErrorRecord 
-    } 
-    else 
-    { 
-      write ("UNKNOWN ERROR VARIABLE TYPE:") 
-      $ev[0].GetType().Name 
-    } 
-    if($sdkErrRecord -ne $null) 
-    { 
-        write ("Have sdkErrRecord:") 
-        write ("  Type Name = " + $sdkErrRecord.GetType().FullName) 
-        write ("  Status = " + $sdkErrRecord.Status) 
-        write ("  Exception type = " + $sdkErrRecord.Exception.GetType().FullName) 
-        write ("  ErrorData = ") 
-        $sdkErrRecord.ErrorData 
-        write ("  FullyQualifiedErrorId = " + $sdkErrRecord.FullyQualifiedErrorId) 
-    } 
-    write "GET ERROR INFORAMTION: END" 
 #
 
 ```
+write "" write "GET ERROR INFORAMTION: BEGIN"
+
+\$sdkErrRecord = \$null
+
+if(\$ev\[0\].GetType().Name -eq "SdkErrorRecord") { \$sdkErrRecord = \$ev\[0\] }
+
+elseif(\$ev\[0\].GetType().BaseType.FullName -eq "System.Management.Automation.RuntimeException") { \$sdkErrRecord = \$ev\[0\].ErrorRecord } else { write ("UNKNOWN ERROR VARIABLE TYPE:") \$ev\[0\].GetType().Name }
+
+if(\$sdkErrRecord -ne \$null) { write ("Have sdkErrRecord:") write ("  Type Name = " + \$sdkErrRecord.GetType().FullName) write ("  Status = " + \$sdkErrRecord.Status) write ("  Exception type = " + \$sdkErrRecord.Exception.GetType().FullName) write ("  ErrorData = ") \$sdkErrRecord.ErrorData write ("  FullyQualifiedErrorId = " + \$sdkErrRecord.FullyQualifiedErrorId) } write "GET ERROR INFORAMTION: END"
+
 

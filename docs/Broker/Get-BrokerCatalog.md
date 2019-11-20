@@ -20,8 +20,7 @@ See about\_Broker\_Machines for more information.
 
 
   * AllocationType (Citrix.Broker.Admin.SDK.AllocationType) Denotes how the the machines in the catalog are allocated to a user. Possible values are:
-    * Static: Machines get assigned to a user either by the admin or on first use. This relationship is static and changes only if an admin explicitly changes the assignments.
-    * Random: Machines are allocated to users randomly from a pool of available machines.
+    * Static: Machines get assigned to a user either by the admin or on first use. This relationship is static and changes only if an admin explicitly changes the assignments. o Random: Machines are allocated to users randomly from a pool of available machines.
 
   * AppDnaAnalysisState (Citrix.Broker.Admin.SDK.AppDnaAnalysisState?) The AppDNA Analysis State of the catalog
 

@@ -5,7 +5,7 @@ Gets desktop rules from the site's entitlement policy.
 ```
 Get-BrokerEntitlementPolicyRule [-Uid] <Int32> [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [<CommonParameters>]
 
-Get-BrokerEntitlementPolicyRule [[-Name] <String>] [-BrowserName <String>] [-ColorDepth <ColorDepth>] [-Description <String>] [-DesktopGroupUid <Int32>] [-Enabled <Boolean>] [-ExcludedUser <User>] [-ExcludedUserFilterEnabled <Boolean>] [-IconUid <Int32>] [-IncludedUser <User>] [-IncludedUserFilterEnabled <Boolean>] [-LeasingBehavior <LeasingBehavior>] [-MaxPerEntitlementInstances <Int32>] [-Metadata <String>] [-PublishedName <String>] [-RestrictToTag <String>] [-SecureIcaRequired <Boolean>] [-SessionReconnection <SessionReconnection>] [-UUID <Guid>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [<CommonParameters>]
+Get-BrokerEntitlementPolicyRule [[-Name] <String>] [-BrowserName <String>] [-ColorDepth <ColorDepth>] [-Description <String>] [-DesktopGroupUid <Int32>] [-Enabled <Boolean>] [-ExcludedUser <User>] [-ExcludedUserFilterEnabled <Boolean>] [-IconUid <Int32>] [-IncludedUser <User>] [-IncludedUserFilterEnabled <Boolean>] [-LeasingBehavior <LeasingBehavior>] [-Metadata <String>] [-PublishedName <String>] [-RestrictToTag <String>] [-SecureIcaRequired <Boolean>] [-SessionReconnection <SessionReconnection>] [-UUID <Guid>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [<CommonParameters>]
 ```
 ## Detailed Description
 Returns desktop rules matching the specified search criteria from the site's entitlement policy. If no search criteria are specified, all desktop rules in the entitlement policy are obtained.
@@ -38,8 +38,6 @@ The BrokerEntitlementPolicyRule object represents a single desktop rule within t
   * IncludedUsers (Citrix.Broker.Admin.SDK.ChbUser\[\]) The included users filter of the rule, that is, the users and groups who are granted an entitlement to a desktop session by the rule.
 
   * LeasingBehavior (Citrix.Broker.Admin.SDK.LeasingBehavior) Defines the desired connection leasing behavior applied to sessions launched using this entitlement. Possible values are: Allowed and Disallowed.
-
-  * MaxPerEntitlementInstances (System.Int32) Maximum allowed concurrently running instances of the desktop associated with this entitlement in the site . A value of zero allows unlimited usage.
 
   * MetadataMap (System.Collections.Generic.Dictionary&lt;string, string&gt;) A collection of arbitrary key/value pairs that can be associated with the rule. The administrator can use these values for any purpose; they are not used by the site itself in any way.
 
@@ -80,7 +78,6 @@ The BrokerEntitlementPolicyRule object represents a single desktop rule within t
 | IncludedUser | Gets only desktop rules that have the specified user in their included users filter (whether the filter is enabled or not). | false | false |  |
 | IncludedUserFilterEnabled | Gets only desktop rules that have their included user filter enabled (\$true) or disabled (\$false). | false | false |  |
 | LeasingBehavior | Gets only application rules with the specified connection leasing behavior. Possible values are:<br>Allowed and Disallowed. | false | false |  |
-| MaxPerEntitlementInstances | Maximum allowed concurrently running instances of the desktop associated with this entitlement in the site . A value of zero allows unlimited usage. | false | false |  |
 | Metadata | Gets records with matching metadata entries.<br>The value being compared with is a concatenation of the key name, a colon, and the value. For example: -Metadata "abc:x\*" matches records with a metadata entry having a key name of "abc" and a value starting with the letter "x". | false | false |  |
 | PublishedName | Gets only desktop rules with the specified published name, that is, the desktop session entitlement name that the end user sees. | false | false |  |
 | RestrictToTag | Gets only desktop rules with the specified tag restriction. | false | false |  |

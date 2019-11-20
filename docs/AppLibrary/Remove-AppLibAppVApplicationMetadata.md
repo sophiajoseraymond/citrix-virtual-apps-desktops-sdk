@@ -14,8 +14,6 @@ Remove-AppLibAppVApplicationMetadata [-AppVApplicationName] <String> -Map <PSObj
 Remove-AppLibAppVApplicationMetadata [-InputObject] <AppVApplication[]> -Name <String> [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
 
 Remove-AppLibAppVApplicationMetadata [-InputObject] <AppVApplication[]> -Map <PSObject> [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
-
-Remove-AppLibAppVApplicationMetadata -Map <PSObject> [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
 ## Detailed Description
 Provides the ability to remove metadata from the given AppVApplication.
@@ -49,12 +47,6 @@ If the command fails, the following errors can be returned.<br>    Error Codes<b
 ## Examples
 
 ### Example 1
-```
-c:\PS>Remove-AppLibAppVApplicationMetadata -AppVApplicationUid 1 -Name "Custom Data"
-```
-#### Description
-Removes the metadata item named 'Custom Data' from the specified AppVApplication object.
-### Example 2
 ```
 c:\PS>Get-AppLibAppVApplication | % { Remove-AppLibAppVApplicationMetadata -Map $_.MetadataMap }
 ```

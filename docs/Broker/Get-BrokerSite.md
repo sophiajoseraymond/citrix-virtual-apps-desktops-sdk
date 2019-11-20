@@ -27,7 +27,7 @@ The BrokerSite object represents logical representation of the XenDesktop site. 
 
   * ConfigurationServiceGroupUid (System.Guid?) The Uid for the Configuration Service Group.
 
-  * ConnectionLeasingEnabled (System.Boolean?) Always false. Connection leasing is no longer supported.
+  * ConnectionLeasingEnabled (System.Boolean?) The indicator for connection leasing active.
 
   * DefaultMinimumFunctionalLevel (Citrix.Broker.Admin.SDK.FunctionalLevel?) The default minimum functional level used for new catalogs and desktop groups when no explicit value is provided.
 

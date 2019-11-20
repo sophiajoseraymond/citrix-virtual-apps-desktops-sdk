@@ -1,6 +1,7 @@
-﻿
-# Register-Configserviceinstance
-Allows the registration of a service instance.
+﻿# Register-ConfigServiceInstance
+
+   Allows the registration of a service instance.
+
 ## Syntax
 ```
 Register-ConfigServiceInstance -ServiceGroupUid <Guid> -ServiceGroupName <String> -ServiceType <String> -Address <String> -Binding <String> -Version <Int32> -ServiceAccount <String> -InterfaceType <String> [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
@@ -9,22 +10,22 @@ Register-ConfigServiceInstance -ServiceGroupUid <Guid> -ServiceGroupName <String
 
 Register-ConfigServiceInstance -ServiceInstance <ServiceInstance[]> [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
+
 ## Detailed Description
-Use this cmdlet to register service instance items in the Configuration Service. Service instances can be registered either by retrieving the data directly from other services or by manually entering the details into this command.
+   Use this cmdlet to register service instance items in the Configuration Service. Service instances can be registered either by retrieving the data directly from other services or by manually entering the details into this command.
 
 If the service group specified by the service instance already exists, the service is added to the service group, otherwise a new service group is created to hold the service instance.
 
-
 ## Related Commands
-
-* [Unregister-ConfigRegisteredServiceInstance](./Unregister-ConfigRegisteredServiceInstance/)
-* [Add-ConfigRegisteredServiceInstanceMetadata](./Add-ConfigRegisteredServiceInstanceMetadata/)
-* [Set-ConfigRegisteredServiceInstanceMetadata](./Set-ConfigRegisteredServiceInstanceMetadata/)
-* [Remove-ConfigRegisteredServiceInstanceMetadata](./Remove-ConfigRegisteredServiceInstanceMetadata/)
-* [Add-ConfigServiceGroupMetadata](./Add-ConfigServiceGroupMetadata/)
-* [Set-ConfigServiceGroupMetadata](./Set-ConfigServiceGroupMetadata/)
-* [Remove-ConfigServiceGroupMetadata](./Remove-ConfigServiceGroupMetadata/)
+  * [Unregister-ConfigRegisteredServiceInstance](Unregister-ConfigRegisteredServiceInstance.html)
+  * [Add-ConfigRegisteredServiceInstanceMetadata](Add-ConfigRegisteredServiceInstanceMetadata.html)
+  * [Set-ConfigRegisteredServiceInstanceMetadata](Set-ConfigRegisteredServiceInstanceMetadata.html)
+  * [Remove-ConfigRegisteredServiceInstanceMetadata](Remove-ConfigRegisteredServiceInstanceMetadata.html)
+  * [Add-ConfigServiceGroupMetadata](Add-ConfigServiceGroupMetadata.html)
+  * [Set-ConfigServiceGroupMetadata](Set-ConfigServiceGroupMetadata.html)
+  * [Remove-ConfigServiceGroupMetadata](Remove-ConfigServiceGroupMetadata.html)
 ## Parameters
+
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
 | ServiceGroupUid | The Service Group Unique Identifier | true | true (ByPropertyName) |  |
@@ -42,20 +43,16 @@ If the service group specified by the service instance already exists, the servi
 | AdminAddress | Specifies the address of a XenDesktop controller that the PowerShell snap-in connects to.  You can be provide this as a host name or an IP address. | false | false | LocalHost. Once a value is provided by any cmdlet, this value becomes the default. |
 
 ## Input Type
-
-### Citrix.Configuration.Sdk.Serviceinstance<br>   An Object With The Following Parameters Can Be Used To Register A Service Instance.<br>     Address,<br>     Servicegroupuid,<br>     Servicegroupname,<br>     Servicetype,<br>     Binding,<br>     Version,<br>     Interfacetype.
-
+### Citrix.Configuration.Sdk.ServiceInstance<br>   An object with the following parameters can be used to register a service instance.<br>     Address,<br>     ServiceGroupUid,<br>     ServiceGroupName,<br>     ServiceType,<br>     Binding,<br>     Version,<br>     InterfaceType.
+   
 ## Return Values
-
-### Citrix.Configuration.Sdk.Serviceinstance<br>    This Represents A Service Instance And Has The Following Parameters;<br>    Servicegroupuid &lt;Guid&gt;<br>        The Unique Identifier For The Service Group To Which The Service Instance Belongs.<br>    Servicegroupname &lt;String&gt;<br>        The Name Of The Service Group To Which The Service Instance Belongs.<br>    Serviceinstanceuid &lt;Guid&gt;<br>        The Unique Identifier For The Service Instance.<br>    Servicetype &lt;String&gt;<br>        The Type Of The Service Group.<br>    Address &lt;String&gt;<br>        The Contact Address For The Service Instance.<br>    Binding &lt;String&gt;<br>        The Binding To Use For Connections To The Service Instance.<br>    Version &lt;Int&gt;<br>        The Version Of The Service Instance.<br>    Serviceaccount &lt;String&gt;<br>        The Ad Computer Account For The Computer That Is Providing The Service Instance.<br>    Serviceaccountsid &lt;String&gt;<br>        The Ad Computer Account Sid For The Computer That Is Providing The Service Instance.<br>    Interfacetype &lt;String&gt;<br>        The Interface Type For The Service Instance.<br>    Metadata &lt;Citrix.Configuration.Sdk.Metadata\[\]&gt;<br>        The Metadata For The Service Instance.
-
-## Notes
-In the case of failure, the following errors can result.<br>    Error Codes ----------- ActiveDirectoryAccountResolutionFailed The account name provided could not be found in Active Directory. ServiceGroupWithSameUidExistsForDifferentServiceGroupNameOrSameUidExistsForDifferentServiceGroupNameOrServiceType The service group name or service type do not match the service group found with the specified uid. TypeAlreadyExists A different service group with the same type is registered already in the Configuration Service. DatabaseError An error occurred in the service while attempting a database operation. DatabaseNotConfigured The operation could not be completed because the database for the service is not configured. DataStoreException An error occurred in the service while attempting a database operation - communication with the database failed for various reasons. CommunicationError An error occurred while communicating with the service. ExceptionThrown An unexpected error occurred.  For more details, see the Windows event logs on the controller being used or examine the XenDesktop logs.
+### Citrix.Configuration.Sdk.ServiceInstance<br>    This represents a service instance and has the following parameters;<br>    ServiceGroupUid <Guid><br>        The unique identifier for the service group to which the service instance belongs.<br>    ServiceGroupName <string><br>        The name of the service group to which the service instance belongs.<br>    ServiceInstanceUid <Guid><br>        The unique identifier for the service instance.<br>    ServiceType <string><br>        The type of the service group.<br>    Address <string><br>        The contact address for the service instance.<br>    Binding <string><br>        The binding to use for connections to the service instance.<br>    Version <int><br>        The version of the service instance.<br>    ServiceAccount <string><br>        The AD computer account for the computer that is providing the service instance.<br>    ServiceAccountSid <string><br>        The AD computer account SID for the computer that is providing the service instance.<br>    InterfaceType <string><br>        The interface type for the service instance.<br>    Metadata <Citrix.Configuration.Sdk.Metadata[]><br>        The metadata for the service instance.
+   ## Notes
+   In the case of failure, the following errors can result.<br>    Error Codes ----------- ActiveDirectoryAccountResolutionFailed The account name provided could not be found in Active Directory. ServiceGroupWithSameUidExistsForDifferentServiceGroupNameOrSameUidExistsForDifferentServiceGroupNameOrServiceType The service group name or service type do not match the service group found with the specified uid. TypeAlreadyExists A different service group with the same type is registered already in the Configuration Service. DatabaseError An error occurred in the service while attempting a database operation. DatabaseNotConfigured The operation could not be completed because the database for the service is not configured. DataStoreException An error occurred in the service while attempting a database operation - communication with the database failed for various reasons. CommunicationError An error occurred while communicating with the service. ExceptionThrown An unexpected error occurred.  For more details, see the Windows event logs on the controller being used or examine the XenDesktop logs.
 ## Examples
 
-### Example 1
+### EXAMPLE 1
 ```
 C:\PS>Get-ConfigServiceInstance | Register-ConfigServiceInstance
 ```
-#### Description
-Gets the service instances for the Configuration Service and registers them.
+   Description<br>-----------<br>Gets the service instances for the Configuration Service and registers them.

@@ -19,14 +19,14 @@ Only enabled administrator records are returned.
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
-| Name | User name or ID of user to query | true | true (ByValue) |  |
+| Name | User name or SID of user to query | true | true (ByValue) |  |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
 ## Input Type
 
 ### String
-User name or ID of user to query
+User name or SID of user to query
 ## Return Values
 
 ### Citrix.Delegatedadmin.Sdk.Administrator

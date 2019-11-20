@@ -1,21 +1,22 @@
-﻿
-# Set-Sfcluster
-Sets the parameters on the given cluster.
+﻿# Set-SfCluster
+
+   Sets the parameters on the given cluster.
+
 ## Syntax
 ```
 Set-SfCluster -ClusterId <Guid> [-StorefrontUrl <Uri>] [-FarmName <String>] [-XmlServices <Uri[]>] [-RunAsynchronously <Boolean>] [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
-## Detailed Description
-Sets the parameters on the given cluster and propagate the changes to all servers within a given cluster.
 
+## Detailed Description
+   Sets the parameters on the given cluster and propagate the changes to all servers within a given cluster.
 
 ## Related Commands
-
-* [Get-SfCluster](./Get-SfCluster/)
-* [New-SfCluster](./New-SfCluster/)
-* [Add-SfServerToCluster](./Add-SfServerToCluster/)
-* [Remove-SfServerFromCluster](./Remove-SfServerFromCluster/)
+  * [Get-SfCluster](Get-SfCluster.html)
+  * [New-SfCluster](New-SfCluster.html)
+  * [Add-SfServerToCluster](Add-SfServerToCluster.html)
+  * [Remove-SfServerFromCluster](Remove-SfServerFromCluster.html)
 ## Parameters
+
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
 | ClusterId | The if of the cluster to perform operation on. | true | false |  |
@@ -28,18 +29,15 @@ Sets the parameters on the given cluster and propagate the changes to all server
 | AdminAddress | Specifies the address of a XenDesktop controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
 ## Input Type
-
 ### 
-
+   
 ## Return Values
-
-### Citrix.Storefront.Sdk.Task Or Citrix.Storefront.Datamodel.Cluster
-Returns cluster description or a task, if ran asynchronously.
+### Citrix.Storefront.Sdk.Task or Citrix.Storefront.DataModel.Cluster
+   Returns cluster description or a task, if ran asynchronously.
 ## Examples
 
-### Example 1
+### EXAMPLE 1
 ```
 Set-SfCluster -StorefrontUrl http://SfUrl -ClusterId (Guid) -RunAsynchronously $true
 ```
-#### Description
-Sets a Storefront Url in a Cluster with id (Guid). Propagates changes to all servers that are part of the cluster.
+   Description<br>-----------<br>Sets a Storefront Url in a Cluster with id (Guid). Propagates changes to all servers that are part of the cluster.

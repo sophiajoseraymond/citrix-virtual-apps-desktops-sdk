@@ -1,6 +1,7 @@
-﻿
-# Set-Configzone
-Set the description of the zone.
+﻿# Set-ConfigZone
+
+   Set the description of the zone.
+
 ## Syntax
 ```
 Set-ConfigZone [-InputObject] <Zone[]> [-NewUid <Guid>] [-Description <String>] [-ExternalUid <Guid>] [-TenantId <Guid>] [-PassThru] [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
@@ -9,8 +10,9 @@ Set-ConfigZone [-Uid] <Guid[]> [-NewUid <Guid>] [-Description <String>] [-Extern
 
 Set-ConfigZone [-Name] <String[]> [-NewUid <Guid>] [-Description <String>] [-ExternalUid <Guid>] [-TenantId <Guid>] [-PassThru] [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
+
 ## Detailed Description
-This cmdlet allows you to change the description of a zone.
+   This cmdlet allows you to change the description of a zone.
 
 Controllers can be moved between zones using Set-ConfigService cmdlet. To mark zone as primary use Set-ConfigSite cmdlet.
 
@@ -18,16 +20,15 @@ To update the metadata associated with a zone, use the Set-ConfigZoneMetadata an
 
 To change the name of a zone use Rename-ConfigZone cmdlet.
 
-
 ## Related Commands
-
-* [New-ConfigZone](./New-ConfigZone/)
-* [Get-ConfigZone](./Get-ConfigZone/)
-* [Rename-ConfigZone](./Rename-ConfigZone/)
-* [Remove-ConfigZone](./Remove-ConfigZone/)
-* [Set-ConfigSite](./Set-ConfigSite/)
-* [Set-ConfigService](./Set-ConfigService/)
+  * [New-ConfigZone](New-ConfigZone.html)
+  * [Get-ConfigZone](Get-ConfigZone.html)
+  * [Rename-ConfigZone](Rename-ConfigZone.html)
+  * [Remove-ConfigZone](Remove-ConfigZone.html)
+  * [Set-ConfigSite](Set-ConfigSite.html)
+  * [Set-ConfigService](Set-ConfigService.html)
 ## Parameters
+
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
 | InputObject | Specifies the zone to update (by zone object). | true | true (ByValue) |  |
@@ -43,18 +44,15 @@ To change the name of a zone use Rename-ConfigZone cmdlet.
 | AdminAddress | Specifies the address of a XenDesktop controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
 ## Input Type
-
 ### Citrix.Configuration.Sdk.Zone
-You can pipe the zones to be updated into this command.
+   You can pipe the zones to be updated into this command.
 ## Return Values
-
-### None Or Citrix.Configuration.Sdk.Zone
-This cmdlet does not generate any output, unless you use the PassThru parameter, in which case it generates a Zone object.
+### None or Citrix.Configuration.Sdk.Zone
+   This cmdlet does not generate any output, unless you use the PassThru parameter, in which case it generates a Zone object.
 ## Examples
 
-### Example 1
+### EXAMPLE 1
 ```
 C:\PS> Set-ConfigZone -Name 'Sydney' -Description 'Sydney branch office'
 ```
-#### Description
-Change the description of the 'Sydney' zone.
+   Description<br>-----------<br>Change the description of the 'Sydney' zone.
