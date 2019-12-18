@@ -890,3 +890,30 @@ nav:
   - Test-TrustDBConnection: Trust/Test-TrustDBConnection.md
   - Unregister-TrustServiceKey: Trust/Unregister-TrustServiceKey.md
   - Update-TrustBearerToken: Trust/Update-TrustBearerToken.md
+- UserProfileManager:
+  - about_UpmSnapInUserProfileManagerSnapin: UserProfileManager/about_UpmSnapInUserProfileManagerSnapin.md
+  - Get-UserProfileDefinition: UserProfileManager/Get-UserProfileDefinition.md
+  - Get-UserProfileManagerServiceAddedCapability: UserProfileManager/Get-UserProfileManagerServiceAddedCapability.md
+  - Get-UserProfilePath: UserProfileManager/Get-UserProfilePath.md
+  - New-UserProfileConfiguration: UserProfileManager/New-UserProfileConfiguration.md
+  - New-UserProfileShare: UserProfileManager/New-UserProfileShare.md
+  - Remove-UserProfileShare: UserProfileManager/Remove-UserProfileShare.md
+  - Repair-UserProfileShare: UserProfileManager/Repair-UserProfileShare.md
+  - Set-UserProfileDefinition: UserProfileManager/Set-UserProfileDefinition.md
+  - Test-UserProfileShare: UserProfileManager/Test-UserProfileShare.md
+- XenDesktop:
+  - about_XenDesktopModule: XenDesktop/about_XenDesktopModule.md
+  - about_XenDesktopModule_SiteConfiguration: XenDesktop/about_XenDesktopModule_SiteConfiguration.md
+  - Add-XDController: XenDesktop/Add-XDController.md
+  - Get-XDDatabaseSchema: XenDesktop/Get-XDDatabaseSchema.md
+  - Get-XDLogging: XenDesktop/Get-XDLogging.md
+  - Get-XDMonitor: XenDesktop/Get-XDMonitor.md
+  - Get-XDSite: XenDesktop/Get-XDSite.md
+  - New-XDDatabase: XenDesktop/New-XDDatabase.md
+  - New-XDSite: XenDesktop/New-XDSite.md
+  - Remove-XDController: XenDesktop/Remove-XDController.md
+  - Remove-XDSite: XenDesktop/Remove-XDSite.md
+  - Set-XDLicensing: XenDesktop/Set-XDLicensing.md
+  - Set-XDLogging: XenDesktop/Set-XDLogging.md
+  - Set-XDMonitor: XenDesktop/Set-XDMonitor.md
+  - Set-XDSiteMetadata: XenDesktop/Set-XDSiteMetadata.md
