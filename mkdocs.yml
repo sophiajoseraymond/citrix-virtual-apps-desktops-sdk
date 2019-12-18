@@ -56,7 +56,9 @@ markdown_extensions:
 
 # Page tree
 nav:
-
+- Versions:
+  - latest: https://developer-docs.citrix.com/projects/citrix-virtual-apps-desktops-sdk/en/latest/
+  - 1808: https://developer-docs.citrix.com/projects/citrix-virtual-apps-desktops-sdk/en/1808/
 - Overview: index.md
 - Understanding the XenDesktop Administration Model: understanding-xendesktop-administration-model.md
 - Getting Started Guide: getting-started.md
@@ -889,3 +891,4 @@ nav:
   - Test-TrustDBConnection: Trust/Test-TrustDBConnection.md
   - Unregister-TrustServiceKey: Trust/Unregister-TrustServiceKey.md
   - Update-TrustBearerToken: Trust/Update-TrustBearerToken.md
+- Questions?: https://discussions.citrix.com/forum/1385-citrix-developer-exchange/
