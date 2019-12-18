@@ -143,6 +143,8 @@ The machine object returned represents a physical or virtual machine, which has 
   * LoadIndexes (System.String\[\]) Gives the last reported individual load indexes that were used in the calculation of the LoadIndex value. Note that the LoadIndex value may have been subsequently adjusted due to session brokering operations. This value is only set for multi-session machines.
 
   * MachineInternalState (Citrix.Broker.Admin.SDK.MachineInternalState) The internal state of the machine; reported while the machine is registered to a controller, plus some private Citrix Broker Service states while the machine is not registered.
+  
+  * MaintenanceModeReason: Determines the reasons a machine is in maintenance mode.
 
   * MachineName (System.String) DNS host name of the machine.
 
@@ -327,6 +329,7 @@ The machine object returned represents a physical or virtual machine, which has 
 | LastPvdErrorTime | Gets machines with the specified last Personal vDisk preparation error time. | false | false |  |
 | LoadIndex | Gets machines by their current load index. | false | false |  |
 | MachineInternalState | Gets machines with the specified internal state. | false | false |  |
+| MaintenanceModeReason | Determines the reasons a machine is in maintenance mode. | false | false | |
 | Metadata | Gets records with matching metadata entries.<br>The value being compared with is a concatenation of the key name, a colon, and the value. For example: -Metadata "abc:x\*" matches records with a metadata entry having a key name of "abc" and a value starting with the letter "x". | false | false |  |
 | OSType | Gets machines by the type of operating system they are running. | false | false |  |
 | OSVersion | Gets machines by the version of the operating system they are running. | false | false |  |
