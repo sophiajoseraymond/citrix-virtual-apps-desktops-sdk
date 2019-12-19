@@ -973,6 +973,7 @@ nav:
   - about_XenDesktopModule_SiteConfiguration: XenDesktop/about_XenDesktopModule_SiteConfiguration.md
   - Add-XDController: XenDesktop/Add-XDController.md
   - Get-XDDatabaseSchema: XenDesktop/Get-XDDatabaseSchema.md
+  - Get-XDLicensing: XenDesktop/Get-XDLicensing.md
   - Get-XDLogging: XenDesktop/Get-XDLogging.md
   - Get-XDMonitor: XenDesktop/Get-XDMonitor.md
   - Get-XDSite: XenDesktop/Get-XDSite.md
