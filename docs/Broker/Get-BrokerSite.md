@@ -1,4 +1,3 @@
-﻿
 # Get-Brokersite
 Gets the current XenDesktop broker site.
 ## Syntax
@@ -88,6 +87,7 @@ The BrokerSite object represents logical representation of the XenDesktop site. 
 | ReuseMachinesWithoutShutdownInOutageAllowed | Specifies whether or not power cycle behavior during outage can be overriden on a delivery group level. | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller that the PowerShell snapin will connect to. This can be provided as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value will become the default. |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| UseVerticalScalingForRdsLaunches | Enable or disable site-wide vertical load balancing | false | false | |
 
 ## Input Type
 
