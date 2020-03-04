@@ -1,4 +1,3 @@
-﻿
 # Set-Brokersite
 Changes the overall settings of the current XenDesktop broker site.
 ## Syntax
@@ -35,6 +34,7 @@ A XenDesktop installation has only a single broker site instance.
 | LoggingId | Specifies the identifier of the high level operation that this cmdlet call forms a part of. Desktop Studio and Desktop Director typically create High Level Operations. PowerShell scripts can also wrap a series of cmdlet calls in a High Level Operation by way of the Start-LogHighLevelOperation and Stop-LogHighLevelOperation cmdlets. | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller that the PowerShell snapin will connect to. This can be provided as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value will become the default. |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| UseVerticalScalingForRdsLaunches | Enable or disable site-wide vertical load balancing | false | false | |
 
 ## Input Type
 
