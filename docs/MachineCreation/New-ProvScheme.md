@@ -68,7 +68,7 @@ The provisioning scheme is a collection of all of the data that is required to f
 
 ## Custom Properties
 
-### AwsOperationalResourcesTagging
+### AwsCaptureInstanceProperties
 
 `AwsCaptureInstanceProperties` lets you capture the AWS instance property when creating a provisioning scheme for an AWS hosting connection.
 
