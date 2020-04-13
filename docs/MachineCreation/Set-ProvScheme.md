@@ -1,4 +1,3 @@
-﻿
 # Set-Provscheme
 Changes the parameter values for a provisioning scheme.
 ## Syntax
@@ -27,10 +26,28 @@ To change the name of the provisioning scheme see Rename-ProvScheme.
 
 ## Related Commands
 
-* [New-ProvScheme](./New-ProvScheme/)
-* [Remove-ProvScheme](./Remove-ProvScheme/)
-* [Get-ProvScheme](./Get-ProvScheme/)
-* [Rename-ProvScheme](./Rename-ProvScheme/)
+* [New-ProvScheme](../New-ProvScheme/)
+* [Remove-ProvScheme](../Remove-ProvScheme/)
+* [Get-ProvScheme](../Get-ProvScheme/)
+* [Rename-ProvScheme](../Rename-ProvScheme/)
+
+## Custom Properties
+
+### StorageAccountType
+
+Machine Creation Services (MCS) supports standard SSD managed disks for Azure virtual machines. This disk type provides consistent performance, and delivers better availability compared to HDD disks. For more information, see [Standard SSD Disks for Azure Virtual machine workloads](https://azure.microsoft.com/en-us/blog/preview-standard-ssd-disks-for-azure-virtual-machine-workloads/).
+
+Use the PowerShell `StorageAccountType` custom property in the [`New-ProvScheme`](../New-ProvScheme/) command or `Set-ProvScheme` command to configure this feature.
+
+#### Syntax
+
+```
+<Property xsi:type=`"StringProperty`" Name=`"UseManagedDisks`" Value=`"true`" /><Property xsi:type=`"StringProperty`" Name=`"StorageAccountType`" Value=`"StandardSSD_LRS`" /><Property xsi:type=`"StringProperty`" Value=`"Windows_Server`" />
+```
+
+!!! note "Note"
+    This feature is only available when using managed disks, that is, the custom property `UseManagedDisks` is set to *true*.     For unmanaged disks only Standard HDD and Premium SSD are supported.
+
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
@@ -47,13 +64,9 @@ To change the name of the provisioning scheme see Rename-ProvScheme.
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
-## Input Type
-
-### 
-
 ## Return Values
 
-### Citrix.Machinecreation.Sdk.Provisioningscheme<br>    This Object Provides Details Of The Provisioning Scheme And Contains The Following Information:<br>    Provisioningschemeuid<br>    Provisioningschemename<br>        The Name Of The Provisioning Scheme.<br>    Cpucount<br>        The Numer Of Processors That Vms Will Be Created With When Using This Scheme.<br>    Memorymb<br>        The Maximum Amount Of Memory That Vms Will Be Created With When Using This Scheme.<br>    Masterimagevm<br>        The Path Within The Hosting Unit Provider To The Vm Or Snapshot Of Which The Scheme Is Currently Using A Copy.<br>    Masterimagevmdate<br>        The Date And Time That The Copy Of The Vm Image Was Made For The Scheme.<br>    Identitypooluid<br>        The Unique Identifier Of The Identity Pool (From The Adidentity Powershell Snap-In) That The Scheme Uses.<br>    Identitypoolname<br>        The Name Of The Identity Pool (From The Adidentity Powershell Snap-In) That The Scheme Uses.<br>    Hostingunituid<br>       The Unique Identifier Of The Hosting Unit (From The Hosting Unit Powershell Snap-In) That The New Provisioning Scheme Will Use.<br>    Hostingunitname<br>       The Name Of The Hosting Unit (From The Hosting Unit Powershell Snap-In) That The New Provisioning Scheme Will Use.<br>    Cleanonboot<br>       Indicates Whether The Vms Created Are To Be Reset To A Clean State On Each Boot.<br>    Taskid<br>       The Identifier Of Any Current Task That Is Running For The Provisioning Scheme.
+Citrix.Machinecreation.Sdk.Provisioningscheme<br>    This Object Provides Details Of The Provisioning Scheme And Contains The Following Information:<br>    Provisioningschemeuid<br>    Provisioningschemename<br>        The Name Of The Provisioning Scheme.<br>    Cpucount<br>        The Numer Of Processors That Vms Will Be Created With When Using This Scheme.<br>    Memorymb<br>        The Maximum Amount Of Memory That Vms Will Be Created With When Using This Scheme.<br>    Masterimagevm<br>        The Path Within The Hosting Unit Provider To The Vm Or Snapshot Of Which The Scheme Is Currently Using A Copy.<br>    Masterimagevmdate<br>        The Date And Time That The Copy Of The Vm Image Was Made For The Scheme.<br>    Identitypooluid<br>        The Unique Identifier Of The Identity Pool (From The Adidentity Powershell Snap-In) That The Scheme Uses.<br>    Identitypoolname<br>        The Name Of The Identity Pool (From The Adidentity Powershell Snap-In) That The Scheme Uses.<br>    Hostingunituid<br>       The Unique Identifier Of The Hosting Unit (From The Hosting Unit Powershell Snap-In) That The New Provisioning Scheme Will Use.<br>    Hostingunitname<br>       The Name Of The Hosting Unit (From The Hosting Unit Powershell Snap-In) That The New Provisioning Scheme Will Use.<br>    Cleanonboot<br>       Indicates Whether The Vms Created Are To Be Reset To A Clean State On Each Boot.<br>    Taskid<br>       The Identifier Of Any Current Task That Is Running For The Provisioning Scheme.
 
 ## Notes
 In the case of failure, the following errors can result.<br>    Error Codes<br>    -----------<br>    ProvisioningSchemeNotFound<br>    The specified provisioning scheme could not be located.<br>    DatabaseError<br>    An error occurred in the service while attempting a database operation.<br>    DatabaseNotConfigured<br>    The operation could not be completed because the database for the service is not configured.<br>    ServiceStatusInvalidDb<br>    An error occurred in the service while attempting a database operation - communication with the database failed for<br>    for various reasons.<br>    CommunicationError<br>    An error occurred while communicating with the service.<br>    PermissionDenied<br>    The user does not have administrative rights to perform this operation.<br>    ConfigurationLoggingError<br>    The operation could not be performed because of a configuration logging error<br>    HostingUnitNotFound<br>    The hosting unit referenced by the provisioning scheme could not be resolved<br>    ExceptionThrown<br>    An unexpected error occurred.  To locate more details, see the Windows event logs on the controller being used or examine the XenDesktop logs.
