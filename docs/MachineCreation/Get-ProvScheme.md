@@ -1,4 +1,3 @@
-﻿
 # Get-Provscheme
 Gets the list of provisioning schemes.
 ## Syntax
@@ -31,6 +30,28 @@ Lets you retrieve the list of defined provisioning schemes.
 | Filter | See about\_Prov\_Filtering for details. | false | false |  |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller that the PowerShell snap-in connects to.  You can provide this as a host name or an IP address. | false | false | LocalHost. When a value is provided by any cmdlet, this value becomes the default. |
+
+## Custom Properties
+
+### AwsOperationalResourcesTagging
+
+`AwsOperationalResourcesTagging` lets you tag a resource for a provisioned VM. 
+
+#### Syntax
+
+```
+New-ProvScheme -CustomProperties “AwsCaptureInstanceProperties,true; AwsOperationalResourcesTagging,true” …<standard provscheme parameters>
+```
+
+#### Required Permissions 
+
+To use the AwsOperationalResourcesTagging custom property, ensure that the following new permissions exist for the AWS service key:
+
+- `ec2:CreateTags`
+- `ec2:DeleteTags`
+- `ec2:DescribeTags`
+- `s3:PutBucketTagging`
+- `s3:PutObjectTagging`
 
 ## Input Type
 
