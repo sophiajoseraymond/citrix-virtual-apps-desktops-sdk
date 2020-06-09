@@ -38,6 +38,7 @@ The Set-BrokerRebootScheduleV2 cmdlet is used to alter the settings of an existi
 | AdminAddress | Specifies the address of a XenDesktop controller that the PowerShell snapin will connect to. This can be provided as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value will become the default. |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
 | MaxOvertimeStartMins | Specifies the maximum number of minutes beyond the scheduled start time that a restart schedule can begin | false | | |
+| IgnoreMaintenanceMode	| Option to ignore the maintenance mode of a machine and reboot	| No | true (ByPropertyName) | false |
 
 ## Input Type
 
