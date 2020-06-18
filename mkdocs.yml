@@ -57,6 +57,7 @@ markdown_extensions:
 # Page tree
 nav:
 - Versions:
+  - latest: https://developer-docs.citrix.com/projects/citrix-virtual-apps-desktops-sdk/en/latest/
   - Citrix Virtual Apps and Desktops 1811 SDK: https://developer-docs.citrix.com/projects/citrix-virtual-apps-desktops-sdk/en/1811/
   - Citrix Virtual Apps and Desktops 1808 SDK: https://developer-docs.citrix.com/projects/citrix-virtual-apps-desktops-sdk/en/1808/
 - Overview: index.md
