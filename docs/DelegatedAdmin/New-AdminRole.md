@@ -19,14 +19,14 @@ You cannot modify built-in roles, and only some license editions support custom 
 
 ## Related Commands
 
-* [Get-AdminRole](./Get-AdminRole/)
-* [Set-AdminRole](./Set-AdminRole/)
-* [Rename-AdminRole](./Rename-AdminRole/)
-* [Remove-AdminRole](./Remove-AdminRole/)
-* [Set-AdminRoleMetadata](./Set-AdminRoleMetadata/)
-* [Remove-AdminRoleMetadata](./Remove-AdminRoleMetadata/)
-* [Add-AdminPermission](./Add-AdminPermission/)
-* [Add-AdminRight](./Add-AdminRight/)
+* [Get-AdminRole](../Get-AdminRole/)
+* [Set-AdminRole](../Set-AdminRole/)
+* [Rename-AdminRole](../Rename-AdminRole/)
+* [Remove-AdminRole](../Remove-AdminRole/)
+* [Set-AdminRoleMetadata](../Set-AdminRoleMetadata/)
+* [Remove-AdminRoleMetadata](../Remove-AdminRoleMetadata/)
+* [Add-AdminPermission](../Add-AdminPermission/)
+* [Add-AdminRight](../Add-AdminRight/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

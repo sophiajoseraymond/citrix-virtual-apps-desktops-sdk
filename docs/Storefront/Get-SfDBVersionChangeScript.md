@@ -25,9 +25,9 @@ Once an update has been applied to the service schema, any existing Citrix Store
 
 ## Related Commands
 
-* [Get-SfInstalledDBVersion](./Get-SfInstalledDBVersion/)
-* [Get-SfServiceStatus](./Get-SfServiceStatus/)
-* [Get-SfDBSchema](./Get-SfDBSchema/)
+* [Get-SfInstalledDBVersion](../Get-SfInstalledDBVersion/)
+* [Get-SfServiceStatus](../Get-SfServiceStatus/)
+* [Get-SfDBSchema](../Get-SfDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

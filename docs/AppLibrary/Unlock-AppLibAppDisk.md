@@ -13,8 +13,8 @@ Provides the ability to unlockan AppDisk that has the Id of a failed Task still 
 
 ## Related Commands
 
-* [Get-AppLibAppDiske](./Get-AppLibAppDiske/)
-* [Stop-AppLibTask](./Stop-AppLibTask/)
+* [Get-AppLibAppDiske](../Get-AppLibAppDiske/)
+* [Stop-AppLibTask](../Stop-AppLibTask/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

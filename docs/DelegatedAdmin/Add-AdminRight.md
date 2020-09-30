@@ -19,9 +19,9 @@ Use the Get-AdminAdministrator cmdlet to determine what rights an administrator 
 
 ## Related Commands
 
-* [Get-AdminAdministrator](./Get-AdminAdministrator/)
-* [Get-AdminEffectiveRight](./Get-AdminEffectiveRight/)
-* [Remove-AdminRight](./Remove-AdminRight/)
+* [Get-AdminAdministrator](../Get-AdminAdministrator/)
+* [Get-AdminEffectiveRight](../Get-AdminEffectiveRight/)
+* [Remove-AdminRight](../Remove-AdminRight/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

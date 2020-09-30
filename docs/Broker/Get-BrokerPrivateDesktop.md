@@ -82,7 +82,7 @@ Private desktops are machines that have been configured with a DesktopKind of 'P
 
 ## Related Commands
 
-* [Set-BrokerPrivateDesktop](./Set-BrokerPrivateDesktop/)
+* [Set-BrokerPrivateDesktop](../Set-BrokerPrivateDesktop/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

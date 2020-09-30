@@ -17,9 +17,9 @@ The current service instance is that on the local machine, or that explicitly sp
 
 ## Related Commands
 
-* [Get-MonitorServiceStatus](./Get-MonitorServiceStatus/)
-* [Get-MonitorDBConnection](./Get-MonitorDBConnection/)
-* [Set-MonitorDBConnection](./Set-MonitorDBConnection/)
+* [Get-MonitorServiceStatus](../Get-MonitorServiceStatus/)
+* [Get-MonitorDBConnection](../Get-MonitorDBConnection/)
+* [Set-MonitorDBConnection](../Set-MonitorDBConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -15,9 +15,9 @@ Once the database administrator has executed all scripts of type FullDatabase, r
 
 ## Related Commands
 
-* [New-XDDatabase](./New-XDDatabase/)
-* [Add-XDController](./Add-XDController/)
-* [Remove-XDController](./Remove-XDController/)
+* [New-XDDatabase](../New-XDDatabase/)
+* [Add-XDController](../Add-XDController/)
+* [Remove-XDController](../Remove-XDController/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

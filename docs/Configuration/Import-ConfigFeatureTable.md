@@ -13,14 +13,14 @@ Import-ConfigFeatureTable -Content <String> [-LoggingId <Guid>] [-BearerToken <S
 
 ## Related Commands
 
-* [Export-ConfigFeatureTable](./Export-ConfigFeatureTable/)
-* [Get-ConfigSite](./Get-ConfigSite/)
-* [Set-ConfigSite](./Set-ConfigSite/)
-* [Get-ConfigProduct](./Get-ConfigProduct/)
-* [Get-ConfigProductEdition](./Get-ConfigProductEdition/)
-* [Get-ConfigProductFeature](./Get-ConfigProductFeature/)
-* [Get-ConfigProductVersion](./Get-ConfigProductVersion/)
-* [Get-ConfigLicensingModel](./Get-ConfigLicensingModel/)
+* [Export-ConfigFeatureTable](../Export-ConfigFeatureTable/)
+* [Get-ConfigSite](../Get-ConfigSite/)
+* [Set-ConfigSite](../Set-ConfigSite/)
+* [Get-ConfigProduct](../Get-ConfigProduct/)
+* [Get-ConfigProductEdition](../Get-ConfigProductEdition/)
+* [Get-ConfigProductFeature](../Get-ConfigProductFeature/)
+* [Get-ConfigProductVersion](../Get-ConfigProductVersion/)
+* [Get-ConfigLicensingModel](../Get-ConfigLicensingModel/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

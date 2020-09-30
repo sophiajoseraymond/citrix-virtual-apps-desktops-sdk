@@ -45,9 +45,9 @@ The upload may take a long time to finish. If the cmdlet times out, the system e
 
 ## Related Commands
 
-* [Get-Credential](./Get-Credential/)
-* [New-CitrixCallHomeUploadGrantToken](./New-CitrixCallHomeUploadGrantToken/)
-* [New-CitrixCallHomeUploadToken](./New-CitrixCallHomeUploadToken/)
+* [Get-Credential](../Get-Credential/)
+* [New-CitrixCallHomeUploadGrantToken](../New-CitrixCallHomeUploadGrantToken/)
+* [New-CitrixCallHomeUploadToken](../New-CitrixCallHomeUploadToken/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

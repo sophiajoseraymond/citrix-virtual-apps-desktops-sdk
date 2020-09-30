@@ -19,11 +19,11 @@ StartTime - A System.TimeSpan representing the duration after midnight at which 
 
 ## Related Commands
 
-* [Disable-CitrixCallHome](./Disable-CitrixCallHome/)
-* [Enable-CitrixCallHome](./Enable-CitrixCallHome/)
-* [Get-CitrixCallHome](./Get-CitrixCallHome/)
-* [Set-CitrixCallHomeSchedule](./Set-CitrixCallHomeSchedule/)
-* [Start-TelemetryUpload](./Start-TelemetryUpload/)
+* [Disable-CitrixCallHome](../Disable-CitrixCallHome/)
+* [Enable-CitrixCallHome](../Enable-CitrixCallHome/)
+* [Get-CitrixCallHome](../Get-CitrixCallHome/)
+* [Set-CitrixCallHomeSchedule](../Set-CitrixCallHomeSchedule/)
+* [Start-TelemetryUpload](../Start-TelemetryUpload/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

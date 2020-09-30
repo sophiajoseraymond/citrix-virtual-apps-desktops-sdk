@@ -11,7 +11,7 @@ Returns the configuration stored on License Server for a sample collection about
 
 ## Related Commands
 
-* [Set-LicConfigUsageSamples](./Set-LicConfigUsageSamples/)
+* [Set-LicConfigUsageSamples](../Set-LicConfigUsageSamples/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

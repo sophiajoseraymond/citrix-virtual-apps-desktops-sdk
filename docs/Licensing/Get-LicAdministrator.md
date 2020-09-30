@@ -11,8 +11,8 @@ Returns a list of administrator accounts currently configured to access the Lice
 
 ## Related Commands
 
-* [New-LicAdministrator](./New-LicAdministrator/)
-* [Remove-LicAdministrator](./Remove-LicAdministrator/)
+* [New-LicAdministrator](../New-LicAdministrator/)
+* [Remove-LicAdministrator](../Remove-LicAdministrator/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

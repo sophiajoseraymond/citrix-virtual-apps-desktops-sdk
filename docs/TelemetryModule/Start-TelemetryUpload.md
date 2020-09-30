@@ -37,12 +37,12 @@ The upload may take a long time to finish. If the cmdlet times out, the system e
 
 ## Related Commands
 
-* [Get-Credential](./Get-Credential/)
-* [Disable-CitrixCallHome](./Disable-CitrixCallHome/)
-* [Enable-CitrixCallHome](./Enable-CitrixCallHome/)
-* [Get-CitrixCallHome](./Get-CitrixCallHome/)
-* [Get-CitrixCallHomeSchedule](./Get-CitrixCallHomeSchedule/)
-* [Start-CitrixCallHomeUpload](./Start-CitrixCallHomeUpload/)
+* [Get-Credential](../Get-Credential/)
+* [Disable-CitrixCallHome](../Disable-CitrixCallHome/)
+* [Enable-CitrixCallHome](../Enable-CitrixCallHome/)
+* [Get-CitrixCallHome](../Get-CitrixCallHome/)
+* [Get-CitrixCallHomeSchedule](../Get-CitrixCallHomeSchedule/)
+* [Start-CitrixCallHomeUpload](../Start-CitrixCallHomeUpload/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

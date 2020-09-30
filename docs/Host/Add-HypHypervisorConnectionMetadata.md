@@ -21,8 +21,8 @@ Provides the ability for additional custom data to be stored against given Hyper
 
 ## Related Commands
 
-* [Set-HypHypervisorConnectionMetadata](./Set-HypHypervisorConnectionMetadata/)
-* [Remove-HypHypervisorConnectionMetadata](./Remove-HypHypervisorConnectionMetadata/)
+* [Set-HypHypervisorConnectionMetadata](../Set-HypHypervisorConnectionMetadata/)
+* [Remove-HypHypervisorConnectionMetadata](../Remove-HypHypervisorConnectionMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

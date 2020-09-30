@@ -11,7 +11,7 @@ Get-LicLACEnabledState [<CommonParameters>]
 
 ## Related Commands
 
-* [Unkown](./Unkown/)
+* [Unkown](../Unkown/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -19,8 +19,8 @@ Only one of the -Upgrade or -Downgrade parameters may be supplied at once.
 
 ## Related Commands
 
-* [Get-BrokerDBVersionChangeScript](./Get-BrokerDBVersionChangeScript/)
-* [Get-BrokerDBSchema](./Get-BrokerDBSchema/)
+* [Get-BrokerDBVersionChangeScript](../Get-BrokerDBVersionChangeScript/)
+* [Get-BrokerDBSchema](../Get-BrokerDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -17,12 +17,12 @@ The following rules apply to the importing of Active Directory accounts; If the 
 
 ## Related Commands
 
-* [New-AcctADAccount](./New-AcctADAccount/)
-* [Remove-AcctADAccount](./Remove-AcctADAccount/)
-* [Repair-AcctADAccount](./Repair-AcctADAccount/)
-* [Get-AcctADAccount](./Get-AcctADAccount/)
-* [Update-AcctADAccount](./Update-AcctADAccount/)
-* [Unlock-AcctADAccount](./Unlock-AcctADAccount/)
+* [New-AcctADAccount](../New-AcctADAccount/)
+* [Remove-AcctADAccount](../Remove-AcctADAccount/)
+* [Repair-AcctADAccount](../Repair-AcctADAccount/)
+* [Get-AcctADAccount](../Get-AcctADAccount/)
+* [Update-AcctADAccount](../Update-AcctADAccount/)
+* [Unlock-AcctADAccount](../Unlock-AcctADAccount/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

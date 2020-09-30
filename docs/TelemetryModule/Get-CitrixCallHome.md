@@ -15,11 +15,11 @@ IsMasterImage - A boolean value indicating if the current configuration is prepa
 
 ## Related Commands
 
-* [Disable-CitrixCallHome](./Disable-CitrixCallHome/)
-* [Enable-CitrixCallHome](./Enable-CitrixCallHome/)
-* [Set-CitrixCallHomeSchedule](./Set-CitrixCallHomeSchedule/)
-* [Get-CitrixCallHomeSchedule](./Get-CitrixCallHomeSchedule/)
-* [Start-TelemetryUpload](./Start-TelemetryUpload/)
+* [Disable-CitrixCallHome](../Disable-CitrixCallHome/)
+* [Enable-CitrixCallHome](../Enable-CitrixCallHome/)
+* [Set-CitrixCallHomeSchedule](../Set-CitrixCallHomeSchedule/)
+* [Get-CitrixCallHomeSchedule](../Get-CitrixCallHomeSchedule/)
+* [Start-TelemetryUpload](../Start-TelemetryUpload/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

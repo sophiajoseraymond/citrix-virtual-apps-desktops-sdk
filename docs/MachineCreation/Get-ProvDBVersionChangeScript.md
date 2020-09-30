@@ -25,9 +25,9 @@ Once an update has been applied to the service schema, any existing Citrix Machi
 
 ## Related Commands
 
-* [Get-ProvInstalledDBVersion](./Get-ProvInstalledDBVersion/)
-* [Get-ProvServiceStatus](./Get-ProvServiceStatus/)
-* [Get-ProvDBSchema](./Get-ProvDBSchema/)
+* [Get-ProvInstalledDBVersion](../Get-ProvInstalledDBVersion/)
+* [Get-ProvServiceStatus](../Get-ProvServiceStatus/)
+* [Get-ProvDBSchema](../Get-ProvDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

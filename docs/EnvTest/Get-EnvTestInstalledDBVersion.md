@@ -19,8 +19,8 @@ Only one of the -Upgrade or -Downgrade parameters may be supplied at once.
 
 ## Related Commands
 
-* [Get-EnvTestDBVersionChangeScript](./Get-EnvTestDBVersionChangeScript/)
-* [Get-EnvTestDBSchema](./Get-EnvTestDBSchema/)
+* [Get-EnvTestDBVersionChangeScript](../Get-EnvTestDBVersionChangeScript/)
+* [Get-EnvTestDBSchema](../Get-EnvTestDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

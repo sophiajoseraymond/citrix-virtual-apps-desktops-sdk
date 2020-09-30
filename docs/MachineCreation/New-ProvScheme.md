@@ -21,9 +21,9 @@ The provisioning scheme is a collection of all of the data that is required to f
 
 ## Related Commands
 
-* [Get-ProvTask](./Get-ProvTask/)
-* [Get-ProvScheme](./Get-ProvScheme/)
-* [Test-ProvSchemeNameAvailable](./Test-ProvSchemeNameAvailable/)
+* [Get-ProvTask](../Get-ProvTask/)
+* [Get-ProvScheme](../Get-ProvScheme/)
+* [Test-ProvSchemeNameAvailable](../Test-ProvSchemeNameAvailable/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -11,12 +11,12 @@ This cmdlet returns a Citrix Call Home upload token that can then be used by Sta
 
 ## Related Commands
 
-* [Enable-CitrixCallHome](./Enable-CitrixCallHome/)
-* [Get-CitrixCallHome](./Get-CitrixCallHome/)
-* [Set-CitrixCallHomeSchedule](./Set-CitrixCallHomeSchedule/)
-* [Get-CitrixCallHomeSchedule](./Get-CitrixCallHomeSchedule/)
-* [Start-CitrixCallHomeUpload](./Start-CitrixCallHomeUpload/)
-* [New-CitrixCallHomeUploadGrantToken](./New-CitrixCallHomeUploadGrantToken/)
+* [Enable-CitrixCallHome](../Enable-CitrixCallHome/)
+* [Get-CitrixCallHome](../Get-CitrixCallHome/)
+* [Set-CitrixCallHomeSchedule](../Set-CitrixCallHomeSchedule/)
+* [Get-CitrixCallHomeSchedule](../Get-CitrixCallHomeSchedule/)
+* [Start-CitrixCallHomeUpload](../Start-CitrixCallHomeUpload/)
+* [New-CitrixCallHomeUploadGrantToken](../New-CitrixCallHomeUploadGrantToken/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

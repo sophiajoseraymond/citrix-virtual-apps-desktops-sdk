@@ -27,10 +27,10 @@ To change the name of the provisioning scheme see Rename-ProvScheme.
 
 ## Related Commands
 
-* [New-ProvScheme](./New-ProvScheme/)
-* [Remove-ProvScheme](./Remove-ProvScheme/)
-* [Get-ProvScheme](./Get-ProvScheme/)
-* [Rename-ProvScheme](./Rename-ProvScheme/)
+* [New-ProvScheme](../New-ProvScheme/)
+* [Remove-ProvScheme](../Remove-ProvScheme/)
+* [Get-ProvScheme](../Get-ProvScheme/)
+* [Rename-ProvScheme](../Rename-ProvScheme/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

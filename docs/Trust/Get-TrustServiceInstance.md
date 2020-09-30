@@ -13,8 +13,8 @@ You do not need to configure a database connection to use this command.
 
 ## Related Commands
 
-* [Get-TrustServiceStatus](./Get-TrustServiceStatus/)
-* [Reset-TrustServiceGroupMembership](./Reset-TrustServiceGroupMembership/)
+* [Get-TrustServiceStatus](../Get-TrustServiceStatus/)
+* [Reset-TrustServiceGroupMembership](../Reset-TrustServiceGroupMembership/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

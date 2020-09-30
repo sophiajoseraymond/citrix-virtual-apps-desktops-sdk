@@ -25,9 +25,9 @@ Once an update has been applied to the service schema, any existing Citrix Analy
 
 ## Related Commands
 
-* [Get-AnalyticsInstalledDBVersion](./Get-AnalyticsInstalledDBVersion/)
-* [Get-AnalyticsServiceStatus](./Get-AnalyticsServiceStatus/)
-* [Get-AnalyticsDBSchema](./Get-AnalyticsDBSchema/)
+* [Get-AnalyticsInstalledDBVersion](../Get-AnalyticsInstalledDBVersion/)
+* [Get-AnalyticsServiceStatus](../Get-AnalyticsServiceStatus/)
+* [Get-AnalyticsDBSchema](../Get-AnalyticsDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

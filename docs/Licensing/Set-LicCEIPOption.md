@@ -11,7 +11,7 @@ Sets the CEIP(Customer Experience Improvement Program) option on the License Ser
 
 ## Related Commands
 
-* [Get-LicCEIPOption](./Get-LicCEIPOption/)
+* [Get-LicCEIPOption](../Get-LicCEIPOption/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

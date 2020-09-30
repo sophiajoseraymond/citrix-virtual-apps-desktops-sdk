@@ -66,7 +66,7 @@ The BrokerController object represents a single controller running an instance o
 
 ## Related Commands
 
-* [Get-BrokerDesktop](./Get-BrokerDesktop/)
+* [Get-BrokerDesktop](../Get-BrokerDesktop/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

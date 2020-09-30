@@ -25,8 +25,8 @@ The previous hard disk image path is stored into the history (see Get-ProvScheme
 
 ## Related Commands
 
-* [Get-ProvSchemeMasterVMImageHistory](./Get-ProvSchemeMasterVMImageHistory/)
-* [Get-ProvScheme](./Get-ProvScheme/)
+* [Get-ProvSchemeMasterVMImageHistory](../Get-ProvSchemeMasterVMImageHistory/)
+* [Get-ProvScheme](../Get-ProvScheme/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

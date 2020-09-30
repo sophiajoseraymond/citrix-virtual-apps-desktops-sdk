@@ -21,7 +21,7 @@ Provides the ability for additional custom data to be stored against given Isola
 
 ## Related Commands
 
-* [Remove-AppLibIsolationGroupMetadata](./Remove-AppLibIsolationGroupMetadata/)
+* [Remove-AppLibIsolationGroupMetadata](../Remove-AppLibIsolationGroupMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

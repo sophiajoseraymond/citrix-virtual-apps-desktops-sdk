@@ -11,10 +11,10 @@ Enables the status of the DelegatedAdmin Service on the controller to be determi
 
 ## Related Commands
 
-* [Set-AdminDBConnection](./Set-AdminDBConnection/)
-* [Test-AdminDBConnection](./Test-AdminDBConnection/)
-* [Get-AdminDBConnection](./Get-AdminDBConnection/)
-* [Get-AdminDBSchema](./Get-AdminDBSchema/)
+* [Set-AdminDBConnection](../Set-AdminDBConnection/)
+* [Test-AdminDBConnection](../Test-AdminDBConnection/)
+* [Get-AdminDBConnection](../Get-AdminDBConnection/)
+* [Get-AdminDBSchema](../Get-AdminDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

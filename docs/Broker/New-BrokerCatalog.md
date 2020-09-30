@@ -20,10 +20,10 @@ In order for a machine to register in a site, the machine must belong to a catal
 
 ## Related Commands
 
-* [Get-BrokerCatalog](./Get-BrokerCatalog/)
-* [Rename-BrokerCatalog](./Rename-BrokerCatalog/)
-* [Remove-BrokerCatalog](./Remove-BrokerCatalog/)
-* [Set-BrokerCatalog](./Set-BrokerCatalog/)
+* [Get-BrokerCatalog](../Get-BrokerCatalog/)
+* [Rename-BrokerCatalog](../Rename-BrokerCatalog/)
+* [Remove-BrokerCatalog](../Remove-BrokerCatalog/)
+* [Set-BrokerCatalog](../Set-BrokerCatalog/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

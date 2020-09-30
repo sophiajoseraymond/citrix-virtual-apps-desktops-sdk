@@ -17,9 +17,9 @@ The current service instance is that on the local machine, or that explicitly sp
 
 ## Related Commands
 
-* [Get-SfServiceStatus](./Get-SfServiceStatus/)
-* [Get-SfDBConnection](./Get-SfDBConnection/)
-* [Set-SfDBConnection](./Set-SfDBConnection/)
+* [Get-SfServiceStatus](../Get-SfServiceStatus/)
+* [Get-SfDBConnection](../Get-SfDBConnection/)
+* [Set-SfDBConnection](../Set-SfDBConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

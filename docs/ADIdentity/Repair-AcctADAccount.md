@@ -17,12 +17,12 @@ If the current account password is supplied then this command will use the passw
 
 ## Related Commands
 
-* [New-AcctADAccount](./New-AcctADAccount/)
-* [Add-AcctADAccount](./Add-AcctADAccount/)
-* [Remove-AcctADAccount](./Remove-AcctADAccount/)
-* [Unlock-AcctADAccount](./Unlock-AcctADAccount/)
-* [Update-AcctADAccount](./Update-AcctADAccount/)
-* [Get-AcctADAccount](./Get-AcctADAccount/)
+* [New-AcctADAccount](../New-AcctADAccount/)
+* [Add-AcctADAccount](../Add-AcctADAccount/)
+* [Remove-AcctADAccount](../Remove-AcctADAccount/)
+* [Unlock-AcctADAccount](../Unlock-AcctADAccount/)
+* [Update-AcctADAccount](../Update-AcctADAccount/)
+* [Get-AcctADAccount](../Get-AcctADAccount/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

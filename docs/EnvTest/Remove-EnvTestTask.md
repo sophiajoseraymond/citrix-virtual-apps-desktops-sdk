@@ -13,14 +13,14 @@ Enables completed tasks that have run within the EnvTest Service to be removed f
 
 ## Related Commands
 
-* [Get-EnvTestDefinition](./Get-EnvTestDefinition/)
-* [Get-EnvTestSuiteDefinition](./Get-EnvTestSuiteDefinition/)
-* [Get-EnvTestTask](./Get-EnvTestTask/)
-* [Start-EnvTestTask](./Start-EnvTestTask/)
-* [Switch-EnvTestTask](./Switch-EnvTestTask/)
-* [Stop-EnvTestTask](./Stop-EnvTestTask/)
-* [Add-EnvTestTaskMetadata](./Add-EnvTestTaskMetadata/)
-* [Remove-EnvTestTaskMetadata](./Remove-EnvTestTaskMetadata/)
+* [Get-EnvTestDefinition](../Get-EnvTestDefinition/)
+* [Get-EnvTestSuiteDefinition](../Get-EnvTestSuiteDefinition/)
+* [Get-EnvTestTask](../Get-EnvTestTask/)
+* [Start-EnvTestTask](../Start-EnvTestTask/)
+* [Switch-EnvTestTask](../Switch-EnvTestTask/)
+* [Stop-EnvTestTask](../Stop-EnvTestTask/)
+* [Add-EnvTestTaskMetadata](../Add-EnvTestTaskMetadata/)
+* [Remove-EnvTestTaskMetadata](../Remove-EnvTestTaskMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

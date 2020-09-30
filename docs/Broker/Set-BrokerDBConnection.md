@@ -23,9 +23,9 @@ The current service instance is the one on the local machine, or the one most re
 
 ## Related Commands
 
-* [Get-BrokerServiceStatus](./Get-BrokerServiceStatus/)
-* [Get-BrokerDBConnection](./Get-BrokerDBConnection/)
-* [Test-BrokerDBConnection](./Test-BrokerDBConnection/)
+* [Get-BrokerServiceStatus](../Get-BrokerServiceStatus/)
+* [Get-BrokerDBConnection](../Get-BrokerDBConnection/)
+* [Test-BrokerDBConnection](../Test-BrokerDBConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

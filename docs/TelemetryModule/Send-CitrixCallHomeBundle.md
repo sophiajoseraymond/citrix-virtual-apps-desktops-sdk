@@ -15,11 +15,11 @@ This cmdlet sends the previously saved Call Home upoad to CIS(Citrix Insights Se
 
 ## Related Commands
 
-* [Enable-CitrixCallHome](./Enable-CitrixCallHome/)
-* [Get-CitrixCallHome](./Get-CitrixCallHome/)
-* [Set-CitrixCallHomeSchedule](./Set-CitrixCallHomeSchedule/)
-* [Get-CitrixCallHomeSchedule](./Get-CitrixCallHomeSchedule/)
-* [Start-CitrixCallHomeUpload](./Start-CitrixCallHomeUpload/)
+* [Enable-CitrixCallHome](../Enable-CitrixCallHome/)
+* [Get-CitrixCallHome](../Get-CitrixCallHome/)
+* [Set-CitrixCallHomeSchedule](../Set-CitrixCallHomeSchedule/)
+* [Get-CitrixCallHomeSchedule](../Get-CitrixCallHomeSchedule/)
+* [Start-CitrixCallHomeUpload](../Start-CitrixCallHomeUpload/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

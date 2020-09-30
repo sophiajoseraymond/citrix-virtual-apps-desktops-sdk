@@ -21,7 +21,7 @@ Provides the ability to remove metadata from the given Administrator.
 
 ## Related Commands
 
-* [Set-AdminAdministratorMetadata](./Set-AdminAdministratorMetadata/)
+* [Set-AdminAdministratorMetadata](../Set-AdminAdministratorMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

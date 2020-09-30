@@ -19,13 +19,13 @@ The Remote PC relationships are used by Remote PC automation to determine which 
 
 ## Related Commands
 
-* [Get-BrokerDesktopGroup](./Get-BrokerDesktopGroup/)
-* [New-BrokerDesktopGroup](./New-BrokerDesktopGroup/)
-* [Set-BrokerDesktopGroup](./Set-BrokerDesktopGroup/)
-* [Add-BrokerDesktopGroup](./Add-BrokerDesktopGroup/)
-* [Rename-BrokerDesktopGroup](./Rename-BrokerDesktopGroup/)
-* [New-BrokerCatalog](./New-BrokerCatalog/)
-* [Remove-BrokerCatalog](./Remove-BrokerCatalog/)
+* [Get-BrokerDesktopGroup](../Get-BrokerDesktopGroup/)
+* [New-BrokerDesktopGroup](../New-BrokerDesktopGroup/)
+* [Set-BrokerDesktopGroup](../Set-BrokerDesktopGroup/)
+* [Add-BrokerDesktopGroup](../Add-BrokerDesktopGroup/)
+* [Rename-BrokerDesktopGroup](../Rename-BrokerDesktopGroup/)
+* [New-BrokerCatalog](../New-BrokerCatalog/)
+* [Remove-BrokerCatalog](../Remove-BrokerCatalog/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -25,9 +25,9 @@ Once an update has been applied to the service schema, any existing Citrix Confi
 
 ## Related Commands
 
-* [Get-ConfigInstalledDBVersion](./Get-ConfigInstalledDBVersion/)
-* [Get-ConfigServiceStatus](./Get-ConfigServiceStatus/)
-* [Get-ConfigDBSchema](./Get-ConfigDBSchema/)
+* [Get-ConfigInstalledDBVersion](../Get-ConfigInstalledDBVersion/)
+* [Get-ConfigServiceStatus](../Get-ConfigServiceStatus/)
+* [Get-ConfigDBSchema](../Get-ConfigDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -15,10 +15,10 @@ This cmdlet is used to change the association between Services (referred also as
 
 ## Related Commands
 
-* [Get-ConfigService](./Get-ConfigService/)
-* [Get-ConfigZone](./Get-ConfigZone/)
-* [New-ConfigZone](./New-ConfigZone/)
-* [Set-ConfigSite](./Set-ConfigSite/)
+* [Get-ConfigService](../Get-ConfigService/)
+* [Get-ConfigZone](../Get-ConfigZone/)
+* [New-ConfigZone](../New-ConfigZone/)
+* [Set-ConfigSite](../Set-ConfigSite/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

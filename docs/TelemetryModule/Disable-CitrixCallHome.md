@@ -11,11 +11,11 @@ This cmdlet disables the scheduled Call Home uploads and removes the Citrix iden
 
 ## Related Commands
 
-* [Enable-CitrixCallHome](./Enable-CitrixCallHome/)
-* [Get-CitrixCallHome](./Get-CitrixCallHome/)
-* [Set-CitrixCallHomeSchedule](./Set-CitrixCallHomeSchedule/)
-* [Get-CitrixCallHomeSchedule](./Get-CitrixCallHomeSchedule/)
-* [Start-TelemetryUpload](./Start-TelemetryUpload/)
+* [Enable-CitrixCallHome](../Enable-CitrixCallHome/)
+* [Get-CitrixCallHome](../Get-CitrixCallHome/)
+* [Set-CitrixCallHomeSchedule](../Set-CitrixCallHomeSchedule/)
+* [Get-CitrixCallHomeSchedule](../Get-CitrixCallHomeSchedule/)
+* [Start-TelemetryUpload](../Start-TelemetryUpload/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -11,9 +11,9 @@ This cmdlet checks whether proposed Catalog Name is available for use. It return
 
 ## Related Commands
 
-* [Get-BrokerCatalog](./Get-BrokerCatalog/)
-* [New-BrokerCatalog](./New-BrokerCatalog/)
-* [Rename-BrokerCatalog](./Rename-BrokerCatalog/)
+* [Get-BrokerCatalog](../Get-BrokerCatalog/)
+* [New-BrokerCatalog](../New-BrokerCatalog/)
+* [Rename-BrokerCatalog](../Rename-BrokerCatalog/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -11,10 +11,10 @@ Enables the status of the Analytics Service on the controller to be determined. 
 
 ## Related Commands
 
-* [Set-AnalyticsDBConnection](./Set-AnalyticsDBConnection/)
-* [Test-AnalyticsDBConnection](./Test-AnalyticsDBConnection/)
-* [Get-AnalyticsDBConnection](./Get-AnalyticsDBConnection/)
-* [Get-AnalyticsDBSchema](./Get-AnalyticsDBSchema/)
+* [Set-AnalyticsDBConnection](../Set-AnalyticsDBConnection/)
+* [Test-AnalyticsDBConnection](../Test-AnalyticsDBConnection/)
+* [Get-AnalyticsDBConnection](../Get-AnalyticsDBConnection/)
+* [Get-AnalyticsDBSchema](../Get-AnalyticsDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

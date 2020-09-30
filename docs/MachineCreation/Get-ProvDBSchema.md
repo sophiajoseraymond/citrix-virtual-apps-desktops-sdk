@@ -43,8 +43,8 @@ If the service uses two data stores they can exist in the same database. You do 
 
 ## Related Commands
 
-* [Set-ProvDBConnection](./Set-ProvDBConnection/)
-* [Test-ProvDBConnection](./Test-ProvDBConnection/)
+* [Set-ProvDBConnection](../Set-ProvDBConnection/)
+* [Test-ProvDBConnection](../Test-ProvDBConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

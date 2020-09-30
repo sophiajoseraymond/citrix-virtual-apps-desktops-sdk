@@ -11,8 +11,8 @@ Gets the Configuration Logging Database attributes of the Site which has a Contr
 
 ## Related Commands
 
-* [Get-XDSite](./Get-XDSite/)
-* [Set-XDLogging](./Set-XDLogging/)
+* [Get-XDSite](../Get-XDSite/)
+* [Set-XDLogging](../Set-XDLogging/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

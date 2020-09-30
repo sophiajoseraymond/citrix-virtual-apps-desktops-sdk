@@ -43,8 +43,8 @@ If the service uses two data stores they can exist in the same database. You do 
 
 ## Related Commands
 
-* [Set-AdminDBConnection](./Set-AdminDBConnection/)
-* [Test-AdminDBConnection](./Test-AdminDBConnection/)
+* [Set-AdminDBConnection](../Set-AdminDBConnection/)
+* [Test-AdminDBConnection](../Test-AdminDBConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -11,8 +11,8 @@ Checks to ensure that the proposed name for a provisioning scheme is unused. Thi
 
 ## Related Commands
 
-* [New-ProvScheme](./New-ProvScheme/)
-* [Rename-ProvScheme](./Rename-ProvScheme/)
+* [New-ProvScheme](../New-ProvScheme/)
+* [Rename-ProvScheme](../Rename-ProvScheme/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

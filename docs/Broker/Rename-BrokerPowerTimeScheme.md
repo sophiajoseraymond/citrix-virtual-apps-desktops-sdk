@@ -17,10 +17,10 @@ For more information about the power policy mechanism and pool size management, 
 
 ## Related Commands
 
-* [Get-BrokerPowerTimeScheme](./Get-BrokerPowerTimeScheme/)
-* [Set-BrokerPowerTimeScheme](./Set-BrokerPowerTimeScheme/)
-* [New-BrokerPowerTimeScheme](./New-BrokerPowerTimeScheme/)
-* [Remove-BrokerPowerTimeScheme](./Remove-BrokerPowerTimeScheme/)
+* [Get-BrokerPowerTimeScheme](../Get-BrokerPowerTimeScheme/)
+* [Set-BrokerPowerTimeScheme](../Set-BrokerPowerTimeScheme/)
+* [New-BrokerPowerTimeScheme](../New-BrokerPowerTimeScheme/)
+* [Remove-BrokerPowerTimeScheme](../Remove-BrokerPowerTimeScheme/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

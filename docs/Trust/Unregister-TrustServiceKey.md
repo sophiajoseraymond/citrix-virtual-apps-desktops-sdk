@@ -13,11 +13,11 @@ Unregister and Revoke the service keys for a specified service. If this is a ser
 
 ## Related Commands
 
-* [Register-TrustServiceKey](./Register-TrustServiceKey/)
-* [Get-TrustServiceKey](./Get-TrustServiceKey/)
-* [Set-TrustServiceKeyRotation](./Set-TrustServiceKeyRotation/)
-* [Revoke-TrustPreviousServiceKey](./Revoke-TrustPreviousServiceKey/)
-* [Get-ConfigEdgeServer](./Get-ConfigEdgeServer/)
+* [Register-TrustServiceKey](../Register-TrustServiceKey/)
+* [Get-TrustServiceKey](../Get-TrustServiceKey/)
+* [Set-TrustServiceKeyRotation](../Set-TrustServiceKeyRotation/)
+* [Revoke-TrustPreviousServiceKey](../Revoke-TrustPreviousServiceKey/)
+* [Get-ConfigEdgeServer](../Get-ConfigEdgeServer/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

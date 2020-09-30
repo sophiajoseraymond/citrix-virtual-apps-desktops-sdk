@@ -32,10 +32,10 @@ The BrokerUserZonePreference object represents a user/group account having an as
 
 ## Related Commands
 
-* [New-BrokerUserZonePreference](./New-BrokerUserZonePreference/)
-* [Set-BrokerUserZonePreference](./Set-BrokerUserZonePreference/)
-* [Remove-BrokerUserZonePreference](./Remove-BrokerUserZonePreference/)
-* [Get-BrokerUser](./Get-BrokerUser/)
+* [New-BrokerUserZonePreference](../New-BrokerUserZonePreference/)
+* [Set-BrokerUserZonePreference](../Set-BrokerUserZonePreference/)
+* [Remove-BrokerUserZonePreference](../Remove-BrokerUserZonePreference/)
+* [Get-BrokerUser](../Get-BrokerUser/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

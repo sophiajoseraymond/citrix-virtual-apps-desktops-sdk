@@ -13,9 +13,9 @@ Remove email addresses from the existing policy specified and returns the update
 
 ## Related Commands
 
-* [Get-MonitorNotificationPolicy](./Get-MonitorNotificationPolicy/)
-* [Set-MonitorNotificationPolicy](./Set-MonitorNotificationPolicy/)
-* [Remove-MonitorNotificationPolicy](./Remove-MonitorNotificationPolicy/)
+* [Get-MonitorNotificationPolicy](../Get-MonitorNotificationPolicy/)
+* [Set-MonitorNotificationPolicy](../Set-MonitorNotificationPolicy/)
+* [Remove-MonitorNotificationPolicy](../Remove-MonitorNotificationPolicy/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -23,9 +23,9 @@ The current service instance is that on the local machine, or that explicitly sp
 
 ## Related Commands
 
-* [Get-HypServiceStatus](./Get-HypServiceStatus/)
-* [Get-HypDBConnection](./Get-HypDBConnection/)
-* [Test-HypDBConnection](./Test-HypDBConnection/)
+* [Get-HypServiceStatus](../Get-HypServiceStatus/)
+* [Get-HypDBConnection](../Get-HypDBConnection/)
+* [Test-HypDBConnection](../Test-HypDBConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

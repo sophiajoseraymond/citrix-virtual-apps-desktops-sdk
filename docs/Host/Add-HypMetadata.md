@@ -11,7 +11,7 @@ Use this command to store additional custom data against a hosting unit or hyper
 
 ## Related Commands
 
-* [Remove-HypMetadata](./Remove-HypMetadata/)
+* [Remove-HypMetadata](../Remove-HypMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

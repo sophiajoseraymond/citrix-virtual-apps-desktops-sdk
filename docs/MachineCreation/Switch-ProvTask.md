@@ -13,9 +13,9 @@ Tasks can only execute on a single host.  If the host is removed from a deployme
 
 ## Related Commands
 
-* [Get-ProvTask](./Get-ProvTask/)
-* [Stop-ProvTask](./Stop-ProvTask/)
-* [Remove-ProvTask](./Remove-ProvTask/)
+* [Get-ProvTask](../Get-ProvTask/)
+* [Stop-ProvTask](../Stop-ProvTask/)
+* [Remove-ProvTask](../Remove-ProvTask/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

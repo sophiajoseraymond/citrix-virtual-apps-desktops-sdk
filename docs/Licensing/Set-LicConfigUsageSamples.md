@@ -11,7 +11,7 @@ Sets the configuration stored on the License Server to collect samples of licens
 
 ## Related Commands
 
-* [Get-LicConfigUsageSamples](./Get-LicConfigUsageSamples/)
+* [Get-LicConfigUsageSamples](../Get-LicConfigUsageSamples/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -17,12 +17,12 @@ Provides the ability to remove metadata from the given Task.
 
 ## Related Commands
 
-* [Add-AppLibTaskMetadata](./Add-AppLibTaskMetadata/)
-* [Set-AppLibTaskMetadata](./Set-AppLibTaskMetadata/)
-* [Get-AppLibTask](./Get-AppLibTask/)
-* [Remove-AppLibTask](./Remove-AppLibTask/)
-* [Stop-AppLibTask](./Stop-AppLibTask/)
-* [Switch-AppLibTask](./Switch-AppLibTask/)
+* [Add-AppLibTaskMetadata](../Add-AppLibTaskMetadata/)
+* [Set-AppLibTaskMetadata](../Set-AppLibTaskMetadata/)
+* [Get-AppLibTask](../Get-AppLibTask/)
+* [Remove-AppLibTask](../Remove-AppLibTask/)
+* [Stop-AppLibTask](../Stop-AppLibTask/)
+* [Switch-AppLibTask](../Switch-AppLibTask/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

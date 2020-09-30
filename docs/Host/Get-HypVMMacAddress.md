@@ -11,7 +11,7 @@ Use this command to obtain a list of MAC addresses of all the virtual machines i
 
 ## Related Commands
 
-* [Get-Item](./Get-Item/)
+* [Get-Item](../Get-Item/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

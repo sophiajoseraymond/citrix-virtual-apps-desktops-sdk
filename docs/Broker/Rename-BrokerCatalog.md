@@ -15,10 +15,10 @@ The following special characters are not allowed in a catalog name: \\ / ; : # .
 
 ## Related Commands
 
-* [Get-BrokerCatalog](./Get-BrokerCatalog/)
-* [New-BrokerCatalog](./New-BrokerCatalog/)
-* [Remove-BrokerCatalog](./Remove-BrokerCatalog/)
-* [Set-BrokerCatalog](./Set-BrokerCatalog/)
+* [Get-BrokerCatalog](../Get-BrokerCatalog/)
+* [New-BrokerCatalog](../New-BrokerCatalog/)
+* [Remove-BrokerCatalog](../Remove-BrokerCatalog/)
+* [Set-BrokerCatalog](../Set-BrokerCatalog/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

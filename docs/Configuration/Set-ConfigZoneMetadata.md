@@ -21,7 +21,7 @@ Provides the ability for additional custom data to be stored against given Zone 
 
 ## Related Commands
 
-* [Remove-ConfigZoneMetadata](./Remove-ConfigZoneMetadata/)
+* [Remove-ConfigZoneMetadata](../Remove-ConfigZoneMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

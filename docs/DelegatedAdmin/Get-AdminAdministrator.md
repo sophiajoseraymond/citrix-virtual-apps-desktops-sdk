@@ -13,11 +13,11 @@ See about\_Admin\_Filtering for information about advanced filtering options.
 
 ## Related Commands
 
-* [New-AdminAdministrator](./New-AdminAdministrator/)
-* [Set-AdminAdministrator](./Set-AdminAdministrator/)
-* [Remove-AdminAdministrator](./Remove-AdminAdministrator/)
-* [Set-AdminAdministratorMetadata](./Set-AdminAdministratorMetadata/)
-* [Remove-AdminAdministratorMetadata](./Remove-AdminAdministratorMetadata/)
+* [New-AdminAdministrator](../New-AdminAdministrator/)
+* [Set-AdminAdministrator](../Set-AdminAdministrator/)
+* [Remove-AdminAdministrator](../Remove-AdminAdministrator/)
+* [Set-AdminAdministratorMetadata](../Set-AdminAdministratorMetadata/)
+* [Remove-AdminAdministratorMetadata](../Remove-AdminAdministratorMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

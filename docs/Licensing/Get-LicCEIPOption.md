@@ -11,7 +11,7 @@ Returns the current CEIP(Customer Experience Improvement Program) option set on 
 
 ## Related Commands
 
-* [Set-LicCEIPOption](./Set-LicCEIPOption/)
+* [Set-LicCEIPOption](../Set-LicCEIPOption/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

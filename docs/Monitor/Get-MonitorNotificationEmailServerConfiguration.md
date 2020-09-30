@@ -11,7 +11,7 @@ Retrurns the existing email server configurations required to send email alerts.
 
 ## Related Commands
 
-* [Set-MonitorNotificationEmailServerConfiguration](./Set-MonitorNotificationEmailServerConfiguration/)
+* [Set-MonitorNotificationEmailServerConfiguration](../Set-MonitorNotificationEmailServerConfiguration/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

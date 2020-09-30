@@ -15,9 +15,9 @@ The identity of the user or group must be specified using either the Name or SID
 
 ## Related Commands
 
-* [Add-BrokerUser](./Add-BrokerUser/)
-* [Get-BrokerUser](./Get-BrokerUser/)
-* [Remove-BrokerUser](./Remove-BrokerUser/)
+* [Add-BrokerUser](../Add-BrokerUser/)
+* [Get-BrokerUser](../Get-BrokerUser/)
+* [Remove-BrokerUser](../Remove-BrokerUser/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

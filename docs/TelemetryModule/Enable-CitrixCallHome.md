@@ -13,12 +13,12 @@ The optional Collect parameter accepts a json-formatted string, which specify th
 
 ## Related Commands
 
-* [Get-Credential](./Get-Credential/)
-* [Disable-CitrixCallHome](./Disable-CitrixCallHome/)
-* [Get-CitrixCallHome](./Get-CitrixCallHome/)
-* [Set-CitrixCallHomeSchedule](./Set-CitrixCallHomeSchedule/)
-* [Get-CitrixCallHomeSchedule](./Get-CitrixCallHomeSchedule/)
-* [Start-TelemetryUpload](./Start-TelemetryUpload/)
+* [Get-Credential](../Get-Credential/)
+* [Disable-CitrixCallHome](../Disable-CitrixCallHome/)
+* [Get-CitrixCallHome](../Get-CitrixCallHome/)
+* [Set-CitrixCallHomeSchedule](../Set-CitrixCallHomeSchedule/)
+* [Get-CitrixCallHomeSchedule](../Get-CitrixCallHomeSchedule/)
+* [Start-TelemetryUpload](../Start-TelemetryUpload/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

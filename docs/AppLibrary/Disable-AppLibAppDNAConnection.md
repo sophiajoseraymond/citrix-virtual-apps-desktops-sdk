@@ -11,10 +11,10 @@ Disables Citrix Studio integration with the configured AppDNA connection.
 
 ## Related Commands
 
-* [Enable-AppLibAppDNAConnection](./Enable-AppLibAppDNAConnection/)
-* [Get-AppLibAppDNAConnection](./Get-AppLibAppDNAConnection/)
-* [Set-AppLibAppDNAConnection](./Set-AppLibAppDNAConnection/)
-* [Remove-AppLibAppDNAConnection](./Remove-AppLibAppDNAConnection/)
+* [Enable-AppLibAppDNAConnection](../Enable-AppLibAppDNAConnection/)
+* [Get-AppLibAppDNAConnection](../Get-AppLibAppDNAConnection/)
+* [Set-AppLibAppDNAConnection](../Set-AppLibAppDNAConnection/)
+* [Remove-AppLibAppDNAConnection](../Remove-AppLibAppDNAConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

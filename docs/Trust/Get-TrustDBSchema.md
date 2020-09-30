@@ -43,8 +43,8 @@ If the service uses two data stores they can exist in the same database. You do 
 
 ## Related Commands
 
-* [Set-TrustDBConnection](./Set-TrustDBConnection/)
-* [Test-TrustDBConnection](./Test-TrustDBConnection/)
+* [Set-TrustDBConnection](../Set-TrustDBConnection/)
+* [Test-TrustDBConnection](../Test-TrustDBConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -17,12 +17,12 @@ To associate controllers with a zone use the Set-ConfigService cmdlet.
 
 ## Related Commands
 
-* [Get-ConfigZone](./Get-ConfigZone/)
-* [Set-ConfigSite](./Set-ConfigSite/)
-* [Set-ConfigService](./Set-ConfigService/)
-* [Set-ConfigZone](./Set-ConfigZone/)
-* [Rename-ConfigZone](./Rename-ConfigZone/)
-* [Remove-ConfigZone](./Remove-ConfigZone/)
+* [Get-ConfigZone](../Get-ConfigZone/)
+* [Set-ConfigSite](../Set-ConfigSite/)
+* [Set-ConfigService](../Set-ConfigService/)
+* [Set-ConfigZone](../Set-ConfigZone/)
+* [Rename-ConfigZone](../Rename-ConfigZone/)
+* [Remove-ConfigZone](../Remove-ConfigZone/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

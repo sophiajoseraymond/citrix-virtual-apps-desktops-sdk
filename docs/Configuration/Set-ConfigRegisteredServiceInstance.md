@@ -11,9 +11,9 @@ Use this cmdlet to change the address property of an existing service instance t
 
 ## Related Commands
 
-* [Get-ConfigRegisteredServiceInstance](./Get-ConfigRegisteredServiceInstance/)
-* [Register-ConfigServiceInstance](./Register-ConfigServiceInstance/)
-* [Unregister-ConfigRegisteredServiceInstance](./Unregister-ConfigRegisteredServiceInstance/)
+* [Get-ConfigRegisteredServiceInstance](../Get-ConfigRegisteredServiceInstance/)
+* [Register-ConfigServiceInstance](../Register-ConfigServiceInstance/)
+* [Unregister-ConfigRegisteredServiceInstance](../Unregister-ConfigRegisteredServiceInstance/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

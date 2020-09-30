@@ -11,8 +11,8 @@ This command produces an array containing the names of the properties that can b
 
 ## Related Commands
 
-* [New-UserProfileConfiguration](./New-UserProfileConfiguration/)
-* [Set-UserProfileDefinition](./Set-UserProfileDefinition/)
+* [New-UserProfileConfiguration](../New-UserProfileConfiguration/)
+* [Set-UserProfileDefinition](../Set-UserProfileDefinition/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

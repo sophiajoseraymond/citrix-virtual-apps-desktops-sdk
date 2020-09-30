@@ -21,7 +21,7 @@ Provides the ability for additional custom data to be stored against given Scope
 
 ## Related Commands
 
-* [Remove-AdminScopeMetadata](./Remove-AdminScopeMetadata/)
+* [Remove-AdminScopeMetadata](../Remove-AdminScopeMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

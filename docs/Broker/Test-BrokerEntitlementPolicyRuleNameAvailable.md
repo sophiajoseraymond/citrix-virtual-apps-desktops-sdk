@@ -11,9 +11,9 @@ This cmdlet checks whether proposed EntitlementPolicyRule Name is available for 
 
 ## Related Commands
 
-* [Get-BrokerEntitlementPolicyRule](./Get-BrokerEntitlementPolicyRule/)
-* [New-BrokerEntitlementPolicyRule](./New-BrokerEntitlementPolicyRule/)
-* [Rename-BrokerEntitlementPolicyRule](./Rename-BrokerEntitlementPolicyRule/)
+* [Get-BrokerEntitlementPolicyRule](../Get-BrokerEntitlementPolicyRule/)
+* [New-BrokerEntitlementPolicyRule](../New-BrokerEntitlementPolicyRule/)
+* [Rename-BrokerEntitlementPolicyRule](../Rename-BrokerEntitlementPolicyRule/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

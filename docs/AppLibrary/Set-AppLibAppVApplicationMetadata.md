@@ -21,7 +21,7 @@ Provides the ability for additional custom data to be stored against given AppVA
 
 ## Related Commands
 
-* [Remove-AppLibAppVApplicationMetadata](./Remove-AppLibAppVApplicationMetadata/)
+* [Remove-AppLibAppVApplicationMetadata](../Remove-AppLibAppVApplicationMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

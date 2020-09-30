@@ -26,8 +26,8 @@ Note that the MaxRecordCount, ReturnTotalRecordCount, Skip, and SortBy parameter
 
 ## Related Commands
 
-* [Get-BrokerMachine](./Get-BrokerMachine/)
-* [Group-Object](./Group-Object/)
+* [Get-BrokerMachine](../Get-BrokerMachine/)
+* [Group-Object](../Group-Object/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

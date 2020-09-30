@@ -19,11 +19,11 @@ You cannot modify the permissions of built-in roles.
 
 ## Related Commands
 
-* [Remove-AdminPermission](./Remove-AdminPermission/)
-* [Get-AdminPermission](./Get-AdminPermission/)
-* [Get-AdminRole](./Get-AdminRole/)
-* [Get-AdminPermissionGroup](./Get-AdminPermissionGroup/)
-* [Test-AdminAccess](./Test-AdminAccess/)
+* [Remove-AdminPermission](../Remove-AdminPermission/)
+* [Get-AdminPermission](../Get-AdminPermission/)
+* [Get-AdminRole](../Get-AdminRole/)
+* [Get-AdminPermissionGroup](../Get-AdminPermissionGroup/)
+* [Test-AdminAccess](../Test-AdminAccess/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

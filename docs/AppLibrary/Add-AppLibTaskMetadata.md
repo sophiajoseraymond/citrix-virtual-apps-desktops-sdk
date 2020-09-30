@@ -17,12 +17,12 @@ Use this cmdlet to store additional custom data against given Task objects. This
 
 ## Related Commands
 
-* [Set-AppLibTaskMetadata](./Set-AppLibTaskMetadata/)
-* [Remove-AppLibTaskMetadata](./Remove-AppLibTaskMetadata/)
-* [Get-AppLibTask](./Get-AppLibTask/)
-* [Stop-AppLibTask](./Stop-AppLibTask/)
-* [Remove-AppLibTask](./Remove-AppLibTask/)
-* [Switch-AppLibTask](./Switch-AppLibTask/)
+* [Set-AppLibTaskMetadata](../Set-AppLibTaskMetadata/)
+* [Remove-AppLibTaskMetadata](../Remove-AppLibTaskMetadata/)
+* [Get-AppLibTask](../Get-AppLibTask/)
+* [Stop-AppLibTask](../Stop-AppLibTask/)
+* [Remove-AppLibTask](../Remove-AppLibTask/)
+* [Switch-AppLibTask](../Switch-AppLibTask/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

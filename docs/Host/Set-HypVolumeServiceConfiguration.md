@@ -15,7 +15,7 @@ Each cmdlet invocation can be used to either change the volume worker URL, or to
 
 ## Related Commands
 
-* [Get-HypVolumeServiceConfiguration](./Get-HypVolumeServiceConfiguration/)
+* [Get-HypVolumeServiceConfiguration](../Get-HypVolumeServiceConfiguration/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -11,8 +11,8 @@ The Get-LogSummary cmdlet retrieves summary counts of operations logged within t
 
 ## Related Commands
 
-* [Get-LogHighLevelOperation](./Get-LogHighLevelOperation/)
-* [Get-LogLowLevelOperation](./Get-LogLowLevelOperation/)
+* [Get-LogHighLevelOperation](../Get-LogHighLevelOperation/)
+* [Get-LogLowLevelOperation](../Get-LogLowLevelOperation/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

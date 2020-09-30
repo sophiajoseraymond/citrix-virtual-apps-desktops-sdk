@@ -13,8 +13,8 @@ Provides the ability to associate controller hosts (and hence implicitly a set o
 
 ## Related Commands
 
-* [Get-ProvScheme](./Get-ProvScheme/)
-* [Remove-ProvSchemeControllerAddress](./Remove-ProvSchemeControllerAddress/)
+* [Get-ProvScheme](../Get-ProvScheme/)
+* [Remove-ProvSchemeControllerAddress](../Remove-ProvSchemeControllerAddress/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

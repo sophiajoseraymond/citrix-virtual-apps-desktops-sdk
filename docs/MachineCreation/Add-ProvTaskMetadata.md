@@ -17,12 +17,12 @@ Use this cmdlet to store additional custom data against given Task objects. This
 
 ## Related Commands
 
-* [Set-ProvTaskMetadata](./Set-ProvTaskMetadata/)
-* [Remove-ProvTaskMetadata](./Remove-ProvTaskMetadata/)
-* [Get-ProvTask](./Get-ProvTask/)
-* [Stop-ProvTask](./Stop-ProvTask/)
-* [Remove-ProvTask](./Remove-ProvTask/)
-* [Switch-ProvTask](./Switch-ProvTask/)
+* [Set-ProvTaskMetadata](../Set-ProvTaskMetadata/)
+* [Remove-ProvTaskMetadata](../Remove-ProvTaskMetadata/)
+* [Get-ProvTask](../Get-ProvTask/)
+* [Stop-ProvTask](../Stop-ProvTask/)
+* [Remove-ProvTask](../Remove-ProvTask/)
+* [Switch-ProvTask](../Switch-ProvTask/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

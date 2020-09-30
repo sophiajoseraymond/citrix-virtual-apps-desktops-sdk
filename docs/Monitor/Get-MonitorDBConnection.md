@@ -15,10 +15,10 @@ The current service instance is that on the local machine, or that explicitly sp
 
 ## Related Commands
 
-* [Get-MonitorServiceStatus](./Get-MonitorServiceStatus/)
-* [Get-MonitorDataStore](./Get-MonitorDataStore/)
-* [Set-MonitorDBConnection](./Set-MonitorDBConnection/)
-* [Test-MonitorDBConnection](./Test-MonitorDBConnection/)
+* [Get-MonitorServiceStatus](../Get-MonitorServiceStatus/)
+* [Get-MonitorDataStore](../Get-MonitorDataStore/)
+* [Set-MonitorDBConnection](../Set-MonitorDBConnection/)
+* [Test-MonitorDBConnection](../Test-MonitorDBConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

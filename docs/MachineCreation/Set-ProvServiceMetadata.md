@@ -17,7 +17,7 @@ Allows you to store additional custom data against given Service objects.
 
 ## Related Commands
 
-* [Remove-ProvServiceMetadata](./Remove-ProvServiceMetadata/)
+* [Remove-ProvServiceMetadata](../Remove-ProvServiceMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

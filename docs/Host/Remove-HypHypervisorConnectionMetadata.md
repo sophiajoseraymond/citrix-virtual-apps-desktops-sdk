@@ -21,8 +21,8 @@ Provides the ability to remove metadata from the given HypervisorConnection.
 
 ## Related Commands
 
-* [Add-HypHypervisorConnectionMetadata](./Add-HypHypervisorConnectionMetadata/)
-* [Set-HypHypervisorConnectionMetadata](./Set-HypHypervisorConnectionMetadata/)
+* [Add-HypHypervisorConnectionMetadata](../Add-HypHypervisorConnectionMetadata/)
+* [Set-HypHypervisorConnectionMetadata](../Set-HypHypervisorConnectionMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -46,9 +46,9 @@ The session linger object returned represents a session linger setting in a desk
 
 ## Related Commands
 
-* [New-BrokerSessionLinger](./New-BrokerSessionLinger/)
-* [Set-BrokerSessionLinger](./Set-BrokerSessionLinger/)
-* [Remove-BrokerSessionLinger](./Remove-BrokerSessionLinger/)
+* [New-BrokerSessionLinger](../New-BrokerSessionLinger/)
+* [Set-BrokerSessionLinger](../Set-BrokerSessionLinger/)
+* [Remove-BrokerSessionLinger](../Remove-BrokerSessionLinger/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

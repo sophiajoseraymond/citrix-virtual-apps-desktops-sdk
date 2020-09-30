@@ -11,7 +11,7 @@ This cmdlet sends the previously saved Ceip upoad to CIS(Citrix Insights Service
 
 ## Related Commands
 
-* [Start-CitrixCeipUpload](./Start-CitrixCeipUpload/)
+* [Start-CitrixCeipUpload](../Start-CitrixCeipUpload/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

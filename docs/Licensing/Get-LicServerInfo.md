@@ -11,7 +11,7 @@ Returns server version and configuration information from the specified License 
 
 ## Related Commands
 
-* [Get-LicLocation](./Get-LicLocation/)
+* [Get-LicLocation](../Get-LicLocation/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

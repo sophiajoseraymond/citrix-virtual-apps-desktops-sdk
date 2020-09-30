@@ -11,7 +11,7 @@ Use this command to retrieve a list of all the available hypervisor types, and t
 
 ## Related Commands
 
-* [New-Item](./New-Item/)
+* [New-Item](../New-Item/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -13,9 +13,9 @@ The Set-BrokerSessionLinger cmdlet is used to alter the settings of an existing 
 
 ## Related Commands
 
-* [New-BrokerSessionLinger](./New-BrokerSessionLinger/)
-* [Get-BrokerSessionLinger](./Get-BrokerSessionLinger/)
-* [Remove-BrokerSessionLinger](./Remove-BrokerSessionLinger/)
+* [New-BrokerSessionLinger](../New-BrokerSessionLinger/)
+* [Get-BrokerSessionLinger](../Get-BrokerSessionLinger/)
+* [Remove-BrokerSessionLinger](../Remove-BrokerSessionLinger/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

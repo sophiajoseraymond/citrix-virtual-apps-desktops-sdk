@@ -53,10 +53,10 @@ The BrokerAssignmentPolicyRule object represents a single desktop rule within th
 
 ## Related Commands
 
-* [New-BrokerAssignmentPolicyRule](./New-BrokerAssignmentPolicyRule/)
-* [Set-BrokerAssignmentPolicyRule](./Set-BrokerAssignmentPolicyRule/)
-* [Rename-BrokerAssignmentPolicyRule](./Rename-BrokerAssignmentPolicyRule/)
-* [Remove-BrokerAssignmentPolicyRule](./Remove-BrokerAssignmentPolicyRule/)
+* [New-BrokerAssignmentPolicyRule](../New-BrokerAssignmentPolicyRule/)
+* [Set-BrokerAssignmentPolicyRule](../Set-BrokerAssignmentPolicyRule/)
+* [Rename-BrokerAssignmentPolicyRule](../Rename-BrokerAssignmentPolicyRule/)
+* [Remove-BrokerAssignmentPolicyRule](../Remove-BrokerAssignmentPolicyRule/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -11,12 +11,12 @@ Retrieves zones matching the specified criteria. If no parameters are specified 
 
 ## Related Commands
 
-* [New-ConfigZone](./New-ConfigZone/)
-* [Set-ConfigZone](./Set-ConfigZone/)
-* [Rename-ConfigZone](./Rename-ConfigZone/)
-* [Remove-ConfigZone](./Remove-ConfigZone/)
-* [Set-ConfigSite](./Set-ConfigSite/)
-* [Set-ConfigService](./Set-ConfigService/)
+* [New-ConfigZone](../New-ConfigZone/)
+* [Set-ConfigZone](../Set-ConfigZone/)
+* [Rename-ConfigZone](../Rename-ConfigZone/)
+* [Remove-ConfigZone](../Remove-ConfigZone/)
+* [Set-ConfigSite](../Set-ConfigSite/)
+* [Set-ConfigService](../Set-ConfigService/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

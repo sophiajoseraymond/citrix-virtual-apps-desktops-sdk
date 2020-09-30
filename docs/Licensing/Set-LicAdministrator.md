@@ -11,8 +11,8 @@ By default, all members of the BUILTIN\\Administrators group on the License Serv
 
 ## Related Commands
 
-* [Get-LicAdministrator](./Get-LicAdministrator/)
-* [Remove-LicAdministrator](./Remove-LicAdministrator/)
+* [Get-LicAdministrator](../Get-LicAdministrator/)
+* [Remove-LicAdministrator](../Remove-LicAdministrator/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

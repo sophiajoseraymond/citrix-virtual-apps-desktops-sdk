@@ -11,10 +11,10 @@ The server will have a default set of services containing fully-functionaly Stor
 
 ## Related Commands
 
-* [Get-SfCluster](./Get-SfCluster/)
-* [Add-SfServerToCluster](./Add-SfServerToCluster/)
-* [Remove-SfServerFromCluster](./Remove-SfServerFromCluster/)
-* [Set-SfCluster](./Set-SfCluster/)
+* [Get-SfCluster](../Get-SfCluster/)
+* [Add-SfServerToCluster](../Add-SfServerToCluster/)
+* [Remove-SfServerFromCluster](../Remove-SfServerFromCluster/)
+* [Set-SfCluster](../Set-SfCluster/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

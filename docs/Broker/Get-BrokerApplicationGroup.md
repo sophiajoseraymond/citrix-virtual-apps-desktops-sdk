@@ -69,11 +69,11 @@ A BrokerApplicationGroup object represents a single application group that has b
 
 ## Related Commands
 
-* [Add-BrokerApplicationGroup](./Add-BrokerApplicationGroup/)
-* [New-BrokerApplicationGroup](./New-BrokerApplicationGroup/)
-* [Remove-BrokerApplicationGroup](./Remove-BrokerApplicationGroup/)
-* [Rename-BrokerApplicationGroup](./Rename-BrokerApplicationGroup/)
-* [Set-BrokerApplicationGroup](./Set-BrokerApplicationGroup/)
+* [Add-BrokerApplicationGroup](../Add-BrokerApplicationGroup/)
+* [New-BrokerApplicationGroup](../New-BrokerApplicationGroup/)
+* [Remove-BrokerApplicationGroup](../Remove-BrokerApplicationGroup/)
+* [Rename-BrokerApplicationGroup](../Rename-BrokerApplicationGroup/)
+* [Set-BrokerApplicationGroup](../Set-BrokerApplicationGroup/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

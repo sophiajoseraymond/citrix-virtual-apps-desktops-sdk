@@ -11,7 +11,7 @@ Returns the effective permission level of the administrator account.  If credent
 
 ## Related Commands
 
-* [Get-LicLocation](./Get-LicLocation/)
+* [Get-LicLocation](../Get-LicLocation/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

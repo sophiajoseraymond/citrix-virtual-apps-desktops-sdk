@@ -11,9 +11,9 @@ This cmdlet imports a provisioning scheme into the site, the data passed to this
 
 ## Related Commands
 
-* [Export-ProvScheme](./Export-ProvScheme/)
-* [Export-AcctIdentityPool](./Export-AcctIdentityPool/)
-* [Import-AcctIdentityPool](./Import-AcctIdentityPool/)
+* [Export-ProvScheme](../Export-ProvScheme/)
+* [Export-AcctIdentityPool](../Export-AcctIdentityPool/)
+* [Import-AcctIdentityPool](../Import-AcctIdentityPool/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

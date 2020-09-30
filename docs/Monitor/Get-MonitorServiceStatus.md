@@ -11,11 +11,11 @@ Enables the status of the Monitor Service on the controller to be determined. If
 
 ## Related Commands
 
-* [Get-MonitorDataStore](./Get-MonitorDataStore/)
-* [Set-MonitorDBConnection](./Set-MonitorDBConnection/)
-* [Test-MonitorDBConnection](./Test-MonitorDBConnection/)
-* [Get-MonitorDBConnection](./Get-MonitorDBConnection/)
-* [Get-MonitorDBSchema](./Get-MonitorDBSchema/)
+* [Get-MonitorDataStore](../Get-MonitorDataStore/)
+* [Set-MonitorDBConnection](../Set-MonitorDBConnection/)
+* [Test-MonitorDBConnection](../Test-MonitorDBConnection/)
+* [Get-MonitorDBConnection](../Get-MonitorDBConnection/)
+* [Get-MonitorDBSchema](../Get-MonitorDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -11,8 +11,8 @@ Initializes the PowerShell business logic and starts the REST API that is hosted
 
 ## Related Commands
 
-* [Get-OrchService](./Get-OrchService/)
-* [Stop-OrchRestApi](./Stop-OrchRestApi/)
+* [Get-OrchService](../Get-OrchService/)
+* [Stop-OrchRestApi](../Stop-OrchRestApi/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

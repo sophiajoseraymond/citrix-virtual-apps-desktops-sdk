@@ -19,8 +19,8 @@ Only one of the -Upgrade or -Downgrade parameters may be supplied at once.
 
 ## Related Commands
 
-* [Get-ConfigDBVersionChangeScript](./Get-ConfigDBVersionChangeScript/)
-* [Get-ConfigDBSchema](./Get-ConfigDBSchema/)
+* [Get-ConfigDBVersionChangeScript](../Get-ConfigDBVersionChangeScript/)
+* [Get-ConfigDBSchema](../Get-ConfigDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

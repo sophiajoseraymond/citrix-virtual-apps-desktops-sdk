@@ -13,8 +13,8 @@ Enables Active Directory accounts and groups to be removed from the list of admi
 
 ## Related Commands
 
-* [New-LicAdministrator](./New-LicAdministrator/)
-* [Get-LicAdministrator](./Get-LicAdministrator/)
+* [New-LicAdministrator](../New-LicAdministrator/)
+* [Get-LicAdministrator](../Get-LicAdministrator/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -67,6 +67,10 @@ plugins:
 
 # Page tree
 nav:
+- latest: https://developer-docs.citrix.com/projects/citrix-virtual-apps-desktops-sdk/en/latest/
+  - 2006: https://developer-docs.citrix.com/projects/citrix-virtual-apps-desktops-sdk/en/2006/
+  - 1912: https://developer-docs.citrix.com/projects/citrix-virtual-apps-desktops-sdk/en/1912/
+  - 1811: https://developer-docs.citrix.com/projects/citrix-virtual-apps-desktops-sdk/en/1811/
 - Overview: index.md
 - Understanding the XenDesktop Administration Model: understanding-xendesktop-administration-model.md
 - Getting Started Guide: getting-started.md

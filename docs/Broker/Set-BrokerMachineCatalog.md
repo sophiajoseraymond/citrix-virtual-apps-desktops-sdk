@@ -22,8 +22,8 @@ Changing a machine's catalog does not change the machine's desktop group members
 
 ## Related Commands
 
-* [Set-BrokerMachine](./Set-BrokerMachine/)
-* [New-BrokerCatalog](./New-BrokerCatalog/)
+* [Set-BrokerMachine](../Set-BrokerMachine/)
+* [New-BrokerCatalog](../New-BrokerCatalog/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

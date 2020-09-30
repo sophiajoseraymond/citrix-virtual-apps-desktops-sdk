@@ -13,8 +13,8 @@ Removes a configuration slot from the site. All machine configurations associate
 
 ## Related Commands
 
-* [New-BrokerConfigurationSlot](./New-BrokerConfigurationSlot/)
-* [Get-BrokerConfigurationSlot](./Get-BrokerConfigurationSlot/)
+* [New-BrokerConfigurationSlot](../New-BrokerConfigurationSlot/)
+* [Get-BrokerConfigurationSlot](../Get-BrokerConfigurationSlot/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

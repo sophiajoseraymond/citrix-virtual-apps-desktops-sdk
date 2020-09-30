@@ -11,10 +11,10 @@ Provides the ability to obtain a list of the VMs that were created using Machine
 
 ## Related Commands
 
-* [New-ProvVM](./New-ProvVM/)
-* [Remove-ProvVM](./Remove-ProvVM/)
-* [Lock-ProvVM](./Lock-ProvVM/)
-* [Unlock-ProvVM](./Unlock-ProvVM/)
+* [New-ProvVM](../New-ProvVM/)
+* [Remove-ProvVM](../Remove-ProvVM/)
+* [Lock-ProvVM](../Lock-ProvVM/)
+* [Unlock-ProvVM](../Unlock-ProvVM/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

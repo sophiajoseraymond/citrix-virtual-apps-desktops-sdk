@@ -11,8 +11,8 @@ Returns a Citrix Call Home upload grant token that can then be used by Start-Cit
 
 ## Related Commands
 
-* [Get-Credential](./Get-Credential/)
-* [Start-CitrixCallHomeUpload](./Start-CitrixCallHomeUpload/)
+* [Get-Credential](../Get-Credential/)
+* [Start-CitrixCallHomeUpload](../Start-CitrixCallHomeUpload/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

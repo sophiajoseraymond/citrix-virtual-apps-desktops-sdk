@@ -17,10 +17,10 @@ Lets you create a new AppDisk.
 
 ## Related Commands
 
-* [Get-AppLibTask](./Get-AppLibTask/)
-* [Get-AppLibAppDisk](./Get-AppLibAppDisk/)
-* [Import-AppLibAppDisk](./Import-AppLibAppDisk/)
-* [Test-AppLibAppDiskNameAvailable](./Test-AppLibAppDiskNameAvailable/)
+* [Get-AppLibTask](../Get-AppLibTask/)
+* [Get-AppLibAppDisk](../Get-AppLibAppDisk/)
+* [Import-AppLibAppDisk](../Import-AppLibAppDisk/)
+* [Test-AppLibAppDiskNameAvailable](../Test-AppLibAppDiskNameAvailable/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -13,13 +13,13 @@ Note that time of day is the start of a two hour window. The uploads are randoml
 
 ## Related Commands
 
-* [Get-Credential](./Get-Credential/)
-* [New-TimeSpan](./New-TimeSpan/)
-* [Disable-CitrixCallHome](./Disable-CitrixCallHome/)
-* [Enable-CitrixCallHome](./Enable-CitrixCallHome/)
-* [Get-CitrixCallHome](./Get-CitrixCallHome/)
-* [Get-CitrixCallHomeSchedule](./Get-CitrixCallHomeSchedule/)
-* [Start-TelemetryUpload](./Start-TelemetryUpload/)
+* [Get-Credential](../Get-Credential/)
+* [New-TimeSpan](../New-TimeSpan/)
+* [Disable-CitrixCallHome](../Disable-CitrixCallHome/)
+* [Enable-CitrixCallHome](../Enable-CitrixCallHome/)
+* [Get-CitrixCallHome](../Get-CitrixCallHome/)
+* [Get-CitrixCallHomeSchedule](../Get-CitrixCallHomeSchedule/)
+* [Start-TelemetryUpload](../Start-TelemetryUpload/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

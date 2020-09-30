@@ -11,8 +11,8 @@ Checks to ensure that the proposed name for an AppDisk is unused. This check is 
 
 ## Related Commands
 
-* [New-AppLibAppDisk](./New-AppLibAppDisk/)
-* [Rename-AppLibAppDisk](./Rename-AppLibAppDisk/)
+* [New-AppLibAppDisk](../New-AppLibAppDisk/)
+* [Rename-AppLibAppDisk](../Rename-AppLibAppDisk/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -15,9 +15,9 @@ Power actions cannot be cancelled once they have started to be processed by the 
 
 ## Related Commands
 
-* [Get-BrokerHostingPowerAction](./Get-BrokerHostingPowerAction/)
-* [New-BrokerHostingPowerAction](./New-BrokerHostingPowerAction/)
-* [Set-BrokerHostingPowerAction](./Set-BrokerHostingPowerAction/)
+* [Get-BrokerHostingPowerAction](../Get-BrokerHostingPowerAction/)
+* [New-BrokerHostingPowerAction](../New-BrokerHostingPowerAction/)
+* [Set-BrokerHostingPowerAction](../Set-BrokerHostingPowerAction/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

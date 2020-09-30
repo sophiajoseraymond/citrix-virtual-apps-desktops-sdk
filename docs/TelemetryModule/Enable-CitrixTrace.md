@@ -11,11 +11,11 @@ This cmdlet Enables or disables saving of trace files on disk at a given persist
 
 ## Related Commands
 
-* [Disable-CitrixCallHome](./Disable-CitrixCallHome/)
-* [Enable-CitrixCallHome](./Enable-CitrixCallHome/)
-* [Set-CitrixCallHomeSchedule](./Set-CitrixCallHomeSchedule/)
-* [Get-CitrixCallHomeSchedule](./Get-CitrixCallHomeSchedule/)
-* [Start-TelemetryUpload](./Start-TelemetryUpload/)
+* [Disable-CitrixCallHome](../Disable-CitrixCallHome/)
+* [Enable-CitrixCallHome](../Enable-CitrixCallHome/)
+* [Set-CitrixCallHomeSchedule](../Set-CitrixCallHomeSchedule/)
+* [Get-CitrixCallHomeSchedule](../Get-CitrixCallHomeSchedule/)
+* [Start-TelemetryUpload](../Start-TelemetryUpload/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

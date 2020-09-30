@@ -13,10 +13,10 @@ The Rename-BrokerDesktopGroup cmdlet changes the name of a desktop group. A desk
 
 ## Related Commands
 
-* [Get-BrokerDesktopGroup](./Get-BrokerDesktopGroup/)
-* [New-BrokerDesktopGroup](./New-BrokerDesktopGroup/)
-* [Set-BrokerDesktopGroup](./Set-BrokerDesktopGroup/)
-* [Remove-BrokerDesktopGroup](./Remove-BrokerDesktopGroup/)
+* [Get-BrokerDesktopGroup](../Get-BrokerDesktopGroup/)
+* [New-BrokerDesktopGroup](../New-BrokerDesktopGroup/)
+* [Set-BrokerDesktopGroup](../Set-BrokerDesktopGroup/)
+* [Remove-BrokerDesktopGroup](../Remove-BrokerDesktopGroup/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

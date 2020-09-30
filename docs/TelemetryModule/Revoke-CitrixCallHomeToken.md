@@ -11,13 +11,13 @@ This Cmdlet revokes a Citrix Call Home upload grant token or a Citrix Call Home 
 
 ## Related Commands
 
-* [Enable-CitrixCallHome](./Enable-CitrixCallHome/)
-* [Get-CitrixCallHome](./Get-CitrixCallHome/)
-* [Set-CitrixCallHomeSchedule](./Set-CitrixCallHomeSchedule/)
-* [Get-CitrixCallHomeSchedule](./Get-CitrixCallHomeSchedule/)
-* [Start-CitrixCallHomeUpload](./Start-CitrixCallHomeUpload/)
-* [New-CitrixCallHomeUploadGrantToken](./New-CitrixCallHomeUploadGrantToken/)
-* [New-CitrixCallHomeUploadToken](./New-CitrixCallHomeUploadToken/)
+* [Enable-CitrixCallHome](../Enable-CitrixCallHome/)
+* [Get-CitrixCallHome](../Get-CitrixCallHome/)
+* [Set-CitrixCallHomeSchedule](../Set-CitrixCallHomeSchedule/)
+* [Get-CitrixCallHomeSchedule](../Get-CitrixCallHomeSchedule/)
+* [Start-CitrixCallHomeUpload](../Start-CitrixCallHomeUpload/)
+* [New-CitrixCallHomeUploadGrantToken](../New-CitrixCallHomeUploadGrantToken/)
+* [New-CitrixCallHomeUploadToken](../New-CitrixCallHomeUploadToken/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

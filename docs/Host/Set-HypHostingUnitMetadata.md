@@ -21,8 +21,8 @@ Provides the ability for additional custom data to be stored against given Hosti
 
 ## Related Commands
 
-* [Add-HypHostingUnitMetadata](./Add-HypHostingUnitMetadata/)
-* [Remove-HypHostingUnitMetadata](./Remove-HypHostingUnitMetadata/)
+* [Add-HypHostingUnitMetadata](../Add-HypHostingUnitMetadata/)
+* [Remove-HypHostingUnitMetadata](../Remove-HypHostingUnitMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -19,8 +19,8 @@ To change the name of the AppDisk see Rename-AppLibAppDisk.
 
 ## Related Commands
 
-* [Get-AppLibAppDisk](./Get-AppLibAppDisk/)
-* [Rename-AppLibAppDisk](./Rename-AppLibAppDisk/)
+* [Get-AppLibAppDisk](../Get-AppLibAppDisk/)
+* [Rename-AppLibAppDisk](../Rename-AppLibAppDisk/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

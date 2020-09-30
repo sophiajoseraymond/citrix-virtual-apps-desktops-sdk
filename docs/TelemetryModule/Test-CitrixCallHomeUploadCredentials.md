@@ -11,7 +11,7 @@ Returns the status of the Citrix Call Home Upload credentials. Valid Citrix cred
 
 ## Related Commands
 
-* [Get-Credential](./Get-Credential/)
+* [Get-Credential](../Get-Credential/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
