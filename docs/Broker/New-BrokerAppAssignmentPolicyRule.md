@@ -25,10 +25,10 @@ Once a machine has been assigned in this way, the original assignment rule plays
 
 ## Related Commands
 
-* [Get-BrokerAppAssignmentPolicyRule](./Get-BrokerAppAssignmentPolicyRule/)
-* [Set-BrokerAppAssignmentPolicyRule](./Set-BrokerAppAssignmentPolicyRule/)
-* [Rename-BrokerAppAssignmentPolicyRule](./Rename-BrokerAppAssignmentPolicyRule/)
-* [Remove-BrokerAppAssignmentPolicyRule](./Remove-BrokerAppAssignmentPolicyRule/)
+* [Get-BrokerAppAssignmentPolicyRule](../Get-BrokerAppAssignmentPolicyRule/)
+* [Set-BrokerAppAssignmentPolicyRule](../Set-BrokerAppAssignmentPolicyRule/)
+* [Rename-BrokerAppAssignmentPolicyRule](../Rename-BrokerAppAssignmentPolicyRule/)
+* [Remove-BrokerAppAssignmentPolicyRule](../Remove-BrokerAppAssignmentPolicyRule/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -23,9 +23,9 @@ The second use case is more complex and allows you to create your own file type 
 
 ## Related Commands
 
-* [Get-BrokerImportedFTA](./Get-BrokerImportedFTA/)
-* [Get-BrokerConfiguredFTA](./Get-BrokerConfiguredFTA/)
-* [Remove-BrokerConfiguredFTA](./Remove-BrokerConfiguredFTA/)
+* [Get-BrokerImportedFTA](../Get-BrokerImportedFTA/)
+* [Get-BrokerConfiguredFTA](../Get-BrokerConfiguredFTA/)
+* [Remove-BrokerConfiguredFTA](../Remove-BrokerConfiguredFTA/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

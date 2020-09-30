@@ -11,9 +11,9 @@ Removes an icon from the database.
 
 ## Related Commands
 
-* [Get-BrokerIcon](./Get-BrokerIcon/)
-* [New-BrokerIcon](./New-BrokerIcon/)
-* [Set-BrokerIconMetadata](./Set-BrokerIconMetadata/)
+* [Get-BrokerIcon](../Get-BrokerIcon/)
+* [New-BrokerIcon](../New-BrokerIcon/)
+* [Set-BrokerIconMetadata](../Set-BrokerIconMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

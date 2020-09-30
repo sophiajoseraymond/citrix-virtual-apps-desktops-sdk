@@ -17,8 +17,8 @@ Provides the ability for additional custom data to be stored against given Servi
 
 ## Related Commands
 
-* [Set-ConfigServiceGroupMetadata](./Set-ConfigServiceGroupMetadata/)
-* [Remove-ConfigServiceGroupMetadata](./Remove-ConfigServiceGroupMetadata/)
+* [Set-ConfigServiceGroupMetadata](../Set-ConfigServiceGroupMetadata/)
+* [Remove-ConfigServiceGroupMetadata](../Remove-ConfigServiceGroupMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

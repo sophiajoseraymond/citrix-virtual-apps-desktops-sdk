@@ -17,8 +17,8 @@ Provides the ability for additional custom data to be stored against given Servi
 
 ## Related Commands
 
-* [Add-ConfigRegisteredServiceInstanceMetadata](./Add-ConfigRegisteredServiceInstanceMetadata/)
-* [Remove-ConfigRegisteredServiceInstanceMetadata](./Remove-ConfigRegisteredServiceInstanceMetadata/)
+* [Add-ConfigRegisteredServiceInstanceMetadata](../Add-ConfigRegisteredServiceInstanceMetadata/)
+* [Remove-ConfigRegisteredServiceInstanceMetadata](../Remove-ConfigRegisteredServiceInstanceMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

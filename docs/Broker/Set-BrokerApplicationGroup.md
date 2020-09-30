@@ -19,11 +19,11 @@ Application groups may not be renamed using this cmdlet. To rename an applicatio
 
 ## Related Commands
 
-* [Add-BrokerApplicationGroup](./Add-BrokerApplicationGroup/)
-* [Get-BrokerApplicationGroup](./Get-BrokerApplicationGroup/)
-* [New-BrokerApplicationGroup](./New-BrokerApplicationGroup/)
-* [Remove-BrokerApplicationGroup](./Remove-BrokerApplicationGroup/)
-* [Rename-BrokerApplicationGroup](./Rename-BrokerApplicationGroup/)
+* [Add-BrokerApplicationGroup](../Add-BrokerApplicationGroup/)
+* [Get-BrokerApplicationGroup](../Get-BrokerApplicationGroup/)
+* [New-BrokerApplicationGroup](../New-BrokerApplicationGroup/)
+* [Remove-BrokerApplicationGroup](../Remove-BrokerApplicationGroup/)
+* [Rename-BrokerApplicationGroup](../Rename-BrokerApplicationGroup/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

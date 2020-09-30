@@ -15,7 +15,7 @@ Remove-LogOperation deletes logs from the Configuration  Logging database. This 
 
 ## Related Commands
 
-* [](.//)
+* [](..//)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

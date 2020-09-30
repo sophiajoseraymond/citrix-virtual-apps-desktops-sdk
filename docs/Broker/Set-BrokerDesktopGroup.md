@@ -12,10 +12,10 @@ The Set-BrokerDesktopGroup cmdlet is used to disable or enable an existing broke
 
 ## Related Commands
 
-* [Get-BrokerDesktopGroup](./Get-BrokerDesktopGroup/)
-* [New-BrokerDesktopGroup](./New-BrokerDesktopGroup/)
-* [Rename-BrokerDesktopGroup](./Rename-BrokerDesktopGroup/)
-* [Remove-BrokerDesktopGroup](./Remove-BrokerDesktopGroup/)
+* [Get-BrokerDesktopGroup](../Get-BrokerDesktopGroup/)
+* [New-BrokerDesktopGroup](../New-BrokerDesktopGroup/)
+* [Rename-BrokerDesktopGroup](../Rename-BrokerDesktopGroup/)
+* [Remove-BrokerDesktopGroup](../Remove-BrokerDesktopGroup/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

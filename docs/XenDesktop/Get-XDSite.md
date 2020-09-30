@@ -11,7 +11,7 @@ Gets the attributes of the Site which has a Controller identified by AdminAddres
 
 ## Related Commands
 
-* [New-XDSite](./New-XDSite/)
+* [New-XDSite](../New-XDSite/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

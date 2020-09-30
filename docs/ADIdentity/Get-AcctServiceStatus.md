@@ -11,10 +11,10 @@ Enables the status of the ADIdentity Service on the controller to be determined.
 
 ## Related Commands
 
-* [Set-AcctDBConnection](./Set-AcctDBConnection/)
-* [Test-AcctDBConnection](./Test-AcctDBConnection/)
-* [Get-AcctDBConnection](./Get-AcctDBConnection/)
-* [Get-AcctDBSchema](./Get-AcctDBSchema/)
+* [Set-AcctDBConnection](../Set-AcctDBConnection/)
+* [Test-AcctDBConnection](../Test-AcctDBConnection/)
+* [Get-AcctDBConnection](../Get-AcctDBConnection/)
+* [Get-AcctDBSchema](../Get-AcctDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

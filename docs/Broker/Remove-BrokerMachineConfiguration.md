@@ -23,11 +23,11 @@ If an application is specified, then the Remove-MachineConfiguration cmdlet remo
 
 ## Related Commands
 
-* [New-BrokerMachineConfiguration](./New-BrokerMachineConfiguration/)
-* [Get-BrokerMachineConfiguration](./Get-BrokerMachineConfiguration/)
-* [Set-BrokerMachineConfiguration](./Set-BrokerMachineConfiguration/)
-* [Rename-BrokerMachineConfiguration](./Rename-BrokerMachineConfiguration/)
-* [Add-BrokerMachineConfiguration](./Add-BrokerMachineConfiguration/)
+* [New-BrokerMachineConfiguration](../New-BrokerMachineConfiguration/)
+* [Get-BrokerMachineConfiguration](../Get-BrokerMachineConfiguration/)
+* [Set-BrokerMachineConfiguration](../Set-BrokerMachineConfiguration/)
+* [Rename-BrokerMachineConfiguration](../Rename-BrokerMachineConfiguration/)
+* [Add-BrokerMachineConfiguration](../Add-BrokerMachineConfiguration/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

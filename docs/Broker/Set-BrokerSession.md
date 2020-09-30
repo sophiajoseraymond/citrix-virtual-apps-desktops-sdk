@@ -13,7 +13,7 @@ The Set-BrokerSession cmdlet sets properties on a session or set of sessions. Yo
 
 ## Related Commands
 
-* [Get-BrokerSession](./Get-BrokerSession/)
+* [Get-BrokerSession](../Get-BrokerSession/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

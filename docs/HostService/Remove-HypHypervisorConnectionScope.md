@@ -21,8 +21,8 @@ If the HypervisorConnection is not in a specified scope, that scope will be sile
 
 ## Related Commands
 
-* [Add-HypHypervisorConnectionScope](./Add-HypHypervisorConnectionScope/)
-* [Get-HypScopedObject](./Get-HypScopedObject/)
+* [Add-HypHypervisorConnectionScope](../Add-HypHypervisorConnectionScope/)
+* [Get-HypScopedObject](../Get-HypScopedObject/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

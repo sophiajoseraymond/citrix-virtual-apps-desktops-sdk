@@ -17,7 +17,7 @@ Provides the ability for additional custom data to be stored against given Site 
 
 ## Related Commands
 
-* [Remove-LogSiteMetadata](./Remove-LogSiteMetadata/)
+* [Remove-LogSiteMetadata](../Remove-LogSiteMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

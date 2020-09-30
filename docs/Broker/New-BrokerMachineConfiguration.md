@@ -13,11 +13,11 @@ The SettingsGroup of the configuration slot restricts the permitted settings. Us
 
 ## Related Commands
 
-* [Get-BrokerMachineConfiguration](./Get-BrokerMachineConfiguration/)
-* [Set-BrokerMachineConfiguration](./Set-BrokerMachineConfiguration/)
-* [Rename-BrokerMachineConfiguration](./Rename-BrokerMachineConfiguration/)
-* [Remove-BrokerMachineConfiguration](./Remove-BrokerMachineConfiguration/)
-* [Add-BrokerMachineConfiguration](./Add-BrokerMachineConfiguration/)
+* [Get-BrokerMachineConfiguration](../Get-BrokerMachineConfiguration/)
+* [Set-BrokerMachineConfiguration](../Set-BrokerMachineConfiguration/)
+* [Rename-BrokerMachineConfiguration](../Rename-BrokerMachineConfiguration/)
+* [Remove-BrokerMachineConfiguration](../Remove-BrokerMachineConfiguration/)
+* [Add-BrokerMachineConfiguration](../Add-BrokerMachineConfiguration/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

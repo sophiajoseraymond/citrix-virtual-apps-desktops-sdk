@@ -11,8 +11,8 @@ Provides the ability to remove data from the AppLibrary Service configuration da
 
 ## Related Commands
 
-* [Set-AppLibServiceConfigurationData](./Set-AppLibServiceConfigurationData/)
-* [Get-AppLibServiceConfigurationData](./Get-AppLibServiceConfigurationData/)
+* [Set-AppLibServiceConfigurationData](../Set-AppLibServiceConfigurationData/)
+* [Get-AppLibServiceConfigurationData](../Get-AppLibServiceConfigurationData/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -11,7 +11,7 @@ Creates or updates metadata key-value pairs for a Site which has a Controller id
 
 ## Related Commands
 
-* [Get-XDSite](./Get-XDSite/)
+* [Get-XDSite](../Get-XDSite/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

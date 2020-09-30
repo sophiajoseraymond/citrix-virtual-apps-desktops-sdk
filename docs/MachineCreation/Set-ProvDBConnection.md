@@ -23,9 +23,9 @@ The current service instance is that on the local machine, or that explicitly sp
 
 ## Related Commands
 
-* [Get-ProvServiceStatus](./Get-ProvServiceStatus/)
-* [Get-ProvDBConnection](./Get-ProvDBConnection/)
-* [Test-ProvDBConnection](./Test-ProvDBConnection/)
+* [Get-ProvServiceStatus](../Get-ProvServiceStatus/)
+* [Get-ProvDBConnection](../Get-ProvDBConnection/)
+* [Test-ProvDBConnection](../Test-ProvDBConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -15,12 +15,12 @@ In order to remove a catalog from a site, the catalog must not contain machines.
 
 ## Related Commands
 
-* [New-BrokerCatalog](./New-BrokerCatalog/)
-* [Get-BrokerCatalog](./Get-BrokerCatalog/)
-* [Rename-BrokerCatalog](./Rename-BrokerCatalog/)
-* [Set-BrokerCatalog](./Set-BrokerCatalog/)
-* [New-BrokerDesktopGroup](./New-BrokerDesktopGroup/)
-* [Remove-BrokerDesktopGroup](./Remove-BrokerDesktopGroup/)
+* [New-BrokerCatalog](../New-BrokerCatalog/)
+* [Get-BrokerCatalog](../Get-BrokerCatalog/)
+* [Rename-BrokerCatalog](../Rename-BrokerCatalog/)
+* [Set-BrokerCatalog](../Set-BrokerCatalog/)
+* [New-BrokerDesktopGroup](../New-BrokerDesktopGroup/)
+* [Remove-BrokerDesktopGroup](../Remove-BrokerDesktopGroup/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

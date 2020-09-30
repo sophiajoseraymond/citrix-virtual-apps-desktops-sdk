@@ -24,8 +24,8 @@ Machines cannot be removed from their catalog while they are members of a deskto
 
 ## Related Commands
 
-* [Add-BrokerMachine](./Add-BrokerMachine/)
-* [Get-BrokerMachine](./Get-BrokerMachine/)
+* [Add-BrokerMachine](../Add-BrokerMachine/)
+* [Get-BrokerMachine](../Get-BrokerMachine/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

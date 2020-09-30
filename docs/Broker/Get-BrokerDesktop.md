@@ -192,8 +192,8 @@ The desktop object returned represents a physical or virtual machine configured 
 
 ## Related Commands
 
-* [Group-BrokerMachine](./Group-BrokerMachine/)
-* [Get-BrokerMachine](./Get-BrokerMachine/)
+* [Group-BrokerMachine](../Group-BrokerMachine/)
+* [Get-BrokerMachine](../Get-BrokerMachine/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -11,9 +11,9 @@ Enables tasks currently running in the AppLibrary Service to be stopped.  Once s
 
 ## Related Commands
 
-* [Get-AppLibTask](./Get-AppLibTask/)
-* [Remove-AppLibTask](./Remove-AppLibTask/)
-* [Switch-AppLibTask](./Switch-AppLibTask/)
+* [Get-AppLibTask](../Get-AppLibTask/)
+* [Remove-AppLibTask](../Remove-AppLibTask/)
+* [Switch-AppLibTask](../Switch-AppLibTask/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

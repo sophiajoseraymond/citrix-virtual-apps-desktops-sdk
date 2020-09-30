@@ -21,7 +21,7 @@ Provides the ability for additional custom data to be stored against given Role 
 
 ## Related Commands
 
-* [Remove-AdminRoleMetadata](./Remove-AdminRoleMetadata/)
+* [Remove-AdminRoleMetadata](../Remove-AdminRoleMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

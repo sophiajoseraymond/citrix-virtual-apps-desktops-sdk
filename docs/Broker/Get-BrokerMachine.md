@@ -269,7 +269,7 @@ The machine object returned represents a physical or virtual machine, which has 
 
 ## Related Commands
 
-* [Group-BrokerMachine](./Group-BrokerMachine/)
+* [Group-BrokerMachine](../Group-BrokerMachine/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

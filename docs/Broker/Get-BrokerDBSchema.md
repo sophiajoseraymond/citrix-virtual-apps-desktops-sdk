@@ -51,8 +51,8 @@ You do not need to configure a database before using this command.
 
 ## Related Commands
 
-* [Set-BrokerDBConnection](./Set-BrokerDBConnection/)
-* [Test-BrokerDBConnection](./Test-BrokerDBConnection/)
+* [Set-BrokerDBConnection](../Set-BrokerDBConnection/)
+* [Test-BrokerDBConnection](../Test-BrokerDBConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

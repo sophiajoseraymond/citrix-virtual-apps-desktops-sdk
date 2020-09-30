@@ -13,9 +13,9 @@ The Remove-BrokerSessionLinger cmdlet is used to delete an existing session ling
 
 ## Related Commands
 
-* [New-BrokerSessionLinger](./New-BrokerSessionLinger/)
-* [Get-BrokerSessionLinger](./Get-BrokerSessionLinger/)
-* [Set-BrokerSessionLinger](./Set-BrokerSessionLinger/)
+* [New-BrokerSessionLinger](../New-BrokerSessionLinger/)
+* [Get-BrokerSessionLinger](../Get-BrokerSessionLinger/)
+* [Set-BrokerSessionLinger](../Set-BrokerSessionLinger/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

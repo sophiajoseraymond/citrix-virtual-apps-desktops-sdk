@@ -19,8 +19,8 @@ Only one of the -Upgrade or -Downgrade parameters may be supplied at once.
 
 ## Related Commands
 
-* [Get-HypDBVersionChangeScript](./Get-HypDBVersionChangeScript/)
-* [Get-HypDBSchema](./Get-HypDBSchema/)
+* [Get-HypDBVersionChangeScript](../Get-HypDBVersionChangeScript/)
+* [Get-HypDBSchema](../Get-HypDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

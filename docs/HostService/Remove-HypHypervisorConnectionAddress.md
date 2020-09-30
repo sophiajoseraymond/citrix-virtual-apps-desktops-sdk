@@ -11,7 +11,7 @@ Use this command to remove addresses that can be used to connect to the hypervis
 
 ## Related Commands
 
-* [Add-HypHypervisorConnectionAddress](./Add-HypHypervisorConnectionAddress/)
+* [Add-HypHypervisorConnectionAddress](../Add-HypHypervisorConnectionAddress/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

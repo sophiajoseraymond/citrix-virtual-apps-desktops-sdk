@@ -17,9 +17,9 @@ The current service instance is that on the local machine, or that explicitly sp
 
 ## Related Commands
 
-* [Get-LogServiceStatus](./Get-LogServiceStatus/)
-* [Get-LogDBConnection](./Get-LogDBConnection/)
-* [Set-LogDBConnection](./Set-LogDBConnection/)
+* [Get-LogServiceStatus](../Get-LogServiceStatus/)
+* [Get-LogDBConnection](../Get-LogDBConnection/)
+* [Set-LogDBConnection](../Set-LogDBConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

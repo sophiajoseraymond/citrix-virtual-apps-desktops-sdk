@@ -13,8 +13,8 @@ Removes one or more delayed power actions that have not yet been queued for exec
 
 ## Related Commands
 
-* [Get-BrokerDelayedHostingPowerAction](./Get-BrokerDelayedHostingPowerAction/)
-* [New-BrokerDelayedHostingPowerAction](./New-BrokerDelayedHostingPowerAction/)
+* [Get-BrokerDelayedHostingPowerAction](../Get-BrokerDelayedHostingPowerAction/)
+* [New-BrokerDelayedHostingPowerAction](../New-BrokerDelayedHostingPowerAction/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

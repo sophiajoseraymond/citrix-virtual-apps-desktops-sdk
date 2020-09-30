@@ -13,9 +13,9 @@ Export an Identity pool and it ADAccounts to JSON encoded string, note that any 
 
 ## Related Commands
 
-* [Import-AcctIdentityPool](./Import-AcctIdentityPool/)
-* [Export-ProvScheme](./Export-ProvScheme/)
-* [Import-ProvScheme](./Import-ProvScheme/)
+* [Import-AcctIdentityPool](../Import-AcctIdentityPool/)
+* [Export-ProvScheme](../Export-ProvScheme/)
+* [Import-ProvScheme](../Import-ProvScheme/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -11,9 +11,9 @@ Use this command to set options for storage locations that are defined for a hos
 
 ## Related Commands
 
-* [New-Item](./New-Item/)
-* [Add-HypMetadata](./Add-HypMetadata/)
-* [Remove-HypHostingUnitStorage](./Remove-HypHostingUnitStorage/)
+* [New-Item](../New-Item/)
+* [Add-HypMetadata](../Add-HypMetadata/)
+* [Remove-HypHostingUnitStorage](../Remove-HypHostingUnitStorage/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

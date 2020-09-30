@@ -14,8 +14,8 @@ A XenDesktop installation has only a single broker site instance.
 
 ## Related Commands
 
-* [Get-BrokerSite](./Get-BrokerSite/)
-* [New-BrokerIcon](./New-BrokerIcon/)
+* [Get-BrokerSite](../Get-BrokerSite/)
+* [New-BrokerIcon](../New-BrokerIcon/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

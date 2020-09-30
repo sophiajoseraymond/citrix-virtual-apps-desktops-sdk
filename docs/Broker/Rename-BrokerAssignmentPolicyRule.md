@@ -15,10 +15,10 @@ A desktop rule in the assignment policy defines the users who are entitled to se
 
 ## Related Commands
 
-* [New-BrokerAssignmentPolicyRule](./New-BrokerAssignmentPolicyRule/)
-* [Get-BrokerAssignmentPolicyRule](./Get-BrokerAssignmentPolicyRule/)
-* [Set-BrokerAssignmentPolicyRule](./Set-BrokerAssignmentPolicyRule/)
-* [Remove-BrokerAssignmentPolicyRule](./Remove-BrokerAssignmentPolicyRule/)
+* [New-BrokerAssignmentPolicyRule](../New-BrokerAssignmentPolicyRule/)
+* [Get-BrokerAssignmentPolicyRule](../Get-BrokerAssignmentPolicyRule/)
+* [Set-BrokerAssignmentPolicyRule](../Set-BrokerAssignmentPolicyRule/)
+* [Remove-BrokerAssignmentPolicyRule](../Remove-BrokerAssignmentPolicyRule/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

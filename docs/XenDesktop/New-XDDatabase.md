@@ -19,9 +19,9 @@ For database mirroring please refer to "about\_XenDesktopModule\_SiteConfigurati
 
 ## Related Commands
 
-* [Get-XDDatabaseSchema](./Get-XDDatabaseSchema/)
-* [Get-XDSite](./Get-XDSite/)
-* [New-XDSite](./New-XDSite/)
+* [Get-XDDatabaseSchema](../Get-XDDatabaseSchema/)
+* [Get-XDSite](../Get-XDSite/)
+* [New-XDSite](../New-XDSite/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

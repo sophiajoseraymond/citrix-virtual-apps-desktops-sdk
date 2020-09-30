@@ -15,8 +15,8 @@ Remove-BrokerAdminFolder will not remove a folder if it contains any other objec
 
 ## Related Commands
 
-* [Get-BrokerAdminFolder](./Get-BrokerAdminFolder/)
-* [New-BrokerAdminFolder](./New-BrokerAdminFolder/)
+* [Get-BrokerAdminFolder](../Get-BrokerAdminFolder/)
+* [New-BrokerAdminFolder](../New-BrokerAdminFolder/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

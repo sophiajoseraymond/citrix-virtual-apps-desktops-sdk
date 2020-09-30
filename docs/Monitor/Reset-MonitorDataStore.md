@@ -13,7 +13,7 @@ There is no requirement for a database connection to be configured in order for 
 
 ## Related Commands
 
-* [Get-MonitorDataStore](./Get-MonitorDataStore/)
+* [Get-MonitorDataStore](../Get-MonitorDataStore/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

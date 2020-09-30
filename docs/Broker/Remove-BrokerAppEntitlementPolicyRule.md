@@ -17,10 +17,10 @@ Deleting a rule does not affect existing sessions launched using the rule, but u
 
 ## Related Commands
 
-* [New-BrokerAppEntitlementPolicyRule](./New-BrokerAppEntitlementPolicyRule/)
-* [Get-BrokerAppEntitlementPolicyRule](./Get-BrokerAppEntitlementPolicyRule/)
-* [Set-BrokerAppEntitlementPolicyRule](./Set-BrokerAppEntitlementPolicyRule/)
-* [Rename-BrokerAppEntitlementPolicyRule](./Rename-BrokerAppEntitlementPolicyRule/)
+* [New-BrokerAppEntitlementPolicyRule](../New-BrokerAppEntitlementPolicyRule/)
+* [Get-BrokerAppEntitlementPolicyRule](../Get-BrokerAppEntitlementPolicyRule/)
+* [Set-BrokerAppEntitlementPolicyRule](../Set-BrokerAppEntitlementPolicyRule/)
+* [Rename-BrokerAppEntitlementPolicyRule](../Rename-BrokerAppEntitlementPolicyRule/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

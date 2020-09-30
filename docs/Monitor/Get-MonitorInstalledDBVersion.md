@@ -19,8 +19,8 @@ Only one of the -Upgrade or -Downgrade parameters may be supplied at once.
 
 ## Related Commands
 
-* [Get-MonitorDBVersionChangeScript](./Get-MonitorDBVersionChangeScript/)
-* [Get-MonitorDBSchema](./Get-MonitorDBSchema/)
+* [Get-MonitorDBVersionChangeScript](../Get-MonitorDBVersionChangeScript/)
+* [Get-MonitorDBSchema](../Get-MonitorDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

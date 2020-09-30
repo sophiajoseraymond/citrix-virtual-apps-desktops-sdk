@@ -21,7 +21,7 @@ Provides the ability to remove metadata from the given IdentityPool.
 
 ## Related Commands
 
-* [Set-AcctIdentityPoolMetadata](./Set-AcctIdentityPoolMetadata/)
+* [Set-AcctIdentityPoolMetadata](../Set-AcctIdentityPoolMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -11,10 +11,10 @@ Sets the connection details for integration of AppDNA into AppLibrary to allow A
 
 ## Related Commands
 
-* [Get-AppLibAppDNAConnection](./Get-AppLibAppDNAConnection/)
-* [Remove-AppLibAppDNAConnection](./Remove-AppLibAppDNAConnection/)
-* [Enable-AppLibAppDNAConnection](./Enable-AppLibAppDNAConnection/)
-* [Deisable-AppLibAppDNAConnection](./Deisable-AppLibAppDNAConnection/)
+* [Get-AppLibAppDNAConnection](../Get-AppLibAppDNAConnection/)
+* [Remove-AppLibAppDNAConnection](../Remove-AppLibAppDNAConnection/)
+* [Enable-AppLibAppDNAConnection](../Enable-AppLibAppDNAConnection/)
+* [Deisable-AppLibAppDNAConnection](../Deisable-AppLibAppDNAConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

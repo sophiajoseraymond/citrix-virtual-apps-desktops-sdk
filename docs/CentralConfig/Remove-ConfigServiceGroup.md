@@ -11,10 +11,10 @@ Use this cmdlet to remove a service group and all the service instances that it 
 
 ## Related Commands
 
-* [Register-ConfigServiceInstance](./Register-ConfigServiceInstance/)
-* [Add-ConfigServiceGroupMetadata](./Add-ConfigServiceGroupMetadata/)
-* [Set-ConfigServiceGroupMetadata](./Set-ConfigServiceGroupMetadata/)
-* [Remove-ConfigServiceGroupMetadata](./Remove-ConfigServiceGroupMetadata/)
+* [Register-ConfigServiceInstance](../Register-ConfigServiceInstance/)
+* [Add-ConfigServiceGroupMetadata](../Add-ConfigServiceGroupMetadata/)
+* [Set-ConfigServiceGroupMetadata](../Set-ConfigServiceGroupMetadata/)
+* [Remove-ConfigServiceGroupMetadata](../Remove-ConfigServiceGroupMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

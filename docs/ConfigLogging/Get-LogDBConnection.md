@@ -15,10 +15,10 @@ The current service instance is that on the local machine, or that explicitly sp
 
 ## Related Commands
 
-* [Get-LogServiceStatus](./Get-LogServiceStatus/)
-* [Get-LogDataStore](./Get-LogDataStore/)
-* [Set-LogDBConnection](./Set-LogDBConnection/)
-* [Test-LogDBConnection](./Test-LogDBConnection/)
+* [Get-LogServiceStatus](../Get-LogServiceStatus/)
+* [Get-LogDataStore](../Get-LogDataStore/)
+* [Set-LogDBConnection](../Set-LogDBConnection/)
+* [Test-LogDBConnection](../Test-LogDBConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

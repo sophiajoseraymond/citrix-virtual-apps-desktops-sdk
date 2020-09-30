@@ -19,8 +19,8 @@ Only one of the -Upgrade or -Downgrade parameters may be supplied at once.
 
 ## Related Commands
 
-* [Get-ProvDBVersionChangeScript](./Get-ProvDBVersionChangeScript/)
-* [Get-ProvDBSchema](./Get-ProvDBSchema/)
+* [Get-ProvDBVersionChangeScript](../Get-ProvDBVersionChangeScript/)
+* [Get-ProvDBSchema](../Get-ProvDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

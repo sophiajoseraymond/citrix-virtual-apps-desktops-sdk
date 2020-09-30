@@ -13,9 +13,9 @@ The Set-BrokerSessionPreLaunch cmdlet is used to alter the settings of an existi
 
 ## Related Commands
 
-* [New-BrokerSessionPreLaunch](./New-BrokerSessionPreLaunch/)
-* [Get-BrokerSessionPreLaunch](./Get-BrokerSessionPreLaunch/)
-* [Remove-BrokerSessionPreLaunch](./Remove-BrokerSessionPreLaunch/)
+* [New-BrokerSessionPreLaunch](../New-BrokerSessionPreLaunch/)
+* [Get-BrokerSessionPreLaunch](../Get-BrokerSessionPreLaunch/)
+* [Remove-BrokerSessionPreLaunch](../Remove-BrokerSessionPreLaunch/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

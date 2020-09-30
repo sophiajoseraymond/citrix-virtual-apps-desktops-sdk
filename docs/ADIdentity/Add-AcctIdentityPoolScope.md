@@ -21,8 +21,8 @@ If the IdentityPool is already in a scope, that scope will be silently ignored.
 
 ## Related Commands
 
-* [Remove-AcctIdentityPoolScope](./Remove-AcctIdentityPoolScope/)
-* [Get-AcctScopedObject](./Get-AcctScopedObject/)
+* [Remove-AcctIdentityPoolScope](../Remove-AcctIdentityPoolScope/)
+* [Get-AcctScopedObject](../Get-AcctScopedObject/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

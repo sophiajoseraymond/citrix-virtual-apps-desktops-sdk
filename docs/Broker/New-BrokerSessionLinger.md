@@ -15,9 +15,9 @@ Note that each desktop group can only have a single session linger setting. Sess
 
 ## Related Commands
 
-* [Get-BrokerSessionLinger](./Get-BrokerSessionLinger/)
-* [Set-BrokerSessionLinger](./Set-BrokerSessionLinger/)
-* [Remove-BrokerSessionLinger](./Remove-BrokerSessionLinger/)
+* [Get-BrokerSessionLinger](../Get-BrokerSessionLinger/)
+* [Set-BrokerSessionLinger](../Set-BrokerSessionLinger/)
+* [Remove-BrokerSessionLinger](../Remove-BrokerSessionLinger/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

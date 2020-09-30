@@ -11,8 +11,8 @@ Set the farms and the optimal gateway to use for launch.
 
 ## Related Commands
 
-* [Get-SfOptimalGatewayCommand](./Get-SfOptimalGatewayCommand/)
-* [Remove-SfOptimalGatewayCommand](./Remove-SfOptimalGatewayCommand/)
+* [Get-SfOptimalGatewayCommand](../Get-SfOptimalGatewayCommand/)
+* [Remove-SfOptimalGatewayCommand](../Remove-SfOptimalGatewayCommand/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

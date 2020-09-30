@@ -19,8 +19,8 @@ Only one of the -Upgrade or -Downgrade parameters may be supplied at once.
 
 ## Related Commands
 
-* [Get-LogDBVersionChangeScript](./Get-LogDBVersionChangeScript/)
-* [Get-LogDBSchema](./Get-LogDBSchema/)
+* [Get-LogDBVersionChangeScript](../Get-LogDBVersionChangeScript/)
+* [Get-LogDBSchema](../Get-LogDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

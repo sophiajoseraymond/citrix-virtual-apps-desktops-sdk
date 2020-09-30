@@ -13,7 +13,7 @@ Returns, for a given AppDisk name or UID, the number of references by objects in
 
 ## Related Commands
 
-* [Get-AppLibAppDisk](./Get-AppLibAppDisk/)
+* [Get-AppLibAppDisk](../Get-AppLibAppDisk/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

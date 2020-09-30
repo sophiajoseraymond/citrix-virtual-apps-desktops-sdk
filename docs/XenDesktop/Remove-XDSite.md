@@ -13,9 +13,9 @@ The person running this command must be a the local administrator on the last Co
 
 ## Related Commands
 
-* [New-XDSite](./New-XDSite/)
-* [Add-XDController](./Add-XDController/)
-* [Remove-XDController](./Remove-XDController/)
+* [New-XDSite](../New-XDSite/)
+* [Add-XDController](../Add-XDController/)
+* [Remove-XDController](../Remove-XDController/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -19,10 +19,10 @@ For database mirroring please refer to "about\_XenDesktopModule\_SiteConfigurati
 
 ## Related Commands
 
-* [Get-XDDatabaseSchema](./Get-XDDatabaseSchema/)
-* [New-XDDatabase](./New-XDDatabase/)
-* [Set-XDLicensing](./Set-XDLicensing/)
-* [Get-XDSite](./Get-XDSite/)
+* [Get-XDDatabaseSchema](../Get-XDDatabaseSchema/)
+* [New-XDDatabase](../New-XDDatabase/)
+* [Set-XDLicensing](../Set-XDLicensing/)
+* [Get-XDSite](../Get-XDSite/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

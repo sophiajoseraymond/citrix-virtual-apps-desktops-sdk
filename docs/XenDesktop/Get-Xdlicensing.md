@@ -13,10 +13,10 @@ Get the licensing attributes for the site which has a Controller identified by A
 
 ## Related Commands
 
-* [Get-ConfigLicensingModel](./Get-ConfigLicensingModel/)
-* [Get-ConfigProductEdition](./Get-ConfigProductEdition/)
-* [Get-XDSite](./Get-XDSite/)
-* [Set-XDLicensing](./Set-XDLicensing/)
+* [Get-ConfigLicensingModel](../Get-ConfigLicensingModel/)
+* [Get-ConfigProductEdition](../Get-ConfigProductEdition/)
+* [Get-XDSite](../Get-XDSite/)
+* [Set-XDLicensing](../Set-XDLicensing/)
 
 ## Parameters
 

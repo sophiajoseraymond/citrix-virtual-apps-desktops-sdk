@@ -13,9 +13,9 @@ The functionality offered is similar to that of New-BrokerRebootSchedule but the
 
 ## Related Commands
 
-* [Start-BrokerRebootCycle](./Start-BrokerRebootCycle/)
-* [Stop-BrokerRebootCycle](./Stop-BrokerRebootCycle/)
-* [Get-BrokerRebootCycle](./Get-BrokerRebootCycle/)
+* [Start-BrokerRebootCycle](../Start-BrokerRebootCycle/)
+* [Stop-BrokerRebootCycle](../Stop-BrokerRebootCycle/)
+* [Get-BrokerRebootCycle](../Get-BrokerRebootCycle/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

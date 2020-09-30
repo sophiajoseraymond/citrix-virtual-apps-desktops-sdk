@@ -59,7 +59,7 @@ The BrokerHypervisorAlert represents a hypervisor alert object. It contains the 
 
 ## Related Commands
 
-* [New-BrokerHypervisorConnection](./New-BrokerHypervisorConnection/)
+* [New-BrokerHypervisorConnection](../New-BrokerHypervisorConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

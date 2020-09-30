@@ -13,8 +13,8 @@ The Set-BrokerMachine cmdlet sets properties on a machine or set of machines. Yo
 
 ## Related Commands
 
-* [Get-BrokerMachine](./Get-BrokerMachine/)
-* [New-BrokerMachine](./New-BrokerMachine/)
+* [Get-BrokerMachine](../Get-BrokerMachine/)
+* [New-BrokerMachine](../New-BrokerMachine/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

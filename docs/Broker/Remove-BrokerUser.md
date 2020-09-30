@@ -13,8 +13,8 @@ The Remove-BrokerUser cmdlet removes broker user objects from another specified 
 
 ## Related Commands
 
-* [Add-BrokerUser](./Add-BrokerUser/)
-* [Get-BrokerUser](./Get-BrokerUser/)
+* [Add-BrokerUser](../Add-BrokerUser/)
+* [Get-BrokerUser](../Get-BrokerUser/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

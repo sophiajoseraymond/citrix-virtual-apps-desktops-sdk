@@ -13,10 +13,10 @@ AppDNA will analyse the chosen AppDisk to check for any compatability issues.
 
 ## Related Commands
 
-* [Get-AppLibTask](./Get-AppLibTask/)
-* [Get-AppLibAppDisk](./Get-AppLibAppDisk/)
-* [New-AppLibAppDisk](./New-AppLibAppDisk/)
-* [Test-AppLibAppDiskNameAvailable](./Test-AppLibAppDiskNameAvailable/)
+* [Get-AppLibTask](../Get-AppLibTask/)
+* [Get-AppLibAppDisk](../Get-AppLibAppDisk/)
+* [New-AppLibAppDisk](../New-AppLibAppDisk/)
+* [Test-AppLibAppDiskNameAvailable](../Test-AppLibAppDiskNameAvailable/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

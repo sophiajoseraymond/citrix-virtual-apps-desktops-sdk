@@ -21,12 +21,12 @@ If the option to remove the account from AD or to disable it in AD is specified,
 
 ## Related Commands
 
-* [New-AcctADAccount](./New-AcctADAccount/)
-* [Add-AcctADAccount](./Add-AcctADAccount/)
-* [Repair-AcctADAccount](./Repair-AcctADAccount/)
-* [Unlock-AcctADAccount](./Unlock-AcctADAccount/)
-* [Update-AcctADAccount](./Update-AcctADAccount/)
-* [Get-AcctADAccount](./Get-AcctADAccount/)
+* [New-AcctADAccount](../New-AcctADAccount/)
+* [Add-AcctADAccount](../Add-AcctADAccount/)
+* [Repair-AcctADAccount](../Repair-AcctADAccount/)
+* [Unlock-AcctADAccount](../Unlock-AcctADAccount/)
+* [Update-AcctADAccount](../Update-AcctADAccount/)
+* [Get-AcctADAccount](../Get-AcctADAccount/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

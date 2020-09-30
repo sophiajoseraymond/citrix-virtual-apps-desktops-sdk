@@ -17,7 +17,7 @@ Provides the ability to remove metadata from the given Service.
 
 ## Related Commands
 
-* [Set-EnvTestServiceMetadata](./Set-EnvTestServiceMetadata/)
+* [Set-EnvTestServiceMetadata](../Set-EnvTestServiceMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

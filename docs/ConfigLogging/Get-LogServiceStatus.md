@@ -11,11 +11,11 @@ Enables the status of the ConfigurationLogging Service on the controller to be d
 
 ## Related Commands
 
-* [Get-LogDataStore](./Get-LogDataStore/)
-* [Set-LogDBConnection](./Set-LogDBConnection/)
-* [Test-LogDBConnection](./Test-LogDBConnection/)
-* [Get-LogDBConnection](./Get-LogDBConnection/)
-* [Get-LogDBSchema](./Get-LogDBSchema/)
+* [Get-LogDataStore](../Get-LogDataStore/)
+* [Set-LogDBConnection](../Set-LogDBConnection/)
+* [Test-LogDBConnection](../Test-LogDBConnection/)
+* [Get-LogDBConnection](../Get-LogDBConnection/)
+* [Get-LogDBSchema](../Get-LogDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

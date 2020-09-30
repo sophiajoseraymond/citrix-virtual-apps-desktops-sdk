@@ -17,12 +17,12 @@ See about\_Admin\_Filtering for information about advanced filtering options.
 
 ## Related Commands
 
-* [New-AdminScope](./New-AdminScope/)
-* [Set-AdminScope](./Set-AdminScope/)
-* [Rename-AdminScope](./Rename-AdminScope/)
-* [Remove-AdminScope](./Remove-AdminScope/)
-* [Set-AdminScopeMetadata](./Set-AdminScopeMetadata/)
-* [Remove-AdminScopeMetadata](./Remove-AdminScopeMetadata/)
+* [New-AdminScope](../New-AdminScope/)
+* [Set-AdminScope](../Set-AdminScope/)
+* [Rename-AdminScope](../Rename-AdminScope/)
+* [Remove-AdminScope](../Remove-AdminScope/)
+* [Set-AdminScopeMetadata](../Set-AdminScopeMetadata/)
+* [Remove-AdminScopeMetadata](../Remove-AdminScopeMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

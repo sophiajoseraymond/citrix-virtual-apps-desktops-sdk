@@ -15,11 +15,11 @@ Application group names are not visible to end users.
 
 ## Related Commands
 
-* [Add-BrokerApplicationGroup](./Add-BrokerApplicationGroup/)
-* [Get-BrokerApplicationGroup](./Get-BrokerApplicationGroup/)
-* [New-BrokerApplicationGroup](./New-BrokerApplicationGroup/)
-* [Remove-BrokerApplicationGroup](./Remove-BrokerApplicationGroup/)
-* [Set-BrokerApplicationGroup](./Set-BrokerApplicationGroup/)
+* [Add-BrokerApplicationGroup](../Add-BrokerApplicationGroup/)
+* [Get-BrokerApplicationGroup](../Get-BrokerApplicationGroup/)
+* [New-BrokerApplicationGroup](../New-BrokerApplicationGroup/)
+* [Remove-BrokerApplicationGroup](../Remove-BrokerApplicationGroup/)
+* [Set-BrokerApplicationGroup](../Set-BrokerApplicationGroup/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

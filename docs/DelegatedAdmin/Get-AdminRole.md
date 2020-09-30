@@ -13,12 +13,12 @@ See about\_Admin\_Filtering for information about advanced filtering options.
 
 ## Related Commands
 
-* [New-AdminRole](./New-AdminRole/)
-* [Set-AdminRole](./Set-AdminRole/)
-* [Rename-AdminRole](./Rename-AdminRole/)
-* [Remove-AdminRole](./Remove-AdminRole/)
-* [Set-AdminRoleMetadata](./Set-AdminRoleMetadata/)
-* [Remove-AdminRoleMetadata](./Remove-AdminRoleMetadata/)
+* [New-AdminRole](../New-AdminRole/)
+* [Set-AdminRole](../Set-AdminRole/)
+* [Rename-AdminRole](../Rename-AdminRole/)
+* [Remove-AdminRole](../Remove-AdminRole/)
+* [Set-AdminRoleMetadata](../Set-AdminRoleMetadata/)
+* [Remove-AdminRoleMetadata](../Remove-AdminRoleMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

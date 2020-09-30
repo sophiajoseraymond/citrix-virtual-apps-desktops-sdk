@@ -23,10 +23,10 @@ Multiple desktop rules in the entitlement policy can apply to the same desktop g
 
 ## Related Commands
 
-* [Get-BrokerEntitlementPolicyRule](./Get-BrokerEntitlementPolicyRule/)
-* [Set-BrokerEntitlementPolicyRule](./Set-BrokerEntitlementPolicyRule/)
-* [Rename-BrokerEntitlementPolicyRule](./Rename-BrokerEntitlementPolicyRule/)
-* [Remove-BrokerEntitlementPolicyRule](./Remove-BrokerEntitlementPolicyRule/)
+* [Get-BrokerEntitlementPolicyRule](../Get-BrokerEntitlementPolicyRule/)
+* [Set-BrokerEntitlementPolicyRule](../Set-BrokerEntitlementPolicyRule/)
+* [Rename-BrokerEntitlementPolicyRule](../Rename-BrokerEntitlementPolicyRule/)
+* [Remove-BrokerEntitlementPolicyRule](../Remove-BrokerEntitlementPolicyRule/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

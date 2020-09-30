@@ -11,8 +11,8 @@ Retrieves the icon associated with a particular shortcut on a particular machine
 
 ## Related Commands
 
-* [Get-BrokerMachine](./Get-BrokerMachine/)
-* [New-BrokerIcon](./New-BrokerIcon/)
+* [Get-BrokerMachine](../Get-BrokerMachine/)
+* [New-BrokerIcon](../New-BrokerIcon/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -25,9 +25,9 @@ Once an update has been applied to the service schema, any existing Citrix Broke
 
 ## Related Commands
 
-* [Get-BrokerInstalledDBVersion](./Get-BrokerInstalledDBVersion/)
-* [Get-BrokerServiceStatus](./Get-BrokerServiceStatus/)
-* [Get-BrokerDBSchema](./Get-BrokerDBSchema/)
+* [Get-BrokerInstalledDBVersion](../Get-BrokerInstalledDBVersion/)
+* [Get-BrokerServiceStatus](../Get-BrokerServiceStatus/)
+* [Get-BrokerDBSchema](../Get-BrokerDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

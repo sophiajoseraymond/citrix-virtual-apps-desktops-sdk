@@ -11,11 +11,11 @@ Creates a tag that can be associated with other objects using Add-BrokerTag.
 
 ## Related Commands
 
-* [Add-BrokerTag](./Add-BrokerTag/)
-* [Get-BrokerTag](./Get-BrokerTag/)
-* [Remove-BrokerTag](./Remove-BrokerTag/)
-* [Rename-BrokerTag](./Rename-BrokerTag/)
-* [Set-BrokerTag](./Set-BrokerTag/)
+* [Add-BrokerTag](../Add-BrokerTag/)
+* [Get-BrokerTag](../Get-BrokerTag/)
+* [Remove-BrokerTag](../Remove-BrokerTag/)
+* [Rename-BrokerTag](../Rename-BrokerTag/)
+* [Set-BrokerTag](../Set-BrokerTag/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

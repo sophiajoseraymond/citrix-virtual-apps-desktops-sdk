@@ -13,7 +13,7 @@ A database connection need not be configured for this command to be used.
 
 ## Related Commands
 
-* [Get-MonitorConfiguration](./Get-MonitorConfiguration/)
+* [Get-MonitorConfiguration](../Get-MonitorConfiguration/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

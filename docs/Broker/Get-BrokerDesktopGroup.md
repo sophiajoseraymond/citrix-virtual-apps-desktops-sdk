@@ -146,12 +146,12 @@ A desktop group object represents a collection of machines that are fully config
 
 ## Related Commands
 
-* [New-BrokerDesktopGroup](./New-BrokerDesktopGroup/)
-* [Set-BrokerDesktopGroup](./Set-BrokerDesktopGroup/)
-* [Rename-BrokerDesktopGroup](./Rename-BrokerDesktopGroup/)
-* [Remove-BrokerDesktopGroup](./Remove-BrokerDesktopGroup/)
-* [Add-BrokerUser](./Add-BrokerUser/)
-* [Add-BrokerTag](./Add-BrokerTag/)
+* [New-BrokerDesktopGroup](../New-BrokerDesktopGroup/)
+* [Set-BrokerDesktopGroup](../Set-BrokerDesktopGroup/)
+* [Rename-BrokerDesktopGroup](../Rename-BrokerDesktopGroup/)
+* [Remove-BrokerDesktopGroup](../Remove-BrokerDesktopGroup/)
+* [Add-BrokerUser](../Add-BrokerUser/)
+* [Add-BrokerTag](../Add-BrokerTag/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
