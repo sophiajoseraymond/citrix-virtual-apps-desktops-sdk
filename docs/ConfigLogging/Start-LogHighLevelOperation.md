@@ -32,8 +32,8 @@ Rebooting a user's desktop. Once the change being logged has completed (whether 
 
 ## Related Commands
 
-* [Stop-LogHighLevelOperation](./Stop-LogHighLevelOperation/)
-* [Get-LogHighLevelOperation](./Get-LogHighLevelOperation/)
+* [Stop-LogHighLevelOperation](../Stop-LogHighLevelOperation/)
+* [Get-LogHighLevelOperation](../Get-LogHighLevelOperation/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

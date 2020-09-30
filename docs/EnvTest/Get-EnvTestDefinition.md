@@ -11,14 +11,14 @@ Returns a list of test definitions that are available from currently running com
 
 ## Related Commands
 
-* [Get-EnvTestSuiteDefinition](./Get-EnvTestSuiteDefinition/)
-* [Get-EnvTestTask](./Get-EnvTestTask/)
-* [Start-EnvTestTask](./Start-EnvTestTask/)
-* [Switch-EnvTestTask](./Switch-EnvTestTask/)
-* [Stop-EnvTestTask](./Stop-EnvTestTask/)
-* [Remove-EnvTestTask](./Remove-EnvTestTask/)
-* [Add-EnvTestTaskMetadata](./Add-EnvTestTaskMetadata/)
-* [Remove-EnvTestTaskMetadata](./Remove-EnvTestTaskMetadata/)
+* [Get-EnvTestSuiteDefinition](../Get-EnvTestSuiteDefinition/)
+* [Get-EnvTestTask](../Get-EnvTestTask/)
+* [Start-EnvTestTask](../Start-EnvTestTask/)
+* [Switch-EnvTestTask](../Switch-EnvTestTask/)
+* [Stop-EnvTestTask](../Stop-EnvTestTask/)
+* [Remove-EnvTestTask](../Remove-EnvTestTask/)
+* [Add-EnvTestTaskMetadata](../Add-EnvTestTaskMetadata/)
+* [Remove-EnvTestTaskMetadata](../Remove-EnvTestTaskMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -17,12 +17,12 @@ Role names must be unique, and you cannot modify the name of built-in roles.
 
 ## Related Commands
 
-* [New-AdminRole](./New-AdminRole/)
-* [Get-AdminRole](./Get-AdminRole/)
-* [Set-AdminRole](./Set-AdminRole/)
-* [Remove-AdminRole](./Remove-AdminRole/)
-* [Set-AdminRoleMetadata](./Set-AdminRoleMetadata/)
-* [Remove-AdminRoleMetadata](./Remove-AdminRoleMetadata/)
+* [New-AdminRole](../New-AdminRole/)
+* [Get-AdminRole](../Get-AdminRole/)
+* [Set-AdminRole](../Set-AdminRole/)
+* [Remove-AdminRole](../Remove-AdminRole/)
+* [Set-AdminRoleMetadata](../Set-AdminRoleMetadata/)
+* [Remove-AdminRoleMetadata](../Remove-AdminRoleMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

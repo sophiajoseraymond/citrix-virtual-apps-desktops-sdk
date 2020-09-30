@@ -13,15 +13,15 @@ Creates a new EnvTestDiscoveryTargetDefinition object that can be piped into Sta
 
 ## Related Commands
 
-* [Get-EnvTestDefinition](./Get-EnvTestDefinition/)
-* [Get-EnvTestSuiteDefinition](./Get-EnvTestSuiteDefinition/)
-* [Get-EnvTestTask](./Get-EnvTestTask/)
-* [Start-EnvTestTask](./Start-EnvTestTask/)
-* [Switch-EnvTestTask](./Switch-EnvTestTask/)
-* [Stop-EnvTestTask](./Stop-EnvTestTask/)
-* [Remove-EnvTestTask](./Remove-EnvTestTask/)
-* [Add-EnvTestTaskMetadata](./Add-EnvTestTaskMetadata/)
-* [Remove-EnvTestTaskMetadata](./Remove-EnvTestTaskMetadata/)
+* [Get-EnvTestDefinition](../Get-EnvTestDefinition/)
+* [Get-EnvTestSuiteDefinition](../Get-EnvTestSuiteDefinition/)
+* [Get-EnvTestTask](../Get-EnvTestTask/)
+* [Start-EnvTestTask](../Start-EnvTestTask/)
+* [Switch-EnvTestTask](../Switch-EnvTestTask/)
+* [Stop-EnvTestTask](../Stop-EnvTestTask/)
+* [Remove-EnvTestTask](../Remove-EnvTestTask/)
+* [Add-EnvTestTaskMetadata](../Add-EnvTestTaskMetadata/)
+* [Remove-EnvTestTaskMetadata](../Remove-EnvTestTaskMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

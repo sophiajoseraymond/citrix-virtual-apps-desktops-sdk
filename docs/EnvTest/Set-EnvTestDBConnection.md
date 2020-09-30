@@ -23,9 +23,9 @@ The current service instance is that on the local machine, or that explicitly sp
 
 ## Related Commands
 
-* [Get-EnvTestServiceStatus](./Get-EnvTestServiceStatus/)
-* [Get-EnvTestDBConnection](./Get-EnvTestDBConnection/)
-* [Test-EnvTestDBConnection](./Test-EnvTestDBConnection/)
+* [Get-EnvTestServiceStatus](../Get-EnvTestServiceStatus/)
+* [Get-EnvTestDBConnection](../Get-EnvTestDBConnection/)
+* [Test-EnvTestDBConnection](../Test-EnvTestDBConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

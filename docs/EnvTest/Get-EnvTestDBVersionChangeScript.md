@@ -25,9 +25,9 @@ Once an update has been applied to the service schema, any existing Citrix EnvTe
 
 ## Related Commands
 
-* [Get-EnvTestInstalledDBVersion](./Get-EnvTestInstalledDBVersion/)
-* [Get-EnvTestServiceStatus](./Get-EnvTestServiceStatus/)
-* [Get-EnvTestDBSchema](./Get-EnvTestDBSchema/)
+* [Get-EnvTestInstalledDBVersion](../Get-EnvTestInstalledDBVersion/)
+* [Get-EnvTestServiceStatus](../Get-EnvTestServiceStatus/)
+* [Get-EnvTestDBSchema](../Get-EnvTestDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

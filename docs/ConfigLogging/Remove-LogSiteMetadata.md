@@ -17,7 +17,7 @@ Provides the ability to remove metadata from the given Site.
 
 ## Related Commands
 
-* [Set-LogSiteMetadata](./Set-LogSiteMetadata/)
+* [Set-LogSiteMetadata](../Set-LogSiteMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

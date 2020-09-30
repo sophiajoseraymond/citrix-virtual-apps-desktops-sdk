@@ -17,11 +17,11 @@ See about\_Admin\_Filtering for information about advanced filtering options.
 
 ## Related Commands
 
-* [Add-AdminPermission](./Add-AdminPermission/)
-* [Remove-AdminPermission](./Remove-AdminPermission/)
-* [Get-AdminRole](./Get-AdminRole/)
-* [Get-AdminPermissionGroup](./Get-AdminPermissionGroup/)
-* [Test-AdminAccess](./Test-AdminAccess/)
+* [Add-AdminPermission](../Add-AdminPermission/)
+* [Remove-AdminPermission](../Remove-AdminPermission/)
+* [Get-AdminRole](../Get-AdminRole/)
+* [Get-AdminPermissionGroup](../Get-AdminPermissionGroup/)
+* [Test-AdminAccess](../Test-AdminAccess/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

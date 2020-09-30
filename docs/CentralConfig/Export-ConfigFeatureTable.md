@@ -11,8 +11,8 @@ Export-ConfigFeatureTable [-BearerToken <String>] [-AdminAddress <String>] [<Com
 
 ## Related Commands
 
-* [Set-ConfigSite](./Set-ConfigSite/)
-* [Import-ConfigFeatureTable](./Import-ConfigFeatureTable/)
+* [Set-ConfigSite](../Set-ConfigSite/)
+* [Import-ConfigFeatureTable](../Import-ConfigFeatureTable/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

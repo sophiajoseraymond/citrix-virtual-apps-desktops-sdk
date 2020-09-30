@@ -15,7 +15,7 @@ The supplied configuration requires a digital signature; this is used to validat
 
 ## Related Commands
 
-* [Get-AdminRoleConfiguration](./Get-AdminRoleConfiguration/)
+* [Get-AdminRoleConfiguration](../Get-AdminRoleConfiguration/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -11,7 +11,7 @@ Use this cmdlet to remove a service instance from the Configuration Service regi
 
 ## Related Commands
 
-* [Register-ConfigServiceInstance](./Register-ConfigServiceInstance/)
+* [Register-ConfigServiceInstance](../Register-ConfigServiceInstance/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

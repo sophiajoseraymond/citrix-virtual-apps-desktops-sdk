@@ -21,7 +21,7 @@ Provides the ability to remove metadata from the given Zone.
 
 ## Related Commands
 
-* [Set-ConfigZoneMetadata](./Set-ConfigZoneMetadata/)
+* [Set-ConfigZoneMetadata](../Set-ConfigZoneMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

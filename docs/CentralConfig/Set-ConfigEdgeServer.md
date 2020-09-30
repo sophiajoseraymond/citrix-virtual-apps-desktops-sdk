@@ -15,10 +15,10 @@ The Set-ConfigEdgeServer cmdlet sets properties of an edge server or a set of ed
 
 ## Related Commands
 
-* [New-ConfigEdgeServer](./New-ConfigEdgeServer/)
-* [Get-ConfigEdgeServer](./Get-ConfigEdgeServer/)
-* [Rename-ConfigEdgeServer](./Rename-ConfigEdgeServer/)
-* [Remove-ConfigEdgeServer](./Remove-ConfigEdgeServer/)
+* [New-ConfigEdgeServer](../New-ConfigEdgeServer/)
+* [Get-ConfigEdgeServer](../Get-ConfigEdgeServer/)
+* [Rename-ConfigEdgeServer](../Rename-ConfigEdgeServer/)
+* [Remove-ConfigEdgeServer](../Remove-ConfigEdgeServer/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

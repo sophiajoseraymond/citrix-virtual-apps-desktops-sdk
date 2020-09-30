@@ -43,9 +43,9 @@ If the service uses two data stores they can exist in the same database. You do 
 
 ## Related Commands
 
-* [Get-LogDataStore](./Get-LogDataStore/)
-* [Set-LogDBConnection](./Set-LogDBConnection/)
-* [Test-LogDBConnection](./Test-LogDBConnection/)
+* [Get-LogDataStore](../Get-LogDataStore/)
+* [Set-LogDBConnection](../Set-LogDBConnection/)
+* [Test-LogDBConnection](../Test-LogDBConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

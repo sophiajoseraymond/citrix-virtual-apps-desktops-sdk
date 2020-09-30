@@ -11,10 +11,10 @@ Enables the status of the Configuration Service on the controller to be determin
 
 ## Related Commands
 
-* [Set-ConfigDBConnection](./Set-ConfigDBConnection/)
-* [Test-ConfigDBConnection](./Test-ConfigDBConnection/)
-* [Get-ConfigDBConnection](./Get-ConfigDBConnection/)
-* [Get-ConfigDBSchema](./Get-ConfigDBSchema/)
+* [Set-ConfigDBConnection](../Set-ConfigDBConnection/)
+* [Test-ConfigDBConnection](../Test-ConfigDBConnection/)
+* [Get-ConfigDBConnection](../Get-ConfigDBConnection/)
+* [Get-ConfigDBSchema](../Get-ConfigDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

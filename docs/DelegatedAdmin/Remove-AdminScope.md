@@ -19,12 +19,12 @@ An error will be produced if the scope being removed is currently assigned to an
 
 ## Related Commands
 
-* [New-AdminScope](./New-AdminScope/)
-* [Get-AdminScope](./Get-AdminScope/)
-* [Set-AdminScope](./Set-AdminScope/)
-* [Rename-AdminScope](./Rename-AdminScope/)
-* [Set-AdminScopeMetadata](./Set-AdminScopeMetadata/)
-* [Remove-AdminScopeMetadata](./Remove-AdminScopeMetadata/)
+* [New-AdminScope](../New-AdminScope/)
+* [Get-AdminScope](../Get-AdminScope/)
+* [Set-AdminScope](../Set-AdminScope/)
+* [Rename-AdminScope](../Rename-AdminScope/)
+* [Set-AdminScopeMetadata](../Set-AdminScopeMetadata/)
+* [Remove-AdminScopeMetadata](../Remove-AdminScopeMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
