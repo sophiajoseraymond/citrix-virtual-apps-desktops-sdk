@@ -1,4 +1,4 @@
-# Citrix Virtual Apps and Desktops 2006 SDK
+# Citrix Virtual Apps and Desktops 2009 SDK
 
 > **Note:**
 > 
