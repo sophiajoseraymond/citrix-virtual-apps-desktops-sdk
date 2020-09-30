@@ -11,9 +11,9 @@ This cmdlet checks whether proposed PowerTimeScheme Name is available for use. I
 
 ## Related Commands
 
-* [Get-BrokerPowerTimeScheme](./Get-BrokerPowerTimeScheme/)
-* [New-BrokerPowerTimeScheme](./New-BrokerPowerTimeScheme/)
-* [Rename-BrokerPowerTimeScheme](./Rename-BrokerPowerTimeScheme/)
+* [Get-BrokerPowerTimeScheme](../Get-BrokerPowerTimeScheme/)
+* [New-BrokerPowerTimeScheme](../New-BrokerPowerTimeScheme/)
+* [Rename-BrokerPowerTimeScheme](../Rename-BrokerPowerTimeScheme/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

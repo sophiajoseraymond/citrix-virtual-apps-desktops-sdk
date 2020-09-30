@@ -17,8 +17,8 @@ Each broker service instance holds its own connection to the license server. In 
 
 ## Related Commands
 
-* [Get-BrokerSite](./Get-BrokerSite/)
-* [Set-BrokerSite](./Set-BrokerSite/)
+* [Get-BrokerSite](../Get-BrokerSite/)
+* [Set-BrokerSite](../Set-BrokerSite/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

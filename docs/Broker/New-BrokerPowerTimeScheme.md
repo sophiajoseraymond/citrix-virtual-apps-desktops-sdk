@@ -15,10 +15,10 @@ See 'help about\_Broker\_PowerManagement' for a detailed description of the powe
 
 ## Related Commands
 
-* [Get-BrokerPowerTimeScheme](./Get-BrokerPowerTimeScheme/)
-* [Set-BrokerPowerTimeScheme](./Set-BrokerPowerTimeScheme/)
-* [Remove-BrokerPowerTimeScheme](./Remove-BrokerPowerTimeScheme/)
-* [Rename-BrokerPowerTimeScheme](./Rename-BrokerPowerTimeScheme/)
+* [Get-BrokerPowerTimeScheme](../Get-BrokerPowerTimeScheme/)
+* [Set-BrokerPowerTimeScheme](../Set-BrokerPowerTimeScheme/)
+* [Remove-BrokerPowerTimeScheme](../Remove-BrokerPowerTimeScheme/)
+* [Rename-BrokerPowerTimeScheme](../Rename-BrokerPowerTimeScheme/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

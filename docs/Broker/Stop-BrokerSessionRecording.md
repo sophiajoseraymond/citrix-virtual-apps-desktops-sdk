@@ -13,9 +13,9 @@ Stops recording the specified session(s).
 
 ## Related Commands
 
-* [Get-BrokerSession](./Get-BrokerSession/)
-* [Get-BrokerSessionRecordingStatus](./Get-BrokerSessionRecordingStatus/)
-* [Start-BrokerSessionRecording](./Start-BrokerSessionRecording/)
+* [Get-BrokerSession](../Get-BrokerSession/)
+* [Get-BrokerSessionRecordingStatus](../Get-BrokerSessionRecordingStatus/)
+* [Start-BrokerSessionRecording](../Start-BrokerSessionRecording/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

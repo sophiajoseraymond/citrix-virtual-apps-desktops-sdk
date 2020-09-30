@@ -13,11 +13,11 @@ The New-BrokerRebootScheduleV2 cmdlet is used to define a reboot schedule for a 
 
 ## Related Commands
 
-* [Get-BrokerRebootScheduleV2](./Get-BrokerRebootScheduleV2/)
-* [Set-BrokerRebootScheduleV2](./Set-BrokerRebootScheduleV2/)
-* [Remove-BrokerRebootScheduleV2](./Remove-BrokerRebootScheduleV2/)
-* [Rename-BrokerRebootScheduleV2](./Rename-BrokerRebootScheduleV2/)
-* [Start-BrokerRebootCycle](./Start-BrokerRebootCycle/)
+* [Get-BrokerRebootScheduleV2](../Get-BrokerRebootScheduleV2/)
+* [Set-BrokerRebootScheduleV2](../Set-BrokerRebootScheduleV2/)
+* [Remove-BrokerRebootScheduleV2](../Remove-BrokerRebootScheduleV2/)
+* [Rename-BrokerRebootScheduleV2](../Rename-BrokerRebootScheduleV2/)
+* [Start-BrokerRebootCycle](../Start-BrokerRebootCycle/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

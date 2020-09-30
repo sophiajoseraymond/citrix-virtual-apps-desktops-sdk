@@ -46,7 +46,7 @@ Each BrokerTagUsage object summarizes on the usage of a single Tag.
 
 ## Related Commands
 
-* [Get-BrokerTag](./Get-BrokerTag/)
+* [Get-BrokerTag](../Get-BrokerTag/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

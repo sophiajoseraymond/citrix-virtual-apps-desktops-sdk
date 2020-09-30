@@ -17,13 +17,13 @@ See about\_Broker\_Desktops and about\_Broker\_Applications for more information
 
 ## Related Commands
 
-* [New-BrokerApplication](./New-BrokerApplication/)
-* [Add-BrokerApplication](./Add-BrokerApplication/)
-* [Add-BrokerTag](./Add-BrokerTag/)
-* [Remove-BrokerApplication](./Remove-BrokerApplication/)
-* [Rename-BrokerApplication](./Rename-BrokerApplication/)
-* [Move-BrokerApplication](./Move-BrokerApplication/)
-* [Set-BrokerApplication](./Set-BrokerApplication/)
+* [New-BrokerApplication](../New-BrokerApplication/)
+* [Add-BrokerApplication](../Add-BrokerApplication/)
+* [Add-BrokerTag](../Add-BrokerTag/)
+* [Remove-BrokerApplication](../Remove-BrokerApplication/)
+* [Rename-BrokerApplication](../Rename-BrokerApplication/)
+* [Move-BrokerApplication](../Move-BrokerApplication/)
+* [Set-BrokerApplication](../Set-BrokerApplication/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

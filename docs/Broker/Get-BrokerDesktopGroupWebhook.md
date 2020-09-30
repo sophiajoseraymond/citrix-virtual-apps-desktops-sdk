@@ -28,7 +28,7 @@ The BrokerDesktopGroupWebhook object represents a webhook of a desktop group tha
 
 ## Related Commands
 
-* [Get-BrokerDesktopGroup](./Get-BrokerDesktopGroup/)
+* [Get-BrokerDesktopGroup](../Get-BrokerDesktopGroup/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

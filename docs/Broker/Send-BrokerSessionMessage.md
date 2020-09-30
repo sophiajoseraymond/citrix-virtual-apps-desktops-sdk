@@ -11,7 +11,7 @@ Generates a message box in the target session(s).
 
 ## Related Commands
 
-* [Get-BrokerSession](./Get-BrokerSession/)
+* [Get-BrokerSession](../Get-BrokerSession/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

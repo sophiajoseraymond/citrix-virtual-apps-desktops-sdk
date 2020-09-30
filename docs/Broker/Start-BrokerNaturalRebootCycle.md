@@ -13,9 +13,9 @@ The machines are rebooted in a non-disruptive manner, allowing machines that are
 
 ## Related Commands
 
-* [Start-BrokerRebootCycle](./Start-BrokerRebootCycle/)
-* [Start-BrokerDesktopGroupRebootCycle](./Start-BrokerDesktopGroupRebootCycle/)
-* [Start-BrokerNaturalDesktopGroupRebootCycle](./Start-BrokerNaturalDesktopGroupRebootCycle/)
+* [Start-BrokerRebootCycle](../Start-BrokerRebootCycle/)
+* [Start-BrokerDesktopGroupRebootCycle](../Start-BrokerDesktopGroupRebootCycle/)
+* [Start-BrokerNaturalDesktopGroupRebootCycle](../Start-BrokerNaturalDesktopGroupRebootCycle/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

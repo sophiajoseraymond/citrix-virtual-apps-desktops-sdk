@@ -11,10 +11,10 @@ Enables the status of the Broker Service on the controller to be determined. If 
 
 ## Related Commands
 
-* [Set-BrokerDBConnection](./Set-BrokerDBConnection/)
-* [Test-BrokerDBConnection](./Test-BrokerDBConnection/)
-* [Get-BrokerDBConnection](./Get-BrokerDBConnection/)
-* [Get-BrokerDBSchema](./Get-BrokerDBSchema/)
+* [Set-BrokerDBConnection](../Set-BrokerDBConnection/)
+* [Test-BrokerDBConnection](../Test-BrokerDBConnection/)
+* [Get-BrokerDBConnection](../Get-BrokerDBConnection/)
+* [Get-BrokerDBSchema](../Get-BrokerDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

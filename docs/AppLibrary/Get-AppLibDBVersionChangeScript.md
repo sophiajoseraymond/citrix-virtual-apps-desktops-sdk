@@ -25,9 +25,9 @@ Once an update has been applied to the service schema, any existing Citrix AppLi
 
 ## Related Commands
 
-* [Get-AppLibInstalledDBVersion](./Get-AppLibInstalledDBVersion/)
-* [Get-AppLibServiceStatus](./Get-AppLibServiceStatus/)
-* [Get-AppLibDBSchema](./Get-AppLibDBSchema/)
+* [Get-AppLibInstalledDBVersion](../Get-AppLibInstalledDBVersion/)
+* [Get-AppLibServiceStatus](../Get-AppLibServiceStatus/)
+* [Get-AppLibDBSchema](../Get-AppLibDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

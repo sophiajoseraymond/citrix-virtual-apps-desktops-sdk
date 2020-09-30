@@ -40,11 +40,11 @@ The machine configuration object returned represents a named collection of relat
 
 ## Related Commands
 
-* [New-BrokerMachineConfiguration](./New-BrokerMachineConfiguration/)
-* [Set-BrokerMachineConfiguration](./Set-BrokerMachineConfiguration/)
-* [Rename-BrokerMachineConfiguration](./Rename-BrokerMachineConfiguration/)
-* [Remove-BrokerMachineConfiguration](./Remove-BrokerMachineConfiguration/)
-* [Add-BrokerMachineConfiguration](./Add-BrokerMachineConfiguration/)
+* [New-BrokerMachineConfiguration](../New-BrokerMachineConfiguration/)
+* [Set-BrokerMachineConfiguration](../Set-BrokerMachineConfiguration/)
+* [Rename-BrokerMachineConfiguration](../Rename-BrokerMachineConfiguration/)
+* [Remove-BrokerMachineConfiguration](../Remove-BrokerMachineConfiguration/)
+* [Add-BrokerMachineConfiguration](../Add-BrokerMachineConfiguration/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -13,9 +13,9 @@ Machines within a Machine Catalog are reserved temporarily during a number of Ap
 
 ## Related Commands
 
-* [Get-AppLibAppDisk](./Get-AppLibAppDisk/)
-* [New-AppLibAppDisk](./New-AppLibAppDisk/)
-* [Import-AppLibAppDisk](./Import-AppLibAppDisk/)
+* [Get-AppLibAppDisk](../Get-AppLibAppDisk/)
+* [New-AppLibAppDisk](../New-AppLibAppDisk/)
+* [Import-AppLibAppDisk](../Import-AppLibAppDisk/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

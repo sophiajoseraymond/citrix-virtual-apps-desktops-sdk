@@ -17,7 +17,7 @@ Provides the ability for additional custom data to be stored against given Servi
 
 ## Related Commands
 
-* [Remove-TrustServiceKeyMetadata](./Remove-TrustServiceKeyMetadata/)
+* [Remove-TrustServiceKeyMetadata](../Remove-TrustServiceKeyMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

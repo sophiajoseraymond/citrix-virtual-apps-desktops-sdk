@@ -11,9 +11,9 @@ This cmdlet checks whether proposed AppEntitlementPolicyRule Name is available f
 
 ## Related Commands
 
-* [Get-BrokerAppEntitlementPolicyRule](./Get-BrokerAppEntitlementPolicyRule/)
-* [New-BrokerAppEntitlementPolicyRule](./New-BrokerAppEntitlementPolicyRule/)
-* [Rename-BrokerAppEntitlementPolicyRule](./Rename-BrokerAppEntitlementPolicyRule/)
+* [Get-BrokerAppEntitlementPolicyRule](../Get-BrokerAppEntitlementPolicyRule/)
+* [New-BrokerAppEntitlementPolicyRule](../New-BrokerAppEntitlementPolicyRule/)
+* [Rename-BrokerAppEntitlementPolicyRule](../Rename-BrokerAppEntitlementPolicyRule/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

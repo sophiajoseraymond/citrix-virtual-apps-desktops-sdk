@@ -11,7 +11,7 @@ The Start-BrokerCatalogPvdImagePrepare cmdlet instructs the Broker to request th
 
 ## Related Commands
 
-* [Start-BrokerMachinePvdImagePrepare](./Start-BrokerMachinePvdImagePrepare/)
+* [Start-BrokerMachinePvdImagePrepare](../Start-BrokerMachinePvdImagePrepare/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

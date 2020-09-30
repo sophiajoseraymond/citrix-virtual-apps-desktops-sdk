@@ -40,8 +40,8 @@ The BrokerLease object represents a single instance of a lease. It contains the 
 
 ## Related Commands
 
-* [Remove-BrokerLease](./Remove-BrokerLease/)
-* [Update-BrokerLocalLeaseCache](./Update-BrokerLocalLeaseCache/)
+* [Remove-BrokerLease](../Remove-BrokerLease/)
+* [Update-BrokerLocalLeaseCache](../Update-BrokerLocalLeaseCache/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

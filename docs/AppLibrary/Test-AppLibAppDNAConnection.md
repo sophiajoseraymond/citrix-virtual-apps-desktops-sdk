@@ -11,10 +11,10 @@ Tests whether a connection to the configured AppDNA server can be made.
 
 ## Related Commands
 
-* [Set-AppLibAppDNAConnection](./Set-AppLibAppDNAConnection/)
-* [Remove-AppLibAppDNAConnection](./Remove-AppLibAppDNAConnection/)
-* [Enable-AppLibAppDNAConnection](./Enable-AppLibAppDNAConnection/)
-* [Enable-AppLibAppDNAConnection](./Enable-AppLibAppDNAConnection/)
+* [Set-AppLibAppDNAConnection](../Set-AppLibAppDNAConnection/)
+* [Remove-AppLibAppDNAConnection](../Remove-AppLibAppDNAConnection/)
+* [Enable-AppLibAppDNAConnection](../Enable-AppLibAppDNAConnection/)
+* [Enable-AppLibAppDNAConnection](../Enable-AppLibAppDNAConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -13,11 +13,11 @@ The Set-BrokerTag cmdlet sets properties of a tag or set of tags. The tags on wh
 
 ## Related Commands
 
-* [Add-BrokerTag](./Add-BrokerTag/)
-* [Get-BrokerTag](./Get-BrokerTag/)
-* [New-BrokerTag](./New-BrokerTag/)
-* [Remove-BrokerTag](./Remove-BrokerTag/)
-* [Rename-BrokerTag](./Rename-BrokerTag/)
+* [Add-BrokerTag](../Add-BrokerTag/)
+* [Get-BrokerTag](../Get-BrokerTag/)
+* [New-BrokerTag](../New-BrokerTag/)
+* [Remove-BrokerTag](../Remove-BrokerTag/)
+* [Rename-BrokerTag](../Rename-BrokerTag/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

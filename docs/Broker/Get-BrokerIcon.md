@@ -26,8 +26,8 @@ The BrokerIcon object represents a single instance of an icon. It contains the f
 
 ## Related Commands
 
-* [New-BrokerIcon](./New-BrokerIcon/)
-* [Remove-BrokerIcon](./Remove-BrokerIcon/)
+* [New-BrokerIcon](../New-BrokerIcon/)
+* [Remove-BrokerIcon](../Remove-BrokerIcon/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

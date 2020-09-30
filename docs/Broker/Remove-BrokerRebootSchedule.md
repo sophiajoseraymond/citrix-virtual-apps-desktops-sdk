@@ -13,10 +13,10 @@ The Remove-BrokerRebootSchedule cmdlet is used to delete an existing reboot sche
 
 ## Related Commands
 
-* [Get-BrokerRebootSchedule](./Get-BrokerRebootSchedule/)
-* [Set-BrokerRebootSchedule](./Set-BrokerRebootSchedule/)
-* [New-BrokerRebootSchedule](./New-BrokerRebootSchedule/)
-* [Stop-BrokerRebootCycle](./Stop-BrokerRebootCycle/)
+* [Get-BrokerRebootSchedule](../Get-BrokerRebootSchedule/)
+* [Set-BrokerRebootSchedule](../Set-BrokerRebootSchedule/)
+* [New-BrokerRebootSchedule](../New-BrokerRebootSchedule/)
+* [Stop-BrokerRebootCycle](../Stop-BrokerRebootCycle/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

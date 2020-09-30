@@ -20,12 +20,12 @@ To remove an application group from the system, you must first remove all of its
 
 ## Related Commands
 
-* [Add-BrokerApplicationGroup](./Add-BrokerApplicationGroup/)
-* [Get-BrokerApplicationGroup](./Get-BrokerApplicationGroup/)
-* [New-BrokerApplicationGroup](./New-BrokerApplicationGroup/)
-* [Rename-BrokerApplicationGroup](./Rename-BrokerApplicationGroup/)
-* [Set-BrokerApplicationGroup](./Set-BrokerApplicationGroup/)
-* [Remove-BrokerApplication](./Remove-BrokerApplication/)
+* [Add-BrokerApplicationGroup](../Add-BrokerApplicationGroup/)
+* [Get-BrokerApplicationGroup](../Get-BrokerApplicationGroup/)
+* [New-BrokerApplicationGroup](../New-BrokerApplicationGroup/)
+* [Rename-BrokerApplicationGroup](../Rename-BrokerApplicationGroup/)
+* [Set-BrokerApplicationGroup](../Set-BrokerApplicationGroup/)
+* [Remove-BrokerApplication](../Remove-BrokerApplication/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

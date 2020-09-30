@@ -13,10 +13,10 @@ The Set-BrokerRebootScheduleV2 cmdlet is used to alter the settings of an existi
 
 ## Related Commands
 
-* [Get-BrokerRebootScheduleV2](./Get-BrokerRebootScheduleV2/)
-* [New-BrokerRebootScheduleV2](./New-BrokerRebootScheduleV2/)
-* [Remove-BrokerRebootScheduleV2](./Remove-BrokerRebootScheduleV2/)
-* [Rename-BrokerRebootScheduleV2](./Rename-BrokerRebootScheduleV2/)
+* [Get-BrokerRebootScheduleV2](../Get-BrokerRebootScheduleV2/)
+* [New-BrokerRebootScheduleV2](../New-BrokerRebootScheduleV2/)
+* [Remove-BrokerRebootScheduleV2](../Remove-BrokerRebootScheduleV2/)
+* [Rename-BrokerRebootScheduleV2](../Rename-BrokerRebootScheduleV2/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

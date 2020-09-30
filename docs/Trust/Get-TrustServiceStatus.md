@@ -11,10 +11,10 @@ Enables the status of the Trust Service on the controller to be determined. The 
 
 ## Related Commands
 
-* [Set-TrustDBConnection](./Set-TrustDBConnection/)
-* [Test-TrustDBConnection](./Test-TrustDBConnection/)
-* [Get-TrustDBConnection](./Get-TrustDBConnection/)
-* [Get-TrustDBSchema](./Get-TrustDBSchema/)
+* [Set-TrustDBConnection](../Set-TrustDBConnection/)
+* [Test-TrustDBConnection](../Test-TrustDBConnection/)
+* [Get-TrustDBConnection](../Get-TrustDBConnection/)
+* [Get-TrustDBSchema](../Get-TrustDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

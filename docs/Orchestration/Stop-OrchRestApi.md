@@ -11,8 +11,8 @@ Disposes the PowerShell business logic and stops the REST API that is hosted by 
 
 ## Related Commands
 
-* [Get-OrchService](./Get-OrchService/)
-* [Start-OrchRestApi](./Start-OrchRestApi/)
+* [Get-OrchService](../Get-OrchService/)
+* [Start-OrchRestApi](../Start-OrchRestApi/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

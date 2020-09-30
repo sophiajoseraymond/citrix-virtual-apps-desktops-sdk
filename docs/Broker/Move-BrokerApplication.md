@@ -15,12 +15,12 @@ The location and name of a published application in this sense is only of intere
 
 ## Related Commands
 
-* [New-BrokerApplication](./New-BrokerApplication/)
-* [Add-BrokerApplication](./Add-BrokerApplication/)
-* [Get-BrokerApplication](./Get-BrokerApplication/)
-* [Remove-BrokerApplication](./Remove-BrokerApplication/)
-* [Rename-BrokerApplication](./Rename-BrokerApplication/)
-* [Set-BrokerApplication](./Set-BrokerApplication/)
+* [New-BrokerApplication](../New-BrokerApplication/)
+* [Add-BrokerApplication](../Add-BrokerApplication/)
+* [Get-BrokerApplication](../Get-BrokerApplication/)
+* [Remove-BrokerApplication](../Remove-BrokerApplication/)
+* [Rename-BrokerApplication](../Rename-BrokerApplication/)
+* [Set-BrokerApplication](../Set-BrokerApplication/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

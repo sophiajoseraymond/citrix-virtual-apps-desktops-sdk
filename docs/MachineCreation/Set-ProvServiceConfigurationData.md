@@ -11,8 +11,8 @@ Provides the ability for additional custom data to be stored for the MachineCrea
 
 ## Related Commands
 
-* [Remove-ProvServiceConfigurationData](./Remove-ProvServiceConfigurationData/)
-* [Get-ProvServiceConfigurationData](./Get-ProvServiceConfigurationData/)
+* [Remove-ProvServiceConfigurationData](../Remove-ProvServiceConfigurationData/)
+* [Get-ProvServiceConfigurationData](../Get-ProvServiceConfigurationData/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

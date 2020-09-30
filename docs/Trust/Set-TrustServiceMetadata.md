@@ -17,7 +17,7 @@ Allows you to store additional custom data against given Service objects.
 
 ## Related Commands
 
-* [Remove-TrustServiceMetadata](./Remove-TrustServiceMetadata/)
+* [Remove-TrustServiceMetadata](../Remove-TrustServiceMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

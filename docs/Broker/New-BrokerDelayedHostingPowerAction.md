@@ -15,8 +15,8 @@ For a detailed description of the queuing mechanism, see 'help about\_Broker\_Po
 
 ## Related Commands
 
-* [Get-BrokerDelayedHostingPowerAction](./Get-BrokerDelayedHostingPowerAction/)
-* [New-BrokerDelayedHostingPowerAction](./New-BrokerDelayedHostingPowerAction/)
+* [Get-BrokerDelayedHostingPowerAction](../Get-BrokerDelayedHostingPowerAction/)
+* [New-BrokerDelayedHostingPowerAction](../New-BrokerDelayedHostingPowerAction/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

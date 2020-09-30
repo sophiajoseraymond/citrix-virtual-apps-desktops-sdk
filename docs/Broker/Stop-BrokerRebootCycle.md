@@ -11,9 +11,9 @@ The Stop-BrokerRebootCycle cmdlet is used to cancel the specified reboot cycle.
 
 ## Related Commands
 
-* [Get-BrokerRebootCycle](./Get-BrokerRebootCycle/)
-* [Start-BrokerRebootCycle](./Start-BrokerRebootCycle/)
-* [Start-BrokerDesktopGroupRebootCycle](./Start-BrokerDesktopGroupRebootCycle/)
+* [Get-BrokerRebootCycle](../Get-BrokerRebootCycle/)
+* [Start-BrokerRebootCycle](../Start-BrokerRebootCycle/)
+* [Start-BrokerDesktopGroupRebootCycle](../Start-BrokerDesktopGroupRebootCycle/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

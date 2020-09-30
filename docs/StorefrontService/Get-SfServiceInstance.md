@@ -13,8 +13,8 @@ You do not need to configure a database connection to use this command.
 
 ## Related Commands
 
-* [Get-SfServiceStatus](./Get-SfServiceStatus/)
-* [Reset-SfServiceGroupMembership](./Reset-SfServiceGroupMembership/)
+* [Get-SfServiceStatus](../Get-SfServiceStatus/)
+* [Reset-SfServiceGroupMembership](../Reset-SfServiceGroupMembership/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -13,10 +13,10 @@ Provides the ability to change the name of an existing identity pool.
 
 ## Related Commands
 
-* [Get-AcctIdentityPool](./Get-AcctIdentityPool/)
-* [Set-AcctIdentityPool](./Set-AcctIdentityPool/)
-* [Remove-AcctIdentityPool](./Remove-AcctIdentityPool/)
-* [Test-AcctIdentityPoolNameAvailable](./Test-AcctIdentityPoolNameAvailable/)
+* [Get-AcctIdentityPool](../Get-AcctIdentityPool/)
+* [Set-AcctIdentityPool](../Set-AcctIdentityPool/)
+* [Remove-AcctIdentityPool](../Remove-AcctIdentityPool/)
+* [Test-AcctIdentityPoolNameAvailable](../Test-AcctIdentityPoolNameAvailable/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

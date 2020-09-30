@@ -11,7 +11,7 @@ This cmdlet is used to remove the configured webhook from a desktop group
 
 ## Related Commands
 
-* [Get-BrokerDesktopGroup](./Get-BrokerDesktopGroup/)
+* [Get-BrokerDesktopGroup](../Get-BrokerDesktopGroup/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

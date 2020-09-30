@@ -15,10 +15,10 @@ An access policy rule defines a set of connection filters and access control rig
 
 ## Related Commands
 
-* [New-BrokerAccessPolicyRule](./New-BrokerAccessPolicyRule/)
-* [Get-BrokerAccessPolicyRule](./Get-BrokerAccessPolicyRule/)
-* [Set-BrokerAccessPolicyRule](./Set-BrokerAccessPolicyRule/)
-* [Remove-BrokerAccessPolicyRule](./Remove-BrokerAccessPolicyRule/)
+* [New-BrokerAccessPolicyRule](../New-BrokerAccessPolicyRule/)
+* [Get-BrokerAccessPolicyRule](../Get-BrokerAccessPolicyRule/)
+* [Set-BrokerAccessPolicyRule](../Set-BrokerAccessPolicyRule/)
+* [Remove-BrokerAccessPolicyRule](../Remove-BrokerAccessPolicyRule/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

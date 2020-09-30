@@ -64,9 +64,9 @@ The reboot cycle object returned represents a single occurrence of the process o
 
 ## Related Commands
 
-* [Start-BrokerRebootCycle](./Start-BrokerRebootCycle/)
-* [Start-DesktopGroupRebootCycle](./Start-DesktopGroupRebootCycle/)
-* [Stop-BrokerRebootCycle](./Stop-BrokerRebootCycle/)
+* [Start-BrokerRebootCycle](../Start-BrokerRebootCycle/)
+* [Start-DesktopGroupRebootCycle](../Start-DesktopGroupRebootCycle/)
+* [Stop-BrokerRebootCycle](../Stop-BrokerRebootCycle/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

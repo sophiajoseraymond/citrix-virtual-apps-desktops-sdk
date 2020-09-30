@@ -19,8 +19,8 @@ Only one of the -Upgrade or -Downgrade parameters may be supplied at once.
 
 ## Related Commands
 
-* [Get-AppLibDBVersionChangeScript](./Get-AppLibDBVersionChangeScript/)
-* [Get-AppLibDBSchema](./Get-AppLibDBSchema/)
+* [Get-AppLibDBVersionChangeScript](../Get-AppLibDBVersionChangeScript/)
+* [Get-AppLibDBSchema](../Get-AppLibDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

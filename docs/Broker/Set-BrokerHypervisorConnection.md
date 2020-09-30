@@ -13,9 +13,9 @@ The Set-BrokerHypervisorConnection cmdlet sets the properties on a hypervisor co
 
 ## Related Commands
 
-* [Get-BrokerHypervisorConnection](./Get-BrokerHypervisorConnection/)
-* [New-BrokerHypervisorConnection](./New-BrokerHypervisorConnection/)
-* [Remove-BrokerHypervisorConnection](./Remove-BrokerHypervisorConnection/)
+* [Get-BrokerHypervisorConnection](../Get-BrokerHypervisorConnection/)
+* [New-BrokerHypervisorConnection](../New-BrokerHypervisorConnection/)
+* [Remove-BrokerHypervisorConnection](../Remove-BrokerHypervisorConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
