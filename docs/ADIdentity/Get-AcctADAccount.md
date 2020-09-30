@@ -13,12 +13,12 @@ Provides the ability to locate the AD accounts stored within the AD Identity Ser
 
 ## Related Commands
 
-* [New-AcctADAccount](./New-AcctADAccount/)
-* [Add-AcctADAccount](./Add-AcctADAccount/)
-* [Remove-AcctADAccount](./Remove-AcctADAccount/)
-* [Unlock-AcctADAccount](./Unlock-AcctADAccount/)
-* [Update-AcctADAccount](./Update-AcctADAccount/)
-* [Repair-AcctADAccount](./Repair-AcctADAccount/)
+* [New-AcctADAccount](../New-AcctADAccount/)
+* [Add-AcctADAccount](../Add-AcctADAccount/)
+* [Remove-AcctADAccount](../Remove-AcctADAccount/)
+* [Unlock-AcctADAccount](../Unlock-AcctADAccount/)
+* [Update-AcctADAccount](../Update-AcctADAccount/)
+* [Repair-AcctADAccount](../Repair-AcctADAccount/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

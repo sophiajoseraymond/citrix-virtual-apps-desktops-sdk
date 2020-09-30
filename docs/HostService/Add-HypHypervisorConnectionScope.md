@@ -21,8 +21,8 @@ If the HypervisorConnection is already in a scope, that scope will be silently i
 
 ## Related Commands
 
-* [Remove-HypHypervisorConnectionScope](./Remove-HypHypervisorConnectionScope/)
-* [Get-HypScopedObject](./Get-HypScopedObject/)
+* [Remove-HypHypervisorConnectionScope](../Remove-HypHypervisorConnectionScope/)
+* [Get-HypScopedObject](../Get-HypScopedObject/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

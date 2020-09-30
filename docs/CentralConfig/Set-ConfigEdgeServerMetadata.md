@@ -21,7 +21,7 @@ Provides the ability for additional custom data to be stored against given EdgeS
 
 ## Related Commands
 
-* [Remove-ConfigEdgeServerMetadata](./Remove-ConfigEdgeServerMetadata/)
+* [Remove-ConfigEdgeServerMetadata](../Remove-ConfigEdgeServerMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

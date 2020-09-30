@@ -17,12 +17,12 @@ Provides the ability to remove metadata from the given Task.
 
 ## Related Commands
 
-* [Add-ProvTaskMetadata](./Add-ProvTaskMetadata/)
-* [Set-ProvTaskMetadata](./Set-ProvTaskMetadata/)
-* [Get-ProvTask](./Get-ProvTask/)
-* [Remove-ProvTask](./Remove-ProvTask/)
-* [Stop-ProvTask](./Stop-ProvTask/)
-* [Switch-ProvTask](./Switch-ProvTask/)
+* [Add-ProvTaskMetadata](../Add-ProvTaskMetadata/)
+* [Set-ProvTaskMetadata](../Set-ProvTaskMetadata/)
+* [Get-ProvTask](../Get-ProvTask/)
+* [Remove-ProvTask](../Remove-ProvTask/)
+* [Stop-ProvTask](../Stop-ProvTask/)
+* [Switch-ProvTask](../Switch-ProvTask/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

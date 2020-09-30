@@ -11,7 +11,7 @@ Provides the ability to obtain a list of the Virtual Disks that are known to the
 
 ## Related Commands
 
-* [Get-ProvVirtualDiskPendingOperation](./Get-ProvVirtualDiskPendingOperation/)
+* [Get-ProvVirtualDiskPendingOperation](../Get-ProvVirtualDiskPendingOperation/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

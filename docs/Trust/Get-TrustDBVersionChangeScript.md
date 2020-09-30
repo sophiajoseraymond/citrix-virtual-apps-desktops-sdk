@@ -25,9 +25,9 @@ Once an update has been applied to the service schema, any existing Citrix Trust
 
 ## Related Commands
 
-* [Get-TrustInstalledDBVersion](./Get-TrustInstalledDBVersion/)
-* [Get-TrustServiceStatus](./Get-TrustServiceStatus/)
-* [Get-TrustDBSchema](./Get-TrustDBSchema/)
+* [Get-TrustInstalledDBVersion](../Get-TrustInstalledDBVersion/)
+* [Get-TrustServiceStatus](../Get-TrustServiceStatus/)
+* [Get-TrustDBSchema](../Get-TrustDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

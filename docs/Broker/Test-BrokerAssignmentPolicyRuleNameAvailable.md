@@ -11,9 +11,9 @@ This cmdlet checks whether proposed AssignmentPolicyRule Name is available for u
 
 ## Related Commands
 
-* [Get-BrokerAssignmentPolicyRule](./Get-BrokerAssignmentPolicyRule/)
-* [New-BrokerAssignmentPolicyRule](./New-BrokerAssignmentPolicyRule/)
-* [Rename-BrokerAssignmentPolicyRule](./Rename-BrokerAssignmentPolicyRule/)
+* [Get-BrokerAssignmentPolicyRule](../Get-BrokerAssignmentPolicyRule/)
+* [New-BrokerAssignmentPolicyRule](../New-BrokerAssignmentPolicyRule/)
+* [Rename-BrokerAssignmentPolicyRule](../Rename-BrokerAssignmentPolicyRule/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -11,7 +11,7 @@ Export-BrokerPolicyTemplates returns an array of bytes containing the site-wide 
 
 ## Related Commands
 
-* [Import-BrokerPolicyTemplates](./Import-BrokerPolicyTemplates/)
+* [Import-BrokerPolicyTemplates](../Import-BrokerPolicyTemplates/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

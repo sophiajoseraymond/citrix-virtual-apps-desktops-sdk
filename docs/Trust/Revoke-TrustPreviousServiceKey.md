@@ -13,10 +13,10 @@ This cmdlet removes the older public key from the service key
 
 ## Related Commands
 
-* [Register-TrustServiceKey](./Register-TrustServiceKey/)
-* [Set-TrustServiceKeyRotation](./Set-TrustServiceKeyRotation/)
-* [Get-TrustServiceKey](./Get-TrustServiceKey/)
-* [Unregister-TrustServiceKey](./Unregister-TrustServiceKey/)
+* [Register-TrustServiceKey](../Register-TrustServiceKey/)
+* [Set-TrustServiceKeyRotation](../Set-TrustServiceKeyRotation/)
+* [Get-TrustServiceKey](../Get-TrustServiceKey/)
+* [Unregister-TrustServiceKey](../Unregister-TrustServiceKey/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

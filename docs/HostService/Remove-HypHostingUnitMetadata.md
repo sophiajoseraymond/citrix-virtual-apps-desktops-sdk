@@ -21,8 +21,8 @@ Provides the ability to remove metadata from the given HostingUnit.
 
 ## Related Commands
 
-* [Add-HypHostingUnitMetadata](./Add-HypHostingUnitMetadata/)
-* [Set-HypHostingUnitMetadata](./Set-HypHostingUnitMetadata/)
+* [Add-HypHostingUnitMetadata](../Add-HypHostingUnitMetadata/)
+* [Set-HypHostingUnitMetadata](../Set-HypHostingUnitMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

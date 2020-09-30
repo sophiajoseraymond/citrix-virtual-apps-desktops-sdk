@@ -11,10 +11,10 @@ Changes one or more of the licensing attributes of the Site which has a Controll
 
 ## Related Commands
 
-* [Get-ConfigLicensingModel](./Get-ConfigLicensingModel/)
-* [Get-ConfigProductEdition](./Get-ConfigProductEdition/)
-* [Get-XDLicensing](./Get-XDLicensing/)
-* [Get-XDSite](./Get-XDSite/)
+* [Get-ConfigLicensingModel](../Get-ConfigLicensingModel/)
+* [Get-ConfigProductEdition](../Get-ConfigProductEdition/)
+* [Get-XDLicensing](../Get-XDLicensing/)
+* [Get-XDSite](../Get-XDSite/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

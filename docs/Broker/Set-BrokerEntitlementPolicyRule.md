@@ -17,10 +17,10 @@ Changing a rule does not affect existing sessions launched using the rule, but i
 
 ## Related Commands
 
-* [New-BrokerEntitlementPolicyRule](./New-BrokerEntitlementPolicyRule/)
-* [Get-BrokerEntitlementPolicyRule](./Get-BrokerEntitlementPolicyRule/)
-* [Rename-BrokerEntitlementPolicyRule](./Rename-BrokerEntitlementPolicyRule/)
-* [Remove-BrokerEntitlementPolicyRule](./Remove-BrokerEntitlementPolicyRule/)
+* [New-BrokerEntitlementPolicyRule](../New-BrokerEntitlementPolicyRule/)
+* [Get-BrokerEntitlementPolicyRule](../Get-BrokerEntitlementPolicyRule/)
+* [Rename-BrokerEntitlementPolicyRule](../Rename-BrokerEntitlementPolicyRule/)
+* [Remove-BrokerEntitlementPolicyRule](../Remove-BrokerEntitlementPolicyRule/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

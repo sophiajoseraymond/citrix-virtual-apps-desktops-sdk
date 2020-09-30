@@ -11,8 +11,8 @@ Provides the ability to determine the configuration parameters for the service
 
 ## Related Commands
 
-* [Set-ProvServiceConfigurationData](./Set-ProvServiceConfigurationData/)
-* [Remove-ProvServiceConfigurationData](./Remove-ProvServiceConfigurationData/)
+* [Set-ProvServiceConfigurationData](../Set-ProvServiceConfigurationData/)
+* [Remove-ProvServiceConfigurationData](../Remove-ProvServiceConfigurationData/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

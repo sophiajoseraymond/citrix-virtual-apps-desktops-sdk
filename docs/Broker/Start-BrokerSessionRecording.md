@@ -15,9 +15,9 @@ Only active sessions using the HDX protocol can be recorded. An error appears wh
 
 ## Related Commands
 
-* [Get-BrokerSession](./Get-BrokerSession/)
-* [Get-BrokerSessionRecordingStatus](./Get-BrokerSessionRecordingStatus/)
-* [Stop-BrokerSessionRecording](./Stop-BrokerSessionRecording/)
+* [Get-BrokerSession](../Get-BrokerSession/)
+* [Get-BrokerSessionRecordingStatus](../Get-BrokerSessionRecordingStatus/)
+* [Stop-BrokerSessionRecording](../Stop-BrokerSessionRecording/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

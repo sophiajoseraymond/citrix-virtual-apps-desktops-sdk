@@ -23,13 +23,13 @@ See about\_Broker\_Applications for more information.
 
 ## Related Commands
 
-* [Add-BrokerApplication](./Add-BrokerApplication/)
-* [Remove-BrokerApplication](./Remove-BrokerApplication/)
-* [Get-BrokerApplication](./Get-BrokerApplication/)
-* [Remove-BrokerApplication](./Remove-BrokerApplication/)
-* [Rename-BrokerApplication](./Rename-BrokerApplication/)
-* [Move-BrokerApplication](./Move-BrokerApplication/)
-* [Set-BrokerApplication](./Set-BrokerApplication/)
+* [Add-BrokerApplication](../Add-BrokerApplication/)
+* [Remove-BrokerApplication](../Remove-BrokerApplication/)
+* [Get-BrokerApplication](../Get-BrokerApplication/)
+* [Remove-BrokerApplication](../Remove-BrokerApplication/)
+* [Rename-BrokerApplication](../Rename-BrokerApplication/)
+* [Move-BrokerApplication](../Move-BrokerApplication/)
+* [Set-BrokerApplication](../Set-BrokerApplication/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

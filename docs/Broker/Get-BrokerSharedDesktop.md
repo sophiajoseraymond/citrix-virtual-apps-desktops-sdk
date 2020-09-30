@@ -66,7 +66,7 @@ Shared desktops are desktops that are assigned randomly to users upon connection
 
 ## Related Commands
 
-* [Set-BrokerSharedDesktop](./Set-BrokerSharedDesktop/)
+* [Set-BrokerSharedDesktop](../Set-BrokerSharedDesktop/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

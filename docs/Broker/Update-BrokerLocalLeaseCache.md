@@ -11,7 +11,7 @@ Removes all local cached lease data and any state information stored in the regi
 
 ## Related Commands
 
-* [Remove-BrokerLease](./Remove-BrokerLease/)
+* [Remove-BrokerLease](../Remove-BrokerLease/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

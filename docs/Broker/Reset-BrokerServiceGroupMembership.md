@@ -11,8 +11,8 @@ Enables you to reload Broker Service access permissions and configuration servic
 
 ## Related Commands
 
-* [Get-BrokerServiceInstance](./Get-BrokerServiceInstance/)
-* [Get-BrokerServiceStatus](./Get-BrokerServiceStatus/)
+* [Get-BrokerServiceInstance](../Get-BrokerServiceInstance/)
+* [Get-BrokerServiceStatus](../Get-BrokerServiceStatus/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

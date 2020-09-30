@@ -21,8 +21,8 @@ Provides the ability for additional custom data to be stored against given Provi
 
 ## Related Commands
 
-* [Add-ProvSchemeMetadata](./Add-ProvSchemeMetadata/)
-* [Remove-ProvSchemeMetadata](./Remove-ProvSchemeMetadata/)
+* [Add-ProvSchemeMetadata](../Add-ProvSchemeMetadata/)
+* [Remove-ProvSchemeMetadata](../Remove-ProvSchemeMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

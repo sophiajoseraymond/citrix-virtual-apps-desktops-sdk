@@ -17,11 +17,11 @@ When the Enabled flag of an administrator is set to false, any rights of the adm
 
 ## Related Commands
 
-* [Get-AdminAdministrator](./Get-AdminAdministrator/)
-* [Set-AdminAdministrator](./Set-AdminAdministrator/)
-* [Remove-AdminAdministrator](./Remove-AdminAdministrator/)
-* [Set-AdminAdministratorMetadata](./Set-AdminAdministratorMetadata/)
-* [Remove-AdminAdministratorMetadata](./Remove-AdminAdministratorMetadata/)
+* [Get-AdminAdministrator](../Get-AdminAdministrator/)
+* [Set-AdminAdministrator](../Set-AdminAdministrator/)
+* [Remove-AdminAdministrator](../Remove-AdminAdministrator/)
+* [Set-AdminAdministratorMetadata](../Set-AdminAdministratorMetadata/)
+* [Remove-AdminAdministratorMetadata](../Remove-AdminAdministratorMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

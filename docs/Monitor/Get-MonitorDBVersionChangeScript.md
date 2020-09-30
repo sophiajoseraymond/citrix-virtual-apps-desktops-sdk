@@ -25,9 +25,9 @@ Once an update has been applied to the service schema, any existing Citrix Monit
 
 ## Related Commands
 
-* [Get-MonitorInstalledDBVersion](./Get-MonitorInstalledDBVersion/)
-* [Get-MonitorServiceStatus](./Get-MonitorServiceStatus/)
-* [Get-MonitorDBSchema](./Get-MonitorDBSchema/)
+* [Get-MonitorInstalledDBVersion](../Get-MonitorInstalledDBVersion/)
+* [Get-MonitorServiceStatus](../Get-MonitorServiceStatus/)
+* [Get-MonitorDBSchema](../Get-MonitorDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

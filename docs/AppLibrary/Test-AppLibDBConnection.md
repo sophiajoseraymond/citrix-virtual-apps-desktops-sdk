@@ -17,9 +17,9 @@ The current service instance is that on the local machine, or that explicitly sp
 
 ## Related Commands
 
-* [Get-AppLibServiceStatus](./Get-AppLibServiceStatus/)
-* [Get-AppLibDBConnection](./Get-AppLibDBConnection/)
-* [Set-AppLibDBConnection](./Set-AppLibDBConnection/)
+* [Get-AppLibServiceStatus](../Get-AppLibServiceStatus/)
+* [Get-AppLibDBConnection](../Get-AppLibDBConnection/)
+* [Set-AppLibDBConnection](../Set-AppLibDBConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -11,9 +11,9 @@ This cmdlet checks whether proposed AppAssignmentPolicyRule Name is available fo
 
 ## Related Commands
 
-* [Get-BrokerAppAssignmentPolicyRule](./Get-BrokerAppAssignmentPolicyRule/)
-* [New-BrokerAppAssignmentPolicyRule](./New-BrokerAppAssignmentPolicyRule/)
-* [Rename-BrokerAppAssignmentPolicyRule](./Rename-BrokerAppAssignmentPolicyRule/)
+* [Get-BrokerAppAssignmentPolicyRule](../Get-BrokerAppAssignmentPolicyRule/)
+* [New-BrokerAppAssignmentPolicyRule](../New-BrokerAppAssignmentPolicyRule/)
+* [Rename-BrokerAppAssignmentPolicyRule](../Rename-BrokerAppAssignmentPolicyRule/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

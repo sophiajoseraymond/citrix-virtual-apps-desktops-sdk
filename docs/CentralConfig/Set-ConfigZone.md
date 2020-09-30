@@ -21,12 +21,12 @@ To change the name of a zone use Rename-ConfigZone cmdlet.
 
 ## Related Commands
 
-* [New-ConfigZone](./New-ConfigZone/)
-* [Get-ConfigZone](./Get-ConfigZone/)
-* [Rename-ConfigZone](./Rename-ConfigZone/)
-* [Remove-ConfigZone](./Remove-ConfigZone/)
-* [Set-ConfigSite](./Set-ConfigSite/)
-* [Set-ConfigService](./Set-ConfigService/)
+* [New-ConfigZone](../New-ConfigZone/)
+* [Get-ConfigZone](../Get-ConfigZone/)
+* [Rename-ConfigZone](../Rename-ConfigZone/)
+* [Remove-ConfigZone](../Remove-ConfigZone/)
+* [Set-ConfigSite](../Set-ConfigSite/)
+* [Set-ConfigService](../Set-ConfigService/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

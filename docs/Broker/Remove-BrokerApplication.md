@@ -28,12 +28,12 @@ If more than just the application is supplied as a parameter to the cmdlet (for 
 
 ## Related Commands
 
-* [New-BrokerApplication](./New-BrokerApplication/)
-* [Add-BrokerApplication](./Add-BrokerApplication/)
-* [Get-BrokerApplication](./Get-BrokerApplication/)
-* [Rename-BrokerApplication](./Rename-BrokerApplication/)
-* [Move-BrokerApplication](./Move-BrokerApplication/)
-* [Set-BrokerApplication](./Set-BrokerApplication/)
+* [New-BrokerApplication](../New-BrokerApplication/)
+* [Add-BrokerApplication](../Add-BrokerApplication/)
+* [Get-BrokerApplication](../Get-BrokerApplication/)
+* [Rename-BrokerApplication](../Rename-BrokerApplication/)
+* [Move-BrokerApplication](../Move-BrokerApplication/)
+* [Set-BrokerApplication](../Set-BrokerApplication/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

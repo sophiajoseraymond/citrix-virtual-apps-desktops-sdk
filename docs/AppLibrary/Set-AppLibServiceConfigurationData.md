@@ -11,8 +11,8 @@ Provides the ability for additional custom data to be stored for the AppLibrary 
 
 ## Related Commands
 
-* [Remove-AppLibServiceConfigurationData](./Remove-AppLibServiceConfigurationData/)
-* [Get-AppLibServiceConfigurationData](./Get-AppLibServiceConfigurationData/)
+* [Remove-AppLibServiceConfigurationData](../Remove-AppLibServiceConfigurationData/)
+* [Get-AppLibServiceConfigurationData](../Get-AppLibServiceConfigurationData/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

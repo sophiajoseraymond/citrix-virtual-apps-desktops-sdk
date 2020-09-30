@@ -13,9 +13,9 @@ Will extract metadata from a provided AppDisk, import it into AppDNA and start a
 
 ## Related Commands
 
-* [Enable-AppLibAppDNAConnection](./Enable-AppLibAppDNAConnection/)
-* [Get-AppLibTask](./Get-AppLibTask/)
-* [Stop-AppLibTask](./Stop-AppLibTask/)
+* [Enable-AppLibAppDNAConnection](../Enable-AppLibAppDNAConnection/)
+* [Get-AppLibTask](../Get-AppLibTask/)
+* [Stop-AppLibTask](../Stop-AppLibTask/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

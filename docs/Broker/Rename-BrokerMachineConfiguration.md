@@ -13,11 +13,11 @@ The Rename-MachineConfiguration cmdlet changes the name of a machine configurati
 
 ## Related Commands
 
-* [New-BrokerMachineConfiguration](./New-BrokerMachineConfiguration/)
-* [Get-BrokerMachineConfiguration](./Get-BrokerMachineConfiguration/)
-* [Set-BrokerMachineConfiguration](./Set-BrokerMachineConfiguration/)
-* [Remove-BrokerMachineConfiguration](./Remove-BrokerMachineConfiguration/)
-* [Add-BrokerMachineConfiguration](./Add-BrokerMachineConfiguration/)
+* [New-BrokerMachineConfiguration](../New-BrokerMachineConfiguration/)
+* [Get-BrokerMachineConfiguration](../Get-BrokerMachineConfiguration/)
+* [Set-BrokerMachineConfiguration](../Set-BrokerMachineConfiguration/)
+* [Remove-BrokerMachineConfiguration](../Remove-BrokerMachineConfiguration/)
+* [Add-BrokerMachineConfiguration](../Add-BrokerMachineConfiguration/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -11,10 +11,10 @@ Enables the status of the Storefront Service on the controller to be determined.
 
 ## Related Commands
 
-* [Set-SfDBConnection](./Set-SfDBConnection/)
-* [Test-SfDBConnection](./Test-SfDBConnection/)
-* [Get-SfDBConnection](./Get-SfDBConnection/)
-* [Get-SfDBSchema](./Get-SfDBSchema/)
+* [Set-SfDBConnection](../Set-SfDBConnection/)
+* [Test-SfDBConnection](../Test-SfDBConnection/)
+* [Get-SfDBConnection](../Get-SfDBConnection/)
+* [Get-SfDBSchema](../Get-SfDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

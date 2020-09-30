@@ -43,8 +43,8 @@ If the service uses two data stores they can exist in the same database. You do 
 
 ## Related Commands
 
-* [Set-AppLibDBConnection](./Set-AppLibDBConnection/)
-* [Test-AppLibDBConnection](./Test-AppLibDBConnection/)
+* [Set-AppLibDBConnection](../Set-AppLibDBConnection/)
+* [Test-AppLibDBConnection](../Test-AppLibDBConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

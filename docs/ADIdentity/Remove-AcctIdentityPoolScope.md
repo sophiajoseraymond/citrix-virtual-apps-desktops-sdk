@@ -21,8 +21,8 @@ If the IdentityPool is not in a specified scope, that scope will be silently ign
 
 ## Related Commands
 
-* [Add-AcctIdentityPoolScope](./Add-AcctIdentityPoolScope/)
-* [Get-AcctScopedObject](./Get-AcctScopedObject/)
+* [Add-AcctIdentityPoolScope](../Add-AcctIdentityPoolScope/)
+* [Get-AcctScopedObject](../Get-AcctScopedObject/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

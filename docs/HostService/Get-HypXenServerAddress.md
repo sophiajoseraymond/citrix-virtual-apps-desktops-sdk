@@ -13,7 +13,7 @@ If the addresses are https addresses, the command uses the certificates installe
 
 ## Related Commands
 
-* [Add-HypHypervisorConnectionAddress](./Add-HypHypervisorConnectionAddress/)
+* [Add-HypHypervisorConnectionAddress](../Add-HypHypervisorConnectionAddress/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

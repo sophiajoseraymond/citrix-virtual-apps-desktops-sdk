@@ -17,10 +17,10 @@ Deleting an application rule does not remove machine assignments that have alrea
 
 ## Related Commands
 
-* [New-BrokerAppAssignmentPolicyRule](./New-BrokerAppAssignmentPolicyRule/)
-* [Get-BrokerAppAssignmentPolicyRule](./Get-BrokerAppAssignmentPolicyRule/)
-* [Set-BrokerAppAssignmentPolicyRule](./Set-BrokerAppAssignmentPolicyRule/)
-* [Rename-BrokerAppAssignmentPolicyRule](./Rename-BrokerAppAssignmentPolicyRule/)
+* [New-BrokerAppAssignmentPolicyRule](../New-BrokerAppAssignmentPolicyRule/)
+* [Get-BrokerAppAssignmentPolicyRule](../Get-BrokerAppAssignmentPolicyRule/)
+* [Set-BrokerAppAssignmentPolicyRule](../Set-BrokerAppAssignmentPolicyRule/)
+* [Rename-BrokerAppAssignmentPolicyRule](../Rename-BrokerAppAssignmentPolicyRule/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

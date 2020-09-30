@@ -25,12 +25,12 @@ There can be only one creation process running for a specific identity pool at a
 
 ## Related Commands
 
-* [Add-AcctADAccount](./Add-AcctADAccount/)
-* [Remove-AcctADAccount](./Remove-AcctADAccount/)
-* [Get-AcctADAccount](./Get-AcctADAccount/)
-* [Repair-AcctADAccount](./Repair-AcctADAccount/)
-* [Unlock-AcctADAccount](./Unlock-AcctADAccount/)
-* [Update-AcctADAccount](./Update-AcctADAccount/)
+* [Add-AcctADAccount](../Add-AcctADAccount/)
+* [Remove-AcctADAccount](../Remove-AcctADAccount/)
+* [Get-AcctADAccount](../Get-AcctADAccount/)
+* [Repair-AcctADAccount](../Repair-AcctADAccount/)
+* [Unlock-AcctADAccount](../Unlock-AcctADAccount/)
+* [Update-AcctADAccount](../Update-AcctADAccount/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -11,9 +11,9 @@ Imports a Identity Pool from another site, that has been exported using the Expo
 
 ## Related Commands
 
-* [Export-AcctIdentityPool](./Export-AcctIdentityPool/)
-* [Export-ProvScheme](./Export-ProvScheme/)
-* [Import-ProvScheme](./Import-ProvScheme/)
+* [Export-AcctIdentityPool](../Export-AcctIdentityPool/)
+* [Export-ProvScheme](../Export-ProvScheme/)
+* [Import-ProvScheme](../Import-ProvScheme/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

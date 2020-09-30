@@ -19,13 +19,13 @@ To configure the site, first import the feature table using the Import-ConfigFea
 
 ## Related Commands
 
-* [Export-ConfigFeatureTable](./Export-ConfigFeatureTable/)
-* [Get-ConfigSite](./Get-ConfigSite/)
-* [Get-ConfigProduct](./Get-ConfigProduct/)
-* [Get-ConfigProductEdition](./Get-ConfigProductEdition/)
-* [Get-ConfigProductFeature](./Get-ConfigProductFeature/)
-* [Get-ConfigProductVersion](./Get-ConfigProductVersion/)
-* [Get-ConfigLicensingModel](./Get-ConfigLicensingModel/)
+* [Export-ConfigFeatureTable](../Export-ConfigFeatureTable/)
+* [Get-ConfigSite](../Get-ConfigSite/)
+* [Get-ConfigProduct](../Get-ConfigProduct/)
+* [Get-ConfigProductEdition](../Get-ConfigProductEdition/)
+* [Get-ConfigProductFeature](../Get-ConfigProductFeature/)
+* [Get-ConfigProductVersion](../Get-ConfigProductVersion/)
+* [Get-ConfigLicensingModel](../Get-ConfigLicensingModel/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

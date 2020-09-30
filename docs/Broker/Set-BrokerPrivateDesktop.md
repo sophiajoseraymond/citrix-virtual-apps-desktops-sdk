@@ -25,7 +25,7 @@ For more information about desktops, see about\_Broker\_Desktops; for more infor
 
 ## Related Commands
 
-* [Get-BrokerMachine](./Get-BrokerMachine/)
+* [Get-BrokerMachine](../Get-BrokerMachine/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

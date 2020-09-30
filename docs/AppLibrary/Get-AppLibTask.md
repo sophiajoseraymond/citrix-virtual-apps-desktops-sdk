@@ -11,11 +11,11 @@ Returns a list of tasks that have run or are currently running within the AppLib
 
 ## Related Commands
 
-* [Remove-AppLibTask](./Remove-AppLibTask/)
-* [Stop-AppLibTask](./Stop-AppLibTask/)
-* [Switch-AppLibTask](./Switch-AppLibTask/)
-* [Add-AppLibTaskMetadata](./Add-AppLibTaskMetadata/)
-* [Remove-AppLibTaskMetadata](./Remove-AppLibTaskMetadata/)
+* [Remove-AppLibTask](../Remove-AppLibTask/)
+* [Stop-AppLibTask](../Stop-AppLibTask/)
+* [Switch-AppLibTask](../Switch-AppLibTask/)
+* [Add-AppLibTaskMetadata](../Add-AppLibTaskMetadata/)
+* [Remove-AppLibTaskMetadata](../Remove-AppLibTaskMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

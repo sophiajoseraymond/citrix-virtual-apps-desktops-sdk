@@ -11,8 +11,8 @@ Indicates that an App-V package repository is added to Citrix Studio.
 
 ## Related Commands
 
-* [FIXME](./FIXME/)
-* [FIXME](./FIXME/)
+* [FIXME](../FIXME/)
+* [FIXME](../FIXME/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

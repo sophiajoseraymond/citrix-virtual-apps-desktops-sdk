@@ -17,7 +17,7 @@ Provides the ability to remove metadata from the given Service.
 
 ## Related Commands
 
-* [Set-TrustServiceMetadata](./Set-TrustServiceMetadata/)
+* [Set-TrustServiceMetadata](../Set-TrustServiceMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

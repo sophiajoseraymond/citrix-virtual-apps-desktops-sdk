@@ -13,8 +13,8 @@ You do not need to configure a database connection to use this command.
 
 ## Related Commands
 
-* [Get-ConfigServiceStatus](./Get-ConfigServiceStatus/)
-* [Reset-ConfigServiceGroupMembership](./Reset-ConfigServiceGroupMembership/)
+* [Get-ConfigServiceStatus](../Get-ConfigServiceStatus/)
+* [Reset-ConfigServiceGroupMembership](../Reset-ConfigServiceGroupMembership/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

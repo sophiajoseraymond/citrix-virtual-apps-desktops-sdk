@@ -11,8 +11,8 @@ Gets the Monitoring Database attributes of the Site which has a Controller ident
 
 ## Related Commands
 
-* [Get-XDSite](./Get-XDSite/)
-* [Set-XDMonitor](./Set-XDMonitor/)
+* [Get-XDSite](../Get-XDSite/)
+* [Set-XDMonitor](../Set-XDMonitor/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

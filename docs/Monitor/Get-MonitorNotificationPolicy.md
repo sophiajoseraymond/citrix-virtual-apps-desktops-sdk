@@ -13,9 +13,9 @@ Returns a list of MonitorNotificationPolicy objects matching the specified param
 
 ## Related Commands
 
-* [New-MonitorNotificationPolicy](./New-MonitorNotificationPolicy/)
-* [Remove-MonitorNotificationPolicy](./Remove-MonitorNotificationPolicy/)
-* [Set-MonitorNotificationPolicy](./Set-MonitorNotificationPolicy/)
+* [New-MonitorNotificationPolicy](../New-MonitorNotificationPolicy/)
+* [Remove-MonitorNotificationPolicy](../Remove-MonitorNotificationPolicy/)
+* [Set-MonitorNotificationPolicy](../Set-MonitorNotificationPolicy/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

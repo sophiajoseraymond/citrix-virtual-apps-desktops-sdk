@@ -721,12 +721,12 @@ If the person changing a secondary database does not have sufficient privilege t
 
 ## See Also
 
-* [Get-XDDatabaseSchema](./Get-XDDatabaseSchema/)
-* [New-XDDatabase](./New-XDDatabase/)
-* [New-XDSite](./New-XDSite/)
-* [Set-XDLicensing](./Set-XDLicensing/)
-* [Add-XDController](./Add-XDController/)
-* [Remove-XDController](./Remove-XDController/)
-* [Set-XDLogging](./Set-XDLogging/)
-* [Set-XDMonitor](./Set-XDMonitor/)
+* [Get-XDDatabaseSchema](../Get-XDDatabaseSchema/)
+* [New-XDDatabase](../New-XDDatabase/)
+* [New-XDSite](../New-XDSite/)
+* [Set-XDLicensing](../Set-XDLicensing/)
+* [Add-XDController](../Add-XDController/)
+* [Remove-XDController](../Remove-XDController/)
+* [Set-XDLogging](../Set-XDLogging/)
+* [Set-XDMonitor](../Set-XDMonitor/)
 

@@ -11,9 +11,9 @@ Enables completed tasks that have run within the Storefront Service to be remove
 
 ## Related Commands
 
-* [Get-SfTask](./Get-SfTask/)
-* [Add-SfTaskMetadata](./Add-SfTaskMetadata/)
-* [Remove-SfTaskMetadata](./Remove-SfTaskMetadata/)
+* [Get-SfTask](../Get-SfTask/)
+* [Add-SfTaskMetadata](../Add-SfTaskMetadata/)
+* [Remove-SfTaskMetadata](../Remove-SfTaskMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

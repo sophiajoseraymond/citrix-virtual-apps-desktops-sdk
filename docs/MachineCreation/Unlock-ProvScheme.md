@@ -13,8 +13,8 @@ Provides the ability to unlock a provisioning scheme that has the Id of a failed
 
 ## Related Commands
 
-* [Get-ProvScheme](./Get-ProvScheme/)
-* [Stop-ProvTask](./Stop-ProvTask/)
+* [Get-ProvScheme](../Get-ProvScheme/)
+* [Stop-ProvTask](../Stop-ProvTask/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

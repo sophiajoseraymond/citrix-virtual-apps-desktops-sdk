@@ -11,9 +11,9 @@ Gets the detailed AppDNA compatibility report for an AppDisk associated with a p
 
 ## Related Commands
 
-* [Get-BrokerDesktopGroup](./Get-BrokerDesktopGroup/)
-* [Set-BrokerDesktopGroup](./Set-BrokerDesktopGroup/)
-* [Get-AppLibAppDisk](./Get-AppLibAppDisk/)
+* [Get-BrokerDesktopGroup](../Get-BrokerDesktopGroup/)
+* [Set-BrokerDesktopGroup](../Set-BrokerDesktopGroup/)
+* [Get-AppLibAppDisk](../Get-AppLibAppDisk/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

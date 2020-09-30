@@ -13,8 +13,8 @@ New-BrokerIcon can be used with the Get-BrokerIcon cmdlet to obtain the Base64 i
 
 ## Related Commands
 
-* [Get-BrokerIcon](./Get-BrokerIcon/)
-* [Remove-BrokerIcon](./Remove-BrokerIcon/)
+* [Get-BrokerIcon](../Get-BrokerIcon/)
+* [Remove-BrokerIcon](../Remove-BrokerIcon/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

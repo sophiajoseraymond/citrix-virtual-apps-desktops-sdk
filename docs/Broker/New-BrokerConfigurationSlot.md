@@ -13,9 +13,9 @@ For example, the configuration slot may be restricted to configuring Citrix User
 
 ## Related Commands
 
-* [Get-BrokerConfigurationSlot](./Get-BrokerConfigurationSlot/)
-* [Remove-BrokerConfigurationSlot](./Remove-BrokerConfigurationSlot/)
-* [New-BrokerMachineConfiguration](./New-BrokerMachineConfiguration/)
+* [Get-BrokerConfigurationSlot](../Get-BrokerConfigurationSlot/)
+* [Remove-BrokerConfigurationSlot](../Remove-BrokerConfigurationSlot/)
+* [New-BrokerMachineConfiguration](../New-BrokerMachineConfiguration/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

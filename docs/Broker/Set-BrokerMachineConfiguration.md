@@ -13,11 +13,11 @@ Sets the properties of a machine configuration. The encoded settings data must o
 
 ## Related Commands
 
-* [New-BrokerMachineConfiguration](./New-BrokerMachineConfiguration/)
-* [Get-BrokerMachineConfiguration](./Get-BrokerMachineConfiguration/)
-* [Rename-BrokerMachineConfiguration](./Rename-BrokerMachineConfiguration/)
-* [Remove-BrokerMachineConfiguration](./Remove-BrokerMachineConfiguration/)
-* [Add-BrokerMachineConfiguration](./Add-BrokerMachineConfiguration/)
+* [New-BrokerMachineConfiguration](../New-BrokerMachineConfiguration/)
+* [Get-BrokerMachineConfiguration](../Get-BrokerMachineConfiguration/)
+* [Rename-BrokerMachineConfiguration](../Rename-BrokerMachineConfiguration/)
+* [Remove-BrokerMachineConfiguration](../Remove-BrokerMachineConfiguration/)
+* [Add-BrokerMachineConfiguration](../Add-BrokerMachineConfiguration/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

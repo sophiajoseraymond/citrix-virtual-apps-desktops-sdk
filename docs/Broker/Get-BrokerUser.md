@@ -38,8 +38,8 @@ The BrokerUser object represents a single instance of an user. It contains the f
 
 ## Related Commands
 
-* [Add-BrokerUser](./Add-BrokerUser/)
-* [Remove-BrokerUser](./Remove-BrokerUser/)
+* [Add-BrokerUser](../Add-BrokerUser/)
+* [Remove-BrokerUser](../Remove-BrokerUser/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

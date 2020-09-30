@@ -13,9 +13,9 @@ Provides the ability to unlock the specified identity pool.  Identity pools are 
 
 ## Related Commands
 
-* [New-AcctIdentityPool](./New-AcctIdentityPool/)
-* [Remove-AcctIdentityPool](./Remove-AcctIdentityPool/)
-* [Set-AcctIdentityPool](./Set-AcctIdentityPool/)
+* [New-AcctIdentityPool](../New-AcctIdentityPool/)
+* [Remove-AcctIdentityPool](../Remove-AcctIdentityPool/)
+* [Set-AcctIdentityPool](../Set-AcctIdentityPool/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

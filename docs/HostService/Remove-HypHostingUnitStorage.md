@@ -11,10 +11,10 @@ Use this command to remove storage locations from a hosting unit. This does not 
 
 ## Related Commands
 
-* [Add-HypHostingUnitStorage](./Add-HypHostingUnitStorage/)
-* [Set-HypHostingUnitStorage](./Set-HypHostingUnitStorage/)
-* [New-Item](./New-Item/)
-* [Add-HypMetadata](./Add-HypMetadata/)
+* [Add-HypHostingUnitStorage](../Add-HypHostingUnitStorage/)
+* [Set-HypHostingUnitStorage](../Set-HypHostingUnitStorage/)
+* [New-Item](../New-Item/)
+* [Add-HypMetadata](../Add-HypMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

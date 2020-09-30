@@ -11,10 +11,10 @@ Sets the parameters on the given cluster and propagate the changes to all server
 
 ## Related Commands
 
-* [Get-SfCluster](./Get-SfCluster/)
-* [New-SfCluster](./New-SfCluster/)
-* [Add-SfServerToCluster](./Add-SfServerToCluster/)
-* [Remove-SfServerFromCluster](./Remove-SfServerFromCluster/)
+* [Get-SfCluster](../Get-SfCluster/)
+* [New-SfCluster](../New-SfCluster/)
+* [Add-SfServerToCluster](../Add-SfServerToCluster/)
+* [Remove-SfServerFromCluster](../Remove-SfServerFromCluster/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

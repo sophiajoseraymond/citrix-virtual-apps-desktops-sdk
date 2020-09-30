@@ -11,9 +11,9 @@ Returns a list of tasks that have run or are currently running within the Storef
 
 ## Related Commands
 
-* [Remove-SfTask](./Remove-SfTask/)
-* [Add-SfTaskMetadata](./Add-SfTaskMetadata/)
-* [Remove-SfTaskMetadata](./Remove-SfTaskMetadata/)
+* [Remove-SfTask](../Remove-SfTask/)
+* [Add-SfTaskMetadata](../Add-SfTaskMetadata/)
+* [Remove-SfTaskMetadata](../Remove-SfTaskMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

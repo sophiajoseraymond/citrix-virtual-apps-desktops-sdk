@@ -13,8 +13,8 @@ You do not need to configure a database connection to use this command.
 
 ## Related Commands
 
-* [Get-OrchServiceStatus](./Get-OrchServiceStatus/)
-* [Reset-OrchServiceGroupMembership](./Reset-OrchServiceGroupMembership/)
+* [Get-OrchServiceStatus](../Get-OrchServiceStatus/)
+* [Reset-OrchServiceGroupMembership](../Reset-OrchServiceGroupMembership/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

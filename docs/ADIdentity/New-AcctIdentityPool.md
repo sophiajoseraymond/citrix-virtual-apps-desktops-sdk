@@ -15,11 +15,11 @@ Each identity pool is tied to a single domain. All the identities in an identity
 
 ## Related Commands
 
-* [Remove-AcctIdentityPool](./Remove-AcctIdentityPool/)
-* [Rename-AcctIdentityPool](./Rename-AcctIdentityPool/)
-* [Set-AcctIdentityPool](./Set-AcctIdentityPool/)
-* [Test-AcctIdentityPoolNameAvailable](./Test-AcctIdentityPoolNameAvailable/)
-* [New-AcctADAccount](./New-AcctADAccount/)
+* [Remove-AcctIdentityPool](../Remove-AcctIdentityPool/)
+* [Rename-AcctIdentityPool](../Rename-AcctIdentityPool/)
+* [Set-AcctIdentityPool](../Set-AcctIdentityPool/)
+* [Test-AcctIdentityPoolNameAvailable](../Test-AcctIdentityPoolNameAvailable/)
+* [New-AcctADAccount](../New-AcctADAccount/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

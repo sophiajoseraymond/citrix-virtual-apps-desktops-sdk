@@ -21,9 +21,9 @@ If one or more of SiteDatabaseCredentials, LoggingDatabaseCredentials or Monitor
 
 ## Related Commands
 
-* [Get-XDDatabaseSchema](./Get-XDDatabaseSchema/)
-* [Get-XDSite](./Get-XDSite/)
-* [Remove-XDController](./Remove-XDController/)
+* [Get-XDDatabaseSchema](../Get-XDDatabaseSchema/)
+* [Get-XDSite](../Get-XDSite/)
+* [Remove-XDController](../Remove-XDController/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

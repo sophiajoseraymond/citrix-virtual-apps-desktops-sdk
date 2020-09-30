@@ -11,9 +11,9 @@ This cmdlet checks whether proposed DesktopGroup Name is available for use. It r
 
 ## Related Commands
 
-* [Get-BrokerDesktopGroup](./Get-BrokerDesktopGroup/)
-* [New-BrokerDesktopGroup](./New-BrokerDesktopGroup/)
-* [Rename-BrokerDesktopGroup](./Rename-BrokerDesktopGroup/)
+* [Get-BrokerDesktopGroup](../Get-BrokerDesktopGroup/)
+* [New-BrokerDesktopGroup](../New-BrokerDesktopGroup/)
+* [Rename-BrokerDesktopGroup](../Rename-BrokerDesktopGroup/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

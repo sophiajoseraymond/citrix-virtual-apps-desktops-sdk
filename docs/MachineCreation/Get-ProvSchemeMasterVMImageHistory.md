@@ -15,8 +15,8 @@ The ShowAll parameter may be supplied to also show the snapshot for the image cu
 
 ## Related Commands
 
-* [Publish-ProvMasterVMImage](./Publish-ProvMasterVMImage/)
-* [Remove-ProvSchemeMasterVMImageHistory](./Remove-ProvSchemeMasterVMImageHistory/)
+* [Publish-ProvMasterVMImage](../Publish-ProvMasterVMImage/)
+* [Remove-ProvSchemeMasterVMImageHistory](../Remove-ProvSchemeMasterVMImageHistory/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

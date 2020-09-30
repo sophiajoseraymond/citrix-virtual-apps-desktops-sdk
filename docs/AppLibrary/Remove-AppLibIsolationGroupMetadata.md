@@ -23,7 +23,7 @@ Provides the ability to remove metadata from the given IsolationGroup.
 
 ## Related Commands
 
-* [Set-AppLibIsolationGroupMetadata](./Set-AppLibIsolationGroupMetadata/)
+* [Set-AppLibIsolationGroupMetadata](../Set-AppLibIsolationGroupMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

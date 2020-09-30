@@ -13,9 +13,9 @@ Returns a new policy instance using the specified parameters
 
 ## Related Commands
 
-* [Get-MonitorNotificationPolicy](./Get-MonitorNotificationPolicy/)
-* [New-MonitorNotificationPolicy](./New-MonitorNotificationPolicy/)
-* [Remove-MonitorNotificationPolicy](./Remove-MonitorNotificationPolicy/)
+* [Get-MonitorNotificationPolicy](../Get-MonitorNotificationPolicy/)
+* [New-MonitorNotificationPolicy](../New-MonitorNotificationPolicy/)
+* [Remove-MonitorNotificationPolicy](../Remove-MonitorNotificationPolicy/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
