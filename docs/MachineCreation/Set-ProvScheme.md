@@ -26,18 +26,34 @@ To change the name of the provisioning scheme see Rename-ProvScheme.
 
 ## Related Commands
 
-* [New-ProvScheme](../New-ProvScheme/)
-* [Remove-ProvScheme](../Remove-ProvScheme/)
-* [Get-ProvScheme](../Get-ProvScheme/)
-* [Rename-ProvScheme](../Rename-ProvScheme/)
+* [New-ProvScheme](./New-ProvScheme/)
+* [Remove-ProvScheme](./Remove-ProvScheme/)
+* [Get-ProvScheme](./Get-ProvScheme/)
+* [Rename-ProvScheme](./Rename-ProvScheme/)
 
 ## Custom Properties
+
+### MaximumConcurrentProvisioningOperations
+
+Use the PowerShell custom property, `MaximumConcurrentProvisioningOperations`, to specify the maximum number of concurrent Azure provisioning operations. When using this property in the provisioning scheme, consider:
+-  MCS supports 500 maximum concurrent operations by default, using the custom properties parameter `MaximumConcurrentProvisioningOperations`.
+-  Configure the `MaximumConcurrentProvisioningOperations` parameter using the PowerShell command `Set-ProvScheme`.
+
+To use PowerShell to set the maximum number of concurrent operations:
+1.  Open a PowerShell window from the cloud connector host.
+1.  Run the command `asnp citrix` to load Citrix-specific PowerShell modules.
+1.  Navigate to `xdhyp:\Connections\`. Type `ls` to list the connections.
+1.  Copy the `CustomProperties` from the connection and add the `MaximumConcurrentProvisioningOperations` setting to `CustomProperties`, for example, `<Property xsi:type=”StringProperty” Name=” MaximumConcurrentProvisioningOperations “ Value=”250”/>`.
+1.  Set the modified custom properties to a variable. For example, `$CustomProperties=’<CustomProperties …</CustomProperties>’`.
+1.  Run `$cred = Get-Credential`. Provide the connection credentials if you’re prompted to provide them, for example, the application ID and associated secret.
+1.  Run `set-item –PSPath XDHyp:\Connections\<connection name> - CustomProperties $customProperties –username $cred.username –Securepassword $cred.password`.
+1.  Type `ls` to verify the updated settings in the CustomProperty section.
 
 ### StorageAccountType
 
 Machine Creation Services (MCS) supports standard SSD managed disks for Azure virtual machines. This disk type provides consistent performance, and delivers better availability compared to HDD disks. For more information, see [Standard SSD Disks for Azure Virtual machine workloads](https://azure.microsoft.com/en-us/blog/preview-standard-ssd-disks-for-azure-virtual-machine-workloads/).
 
-Use the PowerShell `StorageAccountType` custom property in the [`New-ProvScheme`](../New-ProvScheme/) command or `Set-ProvScheme` command to configure this feature.
+Use the PowerShell `StorageAccountType` custom property in the [`New-ProvScheme`](./New-ProvScheme/) command or `Set-ProvScheme` command to configure this feature.
 
 #### Syntax
 
