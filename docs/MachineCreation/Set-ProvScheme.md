@@ -36,10 +36,12 @@ To change the name of the provisioning scheme see Rename-ProvScheme.
 ### MaximumConcurrentProvisioningOperations
 
 Use the PowerShell custom property, `MaximumConcurrentProvisioningOperations`, to specify the maximum number of concurrent Azure provisioning operations. When using this property in the provisioning scheme, consider:
+
 -  MCS supports 500 maximum concurrent operations by default, using the custom properties parameter `MaximumConcurrentProvisioningOperations`.
 -  Configure the `MaximumConcurrentProvisioningOperations` parameter using the PowerShell command `Set-ProvScheme`.
 
 To use PowerShell to set the maximum number of concurrent operations:
+
 1.  Open a PowerShell window from the cloud connector host.
 1.  Run the command `asnp citrix` to load Citrix-specific PowerShell modules.
 1.  Navigate to `xdhyp:\Connections\`. Type `ls` to list the connections.
