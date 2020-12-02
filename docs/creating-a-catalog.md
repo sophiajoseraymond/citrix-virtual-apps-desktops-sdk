@@ -1,4 +1,4 @@
-##Creating a Catalog
+# Creating a Catalog
 
 The following example shows how to create a catalog for a set of Machine Creation Services
 (MCS) machines.
@@ -273,3 +273,22 @@ $provScheme.ProvisioningSchemeUID -AdminAddress $adminAddress
 
 53. Stop-LogHighLevelOperation -IsSuccessful $true -HighLevelOperationId $loggingId -AdminAddress $adminAddress
 ```
+
+## Configure support for non-domain joined catalogs
+
+Using the Citrix Virtual Apps and Desktops service, you can create catalogs based on workgroup, or, non-domain joined machines. Creating non-domain joined machines depends on how the account identity pool is created. The account identity pool is the mechanism used by MCS to create and track machine names during catalog provisioning.
+
+For example, in past releases all Active Directory fields were supplied in a single instance:
+
+```
+New-AcctIdentityPool AllowUnicode -Domain "awsdevexample.local" -IdentityPoolName "DedicatedHostCatalog" -NamingScheme "MH-DHost##" -NamingSchemeType "Numeric" *-OU "CN=Computers,DC= awsdevexample,DC=local"* -Scope @() -ZoneUid "81291221-d2f2-49d2-ab12-bae5bbd0df05"
+```
+
+MCS uses a new PoSH parameter, `WorkgroupMachine`, to create a workgroup catalog. Using the same example, noted above, this parameter removes the requirement to specify all the AD-specific parameters, including domain administrator credentials:
+
+```
+New-AcctIdentityPool AllowUnicode -WorkgroupMachine -IdentityPoolName "DedicatedHostCatalog" -NamingScheme "MH-DHOst##" -NamingSchemeType "Numeric" -Scope @() -ZoneUid "81291221-d2f2-49d2-ab12-bae5bbd0df05"
+```
+
+!!! tip "Note"
+    When using the WorkgroupMachine parameter, consider that non-domain joined machine catalogs are only supported through Powershell for all catalog lifecycle events including provisioning, adding/removing machines from the catalog, updating, and power management.
