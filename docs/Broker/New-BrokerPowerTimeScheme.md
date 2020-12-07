@@ -10,6 +10,12 @@ The New-BrokerPowerTimeScheme cmdlet adds a new power time scheme to be associat
 
 Each power time scheme is associated with a particular desktop group, and covers one or more days of the week, defining which hours of those days are considered peak times and which are off-peak times. In addition, the time scheme defines a pool size value for each hour of the day for the days of the week covered by the time scheme. No one desktop group can be associated with two or more time schemes that cover the same day of the week.
 
+For any day of the week not covered by any power time scheme, it is assumed that all hours are off-peak and no pool size management is required for any of the hours.
+
+!!! note
+    - `PeakHours` is deprecated, and `PeakHalfHours` should be used instead.
+    - `PoolSize` is deprecated, and `PoolSizeHalfHours` should be used instead.
+
 See 'help about\_Broker\_PowerManagement' for a detailed description of the power policy mechanism and pool size management.
 
 
