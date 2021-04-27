@@ -3,7 +3,7 @@
 Gets the database string for the specified data store used by the Monitor Service.
 ## Syntax
 ```
-Get-MonitorDBConnection [[-DataStore] <String>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
+Get-MonitorDBConnection [[-DataStore] <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
 ## Detailed Description
 Returns the database connection string from the currently selected Monitor Service instance.
@@ -15,15 +15,16 @@ The current service instance is that on the local machine, or that explicitly sp
 
 ## Related Commands
 
-* [Get-MonitorServiceStatus](../Get-MonitorServiceStatus/)
-* [Get-MonitorDataStore](../Get-MonitorDataStore/)
-* [Set-MonitorDBConnection](../Set-MonitorDBConnection/)
-* [Test-MonitorDBConnection](../Test-MonitorDBConnection/)
+* [Get-MonitorServiceStatus](./Get-MonitorServiceStatus/)
+* [Get-MonitorDataStore](./Get-MonitorDataStore/)
+* [Set-MonitorDBConnection](./Set-MonitorDBConnection/)
+* [Test-MonitorDBConnection](./Test-MonitorDBConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
 | DataStore | Specifies the logical name of the data store for the Monitor Service. Can be either be 'Site' or the logical name of the secondary data store. | false | false | Site |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 | AdminAddress | Specifies the address of a Citrix Virtual Apps and Desktops 7 controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
 ## Input Type

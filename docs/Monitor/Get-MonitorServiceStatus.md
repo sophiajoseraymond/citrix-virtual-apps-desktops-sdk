@@ -3,7 +3,7 @@
 Gets the current status of the Monitor Service on the controller.
 ## Syntax
 ```
-Get-MonitorServiceStatus [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
+Get-MonitorServiceStatus [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
 ## Detailed Description
 Enables the status of the Monitor Service on the controller to be determined. If the service has multiple data stores it will return the overall state as an aggregate of all the data store states. For example, if the site data store status is OK and the secondary data store status is DBUnconfigured then it will return DBUnconfigured. The database connection to the service does not need to be configured before using this command.
@@ -11,15 +11,16 @@ Enables the status of the Monitor Service on the controller to be determined. If
 
 ## Related Commands
 
-* [Get-MonitorDataStore](../Get-MonitorDataStore/)
-* [Set-MonitorDBConnection](../Set-MonitorDBConnection/)
-* [Test-MonitorDBConnection](../Test-MonitorDBConnection/)
-* [Get-MonitorDBConnection](../Get-MonitorDBConnection/)
-* [Get-MonitorDBSchema](../Get-MonitorDBSchema/)
+* [Get-MonitorDataStore](./Get-MonitorDataStore/)
+* [Set-MonitorDBConnection](./Set-MonitorDBConnection/)
+* [Test-MonitorDBConnection](./Test-MonitorDBConnection/)
+* [Get-MonitorDBConnection](./Get-MonitorDBConnection/)
+* [Get-MonitorDBSchema](./Get-MonitorDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 | AdminAddress | Specifies the address of a Citrix Virtual Apps and Desktops 7 controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
 ## Input Type

@@ -3,7 +3,7 @@
 Checks to ensure that the proposed name for a provisioning scheme is unused.
 ## Syntax
 ```
-Test-ProvSchemeNameAvailable -ProvisioningSchemeName <String[]> [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
+Test-ProvSchemeNameAvailable -ProvisioningSchemeName <String[]> [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
 ## Detailed Description
 Checks to ensure that the proposed name for a provisioning scheme is unused. This check is done without regard for scoping of existing provisioning schemes, so the names of inaccessible schemes are also checked.
@@ -11,13 +11,14 @@ Checks to ensure that the proposed name for a provisioning scheme is unused. Thi
 
 ## Related Commands
 
-* [New-ProvScheme](../New-ProvScheme/)
-* [Rename-ProvScheme](../Rename-ProvScheme/)
+* [New-ProvScheme](./New-ProvScheme/)
+* [Rename-ProvScheme](./Rename-ProvScheme/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
 | ProvisioningSchemeName | The name or names of the provisioning scheme(s) to be tested. | true | true (ByValue, ByPropertyName) |  |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
 ## Input Type

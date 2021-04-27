@@ -3,7 +3,7 @@
 Gets details for each of the Monitor data stores.
 ## Syntax
 ```
-Get-MonitorDataStore [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
+Get-MonitorDataStore [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
 ## Detailed Description
 Returns an object for each of the Monitor data stores describing the connection string, data store name, db type, provider, schema name, and DB status.
@@ -13,11 +13,12 @@ A database connection must be configured in order for this command to be used if
 
 ## Related Commands
 
-* [Reset-MonitorDataStore](../Reset-MonitorDataStore/)
+* [Reset-MonitorDataStore](./Reset-MonitorDataStore/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 | AdminAddress | Specifies the address of a Citrix Virtual Apps and Desktops 7 controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
 ## Input Type

@@ -3,9 +3,9 @@
 Exports a provisioning scheme in the form of a JSON encoded string
 ## Syntax
 ```
-Export-ProvScheme -ProvisioningSchemeName <String> [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
+Export-ProvScheme -ProvisioningSchemeName <String> [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 
-Export-ProvScheme -ProvisioningSchemeUid <Guid> [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
+Export-ProvScheme -ProvisioningSchemeUid <Guid> [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
 ## Detailed Description
 The primary use of this cmdlet to export an provisioning scheme and the VM that are part of the provisioning scheme the exported JSON can then be used to import this provisioning scheme into different sites.
@@ -19,15 +19,16 @@ however it does not contain the AD Account, use the Cmdlet Export-AcctIdentityPo
 
 ## Related Commands
 
-* [Import-ProvScheme](../Import-ProvScheme/)
-* [Export-AcctIdentityPool](../Export-AcctIdentityPool/)
-* [Import-AcctIdentityPool](../Import-AcctIdentityPool/)
+* [Import-ProvScheme](./Import-ProvScheme/)
+* [Export-AcctIdentityPool](./Export-AcctIdentityPool/)
+* [Import-AcctIdentityPool](./Import-AcctIdentityPool/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
 | ProvisioningSchemeName | The name of the provisioning scheme. | true | true (ByPropertyName) |  |
 | ProvisioningSchemeUid | The unique identifier of the provisioning scheme. | true | false |  |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
 ## Input Type

@@ -3,7 +3,7 @@
 Gets a list of all available database schema versions for the Monitor Service.
 ## Syntax
 ```
-Get-MonitorInstalledDBVersion [-DataStore <String>] [-Upgrade] [-Downgrade] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
+Get-MonitorInstalledDBVersion [-DataStore <String>] [-Upgrade] [-Downgrade] [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
 ## Detailed Description
 Gets the current version number of the Citrix Monitor Service database schema when called with no parameters.
@@ -19,8 +19,8 @@ Only one of the -Upgrade or -Downgrade parameters may be supplied at once.
 
 ## Related Commands
 
-* [Get-MonitorDBVersionChangeScript](../Get-MonitorDBVersionChangeScript/)
-* [Get-MonitorDBSchema](../Get-MonitorDBSchema/)
+* [Get-MonitorDBVersionChangeScript](./Get-MonitorDBVersionChangeScript/)
+* [Get-MonitorDBSchema](./Get-MonitorDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
@@ -28,6 +28,7 @@ Only one of the -Upgrade or -Downgrade parameters may be supplied at once.
 | Upgrade | Specifies that only schema versions to which the current database version can be updated should be returned. | false | false |  |
 | Downgrade | Specifies that only schema versions to which the current database version can be reverted should be returned. | false | false |  |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 | AdminAddress | Specifies the address of a Citrix Virtual Apps and Desktops 7 controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
 ## Input Type
