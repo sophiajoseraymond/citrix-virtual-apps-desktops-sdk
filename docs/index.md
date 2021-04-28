@@ -1,4 +1,4 @@
-# Citrix Virtual Apps and Desktops 7 1808 SDK
+# Citrix Virtual Apps and Desktops 1808 SDK
 
 > **Note:**
 > 
