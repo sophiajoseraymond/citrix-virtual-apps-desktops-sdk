@@ -3,9 +3,9 @@
 Locks a VM.
 ## Syntax
 ```
-Lock-ProvVM [-VMID] <String[]> -ProvisioningSchemeName <String> [-Tag <String>] [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
+Lock-ProvVM [-VMID] <String[]> -ProvisioningSchemeName <String> [-Tag <String>] [-LoggingId <Guid>] [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 
-Lock-ProvVM [-VMID] <String[]> -ProvisioningSchemeUid <Guid> [-Tag <String>] [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
+Lock-ProvVM [-VMID] <String[]> -ProvisioningSchemeUid <Guid> [-Tag <String>] [-LoggingId <Guid>] [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
 ## Detailed Description
 Provides the ability to 'lock' a virtual machine with a tag string.  This stops other commands from being able to remove the virtual machine without unlocking the VM first.  This is to enable consumers of the virtual machines to indicate that the VM is being used.
@@ -13,9 +13,9 @@ Provides the ability to 'lock' a virtual machine with a tag string.  This stops 
 
 ## Related Commands
 
-* [UnLock-ProvVM](../UnLock-ProvVM/)
-* [Get-ProvVM](../Get-ProvVM/)
-* [Remove-ProvVM](../Remove-ProvVM/)
+* [UnLock-ProvVM](./UnLock-ProvVM/)
+* [Get-ProvVM](./Get-ProvVM/)
+* [Remove-ProvVM](./Remove-ProvVM/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
@@ -25,6 +25,7 @@ Provides the ability to 'lock' a virtual machine with a tag string.  This stops 
 | Tag | The string to be held against the VM being locked. | false | false |  |
 | LoggingId | Specifies the identifier of the high-level operation this cmdlet call forms a part of. Citrix Studio and Director typically create high-level operations. PowerShell scripts can also wrap a series of cmdlet calls in a high-level operation by way of the Start-LogHighLevelOperation and Stop-LogHighLevelOperation cmdlets. | false | false |  |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller that the PowerShell snap-in connects to.  You can provide this as a host name or an IP address. | false | false | LocalHost. Once a value is provided by any cmdlet, this value becomes the default. |
 
 ## Input Type

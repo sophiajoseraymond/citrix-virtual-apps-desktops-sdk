@@ -1,18 +1,19 @@
+﻿
 # Set-Provscheme
 Changes the parameter values for a provisioning scheme.
 ## Syntax
 ```
-Set-ProvScheme [-ProvisioningSchemeName] <String> [-VMCpuCount <Int32>] [-VMMemoryMB <Int32>] [-CustomProperties <String>] [-ServiceOffering <String>] [-PassThru] [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
+Set-ProvScheme [-ProvisioningSchemeName] <String> [-VMCpuCount <Int32>] [-VMMemoryMB <Int32>] [-CustomProperties <String>] [-ServiceOffering <String>] [-PassThru] [-LoggingId <Guid>] [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 
-Set-ProvScheme [-ProvisioningSchemeName] <String> -IdentityPoolName <String> [-VMCpuCount <Int32>] [-VMMemoryMB <Int32>] [-CustomProperties <String>] [-ServiceOffering <String>] [-PassThru] [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
+Set-ProvScheme [-ProvisioningSchemeName] <String> -IdentityPoolName <String> [-VMCpuCount <Int32>] [-VMMemoryMB <Int32>] [-CustomProperties <String>] [-ServiceOffering <String>] [-PassThru] [-LoggingId <Guid>] [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 
-Set-ProvScheme [-ProvisioningSchemeName] <String> -IdentityPoolUid <Guid> [-VMCpuCount <Int32>] [-VMMemoryMB <Int32>] [-CustomProperties <String>] [-ServiceOffering <String>] [-PassThru] [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
+Set-ProvScheme [-ProvisioningSchemeName] <String> -IdentityPoolUid <Guid> [-VMCpuCount <Int32>] [-VMMemoryMB <Int32>] [-CustomProperties <String>] [-ServiceOffering <String>] [-PassThru] [-LoggingId <Guid>] [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 
-Set-ProvScheme -ProvisioningSchemeUid <Guid> [-VMCpuCount <Int32>] [-VMMemoryMB <Int32>] [-CustomProperties <String>] [-ServiceOffering <String>] [-PassThru] [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
+Set-ProvScheme -ProvisioningSchemeUid <Guid> [-VMCpuCount <Int32>] [-VMMemoryMB <Int32>] [-CustomProperties <String>] [-ServiceOffering <String>] [-PassThru] [-LoggingId <Guid>] [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 
-Set-ProvScheme -ProvisioningSchemeUid <Guid> -IdentityPoolName <String> [-VMCpuCount <Int32>] [-VMMemoryMB <Int32>] [-CustomProperties <String>] [-ServiceOffering <String>] [-PassThru] [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
+Set-ProvScheme -ProvisioningSchemeUid <Guid> -IdentityPoolName <String> [-VMCpuCount <Int32>] [-VMMemoryMB <Int32>] [-CustomProperties <String>] [-ServiceOffering <String>] [-PassThru] [-LoggingId <Guid>] [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 
-Set-ProvScheme -ProvisioningSchemeUid <Guid> -IdentityPoolUid <Guid> [-VMCpuCount <Int32>] [-VMMemoryMB <Int32>] [-CustomProperties <String>] [-ServiceOffering <String>] [-PassThru] [-LoggingId <Guid>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
+Set-ProvScheme -ProvisioningSchemeUid <Guid> -IdentityPoolUid <Guid> [-VMCpuCount <Int32>] [-VMMemoryMB <Int32>] [-CustomProperties <String>] [-ServiceOffering <String>] [-PassThru] [-LoggingId <Guid>] [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
 ## Detailed Description
 Provides the ability to update the parameters of an existing provisioning scheme.
@@ -30,42 +31,6 @@ To change the name of the provisioning scheme see Rename-ProvScheme.
 * [Remove-ProvScheme](./Remove-ProvScheme/)
 * [Get-ProvScheme](./Get-ProvScheme/)
 * [Rename-ProvScheme](./Rename-ProvScheme/)
-
-## Custom Properties
-
-### MaximumConcurrentProvisioningOperations
-
-Use the PowerShell custom property, `MaximumConcurrentProvisioningOperations`, to specify the maximum number of concurrent Azure provisioning operations. When using this property in the provisioning scheme, consider:
-
--  MCS supports 500 maximum concurrent operations by default, using the custom properties parameter `MaximumConcurrentProvisioningOperations`.
--  Configure the `MaximumConcurrentProvisioningOperations` parameter using the PowerShell command `Set-ProvScheme`.
-
-To use PowerShell to set the maximum number of concurrent operations:
-
-1.  Open a PowerShell window from the cloud connector host.
-1.  Run the command `asnp citrix` to load Citrix-specific PowerShell modules.
-1.  Navigate to `xdhyp:\Connections\`. Type `ls` to list the connections.
-1.  Copy the `CustomProperties` from the connection and add the `MaximumConcurrentProvisioningOperations` setting to `CustomProperties`, for example, `<Property xsi:type=”StringProperty” Name=” MaximumConcurrentProvisioningOperations “ Value=”250”/>`.
-1.  Set the modified custom properties to a variable. For example, `$CustomProperties=’<CustomProperties …</CustomProperties>’`.
-1.  Run `$cred = Get-Credential`. Provide the connection credentials if you’re prompted to provide them, for example, the application ID and associated secret.
-1.  Run `set-item –PSPath XDHyp:\Connections\<connection name> - CustomProperties $customProperties –username $cred.username –Securepassword $cred.password`.
-1.  Type `ls` to verify the updated settings in the CustomProperty section.
-
-### StorageAccountType
-
-Machine Creation Services (MCS) supports standard SSD managed disks for Azure virtual machines. This disk type provides consistent performance, and delivers better availability compared to HDD disks. For more information, see [Standard SSD Disks for Azure Virtual machine workloads](https://azure.microsoft.com/en-us/blog/preview-standard-ssd-disks-for-azure-virtual-machine-workloads/).
-
-Use the PowerShell `StorageAccountType` custom property in the [`New-ProvScheme`](./New-ProvScheme/) command or `Set-ProvScheme` command to configure this feature.
-
-#### Syntax
-
-```
-<Property xsi:type=`"StringProperty`" Name=`"UseManagedDisks`" Value=`"true`" /><Property xsi:type=`"StringProperty`" Name=`"StorageAccountType`" Value=`"StandardSSD_LRS`" /><Property xsi:type=`"StringProperty`" Value=`"Windows_Server`" />
-```
-
-!!! note "Note"
-    This feature is only available when using managed disks, that is, the custom property `UseManagedDisks` is set to *true*.     For unmanaged disks only Standard HDD and Premium SSD are supported.
-
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
@@ -80,12 +45,17 @@ Use the PowerShell `StorageAccountType` custom property in the [`New-ProvScheme`
 | PassThru | Returns the affected record. By default, this cmdlet does not generate any output. | false | false | False |
 | LoggingId | Specifies the identifier of the high-level operation this cmdlet call forms a part of. Citrix Studio and Director typically create high-level operations. PowerShell scripts can also wrap a series of cmdlet calls in a high-level operation by way of the Start-LogHighLevelOperation and Stop-LogHighLevelOperation cmdlets. | false | false |  |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
+
+## Input Type
+
+### 
 
 ## Return Values
 
-Citrix.Machinecreation.Sdk.Provisioningscheme<br>    This Object Provides Details Of The Provisioning Scheme And Contains The Following Information:<br>    Provisioningschemeuid<br>    Provisioningschemename<br>        The Name Of The Provisioning Scheme.<br>    Cpucount<br>        The Numer Of Processors That Vms Will Be Created With When Using This Scheme.<br>    Memorymb<br>        The Maximum Amount Of Memory That Vms Will Be Created With When Using This Scheme.<br>    Masterimagevm<br>        The Path Within The Hosting Unit Provider To The Vm Or Snapshot Of Which The Scheme Is Currently Using A Copy.<br>    Masterimagevmdate<br>        The Date And Time That The Copy Of The Vm Image Was Made For The Scheme.<br>    Identitypooluid<br>        The Unique Identifier Of The Identity Pool (From The Adidentity Powershell Snap-In) That The Scheme Uses.<br>    Identitypoolname<br>        The Name Of The Identity Pool (From The Adidentity Powershell Snap-In) That The Scheme Uses.<br>    Hostingunituid<br>       The Unique Identifier Of The Hosting Unit (From The Hosting Unit Powershell Snap-In) That The New Provisioning Scheme Will Use.<br>    Hostingunitname<br>       The Name Of The Hosting Unit (From The Hosting Unit Powershell Snap-In) That The New Provisioning Scheme Will Use.<br>    Cleanonboot<br>       Indicates Whether The Vms Created Are To Be Reset To A Clean State On Each Boot.<br>    Taskid<br>       The Identifier Of Any Current Task That Is Running For The Provisioning Scheme.
-
+### Citrix.Machinecreation.Sdk.Provisioningscheme
+This object provides details of the provisioning scheme and contains the following information:<br>    ProvisioningSchemeUid<br>    ProvisioningSchemeName<br>        The name of the provisioning scheme.<br>    CpuCount<br>        The numer of processors that VMs will be created with when using this scheme.<br>    MemoryMB<br>        The maximum amount of memory that VMs will be created with when using this scheme.<br>    MasterImageVM<br>        The path within the hosting unit provider to the VM or snapshot of which the scheme is currently using a copy.<br>    MasterImageVMDate<br>        The date and time that the copy of the VM image was made for the scheme.<br>    IdentityPoolUid<br>        The unique identifier of the identity pool (from the ADIdentity PowerShell snap-in) that the scheme uses.<br>    IdentityPoolName<br>        The name of the identity pool (from the ADIdentity PowerShell snap-in) that the scheme uses.<br>    HostingUnitUid<br>       The unique identifier of the hosting unit (from the Hosting Unit PowerShell snap-in) that the new provisioning scheme will use.<br>    HostingUnitName<br>       The name of the hosting unit (from the Hosting Unit PowerShell snap-in) that the new provisioning scheme will use.<br>    CleanOnBoot<br>       Indicates whether the VMs created are to be reset to a clean state on each boot.<br>    TaskId<br>       The identifier of any current task that is running for the provisioning scheme.
 ## Notes
 In the case of failure, the following errors can result.<br>    Error Codes<br>    -----------<br>    ProvisioningSchemeNotFound<br>    The specified provisioning scheme could not be located.<br>    DatabaseError<br>    An error occurred in the service while attempting a database operation.<br>    DatabaseNotConfigured<br>    The operation could not be completed because the database for the service is not configured.<br>    ServiceStatusInvalidDb<br>    An error occurred in the service while attempting a database operation - communication with the database failed for<br>    for various reasons.<br>    CommunicationError<br>    An error occurred while communicating with the service.<br>    PermissionDenied<br>    The user does not have administrative rights to perform this operation.<br>    ConfigurationLoggingError<br>    The operation could not be performed because of a configuration logging error<br>    HostingUnitNotFound<br>    The hosting unit referenced by the provisioning scheme could not be resolved<br>    ExceptionThrown<br>    An unexpected error occurred.  To locate more details, see the Windows event logs on the controller being used or examine the XenDesktop logs.
 ## Examples

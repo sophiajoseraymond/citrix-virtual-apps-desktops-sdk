@@ -3,7 +3,7 @@
 Gets an SQL service schema update script for the Citrix Monitor Service.
 ## Syntax
 ```
-Get-MonitorDBVersionChangeScript -DatabaseName <String> -TargetVersion <Version> [-DataStore <String>] [-BearerToken <String>] [-AdminAddress <String>] [<CommonParameters>]
+Get-MonitorDBVersionChangeScript -DatabaseName <String> -TargetVersion <Version> [-DataStore <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
 ## Detailed Description
 Gets an SQL script that can be used to update the current Citrix Monitor Service database schema. An update can be an upgrade or downgrade.
@@ -25,9 +25,9 @@ Once an update has been applied to the service schema, any existing Citrix Monit
 
 ## Related Commands
 
-* [Get-MonitorInstalledDBVersion](../Get-MonitorInstalledDBVersion/)
-* [Get-MonitorServiceStatus](../Get-MonitorServiceStatus/)
-* [Get-MonitorDBSchema](../Get-MonitorDBSchema/)
+* [Get-MonitorInstalledDBVersion](./Get-MonitorInstalledDBVersion/)
+* [Get-MonitorServiceStatus](./Get-MonitorServiceStatus/)
+* [Get-MonitorDBSchema](./Get-MonitorDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
@@ -35,6 +35,7 @@ Once an update has been applied to the service schema, any existing Citrix Monit
 | TargetVersion | The required target service schema version of the update. This is the service schema version obtained after the update script is applied. | true | false |  |
 | DataStore | Specifies the logical name of the data store for the Monitor Service. Can be either be 'Site' or the logical name of the secondary data store. | false | false | Site |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 | AdminAddress | Specifies the address of a Citrix Virtual Apps and Desktops 7 controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
 ## Input Type

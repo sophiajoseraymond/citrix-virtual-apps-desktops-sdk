@@ -1,7 +1,7 @@
 # Project information
-site_name: Citrix Virtual Apps and Desktops 2009 SDK Documentation
+site_name: Citrix Virtual Apps and Desktops 2103 SDK Documentation
 site_title: Developer Docs
-site_description: Documentation and Reference Guide for the Citrix Virtual Apps and Desktops 2009 SDK
+site_description: Documentation and Reference Guide for the Citrix Virtual Apps and Desktops 2103 SDK
 site_url: https://developer-docs.citrix.com/
 
 # Copyright
@@ -68,6 +68,7 @@ plugins:
 # Page tree
 nav:
 - Versions:
+  - 2009: https://developer-docs.citrix.com/projects/citrix-virtual-apps-desktops-sdk/en/2009/
   - 2006: https://developer-docs.citrix.com/projects/citrix-virtual-apps-desktops-sdk/en/2006/
   - 1912: https://developer-docs.citrix.com/projects/citrix-virtual-apps-desktops-sdk/en/1912/
   - 1811: https://developer-docs.citrix.com/projects/citrix-virtual-apps-desktops-sdk/en/1811/
@@ -904,6 +905,7 @@ nav:
   - Test-TrustDBConnection: Trust/Test-TrustDBConnection.md
   - Unregister-TrustServiceKey: Trust/Unregister-TrustServiceKey.md
   - Update-TrustBearerToken: Trust/Update-TrustBearerToken.md
+  - Update-TrustServiceKey: Trust/Update-TrustServiceKey.md
 - UserProfileManager:
   - about_UpmSnapInUserProfileManagerSnapin: UserProfileManager/about_UpmSnapInUserProfileManagerSnapin.md
   - Get-UserProfileDefinition: UserProfileManager/Get-UserProfileDefinition.md
