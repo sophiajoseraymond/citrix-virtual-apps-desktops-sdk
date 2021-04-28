@@ -905,6 +905,7 @@ nav:
   - Test-TrustDBConnection: Trust/Test-TrustDBConnection.md
   - Unregister-TrustServiceKey: Trust/Unregister-TrustServiceKey.md
   - Update-TrustBearerToken: Trust/Update-TrustBearerToken.md
+  - Update-Trustservicekey: Trust/Update-Trustservicekey.md
 - UserProfileManager:
   - about_UpmSnapInUserProfileManagerSnapin: UserProfileManager/about_UpmSnapInUserProfileManagerSnapin.md
   - Get-UserProfileDefinition: UserProfileManager/Get-UserProfileDefinition.md
