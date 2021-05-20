@@ -231,6 +231,8 @@ nav:
   - about_Broker_Desktops: Broker/about_Broker_Desktops.md
   - about_Broker_EntitlementPolicy: Broker/about_Broker_EntitlementPolicy.md
   - about_Broker_ErrorHandling: Broker/about_Broker_ErrorHandling.md
+  - about_Broker_Filtering: Broker/about_Broker_Filtering.md
+  - about_Broker_GroupPolicy: Broker/about_Broker_GroupPolicy.md
   - about_Broker_Licensing: Broker/about_Broker_Licensing.md
   - about_Broker_Machines: Broker/about_Broker_Machines.md
   - about_Broker_Policies: Broker/about_Broker_Policies.md
@@ -275,6 +277,10 @@ nav:
   - Get-BrokerDesktopGroupWebhook: Broker/Get-BrokerDesktopGroupWebhook.md
   - Get-BrokerDesktopUsage: Broker/Get-BrokerDesktopUsage.md
   - Get-BrokerEntitlementPolicyRule: Broker/Get-BrokerEntitlementPolicyRule.md
+  - Get-BrokerGpoBlob: Broker/Get-BrokerGpoBlob.md
+  - Get-BrokerGpoFilter: Broker/Get-BrokerGpoFilter.md
+  - Get-BrokerGpoPolicy: Broker/Get-BrokerGpoPolicy.md
+  - Get-BrokerGpoSetting: Broker/Get-BrokerGpoSetting.md
   - Get-BrokerHostingPowerAction: Broker/Get-BrokerHostingPowerAction.md
   - Get-BrokerHypervisorAlert: Broker/Get-BrokerHypervisorAlert.md
   - Get-BrokerHypervisorConnection: Broker/Get-BrokerHypervisorConnection.md
@@ -296,6 +302,7 @@ nav:
   - Get-BrokerResource: Broker/Get-BrokerResource.md
   - Get-BrokerScopedObject: Broker/Get-BrokerScopedObject.md
   - Get-BrokerServiceAddedCapability: Broker/Get-BrokerServiceAddedCapability.md
+  - Get-BrokerServiceConfigurationData: Broker/Get-BrokerServiceConfigurationData.md
   - Get-BrokerServiceInstance: Broker/Get-BrokerServiceInstance.md
   - Get-BrokerServiceStatus: Broker/Get-BrokerServiceStatus.md
   - Get-BrokerSession: Broker/Get-BrokerSession.md
@@ -306,7 +313,9 @@ nav:
   - Get-BrokerSite: Broker/Get-BrokerSite.md
   - Get-BrokerTag: Broker/Get-BrokerTag.md
   - Get-BrokerTagUsage: Broker/Get-BrokerTagUsage.md
+  - Get-BrokerTelemetryData: Broker/Get-BrokerTelemetryData.md
   - Get-BrokerUnconfiguredMachine: Broker/Get-BrokerUnconfiguredMachine.md
+  - Get-BrokerUniversalClaim: Broker/Get-BrokerUniversalClaim.md
   - Get-BrokerUser: Broker/Get-BrokerUser.md
   - Get-BrokerUserZonePreference: Broker/Get-BrokerUserZonePreference.md
   - Group-BrokerDesktop: Broker/Group-BrokerDesktop.md
@@ -330,6 +339,10 @@ nav:
   - New-BrokerDesktopGroup: Broker/New-BrokerDesktopGroup.md
   - New-BrokerDesktopGroupWebhook: Broker/New-BrokerDesktopGroupWebhook.md
   - New-BrokerEntitlementPolicyRule: Broker/New-BrokerEntitlementPolicyRule.md
+  - New-BrokerGpoBlob: Broker/New-BrokerGpoBlob.md
+  - New-BrokerGpoFilter: Broker/New-BrokerGpoFilter.md
+  - New-BrokerGpoPolicy: Broker/New-BrokerGpoPolicy.md
+  - New-BrokerGpoSetting: Broker/New-BrokerGpoSetting.md
   - New-BrokerHostingPowerAction: Broker/New-BrokerHostingPowerAction.md
   - New-BrokerHypervisorConnection: Broker/New-BrokerHypervisorConnection.md
   - New-BrokerIcon: Broker/New-BrokerIcon.md
@@ -345,8 +358,10 @@ nav:
   - New-BrokerSessionLinger: Broker/New-BrokerSessionLinger.md
   - New-BrokerSessionPreLaunch: Broker/New-BrokerSessionPreLaunch.md
   - New-BrokerTag: Broker/New-BrokerTag.md
+  - New-BrokerUniversalClaim: Broker/New-BrokerUniversalClaim.md
   - New-BrokerUser: Broker/New-BrokerUser.md
   - New-BrokerUserZonePreference: Broker/New-BrokerUserZonePreference.md
+  - New-BrokerXmlServiceKey: Broker/New-BrokerXmlServiceKey.md
   - Remove-BrokerAccessPolicyRule: Broker/Remove-BrokerAccessPolicyRule.md
   - Remove-BrokerAccessPolicyRuleMetadata: Broker/Remove-BrokerAccessPolicyRuleMetadata.md
   - Remove-BrokerAdminFolder: Broker/Remove-BrokerAdminFolder.md
@@ -372,6 +387,10 @@ nav:
   - Remove-BrokerDesktopGroupWebhook: Broker/Remove-BrokerDesktopGroupWebhook.md
   - Remove-BrokerEntitlementPolicyRule: Broker/Remove-BrokerEntitlementPolicyRule.md
   - Remove-BrokerEntitlementPolicyRuleMetadata: Broker/Remove-BrokerEntitlementPolicyRuleMetadata.md
+  - Remove-BrokerGpoBlob: Broker/Remove-BrokerGpoBlob.md
+  - Remove-BrokerGpoFilter: Broker/Remove-BrokerGpoFilter.md
+  - Remove-BrokerGpoPolicy: Broker/Remove-BrokerGpoPolicy.md
+  - Remove-BrokerGpoSetting: Broker/Remove-BrokerGpoSetting.md
   - Remove-BrokerHostingPowerAction: Broker/Remove-BrokerHostingPowerAction.md
   - Remove-BrokerHostingPowerActionMetadata: Broker/Remove-BrokerHostingPowerActionMetadata.md
   - Remove-BrokerHypervisorAlertMetadata: Broker/Remove-BrokerHypervisorAlertMetadata.md
@@ -404,6 +423,7 @@ nav:
   - Remove-BrokerSiteMetadata: Broker/Remove-BrokerSiteMetadata.md
   - Remove-BrokerTag: Broker/Remove-BrokerTag.md
   - Remove-BrokerTagMetadata: Broker/Remove-BrokerTagMetadata.md
+  - Remove-BrokerUniversalClaim: Broker/Remove-BrokerUniversalClaim.md
   - Remove-BrokerUser: Broker/Remove-BrokerUser.md
   - Remove-BrokerUserZonePreference: Broker/Remove-BrokerUserZonePreference.md
   - Rename-BrokerAccessPolicyRule: Broker/Rename-BrokerAccessPolicyRule.md
@@ -421,6 +441,7 @@ nav:
   - Rename-BrokerPowerTimeScheme: Broker/Rename-BrokerPowerTimeScheme.md
   - Rename-BrokerRebootScheduleV2: Broker/Rename-BrokerRebootScheduleV2.md
   - Rename-BrokerTag: Broker/Rename-BrokerTag.md
+  - Reset-BrokerDbInstance: Broker/Reset-BrokerDbInstance.md
   - Reset-BrokerEnabledFeatureList: Broker/Reset-BrokerEnabledFeatureList.md
   - Reset-BrokerHypervisorConnection: Broker/Reset-BrokerHypervisorConnection.md
   - Reset-BrokerLicensingConnection: Broker/Reset-BrokerLicensingConnection.md
@@ -449,6 +470,9 @@ nav:
   - Set-BrokerDesktopGroupWebhook: Broker/Set-BrokerDesktopGroupWebhook.md
   - Set-BrokerEntitlementPolicyRule: Broker/Set-BrokerEntitlementPolicyRule.md
   - Set-BrokerEntitlementPolicyRuleMetadata: Broker/Set-BrokerEntitlementPolicyRuleMetadata.md
+  - Set-BrokerGpoFilter: Broker/SetBrokerGpoFilter.md
+  - Set-BrokerGpoPolicy: Broker/SetBrokerGpoPolicy.md
+  - Set-BrokerGpoSetting: Broker/SetBrokerGpoSetting.md
   - Set-BrokerHostingPowerAction: Broker/Set-BrokerHostingPowerAction.md
   - Set-BrokerHostingPowerActionMetadata: Broker/Set-BrokerHostingPowerActionMetadata.md
   - Set-BrokerHypervisorAlertMetadata: Broker/Set-BrokerHypervisorAlertMetadata.md
@@ -471,6 +495,7 @@ nav:
   - Set-BrokerRebootScheduleV2: Broker/Set-BrokerRebootScheduleV2.md
   - Set-BrokerRebootScheduleV2Metadata: Broker/Set-BrokerRebootScheduleV2Metadata.md
   - Set-BrokerRemotePCAccount: Broker/Set-BrokerRemotePCAccount.md
+  - Set-BrokerServiceConfigurationData: Broker/Set-BrokerServiceConfigurationData.md
   - Set-BrokerSession: Broker/Set-BrokerSession.md
   - Set-BrokerSessionLinger: Broker/Set-BrokerSessionLinger.md
   - Set-BrokerSessionMetadata: Broker/Set-BrokerSessionMetadata.md
@@ -509,6 +534,7 @@ nav:
   - Update-BrokerImportedFTA: Broker/Update-BrokerImportedFTA.md
   - Update-BrokerLocalLeaseCache: Broker/Update-BrokerLocalLeaseCache.md
   - Update-BrokerNameCache: Broker/Update-BrokerNameCache.md
+  - Update-BrokerScopeCache: Broker/Update-BrokerScopeCache.md
 - CentralConfig:
   - about_Config_Filtering: CentralConfig/about_Config_Filtering.md
   - about_ConfigConfigurationSnapIn: CentralConfig/about_ConfigConfigurationSnapIn.md
@@ -757,11 +783,12 @@ nav:
   - Get-ProvServiceInstance: MachineCreation/Get-ProvServiceInstance.md
   - Get-ProvServiceStatus: MachineCreation/Get-ProvServiceStatus.md
   - Get-ProvTask: MachineCreation/Get-ProvTask.md
-  - Get-ProvVM: MachineCreation/Get-ProvVM.md
   - Get-ProvVirtualDisk: MachineCreation/Get-ProvVirtualDisk.md
   - Get-ProvVirtualDiskPendingOperation: MachineCreation/Get-ProvVirtualDiskPendingOperation.md
+  - Get-ProvVM: MachineCreation/Get-ProvVM.md
   - Import-ProvScheme: MachineCreation/Import-ProvScheme.md
   - Lock-ProvVM: MachineCreation/Lock-ProvVM.md
+  - New-ProvMasterVMImage: MachineCreation/New-ProvMasterVMImage.md
   - New-ProvScheme: MachineCreation/New-ProvScheme.md
   - New-ProvVM: MachineCreation/New-ProvVM.md
   - Publish-ProvMasterVMImage: MachineCreation/Publish-ProvMasterVMImage.md
