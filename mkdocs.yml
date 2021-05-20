@@ -790,6 +790,7 @@ nav:
   - Test-ProvSchemeNameAvailable: MachineCreation/Test-ProvSchemeNameAvailable.md
   - Unlock-ProvScheme: MachineCreation/Unlock-ProvScheme.md
   - Unlock-ProvVM: MachineCreation/Unlock-ProvVM.md
+  - Unpublish-Provmastervmimage: Unpublish-ProvMasterVMImage.md
 - Monitor:
   - about_Monitor_Filtering: Monitor/about_Monitor_Filtering.md
   - about_MonitorMonitorSnapIn: Monitor/about_MonitorMonitorSnapin.md
