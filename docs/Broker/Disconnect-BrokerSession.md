@@ -15,8 +15,8 @@ After disconnection, sessions enter a Disconnected state. In a Disconnected stat
 
 ## Related Commands
 
-* [Get-BrokerSession](./Get-BrokerSession/)
-* [Stop-BrokerSession](./Stop-BrokerSession/)
+* [Get-BrokerSession](../Get-BrokerSession/)
+* [Stop-BrokerSession](../Stop-BrokerSession/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

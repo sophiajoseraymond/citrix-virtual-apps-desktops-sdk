@@ -11,7 +11,7 @@ This cmdlet is used to create a webhook for the sepcified desktop group, that is
 
 ## Related Commands
 
-* [Get-BrokerDesktopGroup](./Get-BrokerDesktopGroup/)
+* [Get-BrokerDesktopGroup](../Get-BrokerDesktopGroup/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -21,8 +21,8 @@ If the ProvisioningScheme is already in a scope, that scope will be silently ign
 
 ## Related Commands
 
-* [Remove-ProvSchemeScope](./Remove-ProvSchemeScope/)
-* [Get-ProvScopedObject](./Get-ProvScopedObject/)
+* [Remove-ProvSchemeScope](../Remove-ProvSchemeScope/)
+* [Get-ProvScopedObject](../Get-ProvScopedObject/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -25,9 +25,9 @@ Once an update has been applied to the service schema, any existing Citrix Confi
 
 ## Related Commands
 
-* [Get-LogInstalledDBVersion](./Get-LogInstalledDBVersion/)
-* [Get-LogServiceStatus](./Get-LogServiceStatus/)
-* [Get-LogDBSchema](./Get-LogDBSchema/)
+* [Get-LogInstalledDBVersion](../Get-LogInstalledDBVersion/)
+* [Get-LogServiceStatus](../Get-LogServiceStatus/)
+* [Get-LogDBSchema](../Get-LogDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

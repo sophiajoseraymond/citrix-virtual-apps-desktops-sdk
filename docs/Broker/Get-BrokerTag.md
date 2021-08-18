@@ -30,11 +30,11 @@ The BrokerTag object represents a single instance of a Tag associated to other o
 
 ## Related Commands
 
-* [Add-BrokerTag](./Add-BrokerTag/)
-* [New-BrokerTag](./New-BrokerTag/)
-* [Remove-BrokerTag](./Remove-BrokerTag/)
-* [Rename-BrokerTag](./Rename-BrokerTag/)
-* [Set-BrokerTag](./Set-BrokerTag/)
+* [Add-BrokerTag](../Add-BrokerTag/)
+* [New-BrokerTag](../New-BrokerTag/)
+* [Remove-BrokerTag](../Remove-BrokerTag/)
+* [Rename-BrokerTag](../Rename-BrokerTag/)
+* [Set-BrokerTag](../Set-BrokerTag/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -15,10 +15,10 @@ An application rule in the assignment policy defines the users who are entitled 
 
 ## Related Commands
 
-* [New-BrokerAppAssignmentPolicyRule](./New-BrokerAppAssignmentPolicyRule/)
-* [Get-BrokerAppAssignmentPolicyRule](./Get-BrokerAppAssignmentPolicyRule/)
-* [Set-BrokerAppAssignmentPolicyRule](./Set-BrokerAppAssignmentPolicyRule/)
-* [Remove-BrokerAppAssignmentPolicyRule](./Remove-BrokerAppAssignmentPolicyRule/)
+* [New-BrokerAppAssignmentPolicyRule](../New-BrokerAppAssignmentPolicyRule/)
+* [Get-BrokerAppAssignmentPolicyRule](../Get-BrokerAppAssignmentPolicyRule/)
+* [Set-BrokerAppAssignmentPolicyRule](../Set-BrokerAppAssignmentPolicyRule/)
+* [Remove-BrokerAppAssignmentPolicyRule](../Remove-BrokerAppAssignmentPolicyRule/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -11,10 +11,10 @@ Enables the status of the AppLibrary Service on the controller to be determined.
 
 ## Related Commands
 
-* [Set-AppLibDBConnection](./Set-AppLibDBConnection/)
-* [Test-AppLibDBConnection](./Test-AppLibDBConnection/)
-* [Get-AppLibDBConnection](./Get-AppLibDBConnection/)
-* [Get-AppLibDBSchema](./Get-AppLibDBSchema/)
+* [Set-AppLibDBConnection](../Set-AppLibDBConnection/)
+* [Test-AppLibDBConnection](../Test-AppLibDBConnection/)
+* [Get-AppLibDBConnection](../Get-AppLibDBConnection/)
+* [Get-AppLibDBSchema](../Get-AppLibDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

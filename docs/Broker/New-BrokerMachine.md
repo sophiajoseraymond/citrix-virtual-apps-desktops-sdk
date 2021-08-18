@@ -17,7 +17,7 @@ For more information about machines, see about\_Broker\_Machines.
 
 ## Related Commands
 
-* [Add-BrokerMachine](./Add-BrokerMachine/)
+* [Add-BrokerMachine](../Add-BrokerMachine/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

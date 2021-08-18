@@ -13,9 +13,9 @@ Requests the hypervisor connection to be reset. The connection is dropped, detai
 
 ## Related Commands
 
-* [Get-BrokerHypervisorConnection](./Get-BrokerHypervisorConnection/)
-* [Remove-BrokerHypervisorConnection](./Remove-BrokerHypervisorConnection/)
-* [Set-BrokerHypervisorConnection](./Set-BrokerHypervisorConnection/)
+* [Get-BrokerHypervisorConnection](../Get-BrokerHypervisorConnection/)
+* [Remove-BrokerHypervisorConnection](../Remove-BrokerHypervisorConnection/)
+* [Set-BrokerHypervisorConnection](../Set-BrokerHypervisorConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

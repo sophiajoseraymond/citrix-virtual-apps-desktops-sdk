@@ -11,8 +11,8 @@ Gets the recording status of the specified session.
 
 ## Related Commands
 
-* [Start-BrokerSessionRecording](./Start-BrokerSessionRecording/)
-* [Stop-BrokerSessionRecording](./Stop-BrokerSessionRecording/)
+* [Start-BrokerSessionRecording](../Start-BrokerSessionRecording/)
+* [Stop-BrokerSessionRecording](../Stop-BrokerSessionRecording/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

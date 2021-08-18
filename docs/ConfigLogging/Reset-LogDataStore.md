@@ -13,7 +13,7 @@ There is no requirement for a database connection to be configured in order for 
 
 ## Related Commands
 
-* [Get-LogDataStore](./Get-LogDataStore/)
+* [Get-LogDataStore](../Get-LogDataStore/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

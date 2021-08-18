@@ -15,8 +15,8 @@ FIXME
 
 ## Related Commands
 
-* [Get-MonitorNotificationEmailServerConfiguration](./Get-MonitorNotificationEmailServerConfiguration/)
-* [Set-MonitorNotificationEmailServerConfiguration](./Set-MonitorNotificationEmailServerConfiguration/)
+* [Get-MonitorNotificationEmailServerConfiguration](../Get-MonitorNotificationEmailServerConfiguration/)
+* [Set-MonitorNotificationEmailServerConfiguration](../Set-MonitorNotificationEmailServerConfiguration/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

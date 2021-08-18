@@ -11,9 +11,9 @@ Gets the detailed AppDNA compatibility report for the specified AppDisk.
 
 ## Related Commands
 
-* [Get-AppLibDesktopGroupAppDNAReport](./Get-AppLibDesktopGroupAppDNAReport/)
-* [Get-AppLibDesktopGroupAppDiskAppDNAReport](./Get-AppLibDesktopGroupAppDiskAppDNAReport/)
-* [Get-AppLibAppDisk](./Get-AppLibAppDisk/)
+* [Get-AppLibDesktopGroupAppDNAReport](../Get-AppLibDesktopGroupAppDNAReport/)
+* [Get-AppLibDesktopGroupAppDiskAppDNAReport](../Get-AppLibDesktopGroupAppDiskAppDNAReport/)
+* [Get-AppLibAppDisk](../Get-AppLibAppDisk/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

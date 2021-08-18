@@ -11,9 +11,9 @@ Export-BrokerDesktopPolicy returns an array of bytes containing the site-wide Ci
 
 ## Related Commands
 
-* [Import-BrokerDesktopPolicy](./Import-BrokerDesktopPolicy/)
-* [New-BrokerConfigurationSlot](./New-BrokerConfigurationSlot/)
-* [New-BrokerMachineConfiguration](./New-BrokerMachineConfiguration/)
+* [Import-BrokerDesktopPolicy](../Import-BrokerDesktopPolicy/)
+* [New-BrokerConfigurationSlot](../New-BrokerConfigurationSlot/)
+* [New-BrokerMachineConfiguration](../New-BrokerMachineConfiguration/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

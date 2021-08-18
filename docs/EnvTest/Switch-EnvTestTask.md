@@ -13,15 +13,15 @@ Sets the current task that will be returned by a call to Get-EnvTestTask with no
 
 ## Related Commands
 
-* [Get-EnvTestDefinition](./Get-EnvTestDefinition/)
-* [Get-EnvTestSuiteDefinition](./Get-EnvTestSuiteDefinition/)
-* [Get-EnvTestTask](./Get-EnvTestTask/)
-* [New-EnvTestTask](./New-EnvTestTask/)
-* [Start-EnvTestTask](./Start-EnvTestTask/)
-* [Stop-EnvTestTask](./Stop-EnvTestTask/)
-* [Remove-EnvTestTask](./Remove-EnvTestTask/)
-* [Add-EnvTestTaskMetadata](./Add-EnvTestTaskMetadata/)
-* [Remove-EnvTestTaskMetadata](./Remove-EnvTestTaskMetadata/)
+* [Get-EnvTestDefinition](../Get-EnvTestDefinition/)
+* [Get-EnvTestSuiteDefinition](../Get-EnvTestSuiteDefinition/)
+* [Get-EnvTestTask](../Get-EnvTestTask/)
+* [New-EnvTestTask](../New-EnvTestTask/)
+* [Start-EnvTestTask](../Start-EnvTestTask/)
+* [Stop-EnvTestTask](../Stop-EnvTestTask/)
+* [Remove-EnvTestTask](../Remove-EnvTestTask/)
+* [Add-EnvTestTaskMetadata](../Add-EnvTestTaskMetadata/)
+* [Remove-EnvTestTaskMetadata](../Remove-EnvTestTaskMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

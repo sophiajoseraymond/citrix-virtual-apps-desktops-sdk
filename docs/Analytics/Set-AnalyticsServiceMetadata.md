@@ -17,7 +17,7 @@ Allows you to store additional custom data against given Service objects.
 
 ## Related Commands
 
-* [Remove-AnalyticsServiceMetadata](./Remove-AnalyticsServiceMetadata/)
+* [Remove-AnalyticsServiceMetadata](../Remove-AnalyticsServiceMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

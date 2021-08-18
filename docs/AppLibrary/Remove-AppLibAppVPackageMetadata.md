@@ -23,7 +23,7 @@ Provides the ability to remove metadata from the given AppVPackage.
 
 ## Related Commands
 
-* [Set-AppLibAppVPackageMetadata](./Set-AppLibAppVPackageMetadata/)
+* [Set-AppLibAppVPackageMetadata](../Set-AppLibAppVPackageMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

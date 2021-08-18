@@ -19,8 +19,8 @@ Only one of the -Upgrade or -Downgrade parameters may be supplied at once.
 
 ## Related Commands
 
-* [Get-AnalyticsDBVersionChangeScript](./Get-AnalyticsDBVersionChangeScript/)
-* [Get-AnalyticsDBSchema](./Get-AnalyticsDBSchema/)
+* [Get-AnalyticsDBVersionChangeScript](../Get-AnalyticsDBVersionChangeScript/)
+* [Get-AnalyticsDBSchema](../Get-AnalyticsDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

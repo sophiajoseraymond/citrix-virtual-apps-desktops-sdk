@@ -17,12 +17,12 @@ Scope names must be unique, and you cannot modify the name of the built-in 'All'
 
 ## Related Commands
 
-* [New-AdminScope](./New-AdminScope/)
-* [Get-AdminScope](./Get-AdminScope/)
-* [Set-AdminScope](./Set-AdminScope/)
-* [Remove-AdminScope](./Remove-AdminScope/)
-* [Set-AdminScopeMetadata](./Set-AdminScopeMetadata/)
-* [Remove-AdminScopeMetadata](./Remove-AdminScopeMetadata/)
+* [New-AdminScope](../New-AdminScope/)
+* [Get-AdminScope](../Get-AdminScope/)
+* [Set-AdminScope](../Set-AdminScope/)
+* [Remove-AdminScope](../Remove-AdminScope/)
+* [Set-AdminScopeMetadata](../Set-AdminScopeMetadata/)
+* [Remove-AdminScopeMetadata](../Remove-AdminScopeMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

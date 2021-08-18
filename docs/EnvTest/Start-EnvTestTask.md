@@ -15,15 +15,15 @@ Starts a new test task based on a set of criteria provided via parameters or pip
 
 ## Related Commands
 
-* [Get-EnvTestDefinition](./Get-EnvTestDefinition/)
-* [Get-EnvTestSuiteDefinition](./Get-EnvTestSuiteDefinition/)
-* [Get-EnvTestTask](./Get-EnvTestTask/)
-* [New-EnvTestDiscoveryTargetDefinition](./New-EnvTestDiscoveryTargetDefinition/)
-* [Switch-EnvTestTask](./Switch-EnvTestTask/)
-* [Stop-EnvTestTask](./Stop-EnvTestTask/)
-* [Remove-EnvTestTask](./Remove-EnvTestTask/)
-* [Add-EnvTestTaskMetadata](./Add-EnvTestTaskMetadata/)
-* [Remove-EnvTestTaskMetadata](./Remove-EnvTestTaskMetadata/)
+* [Get-EnvTestDefinition](../Get-EnvTestDefinition/)
+* [Get-EnvTestSuiteDefinition](../Get-EnvTestSuiteDefinition/)
+* [Get-EnvTestTask](../Get-EnvTestTask/)
+* [New-EnvTestDiscoveryTargetDefinition](../New-EnvTestDiscoveryTargetDefinition/)
+* [Switch-EnvTestTask](../Switch-EnvTestTask/)
+* [Stop-EnvTestTask](../Stop-EnvTestTask/)
+* [Remove-EnvTestTask](../Remove-EnvTestTask/)
+* [Add-EnvTestTaskMetadata](../Add-EnvTestTaskMetadata/)
+* [Remove-EnvTestTaskMetadata](../Remove-EnvTestTaskMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

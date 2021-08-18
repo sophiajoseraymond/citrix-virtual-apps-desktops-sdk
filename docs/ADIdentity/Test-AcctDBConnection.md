@@ -17,9 +17,9 @@ The current service instance is that on the local machine, or that explicitly sp
 
 ## Related Commands
 
-* [Get-AcctServiceStatus](./Get-AcctServiceStatus/)
-* [Get-AcctDBConnection](./Get-AcctDBConnection/)
-* [Set-AcctDBConnection](./Set-AcctDBConnection/)
+* [Get-AcctServiceStatus](../Get-AcctServiceStatus/)
+* [Get-AcctDBConnection](../Get-AcctDBConnection/)
+* [Set-AcctDBConnection](../Set-AcctDBConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

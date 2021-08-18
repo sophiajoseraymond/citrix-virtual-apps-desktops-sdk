@@ -122,12 +122,12 @@ The BrokerApplication object represents a published application in the site. It 
 
 ## Related Commands
 
-* [New-BrokerApplication](./New-BrokerApplication/)
-* [Add-BrokerApplication](./Add-BrokerApplication/)
-* [Remove-BrokerApplication](./Remove-BrokerApplication/)
-* [Rename-BrokerApplication](./Rename-BrokerApplication/)
-* [Move-BrokerApplication](./Move-BrokerApplication/)
-* [Set-BrokerApplication](./Set-BrokerApplication/)
+* [New-BrokerApplication](../New-BrokerApplication/)
+* [Add-BrokerApplication](../Add-BrokerApplication/)
+* [Remove-BrokerApplication](../Remove-BrokerApplication/)
+* [Rename-BrokerApplication](../Rename-BrokerApplication/)
+* [Move-BrokerApplication](../Move-BrokerApplication/)
+* [Set-BrokerApplication](../Set-BrokerApplication/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

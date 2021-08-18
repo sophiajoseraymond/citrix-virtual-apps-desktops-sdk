@@ -13,10 +13,10 @@ Use Get-TrustServiceKey and look at the "LastUpdated" and "RotationNeeded" field
 
 ## Related Commands
 
-* [Register-TrustServiceKey](./Register-TrustServiceKey/)
-* [Get-TrustServiceKey](./Get-TrustServiceKey/)
-* [Unregister-TrustServiceKey](./Unregister-TrustServiceKey/)
-* [Revoke-TrustPreviousServiceKey](./Revoke-TrustPreviousServiceKey/)
+* [Register-TrustServiceKey](../Register-TrustServiceKey/)
+* [Get-TrustServiceKey](../Get-TrustServiceKey/)
+* [Unregister-TrustServiceKey](../Unregister-TrustServiceKey/)
+* [Revoke-TrustPreviousServiceKey](../Revoke-TrustPreviousServiceKey/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

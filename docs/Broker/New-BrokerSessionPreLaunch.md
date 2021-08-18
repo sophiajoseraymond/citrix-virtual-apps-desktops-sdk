@@ -15,9 +15,9 @@ Note that each desktop group can only have a single session pre-launch setting. 
 
 ## Related Commands
 
-* [Get-BrokerSessionPreLaunch](./Get-BrokerSessionPreLaunch/)
-* [Set-BrokerSessionPreLaunch](./Set-BrokerSessionPreLaunch/)
-* [Remove-BrokerSessionPreLaunch](./Remove-BrokerSessionPreLaunch/)
+* [Get-BrokerSessionPreLaunch](../Get-BrokerSessionPreLaunch/)
+* [Set-BrokerSessionPreLaunch](../Set-BrokerSessionPreLaunch/)
+* [Remove-BrokerSessionPreLaunch](../Remove-BrokerSessionPreLaunch/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

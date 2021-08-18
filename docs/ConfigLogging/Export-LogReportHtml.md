@@ -15,7 +15,7 @@ Details.Html - this shows additional logging data from the low level operation a
 
 ## Related Commands
 
-* [Export-LogReportCsv](./Export-LogReportCsv/)
+* [Export-LogReportCsv](../Export-LogReportCsv/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

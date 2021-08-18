@@ -11,7 +11,7 @@ Import-BrokerPolicyTemplates sets the site wide Citrix Group Policy templates. A
 
 ## Related Commands
 
-* [Export-BrokerPolicyTemplates](./Export-BrokerPolicyTemplates/)
+* [Export-BrokerPolicyTemplates](../Export-BrokerPolicyTemplates/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -43,8 +43,8 @@ If the service uses two data stores they can exist in the same database. You do 
 
 ## Related Commands
 
-* [Set-AcctDBConnection](./Set-AcctDBConnection/)
-* [Test-AcctDBConnection](./Test-AcctDBConnection/)
+* [Set-AcctDBConnection](../Set-AcctDBConnection/)
+* [Test-AcctDBConnection](../Test-AcctDBConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

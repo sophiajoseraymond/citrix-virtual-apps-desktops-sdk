@@ -43,8 +43,8 @@ If the service uses two data stores they can exist in the same database. You do 
 
 ## Related Commands
 
-* [Set-OrchDBConnection](./Set-OrchDBConnection/)
-* [Test-OrchDBConnection](./Test-OrchDBConnection/)
+* [Set-OrchDBConnection](../Set-OrchDBConnection/)
+* [Test-OrchDBConnection](../Test-OrchDBConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

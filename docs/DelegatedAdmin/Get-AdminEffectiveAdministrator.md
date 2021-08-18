@@ -15,7 +15,7 @@ Only enabled administrator records are returned.
 
 ## Related Commands
 
-* [Get-AdminAdministrator](./Get-AdminAdministrator/)
+* [Get-AdminAdministrator](../Get-AdminAdministrator/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

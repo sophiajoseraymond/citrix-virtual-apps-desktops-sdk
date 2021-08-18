@@ -11,9 +11,9 @@ Creates a GPO setting for a policy.
 
 ## Related Commands
 
-* [Get-BrokerGpoSetting](./Get-BrokerGpoSetting/)
-* [Set-BrokerGpoSetting](./Set-BrokerGpoSetting/)
-* [Remove-BrokerGpoSetting](./Remove-BrokerGpoSetting/)
+* [Get-BrokerGpoSetting](../Get-BrokerGpoSetting/)
+* [Set-BrokerGpoSetting](../Set-BrokerGpoSetting/)
+* [Remove-BrokerGpoSetting](../Remove-BrokerGpoSetting/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

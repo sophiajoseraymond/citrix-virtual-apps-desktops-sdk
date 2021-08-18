@@ -11,8 +11,8 @@ This cmdlet checks whether proposed RemotePCAccount OU is available for use. It 
 
 ## Related Commands
 
-* [Get-BrokerRemotePCAccount](./Get-BrokerRemotePCAccount/)
-* [New-BrokerRemotePCAccount](./New-BrokerRemotePCAccount/)
+* [Get-BrokerRemotePCAccount](../Get-BrokerRemotePCAccount/)
+* [New-BrokerRemotePCAccount](../New-BrokerRemotePCAccount/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

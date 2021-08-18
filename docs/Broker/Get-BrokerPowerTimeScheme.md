@@ -52,10 +52,10 @@ The BrokerPowerTimeScheme object represents a power time scheme, defining peak/o
 
 ## Related Commands
 
-* [New-BrokerPowerTimeScheme](./New-BrokerPowerTimeScheme/)
-* [Set-BrokerPowerTimeScheme](./Set-BrokerPowerTimeScheme/)
-* [Remove-BrokerPowerTimeScheme](./Remove-BrokerPowerTimeScheme/)
-* [Rename-BrokerPowerTimeScheme](./Rename-BrokerPowerTimeScheme/)
+* [New-BrokerPowerTimeScheme](../New-BrokerPowerTimeScheme/)
+* [Set-BrokerPowerTimeScheme](../Set-BrokerPowerTimeScheme/)
+* [Remove-BrokerPowerTimeScheme](../Remove-BrokerPowerTimeScheme/)
+* [Rename-BrokerPowerTimeScheme](../Rename-BrokerPowerTimeScheme/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

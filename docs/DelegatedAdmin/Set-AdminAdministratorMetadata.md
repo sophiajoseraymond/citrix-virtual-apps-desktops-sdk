@@ -21,7 +21,7 @@ Provides the ability for additional custom data to be stored against given Admin
 
 ## Related Commands
 
-* [Remove-AdminAdministratorMetadata](./Remove-AdminAdministratorMetadata/)
+* [Remove-AdminAdministratorMetadata](../Remove-AdminAdministratorMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

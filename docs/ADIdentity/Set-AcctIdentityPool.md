@@ -15,9 +15,9 @@ Note: When changing a naming scheme or naming scheme type, the index is not rese
 
 ## Related Commands
 
-* [New-AcctIdentityPool](./New-AcctIdentityPool/)
-* [Get-AcctIdentityPool](./Get-AcctIdentityPool/)
-* [Remove-AcctIdentityPool](./Remove-AcctIdentityPool/)
+* [New-AcctIdentityPool](../New-AcctIdentityPool/)
+* [Get-AcctIdentityPool](../Get-AcctIdentityPool/)
+* [Remove-AcctIdentityPool](../Remove-AcctIdentityPool/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

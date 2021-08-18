@@ -21,7 +21,7 @@ Provides the ability for additional custom data to be stored against given Ident
 
 ## Related Commands
 
-* [Remove-AcctIdentityPoolMetadata](./Remove-AcctIdentityPoolMetadata/)
+* [Remove-AcctIdentityPoolMetadata](../Remove-AcctIdentityPoolMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

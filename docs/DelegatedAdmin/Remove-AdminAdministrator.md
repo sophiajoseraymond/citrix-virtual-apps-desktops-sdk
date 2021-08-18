@@ -15,11 +15,11 @@ The Remove-AdminAdministrator cmdlet deletes administrators from the site.
 
 ## Related Commands
 
-* [New-AdminAdministrator](./New-AdminAdministrator/)
-* [Get-AdminAdministrator](./Get-AdminAdministrator/)
-* [Set-AdminAdministrator](./Set-AdminAdministrator/)
-* [Set-AdminAdministratorMetadata](./Set-AdminAdministratorMetadata/)
-* [Remove-AdminAdministratorMetadata](./Remove-AdminAdministratorMetadata/)
+* [New-AdminAdministrator](../New-AdminAdministrator/)
+* [Get-AdminAdministrator](../Get-AdminAdministrator/)
+* [Set-AdminAdministrator](../Set-AdminAdministrator/)
+* [Set-AdminAdministratorMetadata](../Set-AdminAdministratorMetadata/)
+* [Remove-AdminAdministratorMetadata](../Remove-AdminAdministratorMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -11,7 +11,7 @@ Retrieve VolumeServiceConfigurations whose properties match the given filter cri
 
 ## Related Commands
 
-* [Set-HypVolumeServiceConfiguration](./Set-HypVolumeServiceConfiguration/)
+* [Set-HypVolumeServiceConfiguration](../Set-HypVolumeServiceConfiguration/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

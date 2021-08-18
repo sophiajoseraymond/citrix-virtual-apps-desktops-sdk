@@ -13,9 +13,9 @@ Add email addresses to the existing policy specified and returns the updated pol
 
 ## Related Commands
 
-* [Get-MonitorNotificationPolicy](./Get-MonitorNotificationPolicy/)
-* [Set-MonitorNotificationPolicy](./Set-MonitorNotificationPolicy/)
-* [Remove-MonitorNotificationPolicy](./Remove-MonitorNotificationPolicy/)
+* [Get-MonitorNotificationPolicy](../Get-MonitorNotificationPolicy/)
+* [Set-MonitorNotificationPolicy](../Set-MonitorNotificationPolicy/)
+* [Remove-MonitorNotificationPolicy](../Remove-MonitorNotificationPolicy/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

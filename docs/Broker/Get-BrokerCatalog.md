@@ -92,11 +92,11 @@ See about\_Broker\_Machines for more information.
 
 ## Related Commands
 
-* [New-BrokerCatalog](./New-BrokerCatalog/)
-* [Remove-BrokerCatalog](./Remove-BrokerCatalog/)
-* [Rename-BrokerCatalog](./Rename-BrokerCatalog/)
-* [Set-BrokerCatalog](./Set-BrokerCatalog/)
-* [Add-BrokerTag](./Add-BrokerTag/)
+* [New-BrokerCatalog](../New-BrokerCatalog/)
+* [Remove-BrokerCatalog](../Remove-BrokerCatalog/)
+* [Rename-BrokerCatalog](../Rename-BrokerCatalog/)
+* [Set-BrokerCatalog](../Set-BrokerCatalog/)
+* [Add-BrokerTag](../Add-BrokerTag/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

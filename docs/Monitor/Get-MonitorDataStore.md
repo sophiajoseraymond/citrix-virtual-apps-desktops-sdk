@@ -13,7 +13,7 @@ A database connection must be configured in order for this command to be used if
 
 ## Related Commands
 
-* [Reset-MonitorDataStore](./Reset-MonitorDataStore/)
+* [Reset-MonitorDataStore](../Reset-MonitorDataStore/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -11,9 +11,9 @@ Changes the data of an existing GPO filter. No other properties of the filter ca
 
 ## Related Commands
 
-* [Get-BrokerGpoFilter](./Get-BrokerGpoFilter/)
-* [New-BrokerGpoFilter](./New-BrokerGpoFilter/)
-* [Remove-BrokerGpoFilter](./Remove-BrokerGpoFilter/)
+* [Get-BrokerGpoFilter](../Get-BrokerGpoFilter/)
+* [New-BrokerGpoFilter](../New-BrokerGpoFilter/)
+* [Remove-BrokerGpoFilter](../Remove-BrokerGpoFilter/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

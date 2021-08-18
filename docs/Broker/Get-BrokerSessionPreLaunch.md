@@ -48,9 +48,9 @@ The session pre-launch object returned represents a session pre-launch setting i
 
 ## Related Commands
 
-* [New-BrokerSessionPreLaunch](./New-BrokerSessionPreLaunch/)
-* [Set-BrokerSessionPreLaunch](./Set-BrokerSessionPreLaunch/)
-* [Remove-BrokerSessionPreLaunch](./Remove-BrokerSessionPreLaunch/)
+* [New-BrokerSessionPreLaunch](../New-BrokerSessionPreLaunch/)
+* [Set-BrokerSessionPreLaunch](../Set-BrokerSessionPreLaunch/)
+* [Remove-BrokerSessionPreLaunch](../Remove-BrokerSessionPreLaunch/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -11,8 +11,8 @@ Get-ConfigEnabledFeature [-BearerToken <String>] [-VirtualSiteId <String>] [-Adm
 
 ## Related Commands
 
-* [Set-ConfigSite](./Set-ConfigSite/)
-* [Import-ConfigFeatureTable](./Import-ConfigFeatureTable/)
+* [Set-ConfigSite](../Set-ConfigSite/)
+* [Import-ConfigFeatureTable](../Import-ConfigFeatureTable/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

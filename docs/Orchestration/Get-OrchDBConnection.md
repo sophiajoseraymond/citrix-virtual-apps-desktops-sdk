@@ -15,9 +15,9 @@ The current service instance is that on the local machine, or that explicitly sp
 
 ## Related Commands
 
-* [Get-OrchServiceStatus](./Get-OrchServiceStatus/)
-* [Set-OrchDBConnection](./Set-OrchDBConnection/)
-* [Test-OrchDBConnection](./Test-OrchDBConnection/)
+* [Get-OrchServiceStatus](../Get-OrchServiceStatus/)
+* [Set-OrchDBConnection](../Set-OrchDBConnection/)
+* [Test-OrchDBConnection](../Test-OrchDBConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

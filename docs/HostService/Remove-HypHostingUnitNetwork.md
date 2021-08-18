@@ -11,7 +11,7 @@ Use this command to remove networks from a hosting unit. This does not remove th
 
 ## Related Commands
 
-* [Add-HypHostingUnitNetwork](./Add-HypHostingUnitNetwork/)
+* [Add-HypHostingUnitNetwork](../Add-HypHostingUnitNetwork/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

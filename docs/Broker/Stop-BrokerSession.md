@@ -11,8 +11,8 @@ Stops or logs off sessions.
 
 ## Related Commands
 
-* [Disconnect-BrokerSession](./Disconnect-BrokerSession/)
-* [Get-BrokerSession](./Get-BrokerSession/)
+* [Disconnect-BrokerSession](../Disconnect-BrokerSession/)
+* [Get-BrokerSession](../Get-BrokerSession/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

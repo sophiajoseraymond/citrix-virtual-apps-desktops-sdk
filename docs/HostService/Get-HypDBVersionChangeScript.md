@@ -25,9 +25,9 @@ Once an update has been applied to the service schema, any existing Citrix Host 
 
 ## Related Commands
 
-* [Get-HypInstalledDBVersion](./Get-HypInstalledDBVersion/)
-* [Get-HypServiceStatus](./Get-HypServiceStatus/)
-* [Get-HypDBSchema](./Get-HypDBSchema/)
+* [Get-HypInstalledDBVersion](../Get-HypInstalledDBVersion/)
+* [Get-HypServiceStatus](../Get-HypServiceStatus/)
+* [Get-HypDBSchema](../Get-HypDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

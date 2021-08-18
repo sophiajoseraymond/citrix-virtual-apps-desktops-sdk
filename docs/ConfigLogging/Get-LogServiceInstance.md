@@ -13,8 +13,8 @@ You do not need to configure a database connection to use this command.
 
 ## Related Commands
 
-* [Get-LogServiceStatus](./Get-LogServiceStatus/)
-* [Reset-LogServiceGroupMembership](./Reset-LogServiceGroupMembership/)
+* [Get-LogServiceStatus](../Get-LogServiceStatus/)
+* [Reset-LogServiceGroupMembership](../Reset-LogServiceGroupMembership/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

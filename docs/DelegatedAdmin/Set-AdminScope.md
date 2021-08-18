@@ -19,12 +19,12 @@ To update the metadata associated with a scope, use the Set-AdminScopeMetadata a
 
 ## Related Commands
 
-* [New-AdminScope](./New-AdminScope/)
-* [Get-AdminScope](./Get-AdminScope/)
-* [Remove-AdminScope](./Remove-AdminScope/)
-* [Rename-AdminScope](./Rename-AdminScope/)
-* [Set-AdminScopeMetadata](./Set-AdminScopeMetadata/)
-* [Remove-AdminScopeMetadata](./Remove-AdminScopeMetadata/)
+* [New-AdminScope](../New-AdminScope/)
+* [Get-AdminScope](../Get-AdminScope/)
+* [Remove-AdminScope](../Remove-AdminScope/)
+* [Rename-AdminScope](../Rename-AdminScope/)
+* [Set-AdminScopeMetadata](../Set-AdminScopeMetadata/)
+* [Remove-AdminScopeMetadata](../Remove-AdminScopeMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

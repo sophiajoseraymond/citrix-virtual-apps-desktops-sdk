@@ -30,8 +30,8 @@ Also note that the MaxRecordCount, ReturnTotalRecordCount, Skip, and SortBy para
 
 ## Related Commands
 
-* [Get-BrokerDesktop](./Get-BrokerDesktop/)
-* [Group-Object](./Group-Object/)
+* [Get-BrokerDesktop](../Get-BrokerDesktop/)
+* [Group-Object](../Group-Object/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

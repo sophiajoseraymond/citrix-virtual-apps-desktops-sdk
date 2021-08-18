@@ -13,7 +13,7 @@ This mechanism is used for obtaining data that is not required frequently and/or
 
 ## Related Commands
 
-* [Get-Item](./Get-Item/)
+* [Get-Item](../Get-Item/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

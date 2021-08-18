@@ -17,7 +17,7 @@ Provides the ability to remove metadata from the given ServiceKey.
 
 ## Related Commands
 
-* [Set-TrustServiceKeyMetadata](./Set-TrustServiceKeyMetadata/)
+* [Set-TrustServiceKeyMetadata](../Set-TrustServiceKeyMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -17,10 +17,10 @@ Deleting a desktop rule does not remove machine assignments that have already be
 
 ## Related Commands
 
-* [New-BrokerAssignmentPolicyRule](./New-BrokerAssignmentPolicyRule/)
-* [Get-BrokerAssignmentPolicyRule](./Get-BrokerAssignmentPolicyRule/)
-* [Set-BrokerAssignmentPolicyRule](./Set-BrokerAssignmentPolicyRule/)
-* [Rename-BrokerAssignmentPolicyRule](./Rename-BrokerAssignmentPolicyRule/)
+* [New-BrokerAssignmentPolicyRule](../New-BrokerAssignmentPolicyRule/)
+* [Get-BrokerAssignmentPolicyRule](../Get-BrokerAssignmentPolicyRule/)
+* [Set-BrokerAssignmentPolicyRule](../Set-BrokerAssignmentPolicyRule/)
+* [Rename-BrokerAssignmentPolicyRule](../Rename-BrokerAssignmentPolicyRule/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -17,12 +17,12 @@ You cannot remove a zone that is marked as primary or has associated controllers
 
 ## Related Commands
 
-* [Get-ConfigZone](./Get-ConfigZone/)
-* [New-ConfigZone](./New-ConfigZone/)
-* [Set-ConfigZone](./Set-ConfigZone/)
-* [Rename-ConfigZone](./Rename-ConfigZone/)
-* [Set-ConfigSite](./Set-ConfigSite/)
-* [Set-ConfigService](./Set-ConfigService/)
+* [Get-ConfigZone](../Get-ConfigZone/)
+* [New-ConfigZone](../New-ConfigZone/)
+* [Set-ConfigZone](../Set-ConfigZone/)
+* [Rename-ConfigZone](../Rename-ConfigZone/)
+* [Set-ConfigSite](../Set-ConfigSite/)
+* [Set-ConfigService](../Set-ConfigService/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

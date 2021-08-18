@@ -25,9 +25,9 @@ Once an update has been applied to the service schema, any existing Citrix Orche
 
 ## Related Commands
 
-* [Get-OrchInstalledDBVersion](./Get-OrchInstalledDBVersion/)
-* [Get-OrchServiceStatus](./Get-OrchServiceStatus/)
-* [Get-OrchDBSchema](./Get-OrchDBSchema/)
+* [Get-OrchInstalledDBVersion](../Get-OrchInstalledDBVersion/)
+* [Get-OrchServiceStatus](../Get-OrchServiceStatus/)
+* [Get-OrchDBSchema](../Get-OrchDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

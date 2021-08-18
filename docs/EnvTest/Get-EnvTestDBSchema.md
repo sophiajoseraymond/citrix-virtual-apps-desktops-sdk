@@ -43,8 +43,8 @@ If the service uses two data stores they can exist in the same database. You do 
 
 ## Related Commands
 
-* [Set-EnvTestDBConnection](./Set-EnvTestDBConnection/)
-* [Test-EnvTestDBConnection](./Test-EnvTestDBConnection/)
+* [Set-EnvTestDBConnection](../Set-EnvTestDBConnection/)
+* [Test-EnvTestDBConnection](../Test-EnvTestDBConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

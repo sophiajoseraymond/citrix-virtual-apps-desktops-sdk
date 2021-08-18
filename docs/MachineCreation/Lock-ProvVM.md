@@ -13,9 +13,9 @@ Provides the ability to 'lock' a virtual machine with a tag string.  This stops 
 
 ## Related Commands
 
-* [UnLock-ProvVM](./UnLock-ProvVM/)
-* [Get-ProvVM](./Get-ProvVM/)
-* [Remove-ProvVM](./Remove-ProvVM/)
+* [UnLock-ProvVM](../UnLock-ProvVM/)
+* [Get-ProvVM](../Get-ProvVM/)
+* [Remove-ProvVM](../Remove-ProvVM/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -13,11 +13,11 @@ Provides the ability to remove an existing AppDisk, either the AppDisk name or t
 
 ## Related Commands
 
-* [Get-AppLibTask](./Get-AppLibTask/)
-* [New-AppLibAppDisk](./New-AppLibAppDisk/)
-* [Set-AppLibAppDisk](./Set-AppLibAppDisk/)
-* [Get-AppLibAppDisk](./Get-AppLibAppDisk/)
-* [Import-AppLibAppDisk](./Import-AppLibAppDisk/)
+* [Get-AppLibTask](../Get-AppLibTask/)
+* [New-AppLibAppDisk](../New-AppLibAppDisk/)
+* [Set-AppLibAppDisk](../Set-AppLibAppDisk/)
+* [Get-AppLibAppDisk](../Get-AppLibAppDisk/)
+* [Import-AppLibAppDisk](../Import-AppLibAppDisk/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

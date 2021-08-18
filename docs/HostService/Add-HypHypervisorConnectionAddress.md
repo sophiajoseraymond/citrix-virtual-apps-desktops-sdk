@@ -13,8 +13,8 @@ The addresses required are; XenServer - The address of the XenServer machines (m
 
 ## Related Commands
 
-* [Remove-HypHypervisorConnectionAddress](./Remove-HypHypervisorConnectionAddress/)
-* [Get-HypXenServerAddress](./Get-HypXenServerAddress/)
+* [Remove-HypHypervisorConnectionAddress](../Remove-HypHypervisorConnectionAddress/)
+* [Get-HypXenServerAddress](../Get-HypXenServerAddress/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

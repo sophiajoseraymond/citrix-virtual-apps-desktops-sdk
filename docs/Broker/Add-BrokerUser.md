@@ -18,8 +18,8 @@ The Add-BrokerUser cmdlet adds broker user objects to another specified object, 
 
 ## Related Commands
 
-* [Get-BrokerUser](./Get-BrokerUser/)
-* [Remove-BrokerUser](./Remove-BrokerUser/)
+* [Get-BrokerUser](../Get-BrokerUser/)
+* [Remove-BrokerUser](../Remove-BrokerUser/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

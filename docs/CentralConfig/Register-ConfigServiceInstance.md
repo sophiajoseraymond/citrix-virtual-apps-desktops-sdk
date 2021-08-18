@@ -17,13 +17,13 @@ If the service group specified by the service instance already exists, the servi
 
 ## Related Commands
 
-* [Unregister-ConfigRegisteredServiceInstance](./Unregister-ConfigRegisteredServiceInstance/)
-* [Add-ConfigRegisteredServiceInstanceMetadata](./Add-ConfigRegisteredServiceInstanceMetadata/)
-* [Set-ConfigRegisteredServiceInstanceMetadata](./Set-ConfigRegisteredServiceInstanceMetadata/)
-* [Remove-ConfigRegisteredServiceInstanceMetadata](./Remove-ConfigRegisteredServiceInstanceMetadata/)
-* [Add-ConfigServiceGroupMetadata](./Add-ConfigServiceGroupMetadata/)
-* [Set-ConfigServiceGroupMetadata](./Set-ConfigServiceGroupMetadata/)
-* [Remove-ConfigServiceGroupMetadata](./Remove-ConfigServiceGroupMetadata/)
+* [Unregister-ConfigRegisteredServiceInstance](../Unregister-ConfigRegisteredServiceInstance/)
+* [Add-ConfigRegisteredServiceInstanceMetadata](../Add-ConfigRegisteredServiceInstanceMetadata/)
+* [Set-ConfigRegisteredServiceInstanceMetadata](../Set-ConfigRegisteredServiceInstanceMetadata/)
+* [Remove-ConfigRegisteredServiceInstanceMetadata](../Remove-ConfigRegisteredServiceInstanceMetadata/)
+* [Add-ConfigServiceGroupMetadata](../Add-ConfigServiceGroupMetadata/)
+* [Set-ConfigServiceGroupMetadata](../Set-ConfigServiceGroupMetadata/)
+* [Remove-ConfigServiceGroupMetadata](../Remove-ConfigServiceGroupMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

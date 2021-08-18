@@ -11,10 +11,10 @@ Removes server from the cluster and propagates information to other servers. The
 
 ## Related Commands
 
-* [Get-SfCluster](./Get-SfCluster/)
-* [New-SfCluster](./New-SfCluster/)
-* [Add-SfServerToCluster](./Add-SfServerToCluster/)
-* [Set-SfCluster](./Set-SfCluster/)
+* [Get-SfCluster](../Get-SfCluster/)
+* [New-SfCluster](../New-SfCluster/)
+* [Add-SfServerToCluster](../Add-SfServerToCluster/)
+* [Set-SfCluster](../Set-SfCluster/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -17,9 +17,9 @@ The current service instance is that on the local machine, or that explicitly sp
 
 ## Related Commands
 
-* [Get-TrustServiceStatus](./Get-TrustServiceStatus/)
-* [Get-TrustDBConnection](./Get-TrustDBConnection/)
-* [Set-TrustDBConnection](./Set-TrustDBConnection/)
+* [Get-TrustServiceStatus](../Get-TrustServiceStatus/)
+* [Get-TrustDBConnection](../Get-TrustDBConnection/)
+* [Set-TrustDBConnection](../Set-TrustDBConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

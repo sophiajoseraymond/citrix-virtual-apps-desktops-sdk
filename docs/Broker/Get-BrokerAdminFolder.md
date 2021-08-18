@@ -38,8 +38,8 @@ A folder for use in the administration console for organising other objects. E.g
 
 ## Related Commands
 
-* [New-BrokerAdminFolder](./New-BrokerAdminFolder/)
-* [Remove-BrokerAdminFolder](./Remove-BrokerAdminFolder/)
+* [New-BrokerAdminFolder](../New-BrokerAdminFolder/)
+* [Remove-BrokerAdminFolder](../Remove-BrokerAdminFolder/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

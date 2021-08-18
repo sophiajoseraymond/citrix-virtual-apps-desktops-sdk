@@ -11,9 +11,9 @@ This cmdlet checks whether proposed ApplicationGroup Name is available for use. 
 
 ## Related Commands
 
-* [Get-BrokerApplicationGroup](./Get-BrokerApplicationGroup/)
-* [New-BrokerApplicationGroup](./New-BrokerApplicationGroup/)
-* [Rename-BrokerApplicationGroup](./Rename-BrokerApplicationGroup/)
+* [Get-BrokerApplicationGroup](../Get-BrokerApplicationGroup/)
+* [New-BrokerApplicationGroup](../New-BrokerApplicationGroup/)
+* [Rename-BrokerApplicationGroup](../Rename-BrokerApplicationGroup/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

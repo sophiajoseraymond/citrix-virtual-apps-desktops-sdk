@@ -43,8 +43,8 @@ If the service uses two data stores they can exist in the same database. You do 
 
 ## Related Commands
 
-* [Set-SfDBConnection](./Set-SfDBConnection/)
-* [Test-SfDBConnection](./Test-SfDBConnection/)
+* [Set-SfDBConnection](../Set-SfDBConnection/)
+* [Test-SfDBConnection](../Test-SfDBConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -43,9 +43,9 @@ If the service uses two data stores they can exist in the same database. You do 
 
 ## Related Commands
 
-* [Get-MonitorDataStore](./Get-MonitorDataStore/)
-* [Set-MonitorDBConnection](./Set-MonitorDBConnection/)
-* [Test-MonitorDBConnection](./Test-MonitorDBConnection/)
+* [Get-MonitorDataStore](../Get-MonitorDataStore/)
+* [Set-MonitorDBConnection](../Set-MonitorDBConnection/)
+* [Test-MonitorDBConnection](../Test-MonitorDBConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -11,10 +11,10 @@ Enables the status of the Host Service on the controller to be determined. The d
 
 ## Related Commands
 
-* [Set-HypDBConnection](./Set-HypDBConnection/)
-* [Test-HypDBConnection](./Test-HypDBConnection/)
-* [Get-HypDBConnection](./Get-HypDBConnection/)
-* [Get-HypDBSchema](./Get-HypDBSchema/)
+* [Set-HypDBConnection](../Set-HypDBConnection/)
+* [Test-HypDBConnection](../Test-HypDBConnection/)
+* [Get-HypDBConnection](../Get-HypDBConnection/)
+* [Get-HypDBSchema](../Get-HypDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -11,9 +11,9 @@ Use this cmdlet to retrieve the service instances currently registered with the 
 
 ## Related Commands
 
-* [Register-ConfigServiceInstance](./Register-ConfigServiceInstance/)
-* [Unregister-ConfigRegisteredServiceInstance](./Unregister-ConfigRegisteredServiceInstance/)
-* [Set-ConfigRegisteredServiceInstance](./Set-ConfigRegisteredServiceInstance/)
+* [Register-ConfigServiceInstance](../Register-ConfigServiceInstance/)
+* [Unregister-ConfigRegisteredServiceInstance](../Unregister-ConfigRegisteredServiceInstance/)
+* [Set-ConfigRegisteredServiceInstance](../Set-ConfigRegisteredServiceInstance/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

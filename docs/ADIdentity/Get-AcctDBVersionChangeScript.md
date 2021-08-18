@@ -25,9 +25,9 @@ Once an update has been applied to the service schema, any existing Citrix ADIde
 
 ## Related Commands
 
-* [Get-AcctInstalledDBVersion](./Get-AcctInstalledDBVersion/)
-* [Get-AcctServiceStatus](./Get-AcctServiceStatus/)
-* [Get-AcctDBSchema](./Get-AcctDBSchema/)
+* [Get-AcctInstalledDBVersion](../Get-AcctInstalledDBVersion/)
+* [Get-AcctServiceStatus](../Get-AcctServiceStatus/)
+* [Get-AcctDBSchema](../Get-AcctDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

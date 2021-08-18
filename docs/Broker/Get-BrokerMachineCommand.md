@@ -54,8 +54,8 @@ The command object returned represents a command handled by a specific service o
 
 ## Related Commands
 
-* [New-BrokerMachineCommand](./New-BrokerMachineCommand/)
-* [Remove-BrokerMachineCommand](./Remove-BrokerMachineCommand/)
+* [New-BrokerMachineCommand](../New-BrokerMachineCommand/)
+* [Remove-BrokerMachineCommand](../Remove-BrokerMachineCommand/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

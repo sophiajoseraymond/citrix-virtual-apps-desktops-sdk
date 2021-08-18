@@ -11,9 +11,9 @@ The Get-AdminEffectiveRight cmdlet returns the effective rights of the current u
 
 ## Related Commands
 
-* [Get-AdminAdministrator](./Get-AdminAdministrator/)
-* [Add-AdminRight](./Add-AdminRight/)
-* [Remove-AdminRight](./Remove-AdminRight/)
+* [Get-AdminAdministrator](../Get-AdminAdministrator/)
+* [Add-AdminRight](../Add-AdminRight/)
+* [Remove-AdminRight](../Remove-AdminRight/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

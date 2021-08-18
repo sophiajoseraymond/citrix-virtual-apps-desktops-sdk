@@ -13,10 +13,10 @@ An edge server is a machine which is running an agent service that performs a nu
 
 ## Related Commands
 
-* [Get-ConfigEdgeServer](./Get-ConfigEdgeServer/)
-* [Set-ConfigEdgeServer](./Set-ConfigEdgeServer/)
-* [Rename-ConfigEdgeServer](./Rename-ConfigEdgeServer/)
-* [Remove-ConfigEdgeServer](./Remove-ConfigEdgeServer/)
+* [Get-ConfigEdgeServer](../Get-ConfigEdgeServer/)
+* [Set-ConfigEdgeServer](../Set-ConfigEdgeServer/)
+* [Rename-ConfigEdgeServer](../Rename-ConfigEdgeServer/)
+* [Remove-ConfigEdgeServer](../Remove-ConfigEdgeServer/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

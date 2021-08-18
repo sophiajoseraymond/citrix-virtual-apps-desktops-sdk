@@ -21,8 +21,8 @@ If the ProvisioningScheme is not in a specified scope, that scope will be silent
 
 ## Related Commands
 
-* [Add-ProvSchemeScope](./Add-ProvSchemeScope/)
-* [Get-ProvScopedObject](./Get-ProvScopedObject/)
+* [Add-ProvSchemeScope](../Add-ProvSchemeScope/)
+* [Get-ProvScopedObject](../Get-ProvScopedObject/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

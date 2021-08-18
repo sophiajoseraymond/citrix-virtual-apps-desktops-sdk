@@ -17,7 +17,7 @@ Provides the ability for additional custom data to be stored against given Task 
 
 ## Related Commands
 
-* [Remove-SfTaskMetadata](./Remove-SfTaskMetadata/)
+* [Remove-SfTaskMetadata](../Remove-SfTaskMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

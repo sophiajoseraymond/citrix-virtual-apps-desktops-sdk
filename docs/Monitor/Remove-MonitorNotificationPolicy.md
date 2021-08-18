@@ -13,9 +13,9 @@ Removes the policy object from database by marking them as deleted and disable a
 
 ## Related Commands
 
-* [New-MonitorNotificationPolicy](./New-MonitorNotificationPolicy/)
-* [Get-MonitorNotificationPolicy](./Get-MonitorNotificationPolicy/)
-* [Set-MonitorNotificationRulePolicy](./Set-MonitorNotificationRulePolicy/)
+* [New-MonitorNotificationPolicy](../New-MonitorNotificationPolicy/)
+* [Get-MonitorNotificationPolicy](../Get-MonitorNotificationPolicy/)
+* [Set-MonitorNotificationRulePolicy](../Set-MonitorNotificationRulePolicy/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -11,10 +11,10 @@ Retrieves registered ServiceKey matching the specified criteria. If no parameter
 
 ## Related Commands
 
-* [Register-TrustServiceKey](./Register-TrustServiceKey/)
-* [Set-TrustServiceKeyRotation](./Set-TrustServiceKeyRotation/)
-* [Unregister-TrustServiceKey](./Unregister-TrustServiceKey/)
-* [Revoke-TrustPreviousServiceKey](./Revoke-TrustPreviousServiceKey/)
+* [Register-TrustServiceKey](../Register-TrustServiceKey/)
+* [Set-TrustServiceKeyRotation](../Set-TrustServiceKeyRotation/)
+* [Unregister-TrustServiceKey](../Unregister-TrustServiceKey/)
+* [Revoke-TrustPreviousServiceKey](../Revoke-TrustPreviousServiceKey/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

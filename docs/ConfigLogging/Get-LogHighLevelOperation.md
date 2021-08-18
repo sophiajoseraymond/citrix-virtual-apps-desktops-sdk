@@ -11,9 +11,9 @@ Retrieves high level operations matching the specified criteria. If no parameter
 
 ## Related Commands
 
-* [Start-LogHighLevelOperation](./Start-LogHighLevelOperation/)
-* [Stop-LogHighLevelOperation](./Stop-LogHighLevelOperation/)
-* [Get-LogLowLevelOperation](./Get-LogLowLevelOperation/)
+* [Start-LogHighLevelOperation](../Start-LogHighLevelOperation/)
+* [Stop-LogHighLevelOperation](../Stop-LogHighLevelOperation/)
+* [Get-LogLowLevelOperation](../Get-LogLowLevelOperation/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

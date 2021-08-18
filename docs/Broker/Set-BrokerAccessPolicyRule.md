@@ -17,10 +17,10 @@ Changing a rule does not affect existing user sessions, but it may result in use
 
 ## Related Commands
 
-* [New-BrokerAccessPolicyRule](./New-BrokerAccessPolicyRule/)
-* [Get-BrokerAccessPolicyRule](./Get-BrokerAccessPolicyRule/)
-* [Rename-BrokerAccessPolicyRule](./Rename-BrokerAccessPolicyRule/)
-* [Remove-BrokerAccessPolicyRule](./Remove-BrokerAccessPolicyRule/)
+* [New-BrokerAccessPolicyRule](../New-BrokerAccessPolicyRule/)
+* [Get-BrokerAccessPolicyRule](../Get-BrokerAccessPolicyRule/)
+* [Rename-BrokerAccessPolicyRule](../Rename-BrokerAccessPolicyRule/)
+* [Remove-BrokerAccessPolicyRule](../Remove-BrokerAccessPolicyRule/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

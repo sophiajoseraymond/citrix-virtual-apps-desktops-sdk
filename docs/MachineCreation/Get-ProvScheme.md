@@ -11,12 +11,12 @@ Lets you retrieve the list of defined provisioning schemes.
 
 ## Related Commands
 
-* [New-ProvScheme](./New-ProvScheme/)
-* [Remove-ProvScheme](./Remove-ProvScheme/)
-* [Add-ProvSchemeMetadata](./Add-ProvSchemeMetadata/)
-* [Remove-ProvSchemeMetadata](./Remove-ProvSchemeMetadata/)
-* [Add-ProvSchemeControllerAddress](./Add-ProvSchemeControllerAddress/)
-* [Remove-ProvSchemeControllerAddress](./Remove-ProvSchemeControllerAddress/)
+* [New-ProvScheme](../New-ProvScheme/)
+* [Remove-ProvScheme](../Remove-ProvScheme/)
+* [Add-ProvSchemeMetadata](../Add-ProvSchemeMetadata/)
+* [Remove-ProvSchemeMetadata](../Remove-ProvSchemeMetadata/)
+* [Add-ProvSchemeControllerAddress](../Add-ProvSchemeControllerAddress/)
+* [Remove-ProvSchemeControllerAddress](../Remove-ProvSchemeControllerAddress/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

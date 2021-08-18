@@ -15,8 +15,8 @@ Provides the ability to remove the record of previously used master VMs or snaps
 
 ## Related Commands
 
-* [Get-ProvSchemeMasterVMImageHistory](./Get-ProvSchemeMasterVMImageHistory/)
-* [Publish-ProvMasterVMImage](./Publish-ProvMasterVMImage/)
+* [Get-ProvSchemeMasterVMImageHistory](../Get-ProvSchemeMasterVMImageHistory/)
+* [Publish-ProvMasterVMImage](../Publish-ProvMasterVMImage/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

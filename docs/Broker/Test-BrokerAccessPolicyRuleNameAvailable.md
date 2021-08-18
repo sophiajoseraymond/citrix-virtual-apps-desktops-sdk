@@ -11,9 +11,9 @@ This cmdlet checks whether proposed AccessPolicyRule Name is available for use. 
 
 ## Related Commands
 
-* [Get-BrokerAccessPolicyRule](./Get-BrokerAccessPolicyRule/)
-* [New-BrokerAccessPolicyRule](./New-BrokerAccessPolicyRule/)
-* [Rename-BrokerAccessPolicyRule](./Rename-BrokerAccessPolicyRule/)
+* [Get-BrokerAccessPolicyRule](../Get-BrokerAccessPolicyRule/)
+* [New-BrokerAccessPolicyRule](../New-BrokerAccessPolicyRule/)
+* [Rename-BrokerAccessPolicyRule](../Rename-BrokerAccessPolicyRule/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

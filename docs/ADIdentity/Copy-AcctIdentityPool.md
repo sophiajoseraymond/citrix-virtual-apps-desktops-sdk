@@ -15,9 +15,9 @@ The new IdentityPool will contain all the accounts that were in the original poo
 
 ## Related Commands
 
-* [New-AcctIdentityPool](./New-AcctIdentityPool/)
-* [Get-AcctIdentityPool](./Get-AcctIdentityPool/)
-* [Remove-AcctIdentityPool](./Remove-AcctIdentityPool/)
+* [New-AcctIdentityPool](../New-AcctIdentityPool/)
+* [Get-AcctIdentityPool](../Get-AcctIdentityPool/)
+* [Remove-AcctIdentityPool](../Remove-AcctIdentityPool/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

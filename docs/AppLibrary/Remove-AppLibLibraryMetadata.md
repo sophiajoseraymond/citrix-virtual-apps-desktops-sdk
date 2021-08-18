@@ -23,7 +23,7 @@ Provides the ability to remove metadata from the given Library.
 
 ## Related Commands
 
-* [Set-AppLibLibraryMetadata](./Set-AppLibLibraryMetadata/)
+* [Set-AppLibLibraryMetadata](../Set-AppLibLibraryMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

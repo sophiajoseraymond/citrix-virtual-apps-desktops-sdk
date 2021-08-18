@@ -50,9 +50,9 @@ The BrokerApplicationInstance object represents an instance of a published appli
 
 ## Related Commands
 
-* [Get-BrokerApplication](./Get-BrokerApplication/)
-* [Get-BrokerDesktop](./Get-BrokerDesktop/)
-* [Get-BrokerSession](./Get-BrokerSession/)
+* [Get-BrokerApplication](../Get-BrokerApplication/)
+* [Get-BrokerDesktop](../Get-BrokerDesktop/)
+* [Get-BrokerSession](../Get-BrokerSession/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

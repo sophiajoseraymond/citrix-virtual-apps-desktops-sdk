@@ -34,9 +34,9 @@ A GPO policy object is a collection of VDA configurations that control how a VDA
 
 ## Related Commands
 
-* [New-BrokerGpoPolicy](./New-BrokerGpoPolicy/)
-* [Set-BrokerGpoPolicy](./Set-BrokerGpoPolicy/)
-* [Remove-BrokerGpoPolicy](./Remove-BrokerGpoPolicy/)
+* [New-BrokerGpoPolicy](../New-BrokerGpoPolicy/)
+* [Set-BrokerGpoPolicy](../Set-BrokerGpoPolicy/)
+* [Remove-BrokerGpoPolicy](../Remove-BrokerGpoPolicy/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

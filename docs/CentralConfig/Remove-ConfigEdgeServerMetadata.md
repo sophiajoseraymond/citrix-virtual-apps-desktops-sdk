@@ -21,7 +21,7 @@ Provides the ability to remove metadata from the given EdgeServer.
 
 ## Related Commands
 
-* [Set-ConfigEdgeServerMetadata](./Set-ConfigEdgeServerMetadata/)
+* [Set-ConfigEdgeServerMetadata](../Set-ConfigEdgeServerMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

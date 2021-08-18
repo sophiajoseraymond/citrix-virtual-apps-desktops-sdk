@@ -24,10 +24,10 @@ Even though only a single application entitlement and therefore session can be d
 
 ## Related Commands
 
-* [Get-BrokerAppEntitlementPolicyRule](./Get-BrokerAppEntitlementPolicyRule/)
-* [Set-BrokerAppEntitlementPolicyRule](./Set-BrokerAppEntitlementPolicyRule/)
-* [Rename-BrokerAppEntitlementPolicyRule](./Rename-BrokerAppEntitlementPolicyRule/)
-* [Remove-BrokerAppEntitlementPolicyRule](./Remove-BrokerAppEntitlementPolicyRule/)
+* [Get-BrokerAppEntitlementPolicyRule](../Get-BrokerAppEntitlementPolicyRule/)
+* [Set-BrokerAppEntitlementPolicyRule](../Set-BrokerAppEntitlementPolicyRule/)
+* [Rename-BrokerAppEntitlementPolicyRule](../Rename-BrokerAppEntitlementPolicyRule/)
+* [Remove-BrokerAppEntitlementPolicyRule](../Remove-BrokerAppEntitlementPolicyRule/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

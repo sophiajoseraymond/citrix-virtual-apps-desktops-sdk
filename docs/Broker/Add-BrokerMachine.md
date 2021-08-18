@@ -25,9 +25,9 @@ For more information about machines, see about\_Broker\_Machines.
 
 ## Related Commands
 
-* [Add-BrokerMachinesToDesktopGroup](./Add-BrokerMachinesToDesktopGroup/)
-* [Remove-BrokerMachine](./Remove-BrokerMachine/)
-* [Get-BrokerMachine](./Get-BrokerMachine/)
+* [Add-BrokerMachinesToDesktopGroup](../Add-BrokerMachinesToDesktopGroup/)
+* [Remove-BrokerMachine](../Remove-BrokerMachine/)
+* [Get-BrokerMachine](../Get-BrokerMachine/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -13,11 +13,11 @@ Associates one or more tags with a machine, application group, application, desk
 
 ## Related Commands
 
-* [Get-BrokerTag](./Get-BrokerTag/)
-* [New-BrokerTag](./New-BrokerTag/)
-* [Remove-BrokerTag](./Remove-BrokerTag/)
-* [Rename-BrokerTag](./Rename-BrokerTag/)
-* [Set-BrokerTag](./Set-BrokerTag/)
+* [Get-BrokerTag](../Get-BrokerTag/)
+* [New-BrokerTag](../New-BrokerTag/)
+* [Remove-BrokerTag](../Remove-BrokerTag/)
+* [Rename-BrokerTag](../Rename-BrokerTag/)
+* [Set-BrokerTag](../Set-BrokerTag/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

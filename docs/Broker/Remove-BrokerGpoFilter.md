@@ -11,9 +11,9 @@ Remove a GPO filter.
 
 ## Related Commands
 
-* [Get-BrokerGpoFilter](./Get-BrokerGpoFilter/)
-* [New-BrokerGpoFilter](./New-BrokerGpoFilter/)
-* [Set-BrokerGpoFilter](./Set-BrokerGpoFilter/)
+* [Get-BrokerGpoFilter](../Get-BrokerGpoFilter/)
+* [New-BrokerGpoFilter](../New-BrokerGpoFilter/)
+* [Set-BrokerGpoFilter](../Set-BrokerGpoFilter/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

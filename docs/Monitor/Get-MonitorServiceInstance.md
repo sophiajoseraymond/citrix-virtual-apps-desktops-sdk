@@ -13,8 +13,8 @@ You do not need to configure a database connection to use this command.
 
 ## Related Commands
 
-* [Get-MonitorServiceStatus](./Get-MonitorServiceStatus/)
-* [Reset-MonitorServiceGroupMembership](./Reset-MonitorServiceGroupMembership/)
+* [Get-MonitorServiceStatus](../Get-MonitorServiceStatus/)
+* [Reset-MonitorServiceGroupMembership](../Reset-MonitorServiceGroupMembership/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

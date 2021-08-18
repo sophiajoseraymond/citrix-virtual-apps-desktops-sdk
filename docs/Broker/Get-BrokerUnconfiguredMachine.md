@@ -42,7 +42,7 @@ An unconfigured machine is a machine that has registered with the site but is no
 
 ## Related Commands
 
-* [Get-BrokerMachine](./Get-BrokerMachine/)
+* [Get-BrokerMachine](../Get-BrokerMachine/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

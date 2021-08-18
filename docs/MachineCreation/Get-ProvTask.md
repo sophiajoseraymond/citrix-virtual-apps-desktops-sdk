@@ -11,11 +11,11 @@ Returns a list of tasks that have run or are currently running within the Machin
 
 ## Related Commands
 
-* [Remove-ProvTask](./Remove-ProvTask/)
-* [Stop-ProvTask](./Stop-ProvTask/)
-* [Switch-ProvTask](./Switch-ProvTask/)
-* [Add-ProvTaskMetadata](./Add-ProvTaskMetadata/)
-* [Remove-ProvTaskMetadata](./Remove-ProvTaskMetadata/)
+* [Remove-ProvTask](../Remove-ProvTask/)
+* [Stop-ProvTask](../Stop-ProvTask/)
+* [Switch-ProvTask](../Switch-ProvTask/)
+* [Add-ProvTaskMetadata](../Add-ProvTaskMetadata/)
+* [Remove-ProvTaskMetadata](../Remove-ProvTaskMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
