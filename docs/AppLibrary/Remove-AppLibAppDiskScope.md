@@ -21,8 +21,8 @@ If the AppDisk is not in a specified scope, that scope will be silently ignored.
 
 ## Related Commands
 
-* [Add-AppLibAppDiskScope](./Add-AppLibAppDiskScope/)
-* [Get-AppLibScopedObject](./Get-AppLibScopedObject/)
+* [Add-AppLibAppDiskScope](../Add-AppLibAppDiskScope/)
+* [Get-AppLibScopedObject](../Get-AppLibScopedObject/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

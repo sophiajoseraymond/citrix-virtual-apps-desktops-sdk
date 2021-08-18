@@ -17,10 +17,10 @@ Deleting a rule does not affect existing sessions launched using the rule, but u
 
 ## Related Commands
 
-* [New-BrokerEntitlementPolicyRule](./New-BrokerEntitlementPolicyRule/)
-* [Get-BrokerEntitlementPolicyRule](./Get-BrokerEntitlementPolicyRule/)
-* [Set-BrokerEntitlementPolicyRule](./Set-BrokerEntitlementPolicyRule/)
-* [Rename-BrokerEntitlementPolicyRule](./Rename-BrokerEntitlementPolicyRule/)
+* [New-BrokerEntitlementPolicyRule](../New-BrokerEntitlementPolicyRule/)
+* [Get-BrokerEntitlementPolicyRule](../Get-BrokerEntitlementPolicyRule/)
+* [Set-BrokerEntitlementPolicyRule](../Set-BrokerEntitlementPolicyRule/)
+* [Rename-BrokerEntitlementPolicyRule](../Rename-BrokerEntitlementPolicyRule/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

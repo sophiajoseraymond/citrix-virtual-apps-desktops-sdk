@@ -13,9 +13,9 @@ The Set-BrokerRebootSchedule cmdlet is used to alter the settings of an existing
 
 ## Related Commands
 
-* [Get-BrokerRebootSchedule](./Get-BrokerRebootSchedule/)
-* [New-BrokerRebootSchedule](./New-BrokerRebootSchedule/)
-* [Remove-BrokerRebootSchedule](./Remove-BrokerRebootSchedule/)
+* [Get-BrokerRebootSchedule](../Get-BrokerRebootSchedule/)
+* [New-BrokerRebootSchedule](../New-BrokerRebootSchedule/)
+* [Remove-BrokerRebootSchedule](../Remove-BrokerRebootSchedule/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

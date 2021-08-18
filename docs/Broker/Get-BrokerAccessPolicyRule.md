@@ -78,10 +78,10 @@ A BrokerAccessPolicyRule object represents a single rule within the site's acces
 
 ## Related Commands
 
-* [New-BrokerAccessPolicyRule](./New-BrokerAccessPolicyRule/)
-* [Set-BrokerAccessPolicyRule](./Set-BrokerAccessPolicyRule/)
-* [Rename-BrokerAccessPolicyRule](./Rename-BrokerAccessPolicyRule/)
-* [Remove-BrokerAccessPolicyRule](./Remove-BrokerAccessPolicyRule/)
+* [New-BrokerAccessPolicyRule](../New-BrokerAccessPolicyRule/)
+* [Set-BrokerAccessPolicyRule](../Set-BrokerAccessPolicyRule/)
+* [Rename-BrokerAccessPolicyRule](../Rename-BrokerAccessPolicyRule/)
+* [Remove-BrokerAccessPolicyRule](../Remove-BrokerAccessPolicyRule/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

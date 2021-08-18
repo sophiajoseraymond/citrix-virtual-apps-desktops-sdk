@@ -13,9 +13,9 @@ Creating a reboot cycle for catalog ensures that all machines in the catalog are
 
 ## Related Commands
 
-* [Start-BrokerDesktopGroupRebootCycle](./Start-BrokerDesktopGroupRebootCycle/)
-* [Stop-BrokerRebootCycle](./Stop-BrokerRebootCycle/)
-* [Get-BrokerRebootCycle](./Get-BrokerRebootCycle/)
+* [Start-BrokerDesktopGroupRebootCycle](../Start-BrokerDesktopGroupRebootCycle/)
+* [Stop-BrokerRebootCycle](../Stop-BrokerRebootCycle/)
+* [Get-BrokerRebootCycle](../Get-BrokerRebootCycle/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

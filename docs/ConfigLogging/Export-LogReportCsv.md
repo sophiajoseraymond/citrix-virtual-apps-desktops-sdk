@@ -11,7 +11,7 @@ This cmdlet exports the Configuration Logging data into a CSV data file. The hie
 
 ## Related Commands
 
-* [Export-LogReportHtml](./Export-LogReportHtml/)
+* [Export-LogReportHtml](../Export-LogReportHtml/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

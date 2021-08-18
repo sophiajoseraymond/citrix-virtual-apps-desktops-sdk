@@ -11,9 +11,9 @@ This cmdlet checks whether proposed Application Name is available for use. It re
 
 ## Related Commands
 
-* [Get-BrokerApplication](./Get-BrokerApplication/)
-* [New-BrokerApplication](./New-BrokerApplication/)
-* [Rename-BrokerApplication](./Rename-BrokerApplication/)
+* [Get-BrokerApplication](../Get-BrokerApplication/)
+* [New-BrokerApplication](../New-BrokerApplication/)
+* [Rename-BrokerApplication](../Rename-BrokerApplication/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

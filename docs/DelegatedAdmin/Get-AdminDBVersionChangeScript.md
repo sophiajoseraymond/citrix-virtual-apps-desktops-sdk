@@ -25,9 +25,9 @@ Once an update has been applied to the service schema, any existing Citrix Deleg
 
 ## Related Commands
 
-* [Get-AdminInstalledDBVersion](./Get-AdminInstalledDBVersion/)
-* [Get-AdminServiceStatus](./Get-AdminServiceStatus/)
-* [Get-AdminDBSchema](./Get-AdminDBSchema/)
+* [Get-AdminInstalledDBVersion](../Get-AdminInstalledDBVersion/)
+* [Get-AdminServiceStatus](../Get-AdminServiceStatus/)
+* [Get-AdminDBSchema](../Get-AdminDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -15,13 +15,13 @@ For any automatic power management settings of a desktop group to take effect, t
 
 ## Related Commands
 
-* [Get-BrokerDesktopGroup](./Get-BrokerDesktopGroup/)
-* [Set-BrokerDesktopGroup](./Set-BrokerDesktopGroup/)
-* [Rename-BrokerDesktopGroup](./Rename-BrokerDesktopGroup/)
-* [Remove-BrokerDesktopGroup](./Remove-BrokerDesktopGroup/)
-* [Add-BrokerMachine](./Add-BrokerMachine/)
-* [Add-BrokerMachinesToDesktopGroup](./Add-BrokerMachinesToDesktopGroup/)
-* [Get-BrokerSite](./Get-BrokerSite/)
+* [Get-BrokerDesktopGroup](../Get-BrokerDesktopGroup/)
+* [Set-BrokerDesktopGroup](../Set-BrokerDesktopGroup/)
+* [Rename-BrokerDesktopGroup](../Rename-BrokerDesktopGroup/)
+* [Remove-BrokerDesktopGroup](../Remove-BrokerDesktopGroup/)
+* [Add-BrokerMachine](../Add-BrokerMachine/)
+* [Add-BrokerMachinesToDesktopGroup](../Add-BrokerMachinesToDesktopGroup/)
+* [Get-BrokerSite](../Get-BrokerSite/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

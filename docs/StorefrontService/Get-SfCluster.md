@@ -11,10 +11,10 @@ Gets all Storefront clusters present in the site. There is one special Cluster w
 
 ## Related Commands
 
-* [New-SfCluster](./New-SfCluster/)
-* [Add-SfServerToCluster](./Add-SfServerToCluster/)
-* [Remove-SfServerFromCluster](./Remove-SfServerFromCluster/)
-* [Set-SfCluster](./Set-SfCluster/)
+* [New-SfCluster](../New-SfCluster/)
+* [Add-SfServerToCluster](../Add-SfServerToCluster/)
+* [Remove-SfServerFromCluster](../Remove-SfServerFromCluster/)
+* [Set-SfCluster](../Set-SfCluster/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

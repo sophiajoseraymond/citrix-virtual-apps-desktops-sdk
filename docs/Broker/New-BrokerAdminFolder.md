@@ -15,8 +15,8 @@ The following special characters are not allowed in the FolderName: \\ / ; : # .
 
 ## Related Commands
 
-* [Get-BrokerAdminFolder](./Get-BrokerAdminFolder/)
-* [Remove-BrokerAdminFolder](./Remove-BrokerAdminFolder/)
+* [Get-BrokerAdminFolder](../Get-BrokerAdminFolder/)
+* [Remove-BrokerAdminFolder](../Remove-BrokerAdminFolder/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

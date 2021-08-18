@@ -17,10 +17,10 @@ The following special characters are not allowed in the name: \\ / ; : # . \* ? 
 
 ## Related Commands
 
-* [New-ConfigEdgeServer](./New-ConfigEdgeServer/)
-* [Set-ConfigEdgeServer](./Set-ConfigEdgeServer/)
-* [Get-ConfigEdgeServer](./Get-ConfigEdgeServer/)
-* [Remove-ConfigEdgeServer](./Remove-ConfigEdgeServer/)
+* [New-ConfigEdgeServer](../New-ConfigEdgeServer/)
+* [Set-ConfigEdgeServer](../Set-ConfigEdgeServer/)
+* [Get-ConfigEdgeServer](../Get-ConfigEdgeServer/)
+* [Remove-ConfigEdgeServer](../Remove-ConfigEdgeServer/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

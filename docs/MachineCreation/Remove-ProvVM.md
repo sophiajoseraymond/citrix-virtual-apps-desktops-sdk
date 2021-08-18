@@ -13,8 +13,8 @@ Lets you remove VMs from the Machine Creation Services and the hypervisor that t
 
 ## Related Commands
 
-* [Get-ProvVM](./Get-ProvVM/)
-* [New-ProvVM](./New-ProvVM/)
+* [Get-ProvVM](../Get-ProvVM/)
+* [New-ProvVM](../New-ProvVM/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

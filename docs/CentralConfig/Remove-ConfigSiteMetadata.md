@@ -13,7 +13,7 @@ Provides the ability to remove metadata from the given Site.
 
 ## Related Commands
 
-* [Set-ConfigSiteMetadata](./Set-ConfigSiteMetadata/)
+* [Set-ConfigSiteMetadata](../Set-ConfigSiteMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

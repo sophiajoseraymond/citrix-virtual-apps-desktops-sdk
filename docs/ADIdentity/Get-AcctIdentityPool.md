@@ -11,10 +11,10 @@ Provides the ability to locate existing identity pools.
 
 ## Related Commands
 
-* [New-AcctIdentityPool](./New-AcctIdentityPool/)
-* [Remove-AcctIdentityPool](./Remove-AcctIdentityPool/)
-* [Rename-AcctIdentityPool](./Rename-AcctIdentityPool/)
-* [Set-AcctIdentityPool](./Set-AcctIdentityPool/)
+* [New-AcctIdentityPool](../New-AcctIdentityPool/)
+* [Remove-AcctIdentityPool](../Remove-AcctIdentityPool/)
+* [Rename-AcctIdentityPool](../Rename-AcctIdentityPool/)
+* [Set-AcctIdentityPool](../Set-AcctIdentityPool/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

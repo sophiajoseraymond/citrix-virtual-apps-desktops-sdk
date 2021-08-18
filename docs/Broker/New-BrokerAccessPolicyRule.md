@@ -19,10 +19,10 @@ For a user to gain access to a desktop group via a rule their connection must ma
 
 ## Related Commands
 
-* [Get-BrokerAccessPolicyRule](./Get-BrokerAccessPolicyRule/)
-* [Set-BrokerAccessPolicyRule](./Set-BrokerAccessPolicyRule/)
-* [Rename-BrokerAccessPolicyRule](./Rename-BrokerAccessPolicyRule/)
-* [Remove-BrokerAccessPolicyRule](./Remove-BrokerAccessPolicyRule/)
+* [Get-BrokerAccessPolicyRule](../Get-BrokerAccessPolicyRule/)
+* [Set-BrokerAccessPolicyRule](../Set-BrokerAccessPolicyRule/)
+* [Rename-BrokerAccessPolicyRule](../Rename-BrokerAccessPolicyRule/)
+* [Remove-BrokerAccessPolicyRule](../Remove-BrokerAccessPolicyRule/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

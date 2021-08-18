@@ -43,10 +43,10 @@ The BrokerAppEntitlementPolicyRule object represents a single application rule w
 
 ## Related Commands
 
-* [New-BrokerAppEntitlementPolicyRule](./New-BrokerAppEntitlementPolicyRule/)
-* [Set-BrokerAppEntitlementPolicyRule](./Set-BrokerAppEntitlementPolicyRule/)
-* [Rename-BrokerAppEntitlementPolicyRule](./Rename-BrokerAppEntitlementPolicyRule/)
-* [Remove-BrokerAppEntitlementPolicyRule](./Remove-BrokerAppEntitlementPolicyRule/)
+* [New-BrokerAppEntitlementPolicyRule](../New-BrokerAppEntitlementPolicyRule/)
+* [Set-BrokerAppEntitlementPolicyRule](../Set-BrokerAppEntitlementPolicyRule/)
+* [Rename-BrokerAppEntitlementPolicyRule](../Rename-BrokerAppEntitlementPolicyRule/)
+* [Remove-BrokerAppEntitlementPolicyRule](../Remove-BrokerAppEntitlementPolicyRule/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

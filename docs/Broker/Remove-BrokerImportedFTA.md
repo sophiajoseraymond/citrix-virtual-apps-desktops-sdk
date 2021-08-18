@@ -15,8 +15,8 @@ Imported file type associations are different from configured file type associat
 
 ## Related Commands
 
-* [Get-BrokerImportedFTA](./Get-BrokerImportedFTA/)
-* [Update-BrokerImportedFTA](./Update-BrokerImportedFTA/)
+* [Get-BrokerImportedFTA](../Get-BrokerImportedFTA/)
+* [Update-BrokerImportedFTA](../Update-BrokerImportedFTA/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -17,8 +17,8 @@ Both the catalog and desktop group can be referenced either by instance, name, o
 
 ## Related Commands
 
-* [Add-BrokerMachine](./Add-BrokerMachine/)
-* [Remove-BrokerMachine](./Remove-BrokerMachine/)
+* [Add-BrokerMachine](../Add-BrokerMachine/)
+* [Remove-BrokerMachine](../Remove-BrokerMachine/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

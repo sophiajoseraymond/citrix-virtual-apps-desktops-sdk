@@ -118,8 +118,8 @@ The BrokerSite object represents logical representation of the XenDesktop site. 
 
 ## Related Commands
 
-* [Set-BrokerSite](./Set-BrokerSite/)
-* [Get-BrokerIcon](./Get-BrokerIcon/)
+* [Set-BrokerSite](../Set-BrokerSite/)
+* [Get-BrokerIcon](../Get-BrokerIcon/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

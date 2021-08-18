@@ -11,8 +11,8 @@ Use this command to check that the proposed name for a hosting unit is unused. T
 
 ## Related Commands
 
-* [New-Item](./New-Item/)
-* [Rename-Item](./Rename-Item/)
+* [New-Item](../New-Item/)
+* [Rename-Item](../Rename-Item/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

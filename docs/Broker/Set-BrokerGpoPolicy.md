@@ -11,9 +11,9 @@ The Set-BrokerGpoPolicy cmdlet is used to disable or enable an existing GPO poli
 
 ## Related Commands
 
-* [Get-BrokerGpoPolicy](./Get-BrokerGpoPolicy/)
-* [New-BrokerGpoPolicy](./New-BrokerGpoPolicy/)
-* [Remove-BrokerGpoPolicy](./Remove-BrokerGpoPolicy/)
+* [Get-BrokerGpoPolicy](../Get-BrokerGpoPolicy/)
+* [New-BrokerGpoPolicy](../New-BrokerGpoPolicy/)
+* [Remove-BrokerGpoPolicy](../Remove-BrokerGpoPolicy/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

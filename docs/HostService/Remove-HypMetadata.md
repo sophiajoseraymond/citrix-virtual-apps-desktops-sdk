@@ -11,7 +11,7 @@ Use this command to remove custom data from a specific hosting unit or hyperviso
 
 ## Related Commands
 
-* [Remove-HypMetadata](./Remove-HypMetadata/)
+* [Remove-HypMetadata](../Remove-HypMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

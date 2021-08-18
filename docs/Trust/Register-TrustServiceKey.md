@@ -11,11 +11,11 @@ Creates a new trusted Service Key. If this is a Service Key with the ServiceName
 
 ## Related Commands
 
-* [Get-TrustServiceKey](./Get-TrustServiceKey/)
-* [Set-TrustServiceKeyRotation](./Set-TrustServiceKeyRotation/)
-* [Unregister-TrustServiceKey](./Unregister-TrustServiceKey/)
-* [Revoke-TrustPreviousServiceKey](./Revoke-TrustPreviousServiceKey/)
-* [Get-ConfigEdgeServer](./Get-ConfigEdgeServer/)
+* [Get-TrustServiceKey](../Get-TrustServiceKey/)
+* [Set-TrustServiceKeyRotation](../Set-TrustServiceKeyRotation/)
+* [Unregister-TrustServiceKey](../Unregister-TrustServiceKey/)
+* [Revoke-TrustPreviousServiceKey](../Revoke-TrustPreviousServiceKey/)
+* [Get-ConfigEdgeServer](../Get-ConfigEdgeServer/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -17,10 +17,10 @@ Changing a desktop rule does not alter machine assignments that have already bee
 
 ## Related Commands
 
-* [New-BrokerAssignmentPolicyRule](./New-BrokerAssignmentPolicyRule/)
-* [Get-BrokerAssignmentPolicyRule](./Get-BrokerAssignmentPolicyRule/)
-* [Rename-BrokerAssignmentPolicyRule](./Rename-BrokerAssignmentPolicyRule/)
-* [Remove-BrokerAssignmentPolicyRule](./Remove-BrokerAssignmentPolicyRule/)
+* [New-BrokerAssignmentPolicyRule](../New-BrokerAssignmentPolicyRule/)
+* [Get-BrokerAssignmentPolicyRule](../Get-BrokerAssignmentPolicyRule/)
+* [Rename-BrokerAssignmentPolicyRule](../Rename-BrokerAssignmentPolicyRule/)
+* [Remove-BrokerAssignmentPolicyRule](../Remove-BrokerAssignmentPolicyRule/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

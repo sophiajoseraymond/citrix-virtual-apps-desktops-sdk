@@ -21,7 +21,7 @@ Provides the ability for additional custom data to be stored against given AppDi
 
 ## Related Commands
 
-* [Remove-AppLibAppDiskMetadata](./Remove-AppLibAppDiskMetadata/)
+* [Remove-AppLibAppDiskMetadata](../Remove-AppLibAppDiskMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

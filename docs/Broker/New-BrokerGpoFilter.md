@@ -11,9 +11,9 @@ Creates a GPO filter for a policy to specify how the policy should be applied.
 
 ## Related Commands
 
-* [Get-BrokerGpoFilter](./Get-BrokerGpoFilter/)
-* [Set-BrokerGpoFilter](./Set-BrokerGpoFilter/)
-* [Remove-BrokerGpoFilter](./Remove-BrokerGpoFilter/)
+* [Get-BrokerGpoFilter](../Get-BrokerGpoFilter/)
+* [Set-BrokerGpoFilter](../Set-BrokerGpoFilter/)
+* [Remove-BrokerGpoFilter](../Remove-BrokerGpoFilter/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

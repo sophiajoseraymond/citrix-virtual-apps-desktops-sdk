@@ -13,7 +13,7 @@ Role configurations are part of the product configuration and define what permis
 
 ## Related Commands
 
-* [Import-AdminRoleConfiguration](./Import-AdminRoleConfiguration/)
+* [Import-AdminRoleConfiguration](../Import-AdminRoleConfiguration/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

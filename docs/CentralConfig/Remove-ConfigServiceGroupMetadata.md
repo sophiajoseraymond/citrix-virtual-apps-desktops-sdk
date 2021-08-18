@@ -17,8 +17,8 @@ Provides the ability to remove metadata from the given ServiceGroup.
 
 ## Related Commands
 
-* [Add-ConfigServiceGroupMetadata](./Add-ConfigServiceGroupMetadata/)
-* [Set-ConfigServiceGroupMetadata](./Set-ConfigServiceGroupMetadata/)
+* [Add-ConfigServiceGroupMetadata](../Add-ConfigServiceGroupMetadata/)
+* [Set-ConfigServiceGroupMetadata](../Set-ConfigServiceGroupMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

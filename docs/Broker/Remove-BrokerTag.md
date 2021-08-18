@@ -19,11 +19,11 @@ To delete a tag entirely, together with any associations between the tag and oth
 
 ## Related Commands
 
-* [Add-BrokerTag](./Add-BrokerTag/)
-* [Get-BrokerTag](./Get-BrokerTag/)
-* [New-BrokerTag](./New-BrokerTag/)
-* [Rename-BrokerTag](./Rename-BrokerTag/)
-* [Set-BrokerTag](./Set-BrokerTag/)
+* [Add-BrokerTag](../Add-BrokerTag/)
+* [Get-BrokerTag](../Get-BrokerTag/)
+* [New-BrokerTag](../New-BrokerTag/)
+* [Rename-BrokerTag](../Rename-BrokerTag/)
+* [Set-BrokerTag](../Set-BrokerTag/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

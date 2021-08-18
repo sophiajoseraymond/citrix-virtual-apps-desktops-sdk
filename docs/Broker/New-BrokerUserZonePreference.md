@@ -15,10 +15,10 @@ Subject to the configuration of the desktop groups in use, and the availability 
 
 ## Related Commands
 
-* [Get-BrokerUserZonePreference](./Get-BrokerUserZonePreference/)
-* [Set-BrokerUserZonePreference](./Set-BrokerUserZonePreference/)
-* [Remove-BrokerUserZonePreference](./Remove-BrokerUserZonePreference/)
-* [Get-BrokerUser](./Get-BrokerUser/)
+* [Get-BrokerUserZonePreference](../Get-BrokerUserZonePreference/)
+* [Set-BrokerUserZonePreference](../Set-BrokerUserZonePreference/)
+* [Remove-BrokerUserZonePreference](../Remove-BrokerUserZonePreference/)
+* [Get-BrokerUser](../Get-BrokerUser/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

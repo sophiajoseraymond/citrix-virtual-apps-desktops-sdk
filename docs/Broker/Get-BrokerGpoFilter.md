@@ -28,9 +28,9 @@ A GPO filter specifies how the policy should be applied based on the properties 
 
 ## Related Commands
 
-* [New-BrokerGpoFilter](./New-BrokerGpoFilter/)
-* [Set-BrokerGpoFilter](./Set-BrokerGpoFilter/)
-* [Remove-BrokerGpoFilter](./Remove-BrokerGpoFilter/)
+* [New-BrokerGpoFilter](../New-BrokerGpoFilter/)
+* [Set-BrokerGpoFilter](../Set-BrokerGpoFilter/)
+* [Remove-BrokerGpoFilter](../Remove-BrokerGpoFilter/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

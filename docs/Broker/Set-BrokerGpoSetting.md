@@ -11,9 +11,9 @@ Changes the state and/or value of an existing GPO setting.
 
 ## Related Commands
 
-* [Get-BrokerGpoSetting](./Get-BrokerGpoSetting/)
-* [New-BrokerGpoSetting](./New-BrokerGpoSetting/)
-* [Remove-BrokerGpoSetting](./Remove-BrokerGpoSetting/)
+* [Get-BrokerGpoSetting](../Get-BrokerGpoSetting/)
+* [New-BrokerGpoSetting](../New-BrokerGpoSetting/)
+* [Remove-BrokerGpoSetting](../Remove-BrokerGpoSetting/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

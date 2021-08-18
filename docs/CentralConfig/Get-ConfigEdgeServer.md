@@ -11,10 +11,10 @@ Retrieves Edge Servers matching the specified criteria. If no parameters specifi
 
 ## Related Commands
 
-* [New-ConfigEdgeServer](./New-ConfigEdgeServer/)
-* [Set-ConfigEdgeServer](./Set-ConfigEdgeServer/)
-* [Rename-ConfigEdgeServer](./Rename-ConfigEdgeServer/)
-* [Remove-ConfigEdgeServer](./Remove-ConfigEdgeServer/)
+* [New-ConfigEdgeServer](../New-ConfigEdgeServer/)
+* [Set-ConfigEdgeServer](../Set-ConfigEdgeServer/)
+* [Rename-ConfigEdgeServer](../Rename-ConfigEdgeServer/)
+* [Remove-ConfigEdgeServer](../Remove-ConfigEdgeServer/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

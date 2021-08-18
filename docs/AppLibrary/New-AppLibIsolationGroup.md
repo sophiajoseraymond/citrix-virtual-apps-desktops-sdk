@@ -11,9 +11,9 @@ The isolation group will be added to the library
 
 ## Related Commands
 
-* [Remove-AppLibIsolationGroup](./Remove-AppLibIsolationGroup/)
-* [Set-AppLibIsolationGroup](./Set-AppLibIsolationGroup/)
-* [Set-AppLibIsolationGroupPackage](./Set-AppLibIsolationGroupPackage/)
+* [Remove-AppLibIsolationGroup](../Remove-AppLibIsolationGroup/)
+* [Set-AppLibIsolationGroup](../Set-AppLibIsolationGroup/)
+* [Set-AppLibIsolationGroupPackage](../Set-AppLibIsolationGroupPackage/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

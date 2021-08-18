@@ -46,10 +46,10 @@ The reboot schedule object returned represents a regularly scheduled reboot of m
 
 ## Related Commands
 
-* [Set-BrokerRebootSchedule](./Set-BrokerRebootSchedule/)
-* [New-BrokerRebootSchedule](./New-BrokerRebootSchedule/)
-* [Remove-BrokerRebootSchedule](./Remove-BrokerRebootSchedule/)
-* [Get-BrokerRebootCycle](./Get-BrokerRebootCycle/)
+* [Set-BrokerRebootSchedule](../Set-BrokerRebootSchedule/)
+* [New-BrokerRebootSchedule](../New-BrokerRebootSchedule/)
+* [Remove-BrokerRebootSchedule](../Remove-BrokerRebootSchedule/)
+* [Get-BrokerRebootCycle](../Get-BrokerRebootCycle/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -19,9 +19,9 @@ however it does not contain the AD Account, use the Cmdlet Export-AcctIdentityPo
 
 ## Related Commands
 
-* [Import-ProvScheme](./Import-ProvScheme/)
-* [Export-AcctIdentityPool](./Export-AcctIdentityPool/)
-* [Import-AcctIdentityPool](./Import-AcctIdentityPool/)
+* [Import-ProvScheme](../Import-ProvScheme/)
+* [Export-AcctIdentityPool](../Export-AcctIdentityPool/)
+* [Import-AcctIdentityPool](../Import-AcctIdentityPool/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

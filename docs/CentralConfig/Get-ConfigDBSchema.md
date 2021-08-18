@@ -43,8 +43,8 @@ If the service uses two data stores they can exist in the same database. You do 
 
 ## Related Commands
 
-* [Set-ConfigDBConnection](./Set-ConfigDBConnection/)
-* [Test-ConfigDBConnection](./Test-ConfigDBConnection/)
+* [Set-ConfigDBConnection](../Set-ConfigDBConnection/)
+* [Test-ConfigDBConnection](../Test-ConfigDBConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

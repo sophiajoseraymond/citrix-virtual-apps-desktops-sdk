@@ -21,7 +21,7 @@ Provides the ability for additional custom data to be stored against given Libra
 
 ## Related Commands
 
-* [Remove-AppLibLibraryMetadata](./Remove-AppLibLibraryMetadata/)
+* [Remove-AppLibLibraryMetadata](../Remove-AppLibLibraryMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

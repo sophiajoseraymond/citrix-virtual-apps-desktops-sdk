@@ -30,9 +30,9 @@ A GPO setting specifies a configuration setting that controls how a VDA behaves.
 
 ## Related Commands
 
-* [New-BrokerGpoSetting](./New-BrokerGpoSetting/)
-* [Set-BrokerGpoSetting](./Set-BrokerGpoSetting/)
-* [Remove-BrokerGpoSetting](./Remove-BrokerGpoSetting/)
+* [New-BrokerGpoSetting](../New-BrokerGpoSetting/)
+* [Set-BrokerGpoSetting](../Set-BrokerGpoSetting/)
+* [Remove-BrokerGpoSetting](../Remove-BrokerGpoSetting/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

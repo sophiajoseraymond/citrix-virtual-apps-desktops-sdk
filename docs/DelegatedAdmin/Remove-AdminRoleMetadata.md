@@ -21,7 +21,7 @@ Provides the ability to remove metadata from the given Role.
 
 ## Related Commands
 
-* [Set-AdminRoleMetadata](./Set-AdminRoleMetadata/)
+* [Set-AdminRoleMetadata](../Set-AdminRoleMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

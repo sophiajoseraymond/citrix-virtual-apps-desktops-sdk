@@ -11,9 +11,9 @@ Enables completed tasks that have run within the AppLibrary Service to be remove
 
 ## Related Commands
 
-* [Get-AppLibTask](./Get-AppLibTask/)
-* [Add-AppLibTaskMetadata](./Add-AppLibTaskMetadata/)
-* [Remove-AppLibTaskMetadata](./Remove-AppLibTaskMetadata/)
+* [Get-AppLibTask](../Get-AppLibTask/)
+* [Add-AppLibTaskMetadata](../Add-AppLibTaskMetadata/)
+* [Remove-AppLibTaskMetadata](../Remove-AppLibTaskMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

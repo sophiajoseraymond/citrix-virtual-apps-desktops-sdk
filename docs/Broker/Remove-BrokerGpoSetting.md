@@ -11,9 +11,9 @@ Remove a GPO setting.
 
 ## Related Commands
 
-* [Get-BrokerGpoSetting](./Get-BrokerGpoSetting/)
-* [New-BrokerGpoSetting](./New-BrokerGpoSetting/)
-* [Set-BrokerGpoSetting](./Set-BrokerGpoSetting/)
+* [Get-BrokerGpoSetting](../Get-BrokerGpoSetting/)
+* [New-BrokerGpoSetting](../New-BrokerGpoSetting/)
+* [Set-BrokerGpoSetting](../Set-BrokerGpoSetting/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

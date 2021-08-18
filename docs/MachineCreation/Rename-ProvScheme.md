@@ -13,10 +13,10 @@ Provides the ability to change the name of an existing provisioning scheme.  The
 
 ## Related Commands
 
-* [New-ProvScheme](./New-ProvScheme/)
-* [Set-ProvScheme](./Set-ProvScheme/)
-* [Get-ProvScheme](./Get-ProvScheme/)
-* [Test-ProvSchemeNameAvailable](./Test-ProvSchemeNameAvailable/)
+* [New-ProvScheme](../New-ProvScheme/)
+* [Set-ProvScheme](../Set-ProvScheme/)
+* [Get-ProvScheme](../Get-ProvScheme/)
+* [Test-ProvSchemeNameAvailable](../Test-ProvSchemeNameAvailable/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

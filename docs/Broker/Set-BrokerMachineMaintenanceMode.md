@@ -17,7 +17,7 @@ This cmdlet is equivalent to using the Set-BrokerMachine cmdlet to set the value
 
 ## Related Commands
 
-* [Set-BrokerMachine](./Set-BrokerMachine/)
+* [Set-BrokerMachine](../Set-BrokerMachine/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

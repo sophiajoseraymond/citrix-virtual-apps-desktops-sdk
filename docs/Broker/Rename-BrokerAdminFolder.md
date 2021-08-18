@@ -15,8 +15,8 @@ The following special characters are not allowed in the new FolderName: \\ / ; :
 
 ## Related Commands
 
-* [Get-BrokerAdminFolder](./Get-BrokerAdminFolder/)
-* [New-BrokerAdminFolder](./New-BrokerAdminFolder/)
+* [Get-BrokerAdminFolder](../Get-BrokerAdminFolder/)
+* [New-BrokerAdminFolder](../New-BrokerAdminFolder/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

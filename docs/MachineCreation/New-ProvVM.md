@@ -15,10 +15,10 @@ The virtual machines are created using all of the storage specified in the provi
 
 ## Related Commands
 
-* [Get-ProvVM](./Get-ProvVM/)
-* [Remove-ProvVM](./Remove-ProvVM/)
-* [Lock-ProvVM](./Lock-ProvVM/)
-* [Unlock-ProvVM](./Unlock-ProvVM/)
+* [Get-ProvVM](../Get-ProvVM/)
+* [Remove-ProvVM](../Remove-ProvVM/)
+* [Lock-ProvVM](../Lock-ProvVM/)
+* [Unlock-ProvVM](../Unlock-ProvVM/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

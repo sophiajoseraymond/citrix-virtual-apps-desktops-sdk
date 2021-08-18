@@ -11,9 +11,9 @@ Delete RemotePCAccounts from the site.
 
 ## Related Commands
 
-* [Get-BrokerRemotePCAccount](./Get-BrokerRemotePCAccount/)
-* [New-BrokerRemotePCAccount](./New-BrokerRemotePCAccount/)
-* [Set-BrokerRemotePCAccount](./Set-BrokerRemotePCAccount/)
+* [Get-BrokerRemotePCAccount](../Get-BrokerRemotePCAccount/)
+* [New-BrokerRemotePCAccount](../New-BrokerRemotePCAccount/)
+* [Set-BrokerRemotePCAccount](../Set-BrokerRemotePCAccount/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

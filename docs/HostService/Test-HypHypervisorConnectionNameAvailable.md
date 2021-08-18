@@ -11,8 +11,8 @@ Use this command to check that the proposed name for a hypervisor connection is 
 
 ## Related Commands
 
-* [New-Item](./New-Item/)
-* [Rename-Item](./Rename-Item/)
+* [New-Item](../New-Item/)
+* [Rename-Item](../Rename-Item/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

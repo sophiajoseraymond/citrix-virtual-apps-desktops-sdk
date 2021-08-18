@@ -13,10 +13,10 @@ The Set-BrokerCatalog cmdlet sets properties of a catalog or set of catalogs. Th
 
 ## Related Commands
 
-* [Get-BrokerCatalog](./Get-BrokerCatalog/)
-* [New-BrokerCatalog](./New-BrokerCatalog/)
-* [Remove-BrokerCatalog](./Remove-BrokerCatalog/)
-* [Rename-BrokerCatalog](./Rename-BrokerCatalog/)
+* [Get-BrokerCatalog](../Get-BrokerCatalog/)
+* [New-BrokerCatalog](../New-BrokerCatalog/)
+* [Remove-BrokerCatalog](../Remove-BrokerCatalog/)
+* [Rename-BrokerCatalog](../Rename-BrokerCatalog/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

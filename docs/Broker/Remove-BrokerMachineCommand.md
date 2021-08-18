@@ -11,8 +11,8 @@ Sets the state of a pending command queued for delivery to a desktop to Canceled
 
 ## Related Commands
 
-* [Get-BrokerMachineCommand](./Get-BrokerMachineCommand/)
-* [New-BrokerMachineCommand](./New-BrokerMachineCommand/)
+* [Get-BrokerMachineCommand](../Get-BrokerMachineCommand/)
+* [New-BrokerMachineCommand](../New-BrokerMachineCommand/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

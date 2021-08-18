@@ -21,7 +21,7 @@ See about\_Broker\_Desktops for more information about desktops.
 
 ## Related Commands
 
-* [Get-BrokerSharedDesktop](./Get-BrokerSharedDesktop/)
+* [Get-BrokerSharedDesktop](../Get-BrokerSharedDesktop/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

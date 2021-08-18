@@ -11,10 +11,10 @@ Enables the status of the Orchestration Service on the controller to be determin
 
 ## Related Commands
 
-* [Set-OrchDBConnection](./Set-OrchDBConnection/)
-* [Test-OrchDBConnection](./Test-OrchDBConnection/)
-* [Get-OrchDBConnection](./Get-OrchDBConnection/)
-* [Get-OrchDBSchema](./Get-OrchDBSchema/)
+* [Set-OrchDBConnection](../Set-OrchDBConnection/)
+* [Test-OrchDBConnection](../Test-OrchDBConnection/)
+* [Get-OrchDBConnection](../Get-OrchDBConnection/)
+* [Get-OrchDBSchema](../Get-OrchDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

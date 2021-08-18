@@ -21,8 +21,8 @@ If the AppDisk is already in a scope, that scope will be silently ignored.
 
 ## Related Commands
 
-* [Remove-AppLibAppDiskScope](./Remove-AppLibAppDiskScope/)
-* [Get-AppLibScopedObject](./Get-AppLibScopedObject/)
+* [Remove-AppLibAppDiskScope](../Remove-AppLibAppDiskScope/)
+* [Get-AppLibScopedObject](../Get-AppLibScopedObject/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

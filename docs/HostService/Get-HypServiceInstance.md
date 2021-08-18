@@ -13,8 +13,8 @@ You do not need to configure a database connection to use this command.
 
 ## Related Commands
 
-* [Get-HypServiceStatus](./Get-HypServiceStatus/)
-* [Reset-HypServiceGroupMembership](./Reset-HypServiceGroupMembership/)
+* [Get-HypServiceStatus](../Get-HypServiceStatus/)
+* [Reset-HypServiceGroupMembership](../Reset-HypServiceGroupMembership/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

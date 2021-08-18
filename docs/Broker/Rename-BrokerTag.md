@@ -13,11 +13,11 @@ Renames one or more tags with the supplied name.
 
 ## Related Commands
 
-* [Add-BrokerTag](./Add-BrokerTag/)
-* [Get-BrokerTag](./Get-BrokerTag/)
-* [New-BrokerTag](./New-BrokerTag/)
-* [Remove-BrokerTag](./Remove-BrokerTag/)
-* [Set-BrokerTag](./Set-BrokerTag/)
+* [Add-BrokerTag](../Add-BrokerTag/)
+* [Get-BrokerTag](../Get-BrokerTag/)
+* [New-BrokerTag](../New-BrokerTag/)
+* [Remove-BrokerTag](../Remove-BrokerTag/)
+* [Set-BrokerTag](../Set-BrokerTag/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

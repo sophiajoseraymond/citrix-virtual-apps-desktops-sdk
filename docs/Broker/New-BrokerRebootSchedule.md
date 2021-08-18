@@ -13,10 +13,10 @@ The New-BrokerRebootSchedule cmdlet is used to define a reboot schedule for a de
 
 ## Related Commands
 
-* [Get-BrokerRebootSchedule](./Get-BrokerRebootSchedule/)
-* [Set-BrokerRebootSchedule](./Set-BrokerRebootSchedule/)
-* [Remove-BrokerRebootSchedule](./Remove-BrokerRebootSchedule/)
-* [Start-BrokerRebootCycle](./Start-BrokerRebootCycle/)
+* [Get-BrokerRebootSchedule](../Get-BrokerRebootSchedule/)
+* [Set-BrokerRebootSchedule](../Set-BrokerRebootSchedule/)
+* [Remove-BrokerRebootSchedule](../Remove-BrokerRebootSchedule/)
+* [Start-BrokerRebootCycle](../Start-BrokerRebootCycle/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

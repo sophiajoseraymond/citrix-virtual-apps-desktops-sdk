@@ -17,12 +17,12 @@ All zone names must be unique.
 
 ## Related Commands
 
-* [New-ConfigZone](./New-ConfigZone/)
-* [Set-ConfigZone](./Set-ConfigZone/)
-* [Get-ConfigZone](./Get-ConfigZone/)
-* [Remove-ConfigZone](./Remove-ConfigZone/)
-* [Set-ConfigSite](./Set-ConfigSite/)
-* [Set-ConfigService](./Set-ConfigService/)
+* [New-ConfigZone](../New-ConfigZone/)
+* [Set-ConfigZone](../Set-ConfigZone/)
+* [Get-ConfigZone](../Get-ConfigZone/)
+* [Remove-ConfigZone](../Remove-ConfigZone/)
+* [Set-ConfigSite](../Set-ConfigSite/)
+* [Set-ConfigService](../Set-ConfigService/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -42,7 +42,7 @@ Data objects for filtering
 
 ## Related Commands
 
-* [Get-BrokerTelemetryData](./Get-BrokerTelemetryData/)
+* [Get-BrokerTelemetryData](../Get-BrokerTelemetryData/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

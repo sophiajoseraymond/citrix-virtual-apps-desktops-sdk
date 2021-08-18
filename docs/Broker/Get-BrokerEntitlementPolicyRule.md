@@ -60,10 +60,10 @@ The BrokerEntitlementPolicyRule object represents a single desktop rule within t
 
 ## Related Commands
 
-* [New-BrokerEntitlementPolicyRule](./New-BrokerEntitlementPolicyRule/)
-* [Set-BrokerEntitlementPolicyRule](./Set-BrokerEntitlementPolicyRule/)
-* [Rename-BrokerEntitlementPolicyRule](./Rename-BrokerEntitlementPolicyRule/)
-* [Remove-BrokerEntitlementPolicyRule](./Remove-BrokerEntitlementPolicyRule/)
+* [New-BrokerEntitlementPolicyRule](../New-BrokerEntitlementPolicyRule/)
+* [Set-BrokerEntitlementPolicyRule](../Set-BrokerEntitlementPolicyRule/)
+* [Rename-BrokerEntitlementPolicyRule](../Rename-BrokerEntitlementPolicyRule/)
+* [Remove-BrokerEntitlementPolicyRule](../Remove-BrokerEntitlementPolicyRule/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

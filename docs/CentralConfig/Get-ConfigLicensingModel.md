@@ -11,10 +11,10 @@ Get-ConfigLicensingModel -ProductCode <String> [-BearerToken <String>] [-Virtual
 
 ## Related Commands
 
-* [Get-ConfigProduct](./Get-ConfigProduct/)
-* [Get-ConfigSite](./Get-ConfigSite/)
-* [Set-ConfigSite](./Set-ConfigSite/)
-* [Import-ConfigFeatureTable](./Import-ConfigFeatureTable/)
+* [Get-ConfigProduct](../Get-ConfigProduct/)
+* [Get-ConfigSite](../Get-ConfigSite/)
+* [Set-ConfigSite](../Set-ConfigSite/)
+* [Import-ConfigFeatureTable](../Import-ConfigFeatureTable/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -23,17 +23,17 @@ See about\_Broker\_Applications for more information.
 
 ## Related Commands
 
-* [Add-BrokerApplicationGroup](./Add-BrokerApplicationGroup/)
-* [Get-BrokerApplicationGroup](./Get-BrokerApplicationGroup/)
-* [Remove-BrokerApplicationGroup](./Remove-BrokerApplicationGroup/)
-* [Rename-BrokerApplicationGroup](./Rename-BrokerApplicationGroup/)
-* [Set-BrokerApplicationGroup](./Set-BrokerApplicationGroup/)
-* [Add-BrokerApplication](./Add-BrokerApplication/)
-* [Remove-BrokerApplication](./Remove-BrokerApplication/)
-* [Add-BrokerUser](./Add-BrokerUser/)
-* [Remove-BrokerUser](./Remove-BrokerUser/)
-* [Add-BrokerTag](./Add-BrokerTag/)
-* [Remove-BrokerTag](./Remove-BrokerTag/)
+* [Add-BrokerApplicationGroup](../Add-BrokerApplicationGroup/)
+* [Get-BrokerApplicationGroup](../Get-BrokerApplicationGroup/)
+* [Remove-BrokerApplicationGroup](../Remove-BrokerApplicationGroup/)
+* [Rename-BrokerApplicationGroup](../Rename-BrokerApplicationGroup/)
+* [Set-BrokerApplicationGroup](../Set-BrokerApplicationGroup/)
+* [Add-BrokerApplication](../Add-BrokerApplication/)
+* [Remove-BrokerApplication](../Remove-BrokerApplication/)
+* [Add-BrokerUser](../Add-BrokerUser/)
+* [Remove-BrokerUser](../Remove-BrokerUser/)
+* [Add-BrokerTag](../Add-BrokerTag/)
+* [Remove-BrokerTag](../Remove-BrokerTag/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

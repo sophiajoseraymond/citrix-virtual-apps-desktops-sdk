@@ -11,9 +11,9 @@ Modify one or more RemotePCAccounts.
 
 ## Related Commands
 
-* [Get-BrokerRemotePCAccount](./Get-BrokerRemotePCAccount/)
-* [New-BrokerRemotePCAccount](./New-BrokerRemotePCAccount/)
-* [Remove-BrokerRemotePCAccount](./Remove-BrokerRemotePCAccount/)
+* [Get-BrokerRemotePCAccount](../Get-BrokerRemotePCAccount/)
+* [New-BrokerRemotePCAccount](../New-BrokerRemotePCAccount/)
+* [Remove-BrokerRemotePCAccount](../Remove-BrokerRemotePCAccount/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

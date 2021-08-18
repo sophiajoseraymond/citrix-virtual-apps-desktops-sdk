@@ -30,9 +30,9 @@ RemotePCAccounts define a set of machines either by machine name patterns or by 
 
 ## Related Commands
 
-* [New-BrokerRemotePCAccount](./New-BrokerRemotePCAccount/)
-* [Set-BrokerRemotePCAccount](./Set-BrokerRemotePCAccount/)
-* [Remove-BrokerRemotePCAccount](./Remove-BrokerRemotePCAccount/)
+* [New-BrokerRemotePCAccount](../New-BrokerRemotePCAccount/)
+* [Set-BrokerRemotePCAccount](../Set-BrokerRemotePCAccount/)
+* [Remove-BrokerRemotePCAccount](../Remove-BrokerRemotePCAccount/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

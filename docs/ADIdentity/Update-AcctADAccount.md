@@ -13,12 +13,12 @@ Provides the ability to synchronize the state of the AD accounts stored in the A
 
 ## Related Commands
 
-* [New-AcctADAccount](./New-AcctADAccount/)
-* [Add-AcctADAccount](./Add-AcctADAccount/)
-* [Remove-AcctADAccount](./Remove-AcctADAccount/)
-* [Repair-AcctADAccount](./Repair-AcctADAccount/)
-* [Unlock-AcctADAccount](./Unlock-AcctADAccount/)
-* [Get-AcctADAccount](./Get-AcctADAccount/)
+* [New-AcctADAccount](../New-AcctADAccount/)
+* [Add-AcctADAccount](../Add-AcctADAccount/)
+* [Remove-AcctADAccount](../Remove-AcctADAccount/)
+* [Repair-AcctADAccount](../Repair-AcctADAccount/)
+* [Unlock-AcctADAccount](../Unlock-AcctADAccount/)
+* [Get-AcctADAccount](../Get-AcctADAccount/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

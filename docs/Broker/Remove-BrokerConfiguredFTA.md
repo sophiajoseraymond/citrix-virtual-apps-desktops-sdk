@@ -11,8 +11,8 @@ Deletes one or more file type associations configured for a published applicatio
 
 ## Related Commands
 
-* [Get-BrokerConfiguredFTA](./Get-BrokerConfiguredFTA/)
-* [New-BrokerConfiguredFTA](./New-BrokerConfiguredFTA/)
+* [Get-BrokerConfiguredFTA](../Get-BrokerConfiguredFTA/)
+* [New-BrokerConfiguredFTA](../New-BrokerConfiguredFTA/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

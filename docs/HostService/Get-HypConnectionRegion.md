@@ -15,7 +15,7 @@ This cmdlet may return no output, in which case the cloud connection can be cons
 
 ## Related Commands
 
-* [Set-Item](./Set-Item/)
+* [Set-Item](../Set-Item/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

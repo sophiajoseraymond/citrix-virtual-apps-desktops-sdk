@@ -11,10 +11,10 @@ Adds a new server to an existing cluster. Optionally updates Farm and Storefront
 
 ## Related Commands
 
-* [Get-SfCluster](./Get-SfCluster/)
-* [New-SfCluster](./New-SfCluster/)
-* [Remove-SfServerFromCluster](./Remove-SfServerFromCluster/)
-* [Set-SfCluster](./Set-SfCluster/)
+* [Get-SfCluster](../Get-SfCluster/)
+* [New-SfCluster](../New-SfCluster/)
+* [Remove-SfServerFromCluster](../Remove-SfServerFromCluster/)
+* [Set-SfCluster](../Set-SfCluster/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

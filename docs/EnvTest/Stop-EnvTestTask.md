@@ -13,15 +13,15 @@ Stops a still running task from completing.  A task may still be retreived via G
 
 ## Related Commands
 
-* [Get-EnvTestDefinition](./Get-EnvTestDefinition/)
-* [Get-EnvTestSuiteDefinition](./Get-EnvTestSuiteDefinition/)
-* [Get-EnvTestTask](./Get-EnvTestTask/)
-* [New-EnvTestTask](./New-EnvTestTask/)
-* [Start-EnvTestTask](./Start-EnvTestTask/)
-* [Switch-EnvTestTask](./Switch-EnvTestTask/)
-* [Remove-EnvTestTask](./Remove-EnvTestTask/)
-* [Add-EnvTestTaskMetadata](./Add-EnvTestTaskMetadata/)
-* [Remove-EnvTestTaskMetadata](./Remove-EnvTestTaskMetadata/)
+* [Get-EnvTestDefinition](../Get-EnvTestDefinition/)
+* [Get-EnvTestSuiteDefinition](../Get-EnvTestSuiteDefinition/)
+* [Get-EnvTestTask](../Get-EnvTestTask/)
+* [New-EnvTestTask](../New-EnvTestTask/)
+* [Start-EnvTestTask](../Start-EnvTestTask/)
+* [Switch-EnvTestTask](../Switch-EnvTestTask/)
+* [Remove-EnvTestTask](../Remove-EnvTestTask/)
+* [Add-EnvTestTaskMetadata](../Add-EnvTestTaskMetadata/)
+* [Remove-EnvTestTaskMetadata](../Remove-EnvTestTaskMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

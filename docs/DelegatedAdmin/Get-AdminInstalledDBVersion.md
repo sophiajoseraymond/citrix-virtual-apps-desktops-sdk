@@ -19,8 +19,8 @@ Only one of the -Upgrade or -Downgrade parameters may be supplied at once.
 
 ## Related Commands
 
-* [Get-AdminDBVersionChangeScript](./Get-AdminDBVersionChangeScript/)
-* [Get-AdminDBSchema](./Get-AdminDBSchema/)
+* [Get-AdminDBVersionChangeScript](../Get-AdminDBVersionChangeScript/)
+* [Get-AdminDBSchema](../Get-AdminDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

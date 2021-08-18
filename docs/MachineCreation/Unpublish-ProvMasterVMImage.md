@@ -19,9 +19,9 @@ The affected hard disk image is removed from the history (see Get-ProvSchemeMast
 
 ## Related Commands
 
-* [New-ProvMasterVMImage](./New-ProvMasterVMImage/)
-* [Get-ProvSchemeMasterVMImageHistory](./Get-ProvSchemeMasterVMImageHistory/)
-* [Get-ProvScheme](./Get-ProvScheme/)
+* [New-ProvMasterVMImage](../New-ProvMasterVMImage/)
+* [Get-ProvSchemeMasterVMImageHistory](../Get-ProvSchemeMasterVMImageHistory/)
+* [Get-ProvScheme](../Get-ProvScheme/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -11,9 +11,9 @@ The isolation group will be updated with the new properties
 
 ## Related Commands
 
-* [New-AppLibIsolationGroup](./New-AppLibIsolationGroup/)
-* [Remove-AppLibIsolationGroup](./Remove-AppLibIsolationGroup/)
-* [Set-AppLibIsolationGroupPackage](./Set-AppLibIsolationGroupPackage/)
+* [New-AppLibIsolationGroup](../New-AppLibIsolationGroup/)
+* [Remove-AppLibIsolationGroup](../Remove-AppLibIsolationGroup/)
+* [Set-AppLibIsolationGroupPackage](../Set-AppLibIsolationGroupPackage/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -11,10 +11,10 @@ Enables the status of the MachineCreation Service on the controller to be determ
 
 ## Related Commands
 
-* [Set-ProvDBConnection](./Set-ProvDBConnection/)
-* [Test-ProvDBConnection](./Test-ProvDBConnection/)
-* [Get-ProvDBConnection](./Get-ProvDBConnection/)
-* [Get-ProvDBSchema](./Get-ProvDBSchema/)
+* [Set-ProvDBConnection](../Set-ProvDBConnection/)
+* [Test-ProvDBConnection](../Test-ProvDBConnection/)
+* [Get-ProvDBConnection](../Get-ProvDBConnection/)
+* [Get-ProvDBSchema](../Get-ProvDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

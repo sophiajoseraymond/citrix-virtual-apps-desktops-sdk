@@ -19,14 +19,14 @@ To update the metadata associated with a role, use the Set-AdminRoleMetadata and
 
 ## Related Commands
 
-* [New-AdminRole](./New-AdminRole/)
-* [Get-AdminRole](./Get-AdminRole/)
-* [Remove-AdminRole](./Remove-AdminRole/)
-* [Rename-AdminRole](./Rename-AdminRole/)
-* [Set-AdminRoleMetadata](./Set-AdminRoleMetadata/)
-* [Remove-AdminRoleMetadata](./Remove-AdminRoleMetadata/)
-* [Add-AdminPermission](./Add-AdminPermission/)
-* [Remove-AdminPermission](./Remove-AdminPermission/)
+* [New-AdminRole](../New-AdminRole/)
+* [Get-AdminRole](../Get-AdminRole/)
+* [Remove-AdminRole](../Remove-AdminRole/)
+* [Rename-AdminRole](../Rename-AdminRole/)
+* [Set-AdminRoleMetadata](../Set-AdminRoleMetadata/)
+* [Remove-AdminRoleMetadata](../Remove-AdminRoleMetadata/)
+* [Add-AdminPermission](../Add-AdminPermission/)
+* [Remove-AdminPermission](../Remove-AdminPermission/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

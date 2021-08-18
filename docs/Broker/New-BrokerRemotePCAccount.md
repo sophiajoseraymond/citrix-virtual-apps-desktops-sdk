@@ -11,9 +11,9 @@ Create a new RemotePCAccount. A RemotePCAccount defines machine filters to suppo
 
 ## Related Commands
 
-* [Get-BrokerRemotePCAccount](./Get-BrokerRemotePCAccount/)
-* [Set-BrokerRemotePCAccount](./Set-BrokerRemotePCAccount/)
-* [Remove-BrokerRemotePCAccount](./Remove-BrokerRemotePCAccount/)
+* [Get-BrokerRemotePCAccount](../Get-BrokerRemotePCAccount/)
+* [Set-BrokerRemotePCAccount](../Set-BrokerRemotePCAccount/)
+* [Remove-BrokerRemotePCAccount](../Remove-BrokerRemotePCAccount/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

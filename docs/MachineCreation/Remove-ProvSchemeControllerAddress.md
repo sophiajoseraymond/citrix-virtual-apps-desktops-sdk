@@ -13,8 +13,8 @@ Removes the specified controller addresses from the specified object. Attempting
 
 ## Related Commands
 
-* [Get-ProvScheme](./Get-ProvScheme/)
-* [Add-ProvSchemeControllerAddress](./Add-ProvSchemeControllerAddress/)
+* [Get-ProvScheme](../Get-ProvScheme/)
+* [Add-ProvSchemeControllerAddress](../Add-ProvSchemeControllerAddress/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

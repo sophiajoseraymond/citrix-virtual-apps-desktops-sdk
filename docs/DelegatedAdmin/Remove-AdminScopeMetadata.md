@@ -21,7 +21,7 @@ Provides the ability to remove metadata from the given Scope.
 
 ## Related Commands
 
-* [Set-AdminScopeMetadata](./Set-AdminScopeMetadata/)
+* [Set-AdminScopeMetadata](../Set-AdminScopeMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

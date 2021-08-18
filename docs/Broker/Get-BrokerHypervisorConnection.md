@@ -58,9 +58,9 @@ The BrokerHypervisorConnection represents hypervisor connection object. It conta
 
 ## Related Commands
 
-* [New-BrokerHypervisorConnection](./New-BrokerHypervisorConnection/)
-* [Remove-BrokerHypervisorConnection](./Remove-BrokerHypervisorConnection/)
-* [Set-BrokerHypervisorConnection](./Set-BrokerHypervisorConnection/)
+* [New-BrokerHypervisorConnection](../New-BrokerHypervisorConnection/)
+* [Remove-BrokerHypervisorConnection](../Remove-BrokerHypervisorConnection/)
+* [Set-BrokerHypervisorConnection](../Set-BrokerHypervisorConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

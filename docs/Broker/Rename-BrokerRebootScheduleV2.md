@@ -13,11 +13,11 @@ The Rename-BrokerRebootScheduleV2 cmdlet changes the name of a reboot schedule. 
 
 ## Related Commands
 
-* [Get-BrokerRebootScheduleV2](./Get-BrokerRebootScheduleV2/)
-* [Set-BrokerRebootScheduleV2](./Set-BrokerRebootScheduleV2/)
-* [New-BrokerRebootScheduleV2](./New-BrokerRebootScheduleV2/)
-* [Remove-BrokerRebootScheduleV2](./Remove-BrokerRebootScheduleV2/)
-* [Stop-BrokerRebootCycle](./Stop-BrokerRebootCycle/)
+* [Get-BrokerRebootScheduleV2](../Get-BrokerRebootScheduleV2/)
+* [Set-BrokerRebootScheduleV2](../Set-BrokerRebootScheduleV2/)
+* [New-BrokerRebootScheduleV2](../New-BrokerRebootScheduleV2/)
+* [Remove-BrokerRebootScheduleV2](../Remove-BrokerRebootScheduleV2/)
+* [Stop-BrokerRebootCycle](../Stop-BrokerRebootCycle/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -19,9 +19,9 @@ The prepared hard disk image path is stored into the history (see Get-ProvScheme
 
 ## Related Commands
 
-* [Publish-ProvMasterVMImage](./Publish-ProvMasterVMImage/)
-* [Get-ProvSchemeMasterVMImageHistory](./Get-ProvSchemeMasterVMImageHistory/)
-* [Get-ProvScheme](./Get-ProvScheme/)
+* [Publish-ProvMasterVMImage](../Publish-ProvMasterVMImage/)
+* [Get-ProvSchemeMasterVMImageHistory](../Get-ProvSchemeMasterVMImageHistory/)
+* [Get-ProvScheme](../Get-ProvScheme/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

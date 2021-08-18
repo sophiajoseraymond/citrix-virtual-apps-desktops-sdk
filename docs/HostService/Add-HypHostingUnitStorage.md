@@ -11,10 +11,10 @@ Use this command to add storage locations for storing the hard disks required by
 
 ## Related Commands
 
-* [New-Item](./New-Item/)
-* [Add-HypMetadata](./Add-HypMetadata/)
-* [Remove-HypHostingUnitStorage](./Remove-HypHostingUnitStorage/)
-* [Set-HypHostingUnitStorage](./Set-HypHostingUnitStorage/)
+* [New-Item](../New-Item/)
+* [Add-HypMetadata](../Add-HypMetadata/)
+* [Remove-HypHostingUnitStorage](../Remove-HypHostingUnitStorage/)
+* [Set-HypHostingUnitStorage](../Set-HypHostingUnitStorage/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

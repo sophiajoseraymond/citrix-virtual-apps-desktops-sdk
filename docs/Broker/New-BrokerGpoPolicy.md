@@ -11,9 +11,9 @@ The New-BrokerGpoPolicy cmdlet creates a new GPO policy.
 
 ## Related Commands
 
-* [Get-BrokerGpoPolicy](./Get-BrokerGpoPolicy/)
-* [Set-BrokerGpoPolicy](./Set-BrokerGpoPolicy/)
-* [Remove-BrokerGpoPolicy](./Remove-BrokerGpoPolicy/)
+* [Get-BrokerGpoPolicy](../Get-BrokerGpoPolicy/)
+* [Set-BrokerGpoPolicy](../Set-BrokerGpoPolicy/)
+* [Remove-BrokerGpoPolicy](../Remove-BrokerGpoPolicy/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

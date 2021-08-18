@@ -43,8 +43,8 @@ If the service uses two data stores they can exist in the same database. You do 
 
 ## Related Commands
 
-* [Set-HypDBConnection](./Set-HypDBConnection/)
-* [Test-HypDBConnection](./Test-HypDBConnection/)
+* [Set-HypDBConnection](../Set-HypDBConnection/)
+* [Test-HypDBConnection](../Test-HypDBConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

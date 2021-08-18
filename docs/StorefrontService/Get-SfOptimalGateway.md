@@ -11,8 +11,8 @@ Gets the configured optimal gateways for farms.
 
 ## Related Commands
 
-* [Set-SfOptimalGatewayCommand](./Set-SfOptimalGatewayCommand/)
-* [Remove-SfOptimalGatewayCommand](./Remove-SfOptimalGatewayCommand/)
+* [Set-SfOptimalGatewayCommand](../Set-SfOptimalGatewayCommand/)
+* [Remove-SfOptimalGatewayCommand](../Remove-SfOptimalGatewayCommand/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

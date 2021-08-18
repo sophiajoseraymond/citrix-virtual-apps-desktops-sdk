@@ -38,9 +38,9 @@ The BrokerConfiguredFTA object represents a file type association configured for
 
 ## Related Commands
 
-* [New-BrokerConfiguredFTA](./New-BrokerConfiguredFTA/)
-* [Remove-BrokerConfiguredFTA](./Remove-BrokerConfiguredFTA/)
-* [Update-BrokerImportedFTA](./Update-BrokerImportedFTA/)
+* [New-BrokerConfiguredFTA](../New-BrokerConfiguredFTA/)
+* [Remove-BrokerConfiguredFTA](../Remove-BrokerConfiguredFTA/)
+* [Update-BrokerImportedFTA](../Update-BrokerImportedFTA/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

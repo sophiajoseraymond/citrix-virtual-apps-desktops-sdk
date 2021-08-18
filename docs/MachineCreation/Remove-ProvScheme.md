@@ -15,8 +15,8 @@ If 'ForgetVM' is not specified, a cmdlet task is created that runs in the backgr
 
 ## Related Commands
 
-* [Get-ProvTask](./Get-ProvTask/)
-* [New-ProvScheme](./New-ProvScheme/)
+* [Get-ProvTask](../Get-ProvTask/)
+* [New-ProvScheme](../New-ProvScheme/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

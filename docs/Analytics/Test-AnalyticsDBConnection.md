@@ -17,9 +17,9 @@ The current service instance is that on the local machine, or that explicitly sp
 
 ## Related Commands
 
-* [Get-AnalyticsServiceStatus](./Get-AnalyticsServiceStatus/)
-* [Get-AnalyticsDBConnection](./Get-AnalyticsDBConnection/)
-* [Set-AnalyticsDBConnection](./Set-AnalyticsDBConnection/)
+* [Get-AnalyticsServiceStatus](../Get-AnalyticsServiceStatus/)
+* [Get-AnalyticsDBConnection](../Get-AnalyticsDBConnection/)
+* [Set-AnalyticsDBConnection](../Set-AnalyticsDBConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

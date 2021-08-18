@@ -13,10 +13,10 @@ Associates a machine configuration with a desktop group. The settings in the mac
 
 ## Related Commands
 
-* [New-BrokerMachineConfiguration](./New-BrokerMachineConfiguration/)
-* [Set-BrokerMachineConfiguration](./Set-BrokerMachineConfiguration/)
-* [Rename-BrokerMachineConfiguration](./Rename-BrokerMachineConfiguration/)
-* [Remove-BrokerMachineConfiguration](./Remove-BrokerMachineConfiguration/)
+* [New-BrokerMachineConfiguration](../New-BrokerMachineConfiguration/)
+* [Set-BrokerMachineConfiguration](../Set-BrokerMachineConfiguration/)
+* [Rename-BrokerMachineConfiguration](../Rename-BrokerMachineConfiguration/)
+* [Remove-BrokerMachineConfiguration](../Remove-BrokerMachineConfiguration/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

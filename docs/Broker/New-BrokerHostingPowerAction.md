@@ -15,9 +15,9 @@ For a detailed description of the queuing mechanism, see 'help about\_Broker\_Po
 
 ## Related Commands
 
-* [Get-BrokerHostingPowerAction](./Get-BrokerHostingPowerAction/)
-* [Set-BrokerHostingPowerAction](./Set-BrokerHostingPowerAction/)
-* [Remove-BrokerHostingPowerAction](./Remove-BrokerHostingPowerAction/)
+* [Get-BrokerHostingPowerAction](../Get-BrokerHostingPowerAction/)
+* [Set-BrokerHostingPowerAction](../Set-BrokerHostingPowerAction/)
+* [Remove-BrokerHostingPowerAction](../Remove-BrokerHostingPowerAction/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

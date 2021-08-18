@@ -15,8 +15,8 @@ See about\_Admin\_Filtering for information about advanced filtering options.
 
 ## Related Commands
 
-* [Import-AdminRoleConfiguration](./Import-AdminRoleConfiguration/)
-* [Get-AdminPermission](./Get-AdminPermission/)
+* [Import-AdminRoleConfiguration](../Import-AdminRoleConfiguration/)
+* [Get-AdminPermission](../Get-AdminPermission/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

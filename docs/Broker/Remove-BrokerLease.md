@@ -13,8 +13,8 @@ Marks the specified lease for deletion. Note that the lease is eventually fully 
 
 ## Related Commands
 
-* [Update-BrokerLocalLeaseCache](./Update-BrokerLocalLeaseCache/)
-* [Remove-BrokerCache](./Remove-BrokerCache/)
+* [Update-BrokerLocalLeaseCache](../Update-BrokerLocalLeaseCache/)
+* [Remove-BrokerCache](../Remove-BrokerCache/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

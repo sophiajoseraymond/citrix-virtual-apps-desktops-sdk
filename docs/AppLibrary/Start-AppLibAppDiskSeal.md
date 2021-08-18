@@ -13,11 +13,11 @@ Lets you mark an AppDisk with installed applications as ready for use.
 
 ## Related Commands
 
-* [Get-AppLibTask](./Get-AppLibTask/)
-* [New-AppLibAppDisk](./New-AppLibAppDisk/)
-* [Set-AppLibAppDisk](./Set-AppLibAppDisk/)
-* [Get-AppLibAppDisk](./Get-AppLibAppDisk/)
-* [Import-AppLibAppDisk](./Import-AppLibAppDisk/)
+* [Get-AppLibTask](../Get-AppLibTask/)
+* [New-AppLibAppDisk](../New-AppLibAppDisk/)
+* [Set-AppLibAppDisk](../Set-AppLibAppDisk/)
+* [Get-AppLibAppDisk](../Get-AppLibAppDisk/)
+* [Import-AppLibAppDisk](../Import-AppLibAppDisk/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

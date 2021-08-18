@@ -11,7 +11,7 @@ View the Service configuration data objects stored in the broker database. These
 
 ## Related Commands
 
-* [Get-BrokerServiceConfigurationData](./Get-BrokerServiceConfigurationData/)
+* [Get-BrokerServiceConfigurationData](../Get-BrokerServiceConfigurationData/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

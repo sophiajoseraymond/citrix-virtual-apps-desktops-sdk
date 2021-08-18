@@ -15,10 +15,10 @@ A desktop rule in the entitlement policy defines the users who are allowed per-s
 
 ## Related Commands
 
-* [New-BrokerEntitlementPolicyRule](./New-BrokerEntitlementPolicyRule/)
-* [Get-BrokerEntitlementPolicyRule](./Get-BrokerEntitlementPolicyRule/)
-* [Set-BrokerEntitlementPolicyRule](./Set-BrokerEntitlementPolicyRule/)
-* [Remove-BrokerEntitlementPolicyRule](./Remove-BrokerEntitlementPolicyRule/)
+* [New-BrokerEntitlementPolicyRule](../New-BrokerEntitlementPolicyRule/)
+* [Get-BrokerEntitlementPolicyRule](../Get-BrokerEntitlementPolicyRule/)
+* [Set-BrokerEntitlementPolicyRule](../Set-BrokerEntitlementPolicyRule/)
+* [Remove-BrokerEntitlementPolicyRule](../Remove-BrokerEntitlementPolicyRule/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

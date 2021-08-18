@@ -19,13 +19,13 @@ The identifier of the new scope is chosen automatically.
 
 ## Related Commands
 
-* [Get-AdminScope](./Get-AdminScope/)
-* [Set-AdminScope](./Set-AdminScope/)
-* [Rename-AdminScope](./Rename-AdminScope/)
-* [Remove-AdminScope](./Remove-AdminScope/)
-* [Set-AdminScopeMetadata](./Set-AdminScopeMetadata/)
-* [Remove-AdminScopeMetadata](./Remove-AdminScopeMetadata/)
-* [Add-AdminRight](./Add-AdminRight/)
+* [Get-AdminScope](../Get-AdminScope/)
+* [Set-AdminScope](../Set-AdminScope/)
+* [Rename-AdminScope](../Rename-AdminScope/)
+* [Remove-AdminScope](../Remove-AdminScope/)
+* [Set-AdminScopeMetadata](../Set-AdminScopeMetadata/)
+* [Remove-AdminScopeMetadata](../Remove-AdminScopeMetadata/)
+* [Add-AdminRight](../Add-AdminRight/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

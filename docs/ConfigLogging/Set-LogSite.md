@@ -11,7 +11,7 @@ This cmdlet sets the global configuration logging settings.
 
 ## Related Commands
 
-* [Get-LogSite](./Get-LogSite/)
+* [Get-LogSite](../Get-LogSite/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

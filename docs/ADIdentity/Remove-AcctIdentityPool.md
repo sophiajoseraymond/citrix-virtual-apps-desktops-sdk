@@ -13,10 +13,10 @@ Provides the ability to remove identity pools.  The identity pool must be emptie
 
 ## Related Commands
 
-* [New-AcctIdentityPool](./New-AcctIdentityPool/)
-* [Rename-AcctIdentityPool](./Rename-AcctIdentityPool/)
-* [Set-AcctIdentityPool](./Set-AcctIdentityPool/)
-* [Unlock-AcctIdentityPool](./Unlock-AcctIdentityPool/)
+* [New-AcctIdentityPool](../New-AcctIdentityPool/)
+* [Rename-AcctIdentityPool](../Rename-AcctIdentityPool/)
+* [Set-AcctIdentityPool](../Set-AcctIdentityPool/)
+* [Unlock-AcctIdentityPool](../Unlock-AcctIdentityPool/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

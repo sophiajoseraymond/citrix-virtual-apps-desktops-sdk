@@ -17,10 +17,10 @@ Renaming an application does not alter its BrowserName. If the BrowserName prope
 
 ## Related Commands
 
-* [New-BrokerApplication](./New-BrokerApplication/)
-* [Set-BrokerApplication](./Set-BrokerApplication/)
-* [Get-BrokerApplication](./Get-BrokerApplication/)
-* [Remove-BrokerApplication](./Remove-BrokerApplication/)
+* [New-BrokerApplication](../New-BrokerApplication/)
+* [Set-BrokerApplication](../Set-BrokerApplication/)
+* [Get-BrokerApplication](../Get-BrokerApplication/)
+* [Remove-BrokerApplication](../Remove-BrokerApplication/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

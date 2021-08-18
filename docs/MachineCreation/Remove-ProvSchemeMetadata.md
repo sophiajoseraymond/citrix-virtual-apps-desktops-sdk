@@ -21,8 +21,8 @@ Provides the ability to remove metadata from the given ProvisioningScheme.
 
 ## Related Commands
 
-* [Add-ProvSchemeMetadata](./Add-ProvSchemeMetadata/)
-* [Set-ProvSchemeMetadata](./Set-ProvSchemeMetadata/)
+* [Add-ProvSchemeMetadata](../Add-ProvSchemeMetadata/)
+* [Set-ProvSchemeMetadata](../Set-ProvSchemeMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

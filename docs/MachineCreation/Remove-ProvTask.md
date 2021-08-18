@@ -11,9 +11,9 @@ Enables completed tasks that have run within the MachineCreation Service to be r
 
 ## Related Commands
 
-* [Get-ProvTask](./Get-ProvTask/)
-* [Add-ProvTaskMetadata](./Add-ProvTaskMetadata/)
-* [Remove-ProvTaskMetadata](./Remove-ProvTaskMetadata/)
+* [Get-ProvTask](../Get-ProvTask/)
+* [Add-ProvTaskMetadata](../Add-ProvTaskMetadata/)
+* [Remove-ProvTaskMetadata](../Remove-ProvTaskMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

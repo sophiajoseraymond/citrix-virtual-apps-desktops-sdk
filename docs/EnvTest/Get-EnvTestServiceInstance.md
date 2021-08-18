@@ -13,8 +13,8 @@ You do not need to configure a database connection to use this command.
 
 ## Related Commands
 
-* [Get-EnvTestServiceStatus](./Get-EnvTestServiceStatus/)
-* [Reset-EnvTestServiceGroupMembership](./Reset-EnvTestServiceGroupMembership/)
+* [Get-EnvTestServiceStatus](../Get-EnvTestServiceStatus/)
+* [Reset-EnvTestServiceGroupMembership](../Reset-EnvTestServiceGroupMembership/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

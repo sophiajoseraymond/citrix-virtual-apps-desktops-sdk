@@ -22,7 +22,7 @@ The service configuration object. It is a key value pair that can be used to twe
 
 ## Related Commands
 
-* [Set-BrokerServiceConfigurationData](./Set-BrokerServiceConfigurationData/)
+* [Set-BrokerServiceConfigurationData](../Set-BrokerServiceConfigurationData/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

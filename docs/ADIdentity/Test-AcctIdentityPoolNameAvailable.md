@@ -11,8 +11,8 @@ Checks to ensure that the proposed name for an identity pool is unused. This che
 
 ## Related Commands
 
-* [New-AcctIdentityPool](./New-AcctIdentityPool/)
-* [Rename-AcctIdentityPool](./Rename-AcctIdentityPool/)
+* [New-AcctIdentityPool](../New-AcctIdentityPool/)
+* [Rename-AcctIdentityPool](../Rename-AcctIdentityPool/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

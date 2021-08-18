@@ -13,9 +13,9 @@ Provides the ability to change the name of an existing AppDisk.  The unique iden
 
 ## Related Commands
 
-* [New-AppLibAppDisk](./New-AppLibAppDisk/)
-* [Set-AppLibAppDisk](./Set-AppLibAppDisk/)
-* [Get-AppLibAppDisk](./Get-AppLibAppDisk/)
+* [New-AppLibAppDisk](../New-AppLibAppDisk/)
+* [Set-AppLibAppDisk](../Set-AppLibAppDisk/)
+* [Get-AppLibAppDisk](../Get-AppLibAppDisk/)
 * [Test-AppLibAppDiskNameAvailable](./Test-AppLibAppDiskNameAvailable/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |

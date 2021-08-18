@@ -11,8 +11,8 @@ Get-ConfigProduct [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddre
 
 ## Related Commands
 
-* [Get-ConfigSite](./Get-ConfigSite/)
-* [Set-ConfigSite](./Set-ConfigSite/)
+* [Get-ConfigSite](../Get-ConfigSite/)
+* [Set-ConfigSite](../Set-ConfigSite/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

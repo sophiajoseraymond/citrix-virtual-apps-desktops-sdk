@@ -11,9 +11,9 @@ Use this command to extend the set of hypervisor networks that are made availabl
 
 ## Related Commands
 
-* [New-Item](./New-Item/)
-* [Add-HypMetadata](./Add-HypMetadata/)
-* [remove-HypHostingUnitNetwork](./remove-HypHostingUnitNetwork/)
+* [New-Item](../New-Item/)
+* [Add-HypMetadata](../Add-HypMetadata/)
+* [remove-HypHostingUnitNetwork](../remove-HypHostingUnitNetwork/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

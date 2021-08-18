@@ -19,12 +19,12 @@ An error will be produced if the role being removed is currently assigned to an 
 
 ## Related Commands
 
-* [New-AdminRole](./New-AdminRole/)
-* [Get-AdminRole](./Get-AdminRole/)
-* [Set-AdminRole](./Set-AdminRole/)
-* [Rename-AdminRole](./Rename-AdminRole/)
-* [Set-AdminRoleMetadata](./Set-AdminRoleMetadata/)
-* [Remove-AdminRoleMetadata](./Remove-AdminRoleMetadata/)
+* [New-AdminRole](../New-AdminRole/)
+* [Get-AdminRole](../Get-AdminRole/)
+* [Set-AdminRole](../Set-AdminRole/)
+* [Rename-AdminRole](../Rename-AdminRole/)
+* [Set-AdminRoleMetadata](../Set-AdminRoleMetadata/)
+* [Remove-AdminRoleMetadata](../Remove-AdminRoleMetadata/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

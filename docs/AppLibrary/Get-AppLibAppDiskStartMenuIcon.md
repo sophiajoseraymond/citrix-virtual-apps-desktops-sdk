@@ -11,8 +11,8 @@ Returns a list of AppDisk start menu icons known to the AppLibrary Service.
 
 ## Related Commands
 
-* [Get-AppLibAppDisk](./Get-AppLibAppDisk/)
-* [Get-AppLibAppDiskStartMenuShortcut](./Get-AppLibAppDiskStartMenuShortcut/)
+* [Get-AppLibAppDisk](../Get-AppLibAppDisk/)
+* [Get-AppLibAppDiskStartMenuShortcut](../Get-AppLibAppDiskStartMenuShortcut/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

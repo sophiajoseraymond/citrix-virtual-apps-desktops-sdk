@@ -11,8 +11,8 @@ Provides the ability to remove data from the MachineCreation Service configurati
 
 ## Related Commands
 
-* [Set-ProvServiceConfigurationData](./Set-ProvServiceConfigurationData/)
-* [Get-ProvServiceConfigurationData](./Get-ProvServiceConfigurationData/)
+* [Set-ProvServiceConfigurationData](../Set-ProvServiceConfigurationData/)
+* [Get-ProvServiceConfigurationData](../Get-ProvServiceConfigurationData/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -11,9 +11,9 @@ Remove a GPO policy.
 
 ## Related Commands
 
-* [Get-BrokerGpoPolicy](./Get-BrokerGpoPolicy/)
-* [New-BrokerGpoPolicy](./New-BrokerGpoPolicy/)
-* [Set-BrokerGpoPolicy](./Set-BrokerGpoPolicy/)
+* [Get-BrokerGpoPolicy](../Get-BrokerGpoPolicy/)
+* [New-BrokerGpoPolicy](../New-BrokerGpoPolicy/)
+* [Set-BrokerGpoPolicy](../Set-BrokerGpoPolicy/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

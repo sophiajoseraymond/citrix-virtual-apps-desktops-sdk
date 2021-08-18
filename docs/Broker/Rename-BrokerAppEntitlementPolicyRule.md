@@ -15,10 +15,10 @@ An application rule in the entitlement policy defines the users who are allowed 
 
 ## Related Commands
 
-* [New-BrokerAppEntitlementPolicyRule](./New-BrokerAppEntitlementPolicyRule/)
-* [Get-BrokerAppEntitlementPolicyRule](./Get-BrokerAppEntitlementPolicyRule/)
-* [Set-BrokerAppEntitlementPolicyRule](./Set-BrokerAppEntitlementPolicyRule/)
-* [Remove-BrokerAppEntitlementPolicyRule](./Remove-BrokerAppEntitlementPolicyRule/)
+* [New-BrokerAppEntitlementPolicyRule](../New-BrokerAppEntitlementPolicyRule/)
+* [Get-BrokerAppEntitlementPolicyRule](../Get-BrokerAppEntitlementPolicyRule/)
+* [Set-BrokerAppEntitlementPolicyRule](../Set-BrokerAppEntitlementPolicyRule/)
+* [Remove-BrokerAppEntitlementPolicyRule](../Remove-BrokerAppEntitlementPolicyRule/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

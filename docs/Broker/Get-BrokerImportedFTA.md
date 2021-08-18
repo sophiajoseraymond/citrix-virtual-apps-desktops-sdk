@@ -60,9 +60,9 @@ The BrokerImportedFTA object represents a file type association imported from wo
 
 ## Related Commands
 
-* [New-BrokerConfiguredFTA](./New-BrokerConfiguredFTA/)
-* [Remove-BrokerImportedFTA](./Remove-BrokerImportedFTA/)
-* [Update-BrokerImportedFTA](./Update-BrokerImportedFTA/)
+* [New-BrokerConfiguredFTA](../New-BrokerConfiguredFTA/)
+* [Remove-BrokerImportedFTA](../Remove-BrokerImportedFTA/)
+* [Update-BrokerImportedFTA](../Update-BrokerImportedFTA/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -13,8 +13,8 @@ Provides the ability to unlock a virtual machine.
 
 ## Related Commands
 
-* [Get-ProvVM](./Get-ProvVM/)
-* [Lock-ProvVM](./Lock-ProvVM/)
+* [Get-ProvVM](../Get-ProvVM/)
+* [Lock-ProvVM](../Lock-ProvVM/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

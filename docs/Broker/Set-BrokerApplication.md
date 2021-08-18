@@ -17,12 +17,12 @@ You can change properties of HostedOnDesktop, InstalledOnClient and PublishedCon
 
 ## Related Commands
 
-* [New-BrokerApplication](./New-BrokerApplication/)
-* [Add-BrokerApplication](./Add-BrokerApplication/)
-* [Get-BrokerApplication](./Get-BrokerApplication/)
-* [Remove-BrokerApplication](./Remove-BrokerApplication/)
-* [Rename-BrokerApplication](./Rename-BrokerApplication/)
-* [Move-BrokerApplication](./Move-BrokerApplication/)
+* [New-BrokerApplication](../New-BrokerApplication/)
+* [Add-BrokerApplication](../Add-BrokerApplication/)
+* [Get-BrokerApplication](../Get-BrokerApplication/)
+* [Remove-BrokerApplication](../Remove-BrokerApplication/)
+* [Rename-BrokerApplication](../Rename-BrokerApplication/)
+* [Move-BrokerApplication](../Move-BrokerApplication/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

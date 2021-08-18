@@ -26,8 +26,8 @@ If file type associations are imported more than once for a desktop group, for e
 
 ## Related Commands
 
-* [Get-BrokerImportedFTA](./Get-BrokerImportedFTA/)
-* [Remove-BrokerImportedFTA](./Remove-BrokerImportedFTA/)
+* [Get-BrokerImportedFTA](../Get-BrokerImportedFTA/)
+* [Remove-BrokerImportedFTA](../Remove-BrokerImportedFTA/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

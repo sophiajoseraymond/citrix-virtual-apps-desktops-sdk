@@ -11,9 +11,9 @@ Enables tasks currently running in the MachineCreation Service to be stopped.  O
 
 ## Related Commands
 
-* [Get-ProvTask](./Get-ProvTask/)
-* [Remove-ProvTask](./Remove-ProvTask/)
-* [Switch-ProvTask](./Switch-ProvTask/)
+* [Get-ProvTask](../Get-ProvTask/)
+* [Remove-ProvTask](../Remove-ProvTask/)
+* [Switch-ProvTask](../Switch-ProvTask/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

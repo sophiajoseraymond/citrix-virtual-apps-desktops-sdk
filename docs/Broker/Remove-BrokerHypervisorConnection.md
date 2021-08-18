@@ -13,9 +13,9 @@ Remove-BrokerHypervisorConnection removes a hypervisor connection from the syste
 
 ## Related Commands
 
-* [Get-BrokerHypervisorConnection](./Get-BrokerHypervisorConnection/)
-* [Set-BrokerHypervisorConnection](./Set-BrokerHypervisorConnection/)
-* [New-BrokerHypervisorConnection](./New-BrokerHypervisorConnection/)
+* [Get-BrokerHypervisorConnection](../Get-BrokerHypervisorConnection/)
+* [Set-BrokerHypervisorConnection](../Set-BrokerHypervisorConnection/)
+* [New-BrokerHypervisorConnection](../New-BrokerHypervisorConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

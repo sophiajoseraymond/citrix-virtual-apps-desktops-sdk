@@ -32,9 +32,9 @@ The configuration slot object returned represents a named collection of related 
 
 ## Related Commands
 
-* [New-BrokerConfigurationSlot](./New-BrokerConfigurationSlot/)
-* [Remove-BrokerConfigurationSlot](./Remove-BrokerConfigurationSlot/)
-* [Get-BrokerMachineConfiguration](./Get-BrokerMachineConfiguration/)
+* [New-BrokerConfigurationSlot](../New-BrokerConfigurationSlot/)
+* [Remove-BrokerConfigurationSlot](../Remove-BrokerConfigurationSlot/)
+* [Get-BrokerMachineConfiguration](../Get-BrokerMachineConfiguration/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

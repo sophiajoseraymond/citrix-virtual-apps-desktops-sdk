@@ -25,8 +25,8 @@ Note that the combined length of the Category and CommandName is limited to 64 c
 
 ## Related Commands
 
-* [Get-BrokerMachineCommand](./Get-BrokerMachineCommand/)
-* [Remove-BrokerMachineCommand](./Remove-BrokerMachineCommand/)
+* [Get-BrokerMachineCommand](../Get-BrokerMachineCommand/)
+* [Remove-BrokerMachineCommand](../Remove-BrokerMachineCommand/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

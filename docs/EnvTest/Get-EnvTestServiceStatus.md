@@ -11,11 +11,11 @@ Enables the status of the EnvTest Service on the controller to be determined. Th
 
 ## Related Commands
 
-* [Get-EnvTestDataStore](./Get-EnvTestDataStore/)
-* [Set-EnvTestDBConnection](./Set-EnvTestDBConnection/)
-* [Test-EnvTestDBConnection](./Test-EnvTestDBConnection/)
-* [Get-EnvTestDBConnection](./Get-EnvTestDBConnection/)
-* [Get-EnvTestDBSchema](./Get-EnvTestDBSchema/)
+* [Get-EnvTestDataStore](../Get-EnvTestDataStore/)
+* [Set-EnvTestDBConnection](../Set-EnvTestDBConnection/)
+* [Test-EnvTestDBConnection](../Test-EnvTestDBConnection/)
+* [Get-EnvTestDBConnection](../Get-EnvTestDBConnection/)
+* [Get-EnvTestDBSchema](../Get-EnvTestDBSchema/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

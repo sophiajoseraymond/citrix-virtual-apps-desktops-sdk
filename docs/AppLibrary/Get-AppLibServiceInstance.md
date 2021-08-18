@@ -13,8 +13,8 @@ You do not need to configure a database connection to use this command.
 
 ## Related Commands
 
-* [Get-AppLibServiceStatus](./Get-AppLibServiceStatus/)
-* [Reset-AppLibServiceGroupMembership](./Reset-AppLibServiceGroupMembership/)
+* [Get-AppLibServiceStatus](../Get-AppLibServiceStatus/)
+* [Reset-AppLibServiceGroupMembership](../Reset-AppLibServiceGroupMembership/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

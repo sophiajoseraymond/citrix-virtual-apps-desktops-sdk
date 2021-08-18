@@ -15,9 +15,9 @@ The current service instance is that on the local machine, or that explicitly sp
 
 ## Related Commands
 
-* [Get-AdminServiceStatus](./Get-AdminServiceStatus/)
-* [Set-AdminDBConnection](./Set-AdminDBConnection/)
-* [Test-AdminDBConnection](./Test-AdminDBConnection/)
+* [Get-AdminServiceStatus](../Get-AdminServiceStatus/)
+* [Set-AdminDBConnection](../Set-AdminDBConnection/)
+* [Test-AdminDBConnection](../Test-AdminDBConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

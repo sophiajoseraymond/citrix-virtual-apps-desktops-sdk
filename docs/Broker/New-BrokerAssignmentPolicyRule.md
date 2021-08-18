@@ -26,10 +26,10 @@ Multiple desktop rules in the assignment policy can apply to the same desktop gr
 
 ## Related Commands
 
-* [Get-BrokerAssignmentPolicyRule](./Get-BrokerAssignmentPolicyRule/)
-* [Set-BrokerAssignmentPolicyRule](./Set-BrokerAssignmentPolicyRule/)
-* [Rename-BrokerAssignmentPolicyRule](./Rename-BrokerAssignmentPolicyRule/)
-* [Remove-BrokerAssignmentPolicyRule](./Remove-BrokerAssignmentPolicyRule/)
+* [Get-BrokerAssignmentPolicyRule](../Get-BrokerAssignmentPolicyRule/)
+* [Set-BrokerAssignmentPolicyRule](../Set-BrokerAssignmentPolicyRule/)
+* [Rename-BrokerAssignmentPolicyRule](../Rename-BrokerAssignmentPolicyRule/)
+* [Remove-BrokerAssignmentPolicyRule](../Remove-BrokerAssignmentPolicyRule/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

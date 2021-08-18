@@ -43,8 +43,8 @@ If the service uses two data stores they can exist in the same database. You do 
 
 ## Related Commands
 
-* [Set-AnalyticsDBConnection](./Set-AnalyticsDBConnection/)
-* [Test-AnalyticsDBConnection](./Test-AnalyticsDBConnection/)
+* [Set-AnalyticsDBConnection](../Set-AnalyticsDBConnection/)
+* [Test-AnalyticsDBConnection](../Test-AnalyticsDBConnection/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
