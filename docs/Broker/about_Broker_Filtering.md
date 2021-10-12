@@ -1,4 +1,3 @@
-﻿
 # about\_Broker\_Filtering
 
 ## Topic
@@ -36,9 +35,13 @@ WARNING: Only first 250 records returned. Use -MaxRecordCount to retrieve more.
 
 You can suppress this warning by using -WarningAction or by specifying a value for -MaxRecordCount.
 
-To retrieve all records, specify a large number for -MaxRecordCount. As the value is an integer, you can use the following:
+You can retrieve a maximum of 1000 records in one call. Use the following command to retrieve the maximum records in a single call:
 
-Get-&lt;Noun&gt; -MaxRecordCount \[int\]::MaxValue
+Get-<Noun> -MaxRecordCount 1000
+
+Note: When you enter a value greater than 1000, no records are retrieved and an error message appears.
+
+Based on the use case, you can filter results or separate results into multiple pages. You may also use both approaches together.
 
 -ReturnTotalRecordCount \[&lt;SwitchParameter&gt;\] When specified, this causes the cmdlet to output an error record containing the number of records available. This error record is additional information and does not affect the objects written to the output pipeline. For example:
 
