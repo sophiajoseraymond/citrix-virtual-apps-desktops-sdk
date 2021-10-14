@@ -162,8 +162,8 @@ while ($true) {
      $lastUid = $sessions[-1].Uid
      $allSessions += $sessions
 }
-
 ```
+
 In this example, a list is created and the lowest possible value for the chosen unique field is initialized. The unique ID in this example is zero. In a loop, sessions are requested using a filter searching for objects with a unique ID greater than zero. The number of objects is restricted to the first 1000 entries. It is important to sort by the field that is used as a filter.
       
 The filtering UID ($lastUid) is set to the unique ID of the final object retrieved. The loop begins again using this unique ID value as the lower bound. This loop continues until all sessions are retrieved and stored in an array ($allSessions).
