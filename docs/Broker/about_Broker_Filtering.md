@@ -145,37 +145,28 @@ Get-&lt;Noun&gt; -Filter { Size -gt 4 -or (Color -eq 'Blue' -and Shape -eq 'Circ
 
 
 ### Paging
-The simplest way to page through data is to use the -Skip and -MaxRecordCount parameters. So, to read the first three pages of data with 10 records per page, use:
 
-Get-&lt;Noun&gt; -Skip 0  -MaxRecordCount 10 &lt;other filtering criteria&gt; Get-&lt;Noun&gt; -Skip 10 -MaxRecordCount 10 &lt;other filtering criteria&gt; Get-&lt;Noun&gt; -Skip 20 -MaxRecordCount 10 &lt;other filtering criteria&gt;
+Citrix recommends that you avoid paging by using **Properties** or the **-Filter** mechanism. However, if more objects are required, then the SDK supports deterministic paging though filtering. You must sort and filter objects to have a unique identifier for an object. This unique identifier helps you to page through objects and avoid reordering. Most of the Broker objects have a unique ID that can be used for paging. However, you must sort the other objects that do not have a unique ID either by time or some other unique field.
 
-You must include the same filtering criteria on each call, and ensure that the data is sorted consistently.
-
-The above approach is often acceptable, but as each call performs an independent query, data changes can result in records being skipped or appearing twice. One approach to improve this is to sort by a unique id field and then start the search for the next page at the unique id after the last unique id of the previous page. For example:
-
+For example:
 
 ```
-      # Get the first page 
-      Get-<Noun> -MaxRecordCount 10 -SortBy SerialNumber 
-      SerialNumber  ... 
-      ------------  --- 
-      A120004 
-      A120007 
-      ... 7 other records ... 
-      A120900 
-
+     $allSessions = @()
+$lastUid = 0
+while ($true) {
+     $sessions = @(Get-BrokerSession -Filter { Uid -gt $lastUid } -MaxRecordCount 1000 -Sortby 'Uid')
+     if ($sessions.Length -eq 0)
+     {
+           break;
+     }
+     $lastUid = $sessions[-1].Uid
+     $allSessions += $sessions
+}
 ```
 
-```
-      # Get the next page 
-      Get-<Noun> -MaxRecordCount 10 -Filter { FirstName -gt 'A120900' } 
-      SerialNumber  ... 
-      ------------  --- 
-      A120901 
-      B220000 
-      ... 
-
-```
+In this example, a list is created and the lowest possible value for the chosen unique field is initialized. The unique ID in this example is zero. In a loop, sessions are requested using a filter searching for objects with a unique ID greater than zero. The number of objects is restricted to the first 1000 entries. It is important to sort by the field that is used as a filter.
+      
+The filtering UID ($lastUid) is set to the unique ID of the final object retrieved. The loop begins again using this unique ID value as the lower bound. This loop continues until all sessions are retrieved and stored in an array ($allSessions).
 
 ## Filter Syntax Definition
 
