@@ -35,11 +35,9 @@ WARNING: Only first 250 records returned. Use -MaxRecordCount to retrieve more.
 
 You can suppress this warning by using -WarningAction or by specifying a value for -MaxRecordCount.
 
-You can retrieve a maximum of 1000 records in one call. Use the following command to retrieve the maximum records in a single call:
+To retrieve all records, specify a large number for -MaxRecordCount. As the value is an integer, you can use the following:
 
-Get-<Noun> -MaxRecordCount 1000
-
-Note: When you enter a value greater than 1000, no records are retrieved and an error message appears.
+Get-<Noun> -MaxRecordCount [int]::MaxValue
 
 Based on the use case, you can filter results or separate results into multiple pages. You may also use both approaches together.
 
