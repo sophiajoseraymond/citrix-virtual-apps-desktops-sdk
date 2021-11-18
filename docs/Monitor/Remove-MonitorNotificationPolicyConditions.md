@@ -2,11 +2,13 @@
 # Remove-Monitornotificationpolicyconditions
 Remove conditions from the existing policy specified and returns the updated policy.
 ## Syntax
-```
-Remove-MonitorNotificationPolicyConditions -InputObject <MonitorNotificationPolicy> -Conditions <ConditionType[]> [-LoggingId <Guid>] [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 
-Remove-MonitorNotificationPolicyConditions -Uid <Int64> -Conditions <ConditionType[]> [-LoggingId <Guid>] [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
+Remove-MonitorNotificationPolicyConditions -InputObject <MonitorNotificationPolicy> -Conditions <ConditionType[]> [-LoggingId <Guid>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]  
+  
+Remove-MonitorNotificationPolicyConditions -Uid <Int64> -Conditions <ConditionType[]> [-LoggingId <Guid>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
+```
+
 ## Detailed Description
 Remove conditions from the existing policy specified and returns the updated policy.
 
@@ -24,6 +26,8 @@ Remove conditions from the existing policy specified and returns the updated pol
 | Uid | Specifies the unique identifier of the policy from which the conditions to be removed. | true | false |  |
 | LoggingId | Specifies the identifier of the high-level operation this cmdlet call forms a part of. Citrix Studio and Director typically create high-level operations. PowerShell scripts can also wrap a series of cmdlet calls in a high-level operation by way of the Start-LogHighLevelOperation and Stop-LogHighLevelOperation cmdlets. | false | false |  |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 | AdminAddress | Specifies the address of a Citrix Virtual Apps and Desktops 7 controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
@@ -38,8 +42,10 @@ Returns the updated policy object
 ## Examples
 
 ### Example 1
+
 ```
 Remove-MonitorNotificationPolicyConditions -Uid 100 -Conditions SessionsPeakconnectedCount
 ```
+
 #### Description
 Removes the condition SessionPeakconnectedCount from policy matching id 100

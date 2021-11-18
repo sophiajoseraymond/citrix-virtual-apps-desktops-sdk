@@ -2,9 +2,11 @@
 # Start-Brokerdesktopgrouprebootcycle
 Creates and starts a reboot cycle for each specified desktop group.
 ## Syntax
+
 ```
-Start-BrokerDesktopGroupRebootCycle [-InputObject] <DesktopGroup[]> -RebootDuration <Int32> [-RestrictToTagUid <Int32>] [-WarningDuration <Int32>] [-WarningTitle <String>] [-WarningMessage <String>] [-WarningRepeatInterval <Int32>] [-IgnoreMaintenanceMode <Boolean>] [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
+Start-BrokerDesktopGroupRebootCycle [-InputObject] <DesktopGroup[]> -RebootDuration <Int32> [-RestrictToTagUid <Int32>] [-WarningDuration <Int32>] [-WarningTitle <String>] [-WarningMessage <String>] [-WarningRepeatInterval <Int32>] [-IgnoreMaintenanceMode <Boolean>] [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 ```
+
 ## Detailed Description
 The Start-BrokerDesktopGroupRebootCycle cmdlet is used to create and start a reboot cycle for specified desktop groups.
 
@@ -30,6 +32,8 @@ The functionality offered is similar to that of New-BrokerRebootSchedule but the
 | LoggingId | Specifies the identifier of the high level operation that this cmdlet call forms a part of. Desktop Studio and Desktop Director typically create High Level Operations. PowerShell scripts can also wrap a series of cmdlet calls in a High Level Operation by way of the Start-LogHighLevelOperation and Stop-LogHighLevelOperation cmdlets. | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller that the PowerShell snapin will connect to. This can be provided as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value will become the default. |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 
 ## Input Type
@@ -43,8 +47,10 @@ Desktop groups may be specified through pipeline input. The groups can be specif
 ## Examples
 
 ### Example 1
+
 ```
 C:\PS> Get-BrokerDesktopGroup "SampleGroup" | Start-BrokerDesktopGroupRebootCycle -RebootDuration 240 -WarningMessage "Save your work" -WarningDuration 15 -RestrictToTagUid 2
 ```
+
 #### Description
 Starts a new reboot cycle for the desktop group called "SampleGroup". Each reboot cycle has a duration of six hours. Fifteen minutes prior to rebooting a machine, the message "Save your work" is displayed in each active user session. Only machines tagged with the tag having UID 2 will be rebooted.

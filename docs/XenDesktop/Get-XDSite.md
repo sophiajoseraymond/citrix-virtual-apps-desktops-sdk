@@ -2,9 +2,11 @@
 # Get-Xdsite
 Gets the attributes of a Site.
 ## Syntax
+
 ```
 Get-XDSite [-AdminAddress <String>] [<CommonParameters>]
 ```
+
 ## Detailed Description
 Gets the attributes of the Site which has a Controller identified by AdminAddress.
 
@@ -28,8 +30,10 @@ This includes the name of the Site, the Controllers in Site, the Databases suppo
 ## Examples
 
 ### Example 1
+
 ```
 C:\PS> Get-XDSite -AdminAddress MySiteController
 ```
+
 #### Description
 Gets the attributes of the Site which has a Controller identified by MySiteController.

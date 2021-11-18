@@ -2,11 +2,13 @@
 # Set-Monitornotificationsnmpserverconfiguration
 Saves a new Snmp server configuration
 ## Syntax
-```
-Set-MonitorNotificationSnmpServerConfiguration [-InputObject] <MonitorNotificationSnmpServerConfiguration> [-LoggingId <Guid>] [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 
-Set-MonitorNotificationSnmpServerConfiguration [-ServerName <String>] [-PortNumber <Int32>] [-SnmpSender <String>] [-EngineId <String>] [-AuthPassword <SecureString>] [-PrivPassword <SecureString>] [-PrivPasswordProtocol <PrivacyProtocolType>] [-AuthPasswordProtocol <AuthProtocolType>] [-CommunityString <String>] [-Protocol <SnmpProtocolType>] [-LoggingId <Guid>] [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
+Set-MonitorNotificationSnmpServerConfiguration [-InputObject] <MonitorNotificationSnmpServerConfiguration> [-LoggingId <Guid>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]  
+  
+Set-MonitorNotificationSnmpServerConfiguration [-ServerName <String>] [-PortNumber <Int32>] [-SnmpSender <String>] [-EngineId <String>] [-AuthPassword <SecureString>] [-PrivPassword <SecureString>] [-PrivPasswordProtocol <PrivacyProtocolType>] [-AuthPasswordProtocol <AuthProtocolType>] [-CommunityString <String>] [-Protocol <SnmpProtocolType>] [-LoggingId <Guid>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
+```
+
 ## Detailed Description
 The saved configuration describes the new settings to be used to send Snmps
 
@@ -30,6 +32,8 @@ The saved configuration describes the new settings to be used to send Snmps
 | Protocol | Snmp protocol used for trap | false | false |  |
 | LoggingId | Specifies the identifier of the high-level operation this cmdlet call forms a part of. Citrix Studio and Director typically create high-level operations. PowerShell scripts can also wrap a series of cmdlet calls in a high-level operation by way of the Start-LogHighLevelOperation and Stop-LogHighLevelOperation cmdlets. | false | false |  |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 | AdminAddress | Specifies the address of a Citrix Virtual Apps and Desktops 7 controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
@@ -44,8 +48,10 @@ The saved configuration
 ## Examples
 
 ### Example 1
+
 ```
 Set-MonitorNotificationSnmpServerConfiguration -ServerName "192.168.100.100" -PortNumber 162 -SnmpSender directoradmin -AuthPassword authpassword -AuthPasswordProtocol MD5 -PrivatePassword PrivPassword -PrivatePasswordProtocol DES
 ```
+
 #### Description
 Set new Snmp server configration using the specified parameters

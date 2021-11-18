@@ -2,13 +2,15 @@
 # Remove-Adminscope
 Removes a scope from the site.
 ## Syntax
-```
-Remove-AdminScope [-InputObject] <Scope[]> [-Force] [-LoggingId <Guid>] [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 
-Remove-AdminScope [-Id] <Guid[]> [-Force] [-LoggingId <Guid>] [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
-
-Remove-AdminScope [-Name] <String[]> [-Force] [-LoggingId <Guid>] [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
+Remove-AdminScope [-InputObject] <Scope[]> [-Force] [-LoggingId <Guid>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]  
+  
+Remove-AdminScope [-Id] <Guid[]> [-Force] [-LoggingId <Guid>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]  
+  
+Remove-AdminScope [-Name] <String[]> [-Force] [-LoggingId <Guid>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
+```
+
 ## Detailed Description
 The Remove-AdminScope cmdlet deletes scopes from the site.
 
@@ -34,6 +36,8 @@ An error will be produced if the scope being removed is currently assigned to an
 | Force | Allow removal of scopes that are still in use. | false | false |  |
 | LoggingId | Specifies the identifier of the high-level operation this cmdlet call forms a part of. Citrix Studio and Director typically create high-level operations. PowerShell scripts can also wrap a series of cmdlet calls in a high-level operation by way of the Start-LogHighLevelOperation and Stop-LogHighLevelOperation cmdlets. | false | false |  |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
@@ -48,14 +52,18 @@ You can pipe the scopes to be deleted into this command.
 ## Examples
 
 ### Example 1
+
 ```
 C:\PS> Remove-AdminScope -Name Sales
 ```
+
 #### Description
 Remove the Sales scope.
 ### Example 2
+
 ```
 C:\PS> Get-AdminScope -BuiltIn $false | Remove-AdminScope
 ```
+
 #### Description
 Attempt to remove all scopes (excluding the built-in 'All' scope). This fails if one of the scopes is assigned to an administrator.

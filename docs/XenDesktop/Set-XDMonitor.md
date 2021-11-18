@@ -2,9 +2,11 @@
 # Set-Xdmonitor
 Sets the Monitoring Database attributes of a Site.
 ## Syntax
+
 ```
 Set-XDMonitor [-DatabaseMirrorServer <String>] [-DatabaseName <String>] [-DatabaseServer <String>] [-PassThru] [-AdminAddress <String>] [<CommonParameters>]
 ```
+
 ## Detailed Description
 Sets the Monitoring Database attributes of the Site which has a Controller identified by AdminAddress.
 
@@ -31,18 +33,25 @@ You cannot pipe input to this cmdlet.
 ### None Or Citrix.Xendesktoppowershellsdk.Serviceinterfaces.Configuration.Monitor
 This cmdlet does not generate any output, unless you use the PassThru parameter, in which case it generates a Citrix.XenDesktopPowerShellSdk.ServiceInterfaces.Configuration.Monitor object.
 ## Notes
-The command can fail for the following reasons:<br>    o The Monitoring Database name and/or database server have not been provided, yet there is no existing database name and/or database server to use as default settings.<br>    o The Controller identfied by AdminAddress does not have the necessary permissions to access the new Monitoring Database or mirror database on the database server.<br>    o The new Monitoring Database or mirror database on the database server is not configured for the Site that is associated with the Controller identified by AdminAddress.
+The command can fail for the following reasons:  
+    o The Monitoring Database name and/or database server have not been provided, yet there is no existing database name and/or database server to use as default settings.  
+    o The Controller identfied by AdminAddress does not have the necessary permissions to access the new Monitoring Database or mirror database on the database server.  
+    o The new Monitoring Database or mirror database on the database server is not configured for the Site that is associated with the Controller identified by AdminAddress.
 ## Examples
 
 ### Example 1
+
 ```
 C:\PS> Set-XDMonitor -AdminAddress MyController -DatabaseMirrorServer MySQLMirror
 ```
+
 #### Description
 For the Site managed by MyController, sets the mirror for the Monitoring Database to MySQLMirror.
 ### Example 2
+
 ```
 C:\PS> Set-XDMonitor -AdminAddress MyController -DatabaseServer MySQLServer -DatabaseName MyMonitorDatabase
 ```
+
 #### Description
 For the Site managed by MyController, sets the SQL Server for the Monitoring Database to MySQLServer and the database name to MyMonitorDatabase.

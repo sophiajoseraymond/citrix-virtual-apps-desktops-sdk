@@ -1,5 +1,5 @@
 ﻿
-# about\_TrustTrustSnapIn
+# about\_TrustTrustSnapin
 
 ## Topic
 about\_TrustTrustSnapin

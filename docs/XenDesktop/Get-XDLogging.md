@@ -2,9 +2,11 @@
 # Get-Xdlogging
 Gets the Configuration Logging Database attributes of a Site.
 ## Syntax
+
 ```
 Get-XDLogging [-AdminAddress <String>] [<CommonParameters>]
 ```
+
 ## Detailed Description
 Gets the Configuration Logging Database attributes of the Site which has a Controller identified by AdminAddress.
 

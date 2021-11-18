@@ -2,11 +2,13 @@
 # New-Xddatabase
 Creates the specified Database or all Databases.
 ## Syntax
-```
-New-XDDatabase -AllDefaultDatabases -DatabaseServer <String> -SiteName <String> [-DatabaseCredentials <PSCredential>] [-DatabaseNamePrefix <String>] [-AdminAddress <String>] [<CommonParameters>]
 
+```
+New-XDDatabase -AllDefaultDatabases -DatabaseServer <String> -SiteName <String> [-DatabaseCredentials <PSCredential>] [-DatabaseNamePrefix <String>] [-AdminAddress <String>] [<CommonParameters>]  
+  
 New-XDDatabase -DatabaseServer <String> -DataStore <DataStore> -SiteName <String> [-DatabaseCredentials <PSCredential>] [-DatabaseName <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
+
 ## Detailed Description
 If AllDefaultDatabases is specified, this cmdlet creates all databases using their default names on the specified SQL server. When used in this manner, the cmdlet need only be called once.
 
@@ -14,7 +16,7 @@ If DataStore is specified, this cmdlet creates the specified database on the spe
 
 This cmdlet creates, but does not configure, the Database. Run New-XDSite to configure the Site to use the Database.
 
-For database mirroring please refer to "about\_XenDesktopModule\_SiteConfiguration".
+For database mirroring please refer to "[[about\_XenDesktopModule](../about_XenDesktopModule/)\_SiteConfiguration](../about_XenDesktopModule_SiteConfiguration/)".
 
 
 ## Related Commands
@@ -25,7 +27,13 @@ For database mirroring please refer to "about\_XenDesktopModule\_SiteConfigurati
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
-| AllDefaultDatabases | All databases are created with their default names. The default names are listed with their corresponding dataStore types as follows:<br>-- Site<br>The Site Configuration Database. The default name of this database is Citrix&lt;SiteName&gt;.<br>-- Logging<br>The Configuration Logging Database. The default name of this database is CitrixConfigLogging&lt;SiteName&gt;.<br>-- Monitor<br>The Monitoring Database. The default name of this database is CitrixMonitor&lt;SiteName&gt;. | true | false |  |
+| AllDefaultDatabases | All databases are created with their default names. The default names are listed with their corresponding dataStore types as follows:  
+-- Site  
+The Site Configuration Database. The default name of this database is Citrix&lt;SiteName&gt;.  
+-- Logging  
+The Configuration Logging Database. The default name of this database is CitrixConfigLogging&lt;SiteName&gt;.  
+-- Monitor  
+The Monitoring Database. The default name of this database is CitrixMonitor&lt;SiteName&gt;. | true | false |  |
 | DatabaseServer | The address of the SQL Server in which the database is to be created. This must include the SQL Instance name. | true | false |  |
 | SiteName | The name of the Site for which the specified database is to be created. | true | false |  |
 | DataStore | The datastore type that is to be created.  Valid values are Site, Logging and Monitor. | true | false |  |
@@ -43,30 +51,41 @@ You cannot pipe input into this cmdlet.
 ### Citrix.Xendesktoppowershellsdk.Serviceinterfaces.Configuration.Database
 One Database object is returned for each datastore type that is created.  Each Database object includes the database name, datastore type and SQL Server address.
 ## Notes
-If the user running this cmdlet does not have privilege to create databases on the specified SQL Server, then alternative credentials may be provided using the DatabaseCredentials parameter.<br>    The command can fail for the following reasons:<br>    o A connection could not be established with the specified SQL Server.<br>    o The person running the cmdlet, or the supplied credentials, do not have sufficient privilege to create databases on the specified SQL Server. In this situation, use Get-XDDatabaseSchema, instead of New-XDDatabase, to generate SQL database creation scripts that may be given to a database administrator for execution on the SQL Server.
+If the user running this cmdlet does not have privilege to create databases on the specified SQL Server, then alternative credentials may be provided using the DatabaseCredentials parameter.  
+    The command can fail for the following reasons:  
+    o A connection could not be established with the specified SQL Server.  
+    o The person running the cmdlet, or the supplied credentials, do not have sufficient privilege to create databases on the specified SQL Server. In this situation, use Get-XDDatabaseSchema, instead of New-XDDatabase, to generate SQL database creation scripts that may be given to a database administrator for execution on the SQL Server.
 ## Examples
 
 ### Example 1
+
 ```
 C:\PS> New-XDDatabase -AdminAddress MySiteController -SiteName MySite -Datastore Site -DatabaseServer MySqlServer\Instance_1 -DatabaseName MySiteDatabase
 ```
+
 #### Description
 Creates a Site Configuration Database called 'MySiteDatabase' for the Site named 'MySite' on 'Instance\_1' of the SQL Server 'MySqlServer'.
 ### Example 2
+
 ```
 C:\PS> New-XDDatabase -AdminAddress MySiteController -SiteName MySite -Datastore Logging -DatabaseServer MySqlServer\Instance_1 -DatabaseName MyLoggingDatabase
 ```
+
 #### Description
 Creates a Configuration Logging Database called 'MyLoggingDatabase' for the Site named 'MySite' on 'Instance\_1' of the SQL Server 'MySqlServer'.
 ### Example 3
+
 ```
 C:\PS> New-XDDatabase -AdminAddress MySiteController -SiteName MySite -Datastore Monitor -DatabaseServer MySqlServer\Instance_1 -DatabaseName MyMonitorDatabase
 ```
+
 #### Description
 Creates a Monitoring Database called 'MyMonitorDatabase' for the Site named 'MySite' on 'Instance\_1' of the SQL Server 'MySqlServer'.
 ### Example 4
+
 ```
 C:\PS> New-XDDatabase -AdminAddress MySiteController -SiteName MySite -AllDefaultDatabases -DatabaseServer MySqlServer\Instance_1 -DatabaseNamePrefix  MyPrefix-
 ```
+
 #### Description
 Creates Site Configuration, Configuration Logging and Monitoring Databases called 'MyPrefix-CitrixMySite', 'MyPrefix-CitrixConfigLoggingMySite' and 'MyPrefix-CitrixMonitorMySite' for the Site named 'MySite' on 'Instance\_1' of the SQL Server 'MySqlServer'.

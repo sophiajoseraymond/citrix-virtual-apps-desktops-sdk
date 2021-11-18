@@ -2,9 +2,11 @@
 # Set-Monitorconfiguration
 Sets configuration settings that are used by the Monitor Service.
 ## Syntax
+
 ```
-Set-MonitorConfiguration [-GroomSessionsRetentionDays <Int32>] [-GroomFailuresRetentionDays <Int32>] [-GroomLoadIndexesRetentionDays <Int32>] [-GroomDeletedRetentionDays <Int32>] [-GroomSummariesRetentionDays <Int32>] [-GroomMachineHotfixLogRetentionDays <Int32>] [-GroomMinuteRetentionDays <Int32>] [-GroomHourlyRetentionDays <Int32>] [-DataCollectionEnabled <Boolean>] [-FullPollStartHour <Int32>] [-GroomStartHour <Int32>] [-SyncDataToCasStartHour <Int32>] [-ResolutionPollTimeHours <Int32>] [-SyncPollTimeHours <Int32>] [-DetailedSqlOutputEnabled <Boolean>] [-MonitorQueryTimeoutSeconds <Int32>] [-CollectHotfixDataEnabled <Boolean>] [-GroomApplicationInstanceRetentionDays <Int32>] [-GroomApplicationErrorsRetentionDays <Int32>] [-GroomApplicationFaultsRetentionDays <Int32>] [-GroomNotificationLogRetentionDays <Int32>] [-GroomResourceUsageRawDataRetentionDays <Int32>] [-GroomResourceUsageMinuteDataRetentionDays <Int32>] [-GroomResourceUsageHourDataRetentionDays <Int32>] [-GroomResourceUsageDayDataRetentionDays <Int32>] [-GroomProcessUsageHourDataRetentionDays <Int32>] [-GroomProcessUsageDayDataRetentionDays <Int32>] [-GroomSessionMetricsDataRetentionDays <Int32>] [-GroomMachineMetricDataRetentionDays <Int32>] [-GroomMachineMetricDaySummaryDataRetentionDays <Int32>] [-EnableDayLevelGranularityProcessUtilization <Boolean>] [-GroomApplicationProbeLogsRetentionDays <Int32>] [-EnableHourLevelGranularityProcessUtilization <Boolean>] [-EnableMinLevelGranularityProcessUtilization <Boolean>] [-GroomSessionAutoReconnectsRetentionDays <Int32>] [-LoggingId <Guid>] [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
+Set-MonitorConfiguration [-GroomSessionsRetentionDays <Int32>] [-GroomFailuresRetentionDays <Int32>] [-GroomLoadIndexesRetentionDays <Int32>] [-GroomDeletedRetentionDays <Int32>] [-GroomSummariesRetentionDays <Int32>] [-GroomMachineHotfixLogRetentionDays <Int32>] [-GroomMinuteRetentionDays <Int32>] [-GroomHourlyRetentionDays <Int32>] [-DataCollectionEnabled <Boolean>] [-FullPollStartHour <Int32>] [-GroomStartHour <Int32>] [-SyncDataToCasStartHour <Int32>] [-ResolutionPollTimeHours <Int32>] [-SyncPollTimeHours <Int32>] [-DetailedSqlOutputEnabled <Boolean>] [-MonitorQueryTimeoutSeconds <Int32>] [-CollectHotfixDataEnabled <Boolean>] [-GroomApplicationInstanceRetentionDays <Int32>] [-GroomApplicationErrorsRetentionDays <Int32>] [-GroomApplicationFaultsRetentionDays <Int32>] [-GroomNotificationLogRetentionDays <Int32>] [-GroomResourceUsageRawDataRetentionDays <Int32>] [-GroomResourceUsageMinuteDataRetentionDays <Int32>] [-GroomResourceUsageHourDataRetentionDays <Int32>] [-GroomResourceUsageDayDataRetentionDays <Int32>] [-GroomProcessUsageHourDataRetentionDays <Int32>] [-GroomProcessUsageDayDataRetentionDays <Int32>] [-GroomSessionMetricsDataRetentionDays <Int32>] [-GroomMachineMetricDataRetentionDays <Int32>] [-GroomMachineMetricDaySummaryDataRetentionDays <Int32>] [-EnableDayLevelGranularityProcessUtilization <Boolean>] [-GroomApplicationProbeLogsRetentionDays <Int32>] [-EnableHourLevelGranularityProcessUtilization <Boolean>] [-EnableMinLevelGranularityProcessUtilization <Boolean>] [-GroomSessionAutoReconnectsRetentionDays <Int32>] [-LoggingId <Guid>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
+
 ## Detailed Description
 Sets the configuration settings used by the Monitor Service. Use these settings to modify the behavior of the service.
 
@@ -54,6 +56,8 @@ A database connection need not be configured for this command to be used.
 | GroomSessionAutoReconnectsRetentionDays | Determines how many days to keep SessionAutoReconnects data | false | false | 7 for non-platinum, 31 for platinum. |
 | LoggingId | Specifies the identifier of the high-level operation this cmdlet call forms a part of. Citrix Studio and Director typically create high-level operations. PowerShell scripts can also wrap a series of cmdlet calls in a high-level operation by way of the Start-LogHighLevelOperation and Stop-LogHighLevelOperation cmdlets. | false | false |  |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 | AdminAddress | Specifies the address of a Citrix Virtual Apps and Desktops 7 controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
@@ -68,8 +72,10 @@ A database connection need not be configured for this command to be used.
 ## Examples
 
 ### Example 1
+
 ```
 C:\PS>Set-MonitorConfiguration -GroomSessionsRetentionDays 5 -GroomFailuresRetentionDays 4 ...
 ```
+
 #### Description
 Updates the settings in the site database with the newly specified values.

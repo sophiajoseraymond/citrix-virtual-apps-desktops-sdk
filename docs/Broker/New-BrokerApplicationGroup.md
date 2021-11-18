@@ -2,9 +2,11 @@
 # New-Brokerapplicationgroup
 Create a new application group to which applications can be added.
 ## Syntax
+
 ```
-New-BrokerApplicationGroup [-Name] <String> [-Description <String>] [-Enabled <Boolean>] [-RestrictToTag <String>] [-Scope <String[]>] [-SessionSharingEnabled <Boolean>] [-SingleAppPerSession <Boolean>] [-TenantId <Guid>] [-UserFilterEnabled <Boolean>] [-UUID <Guid>] [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
+New-BrokerApplicationGroup [-Name] <String> [-Description <String>] [-Enabled <Boolean>] [-RestrictToTag <String>] [-Scope <String[]>] [-SessionSharingEnabled <Boolean>] [-SingleAppPerSession <Boolean>] [-TenantId <Guid>] [-UserFilterEnabled <Boolean>] [-UUID <Guid>] [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 ```
+
 ## Detailed Description
 The New-BrokerApplicationGroup cmdlet creates a new application group. Applications that are added to the application group can then be managed centrally by setting properties on the application group rather than on each application individually.
 
@@ -18,7 +20,7 @@ To manipulate the user filter associated with an application group, use Add-Brok
 
 To manipulate the set of tags associated with an application group, use Add-BrokerTag -ApplicationGroup and Remove-BrokerTag -ApplicationGroup.
 
-See about\_Broker\_Applications for more information.
+See [about\_Broker\_Applications](../about_Broker_Applications/) for more information.
 
 
 ## Related Commands
@@ -50,6 +52,8 @@ See about\_Broker\_Applications for more information.
 | LoggingId | Specifies the identifier of the high level operation that this cmdlet call forms a part of. Desktop Studio and Desktop Director typically create High Level Operations. PowerShell scripts can also wrap a series of cmdlet calls in a High Level Operation by way of the Start-LogHighLevelOperation and Stop-LogHighLevelOperation cmdlets. | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller that the PowerShell snapin will connect to. This can be provided as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value will become the default. |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 
 ## Input Type
@@ -63,16 +67,20 @@ The newly created application group.
 ## Examples
 
 ### Example 1
+
 ```
 C:\PS> New-BrokerApplicationGroup "Helpdesk Apps"
 ```
+
 #### Description
 Creates a new application group called 'Helpdesk Apps'.
 ### Example 2
-```
-C:\PS> New-BrokerApplicationGroup "Accounts Apps" -UserFilterEnabled $true
 
+```
+C:\PS> New-BrokerApplicationGroup "Accounts Apps" -UserFilterEnabled $true  
+  
           C:\PS> Add-BrokerUser "MYDOMAIN\Accounts" -ApplicationGroup "Accounts Apps"
 ```
+
 #### Description
 Creates a new application group called 'Accounts Apps', and then restrict access so that only members of the MYDOMAIN\\Accounts user group can launch applications in 'Accounts Apps'.

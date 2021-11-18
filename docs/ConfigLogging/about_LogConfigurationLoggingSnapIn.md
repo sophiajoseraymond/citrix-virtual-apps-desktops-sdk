@@ -1,5 +1,5 @@
 ﻿
-# about\_LogConfigurationLoggingSnapIn
+# about\_LogConfigurationLoggingSnapin
 
 ## Topic
 about\_LogConfigurationLoggingSnapin

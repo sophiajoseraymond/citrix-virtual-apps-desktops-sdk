@@ -2,9 +2,11 @@
 # Start-Loghighleveloperation
 Logs the start of a high level operation.
 ## Syntax
+
 ```
-Start-LogHighLevelOperation -Text <String> -Source <String> [-StartTime <DateTime>] [-OperationType <OperationType>] [-TargetTypes <String[]>] [-Parameters <Hashtable>] [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
+Start-LogHighLevelOperation -Text <String> -Source <String> [-StartTime <DateTime>] [-OperationType <OperationType>] [-TargetTypes <String[]>] [-Parameters <Hashtable>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
+
 ## Detailed Description
 Start-LogHighLevelOperation creates a log entry to record the start of a high level operation.
 
@@ -40,10 +42,14 @@ Rebooting a user's desktop. Once the change being logged has completed (whether 
 | Text | Specifies text to describe the high level operation. | true | false |  |
 | Source | Specifies the source of the high level operation. | true | false |  |
 | StartTime | Specifies the start time of the high level operation. | false | false | DateTime.UtcNow |
-| OperationType | Specifies the type of operation being logged. Values can be:<br>o AdminActivity - If the operation being logged performs an administration activity.<br>o ConfigurationChange - If the operation being logged performs a configuration change. | false | false | ConfigurationChange |
+| OperationType | Specifies the type of operation being logged. Values can be:  
+o AdminActivity - If the operation being logged performs an administration activity.  
+o ConfigurationChange - If the operation being logged performs a configuration change. | false | false | ConfigurationChange |
 | TargetTypes | Specifies the names of the object types that will be affected by the operation being logged. | false | false |  |
 | Parameters | Specifies the names and values of parameters that are supplied to the operation being logged. | false | false |  |
 | BearerToken | Specifies the bearer token assigned to the calling user. | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site id the PowerShell snap-in will connect to. | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
@@ -58,44 +64,46 @@ The newly logged high level operation start.
 ## Examples
 
 ### Example 1
+
 ```
-C:\PS> $succeeded = $false #indicates if high level operation succeeded.
-
-C:\PS> # Log high level operation start.
-
-C:\PS> $highLevelOp = Start-LogHighLevelOperation -Text "Create catalog" -Source "My Custom Script"
-
-C:\PS>
-
-C:\PS> try
-
-C:\PS> {
-
-C:\PS>   # Create catalog object
-
-C:\PS>   $catalog = New-BrokerCatalog -Name "MyCatalog" -ProvisioningType Manual -AllocationType Permanent -MinimumFunctionalLevel 'LMAX' -LoggingId $highLevelOp.Id
-
-C:\PS>
-
-C:\PS>   # Add a machine to the catalog
-
-C:\PS>   $machine = New-BrokerMachine -CatalogUid $catalog.Uid -MachineName "DOMAIN\Machine" -LoggingId $highLevelOp.Id
-
-C:\PS>   $succeeded = $true
-
-C:\PS> }
-
-C:\PS> catch{ "Error encountered" }
-
-C:\PS>
-
-C:\PS> finally{
-
-C:\PS>   # Log high level operation stop, and indicate its success
-
-C:\PS>   Stop-LogHighLevelOperation -HighLevelOperationId $highLevelOp.Id -IsSuccessful $succeeded
-
+C:\PS> $succeeded = $false #indicates if high level operation succeeded.  
+  
+C:\PS> # Log high level operation start.  
+  
+C:\PS> $highLevelOp = Start-LogHighLevelOperation -Text "Create catalog" -Source "My Custom Script"  
+  
+C:\PS>  
+  
+C:\PS> try  
+  
+C:\PS> {  
+  
+C:\PS>   # Create catalog object  
+  
+C:\PS>   $catalog = New-BrokerCatalog -Name "MyCatalog" -ProvisioningType Manual -AllocationType Permanent -MinimumFunctionalLevel 'LMAX' -LoggingId $highLevelOp.Id  
+  
+C:\PS>  
+  
+C:\PS>   # Add a machine to the catalog  
+  
+C:\PS>   $machine = New-BrokerMachine -CatalogUid $catalog.Uid -MachineName "DOMAIN\Machine" -LoggingId $highLevelOp.Id  
+  
+C:\PS>   $succeeded = $true  
+  
+C:\PS> }  
+  
+C:\PS> catch{ "Error encountered" }  
+  
+C:\PS>  
+  
+C:\PS> finally{  
+  
+C:\PS>   # Log high level operation stop, and indicate its success  
+  
+C:\PS>   Stop-LogHighLevelOperation -HighLevelOperationId $highLevelOp.Id -IsSuccessful $succeeded  
+  
 C:\PS> }
 ```
+
 #### Description
 Creates an unmanaged catalog and assigns a machine to it, within the scope of a high level operation start and stop. The identifier of the high level operation is passed into the "-LoggingId" parameter of the service SDK cmdlets. The execution of the cmdlets in the services will create the low level operation logs for the supplied high level operation.

@@ -2,11 +2,13 @@
 # Reset-Brokerhypervisorconnection
 Reset the hypervisor connection
 ## Syntax
-```
-Reset-BrokerHypervisorConnection [[-HypervisorConnectionUid] <Int32>] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 
-Reset-BrokerHypervisorConnection [-InputObject] <HypervisorConnection> [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 ```
+Reset-BrokerHypervisorConnection [[-HypervisorConnectionUid] <Int32>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]  
+  
+Reset-BrokerHypervisorConnection [-InputObject] <HypervisorConnection> [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]
+```
+
 ## Detailed Description
 Requests the hypervisor connection to be reset. The connection is dropped, details including credentials refreshed and the connection re-established. The reset request is asynchronous and may take a moment to occur
 
@@ -23,6 +25,8 @@ Requests the hypervisor connection to be reset. The connection is dropped, detai
 | HypervisorConnectionUid | Specifies the hypervisor connection Uid | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller that the PowerShell snapin will connect to. This can be provided as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value will become the default. |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 
 ## Input Type
@@ -36,14 +40,18 @@ You can pipe the hypervisor connection to be reset to Reset-BrokerHypervisorConn
 ## Examples
 
 ### Example 1
+
 ```
 C:\PS> Reset-BrokerHypervisorConnection -HypervisorConnectionUid 2
 ```
+
 #### Description
 This command resets the specified Hypervisor connection by internal Uid
 ### Example 2
+
 ```
 C:\PS> Get-HypervisorConnection | Reset-BrokerHypervisorConnection
 ```
+
 #### Description
 This command resets the piped in hypervisor connection

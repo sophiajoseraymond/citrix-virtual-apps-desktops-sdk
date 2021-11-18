@@ -2,11 +2,13 @@
 # Reset-Brokerenabledfeaturelist
 Resets the broker's list of enabled features.
 ## Syntax
+
 ```
-Reset-BrokerEnabledFeatureList [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
+Reset-BrokerEnabledFeatureList [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 ```
+
 ## Detailed Description
-The Reset-BrokerLicensingConnection cmdlet resets the broker's list of enabled features.
+The Reset-BrokerEnabledFeatureList cmdlet resets the broker's list of enabled features.
 
 Toggling site features on or off doesn't become effective immediately. There will typically be a delay as the changes are propagated across the site based on the scheduling of refresh logic built into the controllers.
 
@@ -22,6 +24,8 @@ Each broker service instance holds its list of enabled features. In order for th
 | --- | --- | --- | --- | --- |
 | AdminAddress | Specifies the address of a XenDesktop controller that the PowerShell snapin will connect to. This can be provided as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value will become the default. |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 
 ## Input Type
@@ -35,8 +39,10 @@ You cannot pipe input into this cmdlet.
 ## Examples
 
 ### Example 1
+
 ```
 C:\PS> Reset-BrokerEnabledFeatureList
 ```
+
 #### Description
 Reset the broker's list of enabled features.

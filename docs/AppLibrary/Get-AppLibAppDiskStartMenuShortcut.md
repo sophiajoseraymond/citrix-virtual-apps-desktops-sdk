@@ -2,9 +2,11 @@
 # Get-Applibappdiskstartmenushortcut
 Gets the AppDisk start menu shortcuts for the AppLibrary Service.
 ## Syntax
+
 ```
-Get-AppLibAppDiskStartMenuShortcut [-StartMenuShortcutUid <Guid>] [-AppDiskUid <Guid>] [-AppDiskName <String>] [-CommandLineExecutable <String>] [-CommandLineArguments <String>] [-Description <String>] [-DisplayName <String>] [-ShortcutPath <String>] [-WorkingDirectory <String>] [-IconUid <Guid>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
+Get-AppLibAppDiskStartMenuShortcut [-StartMenuShortcutUid <Guid>] [-AppDiskUid <Guid>] [-AppDiskName <String>] [-CommandLineExecutable <String>] [-CommandLineArguments <String>] [-Description <String>] [-DisplayName <String>] [-ShortcutPath <String>] [-WorkingDirectory <String>] [-IconUid <Guid>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-FilterScope <Guid>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
+
 ## Detailed Description
 Returns a list of AppDisk shortcuts known to the AppLibrary Service.
 
@@ -31,7 +33,10 @@ Returns a list of AppDisk shortcuts known to the AppLibrary Service.
 | Skip | Skips the specified number of records before returning results. Also reduces the count returned by -ReturnTotalRecordCount. | false | false | 0 |
 | SortBy | Sorts the results by the specified list of properties. The list is a set of property names separated by commas, semi-colons, or spaces. Optionally, prefix each name with a + or - to indicate ascending or descending order. Ascending order is assumed if no prefix is present. | false | false | The default sort order is by name or unique identifier. |
 | Filter | Gets records that match a PowerShell-style filter expression. See about\_AppLib\_Filtering for details. | false | false |  |
+| FilterScope | Gets only results allowed by the specified scope id. | false | false |  |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
@@ -44,36 +49,62 @@ Returns a list of AppDisk shortcuts known to the AppLibrary Service.
 ### Citrix.Applibrary.Sdk.Appdiskshortcut
 This object provides details of the shortcut and its use, and contains the following information: AppDiskUid &lt;Guid&gt; The identifier for the owning AppDisk AppDiskName &lt;string&gt; The identifier for the owning AppDisk IconUid &lt;Guid&gt; The identifier for the icon, if present CommandLineExecutable &lt;string&gt; The shortcut executable property CommandLineArguments &lt;string&gt; The shortcut arguments property Description &lt;string&gt; The shortcut description property DisplayName &lt;string&gt; The shortcut display name property ShortcutPath &lt;string&gt; The shortcut path property WorkingDirectory &lt;string&gt; The shortcut working directory property
 ## Notes
-If the command fails, the following errors can result.<br>    Error Codes<br>    -----------<br>    UnknownObject<br>        One of the specified objects was not found.<br>    PartialData<br>         Only a subset of the available data was returned.<br>    InvalidFilter<br>        A filtering expression was supplied that could not be interpreted for this cmdlet.<br>    CouldNotQueryDatabase<br>         The query required to get the database was not defined.<br>    DatabaseError<br>        An error occurred in the service while attempting a database operation.<br>    DatabaseNotConfigured<br>        The operation could not be completed because the database for the service is not configured.<br>    DataStoreException<br>        An error occurred in the service while attempting a database operation - communication with the database failed for various reasons.<br>    PermissionDenied<br>        You do not have permission to execute this command.<br>    AuthorizationError<br>        There was a problem communicating with the Citrix Delegated Administration Service.<br>    CommunicationError<br>        There was a problem communicating with the remote service.<br>    ExceptionThrown<br>        An unexpected error occurred.  For more details, see the Windows event logs on the controller or the XenDesktop logs.
+If the command fails, the following errors can result.  
+    Error Codes  
+    -----------  
+    UnknownObject  
+        One of the specified objects was not found.  
+    PartialData  
+         Only a subset of the available data was returned.  
+    InvalidFilter  
+        A filtering expression was supplied that could not be interpreted for this cmdlet.  
+    CouldNotQueryDatabase  
+         The query required to get the database was not defined.  
+    DatabaseError  
+        An error occurred in the service while attempting a database operation.  
+    DatabaseNotConfigured  
+        The operation could not be completed because the database for the service is not configured.  
+    DataStoreException  
+        An error occurred in the service while attempting a database operation - communication with the database failed for various reasons.  
+    PermissionDenied  
+        You do not have permission to execute this command.  
+    AuthorizationError  
+        There was a problem communicating with the Citrix Delegated Administration Service.  
+    CommunicationError  
+        There was a problem communicating with the remote service.  
+    ExceptionThrown  
+        An unexpected error occurred.  For more details, see the Windows event logs on the controller or the XenDesktop logs.
 ## Examples
 
 ### Example 1
+
 ```
-c:\PS>Get-AppLibStartMenuIcon -AppDiskName MyAppDisk
-
-          AppDiskUid               : d9ba6487-05f8-48ad-a178-1794605e2b8e
-
-          AppDiskName              : MyAppDisk
-
-          IconUid                  : 7b4c01c4-72fa-4c80-913d-c6df785f4297
-
-          CommandLineExecutable    : "C:\Program Files (x86)\Mozilla Firefox\firefox.exe"
-
-          CommandLineArguments     :
-
-          Description              :
-
-          DisplayName              : Mozilla Firefox
-
-          ShortcutPath             : "C:\Users\Public\Desktop\Mozilla Firefox.lnk"
-
-          WorkingDirectory         : "C:\Program Files (x86)\Mozilla Firefox"
-
-          AppDiskUid               : d9ba6487-05f8-48ad-a178-1794605e2b8e
-
-          AppDiskName              : MyAppDisk
-
+c:\PS>Get-AppLibStartMenuIcon -AppDiskName MyAppDisk  
+  
+          AppDiskUid               : d9ba6487-05f8-48ad-a178-1794605e2b8e  
+  
+          AppDiskName              : MyAppDisk  
+  
+          IconUid                  : 7b4c01c4-72fa-4c80-913d-c6df785f4297  
+  
+          CommandLineExecutable    : "C:\Program Files (x86)\Mozilla Firefox\firefox.exe"  
+  
+          CommandLineArguments     :  
+  
+          Description              :  
+  
+          DisplayName              : Mozilla Firefox  
+  
+          ShortcutPath             : "C:\Users\Public\Desktop\Mozilla Firefox.lnk"  
+  
+          WorkingDirectory         : "C:\Program Files (x86)\Mozilla Firefox"  
+  
+          AppDiskUid               : d9ba6487-05f8-48ad-a178-1794605e2b8e  
+  
+          AppDiskName              : MyAppDisk  
+  
           ...
 ```
+
 #### Description
 Get all shortcuts for the AppLDisk "MyAppDisk".

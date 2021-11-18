@@ -2,9 +2,11 @@
 # Export-Logreporthtml
 Exports Configuration Logging data into a HTML report.
 ## Syntax
+
 ```
-Export-LogReportHtml -OutputDirectory <String> [-StartDateRange <DateTime>] [-EndDateRange <DateTime>] [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
+Export-LogReportHtml -OutputDirectory <String> [-StartDateRange <DateTime>] [-EndDateRange <DateTime>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
+
 ## Detailed Description
 This cmdlet exports the Configuration Logging data into a HTML report. The report consists of two HTML files:
 
@@ -23,6 +25,8 @@ Details.Html - this shows additional logging data from the low level operation a
 | StartDateRange | Specifies the start time of the earliest operation to include. | false | false | DateTime.Min |
 | EndDateRange | Specifies the end time of the latest operation to include. | false | false | DateTime.UtcNow |
 | BearerToken | Specifies the bearer token assigned to the calling user. | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site id the PowerShell snap-in will connect to. | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
@@ -37,20 +41,26 @@ Details.Html - this shows additional logging data from the low level operation a
 ## Examples
 
 ### Example 1
+
 ```
 C:\PS> Export-LogReportHtml -OutputDirectory "c:\MyReports"
 ```
+
 #### Description
 Export all logged operations to HTML.
 ### Example 2
+
 ```
 C:\PS> Export-LogReportHtml -OutputDirectory "c:\MyReports" -StartDateRange "2012-12-21 09:00"
 ```
+
 #### Description
 Export to a HTML logged operations started on or after a specified datetime..
 ### Example 3
+
 ```
 C:\PS> Export-LogReportHtml -OutputDirectory "c:\MyReports" -StartDateRange "2012-12-21 09:00" -EndDateRange "2012-12-311 18:00"
 ```
+
 #### Description
 Export to HTML logged operations started and completed between a date range.

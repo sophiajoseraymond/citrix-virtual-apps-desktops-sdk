@@ -1,5 +1,5 @@
 ﻿
-# about\_SfStorefrontSnapIn
+# about\_SfStorefrontSnapin
 
 ## Topic
 about\_SfStorefrontSnapin

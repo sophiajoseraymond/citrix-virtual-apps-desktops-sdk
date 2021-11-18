@@ -2,9 +2,11 @@
 # Remove-Brokerimportedfta
 Deletes one or more imported file type associations.
 ## Syntax
+
 ```
-Remove-BrokerImportedFTA -DesktopGroupUids <Int32[]> [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
+Remove-BrokerImportedFTA -DesktopGroupUids <Int32[]> [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 ```
+
 ## Detailed Description
 Deletes all of the imported file type associations belonging to one or more desktop groups. At least one desktop group must be specified.
 
@@ -24,6 +26,8 @@ Imported file type associations are different from configured file type associat
 | LoggingId | Specifies the identifier of the high level operation that this cmdlet call forms a part of. Desktop Studio and Desktop Director typically create High Level Operations. PowerShell scripts can also wrap a series of cmdlet calls in a High Level Operation by way of the Start-LogHighLevelOperation and Stop-LogHighLevelOperation cmdlets. | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller that the PowerShell snapin will connect to. This can be provided as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value will become the default. |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 
 ## Input Type
@@ -39,10 +43,12 @@ If an imported file type association is used to create a new configured file typ
 ## Examples
 
 ### Example 1
-```
-C:\PS> $dg = Get-BrokerDesktopGroup -Name "Sales VMs"
 
+```
+C:\PS> $dg = Get-BrokerDesktopGroup -Name "Sales VMs"  
+  
 C:\PS> Remove-BrokerImportedFTA -DesktopGroupUids $dg.Uid
 ```
+
 #### Description
 Deletes all imported file type associations belonging to the "Sales VMs" desktop group.
