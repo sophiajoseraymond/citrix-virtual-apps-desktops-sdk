@@ -20,11 +20,11 @@ Provides the ability to obtain a list of the Virtual Disks that are known to the
 | VirtualDiskId | The identifier for the virtual disk. | false | true (ByPropertyName) |  |
 | StorageId | The identifier for the storage location on which the virtual disk is located. | false | false |  |
 | HostingUnitUid | The identifier for the hosting unit used for the provisioning scheme. | false | true (ByPropertyName) |  |
-| ReturnTotalRecordCount | See about\_Prov\_Filtering for details. | false | false | false |
-| MaxRecordCount | See about\_Prov\_Filtering for details. | false | false | false |
-| Skip | See about\_Prov\_Filtering for details. | false | false | 0 |
-| SortBy | See about\_Prov\_Filtering for details. | false | false |  |
-| Filter | See about\_Prov\_Filtering for details. | false | false |  |
+| ReturnTotalRecordCount | See [about\_Prov\_Filtering](../about_Prov_Filtering/) for details. | false | false | false |
+| MaxRecordCount | See [about\_Prov\_Filtering](../about_Prov_Filtering/) for details. | false | false | false |
+| Skip | See [about\_Prov\_Filtering](../about_Prov_Filtering/) for details. | false | false | 0 |
+| SortBy | See [about\_Prov\_Filtering](../about_Prov_Filtering/) for details. | false | false |  |
+| Filter | See [about\_Prov\_Filtering](../about_Prov_Filtering/) for details. | false | false |  |
 | FilterScope | Gets only results allowed by the specified scope id. | false | false |  |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
 | TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |

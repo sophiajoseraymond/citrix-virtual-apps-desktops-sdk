@@ -28,11 +28,11 @@ Provides the ability to locate the AD accounts stored within the AD Identity Ser
 | Domain | The domain of the account (this is in dns format). | false | false |  |
 | State | The current state of the identity stored in the AD Identity Service for the AD account. | false | false |  |
 | Lock | Indicates if the account is locked in the AD Identity Service. | false | false |  |
-| ReturnTotalRecordCount | See about\_Acct\_Filtering for details. | false | false | false |
-| MaxRecordCount | See about\_Acct\_Filtering for details. | false | false | 250 |
-| Skip | See about\_Acct\_Filtering for details. | false | false | 0 |
-| SortBy | See about\_Acct\_Filtering for details. | false | false |  |
-| Filter | See about\_Acct\_Filtering for details. | false | false |  |
+| ReturnTotalRecordCount | See [about\_Acct\_Filtering](../about_Acct_Filtering/) for details. | false | false | false |
+| MaxRecordCount | See [about\_Acct\_Filtering](../about_Acct_Filtering/) for details. | false | false | 250 |
+| Skip | See [about\_Acct\_Filtering](../about_Acct_Filtering/) for details. | false | false | 0 |
+| SortBy | See [about\_Acct\_Filtering](../about_Acct_Filtering/) for details. | false | false |  |
+| Filter | See [about\_Acct\_Filtering](../about_Acct_Filtering/) for details. | false | false |  |
 | FilterScope | Gets only results allowed by the specified scope id. | false | false |  |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
 | TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
@@ -117,4 +117,4 @@ C:\>Get-AcctADAccount -Filter {IdentityPoolName -Like "p\*" -or IdentityPoolName
 ```
 
 #### Description
-Return all the AD accounts that are registered in the AD Identity Service in the identity pool called "MyPool" or in an identity pool that has a name that starts with a 'p'.  For full details of the advanced filtering aspects of this command see about\_Acct\_Filtering.
+Return all the AD accounts that are registered in the AD Identity Service in the identity pool called "MyPool" or in an identity pool that has a name that starts with a 'p'.  For full details of the advanced filtering aspects of this command see [about\_Acct\_Filtering](../about_Acct_Filtering/).

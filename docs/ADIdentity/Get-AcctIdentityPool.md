@@ -25,11 +25,11 @@ Provides the ability to locate existing identity pools.
 | Lock | Whether the identity pool is locked or not. | false | false |  |
 | ScopeId | Gets only results with a scope matching the specified scope identifier. | false | false |  |
 | ScopeName | Gets only results with a scope matching the specified scope name. | false | false |  |
-| ReturnTotalRecordCount | See about\_Acct\_Filtering for details. | false | false | false |
-| MaxRecordCount | See about\_Acct\_Filtering for details. | false | false | 250 |
-| Skip | See about\_Acct\_Filtering for details. | false | false | 0 |
-| SortBy | See about\_Acct\_Filtering for details. | false | false |  |
-| Filter | See about\_Acct\_Filtering for details. | false | false |  |
+| ReturnTotalRecordCount | See [about\_Acct\_Filtering](../about_Acct_Filtering/) for details. | false | false | false |
+| MaxRecordCount | See [about\_Acct\_Filtering](../about_Acct_Filtering/) for details. | false | false | 250 |
+| Skip | See [about\_Acct\_Filtering](../about_Acct_Filtering/) for details. | false | false | 0 |
+| SortBy | See [about\_Acct\_Filtering](../about_Acct_Filtering/) for details. | false | false |  |
+| Filter | See [about\_Acct\_Filtering](../about_Acct_Filtering/) for details. | false | false |  |
 | FilterScope | Gets only results allowed by the specified scope id. | false | false |  |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
 | TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |

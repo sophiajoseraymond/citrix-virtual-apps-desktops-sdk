@@ -21,11 +21,11 @@ A database connection for the service is required to use this command.
 | Metadata | Gets records with matching metadata entries.  
 The value being compared with is a concatenation of the key name, a colon, and the value. For example: -Metadata "abc:x\*" matches records with a metadata entry having a key name of "abc" and a value starting with the letter "x". | false | false |  |
 | Property | Specifies the properties to be returned. This is similar to piping the output of the command through Select-Object, but the properties are filtered more efficiently at the server. | false | false |  |
-| ReturnTotalRecordCount | When specified, the cmdlet outputs an error record containing the number of records available. This error record is additional information and does not affect the objects written to the output pipeline. See about\_Monitor\_Filtering for details. | false | false | False |
+| ReturnTotalRecordCount | When specified, the cmdlet outputs an error record containing the number of records available. This error record is additional information and does not affect the objects written to the output pipeline. See [about\_Monitor\_Filtering](../about_Monitor_Filtering/) for details. | false | false | False |
 | MaxRecordCount | Specifies the maximum number of records to return. | false | false | 250 |
 | Skip | Skips the specified number of records before returning results. Also reduces the count returned by -ReturnTotalRecordCount. | false | false | 0 |
 | SortBy | Sorts the results by the specified list of properties. The list is a set of property names separated by commas, semi-colons, or spaces. Optionally, prefix each name with a + or - to indicate ascending or descending order. Ascending order is assumed if no prefix is present. | false | false | The default sort order is by name or unique identifier. |
-| Filter | Gets records that match a PowerShell-style filter expression. See about\_Monitor\_Filtering for details. | false | false |  |
+| Filter | Gets records that match a PowerShell-style filter expression. See [about\_Monitor\_Filtering](../about_Monitor_Filtering/) for details. | false | false |  |
 | FilterScope | Gets only results allowed by the specified scope id. | false | false |  |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
 | TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |

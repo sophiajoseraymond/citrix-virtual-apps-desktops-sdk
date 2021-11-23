@@ -27,11 +27,11 @@ Returns a list of tasks that have run or are currently running within the AppLib
 | Metadata | Gets records with matching metadata entries.  
 The value being compared with is a concatenation of the key name, a colon, and the value. For example: -Metadata "abc:x\*" matches records with a metadata entry having a key name of "abc" and a value starting with the letter "x". | false | false |  |
 | Property | Specifies the properties to be returned. This is similar to piping the output of the command through Select-Object, but the properties are filtered more efficiently at the server. | false | false |  |
-| ReturnTotalRecordCount | See about\_AppLib\_Filtering for details. | false | false | false |
-| MaxRecordCount | See about\_AppLib\_Filtering for details. | false | false | false |
-| Skip | See about\_AppLib\_Filtering for details. | false | false | 0 |
-| SortBy | See about\_AppLib\_Filtering for details. | false | false |  |
-| Filter | See about\_AppLib\_Filtering for details. | false | false |  |
+| ReturnTotalRecordCount | See [about\_AppLib\_Filtering](../about_AppLib_Filtering/) for details. | false | false | false |
+| MaxRecordCount | See [about\_AppLib\_Filtering](../about_AppLib_Filtering/) for details. | false | false | false |
+| Skip | See [about\_AppLib\_Filtering](../about_AppLib_Filtering/) for details. | false | false | 0 |
+| SortBy | See [about\_AppLib\_Filtering](../about_AppLib_Filtering/) for details. | false | false |  |
+| Filter | See [about\_AppLib\_Filtering](../about_AppLib_Filtering/) for details. | false | false |  |
 | FilterScope | Gets only results allowed by the specified scope id. | false | false |  |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
 | TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |

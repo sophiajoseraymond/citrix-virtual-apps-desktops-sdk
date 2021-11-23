@@ -83,6 +83,7 @@ nav:
   - Creating a PvD Desktop: creating-a-pvd-desktop.md
   - Getting load balancing information: getting-load-balancing-information.md
 - ADIdentity:
+  - about_Acct_Filtering: ADIdentity/about_Acct_Filtering.md
   - about_AcctADIdentitySnapIn: ADIdentity/about_AcctADIdentitySnapin.md
   - Add-AcctADAccount: ADIdentity/Add-AcctADAccount.md
   - Add-AcctIdentityPoolScope: ADIdentity/Add-AcctIdentityPoolScope.md
@@ -122,6 +123,7 @@ nav:
   - Unlock-AcctIdentityPool: ADIdentity/Unlock-AcctIdentityPool.md
   - Update-AcctADAccount: ADIdentity/Update-AcctADAccount.md
 - Analytics:
+  - about_Analytics_Filtering: Analytics/about_Analytics_Filtering.md
   - about_AnalyticsAnalyticsSnapIn: Analytics/about_AnalyticsAnalyticsSnapin.md
   - Get-AnalyticsDBConnection: Analytics/Get-AnalyticsDBConnection.md
   - Get-AnalyticsDBSchema: Analytics/Get-AnalyticsDBSchema.md
@@ -141,6 +143,7 @@ nav:
   - Set-AnalyticsSite: Analytics/Set-AnalyticsSite.md
   - Test-AnalyticsDBConnection: Analytics/Test-AnalyticsDBConnection.md
 - AppLibrary:
+  - about_AppLib_Filtering: AppLibrary/about_AppLib_Filtering.md
   - about_AppLibAppLibrarySnapin: AppLibrary/about_AppLibAppLibrarySnapin.md
   - Add-AppLibAppDiskScope: AppLibrary/Add-AppLibAppDiskScope.md
   - Add-AppLibIsolationGroupPackage: AppLibrary/Add-AppLibIsolationGroupPackage.md
@@ -544,6 +547,7 @@ nav:
   - Update-BrokerNameCache: Broker/Update-BrokerNameCache.md
   - Update-BrokerScopeCache: Broker/Update-BrokerScopeCache.md
 - CentralConfig:
+  - about_Config_Filtering: CentralConfig/about_Config_Filtering.md
   - about_ConfigConfigurationSnapIn: CentralConfig/about_ConfigConfigurationSnapIn.md
   - Add-ConfigRegisteredServiceInstanceMetadata: CentralConfig/Add-ConfigRegisteredServiceInstanceMetadata.md
   - Add-ConfigServiceGroupMetadata: CentralConfig/Add-ConfigServiceGroupMetadata.md
@@ -603,6 +607,7 @@ nav:
   - Test-ConfigServiceInstanceAvailability: CentralConfig/Test-ConfigServiceInstanceAvailability.md
   - Unregister-ConfigRegisteredServiceInstance: CentralConfig/Unregister-ConfigRegisteredServiceInstance.md
 - ConfigLogging:
+  - about_Log_Filtering: ConfigLogging/about_Log_Filtering.md
   - about_LogConfigurationLoggingSnapIn: ConfigLogging/about_LogConfigurationLoggingSnapIn.md
   - Export-LogReportCsv: ConfigLogging/Export-LogReportCsv.md
   - Export-LogReportHtml: ConfigLogging/Export-LogReportHtml.md
@@ -633,6 +638,7 @@ nav:
   - Stop-LogHighLevelOperation: ConfigLogging/Stop-LogHighLevelOperation.md
   - Test-LogDBConnection: ConfigLogging/Test-LogDBConnection.md
 - DelegatedAdmin:
+  - about_Admin_Filtering: DelegatedAdmin/about_Admin_Filtering.md
   - about_AdminDelegatedAdminSnapIn: DelegatedAdmin/about_AdminDelegatedAdminSnapin.md
   - Add-AdminPermission: DelegatedAdmin/Add-AdminPermission.md
   - Add-AdminRight: DelegatedAdmin/Add-AdminRight.md
@@ -681,6 +687,7 @@ nav:
   - Test-AdminAccess: DelegatedAdmin/Test-AdminAccess.md
   - Test-AdminDBConnection: DelegatedAdmin/Test-AdminDBConnection.md
 - EnvTest:
+  - about_EnvTest_Filtering: EnvTest/about_EnvTest_Filtering.md
   - about_EnvTestEnvTestSnapIn: EnvTest/about_EnvTestEnvTestSnapin.md
   - Get-EnvTestConfiguration: EnvTest/Get-EnvTestConfiguration.md
   - Get-EnvTestDBConnection: EnvTest/Get-EnvTestDBConnection.md
@@ -711,6 +718,7 @@ nav:
 - HostService:
   - about_HypHostSnapIn: HostService/about_HypHostSnapIn.md
   - about_HypStorage: HostService/about_HypStorage.md
+  - about_Hyp_Filtering: HostService/about_Hyp_Filtering.md
   - Add-HypHostingUnitMetadata: HostService/Add-HypHostingUnitMetadata.md
   - Add-HypHostingUnitNetwork: HostService/Add-HypHostingUnitNetwork.md
   - Add-HypHostingUnitStorage: HostService/Add-HypHostingUnitStorage.md
@@ -765,6 +773,7 @@ nav:
   - Test-HypHypervisorConnectionNameAvailable: HostService/Test-HypHypervisorConnectionNameAvailable.md
   - Update-HypHypervisorConnection: HostService/Update-HypHypervisorConnection.md
 - MachineCreation:
+  - about_Prov_Filtering: MachineCreation/about_Prov_Filtering.md
   - about_ProvCustomProperties: MachineCreation/about_ProvCustomProperties.md
   - about_ProvMachineCreationSnapIn: MachineCreation/about_ProvMachineCreationSnapin.md
   - Add-ProvSchemeControllerAddress: MachineCreation/Add-ProvSchemeControllerAddress.md
@@ -822,6 +831,7 @@ nav:
   - Unlock-ProvVM: MachineCreation/Unlock-ProvVM.md
   - Unpublish-Provmastervmimage: MachineCreation/Unpublish-ProvMasterVMImage.md
 - Monitor:
+  - about_Monitor_Filtering: Monitor/about_Monitor_Filtering.md
   - about_MonitorMonitorSnapIn: Monitor/about_MonitorMonitorSnapin.md
   - Add-MonitorNotificationPolicyCondition: Monitor/Add-MonitorNotificationPolicyCondition.md
   - Add-MonitorNotificationPolicyEmailAddresses: Monitor/Add-MonitorNotificationPolicyEmailAddresses.md
@@ -858,6 +868,7 @@ nav:
   - Test-MonitorNotificationEmailServerConfiguration: Monitor/Test-MonitorNotificationEmailServerConfiguration.md
 - Orchestration:
   - about_OrchOrchestrationSnapIn: Orchestration/about_OrchOrchestrationSnapin.md
+  - about_Orch_Filtering: Orchestration/about_Orch_Filtering.md
   - Get-OrchDBConnection: Orchestration/Get-OrchDBConnection.md
   - Get-OrchDBSchema: Orchestration/Get-OrchDBSchema.md
   - Get-OrchDBVersionChangeScript: Orchestration/Get-OrchDBVersionChangeScript.md
@@ -876,6 +887,7 @@ nav:
   - Test-OrchDBConnection: Orchestration/Test-OrchDBConnection.md
 - StorefrontService:
   - about_SfStorefrontSnapIn: StorefrontService/about_SfStorefrontSnapIn.md
+  - about_Sf_Filtering.: StorefrontService/about_Sf_Filtering.md
   - Add-SfServerToCluster: StorefrontService/Add-SfServerToCluster.md
   - Add-SfStorefrontAddress: StorefrontService/Add-SfStorefrontAddress.md
   - Get-SfCluster: StorefrontService/Get-SfCluster.md
@@ -908,6 +920,7 @@ nav:
   - Test-SfDBConnection: StorefrontService/Test-SfDBConnection.md
 - Trust:
   - about_TrustTrustSnapIn: Trust/about_TrustTrustSnapin.md
+  - about_Trust_Filtering: Trust/about_Trust_Filtering.md
   - Get-TrustDBConnection: Trust/Get-TrustDBConnection.md
   - Get-TrustDBSchema: Trust/Get-TrustDBSchema.md
   - Get-TrustDBVersionChangeScript: Trust/Get-TrustDBVersionChangeScript.md

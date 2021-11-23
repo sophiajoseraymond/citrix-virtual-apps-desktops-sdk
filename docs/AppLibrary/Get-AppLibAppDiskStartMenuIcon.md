@@ -21,11 +21,11 @@ Returns a list of AppDisk start menu icons known to the AppLibrary Service.
 | AppDiskUid | The identifier of a specific AppDisk to inspect. | false | false |  |
 | AppDiskName | The name of a specific AppDisk to inspect. | false | false |  |
 | IconUid | The identifier of a specific icon to inspect. | false | false |  |
-| ReturnTotalRecordCount | See about\_AppLib\_Filtering for details. | false | false | false |
-| MaxRecordCount | See about\_AppLib\_Filtering for details. | false | false | false |
-| Skip | See about\_AppLib\_Filtering for details. | false | false | 0 |
-| SortBy | See about\_AppLib\_Filtering for details. | false | false |  |
-| Filter | See about\_AppLib\_Filtering for details. | false | false |  |
+| ReturnTotalRecordCount | See [about\_AppLib\_Filtering](../about_AppLib_Filtering/) for details. | false | false | false |
+| MaxRecordCount | See [about\_AppLib\_Filtering](../about_AppLib_Filtering/) for details. | false | false | false |
+| Skip | See [about\_AppLib\_Filtering](../about_AppLib_Filtering/) for details. | false | false | 0 |
+| SortBy | See [about\_AppLib\_Filtering](../about_AppLib_Filtering/) for details. | false | false |  |
+| Filter | See [about\_AppLib\_Filtering](../about_AppLib_Filtering/) for details. | false | false |  |
 | FilterScope | Gets only results allowed by the specified scope id. | false | false |  |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
 | TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |

@@ -28,11 +28,11 @@ The ShowAll parameter may be supplied to also show the snapshot for the image cu
 | VMImageHistoryUid | The unique identifier for the Image History item. | false | false |  |
 | ImageStatus | The status of the provisioning scheme image. | false | false |  |
 | ShowAll | Show all images. This includes images currently in use, and images prepared for later use. | false | false | false |
-| ReturnTotalRecordCount | See about\_Prov\_Filtering for details. | false | false | false |
-| MaxRecordCount | See about\_Prov\_Filtering for details. | false | false | false |
-| Skip | See about\_Prov\_Filtering for details. | false | false | 0 |
-| SortBy | See about\_Prov\_Filtering for details. | false | false |  |
-| Filter | See about\_Prov\_Filtering for details. | false | false |  |
+| ReturnTotalRecordCount | See [about\_Prov\_Filtering](../about_Prov_Filtering/) for details. | false | false | false |
+| MaxRecordCount | See [about\_Prov\_Filtering](../about_Prov_Filtering/) for details. | false | false | false |
+| Skip | See [about\_Prov\_Filtering](../about_Prov_Filtering/) for details. | false | false | 0 |
+| SortBy | See [about\_Prov\_Filtering](../about_Prov_Filtering/) for details. | false | false |  |
+| Filter | See [about\_Prov\_Filtering](../about_Prov_Filtering/) for details. | false | false |  |
 | FilterScope | Gets only results allowed by the specified scope id. | false | false |  |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
 | TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |

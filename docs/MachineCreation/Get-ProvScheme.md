@@ -26,11 +26,11 @@ Lets you retrieve the list of defined provisioning schemes.
 | ProvisioningSchemeUid | The unique identifier of the provisioning scheme. | false | false |  |
 | ScopeId | Gets only results with a scope matching the specified scope identifier. | false | false |  |
 | ScopeName | Gets only results with a scope matching the specified scope name. | false | false |  |
-| ReturnTotalRecordCount | See about\_Prov\_Filtering for details. | false | false | false |
-| MaxRecordCount | See about\_Prov\_Filtering for details. | false | false | false |
-| Skip | See about\_Prov\_Filtering for details. | false | false | 0 |
-| SortBy | See about\_Prov\_Filtering for details. | false | false |  |
-| Filter | See about\_Prov\_Filtering for details. | false | false |  |
+| ReturnTotalRecordCount | See [about\_Prov\_Filtering](../about_Prov_Filtering/) for details. | false | false | false |
+| MaxRecordCount | See [about\_Prov\_Filtering](../about_Prov_Filtering/) for details. | false | false | false |
+| Skip | See [about\_Prov\_Filtering](../about_Prov_Filtering/) for details. | false | false | 0 |
+| SortBy | See [about\_Prov\_Filtering](../about_Prov_Filtering/) for details. | false | false |  |
+| Filter | See [about\_Prov\_Filtering](../about_Prov_Filtering/) for details. | false | false |  |
 | FilterScope | Gets only results allowed by the specified scope id. | false | false |  |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
 | TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |

@@ -26,11 +26,11 @@ Provides the ability to obtain a list of the VMs that were created using Machine
 | Locked | Indicates whether only VMs that are marked as locked are returned or not (see Lock-ProvVM and Unlock-ProvVM for details). | false | false |  |
 | Tag | The tag string that was associated with the VM when it was locked. | false | false |  |
 | OutOfDate | Indicates that the image currently assigned to the VM is out of date.  The image will be updated the next time the VM is restarted. | false | false |  |
-| ReturnTotalRecordCount | See about\_Prov\_Filtering for details. | false | false | false |
-| MaxRecordCount | See about\_Prov\_Filtering for details. | false | false | false |
-| Skip | See about\_Prov\_Filtering for details. | false | false | 0 |
-| SortBy | See about\_Prov\_Filtering for details. | false | false |  |
-| Filter | See about\_Prov\_Filtering for details. | false | false |  |
+| ReturnTotalRecordCount | See [about\_Prov\_Filtering](../about_Prov_Filtering/) for details. | false | false | false |
+| MaxRecordCount | See [about\_Prov\_Filtering](../about_Prov_Filtering/) for details. | false | false | false |
+| Skip | See [about\_Prov\_Filtering](../about_Prov_Filtering/) for details. | false | false | 0 |
+| SortBy | See [about\_Prov\_Filtering](../about_Prov_Filtering/) for details. | false | false |  |
+| Filter | See [about\_Prov\_Filtering](../about_Prov_Filtering/) for details. | false | false |  |
 | FilterScope | Gets only results allowed by the specified scope id. | false | false |  |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
 | TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
