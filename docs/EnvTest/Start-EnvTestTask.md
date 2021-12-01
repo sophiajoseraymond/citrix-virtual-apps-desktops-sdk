@@ -2,13 +2,15 @@
 # Start-Envtesttask
 Starts a new test task.
 ## Syntax
-```
-Start-EnvTestTask -TestId <String> [-TargetIdType <String>] [-TargetId <String>] [-CultureName <String>] [-IgnoreRelatedObjects] [-RunAsynchronously] [-ExcludeNotRunTests] [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 
-Start-EnvTestTask -TestSuiteId <String> [-TargetIdType <String>] [-TargetId <String>] [-CultureName <String>] [-IgnoreRelatedObjects] [-RunAsynchronously] [-ExcludeNotRunTests] [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
-
-Start-EnvTestTask -InputObject <PSObject[]> [-CultureName <String>] [-IgnoreRelatedObjects] [-RunAsynchronously] [-ExcludeNotRunTests] [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
+Start-EnvTestTask -TestId <String> [-TargetIdType <String>] [-TargetId <String>] [-CultureName <String>] [-IgnoreRelatedObjects] [-RunAsynchronously] [-ExcludeNotRunTests] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]  
+  
+Start-EnvTestTask -TestSuiteId <String> [-TargetIdType <String>] [-TargetId <String>] [-CultureName <String>] [-IgnoreRelatedObjects] [-RunAsynchronously] [-ExcludeNotRunTests] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]  
+  
+Start-EnvTestTask -InputObject <PSObject[]> [-CultureName <String>] [-IgnoreRelatedObjects] [-RunAsynchronously] [-ExcludeNotRunTests] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
+```
+
 ## Detailed Description
 Starts a new test task based on a set of criteria provided via parameters or piped input and either waits for the tests to run or returns immediately depending on how it is called.  When running a test suite and providing a target object for that suite, the service will discover related objects by default, but this behavior may be disabled if desired.
 
@@ -37,6 +39,8 @@ Starts a new test task based on a set of criteria provided via parameters or pip
 | RunAsynchronously | Do not wait for the test run to complete, return immediately. | false | false | False |
 | ExcludeNotRunTests | If set, tests that are not run because no object matching their requirements is found are NOT included in test counts and results. | false | false | False (include Not Run tests) |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
@@ -57,52 +61,66 @@ The newly started task.
 ## Examples
 
 ### Example 1
+
 ```
 $singleSimpleTestTask = Start-EnvTestTask -TestId Monitor_RegisteredWithConfigurationService
 ```
+
 #### Description
 Create and start a task with a single test and no target object.
 ### Example 2
+
 ```
 $singleSimpleTestTaskInSpanish = Start-EnvTestTask -TestId Monitor_RegisteredWithConfigurationService -CultureName es-ES
 ```
+
 #### Description
 Create and start a task with a single test and no target object, with localized properties translated into Spanish.
 ### Example 3
+
 ```
 $singleSimpleTestSuiteTask = Start-EnvTestTask -TestSuiteId Infrastructure
 ```
+
 #### Description
 Create and start a task with a single test suite and no target object.
 ### Example 4
+
 ```
 $singleTestSuiteTask = Start-EnvTestTask -TestSuiteId Catalog -TargetIdType Catalog -TargetId $(Get-BrokerCatalog).Uuid
 ```
+
 #### Description
 Create and start a task with a single test suite and a catalog target object.
 ### Example 5
+
 ```
 $singleTestSuiteTask = Start-EnvTestTask -TestSuiteId Catalog -TargetIdType Catalog -TargetId $(Get-BrokerCatalog).Uuid -RunAsynchronously
 ```
+
 #### Description
 Create and start a task with a single test suite and a catalog target object, and return immediately not waiting for the tests to complete.
 ### Example 6
-```
-$adAccountPool = Get-AcctIdentityPool
 
+```
+$adAccountPool = Get-AcctIdentityPool  
+  
           $singleTestTaskWithNoObjectDiscovery = StartEnvTestTask -IgnoreRelatedObjects -TestId ADIdentity_IdentityPool_ValidatePoolIsUnlocked -TargetIdType IdentityPool -TargetId $adAccountPool.IdentityPoolUid
 ```
+
 #### Description
 Create and start a task with a single test, a target object for that test, and no object discovery based on that target.
 ### Example 7
+
 ```
-$singleSimpleTestSuiteTaskTarget = New-EnvTestDiscoveryTargetDefinition -TestSuiteId Infrastructure
-
-          $singleTestSuiteTaskTarget = New-EnvTestDiscoveryTargetDefinition -TestSuiteId Catalog -TargetIdType Catalog -TargetId $(Get-BrokerCatalog).Uuid
-
-          $inputObjects = @($singleSimpleTestSuiteTaskTarget, $singleTestSuiteTaskTarget)
-
+$singleSimpleTestSuiteTaskTarget = New-EnvTestDiscoveryTargetDefinition -TestSuiteId Infrastructure  
+  
+          $singleTestSuiteTaskTarget = New-EnvTestDiscoveryTargetDefinition -TestSuiteId Catalog -TargetIdType Catalog -TargetId $(Get-BrokerCatalog).Uuid  
+  
+          $inputObjects = @($singleSimpleTestSuiteTaskTarget, $singleTestSuiteTaskTarget)  
+  
           Start-EnvTestTask -InputObject $inputObjects
 ```
+
 #### Description
 Create two different discovery target definitions, put them in an array, then start a task based on both via -InputObject.

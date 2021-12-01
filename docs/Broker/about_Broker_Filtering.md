@@ -1,3 +1,4 @@
+﻿
 # about\_Broker\_Filtering
 
 ## Topic
@@ -37,9 +38,7 @@ You can suppress this warning by using -WarningAction or by specifying a value f
 
 To retrieve all records, specify a large number for -MaxRecordCount. As the value is an integer, you can use the following:
 
-Get-<Noun> -MaxRecordCount [int]::MaxValue
-
-Based on the use case, you can filter results or separate results into multiple pages. You may also use both approaches together.
+Get-&lt;Noun&gt; -MaxRecordCount \[int\]::MaxValue
 
 -ReturnTotalRecordCount \[&lt;SwitchParameter&gt;\] When specified, this causes the cmdlet to output an error record containing the number of records available. This error record is additional information and does not affect the objects written to the output pipeline. For example:
 

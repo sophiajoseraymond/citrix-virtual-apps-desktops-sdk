@@ -2,9 +2,11 @@
 # Remove-Brokermachinecommand
 Cancel a pending command queued for delivery to a desktop.
 ## Syntax
+
 ```
-Remove-BrokerMachineCommand [-InputObject] <MachineCommand[]> [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
+Remove-BrokerMachineCommand [-InputObject] <MachineCommand[]> [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 ```
+
 ## Detailed Description
 Sets the state of a pending command queued for delivery to a desktop to Canceled. The command is not removed from the system.
 
@@ -20,6 +22,8 @@ Sets the state of a pending command queued for delivery to a desktop to Canceled
 | LoggingId | Specifies the identifier of the high level operation that this cmdlet call forms a part of. Desktop Studio and Desktop Director typically create High Level Operations. PowerShell scripts can also wrap a series of cmdlet calls in a High Level Operation by way of the Start-LogHighLevelOperation and Stop-LogHighLevelOperation cmdlets. | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller that the PowerShell snapin will connect to. This can be provided as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value will become the default. |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 
 ## Input Type
@@ -33,14 +37,18 @@ Commands to cancel.
 ## Examples
 
 ### Example 1
+
 ```
 Get-BrokerMachineCommand | Remove-BrokerMachineCommand
 ```
+
 #### Description
 Cancel all pending commands.
 ### Example 2
+
 ```
 Get-BrokerMachineCommand -Category "UPM" | Remove-BrokerMachineCommand
 ```
+
 #### Description
 Cancel all pending commands that have the category "UPM".

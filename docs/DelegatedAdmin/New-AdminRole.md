@@ -2,9 +2,11 @@
 # New-Adminrole
 Adds a new custom role to the site.
 ## Syntax
+
 ```
-New-AdminRole [-Name] <String> [-Description <String>] [-LoggingId <Guid>] [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
+New-AdminRole [-Name] <String> [-CanLaunchManage <Boolean>] [-CanLaunchMonitor <Boolean>] [-Description <String>] [-LoggingId <Guid>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
+
 ## Detailed Description
 New-AdminRole adds a new custom role object to the site. Once a new role has been created, you can add permissions to the role which define what operations the role conveys.
 
@@ -31,9 +33,13 @@ You cannot modify built-in roles, and only some license editions support custom 
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
 | Name | Specifies the name of the role. Each role in a site must have a unique name. | true | true (ByPropertyName) |  |
+| CanLaunchManage | Optionally Specifies whether the role has access to the Manage tab in Citrix Cloud. | false | true (ByPropertyName) |  |
+| CanLaunchMonitor | Optionally Specifies whether the role has access to the Monitor tab in Citrix Cloud. | false | true (ByPropertyName) |  |
 | Description | Specifies the description of the role. | false | true (ByPropertyName) |  |
 | LoggingId | Specifies the identifier of the high-level operation this cmdlet call forms a part of. Citrix Studio and Director typically create high-level operations. PowerShell scripts can also wrap a series of cmdlet calls in a high-level operation by way of the Start-LogHighLevelOperation and Stop-LogHighLevelOperation cmdlets. | false | false |  |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
@@ -50,16 +56,18 @@ Roles are created without any permissions. Use the Add-AdminPermission to add pe
 ## Examples
 
 ### Example 1
+
 ```
-C:\PS> New-AdminRole -Name Supervisor -Description "My custom supervisor role"
-
-C:\PS> $list = Get-AdminRole 'Help Desk Administrator' | Select -Expand Permissions
-
-C:\PS> Add-AdminPermission -Role Supervisor -Permission $list
-
-C:\PS> Add-AdminPermission -Role Supervisor -Permission $extras
-
+C:\PS> New-AdminRole -Name Supervisor -Description "My custom supervisor role"  
+  
+C:\PS> $list = Get-AdminRole 'Help Desk Administrator' | Select -Expand Permissions  
+  
+C:\PS> Add-AdminPermission -Role Supervisor -Permission $list  
+  
+C:\PS> Add-AdminPermission -Role Supervisor -Permission $extras  
+  
 C:\PS> Add-AdminRight -Administrator DOMAIN\TestUser -Role Supervisor -All
 ```
+
 #### Description
 Creates a new role called 'Supervisor', and then copies the permissions from the help desk role and adds some extras. Then gives this role (with the all scope) to user 'TestUser'.

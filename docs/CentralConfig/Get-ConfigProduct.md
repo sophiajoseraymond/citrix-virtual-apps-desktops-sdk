@@ -2,9 +2,11 @@
 # Get-Configproduct
 Lists the site's supported product names and codes.
 ## Syntax
+
 ```
-Get-ConfigProduct [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
+Get-ConfigProduct [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
+
 ## Detailed Description
 
 
@@ -17,6 +19,8 @@ Get-ConfigProduct [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddre
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
@@ -31,8 +35,10 @@ Get-ConfigProduct [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddre
 ## Examples
 
 ### Example 1
+
 ```
 C:\PS> Get-ConfigProduct
 ```
+
 #### Description
 Lists the supported products by name and code.

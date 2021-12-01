@@ -2,11 +2,13 @@
 # Get-Brokeraccesspolicyrule
 Gets rules from the site's access policy.
 ## Syntax
-```
-Get-BrokerAccessPolicyRule [-Uid] <Int32> [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 
-Get-BrokerAccessPolicyRule [[-Name] <String>] [-AllowedConnections <AllowedConnection>] [-AllowedUsers <AllowedUser>] [-Description <String>] [-DesktopGroupName <String>] [-DesktopGroupUid <Int32>] [-Enabled <Boolean>] [-ExcludedClientIPFilterEnabled <Boolean>] [-ExcludedClientName <String>] [-ExcludedClientNameFilterEnabled <Boolean>] [-ExcludedSmartAccessFilterEnabled <Boolean>] [-ExcludedSmartAccessTag <String>] [-ExcludedUser <User>] [-ExcludedUserFilterEnabled <Boolean>] [-IncludedClientIPFilterEnabled <Boolean>] [-IncludedClientName <String>] [-IncludedClientNameFilterEnabled <Boolean>] [-IncludedSmartAccessFilterEnabled <Boolean>] [-IncludedSmartAccessTag <String>] [-IncludedUser <User>] [-IncludedUserFilterEnabled <Boolean>] [-Metadata <String>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 ```
+Get-BrokerAccessPolicyRule [-Uid] <Int32> [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]  
+  
+Get-BrokerAccessPolicyRule [[-Name] <String>] [-AllowedConnections <AllowedConnection>] [-AllowedUsers <AllowedUser>] [-Description <String>] [-DesktopGroupName <String>] [-DesktopGroupUid <Int32>] [-Enabled <Boolean>] [-ExcludedClientIPFilterEnabled <Boolean>] [-ExcludedClientName <String>] [-ExcludedClientNameFilterEnabled <Boolean>] [-ExcludedSmartAccessFilterEnabled <Boolean>] [-ExcludedSmartAccessTag <String>] [-ExcludedUser <User>] [-ExcludedUserFilterEnabled <Boolean>] [-IncludedClientIPFilterEnabled <Boolean>] [-IncludedClientName <String>] [-IncludedClientNameFilterEnabled <Boolean>] [-IncludedSmartAccessFilterEnabled <Boolean>] [-IncludedSmartAccessTag <String>] [-IncludedUser <User>] [-IncludedUserFilterEnabled <Boolean>] [-Metadata <String>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-FilterScope <Guid>] [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]
+```
+
 ## Detailed Description
 Returns rules matching the specified search criteria from the site's access policy. If no search criteria are specified, all rules in the access policy are obtained.
 
@@ -18,14 +20,18 @@ A BrokerAccessPolicyRule object represents a single rule within the site's acces
 
 
   * AllowedConnections (Citrix.Broker.Admin.SDK.AllowedConnection) Controls whether connections must be local or via Access Gateway, and if so whether specified SmartAccess tags must be provided by Access Gateway with the connection. This property forms part of the included SmartAccess tags filter.
-    For a detailed description of this property see "help about\_Broker\_AccessPolicy".
+    For a detailed description of this property see "help [about\_Broker\_AccessPolicy](../about_Broker_AccessPolicy/)".
 
   * AllowedProtocols (System.String\[\]) Protocols (for example HDX, RDP) available to the user for sessions delivered from the rule's desktop group. If the user gains access to a desktop group by multiple rules, the allowed protocol list is the combination of the protocol lists from all those rules.
     If the protocol list is empty, access to the desktop group is implicitly denied.
 
-  * AllowedUsers (Citrix.Broker.Admin.SDK.AllowedUser) Controls the behavior of the included users filter. This can restrict access to a list of named users or groups, or allow access to any authenticated user. For a detailed description of this property see "help about\_Broker\_AccessPolicy".
+  * AllowedUsers (Citrix.Broker.Admin.SDK.AllowedUser) Controls the behavior of the included users filter. This can restrict access to a list of named users or groups, or allow access to any authenticated user. For a detailed description of this property see "help [about\_Broker\_AccessPolicy](../about_Broker_AccessPolicy/)".
 
   * AllowRestart (System.Boolean) Indicates if the user can restart sessions delivered from the rule's desktop group. Session restart is handled as follows: For sessions on single-session power-managed machines, the machine is powered off, and a new session launch request made; for sessions on multi-session machines, a logoff request is issued to the session, and a new session launch request made; otherwise the property is ignored.
+
+  * AppProtectionKeyLoggingRequired (System.Boolean) Specifies whether key logging app protection is required.
+
+  * AppProtectionScreenCaptureRequired (System.Boolean) Specifies whether screen capture app protection is required.
 
   * Description (System.String) An optional description of the rule. The text is purely informational for the administrator, it is never visible to the end user.
 
@@ -87,8 +93,10 @@ A BrokerAccessPolicyRule object represents a single rule within the site's acces
 | --- | --- | --- | --- | --- |
 | Uid | Gets only the rule with the specified unique ID. | true | false |  |
 | Name | Gets only rules with the specified name. | false | false |  |
-| AllowedConnections | Gets only rules that have the specified value in the AllowedConnections property of their included SmartAccess tags filter.<br>Valid values are Filtered, NotViaAG, ViaAG and AnyViaAG. | false | false |  |
-| AllowedUsers | Gets only rules that have the specified value in the AllowedUsers property of their included users filter.<br>Valid values are Filtered, AnyAuthenticated, Any, AnonymousOnly and FilteredOrAnonymous. | false | false |  |
+| AllowedConnections | Gets only rules that have the specified value in the AllowedConnections property of their included SmartAccess tags filter.  
+Valid values are Filtered, NotViaAG, ViaAG and AnyViaAG. | false | false |  |
+| AllowedUsers | Gets only rules that have the specified value in the AllowedUsers property of their included users filter.  
+Valid values are Filtered, AnyAuthenticated, Any, AnonymousOnly and FilteredOrAnonymous. | false | false |  |
 | Description | Gets only rules with the specified description. | false | false |  |
 | DesktopGroupName | Gets only rules applying to desktop groups with names matching the specified name. | false | false |  |
 | DesktopGroupUid | Gets only rules that apply to the desktop group with the specified unique ID. | false | false |  |
@@ -107,15 +115,19 @@ A BrokerAccessPolicyRule object represents a single rule within the site's acces
 | IncludedSmartAccessTag | Gets only rules that have the specified SmartAccess tag in their included SmartAccess tags filter (whether the filter is enabled or not). | false | false |  |
 | IncludedUser | Gets only rules that have the specified user in their included users filter (whether the filter is enabled or not). | false | false |  |
 | IncludedUserFilterEnabled | Gets only rules that have their included user filter enabled (\$true) or disabled (\$false). | false | false |  |
-| Metadata | Gets records with matching metadata entries.<br>The value being compared with is a concatenation of the key name, a colon, and the value. For example: -Metadata "abc:x\*" matches records with a metadata entry having a key name of "abc" and a value starting with the letter "x". | false | false |  |
-| ReturnTotalRecordCount | When specified, this causes the cmdlet to output an error record containing the number of records available. This error record is additional information and does not affect the objects written to the output pipeline. See about\_Broker\_Filtering for details. | false | false | False |
+| Metadata | Gets records with matching metadata entries.  
+The value being compared with is a concatenation of the key name, a colon, and the value. For example: -Metadata "abc:x\*" matches records with a metadata entry having a key name of "abc" and a value starting with the letter "x". | false | false |  |
+| ReturnTotalRecordCount | When specified, this causes the cmdlet to output an error record containing the number of records available. This error record is additional information and does not affect the objects written to the output pipeline. See [about\_Broker\_Filtering](../about_Broker_Filtering/) for details. | false | false | False |
 | MaxRecordCount | Specifies the maximum number of records to return. | false | false | 250 |
 | Skip | Skips the specified number of records before returning results. Also reduces the count returned by -ReturnTotalRecordCount. | false | false | 0 |
 | SortBy | Sorts the results by the specified list of properties. The list is a set of property names separated by commas, semi-colons, or spaces. Optionally, prefix each name with a + or - to indicate ascending or descending order. Ascending order is assumed if no prefix is present. | false | false | The default sort order is by name or unique identifier. |
-| Filter | Gets records that match a PowerShell style filter expression. See about\_Broker\_Filtering for details. | false | false |  |
+| Filter | Gets records that match a PowerShell style filter expression. See [about\_Broker\_Filtering](../about_Broker_Filtering/) for details. | false | false |  |
+| FilterScope | Gets only results allowed by the specified scope id. | false | false |  |
 | Property | Specifies the properties to be returned. This is similar to piping the output of the command through Select-Object, but the properties are filtered more efficiently at the server. | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller that the PowerShell snapin will connect to. This can be provided as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value will become the default. |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 
 ## Input Type
@@ -129,14 +141,18 @@ Get-BrokerAccessPolicyRule returns all access policy rules that match the specif
 ## Examples
 
 ### Example 1
+
 ```
 C:\PS> Get-BrokerAccessPolicyRule
 ```
+
 #### Description
 Returns all access policy rules. This offers a complete description of the current site's access policy.
 ### Example 2
+
 ```
 C:\PS> Get-BrokerAccessPolicyRule -Enabled $true -IncludedUser sales\tech-support
 ```
+
 #### Description
 Returns all rules that are both enabled and explicitly include the SALES\\tech-support group in their included users filter.

@@ -2,9 +2,11 @@
 # New-Sfstorefrontaddress
 Creates a new StoreFront address configuration, specifying a single address.
 ## Syntax
+
 ```
 New-SfStorefrontAddress -Name <String> -Url <String> -Enabled <Boolean> -Description <String> [<CommonParameters>]
 ```
+
 ## Detailed Description
 Use this command when you want to create a new StoreFront configuration byte array from scratch, rather than modifying an existing one. You must define the URL for the StoreFront, and some additional details.
 
@@ -38,16 +40,18 @@ The new configuration set, with all of the given modifications applied.
 ## Examples
 
 ### Example 1
+
 ```
-C:\PS> $configuration = New-SfStorefrontAddress -Url "https://mysite.com/Citrix/StoreWeb" -Description "This StoreFront delivers my corporate applications" -Name "StoreFront1" -Enabled $true
-
-C:\PS> Get-SfStorefrontAddress -ByteArray $configuration
-
-Name               Url                                       Enabled Description
-
-----               ---                                       ------- -----------
-
+C:\PS> $configuration = New-SfStorefrontAddress -Url "https://mysite.com/Citrix/StoreWeb" -Description "This StoreFront delivers my corporate applications" -Name "StoreFront1" -Enabled $true  
+  
+C:\PS> Get-SfStorefrontAddress -ByteArray $configuration  
+  
+Name               Url                                       Enabled Description  
+  
+----               ---                                       ------- -----------  
+  
 StoreFront1        https://mysite.com/Citrix/StoreWeb           True This StoreFront delivers my corporate applications.
 ```
+
 #### Description
 This example shows a new configuration byte array being created to specify a single StoreFront address. The configuration byte array is then provided as input to the Get-SfStorefrontAddress command, which interprets and outputs the same fields.

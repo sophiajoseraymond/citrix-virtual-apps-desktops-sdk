@@ -2,9 +2,11 @@
 # Get-Brokerdesktopgroupanalysisreport
 Gets the detailed AppDNA compatibility report for AppDisk(s) associated with a particular Desktop Group.
 ## Syntax
+
 ```
-Get-BrokerDesktopGroupAnalysisReport [-InputObject] <DesktopGroup[]> [-RetrieveReportContentsAsMHT] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [[-AppDiskUid] <Guid>] [<CommonParameters>]
+Get-BrokerDesktopGroupAnalysisReport [-InputObject] <DesktopGroup[]> [-RetrieveReportContentsAsMHT] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [[-AppDiskUid] <Guid>] [<CommonParameters>]
 ```
+
 ## Detailed Description
 Gets the detailed AppDNA compatibility report for an AppDisk associated with a particular Desktop Group.
 
@@ -21,6 +23,8 @@ Gets the detailed AppDNA compatibility report for an AppDisk associated with a p
 | RetrieveReportContentsAsMHT | Retrieve the report as a MHT file | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller that the PowerShell snapin will connect to. This can be provided as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value will become the default. |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 | AppDiskUid | AppDisk unique identifier. If set, the report will be filtered down to only include this AppDisk. | false | false |  |
 
@@ -35,16 +39,20 @@ The analysis reports for the desktop groups
 ## Examples
 
 ### Example 1
+
 ```
 Get-BrokerDesktopGroupAnalysisReport -InputObject 36
 ```
+
 #### Description
 Retrieves the report for the desktop group with Uid 36
 ### Example 2
-```
-$appDisk = Get-AppLibAppDisk -AppDiskName "MyAppDisk"
 
+```
+$appDisk = Get-AppLibAppDisk -AppDiskName "MyAppDisk"  
+  
           Get-BrokerDesktopGroupAnalysisReport -InputObject 36 -AppDiskUid $appDisk.AppDiskUid
 ```
+
 #### Description
 Retrieves the report for the desktop group with Uid 36 filtered down to AppDisk "MyAppDisk"

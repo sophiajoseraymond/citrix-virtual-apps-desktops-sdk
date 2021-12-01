@@ -2,11 +2,13 @@
 # Get-Brokershareddesktop
 Get shared desktops configured for this site.
 ## Syntax
-```
-Get-BrokerSharedDesktop [-Uid] <Int32> [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 
-Get-BrokerSharedDesktop [[-MachineName] <String>] [-AgentVersion <String>] [-ControllerDNSName <String>] [-DesktopGroupUid <Int32>] [-DNSName <String>] [-HostedMachineId <String>] [-HostedMachineName <String>] [-HostingServerName <String>] [-HypervisorConnectionUid <Int32>] [-InMaintenanceMode <Boolean>] [-IPAddress <String>] [-LastDeregistrationReason <DeregistrationReason>] [-LastDeregistrationTime <DateTime>] [-LastHostingUpdateTime <DateTime>] [-OSType <String>] [-OSVersion <String>] [-PowerState <PowerState>] [-RegistrationState <RegistrationState>] [-SID <String>] [-Tag <String>] [-WillShutdownAfterUse <Boolean>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 ```
+Get-BrokerSharedDesktop [-Uid] <Int32> [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]  
+  
+Get-BrokerSharedDesktop [[-MachineName] <String>] [-AgentVersion <String>] [-ControllerDNSName <String>] [-DesktopGroupUid <Int32>] [-DNSName <String>] [-HostedMachineId <String>] [-HostedMachineName <String>] [-HostingServerName <String>] [-HypervisorConnectionUid <Int32>] [-InMaintenanceMode <Boolean>] [-IPAddress <String>] [-LastDeregistrationReason <DeregistrationReason>] [-LastDeregistrationTime <DateTime>] [-LastHostingUpdateTime <DateTime>] [-OSType <String>] [-OSVersion <String>] [-PowerState <PowerState>] [-RegistrationState <RegistrationState>] [-SID <String>] [-Tag <String>] [-WillShutdownAfterUse <Boolean>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-FilterScope <Guid>] [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]
+```
+
 ## Detailed Description
 This cmdlet is deprecated, please use the Get-BrokerMachine cmdlet instead.
 
@@ -14,7 +16,7 @@ Retrieve shared desktops matching the specified criteria. If no parameters are s
 
 Get-BrokerSharedDesktop returns configuration information only for shared desktops (a DesktopKind of 'Shared').
 
-For information about advanced filtering options, see about\_Broker\_Filtering; for information about desktops, see about\_Broker\_Desktops.
+For information about advanced filtering options, see [about\_Broker\_Filtering](../about_Broker_Filtering/); for information about desktops, see [about\_Broker\_Desktops](../about_Broker_Desktops/).
 
 
 ### Brokershareddesktop Object
@@ -82,24 +84,30 @@ Shared desktops are desktops that are assigned randomly to users upon connection
 | HypervisorConnectionUid | Gets desktops by the uid of the hosting hypervisor connection. | false | false |  |
 | InMaintenanceMode | Gets desktops by the InMaintenanceMode setting. | false | false |  |
 | IPAddress | Gets desktops by IP address. | false | false |  |
-| LastDeregistrationReason | Gets desktops whose broker last recorded a specific deregistration reason.<br>Valid values are \$null, AgentShutdown, AgentSuspended, AgentRequested, IncompatibleVersion, AgentAddressResolutionFailed, AgentNotContactable, AgentWrongActiveDirectoryOU, EmptyRegistrationRequest, MissingRegistrationCapabilities, MissingAgentVersion, InconsistentRegistrationCapabilities, NotLicensedForFeature, UnsupportedCredentialSecurityVersion, InvalidRegistrationRequest, SingleMultiSessionMismatch, FunctionalLevelTooLowForCatalog, FunctionalLevelTooLowForDesktopGroup, PowerOff, DesktopRestart, DesktopRemoved, AgentRejectedSettingsUpdate, SendSettingsFailure, SessionAuditFailure, SessionPrepareFailure, ContactLost, SettingsCreationFailure, UnknownError and BrokerRegistrationLimitReached. | false | false |  |
+| LastDeregistrationReason | Gets desktops whose broker last recorded a specific deregistration reason.  
+Valid values are \$null, AgentShutdown, AgentSuspended, AgentRequested, IncompatibleVersion, AgentAddressResolutionFailed, AgentNotContactable, AgentWrongActiveDirectoryOU, EmptyRegistrationRequest, MissingRegistrationCapabilities, MissingAgentVersion, InconsistentRegistrationCapabilities, NotLicensedForFeature, UnsupportedCredentialSecurityVersion, InvalidRegistrationRequest, SingleMultiSessionMismatch, FunctionalLevelTooLowForCatalog, FunctionalLevelTooLowForDesktopGroup, PowerOff, DesktopRestart, DesktopRemoved, AgentRejectedSettingsUpdate, SendSettingsFailure, SessionAuditFailure, SessionPrepareFailure, ContactLost, SettingsCreationFailure, UnknownError and BrokerRegistrationLimitReached. | false | false |  |
 | LastDeregistrationTime | Gets desktops by the time that they were last deregistered. | false | false |  |
 | LastHostingUpdateTime | Gets desktops by the time that the hosting information was last updated. | false | false |  |
 | OSType | Gets desktops by the type of operating system they are running. | false | false |  |
 | OSVersion | Gets desktops by the version of the operating system they are running. | false | false |  |
-| PowerState | Gets desktops by power state.<br>Valid values are Unmanaged, Unknown, Unavailable, Off, On, Suspended, TurningOn, TurningOff, Suspending, and Resuming. | false | false |  |
-| RegistrationState | Gets desktops by registration state.<br>Valid values are Registered, Unregistered, and AgentError. | false | false |  |
+| PowerState | Gets desktops by power state.  
+Valid values are Unmanaged, Unknown, Unavailable, Off, On, Suspended, TurningOn, TurningOff, Suspending, and Resuming. | false | false |  |
+| RegistrationState | Gets desktops by registration state.  
+Valid values are Registered, Unregistered, and AgentError. | false | false |  |
 | SID | Gets desktops by machine SID. | false | false |  |
 | Tag | Get desktops tagged with the given tag. | false | false |  |
 | WillShutdownAfterUse | Gets desktops depending on whether they shutdown after use or not. | false | false |  |
-| ReturnTotalRecordCount | When specified, this causes the cmdlet to output an error record containing the number of records available. This error record is additional information and does not affect the objects written to the output pipeline. See about\_Broker\_Filtering for details. | false | false | False |
+| ReturnTotalRecordCount | When specified, this causes the cmdlet to output an error record containing the number of records available. This error record is additional information and does not affect the objects written to the output pipeline. See [about\_Broker\_Filtering](../about_Broker_Filtering/) for details. | false | false | False |
 | MaxRecordCount | Specifies the maximum number of records to return. | false | false | 250 |
 | Skip | Skips the specified number of records before returning results. Also reduces the count returned by -ReturnTotalRecordCount. | false | false | 0 |
 | SortBy | Sorts the results by the specified list of properties. The list is a set of property names separated by commas, semi-colons, or spaces. Optionally, prefix each name with a + or - to indicate ascending or descending order. Ascending order is assumed if no prefix is present. | false | false | The default sort order is by name or unique identifier. |
-| Filter | Gets records that match a PowerShell style filter expression. See about\_Broker\_Filtering for details. | false | false |  |
+| Filter | Gets records that match a PowerShell style filter expression. See [about\_Broker\_Filtering](../about_Broker_Filtering/) for details. | false | false |  |
+| FilterScope | Gets only results allowed by the specified scope id. | false | false |  |
 | Property | Specifies the properties to be returned. This is similar to piping the output of the command through Select-Object, but the properties are filtered more efficiently at the server. | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller that the PowerShell snapin will connect to. This can be provided as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value will become the default. |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 
 ## Input Type
@@ -111,18 +119,22 @@ You cannot pipe input into this cmdlet.
 ### Citrix.Broker.Admin.Sdk.Shareddesktop
 Get-BrokerSharedDesktop returns an object for each matching shared desktop.
 ## Notes
-To compare dates/times, use -Filter and relative comparisons. For more information, see about\_Broker\_Filtering.
+To compare dates/times, use -Filter and relative comparisons. For more information, see [about\_Broker\_Filtering](../about_Broker_Filtering/).
 ## Examples
 
 ### Example 1
+
 ```
 C:\PS> Get-BrokerSharedDesktop -HostingServerName BigServer12\*
 ```
+
 #### Description
 Get all shared desktops hosted by the hypervisor server BigServer12.
 ### Example 2
+
 ```
 C:\PS> Get-BrokerSharedDesktop -OSType 'Windows XP\*' | ft -a MachineName,OSType,OSVersion
 ```
+
 #### Description
 List all shared desktops running Windows XP, including the machine name and OS details.

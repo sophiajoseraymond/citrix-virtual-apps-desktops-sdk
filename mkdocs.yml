@@ -1,5 +1,5 @@
 # Project information
-site_name: Citrix Virtual Apps and Desktops 2103 SDK Documentation
+site_name: Citrix Virtual Apps and Desktops 2109 SDK Documentation
 site_title: Developer Docs
 site_description: Documentation and Reference Guide for the Citrix Virtual Apps and Desktops 2103 SDK
 site_url: https://developer-docs.citrix.com/
@@ -68,6 +68,7 @@ plugins:
 # Page tree
 nav:
 - Versions:
+  - 2103: https://developer-docs.citrix.com/projects/citrix-virtual-apps-desktops-sdk/en/2103/
   - 2009: https://developer-docs.citrix.com/projects/citrix-virtual-apps-desktops-sdk/en/2009/
   - 2006: https://developer-docs.citrix.com/projects/citrix-virtual-apps-desktops-sdk/en/2006/
   - 1912: https://developer-docs.citrix.com/projects/citrix-virtual-apps-desktops-sdk/en/1912/
@@ -111,6 +112,7 @@ nav:
   - Repair-AcctADAccount: ADIdentity/Repair-AcctADAccount.md
   - Reset-AcctEnabledFeatureList: ADIdentity/Reset-AcctEnabledFeatureList.md
   - Reset-AcctServiceGroupMembership: ADIdentity/Reset-AcctServiceGroupMembership.md
+  - Set-AcctADAccountUserCert: ADIdentity/Set-AcctADAccountUserCert.md
   - Set-AcctDBConnection: ADIdentity/Set-AcctDBConnection.md
   - Set-AcctIdentityPool: ADIdentity/Set-AcctIdentityPool.md
   - Set-AcctIdentityPoolMetadata: ADIdentity/Set-AcctIdentityPoolMetadata.md
@@ -148,6 +150,7 @@ nav:
   - Add-AppLibTaskMetadata: AppLibrary/Add-AppLibTaskMetadata.md
   - Disable-AppLibAppDNAConnection: AppLibrary/Disable-AppLibAppDNAConnection.md
   - Enable-AppLibAppDNAConnection: AppLibrary/Enable-AppLibAppDNAConnection.md
+  - Get-AppLibAppAttachApplicationsPolicy: AppLibrary/Get-AppLibAppAttachApplicationsPolicy.md
   - Get-AppLibAppDNAConnection: AppLibrary/Get-AppLibAppDNAConnection.md
   - Get-AppLibAppDisk: AppLibrary/Get-AppLibAppDisk.md
   - Get-AppLibAppDiskAppDNARecommendedOrder: AppLibrary/Get-AppLibAppDiskAppDNARecommendedOrder.md
@@ -167,6 +170,7 @@ nav:
   - Get-AppLibIsolationGroup: AppLibrary/Get-AppLibIsolationGroup.md
   - Get-AppLibIsolationGroupPackage: AppLibrary/Get-AppLibIsolationGroupPackage.md
   - Get-AppLibLibrary: AppLibrary/Get-AppLibLibrary.md
+  - Get-AppLibMsixApplicationsPolicy: AppLibrary/Get-AppLibMsixApplicationsPolicy.md
   - Get-AppLibObjectReference: AppLibrary/Get-AppLibObjectReference.md
   - Get-AppLibScopedObject: AppLibrary/Get-AppLibScopedObject.md
   - Get-AppLibService: AppLibrary/Get-AppLibService.md
@@ -232,7 +236,6 @@ nav:
   - about_Broker_EntitlementPolicy: Broker/about_Broker_EntitlementPolicy.md
   - about_Broker_ErrorHandling: Broker/about_Broker_ErrorHandling.md
   - about_Broker_Filtering: Broker/about_Broker_Filtering.md
-  - about_Broker_GroupPolicy: Broker/about_Broker_GroupPolicy.md
   - about_Broker_Licensing: Broker/about_Broker_Licensing.md
   - about_Broker_Machines: Broker/about_Broker_Machines.md
   - about_Broker_Policies: Broker/about_Broker_Policies.md
@@ -261,6 +264,7 @@ nav:
   - Get-BrokerApplicationGroup: Broker/Get-BrokerApplicationGroup.md
   - Get-BrokerApplicationInstance: Broker/Get-BrokerApplicationInstance.md
   - Get-BrokerAssignmentPolicyRule: Broker/Get-BrokerAssignmentPolicyRule.md
+  - Get-BrokerAutoTagRule: Broker/Get-BrokerAutoTagRule.md
   - Get-BrokerCatalog: Broker/Get-BrokerCatalog.md
   - Get-BrokerConfigurationSlot: Broker/Get-BrokerConfigurationSlot.md
   - Get-BrokerConfiguredFTA: Broker/Get-BrokerConfiguredFTA.md
@@ -284,6 +288,7 @@ nav:
   - Get-BrokerHostingPowerAction: Broker/Get-BrokerHostingPowerAction.md
   - Get-BrokerHypervisorAlert: Broker/Get-BrokerHypervisorAlert.md
   - Get-BrokerHypervisorConnection: Broker/Get-BrokerHypervisorConnection.md
+  - Get-BrokerHypervisorConnectionStatus: Broker/Get-BrokerHypervisorConnectionStatus.md
   - Get-BrokerIcon: Broker/Get-BrokerIcon.md
   - Get-BrokerImportedFTA: Broker/Get-BrokerImportedFTA.md
   - Get-BrokerInstalledDbVersion: Broker/Get-BrokerInstalledDbVersion.md
@@ -332,6 +337,7 @@ nav:
   - New-BrokerApplication: Broker/New-BrokerApplication.md
   - New-BrokerApplicationGroup: Broker/New-BrokerApplicationGroup.md
   - New-BrokerAssignmentPolicyRule: Broker/New-BrokerAssignmentPolicyRule.md
+  - New-BrokerAutoTagRule: Broker/New-BrokerAutoTagRule.md
   - New-BrokerCatalog: Broker/New-BrokerCatalog.md
   - New-BrokerConfigurationSlot: Broker/New-BrokerConfigurationSlot.md
   - New-BrokerConfiguredFTA: Broker/New-BrokerConfiguredFTA.md
@@ -375,6 +381,8 @@ nav:
   - Remove-BrokerApplicationMetadata: Broker/Remove-BrokerApplicationMetadata.md
   - Remove-BrokerAssignmentPolicyRule: Broker/Remove-BrokerAssignmentPolicyRule.md
   - Remove-BrokerAssignmentPolicyRuleMetadata: Broker/Remove-BrokerAssignmentPolicyRuleMetadata.md
+  - Remove-BrokerAutoTagRule: Broker/Remove-BrokerAutoTagRule.md
+  - Remove-BrokerAutoTagRuleMetadata: Broker/Remove-BrokerAutoTagRuleMetadata.md
   - Remove-BrokerCatalog: Broker/Remove-BrokerCatalog.md
   - Remove-BrokerCatalogMetadata: Broker/Remove-BrokerCatalogMetadata.md
   - Remove-BrokerConfigurationSlot: Broker/Remove-BrokerConfigurationSlot.md
@@ -433,6 +441,7 @@ nav:
   - Rename-BrokerApplication: Broker/Rename-BrokerApplication.md
   - Rename-BrokerApplicationGroup: Broker/Rename-BrokerApplicationGroup.md
   - Rename-BrokerAssignmentPolicyRule: Broker/Rename-BrokerAssignmentPolicyRule.md
+  - Rename-BrokerAutoTagRule: Broker/Remname-BrokerAutoTagRule.md
   - Rename-BrokerCatalog: Broker/Rename-BrokerCatalog.md
   - Rename-BrokerDesktopGroup: Broker/Rename-BrokerDesktopGroup.md
   - Rename-BrokerEntitlementPolicyRule: Broker/Rename-BrokerEntitlementPolicyRule.md
@@ -459,6 +468,8 @@ nav:
   - Set-BrokerApplicationMetadata: Broker/Set-BrokerApplicationMetadata.md
   - Set-BrokerAssignmentPolicyRule: Broker/Set-BrokerAssignmentPolicyRule.md
   - Set-BrokerAssignmentPolicyRuleMetadata: Broker/Set-BrokerAssignmentPolicyRuleMetadata.md
+  - Set-BrokerAutoTagRule: Broker/Set-BrokerAutoTagRule.md
+  - Set-BrokerAutoTagRuleMetadata: Broker/Set-BrokerAutoTagRuleMetadata.md
   - Set-BrokerCatalog: Broker/Set-BrokerCatalog.md
   - Set-BrokerCatalogMetadata: Broker/Set-BrokerCatalogMetadata.md
   - Set-BrokerConfiguration: Broker/Set-BrokerConfiguration.md
@@ -763,6 +774,7 @@ nav:
   - Update-HypHypervisorConnection: HostService/Update-HypHypervisorConnection.md
 - MachineCreation:
   - about_Prov_Filtering: MachineCreation/about_Prov_Filtering.md
+  - about_ProvCustomProperties: MachineCreation/about_ProvCustomProperties.md
   - about_ProvMachineCreationSnapIn: MachineCreation/about_ProvMachineCreationSnapin.md
   - Add-ProvSchemeControllerAddress: MachineCreation/Add-ProvSchemeControllerAddress.md
   - Add-ProvSchemeMetadata: MachineCreation/Add-ProvSchemeMetadata.md

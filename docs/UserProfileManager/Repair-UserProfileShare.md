@@ -2,13 +2,15 @@
 # Repair-Userprofileshare
 Carries out one or more remedial actions on a profile store.
 ## Syntax
+
 ```
+Repair-UserProfileShare -Path <String> -UserGroups <String[]> -AdminGroups <String[]> [-Mandatory] [-RedirectedFolders] [<CommonParameters>]  
+  
+Repair-UserProfileShare -Path <String> -UserGroupsSids <String[]> -AdminGroupsSids <String[]> [-Mandatory] [-RedirectedFolders] [<CommonParameters>]  
+  
 Repair-UserProfileShare -Path <String> [-Mandatory] [-RedirectedFolders] [<CommonParameters>]
-
-Repair-UserProfileShare -Path <String> -UserGroups <String[]> -AdminGroups <String[]> [-Mandatory] [-RedirectedFolders] [<CommonParameters>]
-
-Repair-UserProfileShare -Path <String> -UserGroupsSids <String[]> -AdminGroupsSids <String[]> [-Mandatory] [-RedirectedFolders] [<CommonParameters>]
 ```
+
 ## Detailed Description
 Use this command in situations where the Test-UserProfileShare cmdlet reported one or more fixable faults with the profile store.
 
@@ -39,18 +41,27 @@ This cmdlet can only be used to fix issues that were claimed to be fixable in th
 ## Return Values
 
 ### System.Management.Automation.Psobject
-This cmdlet outputs a sequence of objects, each of which has the following properties:<br>Name - This property indicates the name of the test.<br>Status - This property indicates whether the repair action succeeded or failed.<br>Details - This property provides additional information about the test in the case where it has failed. The interpretation of this property depends on the name of the test.<br>CanFix - In the case where the test has failed, this boolean property indicates whether the problem can be fixed with the Repair-UserProfileShare cmdlet.
+This cmdlet outputs a sequence of objects, each of which has the following properties:  
+Name - This property indicates the name of the test.  
+Status - This property indicates whether the repair action succeeded or failed.  
+Details - This property provides additional information about the test in the case where it has failed. The interpretation of this property depends on the name of the test.  
+CanFix - In the case where the test has failed, this boolean property indicates whether the problem can be fixed with the Repair-UserProfileShare cmdlet.
 ## Examples
 
 ### Example 1
+
 ```
 C:PS> Repair-UserProfileShare -Path \\ProfileServer\Profiles$\%USERNAME%.%USERDOMAIN% -UserGroups @("FABRIKAM\Domain Users") -AdminGroups @("FABRIKAM\Administrators")
 ```
+
 #### Description
 This command ensures that the path "\\\\ProfileServer\\Profiles\$\\%USERAME%.%USERDOMAIN%" is suitable for use as a profile store. This path is syntactically valid, so the cmdlet will check for the existence of the share "\\\\ProfileServer\\Profiles\$". Provided that the share exists, it will also ensure that its permissions are configured such that all domain users would be permitted to create profile folders within the store, and that all domain administrators will be permitted to access the store for administrative purposes.
 ### Example 2
+
 ```
 C:PS> Repair-UserProfileShare -Path \\ProfileServer\Profiles$\FinanceDept\FixedProfile -UserGroups @("FABRIKAM\Domain Users") -AdminGroups @("FABRIKAM\Administrators") -Mandatory
 ```
+
 #### Description
-This command ensures that the path "\\\\ProfileServer\\Profiles\$\\FinanceDept\\FixedProfile" contains a valid Citrix mandatory profile. This path is syntactically valid, so the cmdlet will check that the share "\\\\ProfileServer\\Profiles\$" exists. If it exists, the cmdlet will go on to ensure that its permissions are configured such that all domain users would be permitted to read data from the profile, and that all domain administrators will be permitted to access the profile for administrative purposes.&lt;br&gt;Additional repair actions will be performed on the contents of the profile to ensure that there is nothing within the profile that might reveal details about the user who logged in to create it.
+This command ensures that the path "\\\\ProfileServer\\Profiles\$\\FinanceDept\\FixedProfile" contains a valid Citrix mandatory profile. This path is syntactically valid, so the cmdlet will check that the share "\\\\ProfileServer\\Profiles\$" exists. If it exists, the cmdlet will go on to ensure that its permissions are configured such that all domain users would be permitted to read data from the profile, and that all domain administrators will be permitted to access the profile for administrative purposes.  
+Additional repair actions will be performed on the contents of the profile to ensure that there is nothing within the profile that might reveal details about the user who logged in to create it.

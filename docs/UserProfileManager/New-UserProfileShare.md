@@ -2,9 +2,11 @@
 # New-Userprofileshare
 Creates a new Windows network share on a nominated computer, making it suitable for use as a profile store.
 ## Syntax
+
 ```
 New-UserProfileShare -ServerName <String> -ShareName <String> -PathOnServer <String> -UserGroups <String[]> -AdminGroups <String[]> [<CommonParameters>]
 ```
+
 ## Detailed Description
 Use this command as part of the procedure for creating a new profile store when configuring profile management for first use. A suitable folder is assumed to already exist locally on the nominated computer. If no such folder exists, then you will need to create it on the machine before running this command. This command automates the process of transforming that folder into a published network share with suitable access control for profile management.
 
@@ -33,8 +35,10 @@ When using this command to publish a share, you will need to supply information 
 ## Examples
 
 ### Example 1
+
 ```
 C:PS> New-UserProfileShare -ServerName ProfileServer -ShareName Profiles$ -PathOnServer C:\ProfileStore -UserGroups @("FABRIKAM\Domain Users") -AdminGroups @("FABRIKAM\Administrators")
 ```
+
 #### Description
 This command creates a new network share called "Profiles\$" on the machine called "ProfileServer". It does this by sharing the folder "C:\\ProfileStore", which will already be resident on ProfileServer. The store can be used by all domain users in the FABRIKAM domains. The store (including all of the user profiles that are subsequently stored within it) will also be accessible to the domain administrators. Following successful execution of this command, the network share whose UNC name is "\\\\ProfileServer\\Profiles\$" will exist. This makes it possible, for instance, to establish "\\\\ProfileServer\\Profiles\$\\%USERNAME%.%USERDOMAIN" as a valid store path when configuring profile management.

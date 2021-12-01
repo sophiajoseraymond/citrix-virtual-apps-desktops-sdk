@@ -2,11 +2,13 @@
 # Remove-Brokermachine
 Removes one or more machines from its desktop group or catalog.
 ## Syntax
-```
-Remove-BrokerMachine [-InputObject] <Machine[]> [-Force] [-DesktopGroup <DesktopGroup>] [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 
-Remove-BrokerMachine [-MachineName] <String> [-Force] [-DesktopGroup <DesktopGroup>] [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 ```
+Remove-BrokerMachine [-InputObject] <Machine[]> [-Force] [-DesktopGroup <DesktopGroup>] [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]  
+  
+Remove-BrokerMachine [-MachineName] <String> [-Force] [-DesktopGroup <DesktopGroup>] [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]
+```
+
 ## Detailed Description
 The Remove-BrokerMachine cmdlet removes one or more machines from their desktop group or catalog. There are three forms:
 
@@ -36,6 +38,8 @@ Machines cannot be removed from their catalog while they are members of a deskto
 | LoggingId | Specifies the identifier of the high level operation that this cmdlet call forms a part of. Desktop Studio and Desktop Director typically create High Level Operations. PowerShell scripts can also wrap a series of cmdlet calls in a High Level Operation by way of the Start-LogHighLevelOperation and Stop-LogHighLevelOperation cmdlets. | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller that the PowerShell snapin will connect to. This can be provided as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value will become the default. |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 
 ## Input Type
@@ -49,40 +53,48 @@ You can pipe in the machines to be removed.
 ## Examples
 
 ### Example 1
+
 ```
-C:\PS> Remove-BrokerMachine -InputObject $machine -DesktopGroup $desktopGroup
-
-C:\PS> Remove-BrokerMachine -InputObject $machine -DesktopGroup 2
-
+C:\PS> Remove-BrokerMachine -InputObject $machine -DesktopGroup $desktopGroup  
+  
+C:\PS> Remove-BrokerMachine -InputObject $machine -DesktopGroup 2  
+  
 C:\PS> Remove-BrokerMachine $machine -DesktopGroup "MyDesktopGroup"
 ```
+
 #### Description
 These all remove a single machine from a desktop group, identifying the group by instance, UID, or name.
 ### Example 2
+
 ```
-C:\PS> Remove-BrokerMachine -MachineName "DOMAIN\MyMachine" -DesktopGroup 2
-
-C:\PS> Remove-BrokerMachine DOMAIN\MyMachine -DesktopGroup "MyDesktopGroup"
-
+C:\PS> Remove-BrokerMachine -MachineName "DOMAIN\MyMachine" -DesktopGroup 2  
+  
+C:\PS> Remove-BrokerMachine DOMAIN\MyMachine -DesktopGroup "MyDesktopGroup"  
+  
 C:\PS> Remove-BrokerMachine DOMAIN\MyMachine -DesktopGroup $desktopGroup
 ```
+
 #### Description
 These remove the machine called "DOMAIN\\MyMachine" from its desktop group.
 ### Example 3
+
 ```
-C:\PS> Remove-BrokerMachine -MachineName DOMAIN\MyMachine
-
-C:\PS> Remove-BrokerMachine "DOMAIN\MyMachine"
-
+C:\PS> Remove-BrokerMachine -MachineName DOMAIN\MyMachine  
+  
+C:\PS> Remove-BrokerMachine "DOMAIN\MyMachine"  
+  
 C:\PS> Remove-BrokerMachine $machine
 ```
+
 #### Description
 These all remove a machine from its catalog.
 ### Example 4
-```
-C:\PS> Get-BrokerMachine -Uid 3 | Remove-BrokerMachine -DesktopGroup $dg
 
+```
+C:\PS> Get-BrokerMachine -Uid 3 | Remove-BrokerMachine -DesktopGroup $dg  
+  
 C:\PS> Get-BrokerMachine -CatalogUid 4 | Remove-BrokerMachine
 ```
+
 #### Description
 These find specific machines and remove them from their desktop group or catalog.

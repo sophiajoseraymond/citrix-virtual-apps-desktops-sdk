@@ -2,9 +2,11 @@
 # Add-Sfstorefrontaddress
 Modifies a StoreFront address configuration by adding an additional StoreFront address to it.
 ## Syntax
+
 ```
 Add-SfStorefrontAddress [-ByteArray] <Byte[]> -Name <String> -Url <String> -Enabled <Boolean> -Description <String> [<CommonParameters>]
 ```
+
 ## Detailed Description
 Use this command to transform an existing StoreFront configuration into a new configuration, where the new configuration contains one additional address. The original configuration is supplied as an input, along with the properties of the new StoreFront address being added. The cmdlet outputs the modified configuration, which can then be passed to the Citrix Broker Service using the Add-BrokerMachineConfiguration command.
 
@@ -39,8 +41,10 @@ This cmdlet outputs the new, modified configuration. This differs from the origi
 ## Examples
 
 ### Example 1
+
 ```
 C:\PS> $newConfiguration = Add-SfStorefrontAddress -ByteArray $originalConfiguration -Url "https://mysite.com/Citrix/StoreWeb" -Description "This StoreFront delivers my corporate applications" -Name "StoreFront1" -Enabled $true
 ```
+
 #### Description
 This command transforms the configuration byte array specified by \$originalConfiguration, adds the new StoreFront details, and stores the resulting configuration in \$newConfiguration.

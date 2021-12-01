@@ -2,11 +2,13 @@
 # Remove-Monitornotificationpolicyemailaddresses
 Remove email addresses from the existing policy specified and returns the updated policy.
 ## Syntax
-```
-Remove-MonitorNotificationPolicyEmailAddresses -InputObject <MonitorNotificationPolicy> -EmailAddresses <String[]> [-LoggingId <Guid>] [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 
-Remove-MonitorNotificationPolicyEmailAddresses -Uid <Int64> -EmailAddresses <String[]> [-LoggingId <Guid>] [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
+Remove-MonitorNotificationPolicyEmailAddresses -InputObject <MonitorNotificationPolicy> -EmailAddresses <String[]> [-LoggingId <Guid>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]  
+  
+Remove-MonitorNotificationPolicyEmailAddresses -Uid <Int64> -EmailAddresses <String[]> [-LoggingId <Guid>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
+```
+
 ## Detailed Description
 Remove email addresses from the existing policy specified and returns the updated policy.
 
@@ -24,6 +26,8 @@ Remove email addresses from the existing policy specified and returns the update
 | Uid | Specifies the unique identifier of the policy from which the email addresses to be removed. | true | false |  |
 | LoggingId | Specifies the identifier of the high-level operation this cmdlet call forms a part of. Citrix Studio and Director typically create high-level operations. PowerShell scripts can also wrap a series of cmdlet calls in a high-level operation by way of the Start-LogHighLevelOperation and Stop-LogHighLevelOperation cmdlets. | false | false |  |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 | AdminAddress | Specifies the address of a Citrix Virtual Apps and Desktops 7 controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
@@ -38,8 +42,10 @@ Returns the updated policy object
 ## Examples
 
 ### Example 1
+
 ```
 Remove-MonitorNotificationPolicyEmailAddresses -Uid 100 -EmailAddresses $emailAddresses
 ```
+
 #### Description
 Removes the email addresses from the policy matching id 100

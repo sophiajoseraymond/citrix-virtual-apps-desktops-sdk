@@ -2,9 +2,11 @@
 # Remove-Xdsite
 Removes the XenDesktop Site.
 ## Syntax
+
 ```
 Remove-XDSite [-AdminAddress <String>] [<CommonParameters>]
 ```
+
 ## Detailed Description
 This cmdlet can be executed only when there is one remaining Controller in the Site. It removes the Site by removing the last Controller from the Site.
 

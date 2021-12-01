@@ -1,5 +1,5 @@
 ﻿
-# about\_UpmSnapInUserProfileManagerSnapin
+# about\_UpmSnapinUserProfileManagerSnapin
 
 ## Topic
 about\_UpmSnapInUserProfileManagerSnapin

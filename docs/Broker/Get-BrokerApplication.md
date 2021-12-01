@@ -2,17 +2,19 @@
 # Get-Brokerapplication
 Get the applications published on this site.
 ## Syntax
-```
-Get-BrokerApplication [-Uid] <Int32> [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 
-Get-BrokerApplication [[-Name] <String>] [-AdminFolderName <String>] [-AdminFolderUid <Int32>] [-AllAssociatedDesktopGroupUid <Int32>] [-AllAssociatedDesktopGroupUUID <Guid>] [-ApplicationName <String>] [-ApplicationType <ApplicationType>] [-AssociatedApplicationGroupUid <Int32>] [-AssociatedApplicationGroupUUID <Guid>] [-AssociatedDesktopGroupPriority <Int32>] [-AssociatedDesktopGroupUid <Int32>] [-AssociatedDesktopGroupUUID <Guid>] [-AssociatedUserFullName <String>] [-AssociatedUserName <String>] [-AssociatedUserSID <String>] [-AssociatedUserUPN <String>] [-BrowserName <String>] [-ClientFolder <String>] [-CommandLineArguments <String>] [-CommandLineExecutable <String>] [-CpuPriorityLevel <CpuPriorityLevel>] [-Description <String>] [-Enabled <Boolean>] [-HomeZoneName <String>] [-HomeZoneOnly <Boolean>] [-HomeZoneUid <Guid>] [-IconFromClient <Boolean>] [-IconUid <Int32>] [-IgnoreUserHomeZone <Boolean>] [-LocalLaunchDisabled <Boolean>] [-MaxPerMachineInstances <Int32>] [-MaxPerUserInstances <Int32>] [-MaxTotalInstances <Int32>] [-MetadataKey <String>] [-Metadata <String>] [-PublishedName <String>] [-SecureCmdLineArgumentsEnabled <Boolean>] [-ShortcutAddedToDesktop <Boolean>] [-ShortcutAddedToStartMenu <Boolean>] [-StartMenuFolder <String>] [-Tag <String>] [-UserFilterEnabled <Boolean>] [-UUID <Guid>] [-Visible <Boolean>] [-WaitForPrinterCreation <Boolean>] [-WorkingDirectory <String>] [-DesktopUid <Int32>] [-ApplicationGroupUid <Int32>] [-SessionUid <Int64>] [-UserSID <String>] [-DesktopGroupUid <Int32>] [-MachineConfigurationUid <Int32>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 ```
+Get-BrokerApplication [-Uid] <Int32> [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]  
+  
+Get-BrokerApplication [[-Name] <String>] [-AdminFolderName <String>] [-AdminFolderUid <Int32>] [-AllAssociatedDesktopGroupUid <Int32>] [-AllAssociatedDesktopGroupUUID <Guid>] [-ApplicationName <String>] [-ApplicationType <ApplicationType>] [-AssociatedApplicationGroupUid <Int32>] [-AssociatedApplicationGroupUUID <Guid>] [-AssociatedDesktopGroupPriority <Int32>] [-AssociatedDesktopGroupUid <Int32>] [-AssociatedDesktopGroupUUID <Guid>] [-AssociatedUserFullName <String>] [-AssociatedUserName <String>] [-AssociatedUserSID <String>] [-AssociatedUserUPN <String>] [-BrowserName <String>] [-ClientFolder <String>] [-CommandLineArguments <String>] [-CommandLineExecutable <String>] [-CpuPriorityLevel <CpuPriorityLevel>] [-Description <String>] [-Enabled <Boolean>] [-HomeZoneName <String>] [-HomeZoneOnly <Boolean>] [-HomeZoneUid <Guid>] [-IconFromClient <Boolean>] [-IconUid <Int32>] [-IgnoreUserHomeZone <Boolean>] [-LocalLaunchDisabled <Boolean>] [-MaxPerMachineInstances <Int32>] [-MaxPerUserInstances <Int32>] [-MaxTotalInstances <Int32>] [-MetadataKey <String>] [-Metadata <String>] [-PublishedName <String>] [-SecureCmdLineArgumentsEnabled <Boolean>] [-ShortcutAddedToDesktop <Boolean>] [-ShortcutAddedToStartMenu <Boolean>] [-StartMenuFolder <String>] [-Tag <String>] [-UserFilterEnabled <Boolean>] [-UUID <Guid>] [-Visible <Boolean>] [-WaitForPrinterCreation <Boolean>] [-WorkingDirectory <String>] [-DesktopUid <Int32>] [-ApplicationGroupUid <Int32>] [-SessionUid <Int64>] [-UserSID <String>] [-DesktopGroupUid <Int32>] [-MachineConfigurationUid <Int32>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-FilterScope <Guid>] [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]
+```
+
 ## Detailed Description
 The Get-BrokerApplication cmdlet gets the published applications that are hosted on this site.
 
 Without parameters, Get-BrokerApplication gets all the applications that have been published, regardless of whether they are visible to users or not. You can also use the parameters of Get-BrokerApplication to filter the results to just the applications you're interested in. You can also identify applications by their UIDs or their BrowserNames.
 
-For more information about applications, see about\_Broker\_Applications.
+For more information about applications, see [about\_Broker\_Applications](../about_Broker_Applications/).
 
 
 ### Brokerapplication Object
@@ -135,16 +137,22 @@ The BrokerApplication object represents a published application in the site. It 
 | Name | Gets only the applications matching the specified name (including any parent admin folder hierarchy. | false | false |  |
 | AdminFolderName | Gets applications that are in admin folders matching the specified name. | false | false |  |
 | AdminFolderUid | Gets applications that are in the specified admin folder. | false | false |  |
-| AllAssociatedDesktopGroupUid | Gets applications associated with the desktop group identified by the uid.<br>The application may be either published directly on the desktop group or published indirectly on the desktop group as part of an application group. | false | false |  |
-| AllAssociatedDesktopGroupUUID | Gets applications associated with the desktop group identified by the UUID.<br>The application may be either published directly on the desktop group or published indirectly on the desktop group as part of an application group. | false | false |  |
+| AllAssociatedDesktopGroupUid | Gets applications associated with the desktop group identified by the uid.  
+The application may be either published directly on the desktop group or published indirectly on the desktop group as part of an application group. | false | false |  |
+| AllAssociatedDesktopGroupUUID | Gets applications associated with the desktop group identified by the UUID.  
+The application may be either published directly on the desktop group or published indirectly on the desktop group as part of an application group. | false | false |  |
 | ApplicationName | Gets applications that match the specified simple name. | false | false |  |
 | ApplicationType | Gets applications that match the type specified: HostedOnDesktop, InstalledOnClient or PublishedContent. | false | false |  |
 | AssociatedApplicationGroupUid | Gets applications that are members of the application group identified by the uid. | false | false |  |
 | AssociatedApplicationGroupUUID | Gets applications that are members of the application group identified by the UUID. | false | false |  |
-| AssociatedDesktopGroupPriority | Gets applications with an associated desktop group identified by priority assigned to the pairing between an application and desktop group.<br>Associated desktop group is a desktop group on which the application is published. | false | false |  |
-| AssociatedDesktopGroupUid | Gets applications directly associated with the desktop group identified by the uid.<br>The application must be published directly on the desktop group. To search for applications that may be published indirectly on the desktop group as part of an application group, use the AllAssociatedDesktopGroupUid filter instead. | false | false |  |
-| AssociatedDesktopGroupUUID | Gets applications directly associated with the desktop group identified by the UUID.<br>The application must be published directly on the desktop group. To search for applications that may be published indirectly on the desktop group as part of an application group, use the AllAssociatedDesktopGroupUid filter instead. | false | false |  |
-| AssociatedUserFullName | Gets applications with an associated user identified by their full name (usually 'first-name last-name').<br>If the ‘UserFilterEnabled’ property is true then access to the application is restricted to those users only, otherwise access is unrestricted (but always subject to other policy rules). | false | false |  |
+| AssociatedDesktopGroupPriority | Gets applications with an associated desktop group identified by priority assigned to the pairing between an application and desktop group.  
+Associated desktop group is a desktop group on which the application is published. | false | false |  |
+| AssociatedDesktopGroupUid | Gets applications directly associated with the desktop group identified by the uid.  
+The application must be published directly on the desktop group. To search for applications that may be published indirectly on the desktop group as part of an application group, use the AllAssociatedDesktopGroupUid filter instead. | false | false |  |
+| AssociatedDesktopGroupUUID | Gets applications directly associated with the desktop group identified by the UUID.  
+The application must be published directly on the desktop group. To search for applications that may be published indirectly on the desktop group as part of an application group, use the AllAssociatedDesktopGroupUid filter instead. | false | false |  |
+| AssociatedUserFullName | Gets applications with an associated user identified by their full name (usually 'first-name last-name').  
+If the ‘UserFilterEnabled’ property is true then access to the application is restricted to those users only, otherwise access is unrestricted (but always subject to other policy rules). | false | false |  |
 | AssociatedUserName | Gets applications with an associated user identified by their user name (in the form 'domain\\user'). If the ‘UserFilterEnabled’ property is true then access to the application is restricted to those users only, otherwise access is unrestricted (but always subject to other policy rules). | false | false |  |
 | AssociatedUserSID | Gets applications with an associated user identified by their Windows SID. If the ‘UserFilterEnabled’ property is true then access to the application is restricted to those users only, otherwise access is unrestricted (but always subject to other policy rules). | false | false |  |
 | AssociatedUserUPN | Gets applications with an associated user identified by their user principle name (in the form 'user@domain'). If the ‘UserFilterEnabled’ property is true then access to the application is restricted to those users only, otherwise access is unrestricted (but always subject to other policy rules). | false | false |  |
@@ -166,7 +174,8 @@ The BrokerApplication object represents a published application in the site. It 
 | MaxPerUserInstances | Gets only applications with the specified maximum allowed concurrently running instances that an individual user can have. | false | false |  |
 | MaxTotalInstances | Gets only applications with the specified maximum allowed total of concurrently running instances in the site. | false | false |  |
 | MetadataKey | Gets only applications whose associated metadata contains key names matching the specified value. | false | false |  |
-| Metadata | Gets records with matching metadata entries.<br>The value being compared with is a concatenation of the key name, a colon, and the value. For example: -Metadata "abc:x\*" matches records with a metadata entry having a key name of "abc" and a value starting with the letter "x". | false | false |  |
+| Metadata | Gets records with matching metadata entries.  
+The value being compared with is a concatenation of the key name, a colon, and the value. For example: -Metadata "abc:x\*" matches records with a metadata entry having a key name of "abc" and a value starting with the letter "x". | false | false |  |
 | PublishedName | Gets applications whose published name matches the supplied pattern. | false | false |  |
 | SecureCmdLineArgumentsEnabled | Gets only the applications that have the specified value for whether the command-line arguments should be secured. This is reserved for possible future use, and all applications of type HostedOnDesktop can only have this value set to true. | false | false |  |
 | ShortcutAddedToDesktop | Gets only the applications that match depending on whether a shortcut for the application has been added to the user device or not. | false | false |  |
@@ -184,14 +193,17 @@ The BrokerApplication object represents a published application in the site. It 
 | UserSID | Gets only applications with their accessibility restricted to include the specified user. | false | false |  |
 | DesktopGroupUid | Gets only the applications that have been published to the specified desktop group (identified by its Uid). | false | false |  |
 | MachineConfigurationUid | Gets only applications which have an associated machine configuration identified by the given Uid. | false | false |  |
-| ReturnTotalRecordCount | When specified, this causes the cmdlet to output an error record containing the number of records available. This error record is additional information and does not affect the objects written to the output pipeline. See about\_Broker\_Filtering for details. | false | false | False |
+| ReturnTotalRecordCount | When specified, this causes the cmdlet to output an error record containing the number of records available. This error record is additional information and does not affect the objects written to the output pipeline. See [about\_Broker\_Filtering](../about_Broker_Filtering/) for details. | false | false | False |
 | MaxRecordCount | Specifies the maximum number of records to return. | false | false | 250 |
 | Skip | Skips the specified number of records before returning results. Also reduces the count returned by -ReturnTotalRecordCount. | false | false | 0 |
 | SortBy | Sorts the results by the specified list of properties. The list is a set of property names separated by commas, semi-colons, or spaces. Optionally, prefix each name with a + or - to indicate ascending or descending order. Ascending order is assumed if no prefix is present. | false | false | The default sort order is by name or unique identifier. |
-| Filter | Gets records that match a PowerShell style filter expression. See about\_Broker\_Filtering for details. | false | false |  |
+| Filter | Gets records that match a PowerShell style filter expression. See [about\_Broker\_Filtering](../about_Broker_Filtering/) for details. | false | false |  |
+| FilterScope | Gets only results allowed by the specified scope id. | false | false |  |
 | Property | Specifies the properties to be returned. This is similar to piping the output of the command through Select-Object, but the properties are filtered more efficiently at the server. | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller that the PowerShell snapin will connect to. This can be provided as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value will become the default. |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 
 ## Input Type
@@ -203,18 +215,29 @@ You cannot pipe input into this cmdlet.
 ### Citrix.Broker.Admin.Sdk.Application
 Get-BrokerApplication returns an object for each application it gets.
 ## Notes
-Get-BrokerApplication returns just the application object, and as such is not a complete picture. The returned objects do not tell you what File-Type Associations are configured for this application, etc.<br>    Use the following cmdlets to gather data related to applications (shown with examples of syntax):<br>    Get-BrokerConfiguredFTA -ApplicationUid \$app.Uid<br>    Get-BrokerTag -ApplicationUid \$app.Uid<br>    Get-BrokerDesktopGroup -ApplicationUid \$app.Uid<br>    Get-BrokerDesktop -PublishedApplication \$app<br>    Get-BrokerSession -ApplicationUid \$app.Uid<br>    Get-BrokerApplicationInstance -ApplicationUid \$app.Uid
+Get-BrokerApplication returns just the application object, and as such is not a complete picture. The returned objects do not tell you what File-Type Associations are configured for this application, etc.  
+    Use the following cmdlets to gather data related to applications (shown with examples of syntax):  
+    Get-BrokerConfiguredFTA -ApplicationUid \$app.Uid  
+    Get-BrokerTag -ApplicationUid \$app.Uid  
+    Get-BrokerDesktopGroup -ApplicationUid \$app.Uid  
+    Get-BrokerDesktop -PublishedApplication \$app  
+    Get-BrokerSession -ApplicationUid \$app.Uid  
+    Get-BrokerApplicationInstance -ApplicationUid \$app.Uid
 ## Examples
 
 ### Example 1
+
 ```
 C:\PS> Get-BrokerApplication Notepad
 ```
+
 #### Description
 Returns the application with the Name of "Notepad".
 ### Example 2
+
 ```
 C:\PS> Get-BrokerApplication -PublishedName Note\* -Enabled $true
 ```
+
 #### Description
 Returns the applications that have a PublishedName starting with "Note" and that are enabled.

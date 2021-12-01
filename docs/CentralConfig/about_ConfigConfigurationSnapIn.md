@@ -1,5 +1,5 @@
 ﻿
-# about\_ConfigConfigurationSnapIn
+# about\_ConfigConfigurationSnapin
 
 ## Topic
 about\_ConfigConfigurationSnapin

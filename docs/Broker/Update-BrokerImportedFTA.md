@@ -2,9 +2,11 @@
 # Update-Brokerimportedfta
 Imports or updates all of the file type associations for the specified worker.
 ## Syntax
+
 ```
-Update-BrokerImportedFTA -DesktopUids <Int32[]> [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
+Update-BrokerImportedFTA -DesktopUids <Int32[]> [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 ```
+
 ## Detailed Description
 Imports or updates the file type associations from a specified worker machine.
 
@@ -35,6 +37,8 @@ If file type associations are imported more than once for a desktop group, for e
 | LoggingId | Specifies the identifier of the high level operation that this cmdlet call forms a part of. Desktop Studio and Desktop Director typically create High Level Operations. PowerShell scripts can also wrap a series of cmdlet calls in a High Level Operation by way of the Start-LogHighLevelOperation and Stop-LogHighLevelOperation cmdlets. | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller that the PowerShell snapin will connect to. This can be provided as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value will become the default. |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 
 ## Input Type
@@ -48,14 +52,16 @@ An array of Uids for desktops can be supplied as input.
 ## Examples
 
 ### Example 1
+
 ```
-C:\PS> $desktop = Get-BrokerSharedDesktop -MachineName "ACME\Worker1"
-
-C:\PS> Set-BrokerSharedDesktop $desktop -InMaintenanceMode $true
-
-C:\PS> Update-BrokerImportedFTA -DesktopUids $desktop.Uid
-
+C:\PS> $desktop = Get-BrokerSharedDesktop -MachineName "ACME\Worker1"  
+  
+C:\PS> Set-BrokerSharedDesktop $desktop -InMaintenanceMode $true  
+  
+C:\PS> Update-BrokerImportedFTA -DesktopUids $desktop.Uid  
+  
 C:\PS> Set-BrokerSharedDesktop $desktop -InMaintenanceMode $false
 ```
+
 #### Description
 Gets an object for the worker machine named "Worker1" in the "ACME" domain, and ensures no users can connect to it, before importing the file type associations from that desktop and re-enabling it.

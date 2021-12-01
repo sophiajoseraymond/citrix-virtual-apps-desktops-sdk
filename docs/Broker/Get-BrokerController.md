@@ -2,11 +2,13 @@
 # Get-Brokercontroller
 Gets Controllers running broker services in the site.
 ## Syntax
-```
-Get-BrokerController [-Uid] <Int32> [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 
-Get-BrokerController [[-MachineName] <String>] [-ControllerVersion <String>] [-DesktopsRegistered <Int32>] [-DNSName <String>] [-LastActivityTime <DateTime>] [-LastLicensingServerEvent <LicensingServerEvent>] [-LastLicensingServerEventTime <DateTime>] [-LastStartTime <DateTime>] [-LicensingGraceState <LicensingGraceState>] [-LicensingServerState <LicensingServerState>] [-Metadata <String>] [-OSType <String>] [-OSVersion <String>] [-SID <String>] [-State <ControllerState>] [-UUID <Guid>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 ```
+Get-BrokerController [-Uid] <Int32> [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]  
+  
+Get-BrokerController [[-MachineName] <String>] [-ControllerVersion <String>] [-DesktopsRegistered <Int32>] [-DNSName <String>] [-LastActivityTime <DateTime>] [-LastLicensingServerEvent <LicensingServerEvent>] [-LastLicensingServerEventTime <DateTime>] [-LastStartTime <DateTime>] [-LicensingGraceState <LicensingGraceState>] [-LicensingServerState <LicensingServerState>] [-Metadata <String>] [-OSType <String>] [-OSVersion <String>] [-SID <String>] [-State <ControllerState>] [-UUID <Guid>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-FilterScope <Guid>] [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]
+```
+
 ## Detailed Description
 Gets Controllers from the current site that match the specified search criteria.
 
@@ -73,28 +75,34 @@ The BrokerController object represents a single controller running an instance o
 | Uid | Gets only Controller with the specified unique ID. | true | false |  |
 | MachineName | Gets only Controllers with the specified Windows name. ('domain\\machine') | false | false |  |
 | ControllerVersion | Gets only Controllers running the specified version of the broker service. | false | false |  |
-| DesktopsRegistered | Gets only Controllers that have the specified number of desktops currently registered. This parameter is mainly of use with advanced filtering; see about\_Broker\_Filtering. | false | false |  |
+| DesktopsRegistered | Gets only Controllers that have the specified number of desktops currently registered. This parameter is mainly of use with advanced filtering; see [about\_Broker\_Filtering](../about_Broker_Filtering/). | false | false |  |
 | DNSName | Gets only Controllers with the specified DNS name ('machine.domain') | false | false |  |
-| LastActivityTime | Gets only Controllers last reported as active at the specified time. This parameter is mainly of use with advanced filtering; see about\_Broker\_Filtering. | false | false |  |
+| LastActivityTime | Gets only Controllers last reported as active at the specified time. This parameter is mainly of use with advanced filtering; see [about\_Broker\_Filtering](../about_Broker_Filtering/). | false | false |  |
 | LastLicensingServerEvent | Gets only Controllers with the specified last license server event recorded. | false | false |  |
-| LastLicensingServerEventTime | Gets only Controllers with its last recorded licensing server event at the specified time. This parameter is mainly of use with advanced filtering; see about\_Broker\_Filtering. | false | false |  |
-| LastStartTime | Gets only Controllers that last started-up at the specified time. This parameter is mainly of use with advanced filtering; see about\_Broker\_Filtering. | false | false |  |
-| LicensingGraceState | Gets only Controllers in the specified licensing grace state.<br>Valid values are: NotActive, InOutOfBoxGracePeriod, InSupplementalGracePeriod, InEmergencyGracePeriod and GracePeriodExpired. | false | false |  |
+| LastLicensingServerEventTime | Gets only Controllers with its last recorded licensing server event at the specified time. This parameter is mainly of use with advanced filtering; see [about\_Broker\_Filtering](../about_Broker_Filtering/). | false | false |  |
+| LastStartTime | Gets only Controllers that last started-up at the specified time. This parameter is mainly of use with advanced filtering; see [about\_Broker\_Filtering](../about_Broker_Filtering/). | false | false |  |
+| LicensingGraceState | Gets only Controllers in the specified licensing grace state.  
+Valid values are: NotActive, InOutOfBoxGracePeriod, InSupplementalGracePeriod, InEmergencyGracePeriod and GracePeriodExpired. | false | false |  |
 | LicensingServerState | Gets only Controllers in the specified licensing server state. Valid values are: ServerNotSpecified, NotConnected, OK, LicenseNotInstalled, LicenseExpired, Incompatible and Failed. | false | false |  |
-| Metadata | Gets records with matching metadata entries.<br>The value being compared with is a concatenation of the key name, a colon, and the value. For example: -Metadata "abc:x\*" matches records with a metadata entry having a key name of "abc" and a value starting with the letter "x". | false | false |  |
+| Metadata | Gets records with matching metadata entries.  
+The value being compared with is a concatenation of the key name, a colon, and the value. For example: -Metadata "abc:x\*" matches records with a metadata entry having a key name of "abc" and a value starting with the letter "x". | false | false |  |
 | OSType | Gets only Controllers running the specified Operating System type. | false | false |  |
 | OSVersion | Gets only Controllers running the specified Operating System version. | false | false |  |
 | SID | Gets only Controllers with the specified SID. | false | false |  |
-| State | Gets only Controllers currently in the specified state.<br>Valid values are: Failed, Off, On, and Active. | false | false |  |
+| State | Gets only Controllers currently in the specified state.  
+Valid values are: Failed, Off, On, and Active. | false | false |  |
 | UUID | Gets only the Controller with the specified GUID. | false | false |  |
-| ReturnTotalRecordCount | When specified, this causes the cmdlet to output an error record containing the number of records available. This error record is additional information and does not affect the objects written to the output pipeline. See about\_Broker\_Filtering for details. | false | false | False |
+| ReturnTotalRecordCount | When specified, this causes the cmdlet to output an error record containing the number of records available. This error record is additional information and does not affect the objects written to the output pipeline. See [about\_Broker\_Filtering](../about_Broker_Filtering/) for details. | false | false | False |
 | MaxRecordCount | Specifies the maximum number of records to return. | false | false | 250 |
 | Skip | Skips the specified number of records before returning results. Also reduces the count returned by -ReturnTotalRecordCount. | false | false | 0 |
 | SortBy | Sorts the results by the specified list of properties. The list is a set of property names separated by commas, semi-colons, or spaces. Optionally, prefix each name with a + or - to indicate ascending or descending order. Ascending order is assumed if no prefix is present. | false | false | The default sort order is by name or unique identifier. |
-| Filter | Gets records that match a PowerShell style filter expression. See about\_Broker\_Filtering for details. | false | false |  |
+| Filter | Gets records that match a PowerShell style filter expression. See [about\_Broker\_Filtering](../about_Broker_Filtering/) for details. | false | false |  |
+| FilterScope | Gets only results allowed by the specified scope id. | false | false |  |
 | Property | Specifies the properties to be returned. This is similar to piping the output of the command through Select-Object, but the properties are filtered more efficiently at the server. | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller that the PowerShell snapin will connect to. This can be provided as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value will become the default. |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 
 ## Input Type
@@ -108,14 +116,18 @@ Returns Controllers matching all specified selection criteria.
 ## Examples
 
 ### Example 1
+
 ```
 C:\PS> Get-BrokerController -State Active
 ```
+
 #### Description
 Gets all Controllers in the site that are currently active (powered on and fully operational).
 ### Example 2
+
 ```
 C:\PS> Get-BrokerController -Filter 'LastStartTime -gt "-30:00"'
 ```
+
 #### Description
 Gets all Controllers in the site that started-up in the last 30 minutes.

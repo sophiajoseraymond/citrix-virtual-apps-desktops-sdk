@@ -2,9 +2,11 @@
 # Export-Brokerdesktoppolicy
 Gets the site wide Citrix Group Policy settings.
 ## Syntax
+
 ```
-Export-BrokerDesktopPolicy [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
+Export-BrokerDesktopPolicy [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 ```
+
 ## Detailed Description
 Export-BrokerDesktopPolicy returns an array of bytes containing the site-wide Citrix Group Policy settings. These policy settings are applied to every machine in the site.
 
@@ -19,6 +21,8 @@ Export-BrokerDesktopPolicy returns an array of bytes containing the site-wide Ci
 | --- | --- | --- | --- | --- |
 | AdminAddress | Specifies the address of a XenDesktop controller that the PowerShell snapin will connect to. This can be provided as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value will become the default. |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 
 ## Input Type
@@ -34,8 +38,10 @@ Export-BrokerDesktopPolicy performs a specialized operation. Direct usage of it 
 ## Examples
 
 ### Example 1
+
 ```
 C:\PS> $policy = Export-BrokerDesktopPolicy
 ```
+
 #### Description
 This command exports the site wide Citrix Group Policy settings.

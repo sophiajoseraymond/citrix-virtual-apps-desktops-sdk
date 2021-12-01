@@ -2,11 +2,13 @@
 # New-Brokerconfiguredfta
 Creates a file type association with a published application.
 ## Syntax
-```
-New-BrokerConfiguredFTA -ImportedFTA <ImportedFTA> -ApplicationUid <Int32> [-UUID <Guid>] [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 
-New-BrokerConfiguredFTA -ExtensionName <String> -HandlerName <String> -ApplicationUid <Int32> [-ContentType <String>] [-HandlerDescription <String>] [-HandlerOpenArguments <String>] [-UUID <Guid>] [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 ```
+New-BrokerConfiguredFTA -ImportedFTA <ImportedFTA> -ApplicationUid <Int32> [-UUID <Guid>] [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]  
+  
+New-BrokerConfiguredFTA -ExtensionName <String> -HandlerName <String> -ApplicationUid <Int32> [-ContentType <String>] [-HandlerDescription <String>] [-HandlerOpenArguments <String>] [-UUID <Guid>] [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]
+```
+
 ## Detailed Description
 Creates an association between a file type and a published application for the purposes of the content redirection.
 
@@ -37,6 +39,8 @@ The second use case is more complex and allows you to create your own file type 
 | LoggingId | Specifies the identifier of the high level operation that this cmdlet call forms a part of. Desktop Studio and Desktop Director typically create High Level Operations. PowerShell scripts can also wrap a series of cmdlet calls in a High Level Operation by way of the Start-LogHighLevelOperation and Stop-LogHighLevelOperation cmdlets. | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller that the PowerShell snapin will connect to. This can be provided as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value will become the default. |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 | ContentType | Specifies the content type of the file type (as listed in the Registry). For example, content type would be "text/plain" or "application/msword". | false | true (ByPropertyName) | null |
 | HandlerDescription | Specifies the description of the handler for the file type association. | false | true (ByPropertyName) | null |
@@ -53,20 +57,25 @@ This cmdlet returns a single ConfiguredFTA object.
 ## Examples
 
 ### Example 1
+
 ```
-C:\PS> $app = Get-BrokerApplication "Notepad"
-
-C:\PS> $fta = Get-BrokerImportedFTA -ExtensionName ".txt"
-
+C:\PS> $app = Get-BrokerApplication "Notepad"  
+  
+C:\PS> $fta = Get-BrokerImportedFTA -ExtensionName ".txt"  
+  
 C:\PS> New-BrokerConfiguredFTA -ImportedFTA $fta -ApplicationUid $app.Uid
 ```
-#### Description
-Gets the Uid for the application, gets the ImportedFTA object for the file extension, and finally associates ".txt" with the published "Notepad" application.&lt;br&gt;Note that the Get-BrokerImportedFTA cmdlet may return more than one ImportedFTA objects for a specific extension name. See the help for that cmdlet for more details.
-### Example 2
-```
-C:\PS> $app = Get-BrokerApplication "Notepad"
 
+#### Description
+Gets the Uid for the application, gets the ImportedFTA object for the file extension, and finally associates ".txt" with the published "Notepad" application.  
+Note that the Get-BrokerImportedFTA cmdlet may return more than one ImportedFTA objects for a specific extension name. See the help for that cmdlet for more details.
+### Example 2
+
+```
+C:\PS> $app = Get-BrokerApplication "Notepad"  
+  
 C:\PS> New-BrokerConfiguredFTA -ApplicationUid $app.Uid -ExtensionName ".txt" -HandlerName "txtfile" -ContentType "text\plain" -HandlerDescription "Text Document" -HandlerOpenArguments "%1"
 ```
+
 #### Description
 This example is identical to the first, but shows the the second use case of the cmdlet, specifying each attribute manually.

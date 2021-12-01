@@ -2,9 +2,11 @@
 # Set-Xdlicensing
 Changes one or more of the licensing attributes of a Site
 ## Syntax
+
 ```
 Set-XDLicensing [-Force] [-LicenseServerAddress <String>] [-LicenseServerPort <String>] [-LicensingModel <String>] [-PassThru] [-ProductCode <String>] [-ProductEdition <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
+
 ## Detailed Description
 Changes one or more of the licensing attributes of the Site which has a Controller identified by AdminAddress. When the Citrix License Server address and/or port are specified and Force is not, the new server:port combination will be validated before being changed. Otherwise, no validation is performed.
 
@@ -36,12 +38,16 @@ You cannot pipe input to this cmdlet.
 ### None Or Citrix.Xendesktoppowershellsdk.Serviceinterfaces.Configuration.Licenseinformation
 This cmdlet does not generate any output, unless you use the PassThru parameter, in which case it generates a Citrix.XenDesktopPowerShellSdk.ServiceInterfaces.Configuration.LicenseInformation object.
 ## Notes
-The command can fail for the following reasons:<br>    o The supplied License Server does not support the requested product edition.<br>    o A License Server was not found at the supplied address.
+The command can fail for the following reasons:  
+    o The supplied License Server does not support the requested product edition.  
+    o A License Server was not found at the supplied address.
 ## Examples
 
 ### Example 1
+
 ```
 C:\PS> Set-XDLicensing -AdminAddress MyController -LicenseServerAddress MyLicenseServer -LicenseServerPort 27001
 ```
+
 #### Description
 For the Site managed by MyController, changes the License Server to MyLicenseServer:27001.

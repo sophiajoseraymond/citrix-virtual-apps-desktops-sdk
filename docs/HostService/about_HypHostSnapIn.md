@@ -1,5 +1,5 @@
 ﻿
-# about\_HypHostSnapIn
+# about\_HypHostSnapin
 
 ## Topic
 about\_HypHostSnapin

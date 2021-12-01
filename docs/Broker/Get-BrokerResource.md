@@ -2,9 +2,11 @@
 # Get-Brokerresource
 Gets resources that a user can broker connections to.
 ## Syntax
+
 ```
-Get-BrokerResource [-User] <String> [-Groups <String[]>] [-TenantId <Guid>] [-ClientName <String>] [-ClientIP <String>] [-ViaAG <Boolean>] [-SmartAccessTags <String[]>] [-AppProtectionCapable <Boolean>] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
+Get-BrokerResource [-User] <String> [-Groups <String[]>] [-TenantId <Guid>] [-ClientName <String>] [-ClientIP <String>] [-ViaAG <Boolean>] [-SmartAccessTags <String[]>] [-AppProtectionCapable <Boolean>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 ```
+
 ## Detailed Description
 Retrieve a list of resources that a user has access to, taking into account the site access policy, configuration of desktop groups, assignments, entitlements, and applications.
 
@@ -48,6 +50,8 @@ Only resources accessible based on the specified parameters, and visible to the 
 | AppProtectionCapable | Get Resources given the specified app protection capability of the client. | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller that the PowerShell snapin will connect to. This can be provided as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value will become the default. |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 
 ## Input Type
@@ -67,16 +71,20 @@ Get-BrokerResource returns a PrivateDesktop for each accessible assigned private
 ## Examples
 
 ### Example 1
+
 ```
 Get-BrokerResource -User MYDOMAIN\User1 -Groups MYDOMAIN\Accounts,MYDOMAIN\Managers
 ```
+
 #### Description
 List resources visible by User1 assuming membership of a couple of groups.
 ### Example 2
-```
-[int[]]$groups = (Get-BrokerResource -User MYDOMAIN\User1 | %{ $_.DesktopGroupUid })
 
+```
+[int[]]$groups = (Get-BrokerResource -User MYDOMAIN\User1 | %{ $_.DesktopGroupUid })  
+  
 Get-BrokerDesktopGroup -Filter { Uid -in $groups } -Property Uid,Name
 ```
+
 #### Description
 Get all of the desktop groups supporting the resources accessible by User1, outputting the uid and name of each desktop group.

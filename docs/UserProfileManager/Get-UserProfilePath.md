@@ -2,9 +2,11 @@
 # Get-Userprofilepath
 Gets the path (or paths) at which an individual user's profile is stored.
 ## Syntax
+
 ```
 Get-UserProfilePath -User <String> -PathToUserStore <String> [<CommonParameters>]
 ```
+
 ## Detailed Description
 Use this cmdlet to search for specific user profile folders, based on a configured store path.
 
@@ -34,20 +36,26 @@ The UNC path to the profile folder(s) belonging to the specified user. Each repo
 ## Examples
 
 ### Example 1
+
 ```
 c:\PS>Get-UserProfilePath -PathToUserStore \\server\Profiles$\%USERNAME%.%USERDOMAIN% -User FABRIKAM\Fred
 ```
+
 #### Description
 This command attempts to locate the user profile folder for the user account Fred within the domain FABRIKAM, where the user has been specified as an NT account name. This user's details will be substituted into the profile store path. A likely return result would be \\\\server\\Profiles\$\\Fred.FABRIKAM.
 ### Example 2
+
 ```
 c:\PS>Get-UserProfilePath -PathToUserStore \\server\Profiles$\%USERNAME%.%USERDOMAIN%\!CTX_OSNAME! -User Fred@FABRIKAM
 ```
+
 #### Description
 This command attempts to locate the user profile folder for the user account Fred within the domain FABRIKAM, where the user has been specified as a User Principal Name (UPN). This user's details will be substituted into the profile store path. Possible return results might be \\\\server\\Profiles\$\\Fred.FABRIKAM\\Win7 or \\\\server\\Profiles\$\\Fred.FABRIKAM\\WinXP.
 ### Example 3
+
 ```
 c:\PS>Get-UserProfilePath -PathToUserStore \\server\Profiles$\%USERNAME%.%USERDOMAIN%\!CTX_OSBITNESS! -User S-1-5-32-1045337234-12924708993-5683276719-19000
 ```
+
 #### Description
 This command attempts to locate the user profile folder for the user account whose Security Identifier (SID) has been specified. This user's details will be substituted into the profile store path. Possible return results might be \\\\server\\Profiles\$\\Fred.FABRIKAM\\x86 or \\\\server\\Profiles\$\\Fred.FABRIKAM\\x64.

@@ -2,9 +2,11 @@
 # Get-Envtestdefinition
 Gets the one or more test definitions
 ## Syntax
+
 ```
-Get-EnvTestDefinition [-TestId <String[]>] [-CultureName <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
+Get-EnvTestDefinition [-TestId <String[]>] [-CultureName <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
+
 ## Detailed Description
 Returns a list of test definitions that are available from currently running components.
 
@@ -25,6 +27,8 @@ Returns a list of test definitions that are available from currently running com
 | TestId | The id of one or more tests. | false | true (ByValue) |  |
 | CultureName | The culture name in which to produce results. The culture name is in standard language/region-code format; for example "en-US". | false | false |  |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
@@ -41,20 +45,26 @@ One or more test definitions.
 ## Examples
 
 ### Example 1
+
 ```
 $allTestDefinitions = Get-EnvTestDefinition
 ```
+
 #### Description
 Retrieve all tests.
 ### Example 2
+
 ```
 $allTestDefinitionsTranslatedIntoSpanish = Get-EnvTestDefinition -CultureName es-ES
 ```
+
 #### Description
 Retrieve all tests with localized properties returned in Spanish.
 ### Example 3
+
 ```
 $monitorConfigServiceRegistrationDefinition = Get-EnvTestDefinition -TestId Monitor_RegisteredWithConfigurationService
 ```
+
 #### Description
 Retrieve the definition of the 'Monitor\_RegisteredWithConfigurationService' test.
