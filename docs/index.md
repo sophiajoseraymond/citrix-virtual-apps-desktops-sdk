@@ -73,12 +73,7 @@ To create a virtual drive and load it with settings, type:
 
 ```
 New-PSDrive &lt;Standard Parameters&gt; \[-PSProvider\]
-CitrixGroupPolicy *-Controller* &lt;string&gt;
-```
-
-```
-**New-PSDrive &lt;Standard Parameters&gt; \[-PSProvider\]
-CitrixGroupPolicy ***-Controller*** &lt;string&gt;**
+CitrixGroupPolicy -Controller &lt;string&gt;
 ```
 
 where *-Controller* is the fully qualified domain name of a controller in the site you want to connect to and load settings from.
