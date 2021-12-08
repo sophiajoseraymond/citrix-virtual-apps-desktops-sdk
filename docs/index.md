@@ -52,33 +52,3 @@ To access and run the cmdlets:
 
     For an example of a typical use case, see [Get started with the
     SDK](./getting-started.md).
-
-## Group Policy SDK usage
-
-The Citrix Group Policy SDK allows you to display and configure Group
-Policy settings and filters. It uses a PowerShell provider to create a
-virtual drive that corresponds to the machine and user settings and
-filters. The provider appears as an extension to New-PSDrive. To use the
-Group Policy SDK, either Studio or the XenApp and XenDesktop SDK must be
-installed.
-
-### Adding the Group Policy SDK
-
-1.  To add the Group Policy SDK, type: `Add-PSSnapin citrix.common.grouppolicy`
-1.  To access help, type: `help New-PSDrive -path localgpo:/`
-
-### Using the Group Policy SDK
-
-To create a virtual drive and load it with settings, type:
-
-```
-New-PSDrive &lt;Standard Parameters&gt; \[-PSProvider\]
-CitrixGroupPolicy *-Controller* &lt;string&gt;
-```
-
-```
-**New-PSDrive &lt;Standard Parameters&gt; \[-PSProvider\]
-CitrixGroupPolicy ***-Controller*** &lt;string&gt;**
-```
-
-where *-Controller* is the fully qualified domain name of a controller in the site you want to connect to and load settings from.
