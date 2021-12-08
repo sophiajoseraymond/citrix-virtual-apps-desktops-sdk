@@ -2,15 +2,17 @@
 # Get-Brokeruserzonepreference
 Gets user/group accounts with zone preferences configured for this site
 ## Syntax
-```
-Get-BrokerUserZonePreference -SID <String> [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 
-Get-BrokerUserZonePreference [[-Name] <String>] [-DirectoryContext <String>] [-FullName <String>] [-HomeZoneName <String>] [-HomeZoneUid <Guid>] [-IdentityClaims <String>] [-PrimaryClaim <String>] [-UPN <String>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 ```
+Get-BrokerUserZonePreference -SID <String> [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]  
+  
+Get-BrokerUserZonePreference [[-Name] <String>] [-DirectoryContext <String>] [-FullName <String>] [-HomeZoneName <String>] [-HomeZoneUid <Guid>] [-IdentityClaims <String>] [-PrimaryClaim <String>] [-UPN <String>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-FilterScope <Guid>] [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]
+```
+
 ## Detailed Description
 Retrieve user/group account details with a home zone preference specified and matching the specified criteria. If no parameters are specified this cmdlet enumerates all account details with associated home zones preferences.
 
-For information about advanced filtering options, see about\_Broker\_Filtering.
+For information about advanced filtering options, see [about\_Broker\_Filtering](../about_Broker_Filtering/).
 
 
 ### Brokeruserzonepreference Object
@@ -54,14 +56,17 @@ The BrokerUserZonePreference object represents a user/group account having an as
 | IdentityClaims | Gets the broker user with the specified identity claims property value. | false | false |  |
 | PrimaryClaim | Gets the broker user with the specified primary claim property value. | false | false |  |
 | UPN | Gets user/group accounts with a home zone preference and the specified UPN (user@domain). | false | false |  |
-| ReturnTotalRecordCount | When specified, this causes the cmdlet to output an error record containing the number of records available. This error record is additional information and does not affect the objects written to the output pipeline. See about\_Broker\_Filtering for details. | false | false | False |
+| ReturnTotalRecordCount | When specified, this causes the cmdlet to output an error record containing the number of records available. This error record is additional information and does not affect the objects written to the output pipeline. See [about\_Broker\_Filtering](../about_Broker_Filtering/) for details. | false | false | False |
 | MaxRecordCount | Specifies the maximum number of records to return. | false | false | 250 |
 | Skip | Skips the specified number of records before returning results. Also reduces the count returned by -ReturnTotalRecordCount. | false | false | 0 |
 | SortBy | Sorts the results by the specified list of properties. The list is a set of property names separated by commas, semi-colons, or spaces. Optionally, prefix each name with a + or - to indicate ascending or descending order. Ascending order is assumed if no prefix is present. | false | false | The default sort order is by name or unique identifier. |
-| Filter | Gets records that match a PowerShell style filter expression. See about\_Broker\_Filtering for details. | false | false |  |
+| Filter | Gets records that match a PowerShell style filter expression. See [about\_Broker\_Filtering](../about_Broker_Filtering/) for details. | false | false |  |
+| FilterScope | Gets only results allowed by the specified scope id. | false | false |  |
 | Property | Specifies the properties to be returned. This is similar to piping the output of the command through Select-Object, but the properties are filtered more efficiently at the server. | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller that the PowerShell snapin will connect to. This can be provided as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value will become the default. |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 
 ## Input Type
@@ -75,14 +80,18 @@ Get-BrokerUserZonePreference returns an object for each user/group account with 
 ## Examples
 
 ### Example 1
+
 ```
 Get-BrokerUserZonePreference DOMAIN7\\*
 ```
+
 #### Description
 Get all user/group accounts with a home zone preference whose names match the supplied pattern
 ### Example 2
+
 ```
 Get-BrokerUserZonePreference -HomeZoneUid 79AD8059-05B7-4BAA-9369-5C74EF52D3EB
 ```
+
 #### Description
 Get all user/group accounts with the specified zone as their home zone preference.

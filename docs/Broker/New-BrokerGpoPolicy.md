@@ -2,9 +2,11 @@
 # New-Brokergpopolicy
 Create a new GPO policy.
 ## Syntax
+
 ```
-New-BrokerGpoPolicy -PolicyName <String> [-BlobGuid <Guid>] [-Description <String>] [-IsEnabled <Boolean>] [-IsReadOnly <Boolean>] [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
+New-BrokerGpoPolicy -PolicyName <String> [-BlobGuid <Guid>] [-Description <String>] [-IsEnabled <Boolean>] [-IsReadOnly <Boolean>] [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 ```
+
 ## Detailed Description
 The New-BrokerGpoPolicy cmdlet creates a new GPO policy.
 
@@ -25,6 +27,8 @@ The New-BrokerGpoPolicy cmdlet creates a new GPO policy.
 | LoggingId | Specifies the identifier of the high level operation that this cmdlet call forms a part of. Desktop Studio and Desktop Director typically create High Level Operations. PowerShell scripts can also wrap a series of cmdlet calls in a High Level Operation by way of the Start-LogHighLevelOperation and Stop-LogHighLevelOperation cmdlets. | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller that the PowerShell snapin will connect to. This can be provided as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value will become the default. |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 
 ## Input Type
@@ -40,8 +44,10 @@ The priority of the new policy is assigned with the lowest priority.
 ## Examples
 
 ### Example 1
+
 ```
 C:\PS> New-BrokerGpoPolicy -PolicyName "Policy0"
 ```
+
 #### Description
 Create a policy named Policy0 in the default site blob.

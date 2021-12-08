@@ -1,4 +1,4 @@
-# Citrix Virtual Apps and Desktops 2103 SDK
+# Citrix Virtual Apps and Desktops 2109 SDK
 
 > **Note:**
 >
@@ -50,5 +50,4 @@ To access and run the cmdlets:
 
     After importing, you have access to the cmdlets and their associated help.
 
-    For an example of a typical use case, see [Get started with the
-    SDK](./getting-started.md).
+    For an example of a typical use case, see [Get started with the SDK](./getting-started.md).

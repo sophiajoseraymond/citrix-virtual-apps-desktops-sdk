@@ -2,13 +2,15 @@
 # Add-Hyphypervisorconnectionscope
 Add the specified HypervisorConnection(s) to the given scope(s).
 ## Syntax
-```
-Add-HypHypervisorConnectionScope [-Scope] <String[]> -InputObject <HypervisorConnection[]> [-LoggingId <Guid>] [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 
-Add-HypHypervisorConnectionScope [-Scope] <String[]> -HypervisorConnectionUid <Guid[]> [-LoggingId <Guid>] [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
-
-Add-HypHypervisorConnectionScope [-Scope] <String[]> -HypervisorConnectionName <String[]> [-LoggingId <Guid>] [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
+Add-HypHypervisorConnectionScope [-Scope] <String[]> -InputObject <HypervisorConnection[]> [-LoggingId <Guid>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]  
+  
+Add-HypHypervisorConnectionScope [-Scope] <String[]> -HypervisorConnectionUid <Guid[]> [-LoggingId <Guid>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]  
+  
+Add-HypHypervisorConnectionScope [-Scope] <String[]> -HypervisorConnectionName <String[]> [-LoggingId <Guid>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
+```
+
 ## Detailed Description
 The Add-HypHypervisorConnectionScope command is used to associate one or more HypervisorConnection objects with given scope(s).
 
@@ -32,6 +34,8 @@ If the HypervisorConnection is already in a scope, that scope will be silently i
 | HypervisorConnectionName | Specifies the HypervisorConnection objects to be added by HypervisorConnectionName. | true | true (ByValue, ByPropertyName) |  |
 | LoggingId | Specifies the identifier of the high-level operation this cmdlet call forms a part of. Citrix Studio and Director typically create high-level operations. PowerShell scripts can also wrap a series of cmdlet calls in a high-level operation by way of the Start-LogHighLevelOperation and Stop-LogHighLevelOperation cmdlets. | false | false |  |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
@@ -44,30 +48,60 @@ If the HypervisorConnection is already in a scope, that scope will be silently i
 ### None
 
 ## Notes
-If the command fails, the following errors can be returned.<br>    Error Codes<br>    -----------<br>    UnknownObject<br>        One of the specified objects was not found.<br>    ScopeNotFound<br>        One of the specified scopes was not found.<br>    DatabaseError<br>        An error occurred in the service while attempting a database operation.<br>    DatabaseNotConfigured<br>        The operation could not be completed because the database for the service is not configured.<br>    DataStoreException<br>        An error occurred in the service while attempting a database operation - communication with the database failed for various reasons.<br>    PermissionDenied<br>        You do not have permission to execute this command with the specified objects or scopes.<br>    AuthorizationError<br>        There was a problem communicating with the Citrix Delegated Administration Service.<br>    ConfigurationLoggingError<br>        The operation could not be performed because of a configuration logging error.<br>    CommunicationError<br>        There was a problem communicating with the remote service.<br>    ExceptionThrown<br>        An unexpected error occurred.  For more details, see the Windows event logs on the controller or the XenDesktop logs.
+If the command fails, the following errors can be returned.  
+    Error Codes  
+    -----------  
+    UnknownObject  
+        One of the specified objects was not found.  
+    ScopeNotFound  
+        One of the specified scopes was not found.  
+    DatabaseError  
+        An error occurred in the service while attempting a database operation.  
+    DatabaseNotConfigured  
+        The operation could not be completed because the database for the service is not configured.  
+    DataStoreException  
+        An error occurred in the service while attempting a database operation - communication with the database failed for various reasons.  
+    PermissionDenied  
+        You do not have permission to execute this command with the specified objects or scopes.  
+    AuthorizationError  
+        There was a problem communicating with the Citrix Delegated Administration Service.  
+    ConfigurationLoggingError  
+        The operation could not be performed because of a configuration logging error.  
+    CommunicationError  
+        There was a problem communicating with the remote service.  
+    ExceptionThrown  
+        An unexpected error occurred.  For more details, see the Windows event logs on the controller or the XenDesktop logs.
 ## Examples
 
 ### Example 1
+
 ```
 c:\PS>Add-HypHypervisorConnectionScope Finance -HypervisorConnectionUid 6702C5D0-C073-4080-A0EE-EC74CB537C52
 ```
+
 #### Description
 Adds a single HypervisorConnection to the 'Finance' scope.
 ### Example 2
+
 ```
 c:\PS>Add-HypHypervisorConnectionScope Finance,Marketing -HypervisorConnectionUid 6702C5D0-C073-4080-A0EE-EC74CB537C52
 ```
+
 #### Description
 Adds a single HypervisorConnection to the multiple scopes.
 ### Example 3
+
 ```
 c:\PS>Get-HypHypervisorConnection | Add-HypHypervisorConnectionScope Finance
 ```
+
 #### Description
 Adds all visible HypervisorConnection objects to the 'Finance' scope.
 ### Example 4
+
 ```
 c:\PS>Add-HypHypervisorConnectionScope Finance -HypervisorConnectionName A\*
 ```
+
 #### Description
 Adds HypervisorConnection objects with a name starting with an 'A' to the 'Finance' scope.

@@ -2,11 +2,13 @@
 # Set-Brokerhypervisorconnection
 Sets the properties of a hypervisor connection.
 ## Syntax
-```
-Set-BrokerHypervisorConnection [-InputObject] <HypervisorConnection[]> [-PassThru] [-PreferredController <String>] [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 
-Set-BrokerHypervisorConnection [-Name] <String> [-PassThru] [-PreferredController <String>] [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 ```
+Set-BrokerHypervisorConnection [-InputObject] <HypervisorConnection[]> [-PassThru] [-PreferredController <String>] [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]  
+  
+Set-BrokerHypervisorConnection [-Name] <String> [-PassThru] [-PreferredController <String>] [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]
+```
+
 ## Detailed Description
 The Set-BrokerHypervisorConnection cmdlet sets the properties on a hypervisor connection.
 
@@ -26,6 +28,8 @@ The Set-BrokerHypervisorConnection cmdlet sets the properties on a hypervisor co
 | LoggingId | Specifies the identifier of the high level operation that this cmdlet call forms a part of. Desktop Studio and Desktop Director typically create High Level Operations. PowerShell scripts can also wrap a series of cmdlet calls in a High Level Operation by way of the Start-LogHighLevelOperation and Stop-LogHighLevelOperation cmdlets. | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller that the PowerShell snapin will connect to. This can be provided as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value will become the default. |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 
 ## Input Type
@@ -39,10 +43,12 @@ This cmdlet does not generate any output, unless you use the PassThru parameter,
 ## Examples
 
 ### Example 1
-```
-C:\PS> $hvConn = Get-BrokerHypervisorConnection -PreferredController "oldController" -Name "Xen Server Connection"
 
+```
+C:\PS> $hvConn = Get-BrokerHypervisorConnection -PreferredController "oldController" -Name "Xen Server Connection"  
+  
 C:\PS> Set-BrokerHypervisorConnection -InputObject $hvConn -PreferredController "newController"
 ```
+
 #### Description
 Updates the preferred controller for a hypervisor connection.

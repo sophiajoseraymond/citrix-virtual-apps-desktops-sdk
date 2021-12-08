@@ -2,11 +2,13 @@
 # Get-Brokerassignmentpolicyrule
 Gets desktop rules from the site's assignment policy.
 ## Syntax
-```
-Get-BrokerAssignmentPolicyRule [-Uid] <Int32> [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 
-Get-BrokerAssignmentPolicyRule [[-Name] <String>] [-ColorDepth <ColorDepth>] [-Description <String>] [-DesktopGroupUid <Int32>] [-Enabled <Boolean>] [-ExcludedUser <User>] [-ExcludedUserFilterEnabled <Boolean>] [-IconUid <Int32>] [-IncludedUser <User>] [-IncludedUserFilterEnabled <Boolean>] [-MaxDesktops <Int32>] [-Metadata <String>] [-PublishedName <String>] [-SecureIcaRequired <Boolean>] [-UUID <Guid>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 ```
+Get-BrokerAssignmentPolicyRule [-Uid] <Int32> [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]  
+  
+Get-BrokerAssignmentPolicyRule [[-Name] <String>] [-ColorDepth <ColorDepth>] [-Description <String>] [-DesktopGroupUid <Int32>] [-Enabled <Boolean>] [-ExcludedUser <User>] [-ExcludedUserFilterEnabled <Boolean>] [-IconUid <Int32>] [-IncludedUser <User>] [-IncludedUserFilterEnabled <Boolean>] [-MaxDesktops <Int32>] [-Metadata <String>] [-PublishedName <String>] [-SecureIcaRequired <Boolean>] [-UUID <Guid>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-FilterScope <Guid>] [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]
+```
+
 ## Detailed Description
 Returns desktop rules matching the specified search criteria from the site's assignment policy. If no search criteria are specified, all desktop rules in the assignment policy are obtained.
 
@@ -62,7 +64,8 @@ The BrokerAssignmentPolicyRule object represents a single desktop rule within th
 | --- | --- | --- | --- | --- |
 | Uid | Gets the desktop rule with the specified unique ID. | true | false |  |
 | Name | Gets only desktop rules with the specified name. | false | false |  |
-| ColorDepth | Gets only desktop rules with the specified color depth.<br>Valid values are \$null, FourBit, EightBit, SixteenBit, and TwentyFourBit. | false | false |  |
+| ColorDepth | Gets only desktop rules with the specified color depth.  
+Valid values are \$null, FourBit, EightBit, SixteenBit, and TwentyFourBit. | false | false |  |
 | Description | Gets only desktop rules with the specified description. | false | false |  |
 | DesktopGroupUid | Gets only desktop rules that apply to the desktop group with the specified unique ID. | false | false |  |
 | Enabled | Gets only rules that are in the specified state, either enabled (\$true) or disabled (\$false). | false | false |  |
@@ -72,18 +75,22 @@ The BrokerAssignmentPolicyRule object represents a single desktop rule within th
 | IncludedUser | Gets only desktop rules that have the specified user in their included users filter (whether the filter is enabled or not). | false | false |  |
 | IncludedUserFilterEnabled | Gets only desktop rules that have their included user filter enabled (\$true) or disabled (\$false). | false | false |  |
 | MaxDesktops | Gets only desktop rules granting the specified number of machine assignment entitlements. | false | false |  |
-| Metadata | Gets records with matching metadata entries.<br>The value being compared with is a concatenation of the key name, a colon, and the value. For example: -Metadata "abc:x\*" matches records with a metadata entry having a key name of "abc" and a value starting with the letter "x". | false | false |  |
+| Metadata | Gets records with matching metadata entries.  
+The value being compared with is a concatenation of the key name, a colon, and the value. For example: -Metadata "abc:x\*" matches records with a metadata entry having a key name of "abc" and a value starting with the letter "x". | false | false |  |
 | PublishedName | Gets only desktop rules with the specified published name, that is, the desktop name that the end user sees. | false | false |  |
 | SecureIcaRequired | Gets only desktop rules that require desktop sessions to machines assigned by the rule to use the SecureICA protocol (\$true) or not (\$false). | false | false |  |
 | UUID | Gets rules with the specified value of UUID. | false | false |  |
-| ReturnTotalRecordCount | When specified, this causes the cmdlet to output an error record containing the number of records available. This error record is additional information and does not affect the objects written to the output pipeline. See about\_Broker\_Filtering for details. | false | false | False |
+| ReturnTotalRecordCount | When specified, this causes the cmdlet to output an error record containing the number of records available. This error record is additional information and does not affect the objects written to the output pipeline. See [about\_Broker\_Filtering](../about_Broker_Filtering/) for details. | false | false | False |
 | MaxRecordCount | Specifies the maximum number of records to return. | false | false | 250 |
 | Skip | Skips the specified number of records before returning results. Also reduces the count returned by -ReturnTotalRecordCount. | false | false | 0 |
 | SortBy | Sorts the results by the specified list of properties. The list is a set of property names separated by commas, semi-colons, or spaces. Optionally, prefix each name with a + or - to indicate ascending or descending order. Ascending order is assumed if no prefix is present. | false | false | The default sort order is by name or unique identifier. |
-| Filter | Gets records that match a PowerShell style filter expression. See about\_Broker\_Filtering for details. | false | false |  |
+| Filter | Gets records that match a PowerShell style filter expression. See [about\_Broker\_Filtering](../about_Broker_Filtering/) for details. | false | false |  |
+| FilterScope | Gets only results allowed by the specified scope id. | false | false |  |
 | Property | Specifies the properties to be returned. This is similar to piping the output of the command through Select-Object, but the properties are filtered more efficiently at the server. | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller that the PowerShell snapin will connect to. This can be provided as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value will become the default. |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 
 ## Input Type
@@ -97,16 +104,20 @@ Get-BrokerAssignmentPolicyRule returns all assignment policy rules that match th
 ## Examples
 
 ### Example 1
+
 ```
 C:\PS> Get-BrokerAssignmentPolicyRule
 ```
+
 #### Description
 Returns all desktop rules from the assignment policy. This offers a complete description of the current site's assignment policy with respect to machine assignment entitlements for delivery of desktop sessions from private desktop groups.
 ### Example 2
-```
-C:\PS> $dg = Get-BrokerDesktopGroup 'Sales Support'
 
+```
+C:\PS> $dg = Get-BrokerDesktopGroup 'Sales Support'  
+  
 C:\PS> Get-BrokerAssignmentPolicyRule -DesktopGroupUid $dg.Uid
 ```
+
 #### Description
 Returns all rules in the assignment policy that give users entitlements to machine assignments in the Sales Support desktop group for delivery of full desktop sessions.

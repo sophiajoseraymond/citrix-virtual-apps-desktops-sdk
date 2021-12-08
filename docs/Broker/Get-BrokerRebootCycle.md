@@ -2,15 +2,17 @@
 # Get-Brokerrebootcycle
 Gets one or more reboot cycles.
 ## Syntax
-```
-Get-BrokerRebootCycle -Uid <Int64> [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 
-Get-BrokerRebootCycle [-CatalogName <String>] [-CatalogUid <Int32>] [-DesktopGroupName <String>] [-DesktopGroupUid <Int32>] [-EndTime <DateTime>] [-IgnoreMaintenanceMode <Boolean>] [-MachinesCompleted <Int32>] [-MachinesFailed <Int32>] [-MachinesInProgress <Int32>] [-MachinesPending <Int32>] [-MachinesSkipped <Int32>] [-Metadata <String>] [-RebootDuration <Int32>] [-RebootScheduleName <String>] [-RebootScheduleUid <Int32>] [-RestrictToTag <String>] [-StartTime <DateTime>] [-State <RebootCycleState>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 ```
+Get-BrokerRebootCycle -Uid <Int64> [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]  
+  
+Get-BrokerRebootCycle [-CatalogName <String>] [-CatalogUid <Int32>] [-DesktopGroupName <String>] [-DesktopGroupUid <Int32>] [-EndTime <DateTime>] [-IgnoreMaintenanceMode <Boolean>] [-MachinesCompleted <Int32>] [-MachinesFailed <Int32>] [-MachinesInProgress <Int32>] [-MachinesPending <Int32>] [-MachinesSkipped <Int32>] [-Metadata <String>] [-RebootDuration <Int32>] [-RebootScheduleName <String>] [-RebootScheduleUid <Int32>] [-RestrictToTag <String>] [-StartTime <DateTime>] [-State <RebootCycleState>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-FilterScope <Guid>] [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]
+```
+
 ## Detailed Description
 The Get-BrokerRebootCycle cmdlet is used to enumerate reboot cycles that match all of the supplied criteria.
 
-See about\_Broker\_Filtering for information about advanced filtering options.
+See [about\_Broker\_Filtering](../about_Broker_Filtering/) for information about advanced filtering options.
 
 
 ### Brokerrebootcycle Object
@@ -84,21 +86,25 @@ The reboot cycle object returned represents a single occurrence of the process o
 | MachinesInProgress | Gets reboot cycles that have the specified count of machines issued with reboot requests but which have not yet completed the operation. | false | false |  |
 | MachinesPending | Gets reboot cycles that have the specified count of outstanding machines to be rebooted during the cycle but on which processing has not yet started. | false | false |  |
 | MachinesSkipped | Gets reboot cycles that have the specified count of machines scheduled for reboot during the cycle but which were not processed either because the cycle was canceled or abandoned or because the machine was unavailable for reboot processing throughout the cycle. | false | false |  |
-| Metadata | Gets records with matching metadata entries.<br>The value being compared with is a concatenation of the key name, a colon, and the value. For example: -Metadata "abc:x\*" matches records with a metadata entry having a key name of "abc" and a value starting with the letter "x". | false | false |  |
+| Metadata | Gets records with matching metadata entries.  
+The value being compared with is a concatenation of the key name, a colon, and the value. For example: -Metadata "abc:x\*" matches records with a metadata entry having a key name of "abc" and a value starting with the letter "x". | false | false |  |
 | RebootDuration | Gets reboot cycles that have the specified approximate maximum duration in minutes over which the reboot cycle runs. | false | false |  |
 | RebootScheduleName | Gets reboot cycles which were triggered by the named reboot schedule. | false | false |  |
 | RebootScheduleUid | Gets reboot cycles which were triggered by the reboot schedule with aparticular Uid. | false | false |  |
 | RestrictToTag | An optional Tag which limits the reboot cycle to machines within the desktop group with the specified tag. | false | false |  |
 | StartTime | Gets reboot cycles that have the specified time at which the reboot cycle started. | false | false |  |
 | State | Gets reboot cycles that have the specified overall state of the reboot cycle. Valid values are Initializing, Active, Completed, Canceled, and Abandoned. | false | false |  |
-| ReturnTotalRecordCount | When specified, this causes the cmdlet to output an error record containing the number of records available. This error record is additional information and does not affect the objects written to the output pipeline. See about\_Broker\_Filtering for details. | false | false | False |
+| ReturnTotalRecordCount | When specified, this causes the cmdlet to output an error record containing the number of records available. This error record is additional information and does not affect the objects written to the output pipeline. See [about\_Broker\_Filtering](../about_Broker_Filtering/) for details. | false | false | False |
 | MaxRecordCount | Specifies the maximum number of records to return. | false | false | 250 |
 | Skip | Skips the specified number of records before returning results. Also reduces the count returned by -ReturnTotalRecordCount. | false | false | 0 |
 | SortBy | Sorts the results by the specified list of properties. The list is a set of property names separated by commas, semi-colons, or spaces. Optionally, prefix each name with a + or - to indicate ascending or descending order. Ascending order is assumed if no prefix is present. | false | false | The default sort order is by name or unique identifier. |
-| Filter | Gets records that match a PowerShell style filter expression. See about\_Broker\_Filtering for details. | false | false |  |
+| Filter | Gets records that match a PowerShell style filter expression. See [about\_Broker\_Filtering](../about_Broker_Filtering/) for details. | false | false |  |
+| FilterScope | Gets only results allowed by the specified scope id. | false | false |  |
 | Property | Specifies the properties to be returned. This is similar to piping the output of the command through Select-Object, but the properties are filtered more efficiently at the server. | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller that the PowerShell snapin will connect to. This can be provided as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value will become the default. |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 
 ## Input Type
@@ -112,20 +118,26 @@ Returns matching reboot cycles.
 ## Examples
 
 ### Example 1
+
 ```
 C:\PS> Get-BrokerRebootCycle
 ```
+
 #### Description
 Enumerate all reboot cycles.
 ### Example 2
+
 ```
 C:\PS> Get-BrokerRebootCycle -State Completed
 ```
+
 #### Description
 Enumerates all reboot cycles that have successfully completed.
 ### Example 3
+
 ```
 C:\PS> Get-BrokerRebootCycle -DesktopGroupName CallCenter
 ```
+
 #### Description
 Enumerates all reboot cycles related to the desktop group named CallCenter.

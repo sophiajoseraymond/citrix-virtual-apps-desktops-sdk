@@ -2,9 +2,11 @@
 # New-Brokeradminfolder
 Creates a new admin folder.
 ## Syntax
+
 ```
-New-BrokerAdminFolder [-FolderName] <String> [-ParentFolder <AdminFolder>] [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
+New-BrokerAdminFolder [-FolderName] <String> [-ParentFolder <AdminFolder>] [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 ```
+
 ## Detailed Description
 The New-BrokerAdminFolder cmdlet creates a new folder for organising objects for administration purposes (for example, Applications).
 
@@ -25,6 +27,8 @@ The following special characters are not allowed in the FolderName: \\ / ; : # .
 | LoggingId | Specifies the identifier of the high level operation that this cmdlet call forms a part of. Desktop Studio and Desktop Director typically create High Level Operations. PowerShell scripts can also wrap a series of cmdlet calls in a High Level Operation by way of the Start-LogHighLevelOperation and Stop-LogHighLevelOperation cmdlets. | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller that the PowerShell snapin will connect to. This can be provided as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value will become the default. |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 
 ## Input Type
@@ -38,14 +42,18 @@ The new admin folder.
 ## Examples
 
 ### Example 1
+
 ```
 New-BrokerAdminFolder F1
 ```
+
 #### Description
 Creates an admin folder called F1 under the root folder (i.e. F1\\)
 ### Example 2
+
 ```
 New-BrokerAdminFolder F2 -AdminFolder F1\
 ```
+
 #### Description
 Creates an admin folder called F2 under the folder F1\\ (i.e. F1\\F2\\)

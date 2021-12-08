@@ -2,11 +2,13 @@
 # Set-Monitornotificationpolicy
 Set/Modify MonitorNotificationPolicy object
 ## Syntax
-```
-Set-MonitorNotificationPolicy -InputObject <MonitorNotificationPolicy> [-LoggingId <Guid>] [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 
-Set-MonitorNotificationPolicy -Uid <Int64> [-Name <String>] [-Description <String>] [-Webhook <String>] [-IsSnmpEnabled <Boolean>] [-Enabled <Boolean>] [-LoggingId <Guid>] [-BearerToken <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
+Set-MonitorNotificationPolicy -InputObject <MonitorNotificationPolicy> [-LoggingId <Guid>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]  
+  
+Set-MonitorNotificationPolicy -Uid <Int64> [-Name <String>] [-Description <String>] [-Webhook <String>] [-IsSnmpEnabled <Boolean>] [-Enabled <Boolean>] [-LoggingId <Guid>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
+```
+
 ## Detailed Description
 Returns a new policy instance using the specified parameters
 
@@ -28,6 +30,8 @@ Returns a new policy instance using the specified parameters
 | Enabled | Boolean paramter indicating the enabled state of the policy. true – Enabled, false – Disabled | false | false |  |
 | LoggingId | Specifies the identifier of the high-level operation this cmdlet call forms a part of. Citrix Studio and Director typically create high-level operations. PowerShell scripts can also wrap a series of cmdlet calls in a high-level operation by way of the Start-LogHighLevelOperation and Stop-LogHighLevelOperation cmdlets. | false | false |  |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 | AdminAddress | Specifies the address of a Citrix Virtual Apps and Desktops 7 controller the PowerShell snap-in will connect to. You can provide this as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value becomes the default. |
 
@@ -42,28 +46,34 @@ Returns the modified policy
 ## Examples
 
 ### Example 1
+
 ```
 Set-MonitorNotificationPolicy -Id 1 -Enable
 ```
+
 #### Description
 Enable the policy with the id 1
 ### Example 2
+
 ```
-$policy = Get-MonitorNotificationPolicy -Uid 1
-
-          $policy.EmailAddresses += "newemail@abc.com"
-
+$policy = Get-MonitorNotificationPolicy -Uid 1  
+  
+          $policy.EmailAddresses += "newemail@abc.com"  
+  
           Set-MonitorNotificationPolicy -InputObject $policy
 ```
+
 #### Description
 Update the policy with the id 1 to add new email address
 ### Example 3
+
 ```
-$policy = Get-MonitorNotificationPolicy -Uid 1
-
-          $policy.TargetIds += "766cde70-3c69-4481-a658-4e11247ac70c"
-
+$policy = Get-MonitorNotificationPolicy -Uid 1  
+  
+          $policy.TargetIds += "766cde70-3c69-4481-a658-4e11247ac70c"  
+  
           $Policy = Set-MonitorNotificationPolicy -Id 1 -InputObject $policy
 ```
+
 #### Description
 Update the policy with the id 1 to add new target value

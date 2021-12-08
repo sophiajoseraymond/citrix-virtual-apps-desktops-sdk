@@ -2,11 +2,13 @@
 # Remove-Brokerdesktopgroup
 Remove desktop groups from the system or remove them from a Remote PC catalog.
 ## Syntax
-```
-Remove-BrokerDesktopGroup [-InputObject] <DesktopGroup[]> [-Force] [-RemotePCCatalog <Catalog>] [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 
-Remove-BrokerDesktopGroup [-Name] <String> [-Force] [-RemotePCCatalog <Catalog>] [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 ```
+Remove-BrokerDesktopGroup [-InputObject] <DesktopGroup[]> [-Force] [-RemotePCCatalog <Catalog>] [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]  
+  
+Remove-BrokerDesktopGroup [-Name] <String> [-Force] [-RemotePCCatalog <Catalog>] [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]
+```
+
 ## Detailed Description
 This cmdlet has 2 functions:
 
@@ -36,6 +38,8 @@ The Remote PC relationships are used by Remote PC automation to determine which 
 | LoggingId | Specifies the identifier of the high level operation that this cmdlet call forms a part of. Desktop Studio and Desktop Director typically create High Level Operations. PowerShell scripts can also wrap a series of cmdlet calls in a High Level Operation by way of the Start-LogHighLevelOperation and Stop-LogHighLevelOperation cmdlets. | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller that the PowerShell snapin will connect to. This can be provided as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value will become the default. |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 
 ## Input Type
@@ -47,24 +51,31 @@ You can pipe desktop groups to Remove-BrokerDesktopGroup.
 ### None
 
 ## Notes
-If a desktop group contains desktops when it is removed, these desktops are also removed (but the underlying broker machine remains).<br>    A desktop group that still has active sessions cannot be removed unless the -Force switch is used.
+If a desktop group contains desktops when it is removed, these desktops are also removed (but the underlying broker machine remains).  
+    A desktop group that still has active sessions cannot be removed unless the -Force switch is used.
 ## Examples
 
 ### Example 1
+
 ```
 C:\PS> Remove-BrokerDesktopGroup EMEA\*
 ```
+
 #### Description
 Remove all desktop groups with names starting with "EMEA".
 ### Example 2
+
 ```
 C:\PS> Get-BrokerDesktopGroup -Enabled $false | Remove-BrokerDesktopGroup -Force
 ```
+
 #### Description
 Remove all desktops that are currently disabled even if there are active sessions.
 ### Example 3
+
 ```
 C:\PS> Get-BrokerDesktopGroup -RemotePCCatalogUid 42 | Remove-BrokerDesktopGroup -RemotePCCatalog 42
 ```
+
 #### Description
 Remove all the Remote PC desktop groups that are associated with catalog 42. Note that this only breaks the Remote PC relationships and does not delete the desktop groups.

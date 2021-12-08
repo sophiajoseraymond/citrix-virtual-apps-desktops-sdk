@@ -2,9 +2,11 @@
 # Get-Xdmonitor
 Gets the Monitoring Database attributes of a Site.
 ## Syntax
+
 ```
 Get-XDMonitor [-AdminAddress <String>] [<CommonParameters>]
 ```
+
 ## Detailed Description
 Gets the Monitoring Database attributes of the Site which has a Controller identified by AdminAddress.
 

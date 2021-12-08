@@ -2,9 +2,11 @@
 # Remove-Userprofileshare
 Removes a nominated network share.
 ## Syntax
+
 ```
 Remove-UserProfileShare [-Path] <String> [<CommonParameters>]
 ```
+
 ## Detailed Description
 This command might be used as part of a final tear-down procedure for a profile store that is no longer needed.
 
@@ -29,8 +31,10 @@ This command will not delete any folders or data from the server computer, nor w
 ## Examples
 
 ### Example 1
+
 ```
 C:PS> Remove-UserProfileShare -Path \\ProfileServer\Profiles$
 ```
+
 #### Description
 This command will unpublish the network share called "Profiles\$" on the computer called "ProfileServer". The contents of the folder itself will not be affected. Any required deletion of profile store contents must be performed manually by an appropriate administrator of the folder.

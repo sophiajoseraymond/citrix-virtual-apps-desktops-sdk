@@ -2,11 +2,13 @@
 # Get-Brokerentitlementpolicyrule
 Gets desktop rules from the site's entitlement policy.
 ## Syntax
-```
-Get-BrokerEntitlementPolicyRule [-Uid] <Int32> [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 
-Get-BrokerEntitlementPolicyRule [[-Name] <String>] [-BrowserName <String>] [-ColorDepth <ColorDepth>] [-Description <String>] [-DesktopGroupUid <Int32>] [-Enabled <Boolean>] [-ExcludedUser <User>] [-ExcludedUserFilterEnabled <Boolean>] [-IconUid <Int32>] [-IncludedUser <User>] [-IncludedUserFilterEnabled <Boolean>] [-LeasingBehavior <LeasingBehavior>] [-MaxPerEntitlementInstances <Int32>] [-Metadata <String>] [-PublishedName <String>] [-RestrictToTag <String>] [-SecureIcaRequired <Boolean>] [-SessionReconnection <SessionReconnection>] [-UUID <Guid>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 ```
+Get-BrokerEntitlementPolicyRule [-Uid] <Int32> [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]  
+  
+Get-BrokerEntitlementPolicyRule [[-Name] <String>] [-BrowserName <String>] [-ColorDepth <ColorDepth>] [-Description <String>] [-DesktopGroupUid <Int32>] [-Enabled <Boolean>] [-ExcludedUser <User>] [-ExcludedUserFilterEnabled <Boolean>] [-IconUid <Int32>] [-IncludedUser <User>] [-IncludedUserFilterEnabled <Boolean>] [-LeasingBehavior <LeasingBehavior>] [-MaxPerEntitlementInstances <Int32>] [-Metadata <String>] [-PublishedName <String>] [-RestrictToTag <String>] [-SecureIcaRequired <Boolean>] [-SessionReconnection <SessionReconnection>] [-UUID <Guid>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-FilterScope <Guid>] [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]
+```
+
 ## Detailed Description
 Returns desktop rules matching the specified search criteria from the site's entitlement policy. If no search criteria are specified, all desktop rules in the entitlement policy are obtained.
 
@@ -70,7 +72,8 @@ The BrokerEntitlementPolicyRule object represents a single desktop rule within t
 | Uid | Gets the desktop rule with the specified unique ID. | true | false |  |
 | Name | Gets only desktop rules with the specified name. | false | false |  |
 | BrowserName | Gets only desktop rules with browser names matching the specified name. | false | false |  |
-| ColorDepth | Gets only desktop rules with the specified color depth.<br>Valid values are \$null, FourBit, EightBit, SixteenBit, and TwentyFourBit. | false | false |  |
+| ColorDepth | Gets only desktop rules with the specified color depth.  
+Valid values are \$null, FourBit, EightBit, SixteenBit, and TwentyFourBit. | false | false |  |
 | Description | Gets only desktop rules with the specified description. | false | false |  |
 | DesktopGroupUid | Gets only desktop rules that apply to the desktop group with the specified unique ID. | false | false |  |
 | Enabled | Gets only desktop rules that are in the specified state, either enabled (\$true), or disabled (\$false). | false | false |  |
@@ -79,22 +82,28 @@ The BrokerEntitlementPolicyRule object represents a single desktop rule within t
 | IconUid | Gets only desktop rules using the icon with the specified unique ID. | false | false |  |
 | IncludedUser | Gets only desktop rules that have the specified user in their included users filter (whether the filter is enabled or not). | false | false |  |
 | IncludedUserFilterEnabled | Gets only desktop rules that have their included user filter enabled (\$true) or disabled (\$false). | false | false |  |
-| LeasingBehavior | Gets only application rules with the specified connection leasing behavior. Possible values are:<br>Allowed and Disallowed. | false | false |  |
+| LeasingBehavior | Gets only application rules with the specified connection leasing behavior. Possible values are:  
+Allowed and Disallowed. | false | false |  |
 | MaxPerEntitlementInstances | Maximum allowed concurrently running instances of the desktop associated with this entitlement in the site . A value of zero allows unlimited usage. | false | false |  |
-| Metadata | Gets records with matching metadata entries.<br>The value being compared with is a concatenation of the key name, a colon, and the value. For example: -Metadata "abc:x\*" matches records with a metadata entry having a key name of "abc" and a value starting with the letter "x". | false | false |  |
+| Metadata | Gets records with matching metadata entries.  
+The value being compared with is a concatenation of the key name, a colon, and the value. For example: -Metadata "abc:x\*" matches records with a metadata entry having a key name of "abc" and a value starting with the letter "x". | false | false |  |
 | PublishedName | Gets only desktop rules with the specified published name, that is, the desktop session entitlement name that the end user sees. | false | false |  |
 | RestrictToTag | Gets only desktop rules with the specified tag restriction. | false | false |  |
 | SecureIcaRequired | Gets only desktop rules that require the desktop session to use the SecureICA protocol (\$true) or not (\$false). | false | false |  |
-| SessionReconnection | Gets only desktop rules with the specified session reconnection behavior. Possible values are:<br>Always, DisconnectedOnly, and SameEndpointOnly. | false | false |  |
+| SessionReconnection | Gets only desktop rules with the specified session reconnection behavior. Possible values are:  
+Always, DisconnectedOnly, and SameEndpointOnly. | false | false |  |
 | UUID | Gets rules with the specified value of UUID. | false | false |  |
-| ReturnTotalRecordCount | When specified, this causes the cmdlet to output an error record containing the number of records available. This error record is additional information and does not affect the objects written to the output pipeline. See about\_Broker\_Filtering for details. | false | false | False |
+| ReturnTotalRecordCount | When specified, this causes the cmdlet to output an error record containing the number of records available. This error record is additional information and does not affect the objects written to the output pipeline. See [about\_Broker\_Filtering](../about_Broker_Filtering/) for details. | false | false | False |
 | MaxRecordCount | Specifies the maximum number of records to return. | false | false | 250 |
 | Skip | Skips the specified number of records before returning results. Also reduces the count returned by -ReturnTotalRecordCount. | false | false | 0 |
 | SortBy | Sorts the results by the specified list of properties. The list is a set of property names separated by commas, semi-colons, or spaces. Optionally, prefix each name with a + or - to indicate ascending or descending order. Ascending order is assumed if no prefix is present. | false | false | The default sort order is by name or unique identifier. |
-| Filter | Gets records that match a PowerShell style filter expression. See about\_Broker\_Filtering for details. | false | false |  |
+| Filter | Gets records that match a PowerShell style filter expression. See [about\_Broker\_Filtering](../about_Broker_Filtering/) for details. | false | false |  |
+| FilterScope | Gets only results allowed by the specified scope id. | false | false |  |
 | Property | Specifies the properties to be returned. This is similar to piping the output of the command through Select-Object, but the properties are filtered more efficiently at the server. | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller that the PowerShell snapin will connect to. This can be provided as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value will become the default. |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 
 ## Input Type
@@ -108,16 +117,20 @@ Get-BrokerEntitlementPolicyRule returns all desktop entitlement policy rules tha
 ## Examples
 
 ### Example 1
+
 ```
 C:\PS> Get-BrokerEntitlementPolicyRule
 ```
+
 #### Description
 Returns all desktop rules from the entitlement policy. This offers a complete description of the current site's entitlement policy with respect to desktops published from shared desktop groups.
 ### Example 2
-```
-C:\PS> $dg = Get-BrokerDesktopGroup 'Customer Support'
 
+```
+C:\PS> $dg = Get-BrokerDesktopGroup 'Customer Support'  
+  
 C:\PS> Get-BrokerEntitlementPolicyRule -DesktopGroupUid $dg.Uid
 ```
+
 #### Description
 Returns all desktop rules in the entitlement policy that give users entitlements to desktop sessions in the Customer Support desktop group.

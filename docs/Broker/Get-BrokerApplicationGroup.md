@@ -2,22 +2,30 @@
 # Get-Brokerapplicationgroup
 Gets details of configured application groups.
 ## Syntax
-```
-Get-BrokerApplicationGroup [-Uid] <Int32> [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 
-Get-BrokerApplicationGroup [[-Name] <String>] [-AssociatedDesktopGroupPriority <Int32>] [-AssociatedDesktopGroupUid <Int32>] [-AssociatedDesktopGroupUUID <Guid>] [-AssociatedUserFullName <String>] [-AssociatedUserName <String>] [-AssociatedUserSID <String>] [-AssociatedUserUPN <String>] [-Description <String>] [-Enabled <Boolean>] [-Metadata <String>] [-RestrictToTag <String>] [-ScopeId <Guid>] [-ScopeName <String>] [-SessionSharingEnabled <Boolean>] [-SingleAppPerSession <Boolean>] [-Tag <String>] [-TenantId <Guid>] [-TotalApplications <Int32>] [-TotalMachines <Int32>] [-TotalMachinesWithTagRestriction <Int32>] [-UserFilterEnabled <Boolean>] [-UUID <Guid>] [-ApplicationUid <Int32>] [-DesktopGroupUid <Int32>] [-TagUid <Int32>] [-UserSID <String>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 ```
+Get-BrokerApplicationGroup [-Uid] <Int32> [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]  
+  
+Get-BrokerApplicationGroup [[-Name] <String>] [-AdminFolderName <String>] [-AdminFolderUid <Int32>] [-ApplicationGroupName <String>] [-AssociatedDesktopGroupPriority <Int32>] [-AssociatedDesktopGroupUid <Int32>] [-AssociatedDesktopGroupUUID <Guid>] [-AssociatedUserFullName <String>] [-AssociatedUserName <String>] [-AssociatedUserSID <String>] [-AssociatedUserUPN <String>] [-Description <String>] [-Enabled <Boolean>] [-Metadata <String>] [-RestrictToTag <String>] [-ScopeId <Guid>] [-ScopeName <String>] [-SessionSharingEnabled <Boolean>] [-SingleAppPerSession <Boolean>] [-Tag <String>] [-TenantId <Guid>] [-TotalApplications <Int32>] [-TotalMachines <Int32>] [-TotalMachinesWithTagRestriction <Int32>] [-UserFilterEnabled <Boolean>] [-UUID <Guid>] [-ApplicationUid <Int32>] [-DesktopGroupUid <Int32>] [-TagUid <Int32>] [-UserSID <String>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-FilterScope <Guid>] [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]
+```
+
 ## Detailed Description
 The Get-BrokerApplicationGroup cmdlet returns application groups that have been configured as part of the site.
 
 With no parameters, Get-BrokerApplicationGroup returns all the application groups that have been configured. You also can use the parameters of Get-BrokerApplicationGroup to filter the results to just application groups you're interested in. You can also identify application groups by their UIDs or their Names.
 
-See about\_Broker\_Applications for more information.
+See [about\_Broker\_Applications](../about_Broker_Applications/) for more information.
 
 
 ### Brokerapplicationgroup Object
 A BrokerApplicationGroup object represents a single application group that has been configured as part of the site. It has the following properties:
 
+
+  * AdminFolderName (System.String) The name of the admin folder the application group is in (including trailing backslash), or the empty string if the application group is at the root level
+
+  * AdminFolderUid (System.Int32) The Uid of the admin folder the application group is in (if any)
+
+  * ApplicationGroupName (System.String) Name of the application group (must be unique within a Folder)
 
   * AssociatedDesktopGroupPriorities (System.Int32\[\]) List of associated desktop group priorities. This list is presented in the same order as AssociatedDesktopGroupUids and AssociatedDesktopGroupUUIDs.
     When launching an application an available machine from one of the associated desktop groups is selected. Desktop groups are searched for available machines in order of their priority.
@@ -81,16 +89,24 @@ A BrokerApplicationGroup object represents a single application group that has b
 | --- | --- | --- | --- | --- |
 | Uid | Gets the application group with the given Uid. | true | false |  |
 | Name | Gets application groups whose name matches the supplied pattern. | false | false |  |
+| AdminFolderName | Gets application groups that are in admin folders matching the specified name. | false | false |  |
+| AdminFolderUid | Gets application groups that are in the specified admin folder. | false | false |  |
+| ApplicationGroupName | Gets application groups that match the specified simple name. | false | false |  |
 | AssociatedDesktopGroupPriority | Gets application groups with which a desktop group has been associated with the specified priority. | false | false |  |
 | AssociatedDesktopGroupUid | Gets application groups which have been associated with the specified desktop group. The desktop group is identified by its Uid. | false | false |  |
 | AssociatedDesktopGroupUUID | Gets application groups which have been associated with the specified desktop group. The desktop group is identified by its UUID. | false | false |  |
-| AssociatedUserFullName | Gets application groups with an associated user identified by their user name (usually 'first-name last-name').<br>If the 'UserFilterEnabled' property is true then access to applications in the application group is restricted to those users only. Otherwise, access is unrestricted (but always subject to other policy rules). | false | false |  |
-| AssociatedUserName | Gets application groups with an associated user identified by their user name (in the form 'domain\\user').<br>If the 'UserFilterEnabled' property is true then access to applications in the application group is restricted to those users only. Otherwise, access is unrestricted (but always subject to other policy rules). | false | false |  |
-| AssociatedUserSID | Gets application groups with an associated user identified by their Windows SID.<br>If the 'UserFilterEnabled' property is true then access to applications in the application group is restricted to those users only. Otherwise, access is unrestricted (but always subject to other policy rules). | false | false |  |
-| AssociatedUserUPN | Gets application groups with an associated user identified by their user principle name (in the form 'user@domain').<br>If the 'UserFilterEnabled' property is true then access to applications in the application group is restricted to those users only. Otherwise, access is unrestricted (but always subject to other policy rules). | false | false |  |
+| AssociatedUserFullName | Gets application groups with an associated user identified by their user name (usually 'first-name last-name').  
+If the 'UserFilterEnabled' property is true then access to applications in the application group is restricted to those users only. Otherwise, access is unrestricted (but always subject to other policy rules). | false | false |  |
+| AssociatedUserName | Gets application groups with an associated user identified by their user name (in the form 'domain\\user').  
+If the 'UserFilterEnabled' property is true then access to applications in the application group is restricted to those users only. Otherwise, access is unrestricted (but always subject to other policy rules). | false | false |  |
+| AssociatedUserSID | Gets application groups with an associated user identified by their Windows SID.  
+If the 'UserFilterEnabled' property is true then access to applications in the application group is restricted to those users only. Otherwise, access is unrestricted (but always subject to other policy rules). | false | false |  |
+| AssociatedUserUPN | Gets application groups with an associated user identified by their user principle name (in the form 'user@domain').  
+If the 'UserFilterEnabled' property is true then access to applications in the application group is restricted to those users only. Otherwise, access is unrestricted (but always subject to other policy rules). | false | false |  |
 | Description | Gets application groups whose description matches the supplied pattern. | false | false |  |
 | Enabled | Gets application groups which are currently enabled. | false | false |  |
-| Metadata | Gets records with matching metadata entries.<br>The value being compared with is a concatenation of the key name, a colon, and the value. For example: -Metadata "abc:x\*" matches records with a metadata entry having a key name of "abc" and a value starting with the letter "x". | false | false |  |
+| Metadata | Gets records with matching metadata entries.  
+The value being compared with is a concatenation of the key name, a colon, and the value. For example: -Metadata "abc:x\*" matches records with a metadata entry having a key name of "abc" and a value starting with the letter "x". | false | false |  |
 | RestrictToTag | Gets only application groups with the specified tag restriction. | false | false |  |
 | ScopeId | Gets application groups which are part of the supplied administrative scope. The scope is identified by its GUID. | false | false |  |
 | ScopeName | Gets application groups which are part of an administrative scope whose name matches the supplied pattern. | false | false |  |
@@ -107,14 +123,17 @@ A BrokerApplicationGroup object represents a single application group that has b
 | DesktopGroupUid | Gets application groups which have been added to the specified desktop group. | false | false |  |
 | TagUid | Gets application groups that have been tagged the given tag. The tag is identified by its Uid. | false | false |  |
 | UserSID | Gets application groups for which the specified user is a member of the user filter. The user account is identified by its SID. | false | false |  |
-| ReturnTotalRecordCount | When specified, this causes the cmdlet to output an error record containing the number of records available. This error record is additional information and does not affect the objects written to the output pipeline. See about\_Broker\_Filtering for details. | false | false | False |
+| ReturnTotalRecordCount | When specified, this causes the cmdlet to output an error record containing the number of records available. This error record is additional information and does not affect the objects written to the output pipeline. See [about\_Broker\_Filtering](../about_Broker_Filtering/) for details. | false | false | False |
 | MaxRecordCount | Specifies the maximum number of records to return. | false | false | 250 |
 | Skip | Skips the specified number of records before returning results. Also reduces the count returned by -ReturnTotalRecordCount. | false | false | 0 |
 | SortBy | Sorts the results by the specified list of properties. The list is a set of property names separated by commas, semi-colons, or spaces. Optionally, prefix each name with a + or - to indicate ascending or descending order. Ascending order is assumed if no prefix is present. | false | false | The default sort order is by name or unique identifier. |
-| Filter | Gets records that match a PowerShell style filter expression. See about\_Broker\_Filtering for details. | false | false |  |
+| Filter | Gets records that match a PowerShell style filter expression. See [about\_Broker\_Filtering](../about_Broker_Filtering/) for details. | false | false |  |
+| FilterScope | Gets only results allowed by the specified scope id. | false | false |  |
 | Property | Specifies the properties to be returned. This is similar to piping the output of the command through Select-Object, but the properties are filtered more efficiently at the server. | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller that the PowerShell snapin will connect to. This can be provided as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value will become the default. |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 
 ## Input Type
@@ -126,18 +145,23 @@ You cannot pipe input into this cmdlet.
 ### Citrix.Broker.Admin.Sdk.Applicationgroup
 Get-BrokerApplicationGroup returns an object for each matching application group.
 ## Notes
-Application groups are explained in about\_Broker\_Applications.<br>    To perform greater-than or less-than comparisons, use -Filter. For more information, see about\_Broker\_Filtering and the examples.
+Application groups are explained in [about\_Broker\_Applications](../about_Broker_Applications/).  
+    To perform greater-than or less-than comparisons, use -Filter. For more information, see [about\_Broker\_Filtering](../about_Broker_Filtering/) and the examples.
 ## Examples
 
 ### Example 1
+
 ```
 C:\PS> Get-BrokerApplicationGroup -Name "Account\*"
 ```
+
 #### Description
 Gets application groups whose name starts with "Account".
 ### Example 2
+
 ```
 C:\PS> Get-BrokerApplicationGroup -SessionSharingEnabled $false
 ```
+
 #### Description
 Gets application groups for which session sharing with applications in other application groups has been disabled.

@@ -2,11 +2,13 @@
 # Set-Brokermachine
 Sets properties on a machine.
 ## Syntax
-```
-Set-BrokerMachine [-InputObject] <Machine[]> [-PassThru] [-AssignedClientName <String>] [-AssignedIPAddress <String>] [-HostedMachineId <String>] [-HypervisorConnectionUid <Int32>] [-InMaintenanceMode <Boolean>] [-IsReserved <Boolean>] [-PublishedName <String>] [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 
-Set-BrokerMachine [-MachineName] <String> [-PassThru] [-AssignedClientName <String>] [-AssignedIPAddress <String>] [-HostedMachineId <String>] [-HypervisorConnectionUid <Int32>] [-InMaintenanceMode <Boolean>] [-IsReserved <Boolean>] [-PublishedName <String>] [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 ```
+Set-BrokerMachine [-InputObject] <Machine[]> [-PassThru] [-AssignedClientName <String>] [-AssignedIPAddress <String>] [-HostedMachineId <String>] [-HypervisorConnectionUid <Int32>] [-InMaintenanceMode <Boolean>] [-IsReserved <Boolean>] [-PublishedName <String>] [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]  
+  
+Set-BrokerMachine [-MachineName] <String> [-PassThru] [-AssignedClientName <String>] [-AssignedIPAddress <String>] [-HostedMachineId <String>] [-HypervisorConnectionUid <Int32>] [-InMaintenanceMode <Boolean>] [-IsReserved <Boolean>] [-PublishedName <String>] [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]
+```
+
 ## Detailed Description
 The Set-BrokerMachine cmdlet sets properties on a machine or set of machines. You can specify a single machine by name or multiple machine instances can be passed to the command by piping or using the -InputObject parameter.
 
@@ -31,6 +33,8 @@ The Set-BrokerMachine cmdlet sets properties on a machine or set of machines. Yo
 | LoggingId | Specifies the identifier of the high level operation that this cmdlet call forms a part of. Desktop Studio and Desktop Director typically create High Level Operations. PowerShell scripts can also wrap a series of cmdlet calls in a High Level Operation by way of the Start-LogHighLevelOperation and Stop-LogHighLevelOperation cmdlets. | false | false |  |
 | AdminAddress | Specifies the address of a XenDesktop controller that the PowerShell snapin will connect to. This can be provided as a host name or an IP address. | false | false | Localhost. Once a value is provided by any cmdlet, this value will become the default. |
 | BearerToken | Specifies the bearer token assigned to the calling user | false | false |  |
+| TraceParent | Specifies the trace parent assigned for internal diagnostic tracing use | false | false |  |
+| TraceState | Specifies the trace state assigned for internal diagnostic tracing use | false | false |  |
 | VirtualSiteId | Specifies the virtual site the PowerShell snap-in will connect to. | false | false |  |
 
 ## Input Type
@@ -44,22 +48,28 @@ This cmdlet does not generate any output, unless you use the PassThru parameter,
 ## Examples
 
 ### Example 1
+
 ```
 C:\PS> Set-BrokerMachine -MachineName 'MyDomain\MyMachine' -HypervisorConnectionUid 3
 ```
+
 #### Description
 This example specifies a machine by name and sets its hypervisor connection.
 ### Example 2
-```
-C:\PS> $machines = Get-BrokerMachine -MachineName 'MyDomain\\*'
 
+```
+C:\PS> $machines = Get-BrokerMachine -MachineName 'MyDomain\\*'  
+  
 C:\PS> Set-BrokerMachine -InputObject $machines -HypervisorConnectionUid 3
 ```
+
 #### Description
 This example finds all machines in domain MyDomain and sets their hypervisor connections.
 ### Example 3
+
 ```
 C:\PS> Get-BrokerMachine -MachineName 'MyDomain\\*' | Set-BrokerMachine -HypervisorConnectionUid 3
 ```
+
 #### Description
 This example also finds all machines in domain MyDomain and sets their hypervisor connections.
