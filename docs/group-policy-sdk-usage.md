@@ -95,9 +95,7 @@ The objects under the **Filters** node of a policy node are filters, that you ca
 
 ### Create a policy
 
-To create a computer policy, under the **Computer **node use the **New-Item command**.
-
-For example, the following command creates a policy named `Policy123`:
+To create a computer policy, under the **Computer** node use the **New-Item command**. For example, the following command creates a policy named `Policy123`:
 
 ```
 PS GP:\Computer\> New-Item Policy123
