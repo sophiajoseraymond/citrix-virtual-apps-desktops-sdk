@@ -30,6 +30,7 @@ To load the provider, navigate to the PowerShell console and run the following c
     ```
     Import-Module Citrix.GroupPolicy.Commands
     ```
+
 Alternatively, being a PowerShell snap-in, you can also load the provider using the following Add-PsSnapin command:
 
     ```
@@ -51,7 +52,7 @@ PowerShell providers provide a user interface similar to a file system. At the t
 
 Mount the provider to a drive using the following command:
 
--  On-premises: Use `localhost` to connect to a controller running on the same machine. When a remote host is specified, the remote host must be a Citrix controller and the necessary ports must be open for remotely connecting to the controller. The signed in user must be also an administrator of the remote site. If a remote connection is to be used, the Fully Qualified Distinguished Name (FQDN) of the remote controller with an optional port number must be specified. If no port number is specified, by default port 80 is used. To mount a drive for on-premises deployments, run the following command:
+-  On-premises: Use `localhost` to connect to a controller running on the same machine. When a remote host is specified, the remote host must be a Citrix controller and the necessary ports must be open for remotely connecting to the controller. The signed in user must be also an administrator of the remote site. If a remote connection is to be used, the fully qualified domain name (FQDN) of the remote controller with an optional port number must be specified. If no port number is specified, by default port 80 is used. To mount a drive for on-premises deployments, run the following command:
 
     ```
     New-PsDrive -PsProvider CitrixGroupPolicy -Name GP -Root \ -Controller localhost
@@ -94,7 +95,9 @@ The objects under the **Filters** node of a policy node are filters, that you ca
 
 ### Create a policy
 
-To create a computer policy, use the `New-Item` command under the **Computer** node. For example, the following command creates a policy named `Policy123`:
+To create a computer policy, under the **Computer **node use the **New-Item command**.
+
+For example, the following command creates a policy named `Policy123`:
 
 ```
 PS GP:\Computer\> New-Item Policy123
@@ -116,7 +119,7 @@ After the policy is created, the properties of the policy object are displayed.
 
 ### Modify a policy
 
-You can only modify the `Description`, `Enabled`, and the `Priority` properties for a policy. Don't set the `MergedPriority` property because only the Citrix Studio uses this property.
+You can only modify the `Description`, `Enabled`, and the `Priority` properties for a policy. Do not set the `MergedPriority` property because only the Citrix Studio uses this property.
 
 To modify a property of a policy, use the `Set-ItemProperty` command. For example, the following command sets the description of the policy to `test policy`:
 
@@ -196,7 +199,7 @@ VirtualDesktopAgent
 PS GP:\User\Policy123\Settings\>
 ```
 
-There are no individual settings in the top level objects under the **Settings** node. All the objects are container objects created from the categories of the settings. To find the setting that you want to select for your policy, browse the folders, or use the settings reference. For more information about where to find the settings reference and how to use it, see the [Setting definitions reference](#setting-definitions-reference) section.
+There are no individual settings in the top level objects under the **Settings** node. All the objects are container objects created from the categories of the settings. To find the setting that you want to select for your policy, browse the folders, or use the settings reference. For more information about where to find the settings reference and how to use it, see the [Setting definitions reference](https://developer-docs.citrix.com/projects/citrix-virtual-apps-desktops-sdk/en/latest/group-policy-sdk-usage/#setting-definitions-reference) section.
 
 For example, if you want to enable the setting **Readonly clipboard**, you  can use the following `Set-ItemProperty` command:
 
@@ -217,7 +220,7 @@ As shown in the example, to select a setting, set the value of the `State` prope
 
 > **Note:**
 >
-> You can only use the internal name of the setting. For many settings, the internal names and the displayed English names are different. To find the correct internal names, use the [setting definitions reference](#setting-definitions-reference) section.
+> You can only use the internal name of the setting. For many settings, the internal names and the displayed English names are different. To find the correct internal names, use the [setting definitions reference](https://developer-docs.citrix.com/projects/citrix-virtual-apps-desktops-sdk/en/latest/group-policy-sdk-usage/#setting-definitions-reference) section.
 
 PowerShell auto-completion can be used in navigating the settings tree, which saves much typing. Some settings are under several layers of categories.
 
@@ -344,11 +347,11 @@ Priority number cannot be more than the total number of policies. For example, i
 
 The provider has the user and computer policies organized separately. But in the policy management consoles (Citrix Studio), there is no distinction between these two types of policies. A computer and a user policy that have the same name are merged in the Citrix Studio as one policy.
 
-The merge is done using the name only. If a computer or user policy doesn't have a counterpart in the other policy type, it exists as a policy in Citrix Studio, although it has only computer or user settings configured in it.
+The merge is done using the name only. If a computer or user policy does not have a counterpart in the other policy type, it exists as a policy in Citrix Studio, although it has only computer or user settings configured in it.
 
 Merging the user and computer policies of the same name imposes the following requirements to create and edit policies in the provider:
 
--  No priority inversion is allowed. Priority inversion is a condition where the computer and user portions of two policies are in reverse orders. For example, consider we have the user policies `Policy0` and `Policy1` with priority numbers 1 and 2 and the computer policies `Policy0` and `Policy1` with priority numbers 6 and 3. In this example, the priority inversion occurs between `Policy0`and `Policy1`. The policy numbers don't have to be consecutive and they don't have to be the same numbers. If the computer policies `Policy0` and `Policy1` have priorities 3 and 6, there is no priority inversion occurs between `Policy0` and `Policy1`. For the entire set of policies, there must be no priority inversion between any two policies.
+-  No priority inversion is allowed. Priority inversion is a condition where the computer and user portions of two policies are in reverse orders. For example, consider we have the user policies `Policy0` and `Policy1` with priority numbers 1 and 2 and the computer policies `Policy0` and `Policy1` with priority numbers 6 and 3. In this example, the priority inversion occurs between `Policy0`and `Policy1`. The policy numbers do not have to be consecutive and they do not have to be the same numbers. If the computer policies `Policy0` and `Policy1` have priorities 3 and 6, there is no priority inversion occurs between `Policy0` and `Policy1`. For the entire set of policies, there must be no priority inversion between any two policies.
 -  Filters must be consistent. The computer and user portions of the same filter type must have filters that are consistent. Consider a scenario where the user policy `Policy0` has a filter to allow delivery group `Dg0` and the computer policy `Policy0` has a delivery group filter that denies `Dg0`. In this example, there is filter inconsistency between the two portions of `Policy0`.
 -  Policies must be of the same state. Both the user and computer value of a policy must be set to the same state. They must be both either enabled or disabled.
 
@@ -362,7 +365,7 @@ The Citrix Studio detects these conditions and refuses to display the policies w
 
 Policies are the containers of settings. VDAs validates settings as the configurable values to achieve the desirable effects. In each VDA release, with newly added VDA features, there are new settings that allow Citrix administrators to configure these features.
 
-There are already over 400 settings. Although in the UI, settings can be searched, it's not easy to find the setting that you want to configure in the provider. When you write a script, you might use the Citrix Studio to find the settings. But when you don't have access to the Citrix Studio, you need a different source to navigate the setting hierarchy.
+There are already over 400 settings. Although in the UI, settings can be searched, it's not easy to find the setting that you want to configure in the provider. When you write a script, you might use the Citrix Studio to find the settings. But when you do not have access to the Citrix Studio, you need a different source to navigate the setting hierarchy.
 
 You can find a complete reference of Citrix policy settings in the [Policy](https://docs.citrix.com/en-us/citrix-virtual-apps-desktops/policies/reference.html) documentation.
 
@@ -383,7 +386,7 @@ False
 PS GP:\User>
 ```
 
-After the `AutoWriteBack` is set to `$false`, you must save the changes because changes won't be automatically saved. You can save the changes using the drive's `Save()` method:
+After the `AutoWriteBack` is set to `$false`, you must save the changes because changes will not be automatically saved. You can save the changes using the drive's `Save()` method:
 
 ```
 PS GP:\User> (Get-PSDrive GP).Save()
@@ -410,11 +413,11 @@ After the policies are updated using the provider, an error appears in the Citri
 
 ![citrix-studio-error](citrix-studio-error.png)
 
-As the error indicated, there is a policy named `Error1` but actually there are two separate policies named `Error1` in the provider. The user policy `Error1` might have the `Enabled` property set to `true` and the computer policy `Error1` might have the `Enabled` property set to `false`. For more information about policy merge issues, see the [Merge user and computer policies](#merge-user-and-computer-policies) section.
+As the error indicated, there is a policy named `Error1` but actually there are two separate policies named `Error1` in the provider. The user policy `Error1` might have the `Enabled` property set to `true` and the computer policy `Error1` might have the `Enabled` property set to `false`. For more information about policy merge issues, see the [Merge user and computer policies](https://developer-docs.citrix.com/projects/citrix-virtual-apps-desktops-sdk/en/latest/group-policy-sdk-usage/#merge-user-and-computer-policies) section.
 
 ### After creating the policies, why do policies get deleted when viewing policies in the Citrix Studio?
 
-Empty policies are not allowed in the database to ensure efficiency when policies are evaluated by VDAs. Empty policies are policies without settings. The only exception is the `Unfiltered` policy, which is a built-in policy. It is impossible to create an empty policy in the Citrix Studio. But it is possible to create an empty policy using the provider. Some people might have scripts to create some empty policies temporarily. But if the policies are viewed using Citrix Studio, those policies are deleted and won't be visible in the Citrix Studio. To avoid having your temporary empty policies deleted, don't use the Citrix Studio to view policies while changes are being made.
+Empty policies are not allowed in the database to ensure efficiency when policies are evaluated by VDAs. Empty policies are policies without settings. The only exception is the `Unfiltered` policy, which is a built-in policy. It is impossible to create an empty policy in the Citrix Studio. But it is possible to create an empty policy using the provider. Some people might have scripts to create some empty policies temporarily. But if the policies are viewed using Citrix Studio, those policies are deleted and will not be visible in the Citrix Studio. To avoid having your temporary empty policies deleted, do not use the Citrix Studio to view policies while changes are being made.
 
 ### How to retrieve the policy updates that is done in the Citrix Studio?
 
