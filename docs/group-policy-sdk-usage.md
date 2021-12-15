@@ -37,9 +37,9 @@ Alternatively, being a PowerShell snap-in, you can also load the provider using 
     Add-PsSnapin Citrix.Common.GroupPolicy
     ```
 
-    > **Note:**
-    >
-    >  If the provider does not load using the `Import-Module Citrix.GroupPolicy.Commands`  or the `Add-PsSnapin Citrix.Common.GroupPolicy`  command you might not have the provider installed in your system..
+> **Note:**
+>
+>  If the provider does not load using the `Import-Module Citrix.GroupPolicy.Commands`  or the `Add-PsSnapin Citrix.Common.GroupPolicy`  command you might not have the provider installed in your system..
 
 ### Step 2: Mount the provider
 
