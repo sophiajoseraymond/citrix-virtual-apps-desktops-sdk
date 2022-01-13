@@ -106,6 +106,7 @@ See [about\_Broker\_Machines](../about_Broker_Machines/) for more information.
 * [Rename-BrokerCatalog](../Rename-BrokerCatalog/)
 * [Set-BrokerCatalog](../Set-BrokerCatalog/)
 * [Add-BrokerTag](../Add-BrokerTag/)
+* [Move-BrokerCatalog](../Move-BrokerCatalog/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

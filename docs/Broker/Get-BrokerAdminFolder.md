@@ -6,7 +6,7 @@ Get the admin folders in this site.
 ```
 Get-BrokerAdminFolder [-Uid] <Int32> [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]  
   
-Get-BrokerAdminFolder [[-Name] <String>] [-DirectChildAdminFolders <Int32>] [-DirectChildApplications <Int32>] [-FolderName <String>] [-LastChangeId <Guid>] [-Metadata <String>] [-ParentAdminFolderUid <Int32>] [-TotalChildApplications <Int32>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-FilterScope <Guid>] [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]
+Get-BrokerAdminFolder [[-Name] <String>] [-DirectChildAdminFolders <Int32>] [-DirectChildApplications <Int32>] [-DirectChildCatalogs <Int32>] [-FolderName <String>] [-LastChangeId <Guid>] [-Metadata <String>] [-ParentAdminFolderUid <Int32>] [-TotalChildApplications <Int32>] [-TotalChildCatalogs <Int32>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-FilterScope <Guid>] [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 ```
 
 ## Detailed Description
@@ -23,6 +23,8 @@ A folder for use in the administration console for organising other objects. E.g
 
   * DirectChildApplications (System.Int32) The number of applications in this admin folder (does not include any applications in child folders)
 
+  * DirectChildCatalogs (System.Int32) The number of catalogs in this admin folder (does not include any catalogs in child folders)
+
   * FolderName (System.String) The simple name of this folder within any parent folder
 
   * LastChangeId (System.Guid) A random GUID assigned whenever there is a change anywhere in the hierarchy of admin folders below this node; each change updates this value on the changed folder and all parents all the way up to the root folder. Note that nodes below any change do not have their LastChangeId value updated
@@ -34,6 +36,8 @@ A folder for use in the administration console for organising other objects. E.g
   * ParentAdminFolderUid (System.Int32) The UID of the parent admin folder; the root folder references itself (zero)
 
   * TotalChildApplications (System.Int32) The number of applications in this admin folder (including any applications in child folders)
+
+  * TotalChildCatalogs (System.Int32) The number of catalogs in this admin folder (including any catalogs in child folders)
 
   * Uid (System.Int32) The unique ID of the admin folder (the root folder has the value zero)
 
@@ -49,12 +53,14 @@ A folder for use in the administration console for organising other objects. E.g
 | Name | Gets admin folders matching the specified name (if no trailing backslash is supplied, it is assumed). | false | false |  |
 | DirectChildAdminFolders | Gets admin folders with the specified number of child folders. | false | false |  |
 | DirectChildApplications | Gets admin folders with the specified number of applications (excluding those in sub-folders). | false | false |  |
+| DirectChildCatalogs | Gets admin folders with the specified number of catalogs (excluding those in sub-folders). | false | false |  |
 | FolderName | Gets only the admin folders matching the specified simple folder name. | false | false |  |
 | LastChangeId | Gets only the admin folders with the specified value for LastChangeId. | false | false |  |
 | Metadata | Gets records with matching metadata entries.  
 The value being compared with is a concatenation of the key name, a colon, and the value. For example: -Metadata "abc:x\*" matches records with a metadata entry having a key name of "abc" and a value starting with the letter "x". | false | false |  |
 | ParentAdminFolderUid | Gets only admin folders with the specified parent admin folder UID value. | false | false |  |
 | TotalChildApplications | Gets admin folders with the specified number of applications (including those in sub-folders). | false | false |  |
+| TotalChildCatalogs | Gets admin folders with the specified number of catalogs (including those in sub-folders). | false | false |  |
 | ReturnTotalRecordCount | When specified, this causes the cmdlet to output an error record containing the number of records available. This error record is additional information and does not affect the objects written to the output pipeline. See [about\_Broker\_Filtering](../about_Broker_Filtering/) for details. | false | false | False |
 | MaxRecordCount | Specifies the maximum number of records to return. | false | false | 250 |
 | Skip | Skips the specified number of records before returning results. Also reduces the count returned by -ReturnTotalRecordCount. | false | false | 0 |

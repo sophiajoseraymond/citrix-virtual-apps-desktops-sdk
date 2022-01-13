@@ -70,7 +70,7 @@ Get-BrokerConfigurationSlot returns an object for each matching slot.
 ### Example 1
 
 ```
-Get-ConfigurationSlot
+Get-BrokerConfigurationSlot
 ```
 
 #### Description
@@ -78,7 +78,7 @@ Retrieves every configuration slot.
 ### Example 2
 
 ```
-Get-ConfigurationSlot -Name "AppV"
+Get-BrokerConfigurationSlot -Name "AppV"
 ```
 
 #### Description

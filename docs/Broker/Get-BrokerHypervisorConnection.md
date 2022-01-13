@@ -6,7 +6,7 @@ Gets hypervisor connections matching the specified criteria.
 ```
 Get-BrokerHypervisorConnection [-Uid] <Int32> [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]  
   
-Get-BrokerHypervisorConnection [[-Name] <String>] [-ExplicitPreferredController <Boolean>] [-ExtraSpinUpTimeSecs <Int32>] [-FaultReason <String>] [-FaultState <String>] [-HypHypervisorConnectionUid <Guid>] [-HypHypervisorType <String>] [-IsReady <Boolean>] [-MachineCount <Int32>] [-MaxAbsoluteActiveActions <Int32>] [-MaxAbsoluteNewActionsPerMinute <Int32>] [-MaxAbsolutePvdPowerActions <Int32>] [-MaxPercentageActiveActions <Int32>] [-MaxPvdPowerActionsPercentageOfDesktops <Int32>] [-Metadata <String>] [-PreferredController <String>] [-State <HypervisorConnectionState>] [-ZoneExternalUid <Guid>] [-ZoneUid <Guid>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-FilterScope <Guid>] [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]
+Get-BrokerHypervisorConnection [[-Name] <String>] [-ExplicitPreferredController <Boolean>] [-ExtraSpinUpTimeSecs <Int32>] [-FaultReason <String>] [-FaultState <String>] [-FaultStateDuration <TimeSpan>] [-HypHypervisorConnectionUid <Guid>] [-HypHypervisorType <String>] [-IsReady <Boolean>] [-MachineCount <Int32>] [-MaxAbsoluteActiveActions <Int32>] [-MaxAbsoluteNewActionsPerMinute <Int32>] [-MaxAbsolutePvdPowerActions <Int32>] [-MaxPercentageActiveActions <Int32>] [-MaxPvdPowerActionsPercentageOfDesktops <Int32>] [-Metadata <String>] [-PreferredController <String>] [-State <HypervisorConnectionState>] [-TimeFaultStateEntered <DateTime>] [-ZoneExternalUid <Guid>] [-ZoneUid <Guid>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-FilterScope <Guid>] [-Property <String[]>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 ```
 
 ## Detailed Description
@@ -26,6 +26,8 @@ The BrokerHypervisorConnection represents hypervisor connection object. It conta
   * FaultReason (System.String) Detailed fault state description if connection is currently in a fault state.
 
   * FaultState (System.String) Current fault state indicator associsted with hypervisor connection, or 'None' if connection is operating normally.
+
+  * FaultStateDuration (System.TimeSpan?) Period for which the hypervisor has been in fault state
 
   * HypervisorCapabilities (System.String\[\]) The set of hypervisor capabilities as reported by the hypervisor.
 
@@ -55,6 +57,8 @@ The BrokerHypervisorConnection represents hypervisor connection object. It conta
 
   * State (Citrix.Broker.Admin.SDK.HypervisorConnectionState) The state of the hypervisor connection.
 
+  * TimeFaultStateEntered (System.DateTime?) Time at which the hypervisor entered fault state
+
   * Uid (System.Int32) Unique internal identifier of hypervisor connection.
 
   * ZoneExternalUid (System.Guid?) The Guid that is the external zone uid of the hypervisor connection.
@@ -76,6 +80,7 @@ The BrokerHypervisorConnection represents hypervisor connection object. It conta
 | ExtraSpinUpTimeSecs | Gets the extra time a VM is allowed to start before it is marked as failed on session launch | false | false |  |
 | FaultReason | Gets hypervisor connections with fault reasons matching that specified. | false | false |  |
 | FaultState | Gets hypervisor connections with fault states matching that specified. | false | false |  |
+| FaultStateDuration | Period for which the hypervisor has been in fault state | false | false |  |
 | HypHypervisorConnectionUid | Gets hypervisor connections with the specified Guid. | false | false |  |
 | HypHypervisorType | Gets hypervisor connections with the specified value of the hypervisor type. | false | false |  |
 | IsReady | Gets hypervisor connections with the specified value of the IsReady flag. | false | false |  |
@@ -92,6 +97,7 @@ The value being compared with is a concatenation of the key name, a colon, and t
 o Unavailable - The broker is unable to contact the hypervisor.  
 o InMaintenanceMode - The hosting server is in maintenance mode.  
 o On - The broker is in contact with the hypervisor. | false | false |  |
+| TimeFaultStateEntered | Time at which the hypervisor entered fault state | false | false |  |
 | ZoneExternalUid | Gets the hypervisor connections with the specified zone external uid. | false | false |  |
 | ZoneUid | Gets the hypervisor connections with the specified zone uid. | false | false |  |
 | ReturnTotalRecordCount | When specified, this causes the cmdlet to output an error record containing the number of records available. This error record is additional information and does not affect the objects written to the output pipeline. See [about\_Broker\_Filtering](../about_Broker_Filtering/) for details. | false | false | False |

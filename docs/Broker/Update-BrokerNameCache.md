@@ -6,7 +6,11 @@ Performs administrative operations on the user/group and machine name cache.
 ```
 Update-BrokerNameCache [-Machines] [-Users] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]  
   
-Update-BrokerNameCache -Purge [-Machines] [-Users] [-UnusedFor <TimeSpan>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]
+Update-BrokerNameCache -Purge [-Machines] [-Users] [-UnusedFor <TimeSpan>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]  
+  
+Update-BrokerNameCache -Machine <String> [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]  
+  
+Update-BrokerNameCache -User <String> [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 ```
 
 ## Detailed Description
@@ -32,6 +36,8 @@ For machines, the following name information is cached: Windows name (DOMAIN\\ma
 In addition, user entries are only removed if the user has not logged in for at least 90 days. Similarly machine entries are only removed if the machine has not registered with the site over the same period. The 90 day default can be overridden using the -UnusedFor parameter.  
 While removing genuinely unused cache entries is desirable to reduce the requests made to Active Directory, there is additional cost in repopulating the cache if a user/group or machine account is later used again after having been removed. Thus it is not recommended to routinely use very short intervals with -UnusedFor.  
 If a machine entry is removed from the cache and later used again, the Uid value associated with that machine changes (seen in the output of Get-BrokerMachine). | true | false |  |
+| Machine | Triggers an asynchronous refresh of the cached machine name information for the specified machine. The machine can be specified by SID or by its name as currently known to the Citrix Broker service (for example as shown by Get-BrokerMachine). | true | false |  |
+| User | Triggers an asynchronous refresh of the cached user name information for the specified user. The user can be specified by SID or by its name as currently known to the Citrix Broker service (for example as shown by Get-BrokerUser). | true | false |  |
 | Machines | Triggers an asynchronous refresh of all cached machine name information, or with the -Purge parameter removes unused machine entries from the cache. | false | false |  |
 | Users | Triggers an asynchronous refresh of all cached user/group name information, or with the -Purge parameter removes unused user/group entries from the cache. | false | false |  |
 | UnusedFor | Specifies the minimum period over which user or machine cache entries must have been unused before they can be be removed with the -Purge option. | false | false | 90 days |
