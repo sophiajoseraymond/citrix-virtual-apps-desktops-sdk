@@ -965,7 +965,7 @@ nav:
   - Test-OrchDBConnection: Orchestration/Test-OrchDBConnection.md
 - PVS_PowerShell_SDK:
   - Clear-PvsConnection: PVS_PowerShell_SDK/Clear-PvsConnection.md
-  - Get-PvsVersion: Get-PvsVersion: PVS_PowerShell_SDK/Get-PvsVersion.md
+  - Get-PvsVersion: PVS_PowerShell_SDK/Get-PvsVersion.md
   - Get-SimplePvsADAccount: PVS_PowerShell_SDK/Get-SimplePvsADAccount.md
   - Get-SimplePvsCollection: PVS_PowerShell_SDK/Get-SimplePvsCollection.md
   - Get-SimplePvsDevice: PVS_PowerShell_SDK/Get-SimplePvsDevice.md
