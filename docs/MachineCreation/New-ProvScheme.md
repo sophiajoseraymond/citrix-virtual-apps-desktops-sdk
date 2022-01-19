@@ -170,6 +170,8 @@ System.Management.Automation.PSCustomObject
                     The task failed because a requested feature is not enabled.  
                 MachineProfileNotSupported  
                     The task failed because machine profile is not supported.  
+                FailedToReadMachineProfile  
+                    Failed to read the Machine Profile.  
                 Canceled  
                     The task was stopped by user intervention (using Stop-ProvTask).  
         TaskStateInformation  
@@ -223,7 +225,8 @@ Only one long-running task for each provisioning scheme can be processed at a ti
     When parameter VhdTemplateSource or VhdResultDestination is supplied, both parameters are required to be supplied. ServiceDoesNotSupportFullDiskClone  
     The full disk clone parameter is being used when the service does not support the full disk clone feature. Upgrade the service or remove the parameter. FullDiskCloneDoesNotSupportCleanOnBootVMs  
     The full disk clone functionality is applicable to dedicated provisioned machines only. FullDiskCloneDoesNotSupportPvdVMs  
-    The full disk clone functionality is only applicable to dedicated provisioned machines that do not use Personal VDisks.  
+    The full disk clone functionality is only applicable to dedicated provisioned machines that do not use Personal VDisks. CannotUseWriteBackCacheWithCleanOnBootDisabled  
+    Cannot turn on writebackcache on persistent catalog. Do not use -UseWriteBackCache without specifying -CleanOnBoot.  
     The cmdlet is associated with a task of type NewProvisioningScheme, and while active will move through the following operations (CurrentOperation field)  
     ValidatingInputs  
     ConsolidatingMasterImage  

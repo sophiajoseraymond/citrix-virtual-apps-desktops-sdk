@@ -47,7 +47,7 @@ A BrokerAutoTagRule contains the following properties:
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
-| Uid | Gets the AutoTagRule with the unique identiifer. | true | false |  |
+| Uid | Gets the AutoTagRule with the unique identifier. | true | false |  |
 | Name | Gets AutoTagRules that have the specified name. | false | false |  |
 | Description | Gets the AutoTagRules that have the specified Description. | false | false |  |
 | Metadata | Gets records with matching metadata entries.  

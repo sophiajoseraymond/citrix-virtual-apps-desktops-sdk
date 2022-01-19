@@ -51,9 +51,9 @@ The BrokerSite object represents logical representation of the XenDesktop site. 
 
   * DnsResolutionEnabled (System.Boolean) The setting to configure whether numeric IP address or the DNS name to be present in the ICA file.
 
-  * InMemorySchemaAppliedVersion (System.Int32) FIXME
+  * InMemorySchemaAppliedVersion (System.Int32) Version of in-memory SQL table optimization applied to database schema.
 
-  * InMemorySchemaSupportedVersion (System.Int32) FIXME
+  * InMemorySchemaSupportedVersion (System.Int32) Version of in-memory SQL table optimization supported by database schema.
 
   * IsSecondaryBroker (System.Boolean) Reserved for internal use.
 

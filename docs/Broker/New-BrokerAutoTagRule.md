@@ -47,7 +47,7 @@ Outputs the AutoTagRule object.
 ```
 C:\PS> $tag = New-BrokerTag -Name MyExample  
   
-                    C:\PS> New-BrokerAutoTagRule -Name RandomAllocatedCatalogs -TagUid $tag.Uid -ObjectType Catalog -RuleText "-AllocationType Random"
+C:\PS> New-BrokerAutoTagRule -Name RandomAllocatedCatalogs -TagUid $tag.Uid -ObjectType Catalog -RuleText "-AllocationType Random"
 ```
 
 #### Description

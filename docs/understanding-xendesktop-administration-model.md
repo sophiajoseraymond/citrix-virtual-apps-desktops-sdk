@@ -17,8 +17,7 @@ A Connection entity provides the details required to establish a connection to t
 
 -   Password—the password to use for connections to the hypervisor.
 
--   The state of the connection and whether the hypervisor can be
-    communicated with or not.
+-   The state of the connection and whether the hypervisor can be communicated with or not.
 
 -   Any current alerts raised by the hypervisor.
 

@@ -4,7 +4,7 @@ Gets administrators configured for this site.
 ## Syntax
 
 ```
-Get-AdminAdministrator [[-Name] <String>] [-Sid <String>] [-BuiltIn <Boolean>] [-Enabled <Boolean>] [-Metadata <String>] [-UserIdentity <String>] [-UserIdentityType <UserIdentityType>] [-Property <String[]>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-FilterScope <Guid>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
+Get-AdminAdministrator [[-Name] <String>] [-Sid <String>] [-BuiltIn <Boolean>] [-Enabled <Boolean>] [-IsCloudGroup <Boolean>] [-Metadata <String>] [-UserIdentity <String>] [-UserIdentityType <UserIdentityType>] [-Property <String[]>] [-ReturnTotalRecordCount] [-MaxRecordCount <Int32>] [-Skip <Int32>] [-SortBy <String>] [-Filter <String>] [-FilterScope <Guid>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [-AdminAddress <String>] [<CommonParameters>]
 ```
 
 ## Detailed Description
@@ -27,6 +27,7 @@ See [about\_Admin\_Filtering](../about_Admin_Filtering/) for information about a
 | Sid | Gets administrators with the specified SID (security identifier). | false | true (ByPropertyName) |  |
 | BuiltIn | Gets administrators that are builtin | false | false |  |
 | Enabled | Gets administrators with the specified value of Enabled. | false | false |  |
+| IsCloudGroup | Gets administrators with the specified cloud group state | false | false |  |
 | Metadata | Gets records with matching metadata entries.  
 The value being compared with is a concatenation of the key name, a colon, and the value. For example: -Metadata "abc:x\*" matches records with a metadata entry having a key name of "abc" and a value starting with the letter "x". | false | false |  |
 | UserIdentity | Gets administrators with the specified UserIdentity (Windows security identifier or Citrix Cloud Identity). If the UserIdentityType is a Sid this will be the same as the Sid property. For Cloud administrators this will show cloud identity and the the Sid property will be null. | false | false |  |

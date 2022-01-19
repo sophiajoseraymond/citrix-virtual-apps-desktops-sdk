@@ -182,37 +182,43 @@ If this setting is not configured here, the value from the .ini file is used.
 If this setting is not configured here or in the .ini file, all of HKCU is processed.  
 Note: Use Enter to separate multiple entries. | false | false |  |
 | ExclusionListSyncFiles | List of files that are ignored during synchronization.  
-File names should be specified as paths relative to the user profile. Wildcards are allowed. Wildcards are applied recursively.  
+File names should be specified as paths relative to the user profile. Wildcards are allowed. Wildcards in file names are applied recursively while wildcards in folder names are not.  
 Note: As of Profile Management 7.15, you can use the vertical bar '|' for applying a policy to only the current folder without propagating it to the subfolders.  
-Examples: Desktop\\Desktop.ini ignores the file Desktop.ini in the Desktop directory.  
-AppData\\\*.tmp ignores all files with the extension .tmp in the directory AppData and its subfolders.  
-AppData\\\*.tmp| ignores all files with the extension .tmp in the directory AppData.  
+Examples: Desktop\\Desktop.ini ignores the Desktop.ini file in the Desktop folder.  
+AppData\\\*.tmp ignores all files with the .tmp extension in the AppData folder and its subfolders.  
+AppData\\\*.tmp| ignores all files with the .tmp extension in the AppData folder.  
+Downloads\\\*\\a.txt ignores a.txt in any immediate subfolder of the Downloads folder. Note that wildcards in folder names are not applied recursively.  
 If this setting is disabled, no files are excluded.  
 If this setting is not configured here, the value from the .ini file is used.  
 If this setting is not configured here or in the .ini file, no files are excluded.  
 Note: Use Enter to separate multiple entries. | false | false |  |
 | ExclusionListSyncDir | List of directories that are ignored during synchronization.  
 Folder names should be specified as paths relative to the user profile.  
-Examples: Entering "Desktop" (without quotes) ignores the Desktop directory in the user profile.  
+Wildcards are supported but they are not applied recursively.  
+Examples: Desktop ignores the Desktop folder in the user profile.  
+Downloads\\\* ignores all immediate subfolders of the Downloads folder.  
 If this setting is disabled, no folders are excluded.  
 If this setting is not configured here, the value from the .ini file is used.  
 If this setting is not configured here or in the .ini file, no folders are excluded.  
 Note: Use Enter to separate multiple entries. | false | false |  |
-| SyncDirList | Profile management synchronizes each user's entire profile between the system it is installed on and the user store. It is not necessary to include subfolders of the user profile by adding them to this list.  
-In addition, it allows for the inclusion of directories below excluded folders.  
+| SyncDirList | Profile management synchronizes each user's entire profile between the system it is installed on and the user store.  
+It allows you to include subfolders of excluded folders.  
 Paths on this list should be relative to the user profile.  
-Examples: Desktop\\exclude\\include specifies the subfolder include of the folder Desktop\\exclude.  
+Wildcards are supported but they are not applied recursively.  
+Examples: Desktop\\exclude\\include specifies the include subfolder of the Desktop\\exclude folder.  
+Desktop\\exclude\\\* specifies all immediate subfolders of the Desktop\\exclude folder.  
 Disabling this setting has the same effect as enabling it and configuring an empty list.  
 If this setting is not configured here, the value from the .ini file is used.  
 If this setting is not configured here or in the .ini file, only non-excluded folders in the user profile are synchronized.  
 Note: Use Enter to separate multiple entries. | false | false |  |
-| SyncFileList | Profile management synchronizes each user's entire profile between the system it is installed on and the user store. It is not necessary to include files in the user profile by adding them to this list.  
+| SyncFileList | Profile management synchronizes each user's entire profile between the system it is installed on and the user store.  
 This setting allows for the inclusion of files below excluded folders.  
-Paths on this list should be relative to the user profile. Wildcards can be used but are only allowed for file names. Wildcards cannot be nested and are applied recursively.  
+Paths on this list should be relative to the user profile. Wildcards are allowed. Wildcards in file names are applied recursively while wildcards in folder names are not.  
 Note: As of Profile Management 7.15, you can use the vertical bar '|' for applying a policy to only the current folder without propagating it to the subfolders.  
 Examples: AppData\\Local\\Microsoft\\Office\\Access.qat specifies a file below a folder excluded in the default configuration.  
 AppData\\Local\\MyApp\\\*.cfg specifies all files with the extension .cfg in the profile folder AppData\\Local\\MyApp and its subfolders.  
 AppData\\Local\\MyApp\\\*.cfg| specifies all files with the extension .cfg in the profile folder AppData\\Local\\MyApp.  
+Downloads\\\*\\b.txt specifies b.txt in any immediate subfolder of the Downloads folder. Note that wildcards in folder names are not applied recursively.  
 Disabling this setting has the same effect as enabling it and configuring an empty list.  
 If this setting is not configured here, the value from the .ini file is used.  
 If this setting is not configured here or in the .ini file, only non-excluded files in the user profile are synchronized.  

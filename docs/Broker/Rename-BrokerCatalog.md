@@ -21,6 +21,7 @@ The following special characters are not allowed in a catalog name: \\ / ; : # .
 * [New-BrokerCatalog](../New-BrokerCatalog/)
 * [Remove-BrokerCatalog](../Remove-BrokerCatalog/)
 * [Set-BrokerCatalog](../Set-BrokerCatalog/)
+* [Move-BrokerCatalog](../Move-BrokerCatalog/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

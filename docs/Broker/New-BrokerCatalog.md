@@ -4,9 +4,9 @@ Adds a new catalog to the site.
 ## Syntax
 
 ```
-New-BrokerCatalog [-Name] <String> [-AllocationType] <AllocationType> [-CatalogKind] <CatalogKind> [-PvsForVM <String[]>] [-Description <String>] [-IsRemotePC <Boolean>] [-MachinesArePhysical <Boolean>] [-MinimumFunctionalLevel <FunctionalLevel>] [-PvsAddress <String>] [-PvsDomain <String>] [-RemotePCHypervisorConnectionUid <Int32>] [-Scope <String[]>] [-TenantId <Guid>] [-UUID <Guid>] [-ZoneUid <Guid>] [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]  
+New-BrokerCatalog [-Name] <String> [-AllocationType] <AllocationType> [-CatalogKind] <CatalogKind> [-PvsForVM <String[]>] [-AdminFolder <AdminFolder>] [-Description <String>] [-IsRemotePC <Boolean>] [-MachinesArePhysical <Boolean>] [-MinimumFunctionalLevel <FunctionalLevel>] [-PvsAddress <String>] [-PvsDomain <String>] [-RemotePCHypervisorConnectionUid <Int32>] [-Scope <String[]>] [-TenantId <Guid>] [-UUID <Guid>] [-ZoneUid <Guid>] [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]  
   
-New-BrokerCatalog [-Name] <String> [-AllocationType] <AllocationType> [-ProvisioningType] <ProvisioningType> [-SessionSupport] <SessionSupport> [-PersistUserChanges] <PersistUserChanges> [-ProvisioningSchemeId <Guid>] [-Description <String>] [-IsRemotePC <Boolean>] [-MachinesArePhysical <Boolean>] [-MinimumFunctionalLevel <FunctionalLevel>] [-PvsAddress <String>] [-PvsDomain <String>] [-RemotePCHypervisorConnectionUid <Int32>] [-Scope <String[]>] [-TenantId <Guid>] [-UUID <Guid>] [-ZoneUid <Guid>] [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]
+New-BrokerCatalog [-Name] <String> [-AllocationType] <AllocationType> [-ProvisioningType] <ProvisioningType> [-SessionSupport] <SessionSupport> [-PersistUserChanges] <PersistUserChanges> [-ProvisioningSchemeId <Guid>] [-AdminFolder <AdminFolder>] [-Description <String>] [-IsRemotePC <Boolean>] [-MachinesArePhysical <Boolean>] [-MinimumFunctionalLevel <FunctionalLevel>] [-PvsAddress <String>] [-PvsDomain <String>] [-RemotePCHypervisorConnectionUid <Int32>] [-Scope <String[]>] [-TenantId <Guid>] [-UUID <Guid>] [-ZoneUid <Guid>] [-LoggingId <Guid>] [-AdminAddress <String>] [-BearerToken <String>] [-TraceParent <String>] [-TraceState <String>] [-VirtualSiteId <String>] [<CommonParameters>]
 ```
 
 ## Detailed Description
@@ -26,6 +26,7 @@ In order for a machine to register in a site, the machine must belong to a catal
 * [Rename-BrokerCatalog](../Rename-BrokerCatalog/)
 * [Remove-BrokerCatalog](../Remove-BrokerCatalog/)
 * [Set-BrokerCatalog](../Set-BrokerCatalog/)
+* [Move-BrokerCatalog](../Move-BrokerCatalog/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |
@@ -62,6 +63,7 @@ o OnLocal: User changes are stored on the machine's local storage.
 o Discard: User changes are discarded. | true | true (ByPropertyName) |  |
 | PvsForVM | Deprecated:  
 Identifies the provisioning scheme used by this catalog. To be specified in the format: ProvisioningSchemeGuid:ServiceGroupGuid. Applicable only to thin-cloned, single-image or personal vDisk catalogs. | false | true (ByPropertyName) |  |
+| AdminFolder | The folder in which the new catalog should reside (if any). | false | true (ByPropertyName) |  |
 | Description | A description for the catalog. | false | true (ByPropertyName) |  |
 | IsRemotePC | Specifies whether this is to be a Remote PC catalog.  
 IsRemotePC can only be enabled when:  

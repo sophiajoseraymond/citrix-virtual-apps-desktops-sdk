@@ -36,9 +36,11 @@ WARNING: Only first 250 records returned. Use -MaxRecordCount to retrieve more.
 
 You can suppress this warning by using -WarningAction or by specifying a value for -MaxRecordCount.
 
-To retrieve all records, specify a large number for -MaxRecordCount. As the value is an integer, you can use the following:
+In CVADS, you can retrieve a maximum of 1000 records in one call. Use the following command to retrieve the maximum records in a single call: Get-&lt;Noun&gt; -MaxRecordCount 1000
 
-Get-&lt;Noun&gt; -MaxRecordCount \[int\]::MaxValue
+Note: In CVADS, When you enter a value greater than 1000, no records are retrieved and an error message appears.
+
+Based on the use case, you can filter results or separate results into multiple pages. You may also use both approaches together.
 
 -ReturnTotalRecordCount \[&lt;SwitchParameter&gt;\] When specified, this causes the cmdlet to output an error record containing the number of records available. This error record is additional information and does not affect the objects written to the output pipeline. For example:
 
@@ -142,37 +144,18 @@ Get-&lt;Noun&gt; -Filter { Size -gt 4 -or (Color -eq 'Blue' -and Shape -eq 'Circ
 
 
 ### Paging
-The simplest way to page through data is to use the -Skip and -MaxRecordCount parameters. So, to read the first three pages of data with 10 records per page, use:
+Citrix recommends that you avoid paging by using \*Properties\* or the \*-Filter\* mechanism.
 
-Get-&lt;Noun&gt; -Skip 0  -MaxRecordCount 10 &lt;other filtering criteria&gt; Get-&lt;Noun&gt; -Skip 10 -MaxRecordCount 10 &lt;other filtering criteria&gt; Get-&lt;Noun&gt; -Skip 20 -MaxRecordCount 10 &lt;other filtering criteria&gt;
+However, if more objects are required, then the SDK supports deterministic paging though filtering. You must sort and filter objects to have a unique identifier for an object. This unique identifier helps you to page through objects and avoid reordering. Most of the Broker objects have a unique ID that can be used for paging. However, you must sort the other objects that do not have a unique ID either by time or some other unique field.
 
-You must include the same filtering criteria on each call, and ensure that the data is sorted consistently.
+Example: \$allSessions = @() \$lastUid = 0 while (\$true) { \$sessions = @(Get-BrokerSession -Filter { Uid -gt \$lastUid } -MaxRecordCount 1000 -Sortby 'Uid')
 
-The above approach is often acceptable, but as each call performs an independent query, data changes can result in records being skipped or appearing twice. One approach to improve this is to sort by a unique id field and then start the search for the next page at the unique id after the last unique id of the previous page. For example:
+if (\$sessions.Length -eq 0) { break; } \$lastUid = \$sessions\[-1\].Uid \$allSessions += \$sessions }
 
+In this example, a list is created and the lowest possible value for the chosen unique field is initialized. The unique ID in this example is zero. In a loop, sessions are requested using a filter searching for objects with a unique ID greater than zero. The number of objects is restricted to the first 1000 entries. It is important to sort by the field that is used as a filter.
 
-```
-      # Get the first page 
-      Get-<Noun> -MaxRecordCount 10 -SortBy SerialNumber 
-      SerialNumber  ... 
-      ------------  --- 
-      A120004 
-      A120007 
-      ... 7 other records ... 
-      A120900 
+The filtering UID (\$lastUid) is set to the unique ID of the final object retrieved. The loop begins again using this unique ID value as the lower bound. This loop continues until all sessions are retrieved and stored in an array (\$allSessions).
 
-```
-
-```
-      # Get the next page 
-      Get-<Noun> -MaxRecordCount 10 -Filter { FirstName -gt 'A120900' } 
-      SerialNumber  ... 
-      ------------  --- 
-      A120901 
-      B220000 
-      ... 
-
-```
 
 ## Filter Syntax Definition
 

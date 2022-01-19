@@ -23,6 +23,7 @@ In order to remove a catalog from a site, the catalog must not contain machines.
 * [Set-BrokerCatalog](../Set-BrokerCatalog/)
 * [New-BrokerDesktopGroup](../New-BrokerDesktopGroup/)
 * [Remove-BrokerDesktopGroup](../Remove-BrokerDesktopGroup/)
+* [Move-BrokerCatalog](../Move-BrokerCatalog/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

@@ -38,7 +38,7 @@ For more information about desktops, see [about\_Broker\_Desktops](../about_Brok
 | AssignedIPAddress | Changes the IP address assignment of the desktop. Set this to \$null to remove the assignment. Desktops can be assigned to multiple users, a single IP address, or a single client name, but only to one of these categories at one time. | false | false |  |
 | ColorDepth | Changes the color depth connections to this desktop should use.  
 Valid values are \$null, FourBit, EightBit, SixteenBit, and TwentyFourBit. A value of \$null results in the desktop group value being used instead. | false | false |  |
-| Description | Changes the description of the desktop. This is seen only by Citrix Administrators and is not visible to users. | false | false |  |
+| Description | Changes the description of the desktop. | false | false |  |
 | IconUid | Changes the icon displayed for this desktop. When this setting is \$null, the icon displayed is determined by the desktop group. | false | false |  |
 | InMaintenanceMode | Changes the maintenance mode setting of a desktop. When a desktop is in maintenance mode, it is not included as a candidate when brokering new sessions, and it does not participate in automatic power management (idle pool); however, it still responds to explicit power operations. | false | false |  |
 | PublishedName | Changes the name displayed to the user for this desktop. When this setting is \$null, the name displayed is determined by the PublishedName of the desktop group. | false | false |  |

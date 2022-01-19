@@ -19,6 +19,7 @@ The Set-BrokerCatalog cmdlet sets properties of a catalog or set of catalogs. Th
 * [New-BrokerCatalog](../New-BrokerCatalog/)
 * [Remove-BrokerCatalog](../Remove-BrokerCatalog/)
 * [Rename-BrokerCatalog](../Rename-BrokerCatalog/)
+* [Move-BrokerCatalog](../Move-BrokerCatalog/)
 ## Parameters
 | Name   | Description | Required? | Pipeline Input | Default Value |
 | --- | --- | --- | --- | --- |

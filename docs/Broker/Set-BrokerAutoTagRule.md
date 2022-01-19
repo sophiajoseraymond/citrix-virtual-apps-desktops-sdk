@@ -51,7 +51,7 @@ AutoTagRule may be specified through pipeline input.
 ```
 C:\PS> $tag = New-BrokerTag -Name MyExample2  
   
-                    C:\PS> Set-BrokerAutoTagRule -Name RandomAllocatedCatalogs -TagUid $tag.Uid
+C:\PS> Set-BrokerAutoTagRule -Name RandomAllocatedCatalogs -TagUid $tag.Uid
 ```
 
 #### Description
