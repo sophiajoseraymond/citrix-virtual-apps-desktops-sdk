@@ -10,6 +10,7 @@ Revoke-HypSecurityGroupEgress [-LiteralPath] <String> -IPRange <String[]> -Proto
 ```
 
 ## Detailed Description
+This cmdlet is deprecated. \
 To remove a rule, specify parameters matching an existing rule's values.
 
 
