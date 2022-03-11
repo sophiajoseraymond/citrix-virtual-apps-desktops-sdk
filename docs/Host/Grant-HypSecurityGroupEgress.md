@@ -10,6 +10,7 @@ Grant-HypSecurityGroupEgress [-LiteralPath] <String> -IPRange <String[]> -Protoc
 ```
 
 ## Detailed Description
+This cmdlet is deprecated. \
 Adding an egress rule permits network traffic from instances within the security group to pass to one or more destination CIDR IP address ranges or security groups.
 
 
